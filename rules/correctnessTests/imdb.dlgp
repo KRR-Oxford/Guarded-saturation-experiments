@@ -1,0 +1,218 @@
+%% IMDB input data:
+
+% title_akas
+% titleId (string) - a tconst, an alphanumeric unique identifier of the title
+% ordering (integer) – a number to uniquely identify rows for a given titleId
+% title (string) – the localized title
+% region (string) - the region for this version of the title
+% language (string) - the language of the title
+% types (array) - Enumerated set of attributes for this alternative title. One or more of the following: "alternative", "dvd", "festival", "tv", "video", "working", "original", "imdbDisplay". New values may be added in the future without warning
+% attributes (array) - Additional terms to describe this alternative title, not enumerated
+% isOriginalTitle (boolean) – 0: not original title, 1: original title
+% TRANSFORMED TO
+% title_akas(TitleId,Ordering,Title,Region,Language,IsOriginalTitle)
+% title_types(TitleId,Ordering,Type)
+% title_attributes(TitleId,Ordering,Type)
+
+% title_basics
+% tconst (string) - alphanumeric unique identifier of the title
+% titleType (string) – the type/format of the title (e.g. movie, short, tvseries, tvepisode, video, etc)
+% primaryTitle (string) – the more popular title / the title used by the filmmakers on promotional materials at the point of release
+% originalTitle (string) - original title, in the original language
+% isAdult (boolean) - 0: non-adult title, 1: adult title
+% startYear (YYYY) – represents the release year of a title. In the case of TV Series, it is the series start year 
+% endYear (YYYY) – TV Series end year. ‘\N’ for all other title types
+% runtimeMinutes – primary runtime of the title, in minutes
+% genres (string array) – includes up to three genres associated with the title
+% TRANSFORMED TO
+% title_basics(Tconst,TitleType,PrimaryTitle,OriginalTitle,IsAdult,StartYear,EndYear,RuntimeMinutes,Genre1,Genre2,Genre3)
+
+% title_crew
+% tconst (string) - alphanumeric unique identifier of the title
+% directors (array of nconsts) - director(s) of the given title
+% writers (array of nconsts) – writer(s) of the given title
+% TRANSFORMED TO
+% title_crew_directors(Tconst,Director)
+% title_crew_writers(Tconst,Writer)
+
+% title_episode
+% tconst (string) - alphanumeric identifier of episode
+% parentTconst (string) - alphanumeric identifier of the parent TV Series
+% seasonNumber (integer) – season number the episode belongs to
+% episodeNumber (integer) – episode number of the tconst in the TV series
+% TRANSFORMED TO
+% title_episode(Tconst,ParentTconst,SeasonNumber,EpisodeNumber)
+
+% title_principals
+% tconst (string) - alphanumeric unique identifier of the title
+% ordering (integer) – a number to uniquely identify rows for a given titleId
+% nconst (string) - alphanumeric unique identifier of the name/person
+% category (string) - the category of job that person was in
+% job (string) - the specific job title if applicable, else '\N'
+% characters (string) - the name of the character played if applicable, else '\N'
+% TRANSFORMED TO
+% title_principals(Tconst,Ordering,Nconst,Category,Job,Characters)
+
+% title_ratings
+% tconst (string) - alphanumeric unique identifier of the title
+% averageRating – weighted average of all the individual user ratings
+% numVotes - number of votes the title has received
+% TRANSFORMED TO
+% title_ratings(Tconst,AverageRating,NumVotes)
+
+% name_basics
+% nconst (string) - alphanumeric unique identifier of the name/person
+% primaryName (string)– name by which the person is most often credited
+% birthYear – in YYYY format
+% deathYear – in YYYY format if applicable, else '\N'
+% primaryProfession (array of strings)– the top-3 professions of the person
+% knownForTitles (array of tconsts) – titles the person is known for
+% TRANSFORMED TO
+% name_basics(Nconst,PrimaryName,BirthYear,DeathYear,PrimaryProfession)
+% name_knownForTitles(Nconst,KnownForTitle)
+
+
+%% Source-to-Target
+
+movie(Tconst) :- title_basics(Tconst, "movie", PrimaryTitle, OriginalTitle, IsAdult, StartYear, EndYear,RuntimeMinutes, Genre1, Genre2, Genre3).
+
+movie_titles(Tconst,PrimaryTitle) :- title_basics(Tconst, "movie", PrimaryTitle, OriginalTitle, IsAdult, StartYear, EndYear,RuntimeMinutes, Genre1, Genre2, Genre3).
+
+title_genres(Tconst,Genre1) :- title_basics(Tconst, TitleType, PrimaryTitle, OriginalTitle, IsAdult, StartYear, EndYear,RuntimeMinutes, Genre1, Genre2, Genre3).
+title_genres(Tconst,Genre2) :- title_basics(Tconst, TitleType, PrimaryTitle, OriginalTitle, IsAdult, StartYear, EndYear,RuntimeMinutes, Genre1, Genre2, Genre3).
+title_genres(Tconst,Genre3) :- title_basics(Tconst, TitleType, PrimaryTitle, OriginalTitle, IsAdult, StartYear, EndYear,RuntimeMinutes, Genre1, Genre2, Genre3).
+
+good_title(Tconst) :- title_ratings(Tconst,8.0,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,8.1,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,8.2,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,8.3,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,8.4,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,8.5,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,8.6,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,8.7,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,8.8,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,8.9,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,9.0,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,9.1,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,9.2,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,9.3,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,9.4,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,9.5,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,9.6,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,9.7,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,9.8,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,9.9,NumVotes).
+good_title(Tconst) :- title_ratings(Tconst,10.0,NumVotes).
+% these could be done with a single rule good_title(Tconst) :- title_ratings(Tconst,AverageRating,NumVotes), AverageRating > 8.0.
+
+
+%% Inspired by https://link.springer.com/article/10.1007/s13740-014-0040-x
+
+action(Movie) :- movie(Movie), title_genres(Movie, "Action").
+adventure(Movie) :- movie(Movie), title_genres(Movie, "Adventure").
+animation(Movie) :- movie(Movie), title_genres(Movie, "Animation").
+biography(Movie) :- movie(Movie), title_genres(Movie, "Biography").
+comedy(Movie) :- movie(Movie), title_genres(Movie, "Comedy").
+crime(Movie) :- movie(Movie), title_genres(Movie, "Crime").
+documentary(Movie) :- movie(Movie), title_genres(Movie, "Documentary").
+drama(Movie) :- movie(Movie), title_genres(Movie, "Drama").
+family(Movie) :- movie(Movie), title_genres(Movie, "Family").
+fantasy(Movie) :- movie(Movie), title_genres(Movie, "Fantasy").
+film_noir(Movie) :- movie(Movie), title_genres(Movie, "Film-Noir").
+history(Movie) :- movie(Movie), title_genres(Movie, "History").
+horror(Movie) :- movie(Movie), title_genres(Movie, "Horror").
+music(Movie) :- movie(Movie), title_genres(Movie, "Music").
+musical(Movie) :- movie(Movie), title_genres(Movie, "Musical").
+mystery(Movie) :- movie(Movie), title_genres(Movie, "Mystery").
+romance(Movie) :- movie(Movie), title_genres(Movie, "Romance").
+sci_fi(Movie) :- movie(Movie), title_genres(Movie, "Sci-Fi").
+short(Movie) :- movie(Movie), title_genres(Movie, "Short").
+sport(Movie) :- movie(Movie), title_genres(Movie, "Sport").
+superhero(Movie) :- movie(Movie), title_genres(Movie, "Superhero").
+thriller(Movie) :- movie(Movie), title_genres(Movie, "Thriller").
+war(Movie) :- movie(Movie), title_genres(Movie, "War").
+western(Movie) :- movie(Movie), title_genres(Movie, "Western").
+
+movie(Movie) :- action(Movie).
+movie(Movie) :- adventure(Movie).
+movie(Movie) :- animation(Movie).
+movie(Movie) :- biography(Movie).
+movie(Movie) :- comedy(Movie).
+movie(Movie) :- crime(Movie).
+movie(Movie) :- documentary(Movie).
+movie(Movie) :- drama(Movie).
+movie(Movie) :- family(Movie).
+movie(Movie) :- fantasy(Movie).
+movie(Movie) :- film_noir(Movie).
+movie(Movie) :- history(Movie).
+movie(Movie) :- horror(Movie).
+movie(Movie) :- music(Movie).
+movie(Movie) :- musical(Movie).
+movie(Movie) :- mystery(Movie).
+movie(Movie) :- romance(Movie).
+movie(Movie) :- sci_fi(Movie).
+movie(Movie) :- short(Movie).
+movie(Movie) :- sport(Movie).
+movie(Movie) :- superhero(Movie).
+movie(Movie) :- thriller(Movie).
+movie(Movie) :- war(Movie).
+movie(Movie) :- western(Movie).
+
+% just loops, but I do not know how to use them...
+
+
+%% TGDs
+
+producer(Producer,Movie) :- movie(Movie).
+produced_by(Movie,Producer) :- producer(Producer,Movie).
+movie(Movie) :- produced_by(Movie,Producer).
+% we do not know any "producer" and any "produced_by", so these rules do not derive any new knowledge
+
+director_of(Director,Movie) :- movie(Movie).
+% this does not make sense, we already have this information!
+% director_of(Director,Movie) :- title_crew_directors(Movie,Director).
+
+to_watch(Movie,Date) :- movie(Movie), good_title(Movie).
+watched(Movie) :- to_watch(Movie,Date), yesterday(Date).
+% here we would need negation...
+
+
+%% Adapted from https://www.sciencedirect.com/science/article/pii/S1570826811000746
+
+% (1) comedy movies in English:
+% Q1(x) = Movie(x) ∧ genre(x, Comedy) ∧ language(x, English) ;
+title_language(TitleId,Language) :- title_akas(TitleId,Ordering,Title,Region,Language,IsOriginalTitle).
+q1(X) :- comedy(X), title_language(X, "English").
+
+% (2) comedy movies directed either by Frank Capra or Woody Allen:
+% Q2(x) = Movie(x) ∧ genre(x, Comedy) ∧ (director(x, FrankCapra) ∨ director(x, WoodyAllen)) ;
+q2(X) :- comedy(X), title_crew_directors(X, "Frank Capra").
+q2(X) :- comedy(X), title_crew_directors(X, "Woody Allen").
+
+% (3) actors born in 1964 who are still alive:
+% Q3(x) = Actor(x) ∧ yearOfBirth(x, 1964) ∧ not ∃y (yearOfDeath(x, y)) ;
+title_actors(Tconst,Nconst) :- title_principals(Tconst,Ordering,Nconst,"actor",Job,Characters).
+title_actors(Tconst,Nconst) :- title_principals(Tconst,Ordering,Nconst,"actress",Job,Characters).
+q3(X) :- title_actors(Tconst,X), name_basics(X,PrimaryName,1964, "\N", PrimaryProfession).
+
+% (4) crime movies in English with Nicolas Cage as a star:
+% Q4(x) = Movie(x) ∧ genre(x, Crime) ∧ language(x, English) ∧ star(x, NicolasCage) ;
+star(KnownForTitle,Nconst) :- name_knownForTitles(Nconst, KnownForTitle).
+q4(X) :- crime(X), title_language(X,"English"), star(X, "Nicolas Case").
+
+% (6) movies directed by Julien Temple and with Monica Bellucci as a star:
+% Q6(x) = Movie(x) ∧ not director(x, JulienTemple) ∧ star(x, MonicaBellucci) ;
+q6(X) :- movie(X), title_crew_directors(X, "Julien Temple"), star(X, "Monica Bellucci").
+
+% (8) actors who played in at least one movie in Italian:
+% Q8(x) = ∃y (Actor(x) ∧ film(x, y) ∧ Movie(y) ∧ language(y, Italian)) ;
+q8(X) :- title_actors(Tconst,X), movie(Tconst), title_language(TitleId, "Italian").
+
+? :- q1(X).
+
+%% 
+
+adult_title(Tconst) :- title_basics(Tconst,TitleType,PrimaryTitle,OriginalTitle,1,StartYear,EndYear,RuntimeMinutes,Genre1,Genre2,Genre3).
+non_adult_title(Tconst) :- title_basics(Tconst,TitleType,PrimaryTitle,OriginalTitle,0,StartYear,EndYear,RuntimeMinutes,Genre1,Genre2,Genre3).
+
+! :- adult_title(Tconst), non_adult_title(Tconst).
