@@ -1,0 +1,47 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 17; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 5
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 9:02:15 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/17 = 0.000%
+GSat discarded rules : 0/17 = 0.000%
+avr. 09, 2021 9:02:15 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 9:02:15 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 17 , 0
+avr. 09, 2021 9:02:15 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 118 ms = 0.12 s
+avr. 09, 2021 9:02:15 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 0
+avr. 09, 2021 9:02:15 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 9:02:15 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 09, 2021 9:02:15 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 9:02:15 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (17 dependecies)
+=========================================
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegan(GSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#eats(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VeganFood(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian(GSat_u1) → http://xmlns.com/foaf/0.1/#Person(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Octo-LavoVegetarian(GSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#eats(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoLavoVegetarianFood(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian(GSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#eats(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VegetarianFood(GSat_u1)
+http://org.semanticweb.owlapi/error#Error2(GSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VeganFood(GSat_u1) → ⊥
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarian(GSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#eats(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarianFood(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarianFood(GSat_u1) & http://org.semanticweb.owlapi/error#Error4(GSat_u1) → ⊥
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarian(GSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#eats(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarianFood(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian(GSat_u1) → http://www.isi.edu/webscripter/person.o.daml#Person(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VegetarianFood(GSat_u1) & http://org.semanticweb.owlapi/error#Error3(GSat_u1) → ⊥
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegan(GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarian(GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Octo-LavoVegetarian(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarian(GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Octo-LavoVegetarian(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Octo-LavoVegetarian(GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#eats(GSat_u1,GSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian(GSat_u1)
+http://org.semanticweb.owlapi/error#Error1(GSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarianFood(GSat_u1) → ⊥
+=========================================

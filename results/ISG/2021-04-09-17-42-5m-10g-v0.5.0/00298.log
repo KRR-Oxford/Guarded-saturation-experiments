@@ -1,0 +1,112 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 82; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 9:33:50 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/82 = 0.000%
+GSat discarded rules : 0/82 = 0.000%
+avr. 09, 2021 9:33:50 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 9:33:50 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 82 , 0
+avr. 09, 2021 9:33:50 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 143 ms = 0.14 s
+avr. 09, 2021 9:33:50 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 0
+avr. 09, 2021 9:33:50 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 9:33:50 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 09, 2021 9:33:50 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 9:33:50 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (82 dependecies)
+=========================================
+http://www.purl.org/net/ontology/order.owl#Organization(GSat_u1) → http://www.purl.org/net/ontology/order.owl#Agent(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Position(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Personnel(GSat_u1) → http://www.purl.org/net/ontology/order.owl#Person(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Position(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Personnel(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Price(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#float(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#ShipmentDate(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Zip(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Comments(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Comments(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#contactPerson(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Organization(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#ItemName(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchasedItem(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Quantity(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#int(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#ShipmentDate(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Fax(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Agent(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#billTo(GSat_u2,GSat_u1) → http://www.purl.org/net/ontology/order.owl#Organization(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#suppliedBy(GSat_u2,GSat_u1) → http://www.purl.org/net/ontology/order.owl#Supplier(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#shipTo(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Email(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Agent(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Title(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Personnel(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Title(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Shipper(GSat_u1) → http://www.purl.org/net/ontology/order.owl#Organization(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Amount(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#int(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#billTo(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#HomePage(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Agent(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#shipTo(GSat_u2,GSat_u1) → http://www.purl.org/net/ontology/order.owl#Organization(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#shippedBy(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#ItemDescription(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#shippedBy(GSat_u2,GSat_u1) → http://www.purl.org/net/ontology/order.owl#Shipper(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#hasItems(GSat_u2,GSat_u1) → http://www.purl.org/net/ontology/order.owl#ItemsCollection(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Quantity(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchasedItem(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#PurchaseOrderDate(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Street(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#LastName(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Person(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#PartNumber(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#int(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Fax(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#ItemDescription(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchasedItem(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#State(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Address(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Currency(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://xmlns.com/foaf/0.1/Person(GSat_u1) → http://www.purl.org/net/ontology/order.owl#Person(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Country(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Address(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#OrderNumber(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Currency(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#hasAddress(GSat_u2,GSat_u1) → http://www.purl.org/net/ontology/order.owl#Address(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#PartNumber(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchasedItem(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Discount(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#int(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Email(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#FirstName(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Person(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Phone(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Agent(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#hasItem(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#ItemsCollection(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Amount(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://www.purl.org/net/ontology/order.owl#UPC(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchasedItem(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Supplier(GSat_u1) → http://www.purl.org/net/ontology/order.owl#Organization(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#UPC(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#int(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Price(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchasedItem(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#suppliedBy(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchasedItem(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#City(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#hasItem(GSat_u2,GSat_u1) → http://www.purl.org/net/ontology/order.owl#PurchasedItem(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#LastName(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#hasAddress(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Agent(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#HomePage(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#OrderNumber(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#int(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#State(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#City(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Address(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Phone(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#OrganizationName(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Organization(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#OrderDate(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#PurchaseOrderDate(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Street(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Address(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#contactPerson(GSat_u2,GSat_u1) → http://www.purl.org/net/ontology/order.owl#Personnel(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Agent(GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#OrderDate(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Country(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#OrganizationName(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#ItemName(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Discount(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#FirstName(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#hasItems(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#PurchaseOrder(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Person(GSat_u1) → http://www.purl.org/net/ontology/order.owl#Agent(GSat_u1)
+http://xmlns.com/foaf/0.1/Agent(GSat_u1) → http://www.purl.org/net/ontology/order.owl#Agent(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Person(GSat_u1) → http://xmlns.com/foaf/0.1/Person(GSat_u1)
+http://www.purl.org/net/ontology/order.owl#Zip(GSat_u1,GSat_u2) → http://www.purl.org/net/ontology/order.owl#Address(GSat_u1)
+=========================================

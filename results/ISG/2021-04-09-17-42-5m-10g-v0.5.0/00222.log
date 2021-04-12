@@ -1,0 +1,84 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 74; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 2
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 9:05:11 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/58 = 0.000%
+GSat discarded rules : 0/58 = 0.000%
+avr. 09, 2021 9:05:11 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 9:05:11 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 53 , 5
+nonFullTGDs	0		fullTGDs	53			newNonFullTGDs	5		newFullTGDs	0
+avr. 09, 2021 9:05:11 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 186 ms = 0.19 s
+avr. 09, 2021 9:05:11 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 15
+avr. 09, 2021 9:05:11 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 9:05:11 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 30
+avr. 09, 2021 9:05:11 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 9:05:11 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (53 dependecies)
+=========================================
+http://www.daml.org/2002/03/agents/agent-ont#AgentType(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#parametersClass(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#PKCS12Identity(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#Identity(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#basePublicationURI(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#Agency(GSat_u2) → http://www.w3.org/2001/XMLSchema#uriReference(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentAliveMessage(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#Message(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#GUI(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#Plugin(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#basePublicationDirectory(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#User(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#id(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#className(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#type(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#Agent(GSat_u2) → http://www.daml.org/2002/03/agents/agent-ont#AgentType(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#JavaPlugin(GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin(GSat_u1) → ⊥
+http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#startTime(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#timeInstant(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentType(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#description(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#identity(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#Agent(GSat_u2) → http://www.daml.org/2002/03/agents/agent-ont#Identity(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#basePublicationDirectory(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#Agency(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#Message(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#RunImmediately(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#AsynchronousMessage(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#agent(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#User(GSat_u2) → http://www.daml.org/2002/03/agents/agent-ont#Agent(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentType(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#className(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#agentType(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#Agency(GSat_u2) → http://www.daml.org/2002/03/agents/agent-ont#AgentType(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#user(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#Agency(GSat_u2) → http://www.daml.org/2002/03/agents/agent-ont#User(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#transactionID(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#Message(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#Ack(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#lastPublicationTime(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#timeInstant(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#description(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#ErrorMessage(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#JavaPlugin(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#className(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#ShutdownMessage(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#AsynchronousMessage(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#parameters(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#Agent(GSat_u2) → http://www.daml.org/2002/03/agents/agent-ont#Parameters(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#agent(GSat_u2,GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#Agent(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#RequestMessage(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#Message(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentType(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#classPath(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#inReplyTo(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentStatusRequest(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#RequestMessage(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#messagesReceived(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#long(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#setupGUI(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#AgentType(GSat_u2) → http://www.daml.org/2002/03/agents/agent-ont#GUI(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentAliveMessage(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#agent(GSat_u2,GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#Agent(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#Plugin(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#password(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#PKCS12Identity(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#error(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#ErrorMessage(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#RequestMessage(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AsynchronousMessage(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#Message(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#dynamicLinkLibrary(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#pkcs12File(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#PKCS12Identity(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#JavaPlugin(GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#Plugin(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#description(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#Agent(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#parameters(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest(GSat_u2) → http://www.daml.org/2002/03/agents/agent-ont#Parameters(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#agentType(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest(GSat_u2) → http://www.daml.org/2002/03/agents/agent-ont#AgentType(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#creationTime(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#Agent(GSat_u2) → http://www.w3.org/2001/XMLSchema#timeInstant(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply(GSat_u2) & http://www.daml.org/2002/03/agents/agent-ont#agent(GSat_u2,GSat_u1) → http://www.daml.org/2002/03/agents/agent-ont#Agent(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#statusGUI(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#AgentType(GSat_u2) → http://www.daml.org/2002/03/agents/agent-ont#GUI(GSat_u1)
+http://www.daml.org/2002/03/agents/agent-ont#basePublicationURI(GSat_u2,GSat_u1) & http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest(GSat_u2) → http://www.w3.org/2001/XMLSchema#uriReference(GSat_u1)
+=========================================

@@ -1,0 +1,50 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 28; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 10, 2021 1:50:16 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/28 = 0.000%
+GSat discarded rules : 0/28 = 0.000%
+avr. 10, 2021 1:50:16 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 10, 2021 1:50:16 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 19 , 9
+nonFullTGDs	0		fullTGDs	19			newNonFullTGDs	9		newFullTGDs	0
+avr. 10, 2021 1:50:16 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 263 ms = 0.26 s
+avr. 10, 2021 1:50:16 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 9
+avr. 10, 2021 1:50:16 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 10, 2021 1:50:16 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 45
+avr. 10, 2021 1:50:16 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 10, 2021 1:50:16 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (19 dependecies)
+=========================================
+http://purl.org/obo/owl/GO#GO_0042302(GSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(GSat_u1)
+http://purl.org/obo/owl/GO#GO_0030280(GSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(GSat_u1)
+http://purl.org/obo/owl/GO#GO_0042329(GSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(GSat_u1)
+http://purl.org/obo/owl/UBERON#UBERON_0003049(GSat_u2) & http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2) & http://purl.org/obo/owl/GO#GO_0005198(GSat_u1) → http://purl.org/obo/owl/GO#GO_0042329(GSat_u1)
+http://purl.org/obo/owl/GO#GO_0005214(GSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://purl.org/obo/owl/GO#GO_0030345(GSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(GSat_u1)
+http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2) & http://purl.org/obo/owl/UBERON#UBERON_0001001(GSat_u2) & http://purl.org/obo/owl/GO#GO_0005198(GSat_u1) → http://purl.org/obo/owl/GO#GO_0005214(GSat_u1)
+http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2) & http://purl.org/obo/owl/UBERON#UBERON_0001474(GSat_u2) & http://purl.org/obo/owl/GO#GO_0005198(GSat_u1) → http://purl.org/obo/owl/GO#GO_0008147(GSat_u1)
+http://purl.org/obo/owl/GO#GO_0008307(GSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(GSat_u1)
+http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2) & http://purl.org/obo/owl/GO#GO_0005198(GSat_u1) & http://purl.org/obo/owl/UBERON#UBERON_0001003(GSat_u2) → http://purl.org/obo/owl/GO#GO_0030280(GSat_u1)
+http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2) & http://purl.org/obo/owl/GO#GO_0005198(GSat_u1) & http://purl.org/obo/owl/UBERON#UBERON_0001752(GSat_u2) → http://purl.org/obo/owl/GO#GO_0030345(GSat_u1)
+http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2) & http://purl.org/obo/owl/GO#GO_0005198(GSat_u1) & http://purl.org/obo/owl/UBERON#UBERON_0001002(GSat_u2) → http://purl.org/obo/owl/GO#GO_0042302(GSat_u1)
+http://purl.org/obo/owl/GO#GO_0005212(GSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(GSat_u1)
+http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2) & http://purl.org/obo/owl/GO#GO_0005198(GSat_u1) & http://purl.org/obo/owl/UBERON#UBERON_0001015(GSat_u2) → http://purl.org/obo/owl/GO#GO_0008307(GSat_u1)
+http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2) & http://purl.org/obo/owl/UBERON#UBERON_0000965(GSat_u2) & http://purl.org/obo/owl/GO#GO_0005198(GSat_u1) → http://purl.org/obo/owl/GO#GO_0005212(GSat_u1)
+http://purl.org/obo/owl/GO#GO_0008147(GSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(GSat_u1)
+http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2) & http://purl.org/obo/owl/UBERON#UBERON_0000920(GSat_u2) & http://purl.org/obo/owl/GO#GO_0005198(GSat_u1) → http://purl.org/obo/owl/GO#GO_0008316(GSat_u1)
+http://purl.org/obo/owl/GO#GO_0008316(GSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(GSat_u1)
+=========================================

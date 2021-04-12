@@ -1,0 +1,693 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 721; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 412
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 10, 2021 8:47:13 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 3/704 = 0.426%
+GSat discarded rules : 3/704 = 0.426%
+avr. 10, 2021 8:47:13 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 10, 2021 8:47:13 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 545 , 152
+nonFullTGDs	0		fullTGDs	545			newNonFullTGDs	152		newFullTGDs	0
+nonFullTGDs	16		fullTGDs	545			newNonFullTGDs	141		newFullTGDs	13
+nonFullTGDs	31		fullTGDs	545			newNonFullTGDs	129		newFullTGDs	22
+nonFullTGDs	43		fullTGDs	545			newNonFullTGDs	116		newFullTGDs	29
+nonFullTGDs	57		fullTGDs	545			newNonFullTGDs	105		newFullTGDs	36
+nonFullTGDs	72		fullTGDs	545			newNonFullTGDs	89		newFullTGDs	43
+nonFullTGDs	87		fullTGDs	545			newNonFullTGDs	77		newFullTGDs	57
+nonFullTGDs	103		fullTGDs	545			newNonFullTGDs	63		newFullTGDs	66
+nonFullTGDs	120		fullTGDs	545			newNonFullTGDs	49		newFullTGDs	71
+nonFullTGDs	131		fullTGDs	545			newNonFullTGDs	37		newFullTGDs	80
+nonFullTGDs	146		fullTGDs	545			newNonFullTGDs	25		newFullTGDs	90
+nonFullTGDs	163		fullTGDs	545			newNonFullTGDs	9		newFullTGDs	95
+nonFullTGDs	172		fullTGDs	568			newNonFullTGDs	0		newFullTGDs	78
+avr. 10, 2021 8:47:15 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 1943 ms = 1.94 s
+avr. 10, 2021 8:47:15 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 3756
+avr. 10, 2021 8:47:15 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 10, 2021 8:47:15 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 68565 , 91914
+avr. 10, 2021 8:47:15 AM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 105
+avr. 10, 2021 8:47:15 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (650 dependecies)
+=========================================
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RealItalianPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#hasCountryOfOrigin(GSat_u1,http://www.co-ode.org/ontologies/pizza/pizza.owl#Italy)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mild(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Spiciness(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping(GSat_u1,GSat_u2) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyTopping(GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyVegetableTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#NutTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourCheesesTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#GorgonzolaTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#NutTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizzaEquivalent2(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#DomainConcept(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u2) & http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#NutTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MixedSeafoodTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ChickenTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SweetPepperTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperonataTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#GreenPepperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#hasCountryOfOrigin(GSat_u1,http://www.co-ode.org/ontologies/pizza/pizza.owl#America)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#DomainConcept(http://www.co-ode.org/ontologies/pizza/pizza.owl#France) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Country(http://www.co-ode.org/ontologies/pizza/pizza.owl#France)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HotSpicedBeefTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperoniSausageTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ParmaHamTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ThinAndCrispyPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RealItalianPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#isBaseOf(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GoatsCheeseTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#HotSpicedBeefTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#InterestingPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u2) & http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping(GSat_u2,GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizzaEquivalent1(GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#DeepPanBase(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GreenPepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SweetPepperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HotSpicedBeefTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HotGreenPepperTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#GreenPepperTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#NutTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Medium(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Mild(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#hasCountryOfOrigin(GSat_u1,http://www.co-ode.org/ontologies/pizza/pizza.owl#Italy)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#isBaseOf(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperonataTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Spiciness(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#ValuePartition(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#JalapenoPepperTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#IceCream(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#NonVegetarianPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GreenPepperTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperonataTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#JalapenoPepperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#IceCream(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#JalapenoPepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SweetPepperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GreenPepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#JalapenoPepperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrawnsTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AnchoviesTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ChickenTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GorgonzolaTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#GoatsCheeseTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ChickenTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperoniSausageTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#NutTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperoniSausageTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CajunSpiceTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PineKernels(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NutTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u2) & http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping(GSat_u2,GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperonataTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SweetPepperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ThinAndCrispyBase(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#isBaseOf(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#hasCountryOfOrigin(GSat_u1,http://www.co-ode.org/ontologies/pizza/pizza.owl#Italy)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ParmesanTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SlicedTomatoTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SundriedTomatoTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#DomainConcept(http://www.co-ode.org/ontologies/pizza/pizza.owl#Italy) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Country(http://www.co-ode.org/ontologies/pizza/pizza.owl#Italy)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourCheesesTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourCheesesTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#GoatsCheeseTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrawnsTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MixedSeafoodTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#isToppingOf(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#DomainConcept(http://www.co-ode.org/ontologies/pizza/pizza.owl#Germany) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Country(http://www.co-ode.org/ontologies/pizza/pizza.owl#Germany)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RosemaryTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#JalapenoPepperTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GorgonzolaTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SundriedTomatoTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RealItalianPizza(GSat_u2) & http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#ThinAndCrispyBase(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#IceCream(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SlicedTomatoTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#isToppingOf(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#hasCountryOfOrigin(GSat_u1,http://www.co-ode.org/ontologies/pizza/pizza.owl#Italy)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CajunSpiceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#RosemaryTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizzaEquivalent(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourCheesesTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#IceCream(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AnchoviesTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MixedSeafoodTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Spiciness(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizzaEquivalent1(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#isToppingOf(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasSpiciness(GSat_u1,GSat_u2) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Hot(GSat_u2) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#HotSpicedBeefTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#ThinAndCrispyPizza(GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#ThinAndCrispyBase(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ValuePartition(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#DomainConcept(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GorgonzolaTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping(GSat_u1) → ⊥
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#isToppingOf(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#NutTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#HerbSpiceTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Hot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Medium(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#NonVegetarianPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#DomainConcept(http://www.co-ode.org/ontologies/pizza/pizza.owl#America) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Country(http://www.co-ode.org/ontologies/pizza/pizza.owl#America)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ParmesanTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FourCheesesTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Medium(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Spiciness(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AnchoviesTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ParmesanTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PeperoniSausageTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#TobascoPepperSauce(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#NutTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PetitPoisTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RedOnionTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#hasCountryOfOrigin(GSat_u1,http://www.co-ode.org/ontologies/pizza/pizza.owl#Italy) → http://www.co-ode.org/ontologies/pizza/pizza.owl#RealItalianPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ChickenTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#HotSpicedBeefTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ParmesanTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#GoatsCheeseTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ParmesanTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#GorgonzolaTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#IceCream(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#hasCountryOfOrigin(GSat_u1,http://www.co-ode.org/ontologies/pizza/pizza.owl#America)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#isBaseOf(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CajunSpiceTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizzaEquivalent(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Hot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Mild(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#DomainConcept(http://www.co-ode.org/ontologies/pizza/pizza.owl#England) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Country(http://www.co-ode.org/ontologies/pizza/pizza.owl#England)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Hot(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Spiciness(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#TobascoPepperSauce(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#NutTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#American(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#HotGreenPepperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#NutTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SpicyPizzaEquivalent(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Capricciosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SultanaTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PrinceCarlo(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PrawnsTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#AmericanHot(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#AsparagusTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Soho(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#FourSeasons(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#hasIngredient(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#ThinAndCrispyBase(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#DeepPanBase(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruttiDiMare(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#PolloAdAstra(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Rosa(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#RocketTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Food(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LeekTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#isBaseOf(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping(GSat_u2) & http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyVegetableTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetableTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Parmense(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Veneziana(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#isToppingOf(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/pizza/pizza.owl#isIngredientOf(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Napoletana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseyPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#GoatsCheeseTopping(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Giardiniera(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#LaReine(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#UnclosedPizza(GSat_u1) → http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza(GSat_u1)
+http://www.co-ode.org/ontologies/pizza/pizza.owl#QuattroFormaggi(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Fiorentina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Caprina(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/pizza/pizza.owl#SloppyGiuseppe(GSat_u1) & http://www.co-ode.org/ontologies/pizza/pizza.owl#Cajun(GSat_u1) → ⊥
+=========================================

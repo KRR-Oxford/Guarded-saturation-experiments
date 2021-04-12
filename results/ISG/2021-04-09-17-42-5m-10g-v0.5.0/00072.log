@@ -1,0 +1,63 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 38; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 8:41:00 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/33 = 0.000%
+GSat discarded rules : 0/33 = 0.000%
+avr. 09, 2021 8:41:00 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 8:41:00 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 32 , 1
+nonFullTGDs	0		fullTGDs	32			newNonFullTGDs	1		newFullTGDs	0
+avr. 09, 2021 8:41:00 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 169 ms = 0.17 s
+avr. 09, 2021 8:41:00 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 1
+avr. 09, 2021 8:41:00 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 8:41:00 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 2
+avr. 09, 2021 8:41:00 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 8:41:00 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (32 dependecies)
+=========================================
+http://ebiquity.umbc.edu/ontology/project.owl#startDate(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/publication.owl#relatedProject(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/project.owl#relatedResource(GSat_u1,GSat_u2)
+http://ebiquity.umbc.edu/ontology/project.owl#PastProject(GSat_u1) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#title(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#relatedPublication(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#relatedResource(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/publication.owl#relatedProject(GSat_u1,GSat_u2)
+http://ebiquity.umbc.edu/ontology/publication.owl#relatedProject(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/project.owl#relatedPublication(GSat_u1,GSat_u2)
+http://ebiquity.umbc.edu/ontology/project.owl#relatedResearchArea(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/association.owl#project(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/project.owl#associatedWith(GSat_u1,GSat_u2)
+http://ebiquity.umbc.edu/ontology/project.owl#startDate(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#relatedResearchArea(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/research.owl#Research(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#logoURI(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#description(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#relatedResearchArea(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/research.owl#relatedProject(GSat_u1,GSat_u2)
+http://ebiquity.umbc.edu/ontology/project.owl#associatedWith(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#endDate(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#title(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#associatedWith(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/association.owl#PersonProjectAssociation(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#Proposal(GSat_u1) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#relatedResource(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/publication.owl#Resource(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#endDate(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#relatedPublication(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/publication.owl#relatedProject(GSat_u1,GSat_u2)
+http://ebiquity.umbc.edu/ontology/project.owl#associatedWith(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/association.owl#project(GSat_u1,GSat_u2)
+http://ebiquity.umbc.edu/ontology/project.owl#description(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#ActiveProject(GSat_u1) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#keyword(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#relatedPublication(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/publication.owl#Publication(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#relatedResource(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+http://ebiquity.umbc.edu/ontology/project.owl#keyword(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://ebiquity.umbc.edu/ontology/project.owl#logoURI(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#anyURI(GSat_u1)
+http://ebiquity.umbc.edu/ontology/research.owl#relatedProject(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/project.owl#relatedResearchArea(GSat_u1,GSat_u2)
+=========================================

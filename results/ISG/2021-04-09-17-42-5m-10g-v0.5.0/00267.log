@@ -1,0 +1,39 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 15; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 9:09:18 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/12 = 0.000%
+GSat discarded rules : 0/12 = 0.000%
+avr. 09, 2021 9:09:18 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 9:09:18 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 8 , 4
+nonFullTGDs	0		fullTGDs	8			newNonFullTGDs	4		newFullTGDs	0
+avr. 09, 2021 9:09:18 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 150 ms = 0.15 s
+avr. 09, 2021 9:09:18 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 4
+avr. 09, 2021 9:09:18 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 9:09:18 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 20
+avr. 09, 2021 9:09:18 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 9:09:18 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (8 dependecies)
+=========================================
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00267.owl#optionalReviewerHomePage(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#string(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00267.owl#reviewedUrl(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#string(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00267.owl#hasRating(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00267.owl#Rating(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00267.owl#optionalReviewerEmail(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#string(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00267.owl#dateOfReview(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#date(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00267.owl#optionalReviewText(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#string(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00267.owl#reviewerName(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#string(GSat_u1)
+=========================================

@@ -1,0 +1,49 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 26; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 9:06:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/23 = 0.000%
+GSat discarded rules : 0/23 = 0.000%
+avr. 09, 2021 9:06:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 9:06:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 18 , 5
+nonFullTGDs	0		fullTGDs	18			newNonFullTGDs	5		newFullTGDs	0
+avr. 09, 2021 9:06:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 211 ms = 0.21 s
+avr. 09, 2021 9:06:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 13
+avr. 09, 2021 9:06:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 9:06:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 46
+avr. 09, 2021 9:06:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 9:06:39 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (18 dependecies)
+=========================================
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(GSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#stations(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(GSat_u1) → http://org.semanticweb.owlapi/error#Error2(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(GSat_u1) → http://org.semanticweb.owlapi/error#Error1(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System(GSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#line(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System(GSat_u1) → http://org.semanticweb.owlapi/error#Error3(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System(GSat_u2) & http://www.w3.org/2000/01/rdf-schema#label(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(GSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#airport(GSat_u2,GSat_u1) → http://www.daml.org/2001/10/html/airport-ont#Airport(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#adjacentTo(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#adjacentTo(GSat_u1,GSat_u2)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(GSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#adjacentTo(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(GSat_u1) → http://www.cyc.com/2003/04/01/cyc#SubwayStation(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(GSat_u2) & http://www.w3.org/2000/01/rdf-schema#label(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#location(GSat_u2,GSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(GSat_u2) → http://www.daml.org/2003/02/fips55/location-ont#Location(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(GSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#line(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Loop(GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(GSat_u1)
+http://www.cyc.com/2003/04/01/cyc#SubwayStation(GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#homepage(GSat_u2,GSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System(GSat_u2) → http://www.w3.org/2001/XMLSchema#anyURI(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(GSat_u2) & http://www.w3.org/2000/01/rdf-schema#label(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+=========================================

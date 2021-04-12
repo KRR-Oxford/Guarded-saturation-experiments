@@ -1,0 +1,40 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 18; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 9:04:43 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/10 = 0.000%
+GSat discarded rules : 0/10 = 0.000%
+avr. 09, 2021 9:04:44 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 9:04:44 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 9 , 1
+nonFullTGDs	0		fullTGDs	9			newNonFullTGDs	1		newFullTGDs	0
+avr. 09, 2021 9:04:44 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 143 ms = 0.14 s
+avr. 09, 2021 9:04:44 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 1
+avr. 09, 2021 9:04:44 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 9:04:44 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 2
+avr. 09, 2021 9:04:44 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 9:04:44 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (9 dependecies)
+=========================================
+http://www.daml.org/2001/10/html/nyse-ont#homePage(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/html/nyse-ont#Symbol(GSat_u2) → http://www.w3.org/2001/XMLSchema#uriReference(GSat_u1)
+http://www.daml.org/2001/10/html/nyse-ont#Symbol(GSat_u2) & http://www.daml.org/2001/10/html/nyse-ont#industry(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/10/html/nyse-ont#country(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/html/nyse-ont#Symbol(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/10/html/nyse-ont#description(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/html/nyse-ont#Symbol(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/10/html/nyse-ont#listingDate(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/html/nyse-ont#Symbol(GSat_u2) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://www.daml.org/2001/10/html/nyse-ont#issueType(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/html/nyse-ont#Symbol(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://www.daml.org/2001/10/html/nyse-ont#symbol(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/html/nyse-ont#Symbol(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/10/html/nyse-ont#name(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/html/nyse-ont#Symbol(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+=========================================

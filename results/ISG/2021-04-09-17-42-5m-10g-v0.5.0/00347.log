@@ -1,0 +1,136 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 108; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 9:58:21 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 1/108 = 0.926%
+GSat discarded rules : 1/108 = 0.926%
+avr. 09, 2021 9:58:21 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 9:58:21 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 99 , 8
+nonFullTGDs	0		fullTGDs	99			newNonFullTGDs	8		newFullTGDs	0
+avr. 09, 2021 9:58:21 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 257 ms = 0.26 s
+avr. 09, 2021 9:58:21 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 54
+avr. 09, 2021 9:58:21 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 9:58:21 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 98 , 150
+avr. 09, 2021 9:58:21 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 6
+avr. 09, 2021 9:58:21 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (105 dependecies)
+=========================================
+http://a.cx/onto#researchProject(GSat_u2,GSat_u1) → http://a.cx/onto#Research(GSat_u1)
+http://a.cx/onto#ResearchGroup(GSat_u1) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#PostDoc(GSat_u1) → http://a.cx/onto#Faculty(GSat_u1)
+http://a.cx/onto#undergraduateDegreeFrom(GSat_u2,GSat_u1) → http://a.cx/onto#University(GSat_u1)
+http://a.cx/onto#College(GSat_u1) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#Dean(GSat_u1) → http://a.cx/onto#Professor(GSat_u1)
+http://a.cx/onto#publicationDate(GSat_u1,GSat_u2) → http://a.cx/onto#Publication(GSat_u1)
+http://a.cx/onto#UndergraduateStudent(GSat_u1) → http://a.cx/onto#Student(GSat_u1)
+http://a.cx/onto#Manual(GSat_u1) → http://a.cx/onto#Publication(GSat_u1)
+http://a.cx/onto#GraduateCourse(GSat_u1) → http://a.cx/onto#Course(GSat_u1)
+http://a.cx/onto#Department(GSat_u1) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#headOf(GSat_u1,GSat_u2) → http://a.cx/onto#worksFor(GSat_u1,GSat_u2)
+http://a.cx/onto#affiliateOf(GSat_u1,GSat_u2) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#publicationAuthor(GSat_u2,GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#softwareVersion(GSat_u1,GSat_u2) → http://a.cx/onto#Software(GSat_u1)
+http://a.cx/onto#listedCourse(GSat_u2,GSat_u1) → http://a.cx/onto#Course(GSat_u1)
+http://a.cx/onto#telephone(GSat_u1,GSat_u2) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#Chair(GSat_u1) → http://a.cx/onto#Professor(GSat_u1)
+http://a.cx/onto#doctoralDegreeFrom(GSat_u1,GSat_u2) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#publicationAuthor(GSat_u1,GSat_u2) → http://a.cx/onto#Publication(GSat_u1)
+http://a.cx/onto#degreeFrom(GSat_u2,GSat_u1) → http://a.cx/onto#University(GSat_u1)
+http://a.cx/onto#Program(GSat_u1) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#AssociateProfessor(GSat_u1) → http://a.cx/onto#Professor(GSat_u1)
+http://a.cx/onto#degreeFrom(GSat_u2,GSat_u1) → http://a.cx/onto#hasAlumnus(GSat_u1,GSat_u2)
+http://a.cx/onto#listedCourse(GSat_u1,GSat_u2) → http://a.cx/onto#Schedule(GSat_u1)
+http://a.cx/onto#VisitingProfessor(GSat_u1) → http://a.cx/onto#Professor(GSat_u1)
+http://a.cx/onto#doctoralDegreeFrom(GSat_u2,GSat_u1) → http://a.cx/onto#University(GSat_u1)
+http://a.cx/onto#GraduateStudent(GSat_u1) & http://a.cx/onto#Person(GSat_u1) → http://a.cx/onto#Student(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://a.cx/onto#teachingAssistantOf(GSat_u1,GSat_u2) → http://a.cx/onto#TeachingAssistant(GSat_u1)
+http://a.cx/onto#GraduateStudent(GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#SystemsStaff(GSat_u1) → http://a.cx/onto#AdministrativeStaff(GSat_u1)
+http://a.cx/onto#Course(GSat_u2) & http://a.cx/onto#Person(GSat_u1) & http://a.cx/onto#takesCourse(GSat_u1,GSat_u2) → http://a.cx/onto#Student(GSat_u1)
+http://a.cx/onto#JournalArticle(GSat_u1) → http://a.cx/onto#Article(GSat_u1)
+http://a.cx/onto#member(GSat_u2,GSat_u1) → http://a.cx/onto#memberOf(GSat_u1,GSat_u2)
+http://a.cx/onto#FullProfessor(GSat_u1) → http://a.cx/onto#Professor(GSat_u1)
+http://a.cx/onto#affiliatedOrganizationOf(GSat_u1,GSat_u2) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#hasAlumnus(GSat_u2,GSat_u1) → http://a.cx/onto#degreeFrom(GSat_u1,GSat_u2)
+http://a.cx/onto#ConferencePaper(GSat_u1) → http://a.cx/onto#Article(GSat_u1)
+http://a.cx/onto#softwareDocumentation(GSat_u1,GSat_u2) → http://a.cx/onto#Software(GSat_u1)
+http://a.cx/onto#Employee(GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#Article(GSat_u1) → http://a.cx/onto#Publication(GSat_u1)
+http://a.cx/onto#Director(GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#member(GSat_u2,GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#age(GSat_u1,GSat_u2) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#mastersDegreeFrom(GSat_u2,GSat_u1) → http://a.cx/onto#University(GSat_u1)
+http://a.cx/onto#Specification(GSat_u1) → http://a.cx/onto#Publication(GSat_u1)
+http://a.cx/onto#Person(GSat_u1) & http://a.cx/onto#Organization(GSat_u2) & http://a.cx/onto#worksFor(GSat_u1,GSat_u2) → http://a.cx/onto#Employee(GSat_u1)
+http://a.cx/onto#degreeFrom(GSat_u1,GSat_u2) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#hasAlumnus(GSat_u1,GSat_u2) → http://a.cx/onto#University(GSat_u1)
+http://a.cx/onto#Professor(GSat_u1) → http://a.cx/onto#Faculty(GSat_u1)
+http://a.cx/onto#publicationResearch(GSat_u2,GSat_u1) → http://a.cx/onto#Research(GSat_u1)
+http://a.cx/onto#Person(GSat_u1) & http://a.cx/onto#College(GSat_u2) & http://a.cx/onto#headOf(GSat_u1,GSat_u2) → http://a.cx/onto#Dean(GSat_u1)
+http://a.cx/onto#UnofficialPublication(GSat_u1) → http://a.cx/onto#Publication(GSat_u1)
+http://a.cx/onto#Institute(GSat_u1) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#subOrganizationOf(GSat_u2,GSat_u1) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#advisor(GSat_u2,GSat_u1) → http://a.cx/onto#Professor(GSat_u1)
+http://a.cx/onto#hasAlumnus(GSat_u2,GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#teacherOf(GSat_u1,GSat_u2) → http://a.cx/onto#Faculty(GSat_u1)
+http://a.cx/onto#worksFor(GSat_u1,GSat_u2) → http://a.cx/onto#memberOf(GSat_u1,GSat_u2)
+http://a.cx/onto#teachingAssistantOf(GSat_u2,GSat_u1) → http://a.cx/onto#Course(GSat_u1)
+http://a.cx/onto#Chair(GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#Program(GSat_u2) & http://a.cx/onto#Person(GSat_u1) & http://a.cx/onto#headOf(GSat_u1,GSat_u2) → http://a.cx/onto#Director(GSat_u1)
+http://a.cx/onto#ResearchAssistant(GSat_u1) → http://a.cx/onto#Student(GSat_u1)
+http://a.cx/onto#emailAddress(GSat_u1,GSat_u2) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#TechnicalReport(GSat_u1) → http://a.cx/onto#Article(GSat_u1)
+http://a.cx/onto#affiliatedOrganizationOf(GSat_u2,GSat_u1) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#Software(GSat_u1) → http://a.cx/onto#Publication(GSat_u1)
+http://a.cx/onto#Faculty(GSat_u1) → http://a.cx/onto#Employee(GSat_u1)
+http://a.cx/onto#Director(GSat_u1) & http://a.cx/onto#Person(GSat_u1) → http://a.cx/onto#Employee(GSat_u1)
+http://a.cx/onto#Lecturer(GSat_u1) → http://a.cx/onto#Faculty(GSat_u1)
+http://a.cx/onto#ResearchAssistant(GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#AssistantProfessor(GSat_u1) → http://a.cx/onto#Professor(GSat_u1)
+http://a.cx/onto#doctoralDegreeFrom(GSat_u1,GSat_u2) → http://a.cx/onto#degreeFrom(GSat_u1,GSat_u2)
+http://a.cx/onto#ClericalStaff(GSat_u1) → http://a.cx/onto#AdministrativeStaff(GSat_u1)
+http://a.cx/onto#tenured(GSat_u1,GSat_u2) → http://a.cx/onto#Professor(GSat_u1)
+http://a.cx/onto#researchProject(GSat_u1,GSat_u2) → http://a.cx/onto#ResearchGroup(GSat_u1)
+http://a.cx/onto#Research(GSat_u1) → http://a.cx/onto#Work(GSat_u1)
+http://a.cx/onto#Dean(GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#undergraduateDegreeFrom(GSat_u1,GSat_u2) → http://a.cx/onto#degreeFrom(GSat_u1,GSat_u2)
+http://a.cx/onto#Person(GSat_u1) & http://a.cx/onto#Department(GSat_u2) & http://a.cx/onto#headOf(GSat_u1,GSat_u2) → http://a.cx/onto#Chair(GSat_u1)
+http://a.cx/onto#Dean(GSat_u1) & http://a.cx/onto#Person(GSat_u1) → http://a.cx/onto#Employee(GSat_u1)
+http://a.cx/onto#AdministrativeStaff(GSat_u1) → http://a.cx/onto#Employee(GSat_u1)
+http://a.cx/onto#memberOf(GSat_u2,GSat_u1) → http://a.cx/onto#member(GSat_u1,GSat_u2)
+http://a.cx/onto#advisor(GSat_u1,GSat_u2) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#publicationResearch(GSat_u1,GSat_u2) → http://a.cx/onto#Publication(GSat_u1)
+http://a.cx/onto#mastersDegreeFrom(GSat_u1,GSat_u2) → http://a.cx/onto#degreeFrom(GSat_u1,GSat_u2)
+http://a.cx/onto#Book(GSat_u1) → http://a.cx/onto#Publication(GSat_u1)
+http://a.cx/onto#ResearchAssistant(GSat_u1) & http://a.cx/onto#Person(GSat_u1) → http://a.cx/onto#Employee(GSat_u1)
+http://a.cx/onto#mastersDegreeFrom(GSat_u1,GSat_u2) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#orgPublication(GSat_u2,GSat_u1) → http://a.cx/onto#Publication(GSat_u1)
+http://a.cx/onto#member(GSat_u1,GSat_u2) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#Student(GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#Course(GSat_u1) → http://a.cx/onto#Work(GSat_u1)
+http://a.cx/onto#title(GSat_u1,GSat_u2) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#University(GSat_u1) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#teacherOf(GSat_u2,GSat_u1) → http://a.cx/onto#Course(GSat_u1)
+http://a.cx/onto#softwareDocumentation(GSat_u2,GSat_u1) → http://a.cx/onto#Publication(GSat_u1)
+http://a.cx/onto#orgPublication(GSat_u1,GSat_u2) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#affiliateOf(GSat_u2,GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#TeachingAssistant(GSat_u1) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#subOrganizationOf(GSat_u1,GSat_u2) → http://a.cx/onto#Organization(GSat_u1)
+http://a.cx/onto#undergraduateDegreeFrom(GSat_u1,GSat_u2) → http://a.cx/onto#Person(GSat_u1)
+http://a.cx/onto#Chair(GSat_u1) & http://a.cx/onto#Person(GSat_u1) → http://a.cx/onto#Employee(GSat_u1)
+http://a.cx/onto#teachingAssistantOf(GSat_u1,GSat_u2) & http://a.cx/onto#Course(GSat_u2) & http://a.cx/onto#Person(GSat_u1) → http://a.cx/onto#TeachingAssistant(GSat_u1)
+=========================================

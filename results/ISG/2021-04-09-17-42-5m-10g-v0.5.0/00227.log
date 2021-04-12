@@ -1,0 +1,37 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 9; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 9:05:38 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 1/8 = 12.500%
+GSat discarded rules : 1/8 = 12.500%
+avr. 09, 2021 9:05:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 9:05:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 7 , 0
+avr. 09, 2021 9:05:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 119 ms = 0.12 s
+avr. 09, 2021 9:05:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 0
+avr. 09, 2021 9:05:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 9:05:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 09, 2021 9:05:39 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 9:05:39 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (7 dependecies)
+=========================================
+http://www.daml.org/2002/04/classification/classification-ont#Level(GSat_u1) → http://org.semanticweb.owlapi/error#Error1(GSat_u1)
+http://www.daml.org/2002/04/classification/classification-ont#Level(GSat_u1) → http://www.daml.org/2002/04/classification/classification-ont#Marking(GSat_u1)
+http://www.daml.org/2002/04/classification/classification-ont#Marking(GSat_u2) & http://www.daml.org/2002/04/classification/classification-ont#caveat(GSat_u2,GSat_u1) → http://www.daml.org/2002/04/classification/classification-ont#Caveat(GSat_u1)
+http://www.daml.org/2002/04/classification/classification-ont#Marking(GSat_u2) & http://www.daml.org/2002/04/classification/classification-ont#level(GSat_u2,GSat_u1) → http://www.daml.org/2002/04/classification/classification-ont#Level(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#label(GSat_u2,GSat_u1) & http://www.daml.org/2002/04/classification/classification-ont#Level(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement(GSat_u2) & http://www.daml.org/2002/04/classification/classification-ont#classification(GSat_u2,GSat_u1) → http://www.daml.org/2002/04/classification/classification-ont#Marking(GSat_u1)
+=========================================

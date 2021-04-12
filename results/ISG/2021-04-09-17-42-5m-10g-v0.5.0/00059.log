@@ -1,0 +1,79 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 59; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 8:39:48 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/53 = 0.000%
+GSat discarded rules : 0/53 = 0.000%
+avr. 09, 2021 8:39:49 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 8:39:49 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 48 , 5
+nonFullTGDs	0		fullTGDs	48			newNonFullTGDs	5		newFullTGDs	0
+avr. 09, 2021 8:39:49 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 176 ms = 0.18 s
+avr. 09, 2021 8:39:49 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 5
+avr. 09, 2021 8:39:49 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 8:39:49 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 30
+avr. 09, 2021 8:39:49 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 8:39:49 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (48 dependecies)
+=========================================
+http://daml.umbc.edu/ontologies/ittalks/person#homePhone(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#lastName(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#lastName(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/address#country(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#pager(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://daml.umbc.edu/ontologies/ittalks/address#city(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/address#Address(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#firstName(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#fax(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#email(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/address#city(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#homeAddress(GSat_u2,GSat_u1) → http://daml.umbc.edu/ontologies/ittalks/address#Address(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#ends(GSat_u2,GSat_u1) → http://daml.umbc.edu/ontologies/ittalks/event#Instant(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#birthday(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#location(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#officePhone(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#firstName(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#cellPhone(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent(GSat_u1) → http://daml.umbc.edu/ontologies/ittalks/event#Event(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#title(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#homeAddress(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#officePhone(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#homePhone(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#begins(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#homepage(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#anyURI(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/address#state(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/address#Address(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#begins(GSat_u2,GSat_u1) → http://daml.umbc.edu/ontologies/ittalks/event#Instant(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/address#streetAddress(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/address#Address(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#pager(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/address#country(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/address#Address(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#birthday(GSat_u2,GSat_u1) → http://daml.umbc.edu/ontologies/ittalks/event#Instant(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/address#zip(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/address#Address(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#ends(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/address#roomNumber(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#location(GSat_u2,GSat_u1) → http://daml.umbc.edu/ontologies/ittalks/event#Place(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#officeAddress(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#cellPhone(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#fax(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/address#roomNumber(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/address#Address(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/address#state(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#email(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/address#streetAddress(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#title(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/address#zip(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#gender(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#officeAddress(GSat_u2,GSat_u1) → http://daml.umbc.edu/ontologies/ittalks/address#Address(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#homepage(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/person#Person(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/person#gender(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+=========================================

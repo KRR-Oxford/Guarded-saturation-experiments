@@ -1,0 +1,64 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 38; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 8:54:45 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/35 = 0.000%
+GSat discarded rules : 0/35 = 0.000%
+avr. 09, 2021 8:54:45 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 8:54:45 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 32 , 3
+nonFullTGDs	0		fullTGDs	32			newNonFullTGDs	3		newFullTGDs	0
+avr. 09, 2021 8:54:45 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 164 ms = 0.16 s
+avr. 09, 2021 8:54:45 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 0
+avr. 09, 2021 8:54:45 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 8:54:45 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 1 , 6
+avr. 09, 2021 8:54:45 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 1
+avr. 09, 2021 8:54:45 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (33 dependecies)
+=========================================
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#TopicalTrust(GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trustedAgent(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust6(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust4(GSat_u2,GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust10(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trustsRegarding(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust0(GSat_u2,GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust5(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trustedAgent(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#TopicalTrust(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust5(GSat_u2,GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trustedPerson(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trustedAgent(GSat_u1,GSat_u2)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust7(GSat_u2,GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust1(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust3(GSat_u2,GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust8(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trustedPerson(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#TopicalTrust(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust7(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trustValue(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#TopicalTrust(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust9(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust8(GSat_u2,GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust0(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trustedPerson(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Person(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust1(GSat_u2,GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trustsRegarding(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#TopicalTrust(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trustSubject(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#TopicalTrust(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust3(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust9(GSat_u2,GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust2(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust10(GSat_u2,GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust4(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust2(GSat_u2,GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___trust.mindswap.org_ont_trust.owl%23.txt#trust6(GSat_u2,GSat_u1) → http://xmlns.com/foaf/0.1/Agent(GSat_u1)
+=========================================

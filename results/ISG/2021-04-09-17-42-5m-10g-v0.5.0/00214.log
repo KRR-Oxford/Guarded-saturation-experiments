@@ -1,0 +1,53 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 48; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 9:04:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/33 = 0.000%
+GSat discarded rules : 0/33 = 0.000%
+avr. 09, 2021 9:04:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 9:04:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 22 , 11
+nonFullTGDs	0		fullTGDs	22			newNonFullTGDs	11		newFullTGDs	0
+avr. 09, 2021 9:04:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 181 ms = 0.18 s
+avr. 09, 2021 9:04:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 17
+avr. 09, 2021 9:04:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 9:04:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 148
+avr. 09, 2021 9:04:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 9:04:27 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (22 dependecies)
+=========================================
+http://www.daml.org/2001/10/agenda/agenda-ont#theme(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/agenda/agenda-ont#Block(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#Break(GSat_u2) & http://www.daml.org/2001/10/agenda/agenda-ont#theme(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#email(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/agenda/agenda-ont#Speaker(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#Meeting(GSat_u2) & http://www.daml.org/2001/10/agenda/agenda-ont#location(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#Meeting(GSat_u2) & http://www.daml.org/2001/10/agenda/agenda-ont#name(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#organization(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/agenda/agenda-ont#Speaker(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#start(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/agenda/agenda-ont#Day(GSat_u2) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#SimpleAgendaItem(GSat_u1) → http://www.daml.org/2001/10/agenda/agenda-ont#AgendaItem(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#day(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/agenda/agenda-ont#Meeting(GSat_u2) → http://www.daml.org/2001/10/agenda/agenda-ont#Day(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#Day(GSat_u1) → http://www.daml.org/2001/10/agenda/agenda-ont#Block(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://www.daml.org/2001/10/agenda/agenda-ont#duration(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/agenda/agenda-ont#SimpleAgendaItem(GSat_u2) → http://www.w3.org/2001/XMLSchema#timeDuration(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#speaker(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/agenda/agenda-ont#Talk(GSat_u2) → http://www.daml.org/2001/10/agenda/agenda-ont#Speaker(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#Block(GSat_u1) → http://www.daml.org/2001/10/agenda/agenda-ont#AgendaItem(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#Block(GSat_u2) & http://www.daml.org/2001/10/agenda/agenda-ont#items(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#name(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/agenda/agenda-ont#Speaker(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#Talk(GSat_u2) & http://www.daml.org/2001/10/agenda/agenda-ont#uri(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#uriReference(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#Break(GSat_u1) → http://www.daml.org/2001/10/agenda/agenda-ont#SimpleAgendaItem(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#Talk(GSat_u1) → http://www.daml.org/2001/10/agenda/agenda-ont#SimpleAgendaItem(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#homePage(GSat_u2,GSat_u1) & http://www.daml.org/2001/10/agenda/agenda-ont#Speaker(GSat_u2) → http://www.w3.org/2001/XMLSchema#uriReference(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#Meeting(GSat_u2) & http://www.daml.org/2001/10/agenda/agenda-ont#uri(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#anyURI(GSat_u1)
+http://www.daml.org/2001/10/agenda/agenda-ont#Talk(GSat_u2) & http://www.daml.org/2001/10/agenda/agenda-ont#title(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+=========================================

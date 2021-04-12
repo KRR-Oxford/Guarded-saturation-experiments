@@ -1,0 +1,550 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 528; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 202
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 8:55:30 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 3/516 = 0.581%
+GSat discarded rules : 3/516 = 0.581%
+avr. 09, 2021 8:55:30 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 8:55:30 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 392 , 108
+nonFullTGDs	0		fullTGDs	392			newNonFullTGDs	108		newFullTGDs	0
+nonFullTGDs	94		fullTGDs	392			newNonFullTGDs	105		newFullTGDs	10
+nonFullTGDs	180		fullTGDs	392			newNonFullTGDs	109		newFullTGDs	53
+nonFullTGDs	270		fullTGDs	392			newNonFullTGDs	99		newFullTGDs	62
+nonFullTGDs	360		fullTGDs	392			newNonFullTGDs	101		newFullTGDs	68
+nonFullTGDs	456		fullTGDs	392			newNonFullTGDs	93		newFullTGDs	70
+nonFullTGDs	542		fullTGDs	392			newNonFullTGDs	88		newFullTGDs	83
+nonFullTGDs	626		fullTGDs	392			newNonFullTGDs	77		newFullTGDs	87
+nonFullTGDs	704		fullTGDs	392			newNonFullTGDs	63		newFullTGDs	81
+nonFullTGDs	788		fullTGDs	392			newNonFullTGDs	53		newFullTGDs	101
+nonFullTGDs	870		fullTGDs	392			newNonFullTGDs	60		newFullTGDs	110
+nonFullTGDs	958		fullTGDs	392			newNonFullTGDs	55		newFullTGDs	131
+nonFullTGDs	1029		fullTGDs	392			newNonFullTGDs	24		newFullTGDs	129
+nonFullTGDs	1114		fullTGDs	392			newNonFullTGDs	26		newFullTGDs	143
+nonFullTGDs	1158		fullTGDs	418			newNonFullTGDs	0		newFullTGDs	87
+avr. 09, 2021 8:55:35 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 4708 ms = 4.71 s
+avr. 09, 2021 8:55:35 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 26358
+avr. 09, 2021 8:55:35 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 8:55:35 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 123722 , 99640
+avr. 09, 2021 8:55:35 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 113
+avr. 09, 2021 8:55:35 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (505 dependecies)
+=========================================
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aromatic(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophilic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophilic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Small(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Tiny(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#EmptyList(GSat_u1) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#OWLList(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophilic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#isPartOfNaryRelation(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#isPartOfPattern(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SideChainStructure(GSat_u1) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#ValuePartition(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Negative(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Negative(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Positive(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophilic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#OWLList(GSat_u2) & http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasNext(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#OWLList(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Positive(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u1,GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Tiny(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Small(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophilic(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobicity(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Small(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#isPartOfPattern(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aromatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Tiny(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Small(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Charge(GSat_u1) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#ValuePartition(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Non-Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Size(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasListProperty(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#OWLList(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasBeenClassified(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#boolean(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SideChainStructure(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Small(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aromatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Positive(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Small(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Size(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Negative(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Positive(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Charge(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Tiny(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Negative(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasRest(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#OWLList(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophilic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Negative(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Charge(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobicity(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasNext(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasRest(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Tiny(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Size(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasContents(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasListProperty(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Tiny(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Size(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Positive(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Non-Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophilic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophilic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Non-Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophilic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Size(GSat_u1) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#ValuePartition(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobicity(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Non-Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Non-Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Tiny(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polarity(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Positive(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Charge(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Non-Polar(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polarity(GSat_u1)
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#isPartOfEnumeration(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#isPartOfPattern(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophilic(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Non-Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasContents(GSat_u1,GSat_u2) & http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#EmptyList(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Positive(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aromatic(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SideChainStructure(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophilic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Non-Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasHydrophobicity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Negative(GSat_u1)
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasRest(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasListProperty(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#I(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Hydrophobicity(GSat_u1) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#ValuePartition(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u1,GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aromatic(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Small(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Charge(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Small(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Non-Polar(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polar(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#H(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Non-Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#isPartOfValuePartition(GSat_u1,GSat_u2) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#isPartOfPattern(GSat_u1,GSat_u2)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Non-Polar(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SpecificAminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AromaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aromatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#S(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#A(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#E(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#M(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#N(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u1,GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aliphatic(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AliphaticAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#TinyPolarAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#NegativeChargedAminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#SideChainStructure(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasCharge(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Neutral(GSat_u1)
+http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#hasNext(GSat_u1,GSat_u2) & http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#EmptyList(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#PositiveChargedAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasPolarity(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polarity(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#V(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Small(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#D(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#R(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#F(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#K(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Polarity(GSat_u1) → http://www.co-ode.org/ontologies/meta/2005/06/15/meta.owl#ValuePartition(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#T(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#G(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSize(GSat_u2,GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Y(GSat_u2) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Large(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#P(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#C(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#LargeAliphaticAminoAcid(GSat_u1) → ⊥
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#L(GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#AminoAcid(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u2) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#hasSideChainStructure(GSat_u2,GSat_u1) → http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Aromatic(GSat_u1)
+http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#Q(GSat_u1) & http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl#W(GSat_u1) → ⊥
+=========================================

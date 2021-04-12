@@ -1,0 +1,52 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 31; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 1
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 8:40:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/22 = 0.000%
+GSat discarded rules : 0/22 = 0.000%
+avr. 09, 2021 8:40:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 8:40:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 21 , 1
+nonFullTGDs	0		fullTGDs	21			newNonFullTGDs	1		newFullTGDs	0
+avr. 09, 2021 8:40:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 167 ms = 0.17 s
+avr. 09, 2021 8:40:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 1
+avr. 09, 2021 8:40:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 8:40:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 2
+avr. 09, 2021 8:40:27 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 8:40:27 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (21 dependecies)
+=========================================
+http://ebiquity.umbc.edu/ontology/conference.owl#registrationDueOn(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#endDate(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/conference.owl#Conference(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#paperDueOn(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/conference.owl#Conference(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#location(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#uri(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/conference.owl#Conference(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#abstractDueOn(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/conference.owl#Conference(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#registrationDueOn(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/conference.owl#Conference(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#keyword(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#location(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/conference.owl#Conference(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#uri(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#anyURI(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#endDate(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#startDate(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/conference.owl#Conference(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#keyword(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/conference.owl#Conference(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#description(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/conference.owl#Conference(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://ebiquity.umbc.edu/ontology/conference.owl#abstractDueOn(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#paperDueOn(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#description(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#title(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#startDate(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://ebiquity.umbc.edu/ontology/conference.owl#title(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/conference.owl#Conference(GSat_u1)
+=========================================

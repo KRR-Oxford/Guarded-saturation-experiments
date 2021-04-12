@@ -1,0 +1,85 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 64; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 5
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 09, 2021 8:55:07 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat discarded rules : 0/55 = 0.000%
+GSat discarded rules : 0/55 = 0.000%
+avr. 09, 2021 8:55:07 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumption method : tree_atom
+avr. 09, 2021 8:55:08 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: # initial TGDs: 55 , 0
+avr. 09, 2021 8:55:08 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: GSat total time : 141 ms = 0.14 s
+avr. 09, 2021 8:55:08 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Subsumed elements : 0
+avr. 09, 2021 8:55:08 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Filter discarded elements : 0
+avr. 09, 2021 8:55:08 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 09, 2021 8:55:08 PM uk.ac.ox.cs.gsat.GSat runGSat
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 09, 2021 8:55:08 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (55 dependecies)
+=========================================
+http://www.aktors.org/ontology/support#ends-at-time-point(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Time-Interval(GSat_u1)
+http://www.aktors.org/ontology/support#Quantity(GSat_u1) → http://www.aktors.org/ontology/support#Intangible-Thing(GSat_u1)
+http://www.aktors.org/ontology/support#Physical-Quantity(GSat_u1) → http://www.aktors.org/ontology/support#Quantity(GSat_u1)
+http://www.aktors.org/ontology/support#has-variant-name(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.aktors.org/ontology/support#has-unit-of-measure(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Physical-Quantity(GSat_u1)
+http://www.aktors.org/ontology/support#has-time-interval(GSat_u2,GSat_u1) → http://www.aktors.org/ontology/support#Time-Interval(GSat_u1)
+http://www.aktors.org/ontology/support#hour-of(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#nonNegativeInteger(GSat_u1)
+http://www.aktors.org/ontology/support#Tangible-Thing(GSat_u1) → http://www.aktors.org/ontology/support#Temporal-Thing(GSat_u1)
+http://www.aktors.org/ontology/support#hour-of(GSat_u1,GSat_u2) & http://www.aktors.org/ontology/support#Calendar-Date(GSat_u1) → ⊥
+http://www.aktors.org/ontology/support#second-of(GSat_u1,GSat_u2) & http://www.aktors.org/ontology/support#Calendar-Date(GSat_u1) → ⊥
+http://www.aktors.org/ontology/support#Day(GSat_u1) → http://www.aktors.org/ontology/support#has-duration(GSat_u1,http://www.aktors.org/ontology/support#twentyfour-hour-duration)
+http://www.aktors.org/ontology/support#Time-Measure(GSat_u1) → http://www.aktors.org/ontology/support#Unit-Of-Measure(GSat_u1)
+http://www.aktors.org/ontology/support#Duration(GSat_u1) → http://www.aktors.org/ontology/support#Physical-Quantity(GSat_u1)
+http://www.aktors.org/ontology/support#in-timezone(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#integer(GSat_u1)
+http://www.aktors.org/ontology/support#has-variant-name(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Thing(GSat_u1)
+http://www.aktors.org/ontology/support#Calendar-Date(GSat_u1) & http://www.aktors.org/ontology/support#minute-of(GSat_u1,GSat_u2) → ⊥
+http://www.aktors.org/ontology/support#day-of(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#nonNegativeInteger(GSat_u1)
+http://www.aktors.org/ontology/support#year-of(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Time-Point(GSat_u1)
+http://www.w3.org/2002/07/owl#Nothing(GSat_u1) → ⊥
+http://www.aktors.org/ontology/support#Day(GSat_u1) → http://www.aktors.org/ontology/support#Time-Interval(GSat_u1)
+http://www.aktors.org/ontology/support#Month(GSat_u1) → http://www.aktors.org/ontology/support#Time-Interval(GSat_u1)
+http://www.aktors.org/ontology/support#begins-at-time-point(GSat_u2,GSat_u1) → http://www.aktors.org/ontology/support#Time-Point(GSat_u1)
+http://www.aktors.org/ontology/support#Duration(GSat_u2) & http://www.aktors.org/ontology/support#has-unit-of-measure(GSat_u2,GSat_u1) → http://www.aktors.org/ontology/support#Time-Measure(GSat_u1)
+http://www.aktors.org/ontology/support#month-of(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#nonNegativeInteger(GSat_u1)
+http://www.aktors.org/ontology/support#has-unit-of-measure(GSat_u2,GSat_u1) → http://www.aktors.org/ontology/support#Unit-Of-Measure(GSat_u1)
+http://www.aktors.org/ontology/support#Time-Position(GSat_u1) → http://www.aktors.org/ontology/support#Intangible-Thing(GSat_u1)
+http://www.aktors.org/ontology/support#day-of(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Time-Point(GSat_u1)
+http://www.aktors.org/ontology/support#Year(GSat_u1) → http://www.aktors.org/ontology/support#Time-Interval(GSat_u1)
+http://www.aktors.org/ontology/support#has-duration(GSat_u2,GSat_u1) → http://www.aktors.org/ontology/support#Duration(GSat_u1)
+http://www.aktors.org/ontology/support#has-magnitude(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Physical-Quantity(GSat_u1)
+http://www.aktors.org/ontology/support#Intangible-Thing(GSat_u1) → http://www.aktors.org/ontology/support#Thing(GSat_u1)
+http://www.aktors.org/ontology/support#has-pretty-name(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.aktors.org/ontology/support#year-of(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#nonNegativeInteger(GSat_u1)
+http://www.aktors.org/ontology/support#Calendar-Date(GSat_u1) → http://www.aktors.org/ontology/support#Time-Point(GSat_u1)
+http://www.aktors.org/ontology/support#has-duration(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Time-Interval(GSat_u1)
+http://www.aktors.org/ontology/support#has-pretty-name(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Thing(GSat_u1)
+http://www.aktors.org/ontology/support#second-of(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Time-Point(GSat_u1)
+http://www.aktors.org/ontology/support#Year(GSat_u1) → http://www.aktors.org/ontology/support#has-duration(GSat_u1,http://www.aktors.org/ontology/support#twelve-month-duration)
+http://www.aktors.org/ontology/support#begins-at-time-point(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Time-Interval(GSat_u1)
+http://www.aktors.org/ontology/support#ends-at-time-point(GSat_u2,GSat_u1) → http://www.aktors.org/ontology/support#Time-Point(GSat_u1)
+http://www.aktors.org/ontology/support#has-time-interval(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Temporal-Thing(GSat_u1)
+http://www.aktors.org/ontology/support#Week(GSat_u1) → http://www.aktors.org/ontology/support#Time-Interval(GSat_u1)
+http://www.aktors.org/ontology/support#Week(GSat_u1) → http://www.aktors.org/ontology/support#has-duration(GSat_u1,http://www.aktors.org/ontology/support#seven-day-duration)
+http://www.aktors.org/ontology/support#month-of(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Time-Point(GSat_u1)
+http://www.aktors.org/ontology/support#Unit-Of-Measure(GSat_u1) → http://www.aktors.org/ontology/support#Intangible-Thing(GSat_u1)
+http://www.aktors.org/ontology/support#hour-of(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Time-Point(GSat_u1)
+http://www.aktors.org/ontology/support#minute-of(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Time-Point(GSat_u1)
+http://www.aktors.org/ontology/support#Time-Interval(GSat_u1) → http://www.aktors.org/ontology/support#Time-Position(GSat_u1)
+http://www.aktors.org/ontology/support#Temporal-Thing(GSat_u1) → http://www.aktors.org/ontology/support#Thing(GSat_u1)
+http://www.aktors.org/ontology/support#Intangible-Thing(GSat_u1) & http://www.aktors.org/ontology/support#Tangible-Thing(GSat_u1) → ⊥
+http://www.aktors.org/ontology/support#Time-Point(GSat_u1) → http://www.aktors.org/ontology/support#Time-Position(GSat_u1)
+http://www.aktors.org/ontology/support#second-of(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#nonNegativeInteger(GSat_u1)
+http://www.aktors.org/ontology/support#in-timezone(GSat_u1,GSat_u2) → http://www.aktors.org/ontology/support#Time-Position(GSat_u1)
+http://www.aktors.org/ontology/support#has-magnitude(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#decimal(GSat_u1)
+http://www.aktors.org/ontology/support#minute-of(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#nonNegativeInteger(GSat_u1)
+=========================================
