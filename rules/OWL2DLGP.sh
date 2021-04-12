@@ -2,8 +2,10 @@
 
 set -e
 
-DIR=$1
+SCRIPT_DIR="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+DIR=$SCRIPT_DIR/$1
 OUTPUT=$DIR/"stats.csv"
+OWL2DLGP_JAR=$SCRIPT_DIR/../owl2dlgp/target/owl2dlgp-1.1.0-SNAPSHOT.jar
 CSV_SEP=","
 #200M
 MAXSIZE=200000000
@@ -25,7 +27,7 @@ do
     if [[ ! -e $DLGP_FILE ]];
     then
         echo "Generating "$DLGP_FILE
-        java -jar ../owl2dlgp/target/owl2dlgp-1.1.0-SNAPSHOT.jar -f $OWL_FILE -o $DLGP_FILE
+        java -jar $OWL2DLGP_JAR -f $OWL_FILE -o $DLGP_FILE
     fi
 
     echo "Reading "$DLGP_FILE
