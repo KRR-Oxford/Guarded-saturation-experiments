@@ -1,6 +1,6 @@
 # Experiments on Guarded Saturation
 
-The following assumes that its projects have been cloned at the root of the Guarded-saturation project.
+The following assumes that this project has been cloned at the root of the Guarded-saturation project.
 
 ## How to run an experiment
 
@@ -17,7 +17,7 @@ The following assumes that its projects have been cloned at the root of the Guar
 transformations,
 - `FTGD_NB` is the number of full TGDs in the input after HNF and VNF
 transformations,
-- `SUBSUMED` is the number of the subsumed TGD during the GSat process,
+- `SUBSUMED` is the number of the subsumed TGDs during the GSat process,
 - `NEW_FTGD_NB` is the number of derived full TGDs during the GSat process,
 - `NEW_NFTGD_NB` is the number of derived non full TGDs during the GSat
 process,
