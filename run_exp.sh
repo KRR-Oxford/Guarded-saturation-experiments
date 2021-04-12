@@ -5,7 +5,7 @@ set -e
 timeout=5m
 mem=10g
 sleep=5s
-version=0.5.0
+version=0.5.1
 date=`date +%Y-%m-%d-%H-%M`
 
 DIR=$1
