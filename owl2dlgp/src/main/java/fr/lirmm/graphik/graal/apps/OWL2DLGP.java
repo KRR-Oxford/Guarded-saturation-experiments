@@ -140,6 +140,9 @@ public class OWL2DLGP {
                 processRule(r);
             }
 
+            if (o instanceof Prefix)
+                writer.write(o);
+
             if (!(o instanceof Prefix)) {
                 writer.write(new Directive(Directive.Type.TOP, THING));
                 writer.write(new DefaultNegativeConstraint(new LinkedListAtomSet(NOTHING)));
