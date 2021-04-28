@@ -1,0 +1,78 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 48; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:41:08 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/48 = 0.000%
+SkSat discarded rules : 0/48 = 0.000%
+avr. 27, 2021 1:41:08 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:41:08 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 48 , 0
+avr. 27, 2021 1:41:08 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 134 ms = 0.13 s
+avr. 27, 2021 1:41:08 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:41:08 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:41:08 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 1:41:08 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:41:08 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (48 dependecies)
+=========================================
+icalfreebusy(SkSat_u2,SkSat_u1) → icalValue_PERIOD(SkSat_u1)
+icalcalscale(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icaltzoffsetto(SkSat_u1,SkSat_u2) → icalVtimezone(SkSat_u1)
+icalgeo(SkSat_u2,SkSat_u1) → icalList_of_Float(SkSat_u1)
+icalcompleted(SkSat_u1,SkSat_u2) → icalVtodo(SkSat_u1)
+icalresources(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icaluid(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalattendee(SkSat_u2,SkSat_u1) → icalValue_CAL-ADDRESS(SkSat_u1)
+icalrequestStatus(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icaltransp(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalcontact(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalrrule(SkSat_u2,SkSat_u1) → icalValue_RECUR(SkSat_u1)
+icalrecurrenceId(SkSat_u1,SkSat_u2) → icalDomainOf_rrule(SkSat_u1)
+icaldescription(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalprodid(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalpercentComplete(SkSat_u2,SkSat_u1) → xsdinteger(SkSat_u1)
+icaltzname(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icaldue(SkSat_u1,SkSat_u2) → icalVtodo(SkSat_u1)
+icalcreated(SkSat_u2,SkSat_u1) → icalValue_DATE-TIME(SkSat_u1)
+icalexdate(SkSat_u1,SkSat_u2) → icalDomainOf_rrule(SkSat_u1)
+icalstatus(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalcomment(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icaldtstamp(SkSat_u2,SkSat_u1) → icalValue_DATE-TIME(SkSat_u1)
+icallocation(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalversion(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalrepeat(SkSat_u1,SkSat_u2) → icalValarm(SkSat_u1)
+icalX-(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icaltransp(SkSat_u1,SkSat_u2) → icalVevent(SkSat_u1)
+icalduration(SkSat_u2,SkSat_u1) → icalValue_DURATION(SkSat_u1)
+icaltzoffsetto(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalcompleted(SkSat_u2,SkSat_u1) → icalValue_DATE-TIME(SkSat_u1)
+icalexrule(SkSat_u2,SkSat_u1) → icalValue_RECUR(SkSat_u1)
+icalaction(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icaltzname(SkSat_u1,SkSat_u2) → icalVtimezone(SkSat_u1)
+icaltzid(SkSat_u1,SkSat_u2) → icalVtimezone(SkSat_u1)
+icalpriority(SkSat_u2,SkSat_u1) → xsdinteger(SkSat_u1)
+icaltzoffsetfrom(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalsequence(SkSat_u2,SkSat_u1) → xsdinteger(SkSat_u1)
+icalrepeat(SkSat_u2,SkSat_u1) → xsdinteger(SkSat_u1)
+icalorganizer(SkSat_u2,SkSat_u1) → icalValue_CAL-ADDRESS(SkSat_u1)
+icalpercentComplete(SkSat_u1,SkSat_u2) → icalVtodo(SkSat_u1)
+icallastModified(SkSat_u2,SkSat_u1) → icalValue_DATE-TIME(SkSat_u1)
+icalrelatedTo(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icaltzid(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalcategories(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalsummary(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalmethod(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+icalclass(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+=========================================

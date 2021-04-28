@@ -1,0 +1,63 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 34; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:00:25 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/34 = 0.000%
+SkSat discarded rules : 0/34 = 0.000%
+avr. 27, 2021 1:00:25 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:00:25 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 32 , 2
+nonFullTGDs	0		fullTGDs	32			newNonFullTGDs	2		newFullTGDs	0
+avr. 27, 2021 1:00:25 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 154 ms = 0.15 s
+avr. 27, 2021 1:00:25 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:00:25 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:00:25 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 2
+avr. 27, 2021 1:00:25 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:00:25 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (32 dependecies)
+=========================================
+modelhasCountry(SkSat_u1,SkSat_u2) → modelDeveloper(SkSat_u1)
+modelinfoPage(SkSat_u2,SkSat_u1) → xsdanyURI(SkSat_u1)
+modelhasDeveloper(SkSat_u1,SkSat_u2) → modelModel(SkSat_u1)
+modelhasIntegrationScheme(SkSat_u2,SkSat_u1) → modelIntegration_Scheme(SkSat_u1)
+modelNumerical(SkSat_u1) → modelMathematical(SkSat_u1)
+modelhasDeveloper(SkSat_u2,SkSat_u1) & modelFEM2D(SkSat_u2) → modelIndividual(SkSat_u1)
+modelhasDomain(SkSat_u2,SkSat_u1) → modelDomain(SkSat_u1)
+modelFEM2D(SkSat_u1) → modelhasAvailability(SkSat_u1,http://loki.cae.drexel.edu/~wbs/ontology/2004/08/model#Restrictricted)
+modelModelingSystems(SkSat_u1) → modelNumerical(SkSat_u1)
+modelhasDomain(SkSat_u1,SkSat_u2) → modelModel(SkSat_u1)
+modelUniversity(SkSat_u1) → modelOrganization(SkSat_u1)
+modelFEM2D(SkSat_u1) → modelhasIntegrationMethod(SkSat_u1,http://loki.cae.drexel.edu/~wbs/ontology/2004/08/model#Finite_Element)
+modelOrganization(SkSat_u1) → modelDeveloper(SkSat_u1)
+modelFEM2D(SkSat_u1) → modelhasModelDimension(SkSat_u1,http://loki.cae.drexel.edu/~wbs/ontology/2004/08/model#Two_Dimensional)
+modelhasModel(SkSat_u1,SkSat_u2) → modelModelingSystems(SkSat_u1)
+modelhasModelDimension(SkSat_u1,SkSat_u2) → modelModel(SkSat_u1)
+modelModel(SkSat_u1) → modelNumerical(SkSat_u1)
+modelCompany(SkSat_u1) → modelOrganization(SkSat_u1)
+modelIndividual(SkSat_u1) → modelDeveloper(SkSat_u1)
+modelhasCountry(SkSat_u2,SkSat_u1) → modelCountry(SkSat_u1)
+modelhasModel(SkSat_u2,SkSat_u1) → modelModel(SkSat_u1)
+modelhasAvailability(SkSat_u1,SkSat_u2) → modelModel(SkSat_u1)
+modelhasAvailability(SkSat_u2,SkSat_u1) → modelAvailability(SkSat_u1)
+modelFEM2D(SkSat_u1) → modelModel(SkSat_u1)
+modelhasDeveloper(SkSat_u2,SkSat_u1) → modelDeveloper(SkSat_u1)
+modelhasIntegrationMethod(SkSat_u1,SkSat_u2) → modelModel(SkSat_u1)
+modelInstittue(SkSat_u1) → modelOrganization(SkSat_u1)
+modelGovernment(SkSat_u1) → modelOrganization(SkSat_u1)
+modelMathematical(SkSat_u1) → modelModels(SkSat_u1)
+modelhasIntegrationScheme(SkSat_u1,SkSat_u2) → modelModel(SkSat_u1)
+modelhasIntegrationMethod(SkSat_u2,SkSat_u1) → modelIntegration_Method(SkSat_u1)
+modelhasModelDimension(SkSat_u2,SkSat_u1) → modelModel_Dimension(SkSat_u1)
+=========================================

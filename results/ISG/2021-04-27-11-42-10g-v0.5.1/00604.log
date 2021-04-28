@@ -1,0 +1,62 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 47; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 8:33:44 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 15/47 = 31.915%
+SkSat discarded rules : 15/47 = 31.915%
+avr. 27, 2021 8:33:44 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 8:33:44 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 32 , 0
+avr. 27, 2021 8:33:44 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 114 ms = 0.11 s
+avr. 27, 2021 8:33:44 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 8:33:44 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 8:33:44 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 8:33:44 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 8:33:44 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (32 dependecies)
+=========================================
+roproper_part_of(SkSat_u2,SkSat_u1) → rohas_proper_part(SkSat_u1,SkSat_u2)
+rohas_integral_part(SkSat_u1,SkSat_u2) → rohas_part(SkSat_u1,SkSat_u2)
+roderives_from(SkSat_u2,SkSat_u1) → roderived_into(SkSat_u1,SkSat_u2)
+rohas_integral_part(SkSat_u2,SkSat_u1) → rointegral_part_of(SkSat_u1,SkSat_u2)
+rohas_agent(SkSat_u1,SkSat_u2) → rohas_participant(SkSat_u1,SkSat_u2)
+rohas_improper_part(SkSat_u2,SkSat_u1) → roimproper_part_of(SkSat_u1,SkSat_u2)
+rohas_improper_part(SkSat_u1,SkSat_u2) → oboInOwlObsoleteProperty(SkSat_u1,SkSat_u2)
+roimproper_part_of(SkSat_u1,SkSat_u2) → oboInOwlObsoleteProperty(SkSat_u1,SkSat_u2)
+roproper_part_of(SkSat_u1,SkSat_u2) → ropart_of(SkSat_u1,SkSat_u2)
+roimproper_part_of(SkSat_u1,SkSat_u2) → ropart_of(SkSat_u1,SkSat_u2)
+rolocation_of(SkSat_u2,SkSat_u1) → rolocated_in(SkSat_u1,SkSat_u2)
+rohas_proper_part(SkSat_u1,SkSat_u2) → rohas_part(SkSat_u1,SkSat_u2)
+rointegral_part_of(SkSat_u1,SkSat_u2) → ropart_of(SkSat_u1,SkSat_u2)
+ropart_of(SkSat_u2,SkSat_u1) → rohas_part(SkSat_u1,SkSat_u2)
+roagent_in(SkSat_u1,SkSat_u2) → roparticipates_in(SkSat_u1,SkSat_u2)
+roparticipates_in(SkSat_u2,SkSat_u1) → rohas_participant(SkSat_u1,SkSat_u2)
+roprecedes(SkSat_u2,SkSat_u1) → ropreceded_by(SkSat_u1,SkSat_u2)
+rotransformed_into(SkSat_u1,SkSat_u2) → oboInOwlObsoleteProperty(SkSat_u1,SkSat_u2)
+roderived_into(SkSat_u2,SkSat_u1) → roderives_from(SkSat_u1,SkSat_u2)
+rohas_proper_part(SkSat_u2,SkSat_u1) → roproper_part_of(SkSat_u1,SkSat_u2)
+roagent_in(SkSat_u2,SkSat_u1) → rohas_agent(SkSat_u1,SkSat_u2)
+rolocated_in(SkSat_u2,SkSat_u1) → rolocation_of(SkSat_u1,SkSat_u2)
+rorelationship(SkSat_u1,SkSat_u2) → oboInOwlObsoleteProperty(SkSat_u1,SkSat_u2)
+rointegral_part_of(SkSat_u2,SkSat_u1) → rohas_integral_part(SkSat_u1,SkSat_u2)
+rocontained_in(SkSat_u2,SkSat_u1) → rocontains(SkSat_u1,SkSat_u2)
+rohas_agent(SkSat_u2,SkSat_u1) → roagent_in(SkSat_u1,SkSat_u2)
+roimproper_part_of(SkSat_u2,SkSat_u1) → rohas_improper_part(SkSat_u1,SkSat_u2)
+rohas_improper_part(SkSat_u1,SkSat_u2) → rohas_part(SkSat_u1,SkSat_u2)
+rohas_part(SkSat_u2,SkSat_u1) → ropart_of(SkSat_u1,SkSat_u2)
+rocontains(SkSat_u2,SkSat_u1) → rocontained_in(SkSat_u1,SkSat_u2)
+rohas_participant(SkSat_u2,SkSat_u1) → roparticipates_in(SkSat_u1,SkSat_u2)
+ropreceded_by(SkSat_u2,SkSat_u1) → roprecedes(SkSat_u1,SkSat_u2)
+=========================================

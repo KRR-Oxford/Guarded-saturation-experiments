@@ -1,0 +1,51 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 21; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 12:59:56 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/21 = 0.000%
+SkSat discarded rules : 0/21 = 0.000%
+avr. 27, 2021 12:59:56 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 12:59:57 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 21 , 0
+avr. 27, 2021 12:59:57 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 156 ms = 0.16 s
+avr. 27, 2021 12:59:57 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 12:59:57 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 12:59:57 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 12:59:57 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 12:59:57 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (21 dependecies)
+=========================================
+researchDataMining(SkSat_u1) → researchResearch(SkSat_u1)
+researchWebservices(SkSat_u1) → researchResearch(SkSat_u1)
+researchLanguagetechnology(SkSat_u1) → researchResearch(SkSat_u1)
+researchPervasivecomputing(SkSat_u1) → researchResearch(SkSat_u1)
+researchMultiAgentSystems(SkSat_u1) → researchResearch(SkSat_u1)
+projectrelatedResearchArea(SkSat_u2,SkSat_u1) → researchrelatedProject(SkSat_u1,SkSat_u2)
+researchNetworkingandsystems(SkSat_u1) → researchResearch(SkSat_u1)
+researchRFID(SkSat_u1) → researchResearch(SkSat_u1)
+researchKnowledgeRepresentationandReasoning(SkSat_u1) → researchResearch(SkSat_u1)
+researchContextAwareComputing(SkSat_u1) → researchResearch(SkSat_u1)
+researchMobileComputing(SkSat_u1) → researchResearch(SkSat_u1)
+researchMobileCommerce(SkSat_u1) → researchResearch(SkSat_u1)
+researchSemanticWeb(SkSat_u1) → researchResearch(SkSat_u1)
+researchSecurityTrustandPrivacy(SkSat_u1) → researchResearch(SkSat_u1)
+researchrelatedProject(SkSat_u2,SkSat_u1) → projectrelatedResearchArea(SkSat_u1,SkSat_u2)
+researchMiscellaneous(SkSat_u1) → researchResearch(SkSat_u1)
+researchecommerce(SkSat_u1) → researchResearch(SkSat_u1)
+researchrelatedProject(SkSat_u1,SkSat_u2) → researchResearch(SkSat_u1)
+researchHighperformancecomputing(SkSat_u1) → researchResearch(SkSat_u1)
+researchrelatedProject(SkSat_u2,SkSat_u1) → projectProject(SkSat_u1)
+researchWebbasedinformationsystems(SkSat_u1) → researchResearch(SkSat_u1)
+=========================================

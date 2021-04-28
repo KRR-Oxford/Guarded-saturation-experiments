@@ -1,0 +1,71 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 41; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:38:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/41 = 0.000%
+SkSat discarded rules : 0/41 = 0.000%
+avr. 27, 2021 1:38:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:38:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 41 , 0
+avr. 27, 2021 1:38:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 128 ms = 0.13 s
+avr. 27, 2021 1:38:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:38:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:38:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 1:38:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:38:18 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (41 dependecies)
+=========================================
+technicalhasSegment(SkSat_u2,SkSat_u1) → technicalsegmentOf(SkSat_u1,SkSat_u2)
+technicalImage(SkSat_u1) → foafImage(SkSat_u1)
+technicalMultimediaContent(SkSat_u1) → simpleABCActuality(SkSat_u1)
+technicalhasRegion(SkSat_u1,SkSat_u2) → technicalMultimediaContent(SkSat_u1)
+technicalsvgOutline(SkSat_u1,SkSat_u2) → technicalImagePart(SkSat_u1)
+technicaldepiction(SkSat_u1,SkSat_u2) → foafdepiction(SkSat_u1,SkSat_u2)
+technicalframeNumber(SkSat_u1,SkSat_u2) → technicalVideoFrame(SkSat_u1)
+technicalendFrame(SkSat_u1,SkSat_u2) → technicalVideoSegment(SkSat_u1)
+technicalVideoSegment(SkSat_u1) → technicalVideo(SkSat_u1)
+technicalhasTotalFrames(SkSat_u1,SkSat_u2) → technicalVideo(SkSat_u1)
+technicaldepiction(SkSat_u2,SkSat_u1) → technicaldepicts(SkSat_u1,SkSat_u2)
+technicalVideoFrame(SkSat_u1) → technicalMultimediaContent(SkSat_u1)
+technicalhasSegment(SkSat_u2,SkSat_u1) → technicalVideoSegment(SkSat_u1)
+technicalImage(SkSat_u1) → technicalMultimediaContent(SkSat_u1)
+technicalsegmentOf(SkSat_u2,SkSat_u1) → technicalhasSegment(SkSat_u1,SkSat_u2)
+technicalregionOf(SkSat_u1,SkSat_u2) → technicalImagePart(SkSat_u1)
+technicalsegmentOf(SkSat_u1,SkSat_u2) → technicalVideoSegment(SkSat_u1)
+technicalhasSegment(SkSat_u1,SkSat_u2) → technicalVideo(SkSat_u1)
+technicalregionOf(SkSat_u2,SkSat_u1) → technicalMultimediaContent(SkSat_u1)
+technicaldescriptor(SkSat_u1,SkSat_u2) → technicalMultimediaContent(SkSat_u1)
+technicalframeOf(SkSat_u2,SkSat_u1) → technicalVideo(SkSat_u1)
+technicalStillRegion(SkSat_u1) → technicalSegment(SkSat_u1)
+technicalhasRegion(SkSat_u2,SkSat_u1) → technicalregionOf(SkSat_u1,SkSat_u2)
+technicalImagePart(SkSat_u1) → technicalSegment(SkSat_u1)
+technicalSegment(SkSat_u1) → technicalMultimediaContent(SkSat_u1)
+technicalMovingRegion(SkSat_u1) → technicalSegment(SkSat_u1)
+technicalstartFrame(SkSat_u1,SkSat_u2) → technicalVideoSegment(SkSat_u1)
+technicalhasRegion(SkSat_u2,SkSat_u1) → technicalImagePart(SkSat_u1)
+technicalMosaic(SkSat_u1) → technicalStillRegion(SkSat_u1)
+technicaldepicts(SkSat_u1,SkSat_u2) → foafdepicts(SkSat_u1,SkSat_u2)
+technicalImageText(SkSat_u1) → technicalStillRegion(SkSat_u1)
+technicalMultimedia(SkSat_u1) → technicalMultimediaContent(SkSat_u1)
+technicaldepicts(SkSat_u2,SkSat_u1) → technicaldepiction(SkSat_u1,SkSat_u2)
+technicalframeOf(SkSat_u1,SkSat_u2) → technicalVideoFrame(SkSat_u1)
+technicalsegmentOf(SkSat_u2,SkSat_u1) → technicalVideo(SkSat_u1)
+technicaldepicts(SkSat_u1,SkSat_u2) → foafdepiction(SkSat_u1,SkSat_u2)
+technicalVideo(SkSat_u1) → technicalMultimediaContent(SkSat_u1)
+technicalVideoText(SkSat_u1) → technicalMovingRegion(SkSat_u1)
+technicalhasDurationSeconds(SkSat_u1,SkSat_u2) → technicalVideo(SkSat_u1)
+technicalVideoSegment(SkSat_u1) → technicalSegment(SkSat_u1)
+technicalregionOf(SkSat_u2,SkSat_u1) → technicalhasRegion(SkSat_u1,SkSat_u2)
+=========================================

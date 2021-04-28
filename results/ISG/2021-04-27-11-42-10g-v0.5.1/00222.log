@@ -1,0 +1,82 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 72; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:23:47 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/56 = 0.000%
+SkSat discarded rules : 0/56 = 0.000%
+avr. 27, 2021 1:23:47 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:23:47 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 51 , 5
+nonFullTGDs	0		fullTGDs	51			newNonFullTGDs	5		newFullTGDs	0
+avr. 27, 2021 1:23:47 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 178 ms = 0.18 s
+avr. 27, 2021 1:23:47 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 5
+avr. 27, 2021 1:23:47 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:23:47 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 10
+avr. 27, 2021 1:23:47 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:23:47 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (51 dependecies)
+=========================================
+agent-ontRunImmediately(SkSat_u1) → agent-ontAsynchronousMessage(SkSat_u1)
+agent-ontAgentType(SkSat_u2) & agent-ontsetupGUI(SkSat_u2,SkSat_u1) → agent-ontGUI(SkSat_u1)
+agent-ontagent(SkSat_u2,SkSat_u1) & agent-ontAgentInitializationRequest(SkSat_u2) → agent-ontAgent(SkSat_u1)
+agent-ontUser(SkSat_u2) & agent-ontagent(SkSat_u2,SkSat_u1) → agent-ontAgent(SkSat_u1)
+agent-ontparameters(SkSat_u2,SkSat_u1) & agent-ontAgent(SkSat_u2) → agent-ontParameters(SkSat_u1)
+agent-ontErrorMessage(SkSat_u1) → agent-ontReplyMessage(SkSat_u1)
+agent-ontclassPath(SkSat_u2,SkSat_u1) & agent-ontAgentType(SkSat_u2) → xsdstring(SkSat_u1)
+agent-ontAgentInitializationRequest(SkSat_u2) & agent-ontparameters(SkSat_u2,SkSat_u1) → agent-ontParameters(SkSat_u1)
+agent-onttype(SkSat_u2,SkSat_u1) & agent-ontAgent(SkSat_u2) → agent-ontAgentType(SkSat_u1)
+agent-ontclassName(SkSat_u2,SkSat_u1) & agent-ontDotNetPlugin(SkSat_u2) → xsdstring(SkSat_u1)
+agent-ontAgentInitializationRequest(SkSat_u2) & agent-ontbasePublicationDirectory(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+agent-ontJavaPlugin(SkSat_u1) → agent-ontPlugin(SkSat_u1)
+agent-ontclassName(SkSat_u2,SkSat_u1) & agent-ontJavaPlugin(SkSat_u2) → xsdstring(SkSat_u1)
+agent-ontdescription(SkSat_u2,SkSat_u1) & agent-ontAgent(SkSat_u2) → xsdstring(SkSat_u1)
+agent-ontRequestMessage(SkSat_u1) → agent-ontMessage(SkSat_u1)
+agent-ontidentity(SkSat_u2,SkSat_u1) & agent-ontAgent(SkSat_u2) → agent-ontIdentity(SkSat_u1)
+agent-ontAgentAliveMessage(SkSat_u2) & agent-ontagent(SkSat_u2,SkSat_u1) → agent-ontAgent(SkSat_u1)
+agent-ontdescription(SkSat_u2,SkSat_u1) & agent-ontAgentType(SkSat_u2) → xsdstring(SkSat_u1)
+agent-ontlastPublicationTime(SkSat_u2,SkSat_u1) & agent-ontAgentStatusReply(SkSat_u2) → xsdtimeInstant(SkSat_u1)
+agent-ontstartTime(SkSat_u2,SkSat_u1) & agent-ontAgentStatusReply(SkSat_u2) → xsdtimeInstant(SkSat_u1)
+agent-ontpassword(SkSat_u2,SkSat_u1) & agent-ontPKCS12Identity(SkSat_u2) → xsdstring(SkSat_u1)
+agent-ontGUI(SkSat_u1) → agent-ontPlugin(SkSat_u1)
+agent-ontAgency(SkSat_u2) & agent-ontbasePublicationDirectory(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+agent-ontPKCS12Identity(SkSat_u2) & agent-ontpkcs12File(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+agent-ontReplyMessage(SkSat_u1) → agent-ontMessage(SkSat_u1)
+agent-ontUser(SkSat_u2) & agent-ontid(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+agent-ontclassName(SkSat_u2,SkSat_u1) & agent-ontAgentType(SkSat_u2) → xsdstring(SkSat_u1)
+agent-ontagent(SkSat_u2,SkSat_u1) & agent-ontAgentStatusReply(SkSat_u2) → agent-ontAgent(SkSat_u1)
+agent-ontbasePublicationURI(SkSat_u2,SkSat_u1) & agent-ontAgentInitializationRequest(SkSat_u2) → xsduriReference(SkSat_u1)
+agent-ontAgency(SkSat_u2) & agent-ontagentType(SkSat_u2,SkSat_u1) → agent-ontAgentType(SkSat_u1)
+agent-ontAgentType(SkSat_u2) & agent-ontparametersClass(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+agent-ontAck(SkSat_u1) → agent-ontReplyMessage(SkSat_u1)
+agent-ontdynamicLinkLibrary(SkSat_u2,SkSat_u1) & agent-ontDotNetPlugin(SkSat_u2) → xsdstring(SkSat_u1)
+agent-ontAgentStatusRequest(SkSat_u1) → agent-ontRequestMessage(SkSat_u1)
+agent-ontAgentInitializationRequest(SkSat_u2) & agent-ontagentType(SkSat_u2,SkSat_u1) → agent-ontAgentType(SkSat_u1)
+agent-ontAgency(SkSat_u2) & agent-ontbasePublicationURI(SkSat_u2,SkSat_u1) → xsduriReference(SkSat_u1)
+agent-ontcreationTime(SkSat_u2,SkSat_u1) & agent-ontAgent(SkSat_u2) → xsdtimeInstant(SkSat_u1)
+agent-ontAgentAliveMessage(SkSat_u1) → agent-ontMessage(SkSat_u1)
+agent-ontAgency(SkSat_u2) & agent-ontuser(SkSat_u2,SkSat_u1) → agent-ontUser(SkSat_u1)
+agent-ontdescription(SkSat_u2,SkSat_u1) & agent-ontAgentInitializationRequest(SkSat_u2) → xsdstring(SkSat_u1)
+agent-ontErrorMessage(SkSat_u2) & agent-onterror(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+agent-ontShutdownMessage(SkSat_u1) → agent-ontAsynchronousMessage(SkSat_u1)
+agent-ontDotNetPlugin(SkSat_u1) → agent-ontPlugin(SkSat_u1)
+agent-ontinReplyTo(SkSat_u2,SkSat_u1) & agent-ontReplyMessage(SkSat_u2) → xsdstring(SkSat_u1)
+agent-ontAgentStatusReply(SkSat_u1) → agent-ontReplyMessage(SkSat_u1)
+agent-ontPKCS12Identity(SkSat_u1) → agent-ontIdentity(SkSat_u1)
+agent-ontmessagesReceived(SkSat_u2,SkSat_u1) & agent-ontAgentStatusReply(SkSat_u2) → xsdlong(SkSat_u1)
+agent-ontAgentInitializationRequest(SkSat_u1) → agent-ontRequestMessage(SkSat_u1)
+agent-ontAsynchronousMessage(SkSat_u1) → agent-ontMessage(SkSat_u1)
+agent-onttransactionID(SkSat_u2,SkSat_u1) & agent-ontMessage(SkSat_u2) → xsdstring(SkSat_u1)
+agent-ontAgentType(SkSat_u2) & agent-ontstatusGUI(SkSat_u2,SkSat_u1) → agent-ontGUI(SkSat_u1)
+=========================================

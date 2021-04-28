@@ -1,0 +1,114 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 84; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:12:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/84 = 0.000%
+SkSat discarded rules : 0/84 = 0.000%
+avr. 27, 2021 1:12:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:12:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 84 , 0
+avr. 27, 2021 1:12:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 148 ms = 0.15 s
+avr. 27, 2021 1:12:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:12:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:12:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 1:12:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:12:09 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (84 dependecies)
+=========================================
+Rocket(SkSat_u1) → SUMOWeapon(SkSat_u1)
+Subway(SkSat_u1) → SUMOHole(SkSat_u1)
+SuicideBombing(SkSat_u1) → Bombing(SkSat_u1)
+EntertainmentBuilding(SkSat_u1) → SUMOBuilding(SkSat_u1)
+yearOfEvent(SkSat_u1,SkSat_u2) → SUMOProcess(SkSat_u1)
+yearOfEvent(SkSat_u2,SkSat_u1) → SUMOInteger(SkSat_u1)
+StoreOwner(SkSat_u1) → SUMOOccupationalRole(SkSat_u1)
+Vandalism(SkSat_u1) → SUMODestruction(SkSat_u1)
+OfficeBuilding(SkSat_u1) → SUMOBuilding(SkSat_u1)
+PoliticalFigure(SkSat_u1) → Celebrity(SkSat_u1)
+Garage(SkSat_u1) → SUMOBuilding(SkSat_u1)
+Stoning(SkSat_u1) → SUMOViolentContest(SkSat_u1)
+Lynching(SkSat_u1) → SUMOKilling(SkSat_u1)
+agentCountInAttack(SkSat_u1,SkSat_u2) → SUMODestruction(SkSat_u1)
+Marketplace(SkSat_u1) → SUMOGeographicArea(SkSat_u1)
+HostageTaking(SkSat_u1) → SUMOUnilateralGetting(SkSat_u1)
+CarBombing(SkSat_u1) → Bombing(SkSat_u1)
+Mortar(SkSat_u1) → SUMOWeapon(SkSat_u1)
+Bombing(SkSat_u1) → SUMODestruction(SkSat_u1)
+BusStop(SkSat_u1) → SUMOGeographicArea(SkSat_u1)
+dayOfEvent(SkSat_u1,SkSat_u2) → SUMOProcess(SkSat_u1)
+TouristSite(SkSat_u1) → SUMOGeographicArea(SkSat_u1)
+LetterBombAttack(SkSat_u1) → Bombing(SkSat_u1)
+NationalGovernment(SkSat_u1) → SUMOGovernment(SkSat_u1)
+victimCasualtyCount(SkSat_u2,SkSat_u1) → SUMONonNegativeInteger(SkSat_u1)
+ChemicalAttack(SkSat_u1) → SUMOViolentContest(SkSat_u1)
+RocketMissileAttack(SkSat_u1) → Bombing(SkSat_u1)
+dayOfEvent(SkSat_u2,SkSat_u1) → SUMOPositiveInteger(SkSat_u1)
+KnifeAttack(SkSat_u1) → SUMOViolentContest(SkSat_u1)
+PlaceOfWorship(SkSat_u1) → SUMOBuilding(SkSat_u1)
+Kidnapping(SkSat_u1) → SUMOUnilateralGetting(SkSat_u1)
+targetTypeInAttack(SkSat_u1,SkSat_u2) → SUMODestruction(SkSat_u1)
+PeaceKeepingMission(SkSat_u1) → ModernMilitaryOrganization(SkSat_u1)
+PolicePerson(SkSat_u1) → GovernmentPerson(SkSat_u1)
+targetTypeInAttack(SkSat_u2,SkSat_u1) → SUMOObject(SkSat_u1)
+monthOfEvent(SkSat_u1,SkSat_u2) → SUMOProcess(SkSat_u1)
+BusinessPerson(SkSat_u1) → SUMOOccupationalRole(SkSat_u1)
+HandgrenadeAttack(SkSat_u1) → Bombing(SkSat_u1)
+victimInjuryCount(SkSat_u1,SkSat_u2) → SUMODestruction(SkSat_u1)
+SuicideBombing(SkSat_u1) → SUMOKilling(SkSat_u1)
+Checkpoint(SkSat_u1) → SUMOGeographicArea(SkSat_u1)
+ReligiousFigure(SkSat_u1) → Celebrity(SkSat_u1)
+victimInjuryCount(SkSat_u2,SkSat_u1) → SUMONonNegativeInteger(SkSat_u1)
+PoliceFacility(SkSat_u1) → SUMOBuilding(SkSat_u1)
+CargoVehicle(SkSat_u1) → Vehicle(SkSat_u1)
+MilitaryPerson(SkSat_u1) → SUMOOccupationalRole(SkSat_u1)
+monthOfEvent(SkSat_u2,SkSat_u1) → SUMOMonth(SkSat_u1)
+Factory(SkSat_u1) → SUMOBuilding(SkSat_u1)
+MilitaryOrganization(SkSat_u1) → NationalGovernment(SkSat_u1)
+GovernmentPerson(SkSat_u1) → SUMOOccupationalRole(SkSat_u1)
+Student(SkSat_u1) → SUMOSocialRole(SkSat_u1)
+GovernmentBuilding(SkSat_u1) → SUMOBuilding(SkSat_u1)
+agentCountInAttack(SkSat_u2,SkSat_u1) → SUMONonNegativeInteger(SkSat_u1)
+Diplomat(SkSat_u1) → GovernmentPerson(SkSat_u1)
+LandVehicle(SkSat_u1) → Vehicle(SkSat_u1)
+Militant(SkSat_u1) → Civilian(SkSat_u1)
+Embassy(SkSat_u1) → GovernmentBuilding(SkSat_u1)
+Convoy(SkSat_u1) → SUMOGroup(SkSat_u1)
+HandGrenade(SkSat_u1) → Bomb(SkSat_u1)
+victimDeathCount(SkSat_u2,SkSat_u1) → SUMONonNegativeInteger(SkSat_u1)
+victimCasualtyCount(SkSat_u1,SkSat_u2) → SUMODestruction(SkSat_u1)
+Knife(SkSat_u1) → SUMODevice(SkSat_u1)
+Civilian(SkSat_u1) → SUMOOccupationalRole(SkSat_u1)
+Store(SkSat_u1) → SUMOBuilding(SkSat_u1)
+Road(SkSat_u1) → SUMORegion(SkSat_u1)
+Hotel(SkSat_u1) → SUMOBuilding(SkSat_u1)
+VehicleAttack(SkSat_u1) → SUMOViolentContest(SkSat_u1)
+Bus(SkSat_u1) → Vehicle(SkSat_u1)
+Celebrity(SkSat_u1) → SUMOHuman(SkSat_u1)
+Dissident(SkSat_u1) → Civilian(SkSat_u1)
+Infiltration(SkSat_u1) → SUMOJoiningAnOrganization(SkSat_u1)
+EducationalFacility(SkSat_u1) → SUMOStationaryArtifact(SkSat_u1)
+victimDeathCount(SkSat_u1,SkSat_u2) → SUMODestruction(SkSat_u1)
+Arson(SkSat_u1) → SUMOCombustion(SkSat_u1)
+Tourist(SkSat_u1) → SUMOSocialRole(SkSat_u1)
+ModernMilitaryOrganization(SkSat_u1) → MilitaryOrganization(SkSat_u1)
+Hijacking(SkSat_u1) → SUMOUnilateralGetting(SkSat_u1)
+IncendiaryDeviceAttack(SkSat_u1) → SUMOViolentContest(SkSat_u1)
+CivilianHuman(SkSat_u1) → SUMOHuman(SkSat_u1)
+Arson(SkSat_u1) → SUMODestruction(SkSat_u1)
+IncendiaryDeviceAttack(SkSat_u1) → SUMOCombustion(SkSat_u1)
+MortarAttack(SkSat_u1) → Bombing(SkSat_u1)
+Bomb(SkSat_u1) → SUMOWeapon(SkSat_u1)
+Restaurant(SkSat_u1) → SUMOBuilding(SkSat_u1)
+=========================================

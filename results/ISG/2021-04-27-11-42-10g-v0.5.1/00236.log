@@ -1,0 +1,57 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 34; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:25:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/28 = 0.000%
+SkSat discarded rules : 0/28 = 0.000%
+avr. 27, 2021 1:25:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:25:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 22 , 6
+nonFullTGDs	0		fullTGDs	22			newNonFullTGDs	6		newFullTGDs	0
+avr. 27, 2021 1:25:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 158 ms = 0.16 s
+avr. 27, 2021 1:25:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 4
+avr. 27, 2021 1:25:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:25:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 6 , 8
+avr. 27, 2021 1:25:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 4
+avr. 27, 2021 1:25:04 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (26 dependecies)
+=========================================
+movienight-onthasTV(SkSat_u1,SkSat_u2) → movienight-ontMember(SkSat_u1)
+movienight-ontMember(SkSat_u1) → movienight-ontMember(SkSat_u1)
+movienight-onthostedBy(SkSat_u1,SkSat_u2) → movienight-ontMovieNight(SkSat_u1)
+movienight-onthasTV(SkSat_u2,SkSat_u1) → movienight-ontTelevision(SkSat_u1)
+movienight-ontdate(SkSat_u2,SkSat_u1) → xsddateTime(SkSat_u1)
+movienight-ontMovie(SkSat_u1) → movienight-ontMovie(SkSat_u1)
+movienight-onthasNomination(SkSat_u2,SkSat_u1) → movienight-ontMovie(SkSat_u1)
+movienight-onthostedBy(SkSat_u2,SkSat_u1) → movienight-ontMember(SkSat_u1)
+movienight-onthasMovie(SkSat_u1,SkSat_u2) → movienight-ontMember(SkSat_u1)
+movienight-ontimdbLink(SkSat_u1,SkSat_u2) → movienight-ontMovie(SkSat_u1)
+movienight-ontNominatedMovie(SkSat_u1) → movienight-ontMovie(SkSat_u1)
+movienight-ontseatingCapacity(SkSat_u1,SkSat_u2) → movienight-ontMember(SkSat_u1)
+movienight-onthasMovie(SkSat_u2,SkSat_u1) → movienight-ontMovie(SkSat_u1)
+movienight-ontdate(SkSat_u1,SkSat_u2) → movienight-ontMovieNight(SkSat_u1)
+movienight-onthasAudio(SkSat_u1,SkSat_u2) → movienight-ontMember(SkSat_u1)
+movienight-onthasAudio(SkSat_u2,SkSat_u1) → movienight-ontAudioSystem(SkSat_u1)
+movienight-ontNominatedMovie(SkSat_u1) → movienight-ontNominatedMovie(SkSat_u1)
+movienight-ontvotedBy(SkSat_u2,SkSat_u1) → movienight-ontMember(SkSat_u1)
+movienight-ontvotedBy(SkSat_u1,SkSat_u2) → movienight-ontNominatedMovie(SkSat_u1)
+movienight-ontprimaryMovie(SkSat_u2,SkSat_u1) → movienight-ontMovie(SkSat_u1)
+movienight-ontMovieNight(SkSat_u1) → errorError1(SkSat_u1)
+movienight-ontprimaryMovie(SkSat_u1,SkSat_u2) → movienight-ontMovieNight(SkSat_u1)
+movienight-ontseatingCapacity(SkSat_u2,SkSat_u1) → xsdnonNegativeInteger(SkSat_u1)
+movienight-ontMovieNight(SkSat_u1) → movienight-ontMovieNight(SkSat_u1)
+movienight-onthasNomination(SkSat_u1,SkSat_u2) → movienight-ontMovieNight(SkSat_u1)
+movienight-ontimdbLink(SkSat_u2,SkSat_u1) → xsduriReference(SkSat_u1)
+=========================================

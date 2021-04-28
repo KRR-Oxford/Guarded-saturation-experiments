@@ -1,0 +1,38 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 11; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:23:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/9 = 0.000%
+SkSat discarded rules : 0/9 = 0.000%
+avr. 27, 2021 1:23:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:23:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 7 , 2
+nonFullTGDs	0		fullTGDs	7			newNonFullTGDs	2		newFullTGDs	0
+avr. 27, 2021 1:23:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 133 ms = 0.13 s
+avr. 27, 2021 1:23:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:23:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:23:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 3
+avr. 27, 2021 1:23:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:23:58 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (7 dependecies)
+=========================================
+darpadir-ontDARPAOffice(SkSat_u2) & darpadir-ontname(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+darpadir-ontDARPAEmployee(SkSat_u2) & darpadir-ontoffice(SkSat_u2,SkSat_u1) → darpadir-ontDARPAOffice(SkSat_u1)
+darpadir-ontDARPAEmployee(SkSat_u1) → errorError1(SkSat_u1)
+projects-20010811partOf(SkSat_u2,SkSat_u1) & darpadir-ontDARPAOffice(SkSat_u2) → projects-20010811Agency(SkSat_u1)
+darpadir-ontDARPAEmployee(SkSat_u1) → projects-20010811Employee(SkSat_u1)
+darpadir-ontDARPAOffice(SkSat_u1) → projects-20010811Organization(SkSat_u1)
+darpadir-ontDARPAEmployee(SkSat_u2) & darpadir-ontroom(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+=========================================

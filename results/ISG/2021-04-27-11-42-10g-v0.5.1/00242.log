@@ -1,0 +1,47 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 31; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:25:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/21 = 0.000%
+SkSat discarded rules : 0/21 = 0.000%
+avr. 27, 2021 1:25:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:25:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 16 , 5
+nonFullTGDs	0		fullTGDs	16			newNonFullTGDs	5		newFullTGDs	0
+avr. 27, 2021 1:25:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 169 ms = 0.17 s
+avr. 27, 2021 1:25:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 6
+avr. 27, 2021 1:25:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:25:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 11
+avr. 27, 2021 1:25:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:25:38 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (16 dependecies)
+=========================================
+tools-ontGroup(SkSat_u1) → tools-ontUser(SkSat_u1)
+tools-ontname(SkSat_u2,SkSat_u1) & tools-ontProject(SkSat_u2) → xsdstring(SkSat_u1)
+tools-ontPerson(SkSat_u1) → tools-ontUser(SkSat_u1)
+tools-ontuses(SkSat_u2,SkSat_u1) & tools-ontTool(SkSat_u2) → tools-ontTool(SkSat_u1)
+tools-ontcategory(SkSat_u2,SkSat_u1) & tools-ontTool(SkSat_u2) → xsdstring(SkSat_u1)
+tools-ontname(SkSat_u2,SkSat_u1) & tools-ontTool(SkSat_u2) → xsdstring(SkSat_u1)
+tools-ontprice(SkSat_u2,SkSat_u1) & tools-ontTool(SkSat_u2) → xsdstring(SkSat_u1)
+tools-ontemail(SkSat_u2,SkSat_u1) & tools-ontPerson(SkSat_u2) → xsdstring(SkSat_u1)
+tools-ontsite(SkSat_u2,SkSat_u1) & tools-ontTool(SkSat_u2) → xsduriReference(SkSat_u1)
+tools-onthowUsed(SkSat_u2,SkSat_u1) & tools-ontUser(SkSat_u2) → xsdstring(SkSat_u1)
+tools-ontproject(SkSat_u2,SkSat_u1) & tools-ontTool(SkSat_u2) → tools-ontProject(SkSat_u1)
+tools-ontname(SkSat_u2,SkSat_u1) & tools-ontGroup(SkSat_u2) → xsdstring(SkSat_u1)
+tools-ontuser(SkSat_u2,SkSat_u1) & tools-ontTool(SkSat_u2) → tools-ontUser(SkSat_u1)
+tools-ontinterface(SkSat_u2,SkSat_u1) & tools-ontTool(SkSat_u2) → xsdstring(SkSat_u1)
+tools-ontsourceCode(SkSat_u2,SkSat_u1) & tools-ontTool(SkSat_u2) → xsdstring(SkSat_u1)
+tools-ontdescription(SkSat_u2,SkSat_u1) & tools-ontTool(SkSat_u2) → xsdstring(SkSat_u1)
+=========================================

@@ -1,0 +1,81 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 51; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:25:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/51 = 0.000%
+SkSat discarded rules : 0/51 = 0.000%
+avr. 27, 2021 1:25:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:25:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 51 , 0
+avr. 27, 2021 1:25:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 152 ms = 0.15 s
+avr. 27, 2021 1:25:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:25:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:25:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 1:25:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:25:27 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (51 dependecies)
+=========================================
+title(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+program(SkSat_u2,SkSat_u1) & Contract(SkSat_u2) → Program(SkSat_u1)
+Program(SkSat_u2) & name(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+id(SkSat_u2,SkSat_u1) & Employee(SkSat_u2) → xsdstring(SkSat_u1)
+workEmail(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+Role(SkSat_u2) & role(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+name(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+workEmail(SkSat_u2,SkSat_u1) & Employee(SkSat_u2) → xsdstring(SkSat_u1)
+field(SkSat_u2,SkSat_u1) & Degree(SkSat_u2) → xsdstring(SkSat_u1)
+Degree(SkSat_u2) & school(SkSat_u2,SkSat_u1) → School(SkSat_u1)
+year(SkSat_u2,SkSat_u1) & Degree(SkSat_u2) → xsdyear(SkSat_u1)
+surname(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+Company(SkSat_u1) → Organization(SkSat_u1)
+State(SkSat_u1) → Location(SkSat_u1)
+zip(SkSat_u2,SkSat_u1) & WorkLocation(SkSat_u2) → xsdstring(SkSat_u1)
+field(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+id(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+street(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+Agency(SkSat_u1) → Organization(SkSat_u1)
+title(SkSat_u2,SkSat_u1) & Employee(SkSat_u2) → xsdstring(SkSat_u1)
+Employee(SkSat_u2) & workAddress(SkSat_u2,SkSat_u1) → WorkLocation(SkSat_u1)
+Employee(SkSat_u2) & workPhone(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+contract(SkSat_u2,SkSat_u1) & Role(SkSat_u2) → Contract(SkSat_u1)
+agency(SkSat_u2,SkSat_u1) & Program(SkSat_u2) → Agency(SkSat_u1)
+zip(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+subsidiaryOf(SkSat_u2,SkSat_u1) & Company(SkSat_u2) → Company(SkSat_u1)
+Employee(SkSat_u2) & organization(SkSat_u2,SkSat_u1) → Organization(SkSat_u1)
+id(SkSat_u2,SkSat_u1) & WorkLocation(SkSat_u2) → xsdstring(SkSat_u1)
+street(SkSat_u2,SkSat_u1) & WorkLocation(SkSat_u2) → xsdstring(SkSat_u1)
+Location(SkSat_u2) & name(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+Employee(SkSat_u2) & person(SkSat_u2,SkSat_u1) → Person(SkSat_u1)
+city(SkSat_u2,SkSat_u1) & WorkLocation(SkSat_u2) → City(SkSat_u1)
+degree(SkSat_u2,SkSat_u1) & Degree(SkSat_u2) → xsdstring(SkSat_u1)
+partOf(SkSat_u2,SkSat_u1) & Agency(SkSat_u2) → Agency(SkSat_u1)
+workPhone(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+Degree(SkSat_u2) & person(SkSat_u2,SkSat_u1) → Person(SkSat_u1)
+degree(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+in(SkSat_u2,SkSat_u1) & Location(SkSat_u2) → Location(SkSat_u1)
+Country(SkSat_u1) → Location(SkSat_u1)
+company(SkSat_u2,SkSat_u1) & Contract(SkSat_u2) → Organization(SkSat_u1)
+givenName(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+School(SkSat_u1) → Organization(SkSat_u1)
+employee(SkSat_u2,SkSat_u1) & Role(SkSat_u2) → Employee(SkSat_u1)
+School(SkSat_u2) & name(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+Company(SkSat_u2) & name(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+Agency(SkSat_u2) & name(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+id(SkSat_u2,SkSat_u1) & Contract(SkSat_u2) → xsdstring(SkSat_u1)
+City(SkSat_u1) → Location(SkSat_u1)
+role(SkSat_u2,SkSat_u1) & Contract(SkSat_u2) → Role(SkSat_u1)
+Person(SkSat_u2) & surname(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+givenName(SkSat_u2,SkSat_u1) & Person(SkSat_u2) → xsdstring(SkSat_u1)
+=========================================

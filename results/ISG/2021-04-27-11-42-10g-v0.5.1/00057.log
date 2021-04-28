@@ -1,0 +1,43 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 16; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 12:58:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/14 = 0.000%
+SkSat discarded rules : 0/14 = 0.000%
+avr. 27, 2021 12:58:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 12:58:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 11 , 3
+nonFullTGDs	0		fullTGDs	11			newNonFullTGDs	3		newFullTGDs	0
+avr. 27, 2021 12:58:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 158 ms = 0.16 s
+avr. 27, 2021 12:58:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 5
+avr. 27, 2021 12:58:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 12:58:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 3 , 9
+avr. 27, 2021 12:58:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 1
+avr. 27, 2021 12:58:22 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (12 dependecies)
+=========================================
+eventPlace(SkSat_u1) → placePlace(SkSat_u1)
+eventends(SkSat_u2,SkSat_u1) → eventInstant(SkSat_u1)
+eventbegins(SkSat_u2,SkSat_u1) → eventInstant(SkSat_u1)
+placePlace(SkSat_u1) → eventPlace(SkSat_u1)
+timeInstant(SkSat_u1) → eventInstant(SkSat_u1)
+eventIntervalEvent(SkSat_u1) → eventEvent(SkSat_u1)
+eventends(SkSat_u1,SkSat_u2) → eventIntervalEvent(SkSat_u1)
+eventIntervalEvent(SkSat_u1) → eventIntervalEvent(SkSat_u1)
+eventInstant(SkSat_u1) → timeInstant(SkSat_u1)
+eventlocation(SkSat_u2,SkSat_u1) → eventPlace(SkSat_u1)
+eventbegins(SkSat_u1,SkSat_u2) → eventIntervalEvent(SkSat_u1)
+eventlocation(SkSat_u1,SkSat_u2) → eventIntervalEvent(SkSat_u1)
+=========================================

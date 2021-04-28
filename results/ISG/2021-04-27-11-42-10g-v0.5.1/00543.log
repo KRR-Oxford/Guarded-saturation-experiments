@@ -1,0 +1,77 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 27; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 7:46:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/27 = 0.000%
+SkSat discarded rules : 0/27 = 0.000%
+avr. 27, 2021 7:46:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 7:46:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 36 , 9
+nonFullTGDs	0		fullTGDs	36			newNonFullTGDs	9		newFullTGDs	0
+nonFullTGDs	27		fullTGDs	102			newNonFullTGDs	0		newFullTGDs	15
+avr. 27, 2021 7:46:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 233 ms = 0.23 s
+avr. 27, 2021 7:46:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 9
+avr. 27, 2021 7:46:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 7:46:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 90 , 18
+avr. 27, 2021 7:46:04 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 9
+avr. 27, 2021 7:46:04 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (45 dependecies)
+=========================================
+_S5(SkSat_u1,SkSat_u2) → OBO_RELinheres_in(SkSat_u1,SkSat_u2)
+GOGO_0005198(SkSat_u1) & OBO_RELinheres_in(SkSat_u1,SkSat_u2) & UBERONUBERON_0000920(SkSat_u2) → GOGO_0008316(SkSat_u1)
+_S2(SkSat_u1,SkSat_u2) → OBO_RELinheres_in(SkSat_u1,SkSat_u2)
+GOGO_0005198(SkSat_u1) & OBO_RELinheres_in(SkSat_u1,SkSat_u2) & UBERONUBERON_0001752(SkSat_u2) → GOGO_0030345(SkSat_u1)
+_S6(SkSat_u2,SkSat_u1) → UBERONUBERON_0001752(SkSat_u1)
+_S3(SkSat_u1,SkSat_u2) → OBO_RELinheres_in(SkSat_u1,SkSat_u2)
+GOGO_0008307(SkSat_u1) & GOGO_0005198(SkSat_u1) → GOGO_0008307(SkSat_u1)
+GOGO_0005198(SkSat_u1) & OBO_RELinheres_in(SkSat_u1,SkSat_u2) & UBERONUBERON_0001003(SkSat_u2) → GOGO_0030280(SkSat_u1)
+_S7(SkSat_u2,SkSat_u1) → UBERONUBERON_0001001(SkSat_u1)
+GOGO_0042329(SkSat_u1) → GOGO_0005198(SkSat_u1)
+GOGO_0005214(SkSat_u1) → GOGO_0005198(SkSat_u1)
+_S2(SkSat_u2,SkSat_u1) → UBERONUBERON_0000965(SkSat_u1)
+_S3(SkSat_u2,SkSat_u1) → UBERONUBERON_0001474(SkSat_u1)
+_S0(SkSat_u2,SkSat_u1) → UBERONUBERON_0001015(SkSat_u1)
+GOGO_0030280(SkSat_u1) & GOGO_0005198(SkSat_u1) → GOGO_0030280(SkSat_u1)
+_S5(SkSat_u2,SkSat_u1) → UBERONUBERON_0003049(SkSat_u1)
+_S7(SkSat_u1,SkSat_u2) → OBO_RELinheres_in(SkSat_u1,SkSat_u2)
+GOGO_0005198(SkSat_u1) & GOGO_0042329(SkSat_u1) → GOGO_0042329(SkSat_u1)
+GOGO_0005198(SkSat_u1) & OBO_RELinheres_in(SkSat_u1,SkSat_u2) & UBERONUBERON_0003049(SkSat_u2) → GOGO_0042329(SkSat_u1)
+GOGO_0005198(SkSat_u1) & GOGO_0005212(SkSat_u1) → GOGO_0005212(SkSat_u1)
+GOGO_0005198(SkSat_u1) & OBO_RELinheres_in(SkSat_u1,SkSat_u2) & UBERONUBERON_0001015(SkSat_u2) → GOGO_0008307(SkSat_u1)
+GOGO_0030345(SkSat_u1) → GOGO_0005198(SkSat_u1)
+GOGO_0005198(SkSat_u1) & OBO_RELinheres_in(SkSat_u1,SkSat_u2) & UBERONUBERON_0000965(SkSat_u2) → GOGO_0005212(SkSat_u1)
+_S1(SkSat_u1,SkSat_u2) → OBO_RELinheres_in(SkSat_u1,SkSat_u2)
+GOGO_0005198(SkSat_u1) & GOGO_0030345(SkSat_u1) → GOGO_0030345(SkSat_u1)
+_S8(SkSat_u2,SkSat_u1) → UBERONUBERON_0001002(SkSat_u1)
+GOGO_0005198(SkSat_u1) & OBO_RELinheres_in(SkSat_u1,SkSat_u2) & UBERONUBERON_0001001(SkSat_u2) → GOGO_0005214(SkSat_u1)
+GOGO_0008316(SkSat_u1) → GOGO_0005198(SkSat_u1)
+GOGO_0042302(SkSat_u1) → GOGO_0005198(SkSat_u1)
+GOGO_0008307(SkSat_u1) → GOGO_0005198(SkSat_u1)
+GOGO_0030280(SkSat_u1) → GOGO_0005198(SkSat_u1)
+GOGO_0005212(SkSat_u1) → GOGO_0005198(SkSat_u1)
+GOGO_0005198(SkSat_u1) & GOGO_0008147(SkSat_u1) → GOGO_0008147(SkSat_u1)
+GOGO_0008147(SkSat_u1) → GOGO_0005198(SkSat_u1)
+_S4(SkSat_u2,SkSat_u1) → UBERONUBERON_0000920(SkSat_u1)
+_S6(SkSat_u1,SkSat_u2) → OBO_RELinheres_in(SkSat_u1,SkSat_u2)
+GOGO_0005198(SkSat_u1) & GOGO_0005214(SkSat_u1) → GOGO_0005214(SkSat_u1)
+_S4(SkSat_u1,SkSat_u2) → OBO_RELinheres_in(SkSat_u1,SkSat_u2)
+_S1(SkSat_u2,SkSat_u1) → UBERONUBERON_0001003(SkSat_u1)
+_S8(SkSat_u1,SkSat_u2) → OBO_RELinheres_in(SkSat_u1,SkSat_u2)
+GOGO_0005198(SkSat_u1) & OBO_RELinheres_in(SkSat_u1,SkSat_u2) & UBERONUBERON_0001002(SkSat_u2) → GOGO_0042302(SkSat_u1)
+_S0(SkSat_u1,SkSat_u2) → OBO_RELinheres_in(SkSat_u1,SkSat_u2)
+GOGO_0005198(SkSat_u1) & OBO_RELinheres_in(SkSat_u1,SkSat_u2) & UBERONUBERON_0001474(SkSat_u2) → GOGO_0008147(SkSat_u1)
+GOGO_0005198(SkSat_u1) & GOGO_0008316(SkSat_u1) → GOGO_0008316(SkSat_u1)
+GOGO_0005198(SkSat_u1) & GOGO_0042302(SkSat_u1) → GOGO_0042302(SkSat_u1)
+=========================================

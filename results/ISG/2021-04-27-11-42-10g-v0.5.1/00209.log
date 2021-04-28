@@ -1,0 +1,58 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 64; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:22:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/45 = 0.000%
+SkSat discarded rules : 0/45 = 0.000%
+avr. 27, 2021 1:22:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:22:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 27 , 18
+nonFullTGDs	0		fullTGDs	27			newNonFullTGDs	18		newFullTGDs	0
+avr. 27, 2021 1:22:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 202 ms = 0.20 s
+avr. 27, 2021 1:22:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 2
+avr. 27, 2021 1:22:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:22:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 20
+avr. 27, 2021 1:22:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:22:35 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (27 dependecies)
+=========================================
+itinerary-ontFlight(SkSat_u2) & itinerary-ontdestination(SkSat_u2,SkSat_u1) → AirportCodesAirportCode(SkSat_u1)
+itinerary-ontflight(SkSat_u2,SkSat_u1) & itinerary-ontItinerary(SkSat_u2) → itinerary-ontFlight(SkSat_u1)
+itinerary-ontFlight(SkSat_u2) & itinerary-ontmeal(SkSat_u2,SkSat_u1) → itinerary-ontMeal(SkSat_u1)
+itinerary-ontaddress(SkSat_u2,SkSat_u1) & itinerary-ontHotelReservation(SkSat_u2) → xsdstring(SkSat_u1)
+itinerary-ontHotelReservation(SkSat_u2) & itinerary-ontcheckout(SkSat_u2,SkSat_u1) → xsddateTime(SkSat_u1)
+itinerary-ontHotelReservation(SkSat_u2) & itinerary-ontconfirmation(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+itinerary-ontFlight(SkSat_u2) & itinerary-ontmiles(SkSat_u2,SkSat_u1) → xsdinteger(SkSat_u1)
+itinerary-ontFlight(SkSat_u1) → errorError1(SkSat_u1)
+itinerary-ontcheckin(SkSat_u2,SkSat_u1) & itinerary-ontHotelReservation(SkSat_u2) → xsddateTime(SkSat_u1)
+itinerary-ontrentalCar(SkSat_u2,SkSat_u1) & itinerary-ontItinerary(SkSat_u2) → itinerary-ontRentalCar(SkSat_u1)
+itinerary-ontairline(SkSat_u2,SkSat_u1) & itinerary-ontRecordLocatorNumber(SkSat_u2) → icaoAirline(SkSat_u1)
+itinerary-ontFlight(SkSat_u2) & itinerary-ontclass(SkSat_u2,SkSat_u1) → itinerary-ontClass(SkSat_u1)
+itinerary-ontRecordLocatorNumber(SkSat_u2) & itinerary-ontrloc(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+itinerary-ontrate(SkSat_u2,SkSat_u1) & itinerary-ontHotelReservation(SkSat_u2) → xsddecimal(SkSat_u1)
+itinerary-ontFlight(SkSat_u2) & itinerary-ontdepart(SkSat_u2,SkSat_u1) → xsddateTime(SkSat_u1)
+itinerary-ontFlight(SkSat_u2) & itinerary-ontseat(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+itinerary-ontHotelReservation(SkSat_u2) & itinerary-onthotelName(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+itinerary-ontFlight(SkSat_u2) & itinerary-ontaircraft(SkSat_u2,SkSat_u1) → itinerary-ontAircraft(SkSat_u1)
+itinerary-ontFlight(SkSat_u2) & itinerary-ontorigin(SkSat_u2,SkSat_u1) → AirportCodesAirportCode(SkSat_u1)
+itinerary-ontFlight(SkSat_u2) & itinerary-ontflight(SkSat_u2,SkSat_u1) → xsdnonNegativeInteger(SkSat_u1)
+itinerary-onthotel(SkSat_u2,SkSat_u1) & itinerary-ontItinerary(SkSat_u2) → itinerary-ontHotelReservation(SkSat_u1)
+itinerary-ontFlight(SkSat_u2) & itinerary-ontairline(SkSat_u2,SkSat_u1) → icaoAirline(SkSat_u1)
+itinerary-ontFlight(SkSat_u2) & itinerary-ontarrive(SkSat_u2,SkSat_u1) → xsddateTime(SkSat_u1)
+itinerary-ontFlight(SkSat_u2) & itinerary-ontduration(SkSat_u2,SkSat_u1) → xsdtimeDuration(SkSat_u1)
+itinerary-ontpassenger(SkSat_u2,SkSat_u1) & itinerary-ontItinerary(SkSat_u2) → xsdstring(SkSat_u1)
+itinerary-ontrln(SkSat_u2,SkSat_u1) & itinerary-ontItinerary(SkSat_u2) → itinerary-ontRecordLocatorNumber(SkSat_u1)
+itinerary-ontsmoking(SkSat_u2,SkSat_u1) & itinerary-ontHotelReservation(SkSat_u2) → xsdboolean(SkSat_u1)
+=========================================

@@ -1,0 +1,146 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 117; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:21:05 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/116 = 0.000%
+SkSat discarded rules : 0/116 = 0.000%
+avr. 27, 2021 1:21:05 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:21:05 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 116 , 0
+avr. 27, 2021 1:21:05 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 172 ms = 0.17 s
+avr. 27, 2021 1:21:05 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:21:05 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:21:05 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 1:21:05 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:21:05 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (116 dependecies)
+=========================================
+daml+oil#sameClassAs(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/01/rdf-schema#subClassOf(SkSat_u1,SkSat_u2)
+bound_vars(SkSat_u2,SkSat_u1) → Var_bag(SkSat_u1)
+Binder(SkSat_u1) → Formula(SkSat_u1)
+daml+oil#item(SkSat_u2,SkSat_u1) & Function_skeleton(SkSat_u2) → Var(SkSat_u1)
+Exists(SkSat_u1) → Binder(SkSat_u1)
+daml+oil#hasClass(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+negated(SkSat_u2,SkSat_u1) → Formula(SkSat_u1)
+Functional_term(SkSat_u1) → Term(SkSat_u1)
+daml+oil#item(SkSat_u2,SkSat_u1) & Var_bag(SkSat_u2) → Var(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#subClassOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+daml+oil#DatatypeProperty(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+And(SkSat_u1) → Connective_formula(SkSat_u1)
+daml+oil#onProperty(SkSat_u2,SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+Var_seq(SkSat_u1) → daml+oil#List(SkSat_u1)
+daml+oil#sameClassAs(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+daml+oil#inverseOf(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#ObjectProperty(SkSat_u1)
+daml+oil#cardinality(SkSat_u2,SkSat_u1) → XMLSchemanonNegativeInteger(SkSat_u1)
+declaration(SkSat_u2,SkSat_u1) → Function_skeleton(SkSat_u1)
+rdf2predicate(SkSat_u1,SkSat_u2) → Atomic_formula(SkSat_u1)
+daml+oil#complementOf(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+daml+oil#UniqueProperty(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+daml+oil#disjointUnionOf(SkSat_u2,SkSat_u1) → daml+oil#List(SkSat_u1)
+consequent(SkSat_u2,SkSat_u1) → Formula(SkSat_u1)
+daml+oil#TransitiveProperty(SkSat_u1) → http://www.w3.org/2002/07/owl#ObjectProperty(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#Datatype(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+daml+oil#maxCardinality(SkSat_u2,SkSat_u1) → XMLSchemanonNegativeInteger(SkSat_u1)
+antecedent(SkSat_u1,SkSat_u2) → Implies(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#Container(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+daml+oil#cardinality(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+daml+oil#unionOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+daml+oil#toClass(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+Term_seq(SkSat_u2) & daml+oil#item(SkSat_u2,SkSat_u1) → Term(SkSat_u1)
+daml+oil#oneOf(SkSat_u2,SkSat_u1) → daml+oil#List(SkSat_u1)
+term_args(SkSat_u1,SkSat_u2) → Functional_term(SkSat_u1)
+daml+oil#oneOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+Predicate(SkSat_u1) → Function(SkSat_u1)
+daml+oil#minCardinality(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+daml+oil#UnambiguousProperty(SkSat_u1) → http://www.w3.org/2002/07/owl#ObjectProperty(SkSat_u1)
+Term_seq(SkSat_u1) → daml+oil#List(SkSat_u1)
+daml+oil#maxCardinality(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+declaration(SkSat_u1,SkSat_u2) → Function(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#range(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+body(SkSat_u1,SkSat_u2) → Binder(SkSat_u1)
+Atomic_formula_bag(SkSat_u1) → Term_Bag(SkSat_u1)
+Connective_formula(SkSat_u1) → Formula(SkSat_u1)
+Forall(SkSat_u1) → Binder(SkSat_u1)
+daml+oil#hasClassQ(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+Implies(SkSat_u1) → Connective_formula(SkSat_u1)
+daml+oil#Class(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+body(SkSat_u2,SkSat_u1) → Formula(SkSat_u1)
+daml+oil#complementOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#range(SkSat_u1,SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+declare(SkSat_u2,SkSat_u1) & Formula(SkSat_u2) → Prop(SkSat_u1)
+Var_bag(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag(SkSat_u1)
+term_args(SkSat_u2,SkSat_u1) → Term_seq(SkSat_u1)
+daml+oil#item(SkSat_u2,SkSat_u1) & Atomic_formula_bag(SkSat_u2) → Atomic_formula(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#member(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+conn_args(SkSat_u2,SkSat_u1) → Term_seq(SkSat_u1)
+rdf2object(SkSat_u2,SkSat_u1) → Term_seq(SkSat_u1)
+daml+oil#Datatype(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+daml+oil#cardinalityQ(SkSat_u2,SkSat_u1) → XMLSchemanonNegativeInteger(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+daml+oil#minCardinalityQ(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+daml+oil#cardinalityQ(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+daml+oil#maxCardinalityQ(SkSat_u2,SkSat_u1) → XMLSchemanonNegativeInteger(SkSat_u1)
+rdf2predicate(SkSat_u2,SkSat_u1) → Predicate(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#member(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+daml+oil#item(SkSat_u2,SkSat_u1) & Var_seq(SkSat_u2) → Var(SkSat_u1)
+Constant_bag(SkSat_u2) & daml+oil#item(SkSat_u2,SkSat_u1) → Constant(SkSat_u1)
+consequent(SkSat_u1,SkSat_u2) → Implies(SkSat_u1)
+Predicate(SkSat_u1) → errorError1(SkSat_u1)
+antecedent(SkSat_u2,SkSat_u1) → Formula(SkSat_u1)
+daml+oil#hasClassQ(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#subClassOf(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+conn_args(SkSat_u1,SkSat_u2) → Connective_formula(SkSat_u1)
+Or(SkSat_u1) → Connective_formula(SkSat_u1)
+daml+oil#toClass(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+daml+oil#List(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq(SkSat_u1)
+daml+oil#minCardinality(SkSat_u2,SkSat_u1) → XMLSchemanonNegativeInteger(SkSat_u1)
+bound_vars(SkSat_u1,SkSat_u2) → Binder(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#domain(SkSat_u1,SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+rdf2subject(SkSat_u1,SkSat_u2) → Atomic_formula(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#subPropertyOf(SkSat_u1,SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+daml+oil#hasClass(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+Formula(SkSat_u1) → Term(SkSat_u1)
+Var(SkSat_u1) → Term(SkSat_u1)
+term_function(SkSat_u1,SkSat_u2) → Functional_term(SkSat_u1)
+daml+oil#minCardinalityQ(SkSat_u2,SkSat_u1) → XMLSchemanonNegativeInteger(SkSat_u1)
+daml+oil#maxCardinalityQ(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+value(SkSat_u1,SkSat_u2) → Literal(SkSat_u1)
+Literal(SkSat_u1) → Term(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#subPropertyOf(SkSat_u2,SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+daml+oil#intersectionOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+daml+oil#onProperty(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+daml+oil#rest(SkSat_u1,SkSat_u2) → daml+oil#List(SkSat_u1)
+daml+oil#item(SkSat_u2,SkSat_u1) & Term_bag(SkSat_u2) → Term(SkSat_u1)
+daml+oil#disjointWith(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+daml+oil#disjointUnionOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+Function_skeleton(SkSat_u1) → Functional_term(SkSat_u1)
+daml+oil#sameClassAs(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+Term_bag(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag(SkSat_u1)
+daml+oil#disjointWith(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+daml+oil#samePropertyAs(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/01/rdf-schema#subPropertyOf(SkSat_u1,SkSat_u2)
+daml+oil#unionOf(SkSat_u2,SkSat_u1) → daml+oil#List(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#domain(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+Constant_bag(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag(SkSat_u1)
+daml+oil#Restriction(SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+daml+oil#rest(SkSat_u2,SkSat_u1) → daml+oil#List(SkSat_u1)
+daml+oil#ObjectProperty(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+rdf2object(SkSat_u1,SkSat_u2) → Atomic_formula(SkSat_u1)
+term_function(SkSat_u2,SkSat_u1) → Function(SkSat_u1)
+daml+oil#intersectionOf(SkSat_u2,SkSat_u1) → daml+oil#List(SkSat_u1)
+daml+oil#inverseOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#ObjectProperty(SkSat_u1)
+negated(SkSat_u1,SkSat_u2) → Not(SkSat_u1)
+Not(SkSat_u1) → Connective_formula(SkSat_u1)
+=========================================

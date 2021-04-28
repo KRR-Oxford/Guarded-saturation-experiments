@@ -1,0 +1,80 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 58; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 12:58:33 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/52 = 0.000%
+SkSat discarded rules : 0/52 = 0.000%
+avr. 27, 2021 12:58:33 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 12:58:33 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 47 , 5
+nonFullTGDs	0		fullTGDs	47			newNonFullTGDs	5		newFullTGDs	0
+avr. 27, 2021 12:58:33 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 166 ms = 0.17 s
+avr. 27, 2021 12:58:33 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 3
+avr. 27, 2021 12:58:33 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 12:58:33 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 5 , 5
+avr. 27, 2021 12:58:33 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 2
+avr. 27, 2021 12:58:33 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (49 dependecies)
+=========================================
+personhomepage(SkSat_u2,SkSat_u1) → xsdanyURI(SkSat_u1)
+addresszip(SkSat_u1,SkSat_u2) → addressAddress(SkSat_u1)
+personhomeAddress(SkSat_u2,SkSat_u1) → addressAddress(SkSat_u1)
+eventIntervalEvent(SkSat_u1) → eventIntervalEvent(SkSat_u1)
+personhomePhone(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+addressroomNumber(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+personbirthday(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+eventlocation(SkSat_u1,SkSat_u2) → eventIntervalEvent(SkSat_u1)
+addressstreetAddress(SkSat_u1,SkSat_u2) → addressAddress(SkSat_u1)
+addresscity(SkSat_u1,SkSat_u2) → addressAddress(SkSat_u1)
+persontitle(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+persongender(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+personpager(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+personfax(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+addressstate(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+personlastName(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+addressstate(SkSat_u1,SkSat_u2) → addressAddress(SkSat_u1)
+personfirstName(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+personfirstName(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+persontitle(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+addresszip(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+eventends(SkSat_u2,SkSat_u1) → eventInstant(SkSat_u1)
+personofficeAddress(SkSat_u2,SkSat_u1) → addressAddress(SkSat_u1)
+personemail(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+personcellPhone(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+personemail(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+personofficeAddress(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+addressroomNumber(SkSat_u1,SkSat_u2) → addressAddress(SkSat_u1)
+eventIntervalEvent(SkSat_u1) → eventEvent(SkSat_u1)
+eventlocation(SkSat_u2,SkSat_u1) → eventPlace(SkSat_u1)
+addressstreetAddress(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+eventbegins(SkSat_u1,SkSat_u2) → eventIntervalEvent(SkSat_u1)
+personhomepage(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+personhomeAddress(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+eventbegins(SkSat_u2,SkSat_u1) → eventInstant(SkSat_u1)
+personhomePhone(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+persongender(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+personlastName(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+addresscity(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+addresscountry(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+personcellPhone(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+addresscountry(SkSat_u1,SkSat_u2) → addressAddress(SkSat_u1)
+personbirthday(SkSat_u2,SkSat_u1) → eventInstant(SkSat_u1)
+eventends(SkSat_u1,SkSat_u2) → eventIntervalEvent(SkSat_u1)
+personofficePhone(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+personfax(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+personofficePhone(SkSat_u1,SkSat_u2) → personPerson(SkSat_u1)
+personpager(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+personPerson(SkSat_u1) → personPerson(SkSat_u1)
+=========================================

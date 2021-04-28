@@ -1,0 +1,57 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 27; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:42:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/27 = 0.000%
+SkSat discarded rules : 0/27 = 0.000%
+avr. 27, 2021 1:42:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:42:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 27 , 0
+avr. 27, 2021 1:42:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 121 ms = 0.12 s
+avr. 27, 2021 1:42:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:42:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:42:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 1:42:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:42:20 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (27 dependecies)
+=========================================
+realized_by(SkSat_u2,SkSat_u1) → xsduriReference(SkSat_u1)
+owned_by(SkSat_u2,SkSat_u1) → PolicyModelPerson_or_Organization(SkSat_u1)
+search(SkSat_u1,SkSat_u2) → Discovery_Service(SkSat_u1)
+discovery_realized_by(SkSat_u1,SkSat_u2) → Discovery(SkSat_u1)
+realized_by(SkSat_u1,SkSat_u2) → Identifier(SkSat_u1)
+owned_by(SkSat_u1,SkSat_u2) → Resource(SkSat_u1)
+representation(SkSat_u1,SkSat_u2) → Representation(SkSat_u1)
+identify(SkSat_u2,SkSat_u1) → identifier(SkSat_u1,SkSat_u2)
+discovery_realized_by(SkSat_u2,SkSat_u1) → Discovery_Service(SkSat_u1)
+search(SkSat_u2,SkSat_u1) → Resource_Description(SkSat_u1)
+performed_by(SkSat_u1,SkSat_u2) → Discovery(SkSat_u1)
+used_by(SkSat_u2,SkSat_u1) → ServiceModelAgent(SkSat_u1)
+representation(SkSat_u2,SkSat_u1) → Resource(SkSat_u1)
+resource_description(SkSat_u1,SkSat_u2) → Resource(SkSat_u1)
+identify(SkSat_u1,SkSat_u2) → Identifier(SkSat_u1)
+governed_by(SkSat_u2,SkSat_u1) → PolicyModelPolicy(SkSat_u1)
+performed_by(SkSat_u2,SkSat_u1) → ServiceModelAgent(SkSat_u1)
+identifier(SkSat_u2,SkSat_u1) → identify(SkSat_u1,SkSat_u2)
+Discovery_Service(SkSat_u1) → ServiceModelService(SkSat_u1)
+resource_description(SkSat_u2,SkSat_u1) → Resource_Description(SkSat_u1)
+governed_by(SkSat_u1,SkSat_u2) → Resource(SkSat_u1)
+used_by(SkSat_u1,SkSat_u2) → Discovery_Service(SkSat_u1)
+represented_by(SkSat_u2,SkSat_u1) → representation(SkSat_u1,SkSat_u2)
+identify(SkSat_u2,SkSat_u1) → Resource(SkSat_u1)
+representation(SkSat_u2,SkSat_u1) → represented_by(SkSat_u1,SkSat_u2)
+publish(SkSat_u2,SkSat_u1) → Resource_Description(SkSat_u1)
+publish(SkSat_u1,SkSat_u2) → Discovery_Service(SkSat_u1)
+=========================================

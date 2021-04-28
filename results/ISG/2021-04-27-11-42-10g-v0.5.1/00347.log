@@ -1,0 +1,157 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 107; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:43:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 1/107 = 0.935%
+SkSat discarded rules : 1/107 = 0.935%
+avr. 27, 2021 1:43:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:43:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 114 , 8
+nonFullTGDs	0		fullTGDs	114			newNonFullTGDs	8		newFullTGDs	0
+avr. 27, 2021 1:43:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 235 ms = 0.23 s
+avr. 27, 2021 1:43:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 26
+avr. 27, 2021 1:43:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:43:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 33 , 48
+avr. 27, 2021 1:43:22 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 12
+avr. 27, 2021 1:43:22 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (126 dependecies)
+=========================================
+_S1(SkSat_u2,SkSat_u1) → #Course(SkSat_u1)
+#member(SkSat_u1,SkSat_u2) → #Organization(SkSat_u1)
+#memberOf(SkSat_u2,SkSat_u1) → #member(SkSat_u1,SkSat_u2)
+#College(SkSat_u2) & #Person(SkSat_u1) & #headOf(SkSat_u1,SkSat_u2) → #Dean(SkSat_u1)
+#Person(SkSat_u1) & #Dean(SkSat_u1) → #Dean(SkSat_u1)
+#ClericalStaff(SkSat_u1) → #AdministrativeStaff(SkSat_u1)
+#degreeFrom(SkSat_u2,SkSat_u1) → #University(SkSat_u1)
+#degreeFrom(SkSat_u1,SkSat_u2) → #Person(SkSat_u1)
+#UnofficialPublication(SkSat_u1) → #Publication(SkSat_u1)
+#headOf(SkSat_u1,SkSat_u2) → #worksFor(SkSat_u1,SkSat_u2)
+#PostDoc(SkSat_u1) → #Faculty(SkSat_u1)
+#SystemsStaff(SkSat_u1) → #AdministrativeStaff(SkSat_u1)
+#age(SkSat_u1,SkSat_u2) → #Person(SkSat_u1)
+#Person(SkSat_u1) & #Employee(SkSat_u1) → #Employee(SkSat_u1)
+#FullProfessor(SkSat_u1) → #Professor(SkSat_u1)
+#Lecturer(SkSat_u1) → #Faculty(SkSat_u1)
+#doctoralDegreeFrom(SkSat_u1,SkSat_u2) → #degreeFrom(SkSat_u1,SkSat_u2)
+#University(SkSat_u1) → #Organization(SkSat_u1)
+#AdministrativeStaff(SkSat_u1) → #Employee(SkSat_u1)
+#Chair(SkSat_u1) → #Person(SkSat_u1)
+_S2(SkSat_u2,SkSat_u1) → #GraduateCourse(SkSat_u1)
+#GraduateCourse(SkSat_u1) → #Course(SkSat_u1)
+#teachingAssistantOf(SkSat_u1,SkSat_u2) → #TeachingAssistant(SkSat_u1)
+#member(SkSat_u2,SkSat_u1) → #memberOf(SkSat_u1,SkSat_u2)
+_S3(SkSat_u1,SkSat_u2) → #headOf(SkSat_u1,SkSat_u2)
+#AssistantProfessor(SkSat_u1) → #Professor(SkSat_u1)
+_S3(SkSat_u2,SkSat_u1) → #College(SkSat_u1)
+#member(SkSat_u2,SkSat_u1) → #Person(SkSat_u1)
+#Manual(SkSat_u1) → #Publication(SkSat_u1)
+#advisor(SkSat_u1,SkSat_u2) → #Person(SkSat_u1)
+#ResearchGroup(SkSat_u1) → #Organization(SkSat_u1)
+#affiliateOf(SkSat_u1,SkSat_u2) → #Organization(SkSat_u1)
+#softwareVersion(SkSat_u1,SkSat_u2) → #Software(SkSat_u1)
+#College(SkSat_u1) → #Organization(SkSat_u1)
+#telephone(SkSat_u1,SkSat_u2) → #Person(SkSat_u1)
+#UndergraduateStudent(SkSat_u1) → #Student(SkSat_u1)
+#Person(SkSat_u1) & #Chair(SkSat_u1) → #Employee(SkSat_u1)
+#teacherOf(SkSat_u1,SkSat_u2) → #Faculty(SkSat_u1)
+#TeachingAssistant(SkSat_u1) → #TeachingAssistant(SkSat_u1)
+#worksFor(SkSat_u1,SkSat_u2) & #Person(SkSat_u1) & #Organization(SkSat_u2) → #Employee(SkSat_u1)
+#tenured(SkSat_u1,SkSat_u2) → #Professor(SkSat_u1)
+#Software(SkSat_u1) → #Publication(SkSat_u1)
+#orgPublication(SkSat_u1,SkSat_u2) → #Organization(SkSat_u1)
+#VisitingProfessor(SkSat_u1) → #Professor(SkSat_u1)
+#researchProject(SkSat_u1,SkSat_u2) → #ResearchGroup(SkSat_u1)
+#publicationResearch(SkSat_u1,SkSat_u2) → #Publication(SkSat_u1)
+_S1(SkSat_u1,SkSat_u2) → #teachingAssistantOf(SkSat_u1,SkSat_u2)
+#Person(SkSat_u1) & #Department(SkSat_u2) & #headOf(SkSat_u1,SkSat_u2) → #Chair(SkSat_u1)
+#Institute(SkSat_u1) → #Organization(SkSat_u1)
+#Course(SkSat_u2) & #Person(SkSat_u1) & #teachingAssistantOf(SkSat_u1,SkSat_u2) → #TeachingAssistant(SkSat_u1)
+#Person(SkSat_u1) & #Chair(SkSat_u1) → #Chair(SkSat_u1)
+#TeachingAssistant(SkSat_u1) → #Person(SkSat_u1)
+#publicationDate(SkSat_u1,SkSat_u2) → #Publication(SkSat_u1)
+_S0(SkSat_u2,SkSat_u1) → #ResearchGroup(SkSat_u1)
+#researchProject(SkSat_u2,SkSat_u1) → #Research(SkSat_u1)
+#teacherOf(SkSat_u2,SkSat_u1) → #Course(SkSat_u1)
+_S7(SkSat_u1,SkSat_u2) → #takesCourse(SkSat_u1,SkSat_u2)
+#Professor(SkSat_u1) → #Faculty(SkSat_u1)
+#Person(SkSat_u1) & #Director(SkSat_u1) → #Employee(SkSat_u1)
+#undergraduateDegreeFrom(SkSat_u2,SkSat_u1) → #University(SkSat_u1)
+#affiliateOf(SkSat_u2,SkSat_u1) → #Person(SkSat_u1)
+#AssociateProfessor(SkSat_u1) → #Professor(SkSat_u1)
+#orgPublication(SkSat_u2,SkSat_u1) → #Publication(SkSat_u1)
+#publicationAuthor(SkSat_u1,SkSat_u2) → #Publication(SkSat_u1)
+#Employee(SkSat_u1) → #Person(SkSat_u1)
+#subOrganizationOf(SkSat_u1,SkSat_u2) → #Organization(SkSat_u1)
+#mastersDegreeFrom(SkSat_u2,SkSat_u1) → #University(SkSat_u1)
+#publicationResearch(SkSat_u2,SkSat_u1) → #Research(SkSat_u1)
+#affiliatedOrganizationOf(SkSat_u2,SkSat_u1) → #Organization(SkSat_u1)
+#Article(SkSat_u1) → #Publication(SkSat_u1)
+#advisor(SkSat_u2,SkSat_u1) → #Professor(SkSat_u1)
+#doctoralDegreeFrom(SkSat_u1,SkSat_u2) → #Person(SkSat_u1)
+#Course(SkSat_u1) → #Work(SkSat_u1)
+#subOrganizationOf(SkSat_u2,SkSat_u1) → #Organization(SkSat_u1)
+#JournalArticle(SkSat_u1) → #Article(SkSat_u1)
+#GraduateStudent(SkSat_u1) → #Person(SkSat_u1)
+#mastersDegreeFrom(SkSat_u1,SkSat_u2) → #degreeFrom(SkSat_u1,SkSat_u2)
+#Director(SkSat_u1) → #Person(SkSat_u1)
+#undergraduateDegreeFrom(SkSat_u1,SkSat_u2) → #Person(SkSat_u1)
+#Chair(SkSat_u1) → #Professor(SkSat_u1)
+_S0(SkSat_u1,SkSat_u2) → #worksFor(SkSat_u1,SkSat_u2)
+_S6(SkSat_u2,SkSat_u1) → #Organization(SkSat_u1)
+#doctoralDegreeFrom(SkSat_u2,SkSat_u1) → #University(SkSat_u1)
+#ResearchAssistant(SkSat_u1) → #Person(SkSat_u1)
+#emailAddress(SkSat_u1,SkSat_u2) → #Person(SkSat_u1)
+#ConferencePaper(SkSat_u1) → #Article(SkSat_u1)
+#Specification(SkSat_u1) → #Publication(SkSat_u1)
+#Book(SkSat_u1) → #Publication(SkSat_u1)
+#Person(SkSat_u1) & #Dean(SkSat_u1) → #Employee(SkSat_u1)
+#Faculty(SkSat_u1) → #Employee(SkSat_u1)
+#publicationAuthor(SkSat_u2,SkSat_u1) → #Person(SkSat_u1)
+#Person(SkSat_u1) & #GraduateStudent(SkSat_u1) → #Student(SkSat_u1)
+_S6(SkSat_u1,SkSat_u2) → #worksFor(SkSat_u1,SkSat_u2)
+#TechnicalReport(SkSat_u1) → #Article(SkSat_u1)
+_S5(SkSat_u2,SkSat_u1) → #Department(SkSat_u1)
+#Research(SkSat_u1) → #Work(SkSat_u1)
+#Person(SkSat_u1) & #headOf(SkSat_u1,SkSat_u2) & #Program(SkSat_u2) → #Director(SkSat_u1)
+#undergraduateDegreeFrom(SkSat_u1,SkSat_u2) → #degreeFrom(SkSat_u1,SkSat_u2)
+#Course(SkSat_u2) & #Person(SkSat_u1) & #takesCourse(SkSat_u1,SkSat_u2) → #Student(SkSat_u1)
+_S4(SkSat_u2,SkSat_u1) → #Program(SkSat_u1)
+#Program(SkSat_u1) → #Organization(SkSat_u1)
+#ResearchAssistant(SkSat_u1) & #Person(SkSat_u1) → #Employee(SkSat_u1)
+_S2(SkSat_u1,SkSat_u2) → #takesCourse(SkSat_u1,SkSat_u2)
+#Student(SkSat_u1) → #Person(SkSat_u1)
+#affiliatedOrganizationOf(SkSat_u1,SkSat_u2) → #Organization(SkSat_u1)
+#hasAlumnus(SkSat_u1,SkSat_u2) → #University(SkSat_u1)
+#Department(SkSat_u1) → #Organization(SkSat_u1)
+_S4(SkSat_u1,SkSat_u2) → #headOf(SkSat_u1,SkSat_u2)
+#teachingAssistantOf(SkSat_u2,SkSat_u1) → #Course(SkSat_u1)
+#ResearchAssistant(SkSat_u1) → #Student(SkSat_u1)
+#listedCourse(SkSat_u1,SkSat_u2) → #Schedule(SkSat_u1)
+#Person(SkSat_u1) & #Director(SkSat_u1) → #Director(SkSat_u1)
+_S5(SkSat_u1,SkSat_u2) → #headOf(SkSat_u1,SkSat_u2)
+#mastersDegreeFrom(SkSat_u1,SkSat_u2) → #Person(SkSat_u1)
+#softwareDocumentation(SkSat_u2,SkSat_u1) → #Publication(SkSat_u1)
+_S7(SkSat_u2,SkSat_u1) → #Course(SkSat_u1)
+#softwareDocumentation(SkSat_u1,SkSat_u2) → #Software(SkSat_u1)
+#listedCourse(SkSat_u2,SkSat_u1) → #Course(SkSat_u1)
+#hasAlumnus(SkSat_u2,SkSat_u1) → #degreeFrom(SkSat_u1,SkSat_u2)
+#Dean(SkSat_u1) → #Person(SkSat_u1)
+#Dean(SkSat_u1) → #Professor(SkSat_u1)
+#degreeFrom(SkSat_u2,SkSat_u1) → #hasAlumnus(SkSat_u1,SkSat_u2)
+#hasAlumnus(SkSat_u2,SkSat_u1) → #Person(SkSat_u1)
+#Student(SkSat_u1) & #Person(SkSat_u1) → #Student(SkSat_u1)
+#title(SkSat_u1,SkSat_u2) → #Person(SkSat_u1)
+#worksFor(SkSat_u1,SkSat_u2) → #memberOf(SkSat_u1,SkSat_u2)
+=========================================

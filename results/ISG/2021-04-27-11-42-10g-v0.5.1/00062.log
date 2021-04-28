@@ -1,0 +1,107 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 88; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 12:58:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/82 = 0.000%
+SkSat discarded rules : 0/82 = 0.000%
+avr. 27, 2021 12:58:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 12:58:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 72 , 10
+nonFullTGDs	0		fullTGDs	72			newNonFullTGDs	10		newFullTGDs	0
+avr. 27, 2021 12:58:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 197 ms = 0.20 s
+avr. 27, 2021 12:58:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 6
+avr. 27, 2021 12:58:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 12:58:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 10 , 10
+avr. 27, 2021 12:58:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 4
+avr. 27, 2021 12:58:50 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (76 dependecies)
+=========================================
+profile-ontlongitude(SkSat_u1,SkSat_u2) → profile-ontAddress(SkSat_u1)
+profile-onttitle(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-onttopic2(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontfirstName(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontscheduleVer1.0(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontstate(SkSat_u1,SkSat_u2) → profile-ontAddress(SkSat_u1)
+profile-ontbioSketch(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontcellNumber(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontProfile(SkSat_u1) → profile-ontProfile(SkSat_u1)
+profile-ontfaxNumber(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontSubsumedBy(SkSat_u1) → profile-ontAssertion(SkSat_u1)
+profile-ontwebPageURI(SkSat_u2,SkSat_u1) → xsdanyURI(SkSat_u1)
+profile-onttopic1(SkSat_u1,SkSat_u2) → profile-ontAssertion(SkSat_u1)
+profile-ontcity(SkSat_u1,SkSat_u2) → profile-ontAddress(SkSat_u1)
+profile-ontfirstName(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontfaxNumber(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontgender(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontlongitude(SkSat_u2,SkSat_u1) → xsdinteger(SkSat_u1)
+profile-ontstreetAddress(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontcountry(SkSat_u1,SkSat_u2) → profile-ontAddress(SkSat_u1)
+profile-ontday(SkSat_u1,SkSat_u2) → profile-ontBusyDayTime(SkSat_u1)
+profile-ontcellNumber(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontBusyDayTime(SkSat_u1) → profile-ontBusyDayTime(SkSat_u1)
+profile-onthasSMSContact(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontofficeAddress(SkSat_u2,SkSat_u1) → profile-ontAddress(SkSat_u1)
+profile-ontinterests(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontlocation(SkSat_u2,SkSat_u1) → profile-ontAddress(SkSat_u1)
+profile-ontlatitude(SkSat_u2,SkSat_u1) → xsdinteger(SkSat_u1)
+profile-ontclassification(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontlocation(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontbioSketch(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontphoneNumber(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontassertions(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontpager(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontRelatedTo(SkSat_u1) → profile-ontAssertion(SkSat_u1)
+profile-ontlastName(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontInterest(SkSat_u1) → profile-ontInterest(SkSat_u1)
+profile-onttopic(SkSat_u1,SkSat_u2) → profile-ontInterest(SkSat_u1)
+profile-ontassertions(SkSat_u2,SkSat_u1) → profile-ontRelatedTo(SkSat_u1)
+profile-ontendTime(SkSat_u1,SkSat_u2) → profile-ontBusyDayTime(SkSat_u1)
+profile-onthasSMSContact(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontwebPageURI(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontfilter(SkSat_u2,SkSat_u1) → profile-ontFilterOn(SkSat_u1)
+profile-ontstate(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-onthomeAddress(SkSat_u2,SkSat_u1) → profile-ontAddress(SkSat_u1)
+profile-ontcountry(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-onttopic(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontemail(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-onthomeAddress(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontday(SkSat_u2,SkSat_u1) → profile-ontDayOfWeek(SkSat_u1)
+profile-ontpager(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontstartTime(SkSat_u1,SkSat_u2) → profile-ontBusyDayTime(SkSat_u1)
+profile-ontlastName(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-onttopic2(SkSat_u1,SkSat_u2) → profile-ontAssertion(SkSat_u1)
+profile-ontendTime(SkSat_u2,SkSat_u1) → xsddateTime(SkSat_u1)
+profile-ontclassification(SkSat_u1,SkSat_u2) → profile-ontInterest(SkSat_u1)
+profile-ontorganization(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontstreetAddress(SkSat_u1,SkSat_u2) → profile-ontAddress(SkSat_u1)
+profile-ontofficeAddress(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-onttopic1(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-onttitle(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontscheduleVer0.1(SkSat_u2,SkSat_u1) → profile-ontDayOfWeek(SkSat_u1)
+profile-ontorganization(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontAssertion(SkSat_u1) → profile-ontAssertion(SkSat_u1)
+profile-ontzip(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontfilter(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontemail(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontscheduleVer0.1(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+profile-ontlatitude(SkSat_u1,SkSat_u2) → profile-ontAddress(SkSat_u1)
+profile-ontzip(SkSat_u1,SkSat_u2) → profile-ontAddress(SkSat_u1)
+profile-ontstartTime(SkSat_u2,SkSat_u1) → xsddateTime(SkSat_u1)
+profile-ontinterests(SkSat_u2,SkSat_u1) → profile-ontInterest(SkSat_u1)
+profile-ontphoneNumber(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontscheduleVer1.0(SkSat_u2,SkSat_u1) → profile-ontBusyDayTime(SkSat_u1)
+profile-ontcity(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+profile-ontgender(SkSat_u1,SkSat_u2) → profile-ontProfile(SkSat_u1)
+=========================================

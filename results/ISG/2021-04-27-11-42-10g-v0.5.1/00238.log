@@ -1,0 +1,49 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 25; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:25:15 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/22 = 0.000%
+SkSat discarded rules : 0/22 = 0.000%
+avr. 27, 2021 1:25:15 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:25:15 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 17 , 5
+nonFullTGDs	0		fullTGDs	17			newNonFullTGDs	5		newFullTGDs	0
+avr. 27, 2021 1:25:16 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 177 ms = 0.18 s
+avr. 27, 2021 1:25:16 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 6
+avr. 27, 2021 1:25:16 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:25:16 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 2 , 15
+avr. 27, 2021 1:25:16 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 1
+avr. 27, 2021 1:25:16 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (18 dependecies)
+=========================================
+System(SkSat_u2) & homepage(SkSat_u2,SkSat_u1) → xsdanyURI(SkSat_u1)
+stations(SkSat_u2,SkSat_u1) & Line(SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(SkSat_u1)
+Station(SkSat_u2) & http://www.w3.org/2000/01/rdf-schema#label(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+Station(SkSat_u1) → cycSubwayStation(SkSat_u1)
+Station(SkSat_u1) → Station(SkSat_u1)
+Loop(SkSat_u1) → Line(SkSat_u1)
+Station(SkSat_u2) & line(SkSat_u2,SkSat_u1) → Line(SkSat_u1)
+line(SkSat_u2,SkSat_u1) & System(SkSat_u2) → Line(SkSat_u1)
+Line(SkSat_u2) & http://www.w3.org/2000/01/rdf-schema#label(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+Line(SkSat_u1) → errorError2(SkSat_u1)
+System(SkSat_u2) & http://www.w3.org/2000/01/rdf-schema#label(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+Station(SkSat_u2) & location(SkSat_u2,SkSat_u1) → location-ontLocation(SkSat_u1)
+Station(SkSat_u2) & airport(SkSat_u2,SkSat_u1) → airport-ontAirport(SkSat_u1)
+cycSubwayStation(SkSat_u1) → Station(SkSat_u1)
+System(SkSat_u1) → errorError3(SkSat_u1)
+adjacentTo(SkSat_u2,SkSat_u1) → adjacentTo(SkSat_u1,SkSat_u2)
+Station(SkSat_u1) → errorError1(SkSat_u1)
+Station(SkSat_u2) & adjacentTo(SkSat_u2,SkSat_u1) → Station(SkSat_u1)
+=========================================

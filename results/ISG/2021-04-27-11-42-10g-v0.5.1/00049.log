@@ -1,0 +1,124 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 71; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 12:57:19 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 2/69 = 2.899%
+SkSat discarded rules : 2/69 = 2.899%
+avr. 27, 2021 12:57:19 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 12:57:19 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 82 , 15
+nonFullTGDs	0		fullTGDs	82			newNonFullTGDs	15		newFullTGDs	0
+nonFullTGDs	100		fullTGDs	82			newNonFullTGDs	7		newFullTGDs	14
+avr. 27, 2021 12:57:19 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 288 ms = 0.29 s
+avr. 27, 2021 12:57:19 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 114
+avr. 27, 2021 12:57:19 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 12:57:19 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 49 , 182
+avr. 27, 2021 12:57:19 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 10
+avr. 27, 2021 12:57:19 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (92 dependecies)
+=========================================
+_S10(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+unnamedisIngredientOf(SkSat_u2,SkSat_u1) → unnamedhasIngredient(SkSat_u1,SkSat_u2)
+unnamedTunaTopping(SkSat_u1) → unnamedSeafoodTopping(SkSat_u1)
+_S0(SkSat_u2,SkSat_u1) → unnamedPizzaBase(SkSat_u1)
+unnamedJalapenoPepperTopping(SkSat_u1) → unnamedPepperTopping(SkSat_u1)
+_S2(SkSat_u2,SkSat_u1) → unnamedTomatoTopping(SkSat_u1)
+_S7(SkSat_u2,SkSat_u1) → unnamedPepperoniTopping(SkSat_u1)
+unnamedisBaseOf(SkSat_u1,SkSat_u2) → unnamedPizzaBase(SkSat_u1)
+unnamedOnionTopping(SkSat_u1) → unnamedVegetableTopping(SkSat_u1)
+unnamedNamedPizza(SkSat_u1) → unnamedPizza(SkSat_u1)
+unnamedisBaseOf(SkSat_u2,SkSat_u1) → unnamedhasBase(SkSat_u1,SkSat_u2)
+unnamedAmericanHotPizza(SkSat_u1) → unnamedNamedPizza(SkSat_u1)
+unnamedhasIngredient(SkSat_u2,SkSat_u1) → unnamedisIngredientOf(SkSat_u1,SkSat_u2)
+unnamedSeafoodTopping(SkSat_u1) → unnamedPizzaTopping(SkSat_u1)
+_S4(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+_S3(SkSat_u2,SkSat_u1) → unnamedParmezanTopping(SkSat_u1)
+_S8(SkSat_u2,SkSat_u1) → unnamedMozzarellaTopping(SkSat_u1)
+unnamedisToppingOf(SkSat_u2,SkSat_u1) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+unnamedPrawnTopping(SkSat_u1) → unnamedSeafoodTopping(SkSat_u1)
+unnamedSalamiTopping(SkSat_u1) → unnamedMeatTopping(SkSat_u1)
+_S4(SkSat_u2,SkSat_u1) → unnamedMozzarellaTopping(SkSat_u1)
+unnamedisBaseOf(SkSat_u2,SkSat_u1) → unnamedPizza(SkSat_u1)
+unnamedGreenPepperTopping(SkSat_u1) → unnamedPepperTopping(SkSat_u1)
+unnamedSohoPizza(SkSat_u1) & unnamedPizza(SkSat_u1) → unnamedCheesyPizza(SkSat_u1)
+unnamedPizza(SkSat_u1) → unnamedPizza(SkSat_u1)
+unnamedMargheritaPizza(SkSat_u1) → unnamedNamedPizza(SkSat_u1)
+_S8(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+unnamedhasTopping(SkSat_u2,SkSat_u1) → unnamedisToppingOf(SkSat_u1,SkSat_u2)
+unnamedParmezanTopping(SkSat_u1) → unnamedCheeseTopping(SkSat_u1)
+unnamedhasBase(SkSat_u1,SkSat_u2) → unnamedhasIngredient(SkSat_u1,SkSat_u2)
+_S5(SkSat_u2,SkSat_u1) → unnamedTomatoTopping(SkSat_u1)
+unnamedAmericanHotPizza(SkSat_u1) & unnamedPizza(SkSat_u1) → unnamedCheesyPizza(SkSat_u1)
+_S2(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+_S13(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+_S6(SkSat_u2,SkSat_u1) → unnamedMozzarellaTopping(SkSat_u1)
+unnamedhasBase(SkSat_u1,SkSat_u2) → unnamedPizza(SkSat_u1)
+unnamedisToppingOf(SkSat_u1,SkSat_u2) → unnamedPizzaTopping(SkSat_u1)
+_S5(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+unnamedOliveTopping(SkSat_u1) → unnamedVegetableTopping(SkSat_u1)
+unnamedAmericanaPizza(SkSat_u1) & unnamedPizza(SkSat_u1) → unnamedCheesyPizza(SkSat_u1)
+_S12(SkSat_u2,SkSat_u1) → unnamedMozzarellaTopping(SkSat_u1)
+_S11(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+unnamedisToppingOf(SkSat_u1,SkSat_u2) → unnamedisIngredientOf(SkSat_u1,SkSat_u2)
+_S10(SkSat_u2,SkSat_u1) → unnamedJalapenoPepperTopping(SkSat_u1)
+unnamedInconsistentTopping(SkSat_u1) → unnamedCheeseTopping(SkSat_u1)
+unnamedhasTopping(SkSat_u1,SkSat_u2) → unnamedPizza(SkSat_u1)
+_S0(SkSat_u1,SkSat_u2) → unnamedhasBase(SkSat_u1,SkSat_u2)
+_S7(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+_S1(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+unnamedMozzarellaTopping(SkSat_u1) → unnamedCheeseTopping(SkSat_u1)
+_S14(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+unnamedPizza(SkSat_u1) & unnamedMargheritaPizza(SkSat_u1) → unnamedCheesyPizza(SkSat_u1)
+_S3(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+unnamedCheeseTopping(SkSat_u1) → unnamedPizzaTopping(SkSat_u1)
+unnamedSohoPizza(SkSat_u1) → unnamedNamedPizza(SkSat_u1)
+unnamedisBaseOf(SkSat_u1,SkSat_u2) → unnamedisIngredientOf(SkSat_u1,SkSat_u2)
+unnamedPizza(SkSat_u1) & unnamedCheesyPizza(SkSat_u1) → unnamedCheesyPizza(SkSat_u1)
+unnamedPepperoniTopping(SkSat_u1) → unnamedMeatTopping(SkSat_u1)
+unnamedDeepPanBase(SkSat_u1) → unnamedPizzaBase(SkSat_u1)
+_S9(SkSat_u2,SkSat_u1) → unnamedOliveTopping(SkSat_u1)
+_S6(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+unnamedhasBase(SkSat_u2,SkSat_u1) → unnamedPizzaBase(SkSat_u1)
+unnamedMeatTopping(SkSat_u1) → unnamedPizzaTopping(SkSat_u1)
+unnamedhasTopping(SkSat_u1,SkSat_u2) & unnamedCheeseTopping(SkSat_u2) & unnamedPizza(SkSat_u1) → unnamedCheesyPizza(SkSat_u1)
+unnamedPepperTopping(SkSat_u1) → unnamedVegetableTopping(SkSat_u1)
+unnamedisToppingOf(SkSat_u2,SkSat_u1) → unnamedPizza(SkSat_u1)
+unnamedMozzarellaTopping(SkSat_u1) → unnamedhasCountryOfOrigin(SkSat_u1,http://www.owl-ontologies.com/unnamed.owl#Italy)
+unnamedhasTopping(SkSat_u1,SkSat_u2) → unnamedhasIngredient(SkSat_u1,SkSat_u2)
+_S13(SkSat_u2,SkSat_u1) → unnamedTomatoTopping(SkSat_u1)
+_S9(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+unnamedTomatoTopping(SkSat_u1) → unnamedVegetableTopping(SkSat_u1)
+_S11(SkSat_u2,SkSat_u1) → unnamedCheeseTopping(SkSat_u1)
+unnamedAmericanaPizza(SkSat_u1) → unnamedNamedPizza(SkSat_u1)
+unnamedSpicyBeefTopping(SkSat_u1) → unnamedMeatTopping(SkSat_u1)
+unnamedMushroomTopping(SkSat_u1) → unnamedVegetableTopping(SkSat_u1)
+unnamedCaperTopping(SkSat_u1) → unnamedVegetableTopping(SkSat_u1)
+unnamedVegetableTopping(SkSat_u1) → unnamedPizzaTopping(SkSat_u1)
+_S14(SkSat_u2,SkSat_u1) → unnamedPepperoniTopping(SkSat_u1)
+unnamedMargheritaPizza(SkSat_u1) → unnamedPizza(SkSat_u1)
+unnamedAmericanaPizza(SkSat_u1) → unnamedPizza(SkSat_u1)
+unnamedAmericanHotPizza(SkSat_u1) → unnamedPizza(SkSat_u1)
+_S12(SkSat_u1,SkSat_u2) → unnamedhasTopping(SkSat_u1,SkSat_u2)
+unnamedAnchovyTopping(SkSat_u1) → unnamedSeafoodTopping(SkSat_u1)
+unnamedThinAndCrispyBase(SkSat_u1) → unnamedPizzaBase(SkSat_u1)
+unnamedhasTopping(SkSat_u2,SkSat_u1) → unnamedPizzaTopping(SkSat_u1)
+unnamedInconsistentTopping(SkSat_u1) → unnamedVegetableTopping(SkSat_u1)
+unnamedCheesyPizza(SkSat_u1) → unnamedPizza(SkSat_u1)
+unnamedHamTopping(SkSat_u1) → unnamedMeatTopping(SkSat_u1)
+unnamedRedPepperTopping(SkSat_u1) → unnamedPepperTopping(SkSat_u1)
+_S1(SkSat_u2,SkSat_u1) → unnamedTomatoTopping(SkSat_u1)
+unnamedhasBase(SkSat_u2,SkSat_u1) → unnamedisBaseOf(SkSat_u1,SkSat_u2)
+unnamedSohoPizza(SkSat_u1) → unnamedPizza(SkSat_u1)
+=========================================

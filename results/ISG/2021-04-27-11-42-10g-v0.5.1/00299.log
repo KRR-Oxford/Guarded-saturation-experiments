@@ -1,0 +1,39 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 9; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:38:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/9 = 0.000%
+SkSat discarded rules : 0/9 = 0.000%
+avr. 27, 2021 1:38:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:38:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 9 , 0
+avr. 27, 2021 1:38:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 116 ms = 0.12 s
+avr. 27, 2021 1:38:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:38:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:38:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 1:38:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:38:46 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (9 dependecies)
+=========================================
+rdf2contact(SkSat_u2,SkSat_u1) → foafAgent(SkSat_u1)
+rdf2location(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+rdf2local-version(SkSat_u2,SkSat_u1) → xsddateTime(SkSat_u1)
+rdf2contact(SkSat_u1,SkSat_u2) → rdf2Schema(SkSat_u1)
+rdf2entries(SkSat_u2,SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(SkSat_u1)
+http://www.w3.org/2002/07/owl#Ontology(SkSat_u1) → rdf2Schema(SkSat_u1)
+rdf2Schema(SkSat_u1) → http://www.w3.org/2002/07/owl#Ontology(SkSat_u1)
+rdf2entries(SkSat_u1,SkSat_u2) → rdf2SchemaDirectory(SkSat_u1)
+rdf2location(SkSat_u1,SkSat_u2) → rdf2Schema(SkSat_u1)
+=========================================

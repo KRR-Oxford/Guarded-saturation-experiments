@@ -1,0 +1,96 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 82; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 12:58:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/73 = 0.000%
+SkSat discarded rules : 0/73 = 0.000%
+avr. 27, 2021 12:58:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 12:58:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 61 , 12
+nonFullTGDs	0		fullTGDs	61			newNonFullTGDs	12		newFullTGDs	0
+avr. 27, 2021 12:58:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 193 ms = 0.19 s
+avr. 27, 2021 12:58:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 13
+avr. 27, 2021 12:58:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 12:58:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 12 , 17
+avr. 27, 2021 12:58:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 4
+avr. 27, 2021 12:58:55 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (65 dependecies)
+=========================================
+talk-ontvideo(SkSat_u2,SkSat_u1) → xsdanyURI(SkSat_u1)
+talk-ontaddress(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontPerson(SkSat_u1) → talk-ontPerson(SkSat_u1)
+talk-ontfaxNumber(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-onttopic(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontinterests(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontmedia(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-ontspeaker(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-onthtml-URI(SkSat_u2,SkSat_u1) → xsdanyURI(SkSat_u1)
+talk-ontlongitude(SkSat_u2,SkSat_u1) → xsdinteger(SkSat_u1)
+talk-onthomeAddress(SkSat_u2,SkSat_u1) → talk-ontPlace(SkSat_u1)
+talk-ontzip(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-onttopic(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-ontaddress(SkSat_u1,SkSat_u2) → talk-ontPlace(SkSat_u1)
+talk-ontofficeAddress(SkSat_u1,SkSat_u2) → talk-ontPerson(SkSat_u1)
+talk-ontlocation(SkSat_u2,SkSat_u1) → talk-ontPlace(SkSat_u1)
+talk-ontPlace(SkSat_u1) → talk-ontPlace(SkSat_u1)
+talk-ontorganization(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontbeginTime(SkSat_u1,SkSat_u2) → talk-ontEvent(SkSat_u1)
+talk-ontowl-URI(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-ontspeaker(SkSat_u2,SkSat_u1) → talk-ontPerson(SkSat_u1)
+talk-onthost(SkSat_u2,SkSat_u1) → talk-ontPerson(SkSat_u1)
+talk-ontbioSketch(SkSat_u1,SkSat_u2) → talk-ontPerson(SkSat_u1)
+talk-ontpresentation(SkSat_u2,SkSat_u1) → xsdanyURI(SkSat_u1)
+talk-onthtml-URI(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-ontpresentation(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-ontzip(SkSat_u1,SkSat_u2) → talk-ontPlace(SkSat_u1)
+talk-ontname(SkSat_u1,SkSat_u2) → talk-ontPerson(SkSat_u1)
+talk-ontmedia(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontrelatedURI(SkSat_u2,SkSat_u1) → xsdanyURI(SkSat_u1)
+talk-onttitle(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-ontowl-URI(SkSat_u2,SkSat_u1) → xsdanyURI(SkSat_u1)
+talk-ontfaxNumber(SkSat_u1,SkSat_u2) → talk-ontPerson(SkSat_u1)
+talk-ontlocation(SkSat_u1,SkSat_u2) → talk-ontEvent(SkSat_u1)
+talk-ontTalk(SkSat_u1) → talk-ontEvent(SkSat_u1)
+talk-ontexpertise(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontinterests(SkSat_u1,SkSat_u2) → talk-ontPerson(SkSat_u1)
+talk-ontendTime(SkSat_u2,SkSat_u1) → xsddateTime(SkSat_u1)
+talk-ontendTime(SkSat_u1,SkSat_u2) → talk-ontEvent(SkSat_u1)
+talk-ontrelatedURI(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-ontofficeAddress(SkSat_u2,SkSat_u1) → talk-ontPlace(SkSat_u1)
+talk-ontdirection(SkSat_u1,SkSat_u2) → talk-ontPlace(SkSat_u1)
+talk-ontvideo(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-ontTalk(SkSat_u1) → talk-ontTalk(SkSat_u1)
+talk-ontaudio(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-ontexpertise(SkSat_u1,SkSat_u2) → talk-ontPerson(SkSat_u1)
+talk-ontaudio(SkSat_u2,SkSat_u1) → xsdanyURI(SkSat_u1)
+talk-onttitle(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontabstract(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontemail(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontbeginTime(SkSat_u2,SkSat_u1) → xsddateTime(SkSat_u1)
+talk-ontphoneNumber(SkSat_u1,SkSat_u2) → talk-ontPerson(SkSat_u1)
+talk-ontEvent(SkSat_u1) → talk-ontEvent(SkSat_u1)
+talk-onthost(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-ontlatitude(SkSat_u1,SkSat_u2) → talk-ontPlace(SkSat_u1)
+talk-ontabstract(SkSat_u1,SkSat_u2) → talk-ontTalk(SkSat_u1)
+talk-ontlongitude(SkSat_u1,SkSat_u2) → talk-ontPlace(SkSat_u1)
+talk-ontbioSketch(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontorganization(SkSat_u1,SkSat_u2) → talk-ontPerson(SkSat_u1)
+talk-ontlatitude(SkSat_u2,SkSat_u1) → xsdinteger(SkSat_u1)
+talk-ontphoneNumber(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontdirection(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-ontname(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+talk-onthomeAddress(SkSat_u1,SkSat_u2) → talk-ontPerson(SkSat_u1)
+talk-ontemail(SkSat_u1,SkSat_u2) → talk-ontPerson(SkSat_u1)
+=========================================

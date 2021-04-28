@@ -1,0 +1,76 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 46; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:19:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/46 = 0.000%
+SkSat discarded rules : 0/46 = 0.000%
+avr. 27, 2021 1:19:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:19:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 46 , 0
+avr. 27, 2021 1:19:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 140 ms = 0.14 s
+avr. 27, 2021 1:19:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:19:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:19:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 1:19:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:19:43 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (46 dependecies)
+=========================================
+query-ref(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+request-when(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+request(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+cancle(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+language(SkSat_u2,SkSat_u1) → Language(SkSat_u1)
+query-if(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+refuse(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+receiver(SkSat_u2,SkSat_u1) → Agent(SkSat_u1)
+language(SkSat_u1,SkSat_u2) → FIPA-ACL-MESSAGE(SkSat_u1)
+conversation-id(SkSat_u2,SkSat_u1) → damlLiteral(SkSat_u1)
+name(SkSat_u2,SkSat_u1) → damlLiteral(SkSat_u1)
+accept-proposol(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+FIPA-ACL-MESSAGE(SkSat_u1) → Thing(SkSat_u1)
+encoding(SkSat_u1,SkSat_u2) → FIPA-ACL-MESSAGE(SkSat_u1)
+proxy(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+receiver(SkSat_u1,SkSat_u2) → FIPA-ACL-MESSAGE(SkSat_u1)
+inform-ref(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+subscribe(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+ontology(SkSat_u1,SkSat_u2) → FIPA-ACL-MESSAGE(SkSat_u1)
+replyto(SkSat_u1,SkSat_u2) → FIPA-ACL-MESSAGE(SkSat_u1)
+failure(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+replyto(SkSat_u2,SkSat_u1) → Agent(SkSat_u1)
+request-whenever(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+confirm(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+Agent(SkSat_u1) → damlThing(SkSat_u1)
+reply-with(SkSat_u1,SkSat_u2) → FIPA-ACL-MESSAGE(SkSat_u1)
+cfp(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+sender(SkSat_u1,SkSat_u2) → FIPA-ACL-MESSAGE(SkSat_u1)
+reply-by(SkSat_u1,SkSat_u2) → FIPA-ACL-MESSAGE(SkSat_u1)
+inform(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+agree(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+in-reply-to(SkSat_u1,SkSat_u2) → FIPA-ACL-MESSAGE(SkSat_u1)
+disconfirm(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+propogate(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+encoding(SkSat_u2,SkSat_u1) → damlLiteral(SkSat_u1)
+inform-if(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+conversation-id(SkSat_u1,SkSat_u2) → FIPA-ACL-MESSAGE(SkSat_u1)
+sender(SkSat_u2,SkSat_u1) → Agent(SkSat_u1)
+reply-with(SkSat_u2,SkSat_u1) → damlLiteral(SkSat_u1)
+name(SkSat_u1,SkSat_u2) → Agent(SkSat_u1)
+in-reply-to(SkSat_u2,SkSat_u1) → damlLiteral(SkSat_u1)
+ontology(SkSat_u2,SkSat_u1) → damlLiteral(SkSat_u1)
+not-understood(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+reject(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+reply-by(SkSat_u2,SkSat_u1) → damlLiteral(SkSat_u1)
+propose(SkSat_u1) → FIPA-ACL-MESSAGE(SkSat_u1)
+=========================================

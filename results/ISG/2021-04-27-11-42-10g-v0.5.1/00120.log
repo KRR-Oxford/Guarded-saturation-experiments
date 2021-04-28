@@ -1,0 +1,108 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 71; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:09:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 4/67 = 5.970%
+SkSat discarded rules : 4/67 = 5.970%
+avr. 27, 2021 1:09:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:09:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 70 , 8
+nonFullTGDs	0		fullTGDs	70			newNonFullTGDs	8		newFullTGDs	0
+avr. 27, 2021 1:09:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 234 ms = 0.23 s
+avr. 27, 2021 1:09:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 29
+avr. 27, 2021 1:09:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:09:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 41 , 57
+avr. 27, 2021 1:09:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 7
+avr. 27, 2021 1:09:20 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (77 dependecies)
+=========================================
+travelhasCity(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+travelYoga(SkSat_u1) → travelRelaxation(SkSat_u1)
+travelhasStreet(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+travelCity(SkSat_u1) → travelDestination(SkSat_u1)
+travelBudgetAccommodation(SkSat_u2) & travelHotel(SkSat_u2) & travelhasAccommodation(SkSat_u1,SkSat_u2) & travelDestination(SkSat_u1) → travelBudgetHotelDestination(SkSat_u1)
+travelhasPart(SkSat_u2,SkSat_u1) → travelDestination(SkSat_u1)
+travelhasEMail(SkSat_u1,SkSat_u2) → travelContact(SkSat_u1)
+travelCapital(SkSat_u1) → travelDestination(SkSat_u1)
+travelNationalPark(SkSat_u1) → travelAccommodationRating(http://www.owl-ontologies.com/travel.owl#OneStarRating)
+travelhasAccommodation(SkSat_u1,SkSat_u2) → travelDestination(SkSat_u1)
+travelCampground(SkSat_u1) → travelhasRating(SkSat_u1,http://www.owl-ontologies.com/travel.owl#OneStarRating)
+travelBudgetHotelDestination(SkSat_u1) & travelDestination(SkSat_u1) → travelBudgetHotelDestination(SkSat_u1)
+travelLuxuryHotel(SkSat_u1) → travelHotel(SkSat_u1)
+travelQuietDestination(SkSat_u1) → travelDestination(SkSat_u1)
+travelAccommodation(SkSat_u1) & travelhasRating(SkSat_u1,http://www.owl-ontologies.com/travel.owl#OneStarRating) → travelBudgetAccommodation(SkSat_u1)
+travelSafari(SkSat_u1) → travelAdventure(SkSat_u1)
+travelhasActivity(SkSat_u2,SkSat_u1) → travelActivity(SkSat_u1)
+_S6(SkSat_u1,SkSat_u2) → travelhasActivity(SkSat_u1,SkSat_u2)
+travelhasZipCode(SkSat_u1,SkSat_u2) → travelContact(SkSat_u1)
+travelSurfing(SkSat_u1) → travelSports(SkSat_u1)
+travelhasRating(SkSat_u2,SkSat_u1) → travelAccommodationRating(SkSat_u1)
+travelhasZipCode(SkSat_u2,SkSat_u1) → xsdint(SkSat_u1)
+travelhasPart(SkSat_u1,SkSat_u2) → travelDestination(SkSat_u1)
+_S5(SkSat_u2,SkSat_u1) → travelLuxuryHotel(SkSat_u1)
+travelhasRating(SkSat_u1,http://www.owl-ontologies.com/travel.owl#TwoStarRating) & travelAccommodation(SkSat_u1) → travelBudgetAccommodation(SkSat_u1)
+travelRetireeDestination(SkSat_u1) → travelAccommodationRating(http://www.owl-ontologies.com/travel.owl#ThreeStarRating)
+_S0(SkSat_u1,SkSat_u2) → travelhasAccommodation(SkSat_u1,SkSat_u2)
+travelFarmland(SkSat_u1) → travelRuralArea(SkSat_u1)
+travelUrbanArea(SkSat_u1) → travelDestination(SkSat_u1)
+travelhasActivity(SkSat_u2,SkSat_u1) → travelisOfferedAt(SkSat_u1,SkSat_u2)
+travelhasRating(SkSat_u1,SkSat_u2) → travelAccommodation(SkSat_u1)
+travelhasAccommodation(SkSat_u2,SkSat_u1) → travelAccommodation(SkSat_u1)
+travelCity(SkSat_u1) → travelUrbanArea(SkSat_u1)
+_S1(SkSat_u2,SkSat_u1) → travelBudgetAccommodation(SkSat_u1)
+_S3(SkSat_u1,SkSat_u2) → travelhasActivity(SkSat_u1,SkSat_u2)
+travelhasStreet(SkSat_u1,SkSat_u2) → travelContact(SkSat_u1)
+travelCity(SkSat_u1) → travelAccommodationRating(http://www.owl-ontologies.com/travel.owl#ThreeStarRating)
+travelBeach(SkSat_u1) → travelDestination(SkSat_u1)
+_S5(SkSat_u1,SkSat_u2) → travelhasAccommodation(SkSat_u1,SkSat_u2)
+travelHotel(SkSat_u1) → travelAccommodation(SkSat_u1)
+travelAdventure(SkSat_u1) → travelActivity(SkSat_u1)
+travelRuralArea(SkSat_u1) → travelDestination(SkSat_u1)
+travelSafari(SkSat_u1) → travelSightseeing(SkSat_u1)
+travelLuxuryHotel(SkSat_u1) → travelhasRating(SkSat_u1,http://www.owl-ontologies.com/travel.owl#ThreeStarRating)
+_S0(SkSat_u2,SkSat_u1) → travelhasRating(SkSat_u1,http://www.owl-ontologies.com/travel.owl#ThreeStarRating)
+travelisOfferedAt(SkSat_u1,SkSat_u2) → travelActivity(SkSat_u1)
+travelCampground(SkSat_u1) → travelAccommodation(SkSat_u1)
+travelhasCity(SkSat_u1,SkSat_u2) → travelContact(SkSat_u1)
+_S2(SkSat_u1,SkSat_u2) → travelhasActivity(SkSat_u1,SkSat_u2)
+travelhasActivity(SkSat_u1,SkSat_u2) → travelDestination(SkSat_u1)
+travelSightseeing(SkSat_u1) → travelActivity(SkSat_u1)
+_S6(SkSat_u2,SkSat_u1) → travelMuseums(SkSat_u1)
+_S4(SkSat_u1,SkSat_u2) → travelhasAccommodation(SkSat_u1,SkSat_u2)
+travelhasContact(SkSat_u1,SkSat_u2) → travelActivity(SkSat_u1)
+travelFamilyDestination(SkSat_u1) → travelDestination(SkSat_u1)
+travelRelaxation(SkSat_u1) → travelActivity(SkSat_u1)
+_S2(SkSat_u2,SkSat_u1) → travelSightseeing(SkSat_u1)
+_S1(SkSat_u1,SkSat_u2) → travelhasAccommodation(SkSat_u1,SkSat_u2)
+_S4(SkSat_u2,SkSat_u1) → travelCampground(SkSat_u1)
+travelTown(SkSat_u1) → travelUrbanArea(SkSat_u1)
+travelCapital(SkSat_u1) → travelCity(SkSat_u1)
+travelBunjeeJumping(SkSat_u1) → travelAdventure(SkSat_u1)
+travelisOfferedAt(SkSat_u2,SkSat_u1) → travelhasActivity(SkSat_u1,SkSat_u2)
+travelBudgetHotelDestination(SkSat_u1) → travelDestination(SkSat_u1)
+travelhasContact(SkSat_u2,SkSat_u1) → travelContact(SkSat_u1)
+travelBedAndBreakfast(SkSat_u1) → travelAccommodation(SkSat_u1)
+_S3(SkSat_u2,SkSat_u1) → travelHiking(SkSat_u1)
+travelisOfferedAt(SkSat_u2,SkSat_u1) → travelDestination(SkSat_u1)
+travelSports(SkSat_u1) → travelActivity(SkSat_u1)
+travelNationalPark(SkSat_u1) → travelRuralArea(SkSat_u1)
+_S1(SkSat_u2,SkSat_u1) → travelHotel(SkSat_u1)
+travelRetireeDestination(SkSat_u1) → travelDestination(SkSat_u1)
+travelMuseums(SkSat_u1) → travelSightseeing(SkSat_u1)
+travelhasEMail(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+travelSunbathing(SkSat_u1) → travelRelaxation(SkSat_u1)
+travelNationalPark(SkSat_u1) → travelDestination(SkSat_u1)
+travelHiking(SkSat_u1) → travelSports(SkSat_u1)
+=========================================

@@ -1,0 +1,98 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 75; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:41:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/71 = 0.000%
+SkSat discarded rules : 0/71 = 0.000%
+avr. 27, 2021 1:41:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:41:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 66 , 5
+nonFullTGDs	0		fullTGDs	66			newNonFullTGDs	5		newFullTGDs	0
+avr. 27, 2021 1:41:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 183 ms = 0.18 s
+avr. 27, 2021 1:41:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 6
+avr. 27, 2021 1:41:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:41:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 5 , 11
+avr. 27, 2021 1:41:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 1
+avr. 27, 2021 1:41:58 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (67 dependecies)
+=========================================
+mep_identifier(SkSat_u1,SkSat_u2) → Message_Exchange_Pattern(SkSat_u1)
+service_role(SkSat_u2,SkSat_u1) → wsaServiceModel.owl#Service_Role(SkSat_u1)
+service_role(SkSat_u1,SkSat_u2) → Message_Header(SkSat_u1)
+realize_correlation(SkSat_u2,SkSat_u1) → Message_Correlation(SkSat_u1)
+part_of_sequence(SkSat_u1,SkSat_u2) → Message(SkSat_u1)
+contained_by(SkSat_u1,SkSat_u2) → Message_Body(SkSat_u1)
+expressedIn(SkSat_u1,SkSat_u2) → Delivery_Policy(SkSat_u1)
+describedUsing(SkSat_u1,SkSat_u2) → Message(SkSat_u1)
+associated_policy(SkSat_u2,SkSat_u1) → Delivery_Policy(SkSat_u1)
+mep_identifier(SkSat_u2,SkSat_u1) → wsaResourceModel.owl#Identifier(SkSat_u1)
+Message_Receiver(SkSat_u1) → wsaServiceModel.owl#Agent(SkSat_u1)
+wsaServiceModel.owlService_Intermediary(SkSat_u1) → Message_Sender(SkSat_u1)
+contained_in_msg_env(SkSat_u2,SkSat_u1) → Message_Envelope(SkSat_u1)
+contains_msg_body(SkSat_u2,SkSat_u1) → contained_by(SkSat_u1,SkSat_u2)
+Delivery_Policy(SkSat_u1) → wsaPolicyModel.owl#Policy(SkSat_u1)
+Message_Sender(SkSat_u1) → wsaServiceModel.owl#Agent(SkSat_u1)
+content(SkSat_u1,SkSat_u2) → Message_Body(SkSat_u1)
+realized_by(SkSat_u2,SkSat_u1) → Message_Transport(SkSat_u1)
+describe_service_invocation(SkSat_u1,SkSat_u2) → Message_Exchange_Pattern(SkSat_u1)
+realize_mep(SkSat_u1,SkSat_u2) → Message_Sequence(SkSat_u1)
+contained_by(SkSat_u2,SkSat_u1) → Message_Envelope(SkSat_u1)
+content(SkSat_u2,SkSat_u1) → wsaExtensions.owl#Body_Content(SkSat_u1)
+constrains(SkSat_u2,SkSat_u1) → Message_Transport(SkSat_u1)
+wsaServiceModel.owlService_Intermediary(SkSat_u1) → Message_Receiver(SkSat_u1)
+recipient(SkSat_u2,SkSat_u1) → message_recipient(SkSat_u1,SkSat_u2)
+message_sender(SkSat_u1,SkSat_u2) → Message(SkSat_u1)
+realize_mep(SkSat_u2,SkSat_u1) → Message_Exchange_Pattern(SkSat_u1)
+message_body(SkSat_u1,SkSat_u2) → Message(SkSat_u1)
+message_envelope(SkSat_u1,SkSat_u2) → Message(SkSat_u1)
+message_recipient(SkSat_u2,SkSat_u1) → Message_Receiver(SkSat_u1)
+message_recipient(SkSat_u1,SkSat_u2) → Message(SkSat_u1)
+me_message_header(SkSat_u2,SkSat_u1) → Message_Header(SkSat_u1)
+expressedIn(SkSat_u2,SkSat_u1) → wsaExtensions.owl#PolicyDescriptionLanguage(SkSat_u1)
+reliability_realized_by(SkSat_u1,SkSat_u2) → Message_Reliability(SkSat_u1)
+has_identifier(SkSat_u1,SkSat_u2) → Message(SkSat_u1)
+associated_policy(SkSat_u1,SkSat_u2) → Message(SkSat_u1)
+constrains(SkSat_u1,SkSat_u2) → Delivery_Policy(SkSat_u1)
+correlation_id(SkSat_u1,SkSat_u2) → Message(SkSat_u1)
+contained_by(SkSat_u2,SkSat_u1) → contains_msg_body(SkSat_u1,SkSat_u2)
+contained_in_msg_env(SkSat_u1,SkSat_u2) → Address(SkSat_u1)
+realizedBy(SkSat_u2,SkSat_u1) → wsaExtensions.owl#URI(SkSat_u1)
+constrained_by(SkSat_u1,SkSat_u2) → Message_Transport(SkSat_u1)
+describedUsing(SkSat_u2,SkSat_u1) → wsaExtensions.owl#ServiceDescriptionLanguage(SkSat_u1)
+realize_correlation(SkSat_u1,SkSat_u2) → Message_Exchange_Pattern(SkSat_u1)
+message_sender(SkSat_u2,SkSat_u1) → Message_Sender(SkSat_u1)
+message_header(SkSat_u1,SkSat_u2) → Message(SkSat_u1)
+realizedBy(SkSat_u1,SkSat_u2) → Address(SkSat_u1)
+wsaMessage(SkSat_u1) → Message(SkSat_u1)
+realized_by(SkSat_u1,SkSat_u2) → Message_Reliability(SkSat_u1)
+message_body(SkSat_u2,SkSat_u1) → Message_Body(SkSat_u1)
+me_message_header(SkSat_u2,SkSat_u1) → me_message_header_of(SkSat_u1,SkSat_u2)
+message_header(SkSat_u2,SkSat_u1) → Message_Header(SkSat_u1)
+me_message_header_of(SkSat_u2,SkSat_u1) → me_message_header(SkSat_u1,SkSat_u2)
+message_transport(SkSat_u1,SkSat_u2) → Message(SkSat_u1)
+contained_in_msg_env(SkSat_u2,SkSat_u1) → contains_address(SkSat_u1,SkSat_u2)
+message_transport(SkSat_u2,SkSat_u1) → Message_Transport(SkSat_u1)
+constrained_by(SkSat_u2,SkSat_u1) → Delivery_Policy(SkSat_u1)
+part_of_sequence(SkSat_u2,SkSat_u1) → Message_Sequence(SkSat_u1)
+message_recipient(SkSat_u2,SkSat_u1) → recipient(SkSat_u1,SkSat_u2)
+message_sender(SkSat_u2,SkSat_u1) → originator_of(SkSat_u1,SkSat_u2)
+correlation_id(SkSat_u2,SkSat_u1) → wsaResourceModel.owl#Identifier(SkSat_u1)
+describe_service_invocation(SkSat_u2,SkSat_u1) → wsaExtensions.owl#Service_Invocation(SkSat_u1)
+message_envelope(SkSat_u2,SkSat_u1) → Message_Envelope(SkSat_u1)
+contains_address(SkSat_u2,SkSat_u1) → contained_in_msg_env(SkSat_u1,SkSat_u2)
+me_message_header(SkSat_u1,SkSat_u2) → Message_Envelope(SkSat_u1)
+has_identifier(SkSat_u2,SkSat_u1) → wsaResourceModel.owl#Identifier(SkSat_u1)
+originator_of(SkSat_u2,SkSat_u1) → message_sender(SkSat_u1,SkSat_u2)
+=========================================

@@ -1,0 +1,55 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 35; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:21:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/25 = 0.000%
+SkSat discarded rules : 0/25 = 0.000%
+avr. 27, 2021 1:21:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:21:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 25 , 0
+avr. 27, 2021 1:21:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 135 ms = 0.14 s
+avr. 27, 2021 1:21:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:21:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:21:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 1:21:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:21:50 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (25 dependecies)
+=========================================
+gedcomIndividualEvent(SkSat_u1) → gedcomEvent(SkSat_u1)
+gedcomIndividual(SkSat_u2) & gedcomtitle(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+gedcomIndividual(SkSat_u2) & gedcombirth(SkSat_u2,SkSat_u1) → gedcomBirth(SkSat_u1)
+gedcomDivorce(SkSat_u1) → gedcomFamilyEvent(SkSat_u1)
+gedcomdeath(SkSat_u1,SkSat_u2) → gedcomindividualEventProperty(SkSat_u1,SkSat_u2)
+gedcomdivorce(SkSat_u1,SkSat_u2) → gedcomfamilyEventProperty(SkSat_u1,SkSat_u2)
+gedcommarriage(SkSat_u2,SkSat_u1) & gedcomFamily(SkSat_u2) → gedcomMarriage(SkSat_u1)
+gedcomindividualEventProperty(SkSat_u1,SkSat_u2) → gedcomeventProperty(SkSat_u1,SkSat_u2)
+gedcomdivorce(SkSat_u2,SkSat_u1) & gedcomFamily(SkSat_u2) → gedcomDivorce(SkSat_u1)
+gedcomfamilyEventProperty(SkSat_u1,SkSat_u2) → gedcomeventProperty(SkSat_u1,SkSat_u2)
+gedcomIndividual(SkSat_u2) & gedcomname(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+gedcomDeath(SkSat_u1) → gedcomIndividualEvent(SkSat_u1)
+gedcomIndividual(SkSat_u2) & gedcomsex(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+gedcommarriage(SkSat_u1,SkSat_u2) → gedcomfamilyEventProperty(SkSat_u1,SkSat_u2)
+gedcomMarriage(SkSat_u1) → gedcomFamilyEvent(SkSat_u1)
+gedcomEvent(SkSat_u2) & gedcomdate(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+gedcomsurname(SkSat_u2,SkSat_u1) & gedcomIndividual(SkSat_u2) → xsdstring(SkSat_u1)
+gedcomEvent(SkSat_u2) & gedcomplace(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+gedcomdeath(SkSat_u2,SkSat_u1) & gedcomIndividual(SkSat_u2) → gedcomDeath(SkSat_u1)
+gedcomFamilyEvent(SkSat_u1) → gedcomEvent(SkSat_u1)
+gedcomBirth(SkSat_u1) → gedcomIndividualEvent(SkSat_u1)
+gedcombirth(SkSat_u1,SkSat_u2) → gedcomindividualEventProperty(SkSat_u1,SkSat_u2)
+gedcomgivenName(SkSat_u2,SkSat_u1) & gedcomIndividual(SkSat_u2) → xsdstring(SkSat_u1)
+gedcomIndividual(SkSat_u2) & gedcomchildIn(SkSat_u2,SkSat_u1) → gedcomFamily(SkSat_u1)
+gedcomspouseIn(SkSat_u2,SkSat_u1) & gedcomIndividual(SkSat_u2) → gedcomFamily(SkSat_u1)
+=========================================

@@ -1,0 +1,56 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 28; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 1:00:31 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 1/27 = 3.704%
+SkSat discarded rules : 1/27 = 3.704%
+avr. 27, 2021 1:00:31 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 1:00:31 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 26 , 0
+avr. 27, 2021 1:00:31 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 127 ms = 0.13 s
+avr. 27, 2021 1:00:31 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 1:00:31 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 1:00:31 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 27, 2021 1:00:31 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 1:00:31 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (26 dependecies)
+=========================================
+huisPartOfSubRegion(SkSat_u1,SkSat_u2) → huAccountingUnit(SkSat_u1)
+huisPartOfAccountingUnit(SkSat_u2,SkSat_u1) → hucontainsCatalogingUnit(SkSat_u1,SkSat_u2)
+hucontainsAccountingUnit(SkSat_u1,SkSat_u2) → hucontains(SkSat_u1,SkSat_u2)
+huname(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+huCatalogingUnit(SkSat_u1) → huHydrologicUnit(SkSat_u1)
+hucontains(SkSat_u2,SkSat_u1) → huisPartOf(SkSat_u1,SkSat_u2)
+huisPartOfSubRegion(SkSat_u1,SkSat_u2) → huisPartOf(SkSat_u1,SkSat_u2)
+hucontainsCatalogingUnit(SkSat_u2,SkSat_u1) → huisPartOfAccountingUnit(SkSat_u1,SkSat_u2)
+huSubRegion(SkSat_u1) → huHydrologicUnit(SkSat_u1)
+hucontainsAccountingUnit(SkSat_u2,SkSat_u1) → huisPartOfSubRegion(SkSat_u1,SkSat_u2)
+huisPartOf(SkSat_u2,SkSat_u1) → hucontains(SkSat_u1,SkSat_u2)
+huisPartOfAccountingUnit(SkSat_u1,SkSat_u2) → huisPartOf(SkSat_u1,SkSat_u2)
+huisPartOfRegion(SkSat_u2,SkSat_u1) → hucontainsSubRegion(SkSat_u1,SkSat_u2)
+huisPartOfAccountingUnit(SkSat_u1,SkSat_u2) → huCatalogingUnit(SkSat_u1)
+huisPartOfRegion(SkSat_u1,SkSat_u2) → huisPartOf(SkSat_u1,SkSat_u2)
+hucontainsSubRegion(SkSat_u1,SkSat_u2) → hucontains(SkSat_u1,SkSat_u2)
+hucontainsSubRegion(SkSat_u1,SkSat_u2) → huRegion(SkSat_u1)
+huRegion(SkSat_u1) → huHydrologicUnit(SkSat_u1)
+hucontainsCatalogingUnit(SkSat_u1,SkSat_u2) → hucontains(SkSat_u1,SkSat_u2)
+hucontainsCatalogingUnit(SkSat_u1,SkSat_u2) → huAccountingUnit(SkSat_u1)
+huAccountingUnit(SkSat_u1) → huHydrologicUnit(SkSat_u1)
+huisPartOfSubRegion(SkSat_u2,SkSat_u1) → hucontainsAccountingUnit(SkSat_u1,SkSat_u2)
+hucontainsSubRegion(SkSat_u2,SkSat_u1) → huisPartOfRegion(SkSat_u1,SkSat_u2)
+huisPartOfRegion(SkSat_u1,SkSat_u2) → huSubRegion(SkSat_u1)
+huname(SkSat_u1,SkSat_u2) → huHydrologicUnit(SkSat_u1)
+hucontainsAccountingUnit(SkSat_u1,SkSat_u2) → huSubRegion(SkSat_u1)
+=========================================

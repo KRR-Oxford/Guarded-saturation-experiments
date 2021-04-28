@@ -1,0 +1,46 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 22; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+avr. 27, 2021 12:59:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: SkSat discarded rules : 0/15 = 0.000%
+SkSat discarded rules : 0/15 = 0.000%
+avr. 27, 2021 12:59:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 12:59:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 14 , 1
+nonFullTGDs	0		fullTGDs	14			newNonFullTGDs	1		newFullTGDs	0
+avr. 27, 2021 12:59:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 164 ms = 0.16 s
+avr. 27, 2021 12:59:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 27, 2021 12:59:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 12:59:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 1 , 1
+avr. 27, 2021 12:59:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 1
+avr. 27, 2021 12:59:40 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (15 dependecies)
+=========================================
+photojpegURI(SkSat_u2,SkSat_u1) → xsdanyURI(SkSat_u1)
+photosize(SkSat_u2,SkSat_u1) → xsdnonNegativeInteger(SkSat_u1)
+photoheight(SkSat_u1,SkSat_u2) → photoPhoto(SkSat_u1)
+photodescription(SkSat_u1,SkSat_u2) → photoPhoto(SkSat_u1)
+photowidth(SkSat_u2,SkSat_u1) → xsdnonNegativeInteger(SkSat_u1)
+photodescription(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+phototitle(SkSat_u1,SkSat_u2) → photoPhoto(SkSat_u1)
+photoPhoto(SkSat_u1) → photoPhoto(SkSat_u1)
+phototakenOn(SkSat_u2,SkSat_u1) → xsddateTime(SkSat_u1)
+phototitle(SkSat_u2,SkSat_u1) → xsdstring(SkSat_u1)
+photoheight(SkSat_u2,SkSat_u1) → xsdnonNegativeInteger(SkSat_u1)
+photowidth(SkSat_u1,SkSat_u2) → photoPhoto(SkSat_u1)
+photojpegURI(SkSat_u1,SkSat_u2) → photoPhoto(SkSat_u1)
+photosize(SkSat_u1,SkSat_u2) → photoPhoto(SkSat_u1)
+phototakenOn(SkSat_u1,SkSat_u2) → photoPhoto(SkSat_u1)
+=========================================
