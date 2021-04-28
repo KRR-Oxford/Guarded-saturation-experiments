@@ -1,0 +1,65 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 35; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:29:32 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/35 = 0.000%
+GSat discarded rules : 0/35 = 0.000%
+avr. 26, 2021 6:29:32 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:29:32 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 35 , 0
+avr. 26, 2021 6:29:32 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 116 ms = 0.12 s
+avr. 26, 2021 6:29:32 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:29:32 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:29:32 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:29:32 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:29:32 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (35 dependecies)
+=========================================
+errorError2(GSat_u1) → UNSPSCFood-Beverage-and-Tobacco-Products(GSat_u1)
+txteats(GSat_u2,GSat_u1) & txtOvo-LactoVegetarian(GSat_u2) → txtOvoLactoVegetarianFood(GSat_u1)
+txteats(GSat_u2,GSat_u1) & txtLactoVegetarian(GSat_u2) → txtLactoVegetarianFood(GSat_u1)
+txteats(GSat_u1,GSat_u2) → txtVegetarian(GSat_u1)
+errorError9(GSat_u1) → txtMeat(GSat_u1)
+txtVegetarianFood(GSat_u1) → txtOvoLactoVegetarianFood(GSat_u1)
+txtLactoVegetarianFood(GSat_u1) → errorError8(GSat_u1)
+txtOvoVegetarianFood(GSat_u1) → errorError5(GSat_u1)
+txtLactoVegetarian(GSat_u1) → txtOvo-LactoVegetarian(GSat_u1)
+UNSPSCFood-Beverage-and-Tobacco-Products(GSat_u1) → errorError2(GSat_u1)
+txteats(GSat_u2,GSat_u1) & txtVegetarian(GSat_u2) → txtVegetarianFood(GSat_u1)
+txtOvoVegetarian(GSat_u2) & txteats(GSat_u2,GSat_u1) → txtOvoVegetarianFood(GSat_u1)
+txtVegetarian(GSat_u1) → foaf2#Person(GSat_u1)
+txtOvoLactoVegetarianFood(GSat_u1) → txtVegetarianFood(GSat_u1)
+txtVegetarianFood(GSat_u1) → errorError6(GSat_u1)
+UNSPSCMeat(GSat_u1) → txtMeat(GSat_u1)
+txtOvo-LactoVegetarian(GSat_u1) → txtVegetarian(GSat_u1)
+txtVegetarian(GSat_u1) → personPerson(GSat_u1)
+errorError1(GSat_u1) → UNSPSCEggs(GSat_u1)
+txtVegan(GSat_u1) → txtVegetarian(GSat_u1)
+errorError8(GSat_u1) → UNSPSCFood-Beverage-and-Tobacco-Products(GSat_u1)
+txtOvoVegetarian(GSat_u1) → txtOvo-LactoVegetarian(GSat_u1)
+errorError11(GSat_u1) → UNSPSCDairy(GSat_u1)
+errorError10(GSat_u1) → txtMeat(GSat_u1)
+txtVeganFood(GSat_u1) → errorError2(GSat_u1)
+errorError3(GSat_u1) → txtMeat(GSat_u1)
+errorError4(GSat_u1) → UNSPSCDairy-products-and-eggs(GSat_u1)
+errorError6(GSat_u1) → UNSPSCFood-Beverage-and-Tobacco-Products(GSat_u1)
+txtVegetarian(GSat_u1) → foaf2Person(GSat_u1)
+UNSPSCSeafood(GSat_u1) → txtMeat(GSat_u1)
+errorError7(GSat_u1) → txtMeat(GSat_u1)
+UNSPSCFood-Beverage-and-Tobacco-Products(GSat_u1) → errorError8(GSat_u1)
+errorError5(GSat_u1) → UNSPSCFood-Beverage-and-Tobacco-Products(GSat_u1)
+txteats(GSat_u2,GSat_u1) & txtVegan(GSat_u2) → txtVeganFood(GSat_u1)
+UNSPSCFood-Beverage-and-Tobacco-Products(GSat_u1) → errorError5(GSat_u1)
+=========================================

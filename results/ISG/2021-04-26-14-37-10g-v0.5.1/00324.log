@@ -1,0 +1,78 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 48; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:37:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/48 = 0.000%
+GSat discarded rules : 0/48 = 0.000%
+avr. 26, 2021 6:37:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:37:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 48 , 0
+avr. 26, 2021 6:37:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 123 ms = 0.12 s
+avr. 26, 2021 6:37:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:37:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:37:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:37:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:37:43 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (48 dependecies)
+=========================================
+icalorganizer(GSat_u2,GSat_u1) → icalValue_CAL-ADDRESS(GSat_u1)
+icalduration(GSat_u2,GSat_u1) → icalValue_DURATION(GSat_u1)
+icalcalscale(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalrrule(GSat_u2,GSat_u1) → icalValue_RECUR(GSat_u1)
+icalrepeat(GSat_u1,GSat_u2) → icalValarm(GSat_u1)
+icalexdate(GSat_u1,GSat_u2) → icalDomainOf_rrule(GSat_u1)
+icalattendee(GSat_u2,GSat_u1) → icalValue_CAL-ADDRESS(GSat_u1)
+icalprodid(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalmethod(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalgeo(GSat_u2,GSat_u1) → icalList_of_Float(GSat_u1)
+icalclass(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icallocation(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalrelatedTo(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalsequence(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+icaltransp(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalrequestStatus(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icaltzoffsetfrom(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icaltzid(GSat_u1,GSat_u2) → icalVtimezone(GSat_u1)
+icalsummary(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icaldescription(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icaldue(GSat_u1,GSat_u2) → icalVtodo(GSat_u1)
+icalresources(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icaltzname(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icaldtstamp(GSat_u2,GSat_u1) → icalValue_DATE-TIME(GSat_u1)
+icallastModified(GSat_u2,GSat_u1) → icalValue_DATE-TIME(GSat_u1)
+icalpercentComplete(GSat_u1,GSat_u2) → icalVtodo(GSat_u1)
+icalcompleted(GSat_u1,GSat_u2) → icalVtodo(GSat_u1)
+icalaction(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalpercentComplete(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+icalversion(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalstatus(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalpriority(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+icalfreebusy(GSat_u2,GSat_u1) → icalValue_PERIOD(GSat_u1)
+icaltzid(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalcreated(GSat_u2,GSat_u1) → icalValue_DATE-TIME(GSat_u1)
+icalrecurrenceId(GSat_u1,GSat_u2) → icalDomainOf_rrule(GSat_u1)
+icalcontact(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalrepeat(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+icaltzname(GSat_u1,GSat_u2) → icalVtimezone(GSat_u1)
+icaltzoffsetto(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalcomment(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalexrule(GSat_u2,GSat_u1) → icalValue_RECUR(GSat_u1)
+icaluid(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalcompleted(GSat_u2,GSat_u1) → icalValue_DATE-TIME(GSat_u1)
+icalcategories(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icalX-(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+icaltzoffsetto(GSat_u1,GSat_u2) → icalVtimezone(GSat_u1)
+icaltransp(GSat_u1,GSat_u2) → icalVevent(GSat_u1)
+=========================================

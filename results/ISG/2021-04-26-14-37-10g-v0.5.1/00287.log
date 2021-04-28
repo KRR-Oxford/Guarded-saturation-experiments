@@ -1,0 +1,55 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 25; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:29:21 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/25 = 0.000%
+GSat discarded rules : 0/25 = 0.000%
+avr. 26, 2021 6:29:21 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:29:21 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 25 , 0
+avr. 26, 2021 6:29:21 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 109 ms = 0.11 s
+avr. 26, 2021 6:29:21 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:29:21 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:29:21 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:29:21 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:29:21 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (25 dependecies)
+=========================================
+geoCoordinateSystems20040307LocalCoordinateSystem(GSat_u1) → geoCoordinateSystems20040307CoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307hasYAxisReference(GSat_u2,GSat_u1) → geoFeatures20040307Point(GSat_u1)
+geoCoordinateSystems20040307StatePlane(GSat_u1) → geoCoordinateSystems20040307ProjectedCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307hasCoordinateSystem(GSat_u1,GSat_u2) → geoFeatures20040307SpatialDescription(GSat_u1)
+geoCoordinateSystems20040307xOrigin(GSat_u2,GSat_u1) → geoFeatures20040307SpatialThing(GSat_u1)
+geoCoordinateSystems20040307hasYAxisReference(GSat_u1,GSat_u2) → geoCoordinateSystems20040307LocalCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307hasCoordinateOrigin(GSat_u1,GSat_u2) → geoCoordinateSystems20040307LocalCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307hasXAxisReference(GSat_u2,GSat_u1) → geoFeatures20040307Point(GSat_u1)
+geoCoordinateSystems20040307yOrigin(GSat_u1,GSat_u2) → geoCoordinateSystems20040307LocalCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307yOrigin(GSat_u2,GSat_u1) → geoFeatures20040307SpatialThing(GSat_u1)
+geoCoordinateSystems20040307hasXAxisReference(GSat_u1,GSat_u2) → geoCoordinateSystems20040307LocalCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307UTM(GSat_u1) → geoCoordinateSystems20040307ProjectedCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307GeographicCoordinateSystem(GSat_u1) → geoCoordinateSystems20040307CoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307ProjectedCoordinateSystem(GSat_u1) → geoCoordinateSystems20040307CoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307hasCoordinateOrigin(GSat_u2,GSat_u1) → geoCoordinateSystems20040307CoordinateOrigin(GSat_u1)
+geoCoordinateSystems20040307zOrigin(GSat_u1,GSat_u2) → geoCoordinateSystems20040307LocalCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307hasCoordinateSystem(GSat_u1,GSat_u2) → geoFeatures20040307SpatialThing(GSat_u1)
+geoCoordinateSystems20040307NationalGrids(GSat_u1) → geoCoordinateSystems20040307ProjectedCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307xOrigin(GSat_u1,GSat_u2) → geoCoordinateSystems20040307LocalCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307World(GSat_u1) → geoCoordinateSystems20040307ProjectedCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307zOrigin(GSat_u2,GSat_u1) → geoFeatures20040307SpatialThing(GSat_u1)
+geoCoordinateSystems20040307Continental(GSat_u1) → geoCoordinateSystems20040307ProjectedCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307Polar(GSat_u1) → geoCoordinateSystems20040307ProjectedCoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307hasCoordinateSystem(GSat_u2,GSat_u1) → geoCoordinateSystems20040307CoordinateSystem(GSat_u1)
+geoCoordinateSystems20040307GaussKruger(GSat_u1) → geoCoordinateSystems20040307ProjectedCoordinateSystem(GSat_u1)
+=========================================

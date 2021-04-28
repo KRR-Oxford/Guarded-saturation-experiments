@@ -1,0 +1,49 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 35; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:02:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/24 = 0.000%
+GSat discarded rules : 0/24 = 0.000%
+avr. 26, 2021 6:02:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:02:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 18 , 6
+nonFullTGDs	0		fullTGDs	18			newNonFullTGDs	6		newFullTGDs	0
+avr. 26, 2021 6:02:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 217 ms = 0.22 s
+avr. 26, 2021 6:02:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 10
+avr. 26, 2021 6:02:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:02:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 10
+avr. 26, 2021 6:02:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:02:37 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (18 dependecies)
+=========================================
+jbi-ontInfoObject(GSat_u1) → errorError1(GSat_u1)
+jbi-onttarget(GSat_u2,GSat_u1) & jbi-ontRelation(GSat_u2) → jbi-ontInfoObject(GSat_u1)
+jbi-ontSupercedes(GSat_u1) → jbi-ontRelation(GSat_u1)
+jbi-ontrelation(GSat_u1,GSat_u2) → jbi-ontInfoObject(GSat_u1)
+jbi-ontRelation(GSat_u2) & jbi-ontsource(GSat_u2,GSat_u1) → jbi-ontInfoObject(GSat_u1)
+jbi-ontsupercedes(GSat_u1,GSat_u2) → jbi-ontrelation(GSat_u1,GSat_u2)
+jbi-ontInfoObject(GSat_u2) & jbi-ontplatformID(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+jbi-ontRelation(GSat_u1) → jbi-ontInfoObject(GSat_u1)
+jbi-onttemporalExtent(GSat_u2,GSat_u1) & jbi-ontInfoObject(GSat_u2) → xsddateTime(GSat_u1)
+jbi-ontpayloadSize(GSat_u2,GSat_u1) & jbi-ontInfoObject(GSat_u2) → xsdlong(GSat_u1)
+jbi-ontInfoObject(GSat_u2) & jbi-ontpublicationTime(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+jbi-ontInfoObject(GSat_u2) & jbi-ontsecurityClassification(GSat_u2,GSat_u1) → classification-ontMarking(GSat_u1)
+jbi-ontrelation(GSat_u2,GSat_u1) → jbi-ontInfoObject(GSat_u1)
+jbi-ontInfoObject(GSat_u2) & jbi-ontpayloadFormat(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+jbi-ontInfoObject(GSat_u2) & jbi-ontsignature(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+jbi-ontInfoObject(GSat_u2) & jbi-ontinfoObjectID(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+jbi-ontInfoObject(GSat_u1) → errorError2(GSat_u1)
+jbi-ontInfoObject(GSat_u2) & jbi-ontpublisherID(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+=========================================

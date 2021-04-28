@@ -1,0 +1,64 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 53; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:36:15 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/35 = 0.000%
+GSat discarded rules : 0/35 = 0.000%
+avr. 26, 2021 5:36:15 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:36:15 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 33 , 2
+nonFullTGDs	0		fullTGDs	33			newNonFullTGDs	2		newFullTGDs	0
+avr. 26, 2021 5:36:15 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 148 ms = 0.15 s
+avr. 26, 2021 5:36:15 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 2
+avr. 26, 2021 5:36:15 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:36:15 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 2
+avr. 26, 2021 5:36:15 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 5:36:15 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (33 dependecies)
+=========================================
+eventdefaultHost(GSat_u1,GSat_u2) → eventEventSeries(GSat_u1)
+eventstartDate(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+eventendDate(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+eventdefaultEndTime(GSat_u2,GSat_u1) → xsdTime(GSat_u1)
+eventdefaultLocation(GSat_u1,GSat_u2) → eventEventSeries(GSat_u1)
+ontologyisPartOf(GSat_u2,GSat_u1) → eventincludes(GSat_u1,GSat_u2)
+eventincludes(GSat_u2,GSat_u1) → eventEvent(GSat_u1)
+eventdefaultDay(GSat_u1,GSat_u2) → eventEventSeries(GSat_u1)
+eventincludes(GSat_u1,GSat_u2) → eventEventSeries(GSat_u1)
+eventdefaultDay(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+eventspeaker(GSat_u2,GSat_u1) → personPerson(GSat_u1)
+eventdefaultEndTime(GSat_u1,GSat_u2) → eventEventSeries(GSat_u1)
+eventdefaultLocation(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+eventlocation(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+eventdefaultStartTime(GSat_u2,GSat_u1) → xsdTime(GSat_u1)
+eventdefaultHost(GSat_u2,GSat_u1) → personPerson(GSat_u1)
+eventdescription(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+eventhost(GSat_u2,GSat_u1) → personPerson(GSat_u1)
+eventdescription(GSat_u1,GSat_u2) → eventEventSeries(GSat_u1)
+eventabstract(GSat_u1,GSat_u2) → eventEvent(GSat_u1)
+eventdefaultStartTime(GSat_u1,GSat_u2) → eventEventSeries(GSat_u1)
+eventisPartOf(GSat_u2,GSat_u1) → ontologyincludes(GSat_u1,GSat_u2)
+eventisPartOf(GSat_u1,GSat_u2) → eventEvent(GSat_u1)
+eventkeyword(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+eventisPartOf(GSat_u2,GSat_u1) → eventEventSeries(GSat_u1)
+ontologyincludes(GSat_u2,GSat_u1) → eventisPartOf(GSat_u1,GSat_u2)
+eventincludes(GSat_u2,GSat_u1) → ontologyisPartOf(GSat_u1,GSat_u2)
+eventabstract(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+eventhost(GSat_u1,GSat_u2) → eventEvent(GSat_u1)
+eventtitle(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+eventspeaker(GSat_u1,GSat_u2) → eventEvent(GSat_u1)
+eventuri(GSat_u2,GSat_u1) → xsdanyURI(GSat_u1)
+eventlocation(GSat_u1,GSat_u2) → eventEvent(GSat_u1)
+=========================================

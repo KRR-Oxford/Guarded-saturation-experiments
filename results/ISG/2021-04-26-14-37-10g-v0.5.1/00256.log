@@ -1,0 +1,95 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 72; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:04:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/65 = 0.000%
+GSat discarded rules : 0/65 = 0.000%
+avr. 26, 2021 6:04:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:04:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 65 , 0
+avr. 26, 2021 6:04:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 135 ms = 0.14 s
+avr. 26, 2021 6:04:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:04:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:04:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:04:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:04:37 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (65 dependecies)
+=========================================
+unnamedCell_by_function(GSat_u1) → unnamedCell_by_class(GSat_u1)
+unnamedCanada_Region(GSat_u1) → unnamedRegion(GSat_u1)
+unnamedSouthern_California(GSat_u1) → unnamedUnited_States_Region(GSat_u1)
+unnamedWood(GSat_u1) → unnamedNatural_thing(GSat_u1)
+protegePAL-STATEMENT(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+unnamedPlant_cell(GSat_u1) → unnamedEukaryotic_cell(GSat_u1)
+unnamedUnited_States_Region(GSat_u1) → unnamedRegion(GSat_u1)
+unnamedChemical_constituents(GSat_u1,GSat_u2) → unnamedWood(GSat_u1)
+unnamedWater_Stain(GSat_u1) → unnamedStaining(GSat_u1)
+unnamedName(GSat_u1,GSat_u2) → unnamedNatural_thing(GSat_u1)
+unnamedSealing(GSat_u1) → unnamedFinishing(GSat_u1)
+unnamedOil_Stain(GSat_u1) → unnamedStaining(GSat_u1)
+unnamedPacific_North_West(GSat_u1) → unnamedUnited_States_Region(GSat_u1)
+unnamedFound_in(GSat_u2,GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+unnamedWeight(GSat_u1,GSat_u2) → unnamedWood(GSat_u1)
+unnamedWest_Coast_Region(GSat_u1) → unnamedAfrica_Region(GSat_u1)
+unnamedStandard_finish(GSat_u1) → unnamedFinishing(GSat_u1)
+unnamedColor(GSat_u1,GSat_u2) → unnamedWood(GSat_u1)
+unnamedChemical_constituents(GSat_u2,GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+unnamedMetal(GSat_u1) → unnamedNatural_thing(GSat_u1)
+unnamedExperimentally_modified_cell(GSat_u1) → unnamedCell(GSat_u1)
+protegeTO(GSat_u1,GSat_u2) → protegeDIRECTED-BINARY-RELATION(GSat_u1)
+protegePAL-RANGE(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+protegePAL-STATEMENT(GSat_u1,GSat_u2) → protegePAL-CONSTRAINT(GSat_u1)
+unnamedFinishing_level(GSat_u2,GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+unnamedCell_type(GSat_u2,GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+protegeFROM(GSat_u1,GSat_u2) → protegeDIRECTED-BINARY-RELATION(GSat_u1)
+unnamedSolvent_name(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+unnamedHemicellulose_lignin(GSat_u1) → unnamedChemical(GSat_u1)
+unnamedTracheary_element(GSat_u1) → unnamedtransporting_cell(GSat_u1)
+unnamedTracheid(GSat_u1) → unnamedTracheary_element(GSat_u1)
+unnamedSolvent_name(GSat_u1,GSat_u2) → unnamedStaining(GSat_u1)
+protegePAL-DESCRIPTION(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+unnamedFinishing_level(GSat_u1,GSat_u2) → unnamedWood(GSat_u1)
+unnamedRegion_of_growth(GSat_u2,GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+unnamedtransporting_cell(GSat_u1) → unnamedCell_by_function(GSat_u1)
+unnamedNorth_Eastern_America_Region(GSat_u1) → unnamedUnited_States_Region(GSat_u1)
+unnamedCellulose(GSat_u1) → unnamedChemical(GSat_u1)
+unnamedCell_in_vivo(GSat_u1) → unnamedCell(GSat_u1)
+unnamedNorth_West_America_Region(GSat_u1) → unnamedUnited_States_Region(GSat_u1)
+protegePAL-NAME(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+unnamedRegion_of_growth(GSat_u1,GSat_u2) → unnamedWood(GSat_u1)
+unnamedAfrica_Region(GSat_u1) → unnamedRegion(GSat_u1)
+unnamedGrain(GSat_u1,GSat_u2) → unnamedWood(GSat_u1)
+unnamedCell_by_organism(GSat_u1) → unnamedCell_in_vivo(GSat_u1)
+unnamedName(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+unnamedSpirit_Stain(GSat_u1) → unnamedStaining(GSat_u1)
+unnamedFiber_tracheid(GSat_u1) → unnamedTracheary_element(GSat_u1)
+unnamedSouth_Eastern_America_Region(GSat_u1) → unnamedUnited_States_Region(GSat_u1)
+unnamedCentral_America_Region(GSat_u1) → unnamedUnited_States_Region(GSat_u1)
+unnamedLinear_polymer_crystalline(GSat_u1) → unnamedChemical(GSat_u1)
+protegePAL-RANGE(GSat_u1,GSat_u2) → protegePAL-CONSTRAINT(GSat_u1)
+unnamedSoftWood(GSat_u1) → unnamedWood(GSat_u1)
+protegePAL-DESCRIPTION(GSat_u1,GSat_u2) → protegePAL-CONSTRAINT(GSat_u1)
+unnamedAlaska_Region(GSat_u1) → unnamedUnited_States_Region(GSat_u1)
+unnamedWestern_America_Region(GSat_u1) → unnamedUnited_States_Region(GSat_u1)
+unnamedHardWood(GSat_u1) → unnamedWood(GSat_u1)
+unnamedCell_by_class(GSat_u1) → unnamedCell_in_vivo(GSat_u1)
+unnamedEukaryotic_cell(GSat_u1) → unnamedCell_by_organism(GSat_u1)
+unnamedStaining(GSat_u1) → unnamedFinishing(GSat_u1)
+unnamedBleaching(GSat_u1) → unnamedFinishing(GSat_u1)
+unnamedCell_type(GSat_u1,GSat_u2) → unnamedWood(GSat_u1)
+unnamedAmazon_Region(GSat_u1) → unnamedUnited_States_Region(GSat_u1)
+unnamedTracheary_element(GSat_u1) → unnamedPlant_cell(GSat_u1)
+protegePAL-NAME(GSat_u1,GSat_u2) → protegePAL-CONSTRAINT(GSat_u1)
+=========================================

@@ -1,0 +1,59 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 31; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:03:11 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/29 = 0.000%
+GSat discarded rules : 0/29 = 0.000%
+avr. 26, 2021 6:03:11 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:03:11 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 28 , 1
+nonFullTGDs	0		fullTGDs	28			newNonFullTGDs	1		newFullTGDs	0
+avr. 26, 2021 6:03:11 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 191 ms = 0.19 s
+avr. 26, 2021 6:03:11 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 3
+avr. 26, 2021 6:03:11 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:03:11 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 3
+avr. 26, 2021 6:03:11 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:03:11 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (28 dependecies)
+=========================================
+ServiceprovidedBy(GSat_u1,GSat_u2) → ServiceService(GSat_u1)
+ServicepresentedBy(GSat_u2,GSat_u1) → Servicepresents(GSat_u1,GSat_u2)
+ServicesupportedBy(GSat_u1,GSat_u2) → ServiceServiceGrounding(GSat_u1)
+ServiceprovidedBy(GSat_u2,GSat_u1) → Serviceprovides(GSat_u1,GSat_u2)
+Servicepresents(GSat_u1,GSat_u2) → ServiceService(GSat_u1)
+ServicedescribedBy(GSat_u1,GSat_u2) → ServiceisDescribedBy(GSat_u1,GSat_u2)
+Servicedescribes(GSat_u2,GSat_u1) → ServiceService(GSat_u1)
+Servicepresents(GSat_u2,GSat_u1) → ServiceServiceProfile(GSat_u1)
+Servicedescribes(GSat_u2,GSat_u1) → ServicedescribedBy(GSat_u1,GSat_u2)
+Servicesupports(GSat_u2,GSat_u1) → ServicesupportedBy(GSat_u1,GSat_u2)
+Servicepresents(GSat_u2,GSat_u1) → ServicepresentedBy(GSat_u1,GSat_u2)
+Servicesupports(GSat_u2,GSat_u1) → ServiceServiceGrounding(GSat_u1)
+Serviceprovides(GSat_u2,GSat_u1) → ServiceService(GSat_u1)
+ServiceisSupportedBy(GSat_u1,GSat_u2) → ServicesupportedBy(GSat_u1,GSat_u2)
+Serviceprovides(GSat_u2,GSat_u1) → ServiceprovidedBy(GSat_u1,GSat_u2)
+ServicesupportedBy(GSat_u2,GSat_u1) → Servicesupports(GSat_u1,GSat_u2)
+ServicesupportedBy(GSat_u2,GSat_u1) → ServiceService(GSat_u1)
+ServiceisDescribedBy(GSat_u1,GSat_u2) → ServicedescribedBy(GSat_u1,GSat_u2)
+Servicedescribes(GSat_u1,GSat_u2) → ServiceServiceModel(GSat_u1)
+Servicesupports(GSat_u1,GSat_u2) → ServiceService(GSat_u1)
+ServicepresentedBy(GSat_u1,GSat_u2) → ServiceisPresentedBy(GSat_u1,GSat_u2)
+ServicedescribedBy(GSat_u2,GSat_u1) → ServiceServiceModel(GSat_u1)
+ServicesupportedBy(GSat_u1,GSat_u2) → ServiceisSupportedBy(GSat_u1,GSat_u2)
+ServicepresentedBy(GSat_u1,GSat_u2) → ServiceServiceProfile(GSat_u1)
+ServiceisPresentedBy(GSat_u1,GSat_u2) → ServicepresentedBy(GSat_u1,GSat_u2)
+ServicepresentedBy(GSat_u2,GSat_u1) → ServiceService(GSat_u1)
+ServicedescribedBy(GSat_u1,GSat_u2) → ServiceService(GSat_u1)
+ServicedescribedBy(GSat_u2,GSat_u1) → Servicedescribes(GSat_u1,GSat_u2)
+=========================================

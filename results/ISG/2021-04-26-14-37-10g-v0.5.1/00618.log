@@ -1,0 +1,74 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 50; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 11:03:13 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 5/49 = 10.204%
+GSat discarded rules : 5/49 = 10.204%
+avr. 26, 2021 11:03:13 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 11:03:13 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 44 , 0
+avr. 26, 2021 11:03:13 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 117 ms = 0.12 s
+avr. 26, 2021 11:03:13 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 11:03:13 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 11:03:13 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 11:03:13 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 11:03:13 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (44 dependecies)
+=========================================
+OBO_RELhas_function(GSat_u1,GSat_u2) → OBO_RELbearer_of(GSat_u1,GSat_u2)
+OBO_RELhomologous_to(GSat_u2,GSat_u1) → OBO_RELhomologous_to(GSat_u1,GSat_u2)
+OBO_RELhas_quality(GSat_u2,GSat_u1) → OBO_RELquality_of(GSat_u1,GSat_u2)
+OBOLtowards(GSat_u1,GSat_u2) → oboInOwlObsoleteProperty(GSat_u1,GSat_u2)
+OBO_RELquality_of(GSat_u2,GSat_u1) → OBO_RELhas_quality(GSat_u1,GSat_u2)
+OBO_RELresults_in_structural_organization_of(GSat_u1,GSat_u2) → OBO_RELhas_participant(GSat_u1,GSat_u2)
+OBO_RELoverlaps(GSat_u2,GSat_u1) → OBO_RELoverlaps(GSat_u1,GSat_u2)
+OBO_RELhas_quality(GSat_u1,GSat_u2) → OBO_RELbearer_of(GSat_u1,GSat_u2)
+OBO_RELactivates(GSat_u1,GSat_u2) → OBO_RELpositively_regulates(GSat_u1,GSat_u2)
+OBO_RELinfluences(GSat_u2,GSat_u1) → OBO_RELinfluenced_by(GSat_u1,GSat_u2)
+OBO_RELdisposition_of(GSat_u2,GSat_u1) → OBO_RELhas_disposition(GSat_u1,GSat_u2)
+OBO_RELends_at_beginning_of(GSat_u2,GSat_u1) → OBO_RELbegins_at_end_of(GSat_u1,GSat_u2)
+OBO_RELbegins_at_end_of(GSat_u2,GSat_u1) → OBO_RELends_at_beginning_of(GSat_u1,GSat_u2)
+OBO_RELhas_function(GSat_u2,GSat_u1) → OBO_RELfunction_of(GSat_u1,GSat_u2)
+OBO_RELinfluenced_by(GSat_u2,GSat_u1) → OBO_RELinfluences(GSat_u1,GSat_u2)
+OBO_RELresults_in_increased_mass_of(GSat_u1,GSat_u2) → oboInOwlObsoleteProperty(GSat_u1,GSat_u2)
+OBO_RELhas_role(GSat_u1,GSat_u2) → OBO_RELbearer_of(GSat_u1,GSat_u2)
+OBO_RELdecreased_in_magnitude_compared_to(GSat_u2,GSat_u1) → OBO_RELincreased_in_magnitude_compared_to(GSat_u1,GSat_u2)
+OBO_RELsurrounds(GSat_u2,GSat_u1) → OBO_RELsurrounded_by(GSat_u1,GSat_u2)
+OBO_RELinactivates(GSat_u1,GSat_u2) → OBO_RELnegatively_regulates(GSat_u1,GSat_u2)
+OBO_RELrealized_by(GSat_u2,GSat_u1) → OBO_RELrealizes(GSat_u1,GSat_u2)
+OBO_RELsurrounded_by(GSat_u2,GSat_u1) → OBO_RELsurrounds(GSat_u1,GSat_u2)
+OBO_RELquality_of(GSat_u1,GSat_u2) → OBO_RELinheres_in(GSat_u1,GSat_u2)
+OBO_RELgenerically_inheres_in(GSat_u1,GSat_u2) → OBO_RELinheres_in(GSat_u1,GSat_u2)
+OBO_RELresults_in_formation_of(GSat_u1,GSat_u2) → OBO_RELresults_in_developmental_progression_of(GSat_u1,GSat_u2)
+OBO_RELincreased_in_magnitude_compared_to(GSat_u2,GSat_u1) → OBO_RELdecreased_in_magnitude_compared_to(GSat_u1,GSat_u2)
+OBO_RELhas_role(GSat_u2,GSat_u1) → OBO_RELrole_of(GSat_u1,GSat_u2)
+OBO_RELresults_in_morphogenesis_of(GSat_u1,GSat_u2) → OBO_RELhas_participant(GSat_u1,GSat_u2)
+OBO_RELrole_of(GSat_u2,GSat_u1) → OBO_RELhas_role(GSat_u1,GSat_u2)
+OBO_RELresults_in_maturation_of(GSat_u1,GSat_u2) → OBO_RELhas_participant(GSat_u1,GSat_u2)
+OBO_RELregulates(GSat_u2,GSat_u1) → OBO_RELregulated_by(GSat_u1,GSat_u2)
+OBO_RELinheres_in(GSat_u2,GSat_u1) → OBO_RELbearer_of(GSat_u1,GSat_u2)
+OBO_RELfunction_of(GSat_u1,GSat_u2) → OBO_RELinheres_in(GSat_u1,GSat_u2)
+OBO_RELregulated_by(GSat_u2,GSat_u1) → OBO_RELregulates(GSat_u1,GSat_u2)
+OBO_RELpositively_regulates(GSat_u1,GSat_u2) → OBO_RELregulates(GSat_u1,GSat_u2)
+OBO_RELfunction_of(GSat_u2,GSat_u1) → OBO_RELhas_function(GSat_u1,GSat_u2)
+OBO_RELnegatively_regulates(GSat_u1,GSat_u2) → OBO_RELregulates(GSat_u1,GSat_u2)
+OBO_RELspecifically_inheres_in(GSat_u1,GSat_u2) → OBO_RELinheres_in(GSat_u1,GSat_u2)
+OBO_RELbearer_of(GSat_u2,GSat_u1) → OBO_RELinheres_in(GSat_u1,GSat_u2)
+OBO_RELhas_disposition(GSat_u2,GSat_u1) → OBO_RELdisposition_of(GSat_u1,GSat_u2)
+OBO_RELrealizes(GSat_u2,GSat_u1) → OBO_RELrealized_by(GSat_u1,GSat_u2)
+OBO_RELrole_of(GSat_u1,GSat_u2) → OBO_RELinheres_in(GSat_u1,GSat_u2)
+OBO_RELspecifically_inheres_in(GSat_u1,GSat_u2) → oboInOwlObsoleteProperty(GSat_u1,GSat_u2)
+OBO_RELresults_in_secretion_of_granules_from(GSat_u1,GSat_u2) → oboInOwlObsoleteProperty(GSat_u1,GSat_u2)
+=========================================

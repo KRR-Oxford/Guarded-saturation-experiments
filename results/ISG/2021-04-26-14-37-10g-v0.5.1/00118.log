@@ -1,0 +1,137 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 111; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:46:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 3/110 = 2.727%
+GSat discarded rules : 3/110 = 2.727%
+avr. 26, 2021 5:46:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:46:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 89 , 18
+nonFullTGDs	0		fullTGDs	89			newNonFullTGDs	18		newFullTGDs	0
+nonFullTGDs	36		fullTGDs	99			newNonFullTGDs	0		newFullTGDs	6
+avr. 26, 2021 5:46:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 609 ms = 0.61 s
+avr. 26, 2021 5:46:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 202
+avr. 26, 2021 5:46:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:46:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 61 , 175
+avr. 26, 2021 5:46:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 16
+avr. 26, 2021 5:46:06 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (105 dependecies)
+=========================================
+peoplevan_driver(GSat_u1) → peopleperson(GSat_u1)
+peoplebicycle(GSat_u1) → peoplevehicle(GSat_u1)
+peoplemad_cow(GSat_u1) → peopleanimal(GSat_u1)
+peoplebus_driver(GSat_u1) → peopleperson(GSat_u1)
+peopleservice_number(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+peoplevan(GSat_u1) → peoplevehicle(GSat_u1)
+peopleperson(GSat_u1) & peopledog(GSat_u2) & peoplehas_pet(GSat_u1,GSat_u2) → peopledog_owner(GSat_u1)
+peoplehas_part(GSat_u2,GSat_u1) → peoplepart_of(GSat_u1,GSat_u2)
+peoplecow(GSat_u1) → peoplevegetarian(GSat_u1)
+peoplehas_mother(GSat_u1,GSat_u2) → peoplehas_parent(GSat_u1,GSat_u2)
+peopleold_lady(GSat_u2) & peoplehas_pet(GSat_u2,GSat_u1) → peoplecat(GSat_u1)
+peoplegrownup(GSat_u1) → peopleadult(GSat_u1)
+peoplepet(GSat_u1) → peopleanimal(GSat_u1)
+peoplemale(GSat_u1) & peopleperson(GSat_u1) & peopleadult(GSat_u1) → peopleman(GSat_u1)
+peoplemad_cow(GSat_u1) → peoplecow(GSat_u1)
+peoplehas_pet(GSat_u2,GSat_u1) → peopleis_pet_of(GSat_u1,GSat_u2)
+peopleeats(GSat_u2,GSat_u1) & peoplegiraffe(GSat_u2) → peopleleaf(GSat_u1)
+peoplebus_company(GSat_u1) → peoplecompany(GSat_u1)
+peoplehas_mother(GSat_u2,GSat_u1) → peoplewoman(GSat_u1)
+peopledog(GSat_u1) → peopleanimal(GSat_u1)
+peoplehaulage_company(GSat_u1) → peoplecompany(GSat_u1)
+peopleperson(GSat_u1) & peoplevan_driver(GSat_u1) → peopledriver(GSat_u1)
+peopleperson(GSat_u1) & peoplebus_driver(GSat_u1) → peopledriver(GSat_u1)
+peoplesheep(GSat_u2) & peopleeats(GSat_u2,GSat_u1) → peoplegrass(GSat_u1)
+peopleperson(GSat_u1) & peopleold_lady(GSat_u1) → peoplecat_liker(GSat_u1)
+peopleeats(GSat_u2,GSat_u1) → peopleeaten_by(GSat_u1,GSat_u2)
+peopleduck(GSat_u1) → peopleanimal(GSat_u1)
+peopleworks_for(GSat_u1,GSat_u2) & peoplehaulage_company(GSat_u2) → peoplehaulage_worker(GSat_u1)
+peopleis_pet_of(GSat_u2,GSat_u1) → peoplehas_pet(GSat_u1,GSat_u2)
+peopleanimal_lover(GSat_u1) → peopleperson(GSat_u1)
+peoplegrownup(GSat_u1) → peopleperson(GSat_u1)
+peopleeats(GSat_u1,GSat_u2) → peopleanimal(GSat_u1)
+peopleperson(GSat_u1) & peoplecat_owner(GSat_u1) → peoplecat_liker(GSat_u1)
+peopleeaten_by(GSat_u2,GSat_u1) → peopleeats(GSat_u1,GSat_u2)
+peoplecar(GSat_u1) → peoplevehicle(GSat_u1)
+peopleanimal(GSat_u2) & peopleperson(GSat_u1) & peoplehas_pet(GSat_u1,GSat_u2) → peoplepet_owner(GSat_u1)
+peoplesheep(GSat_u1) → peopleanimal(GSat_u1)
+peoplereads(GSat_u2,GSat_u1) & peoplewhite_van_man(GSat_u2) → peopletabloid(GSat_u1)
+peopleperson(GSat_u1) & peoplelikes(GSat_u1,GSat_u2) & peopledog(GSat_u2) → peopledog_liker(GSat_u1)
+peopletiger(GSat_u1) → peopleanimal(GSat_u1)
+peoplehas_pet(GSat_u2,GSat_u1) → peopleanimal(GSat_u1)
+peoplehas_pet(GSat_u1,GSat_u2) → peopleperson(GSat_u1)
+peopleold_lady(GSat_u1) → peoplefemale(GSat_u1)
+peopletabloid(GSat_u1) → peoplenewspaper(GSat_u1)
+peopleperson(GSat_u1) & peopleadult(GSat_u1) & peoplefemale(GSat_u1) → peoplewoman(GSat_u1)
+peoplekid(GSat_u1) → peopleperson(GSat_u1)
+peopleperson(GSat_u1) & peopleyoung(GSat_u1) → peoplekid(GSat_u1)
+peoplecat(GSat_u2) & peopleperson(GSat_u1) & peoplehas_pet(GSat_u1,GSat_u2) → peoplecat_owner(GSat_u1)
+peoplegrass(GSat_u1) → peopleplant(GSat_u1)
+peopleperson(GSat_u1) & peopledog_owner(GSat_u1) → peoplepet_owner(GSat_u1)
+peoplelorry_driver(GSat_u1) & peopleperson(GSat_u1) → peopledriver(GSat_u1)
+peoplevegetarian(GSat_u1) → peopleanimal(GSat_u1)
+peoplepet_owner(GSat_u1) → peopleperson(GSat_u1)
+peopleman(GSat_u1) → peopleadult(GSat_u1)
+peopleold_lady(GSat_u1) → peopleperson(GSat_u1)
+peopletree(GSat_u1) → peopleplant(GSat_u1)
+peopleperson(GSat_u1) & peoplecat_owner(GSat_u1) → peoplepet_owner(GSat_u1)
+peoplenewspaper(GSat_u1) → peoplepublication(GSat_u1)
+peoplereads(GSat_u2,GSat_u1) → peoplepublication(GSat_u1)
+peopletruck(GSat_u1) → peoplevehicle(GSat_u1)
+peoplered_top(GSat_u1) → peopletabloid(GSat_u1)
+peoplecat_owner(GSat_u1) → peopleperson(GSat_u1)
+peoplemagazine(GSat_u1) → peoplepublication(GSat_u1)
+peoplevehicle(GSat_u2) & peopleperson(GSat_u1) & peopledrives(GSat_u1,GSat_u2) → peopledriver(GSat_u1)
+peoplehaulage_truck_driver(GSat_u1) → peopleperson(GSat_u1)
+peopleperson(GSat_u1) & peopleold_lady(GSat_u1) → peoplepet_owner(GSat_u1)
+peoplegiraffe(GSat_u1) → peopleanimal(GSat_u1)
+peoplewoman(GSat_u1) → peopleperson(GSat_u1)
+peopledriver(GSat_u1) → peopleadult(GSat_u1)
+peopledog_owner(GSat_u1) → peopleperson(GSat_u1)
+peoplewoman(GSat_u1) → peopleadult(GSat_u1)
+peopleelderly(GSat_u1) → peopleadult(GSat_u1)
+peopleis_pet_of(GSat_u1,GSat_u2) → peoplepet(GSat_u1)
+peoplecat(GSat_u1) → peopleanimal(GSat_u1)
+peopleelderly(GSat_u1) & peopleperson(GSat_u1) & peoplefemale(GSat_u1) → peopleold_lady(GSat_u1)
+peopleman(GSat_u1) → peoplemale(GSat_u1)
+peopleperson(GSat_u1) & peoplehaulage_truck_driver(GSat_u1) → peopledriver(GSat_u1)
+peoplehas_father(GSat_u2,GSat_u1) → peopleman(GSat_u1)
+peopleperson(GSat_u1) & peopledrives(GSat_u1,GSat_u2) & peoplevan(GSat_u2) → peoplevan_driver(GSat_u1)
+peopleperson(GSat_u1) & peopleold_lady(GSat_u1) → peoplecat_owner(GSat_u1)
+peopleperson(GSat_u1) & peoplewhite_van_man(GSat_u1) → peopledriver(GSat_u1)
+peoplebus(GSat_u1) → peoplevehicle(GSat_u1)
+peoplepart_of(GSat_u2,GSat_u1) → peoplehas_part(GSat_u1,GSat_u2)
+peoplehas_pet(GSat_u1,GSat_u2) → peoplelikes(GSat_u1,GSat_u2)
+peoplebroadsheet(GSat_u1) → peoplenewspaper(GSat_u1)
+peoplecat(GSat_u2) & peopleperson(GSat_u1) & peoplelikes(GSat_u1,GSat_u2) → peoplecat_liker(GSat_u1)
+peoplequality_broadsheet(GSat_u1) → peoplebroadsheet(GSat_u1)
+peopleperson(GSat_u1) & peopleadult(GSat_u1) → peoplegrownup(GSat_u1)
+peopleman(GSat_u1) → peopleperson(GSat_u1)
+peoplewoman(GSat_u1) → peoplefemale(GSat_u1)
+peoplewhite_van_man(GSat_u1) → peopleman(GSat_u1)
+peopledog_liker(GSat_u1) → peopleperson(GSat_u1)
+peoplelorry(GSat_u1) → peoplevehicle(GSat_u1)
+peopleold_lady(GSat_u1) → peopleelderly(GSat_u1)
+peoplekid(GSat_u1) → peopleyoung(GSat_u1)
+peoplecat_liker(GSat_u1) → peopleperson(GSat_u1)
+peopleman(GSat_u1) & peopledrives(GSat_u1,GSat_u2) & peoplewhite_thing(GSat_u2) & peoplevan(GSat_u2) → peoplewhite_van_man(GSat_u1)
+peoplelorry_driver(GSat_u1) → peopleperson(GSat_u1)
+peoplehas_father(GSat_u1,GSat_u2) → peoplehas_parent(GSat_u1,GSat_u2)
+peopledriver(GSat_u1) → peopleperson(GSat_u1)
+peopleperson(GSat_u1) → peopleanimal(GSat_u1)
+peopleperson(GSat_u1) & peopledog_owner(GSat_u1) → peopledog_liker(GSat_u1)
+peopleperson(GSat_u1) & peoplelorry(GSat_u2) & peopledrives(GSat_u1,GSat_u2) → peoplelorry_driver(GSat_u1)
+peopleperson(GSat_u1) & peoplewhite_van_man(GSat_u1) → peoplevan_driver(GSat_u1)
+peopleperson(GSat_u1) & peopledrives(GSat_u1,GSat_u2) & peoplebus(GSat_u2) → peoplebus_driver(GSat_u1)
+=========================================

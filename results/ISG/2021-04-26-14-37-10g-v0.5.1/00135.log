@@ -1,0 +1,85 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 55; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:47:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/55 = 0.000%
+GSat discarded rules : 0/55 = 0.000%
+avr. 26, 2021 5:47:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:47:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 55 , 0
+avr. 26, 2021 5:47:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 138 ms = 0.14 s
+avr. 26, 2021 5:47:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 5:47:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:47:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 5:47:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 5:47:41 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (55 dependecies)
+=========================================
+nsmember_of(GSat_u2,GSat_u1) → nsUsergroup(GSat_u1)
+nsrelated_to(GSat_u1,GSat_u2) → nsPost(GSat_u1)
+nsreply_of(GSat_u2,GSat_u1) → nsPost(GSat_u1)
+nsrevisor_of(GSat_u2,GSat_u1) → nsPost(GSat_u1)
+nsfunction_of(GSat_u1,GSat_u2) → nsRole(GSat_u1)
+nshas_parent(GSat_u1,GSat_u2) → nsForum(GSat_u1)
+nsPost(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+nscontainer_of(GSat_u1,GSat_u2) → nsForum(GSat_u1)
+nscontainer_of(GSat_u2,GSat_u1) → nsPost(GSat_u1)
+nsmember_of(GSat_u1,GSat_u2) → nsUser(GSat_u1)
+nsknows(GSat_u2,GSat_u1) → nsUser(GSat_u1)
+nsSite(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+nscreator_of(GSat_u2,GSat_u1) → nsPost(GSat_u1)
+nsemail(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+nsrelated_to(GSat_u2,GSat_u1) → nsPost(GSat_u1)
+nshas_container(GSat_u2,GSat_u1) → nsForum(GSat_u1)
+nsnext_version(GSat_u1,GSat_u2) → nsPost(GSat_u1)
+nshost_of(GSat_u2,GSat_u1) → nsForum(GSat_u1)
+nshas_sibling(GSat_u2,GSat_u1) → nsPost(GSat_u1)
+nshas_parent(GSat_u2,GSat_u1) → nsForum(GSat_u1)
+nsparent_of(GSat_u2,GSat_u1) → nsForum(GSat_u1)
+nshost_of(GSat_u1,GSat_u2) → nsSite(GSat_u1)
+nshas_revisor(GSat_u2,GSat_u1) → nsUser(GSat_u1)
+nssibling_of(GSat_u1,GSat_u2) → nsPost(GSat_u1)
+nshas_reply(GSat_u2,GSat_u1) → nsPost(GSat_u1)
+nsprevious_version(GSat_u2,GSat_u1) → nsPost(GSat_u1)
+nsreply_of(GSat_u1,GSat_u2) → nsPost(GSat_u1)
+nsscope_of(GSat_u2,GSat_u1) → nsRole(GSat_u1)
+nsnext_version(GSat_u2,GSat_u1) → nsPost(GSat_u1)
+nssibling_of(GSat_u2,GSat_u1) → nsPost(GSat_u1)
+nshas_host(GSat_u1,GSat_u2) → nsForum(GSat_u1)
+nshas_host(GSat_u2,GSat_u1) → nsSite(GSat_u1)
+nshas_creator(GSat_u2,GSat_u1) → nsUser(GSat_u1)
+nshas_function(GSat_u2,GSat_u1) → nsRole(GSat_u1)
+nshas_scope(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+nsknows(GSat_u1,GSat_u2) → nsUser(GSat_u1)
+nsemail(GSat_u1,GSat_u2) → nsUser(GSat_u1)
+nshas_scope(GSat_u1,GSat_u2) → nsRole(GSat_u1)
+nshas_function(GSat_u1,GSat_u2) → nsUser(GSat_u1)
+nsForum(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+nsparent_of(GSat_u1,GSat_u2) → nsForum(GSat_u1)
+nscreator_of(GSat_u1,GSat_u2) → nsUser(GSat_u1)
+nshas_container(GSat_u1,GSat_u2) → nsPost(GSat_u1)
+nshas_reply(GSat_u1,GSat_u2) → nsPost(GSat_u1)
+nshas_revisor(GSat_u1,GSat_u2) → nsPost(GSat_u1)
+nsRole(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+nsfunction_of(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+nsUsergroup(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+nsprevious_version(GSat_u1,GSat_u2) → nsPost(GSat_u1)
+nshas_member(GSat_u2,GSat_u1) → nsUser(GSat_u1)
+nshas_member(GSat_u1,GSat_u2) → nsUsergroup(GSat_u1)
+nshas_sibling(GSat_u1,GSat_u2) → nsPost(GSat_u1)
+nsrevisor_of(GSat_u1,GSat_u2) → nsUser(GSat_u1)
+nsUser(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+nshas_creator(GSat_u1,GSat_u2) → nsPost(GSat_u1)
+=========================================

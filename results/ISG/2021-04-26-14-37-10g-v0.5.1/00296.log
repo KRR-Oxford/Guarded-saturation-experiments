@@ -1,0 +1,97 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 89; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:30:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 3/85 = 3.529%
+GSat discarded rules : 3/85 = 3.529%
+avr. 26, 2021 6:30:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:30:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 66 , 16
+nonFullTGDs	0		fullTGDs	66			newNonFullTGDs	16		newFullTGDs	0
+avr. 26, 2021 6:30:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 261 ms = 0.26 s
+avr. 26, 2021 6:30:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 70
+avr. 26, 2021 6:30:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:30:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 33 , 36
+avr. 26, 2021 6:30:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:30:06 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (66 dependecies)
+=========================================
+txtsubEventOf(GSat_u2,GSat_u1) → txtEvent(GSat_u1)
+txthasLocation(GSat_u2,GSat_u1) → txtLocation(GSat_u1)
+txtsubLocationOf(GSat_u2,GSat_u1) → txthasSubLocation(GSat_u1,GSat_u2)
+txtorganizerOf(GSat_u2,GSat_u1) → txthasOrganizer(GSat_u1,GSat_u2)
+txtmemberOf(GSat_u2,GSat_u1) → txthasMember(GSat_u1,GSat_u2)
+txthasEndTime(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+txtPresentation(GSat_u1) → txtEvent(GSat_u1)
+txtCommittee(GSat_u1) → txtGroup(GSat_u1)
+txtPresenter(GSat_u1) → txtAttendee(GSat_u1)
+txthasSubEvent(GSat_u2,GSat_u1) → txtsubEventOf(GSat_u1,GSat_u2)
+txtparticipantOf(GSat_u2,GSat_u1) → txthasParticipant(GSat_u1,GSat_u2)
+txtorganizerOf(GSat_u2,GSat_u1) → txtEvent(GSat_u1)
+txthasSubEvent(GSat_u2,GSat_u1) → txtEvent(GSat_u1)
+txthasPresenter(GSat_u1,GSat_u2) → txtPresentation(GSat_u1)
+txtsubLocationOf(GSat_u2,GSat_u1) → txtLocation(GSat_u1)
+txthasSubLocation(GSat_u2,GSat_u1) → txtsubLocationOf(GSat_u1,GSat_u2)
+txthasPresenter(GSat_u2,GSat_u1) → txtpresenterOf(GSat_u1,GSat_u2)
+txthasStartDate(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+txtPanel(GSat_u1) → txtGroup(GSat_u1)
+txtConference(GSat_u1) → txtEvent(GSat_u1)
+txthasMember(GSat_u1,GSat_u2) → txtGroup(GSat_u1)
+txthasStartTime(GSat_u1,GSat_u2) → txtEvent(GSat_u1)
+txtOrganization(GSat_u1) → txtGroup(GSat_u1)
+txtChair(GSat_u1) → txtPerson(GSat_u1)
+foafPerson(GSat_u1) → txtPerson(GSat_u1)
+txtlocationOf(GSat_u2,GSat_u1) → txthasLocation(GSat_u1,GSat_u2)
+txtparticipantOf(GSat_u1,GSat_u2) → txtPerson(GSat_u1)
+txthasStartDate(GSat_u1,GSat_u2) → txtEvent(GSat_u1)
+txtsubLocationOf(GSat_u1,GSat_u2) → txtLocation(GSat_u1)
+txtKeynoteSpeaker(GSat_u1) → txtPresenter(GSat_u1)
+txtmemberOf(GSat_u1,GSat_u2) → txtPerson(GSat_u1)
+txthasMember(GSat_u2,GSat_u1) → txtPerson(GSat_u1)
+txtKeynoteTalk(GSat_u1) → txtPresentation(GSat_u1)
+txthasEndDate(GSat_u1,GSat_u2) → txtEvent(GSat_u1)
+txtorganizerOf(GSat_u1,GSat_u2) → txtPerson(GSat_u1)
+txthasPresenter(GSat_u2,GSat_u1) → txtPresenter(GSat_u1)
+txthasParticipant(GSat_u1,GSat_u2) → txtEvent(GSat_u1)
+txthasOrganizer(GSat_u1,GSat_u2) → txtEvent(GSat_u1)
+txthasOrganizer(GSat_u2,GSat_u1) → txtPerson(GSat_u1)
+txtlocationOf(GSat_u1,GSat_u2) → txtLocation(GSat_u1)
+txtsubEventOf(GSat_u1,GSat_u2) → txtEvent(GSat_u1)
+txthasSubEvent(GSat_u1,GSat_u2) → txtEvent(GSat_u1)
+txtsubEventOf(GSat_u2,GSat_u1) → txthasSubEvent(GSat_u1,GSat_u2)
+txtOrganization(GSat_u1) → foafOrganization(GSat_u1)
+txthasSubLocation(GSat_u1,GSat_u2) → txtLocation(GSat_u1)
+txthasLocation(GSat_u2,GSat_u1) → txtlocationOf(GSat_u1,GSat_u2)
+txthasEndDate(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+txtCommitteeMember(GSat_u1) → txtPerson(GSat_u1)
+txthasLocation(GSat_u1,GSat_u2) → txtEvent(GSat_u1)
+txthasParticipant(GSat_u2,GSat_u1) → txtPerson(GSat_u1)
+txtlocationOf(GSat_u2,GSat_u1) → txtEvent(GSat_u1)
+txtSocialEvent(GSat_u1) → txtEvent(GSat_u1)
+txthasMember(GSat_u2,GSat_u1) → txtmemberOf(GSat_u1,GSat_u2)
+txtmemberOf(GSat_u2,GSat_u1) → txtGroup(GSat_u1)
+txtWorkshop(GSat_u1) → txtEvent(GSat_u1)
+txthasStartTime(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+txthasEndTime(GSat_u1,GSat_u2) → txtEvent(GSat_u1)
+txtAttendee(GSat_u1) → txtPerson(GSat_u1)
+txtPerson(GSat_u1) → foafPerson(GSat_u1)
+txthasOrganizer(GSat_u2,GSat_u1) → txtorganizerOf(GSat_u1,GSat_u2)
+txtpresenterOf(GSat_u1,GSat_u2) → txtPresenter(GSat_u1)
+txthasSubLocation(GSat_u2,GSat_u1) → txtLocation(GSat_u1)
+txtpresenterOf(GSat_u2,GSat_u1) → txthasPresenter(GSat_u1,GSat_u2)
+txtparticipantOf(GSat_u2,GSat_u1) → txtEvent(GSat_u1)
+txthasParticipant(GSat_u2,GSat_u1) → txtparticipantOf(GSat_u1,GSat_u2)
+txtpresenterOf(GSat_u2,GSat_u1) → txtPresentation(GSat_u1)
+=========================================

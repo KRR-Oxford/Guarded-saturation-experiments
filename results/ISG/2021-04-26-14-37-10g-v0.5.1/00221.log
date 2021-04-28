@@ -1,0 +1,47 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 18; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:01:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/17 = 0.000%
+GSat discarded rules : 0/17 = 0.000%
+avr. 26, 2021 6:01:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:01:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 16 , 1
+nonFullTGDs	0		fullTGDs	16			newNonFullTGDs	1		newFullTGDs	0
+avr. 26, 2021 6:01:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 186 ms = 0.19 s
+avr. 26, 2021 6:01:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 3
+avr. 26, 2021 6:01:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:01:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 3
+avr. 26, 2021 6:01:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:01:17 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (16 dependecies)
+=========================================
+areacodes-ontAreaCode(GSat_u2) & areacodes-ontexchange(GSat_u2,GSat_u1) → areacodes-ontExchange(GSat_u1)
+areacodes-ontAreaCode(GSat_u2) & areacodes-ontnumber(GSat_u2,GSat_u1) → xsdshort(GSat_u1)
+areacodes-ontoperatingCompany(GSat_u2,GSat_u1) & areacodes-ontExchange(GSat_u2) → areacodes-ontOperatingCompany(GSat_u1)
+areacodes-ontState(GSat_u2) & areacodes-ontcode(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+areacodes-ontExchange(GSat_u2) & areacodes-ontswitch(GSat_u2,GSat_u1) → areacodes-ontSwitch(GSat_u1)
+areacodes-ontExchange(GSat_u2) & areacodes-ontareaCode(GSat_u2,GSat_u1) → areacodes-ontAreaCode(GSat_u1)
+areacodes-ontExchange(GSat_u2) & areacodes-ontnumber(GSat_u2,GSat_u1) → xsdshort(GSat_u1)
+areacodes-ontExchange(GSat_u2) & areacodes-ontuse(GSat_u2,GSat_u1) → areacodes-ontUseCode(GSat_u1)
+areacodes-ontExchange(GSat_u2) & areacodes-ontstate(GSat_u2,GSat_u1) → areacodes-ontState(GSat_u1)
+areacodes-ontAreaCode(GSat_u2) & areacodes-ontstate(GSat_u2,GSat_u1) → areacodes-ontState(GSat_u1)
+areacodes-ontcode(GSat_u2,GSat_u1) & areacodes-ontSwitch(GSat_u2) → xsdstring(GSat_u1)
+areacodes-ontExchange(GSat_u2) & areacodes-ontrc(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+areacodes-ontnumber(GSat_u2,GSat_u1) & areacodes-ontOperatingCompany(GSat_u2) → xsdinteger(GSat_u1)
+areacodes-ontUseCode(GSat_u2) & areacodes-ontcode(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+areacodes-ontname(GSat_u2,GSat_u1) & areacodes-ontOperatingCompany(GSat_u2) → xsdstring(GSat_u1)
+areacodes-ontUseCode(GSat_u2) & areacodes-ontdefinition(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+=========================================

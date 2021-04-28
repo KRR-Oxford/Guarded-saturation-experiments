@@ -1,0 +1,53 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 34; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:02:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/28 = 0.000%
+GSat discarded rules : 0/28 = 0.000%
+avr. 26, 2021 6:02:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:02:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 22 , 6
+nonFullTGDs	0		fullTGDs	22			newNonFullTGDs	6		newFullTGDs	0
+avr. 26, 2021 6:02:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 226 ms = 0.23 s
+avr. 26, 2021 6:02:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 6
+avr. 26, 2021 6:02:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:02:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 6
+avr. 26, 2021 6:02:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:02:43 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (22 dependecies)
+=========================================
+movienight-ontimdbLink(GSat_u2,GSat_u1) → xsduriReference(GSat_u1)
+movienight-ontdate(GSat_u1,GSat_u2) → movienight-ontMovieNight(GSat_u1)
+movienight-ontvotedBy(GSat_u2,GSat_u1) → movienight-ontMember(GSat_u1)
+movienight-ontseatingCapacity(GSat_u2,GSat_u1) → xsdnonNegativeInteger(GSat_u1)
+movienight-onthasAudio(GSat_u1,GSat_u2) → movienight-ontMember(GSat_u1)
+movienight-ontimdbLink(GSat_u1,GSat_u2) → movienight-ontMovie(GSat_u1)
+movienight-ontprimaryMovie(GSat_u1,GSat_u2) → movienight-ontMovieNight(GSat_u1)
+movienight-onthasMovie(GSat_u2,GSat_u1) → movienight-ontMovie(GSat_u1)
+movienight-ontseatingCapacity(GSat_u1,GSat_u2) → movienight-ontMember(GSat_u1)
+movienight-onthasMovie(GSat_u1,GSat_u2) → movienight-ontMember(GSat_u1)
+movienight-onthostedBy(GSat_u2,GSat_u1) → movienight-ontMember(GSat_u1)
+movienight-onthasNomination(GSat_u1,GSat_u2) → movienight-ontMovieNight(GSat_u1)
+movienight-onthostedBy(GSat_u1,GSat_u2) → movienight-ontMovieNight(GSat_u1)
+movienight-onthasAudio(GSat_u2,GSat_u1) → movienight-ontAudioSystem(GSat_u1)
+movienight-ontprimaryMovie(GSat_u2,GSat_u1) → movienight-ontMovie(GSat_u1)
+movienight-onthasNomination(GSat_u2,GSat_u1) → movienight-ontMovie(GSat_u1)
+movienight-ontdate(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+movienight-ontNominatedMovie(GSat_u1) → movienight-ontMovie(GSat_u1)
+movienight-onthasTV(GSat_u1,GSat_u2) → movienight-ontMember(GSat_u1)
+movienight-onthasTV(GSat_u2,GSat_u1) → movienight-ontTelevision(GSat_u1)
+movienight-ontMovieNight(GSat_u1) → errorError1(GSat_u1)
+movienight-ontvotedBy(GSat_u1,GSat_u2) → movienight-ontNominatedMovie(GSat_u1)
+=========================================

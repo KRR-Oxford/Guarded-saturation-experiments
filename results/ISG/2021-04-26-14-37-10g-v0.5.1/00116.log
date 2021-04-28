@@ -1,0 +1,71 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 46; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:40:52 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/43 = 0.000%
+GSat discarded rules : 0/43 = 0.000%
+avr. 26, 2021 5:40:53 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:40:53 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 37 , 5
+nonFullTGDs	0		fullTGDs	37			newNonFullTGDs	5		newFullTGDs	0
+avr. 26, 2021 5:40:53 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 302 ms = 0.30 s
+avr. 26, 2021 5:40:53 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 14
+avr. 26, 2021 5:40:53 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:40:53 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 6 , 12
+avr. 26, 2021 5:40:53 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 3
+avr. 26, 2021 5:40:53 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (40 dependecies)
+=========================================
+koalahasGender(GSat_u1,http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#male) → koalaMale(GSat_u1)
+koalaAnimal(GSat_u1) & koalahasChildren(GSat_u1,GSat_u2) → koalaParent(GSat_u1)
+koalaKoalaWithPhD(GSat_u1) → koalaKoala(GSat_u1)
+koalaRainforest(GSat_u1) → koalaForest(GSat_u1)
+koalaisHardWorking(GSat_u1,GSat_u2) → koalaPerson(GSat_u1)
+koalaMaleStudentWith3Daughters(GSat_u1) → koalaStudent(GSat_u1)
+koalaPerson(GSat_u1) → koalaAnimal(GSat_u1)
+koalahasGender(GSat_u2,GSat_u1) → koalaGender(GSat_u1)
+koalaMale(GSat_u1) → koalahasGender(GSat_u1,http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#male)
+koalaisHardWorking(GSat_u2,GSat_u1) → xsdboolean(GSat_u1)
+koalahasChildren(GSat_u2,GSat_u1) → koalaAnimal(GSat_u1)
+koalaUniversity(GSat_u1) → koalaHabitat(GSat_u1)
+koalaMaleStudentWith3Daughters(GSat_u2) & koalahasChildren(GSat_u2,GSat_u1) → koalaFemale(GSat_u1)
+koalahasDegree(GSat_u1,GSat_u2) → koalaPerson(GSat_u1)
+koalaGraduateStudent(GSat_u1) → koalaStudent(GSat_u1)
+koalaQuokka(GSat_u1) → koalaisHardWorking(GSat_u1,"true")
+koalaMaleStudentWith3Daughters(GSat_u1) & koalaParent(GSat_u1) → koalaGender(http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#female)
+koalaUniversity(GSat_u2) & koalaPerson(GSat_u1) & koalaisHardWorking(GSat_u1,"true") & koalahasHabitat(GSat_u1,GSat_u2) → koalaStudent(GSat_u1)
+koalahasGender(GSat_u1,GSat_u2) → koalaAnimal(GSat_u1)
+koalahasHabitat(GSat_u2,GSat_u1) → koalaHabitat(GSat_u1)
+koalahasDegree(GSat_u2,GSat_u1) → koalaDegree(GSat_u1)
+koalaParent(GSat_u1) → koalaAnimal(GSat_u1)
+koalaForest(GSat_u1) → koalaHabitat(GSat_u1)
+koalaKoala(GSat_u1) → koalaMarsupials(GSat_u1)
+koalaStudent(GSat_u1) → koalaAnimal(GSat_u1)
+koalaTasmanianDevil(GSat_u1) → koalaMarsupials(GSat_u1)
+koalaStudent(GSat_u1) → koalaPerson(GSat_u1)
+koalaKoala(GSat_u1) → koalaAnimal(GSat_u1)
+koalahasChildren(GSat_u1,GSat_u2) → koalaAnimal(GSat_u1)
+koalaMaleStudentWith3Daughters(GSat_u1) → koalahasGender(GSat_u1,http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#male)
+koalahasGender(GSat_u1,http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#female) → koalaFemale(GSat_u1)
+koalaQuokka(GSat_u1) → koalaMarsupials(GSat_u1)
+koalaStudent(GSat_u1) → koalaisHardWorking(GSat_u1,"true")
+koalaDryEucalyptForest(GSat_u1) → koalaForest(GSat_u1)
+koalahasHabitat(GSat_u1,GSat_u2) → koalaAnimal(GSat_u1)
+koalaKoala(GSat_u1) → koalaisHardWorking(GSat_u1,"false")
+koalaMarsupials(GSat_u1) → koalaAnimal(GSat_u1)
+koalaKoalaWithPhD(GSat_u1) → koalahasDegree(GSat_u1,http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#PhD)
+koalaFemale(GSat_u1) → koalahasGender(GSat_u1,http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#female)
+koalahasDegree(GSat_u1,http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#PhD) & koalaKoala(GSat_u1) → koalaKoalaWithPhD(GSat_u1)
+=========================================

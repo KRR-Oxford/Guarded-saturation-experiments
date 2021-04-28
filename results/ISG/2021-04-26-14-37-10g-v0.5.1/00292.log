@@ -1,0 +1,61 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 31; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:29:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/31 = 0.000%
+GSat discarded rules : 0/31 = 0.000%
+avr. 26, 2021 6:29:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:29:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 31 , 0
+avr. 26, 2021 6:29:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 117 ms = 0.12 s
+avr. 26, 2021 6:29:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:29:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:29:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:29:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:29:43 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (31 dependecies)
+=========================================
+policyContainmentTestRetry-Until-SucceedUsernamePolicy(GSat_u1) → policyContainmentTestPolicy(GSat_u1)
+policyContainmentTestUsernameToken(GSat_u1) & policyContainmentTestRetry-Until-Succeed(GSat_u1) → policyContainmentTestRetry-Until-SucceedUsernamePolicy(GSat_u1)
+policyContainmentTestKerberos(GSat_u1) → policyContainmentTestSecurityTokenType(GSat_u1)
+policyContainmentTestRetry-On-FailureUsernamePolicy(GSat_u1) → policyContainmentTestUsernameToken(GSat_u1)
+policyContainmentTestGeneralReliabilityKerberosPolicy(GSat_u1) → policyContainmentTestReliable(GSat_u1)
+policyContainmentTestRetry-On-FailureUsernamePolicy(GSat_u1) → policyContainmentTestRetry-On-Failure(GSat_u1)
+policyContainmentTestUsernameToken(GSat_u1) & policyContainmentTestReliable(GSat_u1) → policyContainmentTestGeneralReliabilityUsernamePolicy(GSat_u1)
+policyContainmentTestGeneralReliabilityKerberosPolicy(GSat_u1) → policyContainmentTestPolicy(GSat_u1)
+policyContainmentTestRetry-On-Failure(GSat_u1) → policyContainmentTestReliable(GSat_u1)
+policyContainmentTestUsernameToken(GSat_u1) → policyContainmentTestSecurityTokenType(GSat_u1)
+policyContainmentTestRetry-On-FailureUsernamePolicy(GSat_u1) → policyContainmentTestPolicy(GSat_u1)
+policyContainmentTestIncoherentPolicy(GSat_u1) → policyContainmentTestExactlyOneExamplePolicy(GSat_u1)
+policyContainmentTestGeneralReliabilityUsernamePolicy(GSat_u1) → policyContainmentTestUsernameToken(GSat_u1)
+policyContainmentTestIncoherentPolicy(GSat_u1) → policyContainmentTestRetry-On-FailureUsernamePolicy(GSat_u1)
+policyContainmentTestRetry-Until-SucceedUsernamePolicy(GSat_u1) → policyContainmentTestRetry-Until-Succeed(GSat_u1)
+policyContainmentTestRetry-Until-SucceedUsernamePolicy(GSat_u1) → policyContainmentTestUsernameToken(GSat_u1)
+policyContainmentTesttestSubSubProperty(GSat_u1,GSat_u2) → policyContainmentTesttestSubProperty(GSat_u1,GSat_u2)
+policyContainmentTestIncoherentPolicy(GSat_u1) → policyContainmentTestRetry-Until-SucceedUsernamePolicy(GSat_u1)
+policyContainmentTestGeneralReliabilityUsernamePolicy(GSat_u1) → policyContainmentTestReliable(GSat_u1)
+policyContainmentTestX509(GSat_u1) → policyContainmentTestSecurityTokenType(GSat_u1)
+policyContainmentTestRetry-Until-Succeed(GSat_u1) → policyContainmentTestReliable(GSat_u1)
+policyContainmentTestIncoherentPolicy(GSat_u1) → policyContainmentTestPolicy(GSat_u1)
+policyContainmentTestKerberos(GSat_u1) & policyContainmentTestReliable(GSat_u1) → policyContainmentTestGeneralReliabilityKerberosPolicy(GSat_u1)
+policyContainmentTestExactlyOneExamplePolicy(GSat_u1) → policyContainmentTestPolicy(GSat_u1)
+policyContainmentTestRetry-On-FailureUsernamePolicy(GSat_u1) & policyContainmentTestExactlyOneExamplePolicy(GSat_u1) & policyContainmentTestRetry-Until-SucceedUsernamePolicy(GSat_u1) → policyContainmentTestIncoherentPolicy(GSat_u1)
+policyContainmentTestReliable(GSat_u1) → policyContainmentTestMessaging(GSat_u1)
+policyContainmentTestGeneralReliabilityUsernamePolicy(GSat_u1) → policyContainmentTestPolicy(GSat_u1)
+policyContainmentTesttestSubProperty(GSat_u1,GSat_u2) → policyContainmentTesttestProperty(GSat_u1,GSat_u2)
+policyContainmentTestRetry-On-Failure(GSat_u1) & policyContainmentTestUsernameToken(GSat_u1) → policyContainmentTestRetry-On-FailureUsernamePolicy(GSat_u1)
+policyContainmentTesttestProperty(GSat_u1,GSat_u2) → policyContainmentTestReliable(GSat_u1)
+policyContainmentTestGeneralReliabilityKerberosPolicy(GSat_u1) → policyContainmentTestKerberos(GSat_u1)
+=========================================

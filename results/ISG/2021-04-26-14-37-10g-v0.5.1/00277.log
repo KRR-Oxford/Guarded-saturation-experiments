@@ -1,0 +1,131 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 101; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:06:34 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/101 = 0.000%
+GSat discarded rules : 0/101 = 0.000%
+avr. 26, 2021 6:06:34 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:06:34 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 101 , 0
+avr. 26, 2021 6:06:34 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 157 ms = 0.16 s
+avr. 26, 2021 6:06:34 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:06:34 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:06:34 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:06:34 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:06:34 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (101 dependecies)
+=========================================
+has-Email-Address(GSat_u1,GSat_u2) → Person(GSat_u1)
+has-Location(GSat_u2,GSat_u1) → Place(GSat_u1)
+has-Calendar-Date(GSat_u1,GSat_u2) → Event(GSat_u1)
+has-Field-Of-Study(GSat_u1,GSat_u2) → Educational-Degree(GSat_u1)
+has-Technical-Lead(GSat_u2,GSat_u1) → is-Technical-Lead-Of(GSat_u1,GSat_u2)
+has-Task(GSat_u2,GSat_u1) → Task(GSat_u1)
+Proceedings(GSat_u1) → Publication(GSat_u1)
+is-Technical-Lead-Of(GSat_u1,GSat_u2) → Person(GSat_u1)
+has-Baa-Number(GSat_u1,GSat_u2) → Research-Project(GSat_u1)
+has-Principle-Investigator(GSat_u1,GSat_u2) → Research-Project(GSat_u1)
+is-Administrative-Contact-For(GSat_u1,GSat_u2) → Person(GSat_u1)
+has-Member(GSat_u2,GSat_u1) → is-Member-Of(GSat_u1,GSat_u2)
+has-Administrative-Contact(GSat_u1,GSat_u2) → Research-Project(GSat_u1)
+is-Member-Of(GSat_u1,GSat_u2) → Person(GSat_u1)
+is-Authored-By(GSat_u2,GSat_u1) → Person(GSat_u1)
+has-Postal-Address(GSat_u2,GSat_u1) → String(GSat_u1)
+is-From-Institution(GSat_u1,GSat_u2) → Educational-Degree(GSat_u1)
+has-Phone-Number(GSat_u2,GSat_u1) → String(GSat_u1)
+is-Member-Of(GSat_u2,GSat_u1) → Organization(GSat_u1)
+has-Principle-Investigator(GSat_u2,GSat_u1) → Person(GSat_u1)
+has-Full-Name(GSat_u1,GSat_u2) → Person(GSat_u1)
+Book(GSat_u1) → Publication(GSat_u1)
+has-Completion-Date(GSat_u2,GSat_u1) → Time-Point(GSat_u1)
+has-Degree-Type(GSat_u1,GSat_u2) → Educational-Degree(GSat_u1)
+has-Abstract(GSat_u1,GSat_u2) → Research-Project(GSat_u1)
+has-Principle-Investigator(GSat_u2,GSat_u1) → is-Principle-Investigator-Of(GSat_u1,GSat_u2)
+has-Administrative-Contact(GSat_u2,GSat_u1) → Person(GSat_u1)
+has-Technical-Lead(GSat_u2,GSat_u1) → Person(GSat_u1)
+has-Postal-Address(GSat_u1,GSat_u2) → Person(GSat_u1)
+has-Administrative-Contact(GSat_u2,GSat_u1) → is-Administrative-Contact-For(GSat_u1,GSat_u2)
+Article(GSat_u1) → Publication(GSat_u1)
+has-Home-Page(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Field-Of-Study(GSat_u2,GSat_u1) → String(GSat_u1)
+is-From-Institution(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Technical-Lead(GSat_u1,GSat_u2) → Task(GSat_u1)
+has-Event(GSat_u2,GSat_u1) → Event(GSat_u1)
+has-Location(GSat_u1,GSat_u2) → Event(GSat_u1)
+has-Member(GSat_u2,GSat_u1) → Person(GSat_u1)
+has-Educational-Degree(GSat_u1,GSat_u2) → Person(GSat_u1)
+has-Project-Keyword(GSat_u2,GSat_u1) → Task(GSat_u1)
+Primate(GSat_u1) → Organism(GSat_u1)
+Publication(GSat_u1) → Document(GSat_u1)
+has-Research-Position(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Full-Name(GSat_u2,GSat_u1) → String(GSat_u1)
+is-Principle-Investigator-Of(GSat_u1,GSat_u2) → Person(GSat_u1)
+has-Publisher(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Task-Description(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Purpose(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Published(GSat_u1,GSat_u2) → Author(GSat_u1)
+has-Task(GSat_u1,GSat_u2) → Research-Project(GSat_u1)
+has-Program-Manager(GSat_u2,GSat_u1) → Person(GSat_u1)
+has-Interest-Keyword(GSat_u1,GSat_u2) → Person(GSat_u1)
+has-Phone-Number(GSat_u1,GSat_u2) → Person(GSat_u1)
+Animal(GSat_u1) → Organism(GSat_u1)
+is-Principle-Investigator-Of(GSat_u2,GSat_u1) → Research-Project(GSat_u1)
+is-Administrative-Contact-For(GSat_u2,GSat_u1) → has-Administrative-Contact(GSat_u1,GSat_u2)
+is-Authored-By(GSat_u2,GSat_u1) → has-Published(GSat_u1,GSat_u2)
+has-Purpose(GSat_u1,GSat_u2) → Event(GSat_u1)
+has-Research-Position(GSat_u1,GSat_u2) → Person(GSat_u1)
+is-Program-Manager-Of(GSat_u2,GSat_u1) → has-Program-Manager(GSat_u1,GSat_u2)
+has-Event(GSat_u1,GSat_u2) → Research-Project(GSat_u1)
+has-Baa-Number(GSat_u2,GSat_u1) → Number(GSat_u1)
+has-Educational-Degree(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Publish-Date(GSat_u1,GSat_u2) → Document(GSat_u1)
+has-Location-Description(GSat_u1,GSat_u2) → Place(GSat_u1)
+Person(GSat_u1) → Organism(GSat_u1)
+Research-Project(GSat_u1) → Organization(GSat_u1)
+has-Interest-Keyword(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Baa-Program-Title(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Program-Manager(GSat_u1,GSat_u2) → Research-Project(GSat_u1)
+has-Member(GSat_u1,GSat_u2) → Organization(GSat_u1)
+has-Location-Description(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Publisher(GSat_u1,GSat_u2) → Document(GSat_u1)
+has-Abstract(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Proposal-Title(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Research-Project(GSat_u2,GSat_u1) → Research-Project(GSat_u1)
+has-Subcontractor(GSat_u1,GSat_u2) → Research-Project(GSat_u1)
+is-Program-Manager-Of(GSat_u1,GSat_u2) → Person(GSat_u1)
+has-Research-Project(GSat_u1,GSat_u2) → Educational-Organization(GSat_u1)
+is-Principle-Investigator-Of(GSat_u2,GSat_u1) → has-Principle-Investigator(GSat_u1,GSat_u2)
+has-Full-Title(GSat_u2,GSat_u1) → String(GSat_u1)
+is-Authored-By(GSat_u1,GSat_u2) → Document(GSat_u1)
+has-Degree-Type(GSat_u2,GSat_u1) → String(GSat_u1)
+is-Administrative-Contact-For(GSat_u2,GSat_u1) → Research-Project(GSat_u1)
+has-Email-Address(GSat_u2,GSat_u1) → String(GSat_u1)
+has-Publish-Date(GSat_u2,GSat_u1) → Calendar-Date(GSat_u1)
+has-Published(GSat_u2,GSat_u1) → is-Authored-By(GSat_u1,GSat_u2)
+has-Baa-Program-Title(GSat_u1,GSat_u2) → Research-Project(GSat_u1)
+has-Task-Description(GSat_u1,GSat_u2) → Task(GSat_u1)
+has-Proposal-Title(GSat_u1,GSat_u2) → Research-Project(GSat_u1)
+has-Program-Manager(GSat_u2,GSat_u1) → is-Program-Manager-Of(GSat_u1,GSat_u2)
+is-Technical-Lead-Of(GSat_u2,GSat_u1) → Research-Project(GSat_u1)
+is-Program-Manager-Of(GSat_u2,GSat_u1) → Research-Project(GSat_u1)
+is-Technical-Lead-Of(GSat_u2,GSat_u1) → has-Technical-Lead(GSat_u1,GSat_u2)
+has-Calendar-Date(GSat_u2,GSat_u1) → Calendar-Date(GSat_u1)
+is-Member-Of(GSat_u2,GSat_u1) → has-Member(GSat_u1,GSat_u2)
+has-Subcontractor(GSat_u2,GSat_u1) → Organization(GSat_u1)
+has-Published(GSat_u2,GSat_u1) → Document(GSat_u1)
+has-Completion-Date(GSat_u1,GSat_u2) → Task(GSat_u1)
+has-Project-Keyword(GSat_u1,GSat_u2) → Research-Project(GSat_u1)
+has-Full-Title(GSat_u1,GSat_u2) → Document(GSat_u1)
+=========================================

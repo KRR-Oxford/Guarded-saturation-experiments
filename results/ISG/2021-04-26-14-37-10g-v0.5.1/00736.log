@@ -1,0 +1,83 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 67; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 27, 2021 2:36:43 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 7/66 = 10.606%
+GSat discarded rules : 7/66 = 10.606%
+avr. 27, 2021 2:36:43 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 27, 2021 2:36:43 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 52 , 7
+nonFullTGDs	0		fullTGDs	52			newNonFullTGDs	7		newFullTGDs	0
+avr. 27, 2021 2:36:43 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 269 ms = 0.27 s
+avr. 27, 2021 2:36:43 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 37
+avr. 27, 2021 2:36:43 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 27, 2021 2:36:43 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 4 , 37
+avr. 27, 2021 2:36:43 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 27, 2021 2:36:43 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (52 dependecies)
+=========================================
+oboBFO_0000002(GSat_u1) → oboBFO_0000001(GSat_u1)
+uuidcbfb750-d756-4180-928c-9c462240439d-61(GSat_u1) → uuidcbfb750-d756-4180-928c-9c462240439d-161(GSat_u1)
+oboGO_0042995(GSat_u1) → oboGO_0044464(GSat_u1)
+uuidcbfb750-d756-4180-928c-9c462240439d-161(GSat_u1) → uuidcbfb750-d756-4180-928c-9c462240439d-61(GSat_u1)
+oboBFO_0000053(GSat_u2,GSat_u1) → oboBFO_0000052(GSat_u1,GSat_u2)
+oboGO_0044464(GSat_u1) → oboCARO_0000014(GSat_u1)
+oboCARO_0000014(GSat_u1) → oboCARO_0000003(GSat_u1)
+oboPATO_0000462(GSat_u2) & oboBFO_0000053(GSat_u1,GSat_u2) → obo2PATO_0000462(GSat_u1)
+obo2PATO_0000467(GSat_u1) → oboBFO_0000004(GSat_u1)
+oboBFO_0000007(GSat_u1) → oboBFO_0000003(GSat_u1)
+oboBFO_0000056(GSat_u2,GSat_u1) → oboBFO_0000003(GSat_u1)
+uuidcbfb750-d756-4180-928c-9c462240439d-66(GSat_u1) → uuidcbfb750-d756-4180-928c-9c462240439d-166(GSat_u1)
+oboBFO_0000003(GSat_u1) → oboBFO_0000001(GSat_u1)
+oboGO_0045211(GSat_u1) → oboGO_0044456(GSat_u1)
+oboCL_0000000(GSat_u1) → oboCARO_0000003(GSat_u1)
+oboRO_0002150(GSat_u2,GSat_u1) → oboBFO_0000004(GSat_u1)
+uuidcbfb750-d756-4180-928c-9c462240439d-166(GSat_u1) → uuidcbfb750-d756-4180-928c-9c462240439d-66(GSat_u1)
+oboGO_0042734(GSat_u1) → oboGO_0044456(GSat_u1)
+oboCARO_0000003(GSat_u1) → oboCARO_0000006(GSat_u1)
+oboRO_0002180(GSat_u1,GSat_u2) → oboBFO_0000051(GSat_u1,GSat_u2)
+oboBFO_0000050(GSat_u1,GSat_u2) & oboTAO_0000694(GSat_u2) → obo3TAO_0000694(GSat_u1)
+oboBFO_0000052(GSat_u2,GSat_u1) → oboBFO_0000053(GSat_u1,GSat_u2)
+oboRO_0002202(GSat_u2,GSat_u1) → oboBFO_0000004(GSat_u1)
+oboBFO_0000051(GSat_u2,GSat_u1) → oboBFO_0000050(GSat_u1,GSat_u2)
+oboCARO_0000006(GSat_u1) → oboBFO_0000040(GSat_u1)
+oboGO_0044456(GSat_u1) → oboCARO_0000014(GSat_u1)
+oboBFO_0000040(GSat_u1) → oboBFO_0000004(GSat_u1)
+oboIAO_0000219(http://kb.phenoscape.org/uuid/6cbfb750-d756-4180-928c-9c462240439d-65,GSat_u1) → uuidcbfb750-d756-4180-928c-9c462240439d-66(GSat_u1)
+oboENVO_0002036(GSat_u1) → oboBFO_0000004(GSat_u1)
+oboGO_0030424(GSat_u1) → oboGO_0043005(GSat_u1)
+oboBFO_0000050(GSat_u2,GSat_u1) → oboBFO_0000051(GSat_u1,GSat_u2)
+oboIAO_0000219(http://kb.phenoscape.org/uuid/6cbfb750-d756-4180-928c-9c462240439d-60,GSat_u1) → uuidcbfb750-d756-4180-928c-9c462240439d-61(GSat_u1)
+oboIAO_0000219(http://kb.phenoscape.org/uuid/6cbfb750-d756-4180-928c-9c462240439d-160,GSat_u1) → uuidcbfb750-d756-4180-928c-9c462240439d-161(GSat_u1)
+oboCARO_0001000(GSat_u1) → oboCARO_0000003(GSat_u1)
+oboCL_0000540(GSat_u1) → oboCL_0000000(GSat_u1)
+oboBFO_0000004(GSat_u1) → oboBFO_0000002(GSat_u1)
+oboGO_0045211(GSat_u1) → oboGO_0016020(GSat_u1)
+oboBFO_0000056(GSat_u1,GSat_u2) → oboBFO_0000004(GSat_u1)
+oboGO_0042734(GSat_u1) → oboGO_0016020(GSat_u1)
+oboBFO_0000052(GSat_u2,GSat_u1) → oboBFO_0000004(GSat_u1)
+oboIAO_0000219(http://kb.phenoscape.org/uuid/6cbfb750-d756-4180-928c-9c462240439d-165,GSat_u1) → uuidcbfb750-d756-4180-928c-9c462240439d-166(GSat_u1)
+oboGO_0016020(GSat_u1) → oboGO_0044464(GSat_u1)
+oboCARO_0010000(GSat_u1) → oboCARO_0000003(GSat_u1)
+oboCARO_0001001(GSat_u1) → oboCARO_0001000(GSat_u1)
+oboRO_0002202(GSat_u1,GSat_u2) → oboBFO_0000004(GSat_u1)
+oboGO_0043005(GSat_u1) → oboGO_0042995(GSat_u1)
+oboRO_0002150(GSat_u1,GSat_u2) → oboBFO_0000004(GSat_u1)
+obo2PATO_0000462(GSat_u1) → oboBFO_0000004(GSat_u1)
+oboGO_0030425(GSat_u1) → oboGO_0043005(GSat_u1)
+oboGO_0045202(GSat_u1) → oboCARO_0000014(GSat_u1)
+oboBFO_0000053(GSat_u1,GSat_u2) & oboPATO_0000467(GSat_u2) → obo2PATO_0000467(GSat_u1)
+oboBFO_0000053(GSat_u1,GSat_u2) → oboBFO_0000004(GSat_u1)
+=========================================

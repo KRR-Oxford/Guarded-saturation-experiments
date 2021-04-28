@@ -1,0 +1,63 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 37; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:50:45 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/34 = 0.000%
+GSat discarded rules : 0/34 = 0.000%
+avr. 26, 2021 5:50:45 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:50:45 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 31 , 3
+nonFullTGDs	0		fullTGDs	31			newNonFullTGDs	3		newFullTGDs	0
+avr. 26, 2021 5:50:45 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 224 ms = 0.22 s
+avr. 26, 2021 5:50:45 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 5:50:45 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:50:45 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 1 , 0
+avr. 26, 2021 5:50:45 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 1
+avr. 26, 2021 5:50:45 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (32 dependecies)
+=========================================
+txttrust3(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+txttrust6(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+txttrust3(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrustedPerson(GSat_u1,GSat_u2) → foafPerson(GSat_u1)
+txtTopicalTrust(GSat_u1) → foafAgent(GSat_u1)
+txttrust8(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrust5(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+txttrust8(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+txttrustedAgent(GSat_u1,GSat_u2) → txtTopicalTrust(GSat_u1)
+txttrust10(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+txttrust0(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrustedPerson(GSat_u1,GSat_u2) → txttrustedAgent(GSat_u1,GSat_u2)
+txttrustsRegarding(GSat_u2,GSat_u1) → txtTopicalTrust(GSat_u1)
+txttrust4(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrust2(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrustedAgent(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrust1(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+txttrust1(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrust5(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrust7(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrust4(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+txttrustedPerson(GSat_u1,GSat_u2) → txtTopicalTrust(GSat_u1)
+txttrust7(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+txttrustValue(GSat_u1,GSat_u2) → txtTopicalTrust(GSat_u1)
+txttrust9(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrust10(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrust2(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+txttrustsRegarding(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrust6(GSat_u1,GSat_u2) → foafAgent(GSat_u1)
+txttrust0(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+txttrustSubject(GSat_u1,GSat_u2) → txtTopicalTrust(GSat_u1)
+txttrust9(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+=========================================

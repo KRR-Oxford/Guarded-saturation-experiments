@@ -1,0 +1,48 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 18; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:01:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/18 = 0.000%
+GSat discarded rules : 0/18 = 0.000%
+avr. 26, 2021 6:01:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:01:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 18 , 0
+avr. 26, 2021 6:01:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 134 ms = 0.13 s
+avr. 26, 2021 6:01:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:01:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:01:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:01:06 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:01:06 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (18 dependecies)
+=========================================
+officehasWindow(GSat_u2,GSat_u1) → officeWindow(GSat_u1)
+officehasBookshelf(GSat_u2,GSat_u1) → officeBookshelf(GSat_u1)
+officeDoor(GSat_u1) → officeOfficeAccess(GSat_u1)
+officeLaptopComputer(GSat_u1) → officeComputer(GSat_u1)
+officeoffice(GSat_u2,GSat_u1) → officeOffice(GSat_u1)
+officehasFileCabinet(GSat_u2,GSat_u1) → officeFileCabinet(GSat_u1)
+officehasDoor(GSat_u2,GSat_u1) → officeDoor(GSat_u1)
+officeexternalMonitor(GSat_u1,GSat_u2) → officemonitor(GSat_u1,GSat_u2)
+officeofficeNumber(GSat_u2,GSat_u1) → xsdnonNegativeInteger(GSat_u1)
+officeWindow(GSat_u1) → officeOfficeAccess(GSat_u1)
+officehasPicture(GSat_u2,GSat_u1) → officePicture(GSat_u1)
+officemonitor(GSat_u2,GSat_u1) → officeMonitor(GSat_u1)
+officemonitor(GSat_u1,GSat_u2) → officeComputer(GSat_u1)
+officehasChair(GSat_u2,GSat_u1) → officeChair(GSat_u1)
+officehasDesk(GSat_u2,GSat_u1) → officeDesk(GSat_u1)
+officehasImage(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+officeDesktopComputer(GSat_u1) → officeComputer(GSat_u1)
+officeofficeNumber(GSat_u1,GSat_u2) → officeOffice(GSat_u1)
+=========================================

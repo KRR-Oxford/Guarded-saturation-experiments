@@ -1,0 +1,61 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 36; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:50:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/31 = 0.000%
+GSat discarded rules : 0/31 = 0.000%
+avr. 26, 2021 5:50:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:50:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 31 , 0
+avr. 26, 2021 5:50:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 149 ms = 0.15 s
+avr. 26, 2021 5:50:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 5:50:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:50:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 5:50:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 5:50:40 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (31 dependecies)
+=========================================
+productOf(GSat_u2,GSat_u1) → Unit(GSat_u1)
+DerivedUnit(GSat_u1) → Unit(GSat_u1)
+UnitDerivedWithoutChangingOfDimension(GSat_u1) → BaseUnitOrUnitDerivedtWithoutChangingOfDimension(GSat_u1)
+BaseUnit(GSat_u1) → BaseUnitOrUnitDerivedtWithoutChangingOfDimension(GSat_u1)
+hasShiftingNumber(GSat_u2,GSat_u1) → xsddouble(GSat_u1)
+hasPrefix(GSat_u1,GSat_u2) → Unit(GSat_u1)
+Prefix(GSat_u1) → PrefixOrUnit(GSat_u1)
+hasValue(GSat_u1,GSat_u2) → Prefix(GSat_u1)
+hasShiftingNumber(GSat_u1,GSat_u2) → UnitDerivedByShifting(GSat_u1)
+hasScalingNumber(GSat_u2,GSat_u1) & UnitDerivedByScaling(GSat_u2) → xsddouble(GSat_u1)
+derivedFromUnit(GSat_u2,GSat_u1) → BaseUnitOrUnitDerivedtWithoutChangingOfDimension(GSat_u1)
+productOf(GSat_u1,GSat_u2) → ComplexUnit(GSat_u1)
+hasPower(GSat_u2,GSat_u1) → xsddouble(GSat_u1)
+hasPower(GSat_u1,GSat_u2) → UnitDerivedByRaisingToPower(GSat_u1)
+derivedFromUnit(GSat_u1,GSat_u2) → SimpleUnit(GSat_u1)
+UnitDerivedByRaisingToPower(GSat_u1) → SimpleUnit(GSat_u1)
+hasSymbol(GSat_u1,GSat_u2) → PrefixOrUnit(GSat_u1)
+UnitDerivedByShifting(GSat_u1) → UnitDerivedWithoutChangingOfDimension(GSat_u1)
+SimpleUnit(GSat_u1) → DerivedUnit(GSat_u1)
+UnitDerivedByScaling(GSat_u1) → UnitDerivedWithoutChangingOfDimension(GSat_u1)
+Unit(GSat_u1) → PrefixOrUnit(GSat_u1)
+UnitDerivedWithoutChangingOfDimension(GSat_u1) → SimpleUnit(GSat_u1)
+hasPrefix(GSat_u2,GSat_u1) & UnitDerivedByScaling(GSat_u2) → Prefix(GSat_u1)
+ComplexUnit(GSat_u1) → DerivedUnit(GSat_u1)
+Prefix(GSat_u2) & hasValue(GSat_u2,GSat_u1) → xsddouble(GSat_u1)
+hasPrefix(GSat_u2,GSat_u1) → Prefix(GSat_u1)
+hasScalingNumber(GSat_u1,GSat_u2) → UnitDerivedByScaling(GSat_u1)
+hasScalingNumber(GSat_u2,GSat_u1) → xsddouble(GSat_u1)
+hasSymbol(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+BaseUnit(GSat_u1) → Unit(GSat_u1)
+Prefix(GSat_u2) & hasSymbol(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+=========================================

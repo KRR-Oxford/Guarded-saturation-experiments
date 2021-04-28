@@ -1,0 +1,114 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 84; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:29:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/84 = 0.000%
+GSat discarded rules : 0/84 = 0.000%
+avr. 26, 2021 6:29:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:29:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 84 , 0
+avr. 26, 2021 6:29:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 124 ms = 0.12 s
+avr. 26, 2021 6:29:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:29:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:29:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:29:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:29:27 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (84 dependecies)
+=========================================
+geoFeatures20040307Department(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307MultiPolygon(GSat_u1) → errorError3(GSat_u1)
+geoFeatures20040307Administrative_Region(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Special_District(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307MultiLinestring(GSat_u1) → errorError11(GSat_u1)
+geoFeatures20040307hasSpatialLocation(GSat_u2,GSat_u1) → geoFeatures20040307SpatialThing(GSat_u1)
+geoFeatures20040307Capital_Municipality(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Region(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Pakistan-administered(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Prefecture(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307status(GSat_u1,GSat_u2) → geoFeatures20040307City(GSat_u1)
+geoFeatures20040307City(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Parish(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307admin_name(GSat_u1,GSat_u2) → geoFeatures20040307City(GSat_u1)
+geoFeatures20040307National_District(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307GeographicFeature(GSat_u1) → geoFeatures20040307SpatialThing(GSat_u1)
+geoFeatures20040307Constitutional_Province(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Governorate(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307shape(GSat_u2,GSat_u1) → geoFeatures20040307SpatialDescription(GSat_u1)
+geoFeatures20040307National_Territory(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Administrative_Subdivision(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Emirate(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Province(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Special_Municipality(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307fips_cntry(GSat_u1,GSat_u2) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Polygon(GSat_u1) → errorError5(GSat_u1)
+geoFeatures20040307gmi_cntry(GSat_u1,GSat_u2) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Autonomous_Municipality(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+errorError4(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Independent_Town(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Polygon(GSat_u1) → geoFeatures20040307SpatialDescription(GSat_u1)
+geoFeatures20040307Canton(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307xyCoordinates(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+geoFeatures20040307Special_Region(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307type_loc(GSat_u1,GSat_u2) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307MultiLinestring(GSat_u1) → geoFeatures20040307SpatialDescription(GSat_u1)
+geoFeatures20040307Area(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307port_id(GSat_u1,GSat_u2) → geoFeatures20040307City(GSat_u1)
+geoFeatures20040307MultiPoint(GSat_u1) → errorError6(GSat_u1)
+geoFeatures20040307Linestring(GSat_u1) → geoFeatures20040307SpatialDescription(GSat_u1)
+geoFeatures20040307shape(GSat_u1,GSat_u2) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307city_name(GSat_u1,GSat_u2) → geoFeatures20040307City(GSat_u1)
+errorError1(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Point(GSat_u1) → geoFeatures20040307SpatialDescription(GSat_u1)
+geoFeatures20040307gmi_admin(GSat_u1,GSat_u2) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307MultiPoint(GSat_u1) → geoFeatures20040307SpatialDescription(GSat_u1)
+errorError7(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307SpatialDescription(GSat_u1) → errorError9(GSat_u1)
+geoFeatures20040307Zone(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Union_Territory(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Point(GSat_u1) → errorError10(GSat_u1)
+geoFeatures20040307District(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307sqkm(GSat_u1,GSat_u2) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Federal_District(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Special_City(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Federal_Dependencies(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Linestring(GSat_u1) → errorError8(GSat_u1)
+geoFeatures20040307Federal_Territory(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Republic(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307pop_admin(GSat_u1,GSat_u2) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Building(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307County(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307pop_class(GSat_u1,GSat_u2) → geoFeatures20040307City(GSat_u1)
+geoFeatures20040307Division(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307State(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Autonomous_Community(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307sovereign(GSat_u1,GSat_u2) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Intendancy(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307iso_3digit(GSat_u1,GSat_u2) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307fips_admin(GSat_u1,GSat_u2) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307pop_rank(GSat_u1,GSat_u2) → geoFeatures20040307City(GSat_u1)
+geoFeatures20040307Federal_Status_City(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+errorError2(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307cntry_name(GSat_u1,GSat_u2) → geoFeatures20040307City(GSat_u1)
+geoFeatures20040307Town(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Territory(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307iso_2digit(GSat_u1,GSat_u2) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Municipality(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Autonomous_Region(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Capital_Territory(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307xyzCoordinates(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+geoFeatures20040307Capital_City(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307Economic_Prefecture(GSat_u1) → geoFeatures20040307GeographicFeature(GSat_u1)
+geoFeatures20040307MultiPolygon(GSat_u1) → geoFeatures20040307SpatialDescription(GSat_u1)
+=========================================

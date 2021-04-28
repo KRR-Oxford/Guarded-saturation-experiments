@@ -1,0 +1,53 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 23; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:31:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/23 = 0.000%
+GSat discarded rules : 0/23 = 0.000%
+avr. 26, 2021 6:31:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:31:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 23 , 0
+avr. 26, 2021 6:31:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 104 ms = 0.10 s
+avr. 26, 2021 6:31:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:31:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:31:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:31:35 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:31:35 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (23 dependecies)
+=========================================
+docpersitencePolicy(GSat_u1,GSat_u2) → docWork(GSat_u1)
+doccreator(GSat_u1,GSat_u2) → docWork(GSat_u1)
+docmayControl(GSat_u1,GSat_u2) → contactSocialEntity(GSat_u1)
+docmayWrite(GSat_u1,GSat_u2) → contactSocialEntity(GSat_u1)
+docdependsOn(GSat_u2,GSat_u1) → docWork(GSat_u1)
+docobsoletes(GSat_u2,GSat_u1) → docWork(GSat_u1)
+docsubLicense(GSat_u1,GSat_u2) → docWork(GSat_u1)
+docpersitencePolicy(GSat_u2,GSat_u1) → docWork(GSat_u1)
+docderivedFrom(GSat_u1,GSat_u2) → docWork(GSat_u1)
+docmayRead(GSat_u1,GSat_u2) → contactSocialEntity(GSat_u1)
+docmayRead(GSat_u2,GSat_u1) → docWork(GSat_u1)
+docversionOf(GSat_u1,GSat_u2) → docWork(GSat_u1)
+docdependsOn(GSat_u1,GSat_u2) → docWork(GSat_u1)
+docOpenSourceLicense(GSat_u1) → docWork(GSat_u1)
+doccreator(GSat_u2,GSat_u1) → contactSocialEntity(GSat_u1)
+docversionOf(GSat_u2,GSat_u1) → docWork(GSat_u1)
+docipr(GSat_u2,GSat_u1) → docWork(GSat_u1)
+docobsoletes(GSat_u1,GSat_u2) → docWork(GSat_u1)
+docmayWrite(GSat_u2,GSat_u1) → docWork(GSat_u1)
+docipr(GSat_u1,GSat_u2) → docWork(GSat_u1)
+docderivedFrom(GSat_u2,GSat_u1) → docWork(GSat_u1)
+docmayControl(GSat_u2,GSat_u1) → docWork(GSat_u1)
+docsubLicense(GSat_u2,GSat_u1) → docWork(GSat_u1)
+=========================================

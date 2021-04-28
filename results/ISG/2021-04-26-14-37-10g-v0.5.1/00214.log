@@ -1,0 +1,52 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 47; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:00:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/32 = 0.000%
+GSat discarded rules : 0/32 = 0.000%
+avr. 26, 2021 6:00:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:00:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 21 , 11
+nonFullTGDs	0		fullTGDs	21			newNonFullTGDs	11		newFullTGDs	0
+avr. 26, 2021 6:00:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 182 ms = 0.18 s
+avr. 26, 2021 6:00:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 18
+avr. 26, 2021 6:00:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:00:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 18
+avr. 26, 2021 6:00:38 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:00:38 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (21 dependecies)
+=========================================
+agenda-ontemail(GSat_u2,GSat_u1) & agenda-ontSpeaker(GSat_u2) → xsdstring(GSat_u1)
+agenda-ontSimpleAgendaItem(GSat_u1) → agenda-ontAgendaItem(GSat_u1)
+agenda-ontorganization(GSat_u2,GSat_u1) & agenda-ontSpeaker(GSat_u2) → xsdstring(GSat_u1)
+agenda-ontBreak(GSat_u1) → agenda-ontSimpleAgendaItem(GSat_u1)
+agenda-onttitle(GSat_u2,GSat_u1) & agenda-ontTalk(GSat_u2) → xsdstring(GSat_u1)
+agenda-ontMeeting(GSat_u2) & agenda-ontday(GSat_u2,GSat_u1) → agenda-ontDay(GSat_u1)
+agenda-ontMeeting(GSat_u2) & agenda-onturi(GSat_u2,GSat_u1) → xsdanyURI(GSat_u1)
+agenda-onttheme(GSat_u2,GSat_u1) & agenda-ontBreak(GSat_u2) → xsdstring(GSat_u1)
+agenda-onturi(GSat_u2,GSat_u1) & agenda-ontTalk(GSat_u2) → xsduriReference(GSat_u1)
+agenda-ontBlock(GSat_u1) → agenda-ontAgendaItem(GSat_u1)
+agenda-ontMeeting(GSat_u2) & agenda-ontlocation(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+agenda-ontSpeaker(GSat_u2) & agenda-onthomePage(GSat_u2,GSat_u1) → xsduriReference(GSat_u1)
+agenda-ontDay(GSat_u1) → agenda-ontBlock(GSat_u1)
+agenda-ontDay(GSat_u2) & agenda-ontstart(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+agenda-ontSimpleAgendaItem(GSat_u2) & agenda-ontduration(GSat_u2,GSat_u1) → xsdtimeDuration(GSat_u1)
+agenda-ontBlock(GSat_u2) & agenda-onttheme(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+agenda-ontTalk(GSat_u2) & agenda-ontspeaker(GSat_u2,GSat_u1) → agenda-ontSpeaker(GSat_u1)
+agenda-ontBlock(GSat_u2) & agenda-ontitems(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+agenda-ontMeeting(GSat_u2) & agenda-ontname(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+agenda-ontTalk(GSat_u1) → agenda-ontSimpleAgendaItem(GSat_u1)
+agenda-ontname(GSat_u2,GSat_u1) & agenda-ontSpeaker(GSat_u2) → xsdstring(GSat_u1)
+=========================================

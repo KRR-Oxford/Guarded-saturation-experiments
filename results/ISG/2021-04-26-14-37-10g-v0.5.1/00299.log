@@ -1,0 +1,39 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 9; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:30:23 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/9 = 0.000%
+GSat discarded rules : 0/9 = 0.000%
+avr. 26, 2021 6:30:23 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:30:23 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 9 , 0
+avr. 26, 2021 6:30:23 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 106 ms = 0.11 s
+avr. 26, 2021 6:30:23 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:30:23 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:30:23 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:30:23 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:30:23 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (9 dependecies)
+=========================================
+rdf2entries(GSat_u1,GSat_u2) → rdf2SchemaDirectory(GSat_u1)
+rdf2contact(GSat_u1,GSat_u2) → rdf2Schema(GSat_u1)
+http://www.w3.org/2002/07/owl#Ontology(GSat_u1) → rdf2Schema(GSat_u1)
+rdf2local-version(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+rdf2location(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+rdf2contact(GSat_u2,GSat_u1) → foafAgent(GSat_u1)
+rdf2Schema(GSat_u1) → http://www.w3.org/2002/07/owl#Ontology(GSat_u1)
+rdf2entries(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+rdf2location(GSat_u1,GSat_u2) → rdf2Schema(GSat_u1)
+=========================================

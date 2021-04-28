@@ -1,0 +1,40 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 11; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:47:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/10 = 0.000%
+GSat discarded rules : 0/10 = 0.000%
+avr. 26, 2021 5:47:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:47:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 10 , 0
+avr. 26, 2021 5:47:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 127 ms = 0.13 s
+avr. 26, 2021 5:47:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 5:47:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:47:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 5:47:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 5:47:29 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (10 dependecies)
+=========================================
+booktoRead(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Person(GSat_u1)
+bookfavourite(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Person(GSat_u1)
+bookread(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Person(GSat_u1)
+bookBook(GSat_u1) → wordnetBook(GSat_u1)
+booktoRead(GSat_u2,GSat_u1) → bookBook(GSat_u1)
+bookfavourite(GSat_u2,GSat_u1) → bookBook(GSat_u1)
+bookreading(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/Person(GSat_u1)
+bookreading(GSat_u2,GSat_u1) → bookBook(GSat_u1)
+bookisbn(GSat_u1,GSat_u2) → bookBook(GSat_u1)
+bookread(GSat_u2,GSat_u1) → bookBook(GSat_u1)
+=========================================

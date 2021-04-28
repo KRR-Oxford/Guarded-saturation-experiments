@@ -1,0 +1,135 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 107; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:54:53 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 1/107 = 0.935%
+GSat discarded rules : 1/107 = 0.935%
+avr. 26, 2021 6:54:53 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:54:53 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 98 , 8
+nonFullTGDs	0		fullTGDs	98			newNonFullTGDs	8		newFullTGDs	0
+avr. 26, 2021 6:54:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 235 ms = 0.24 s
+avr. 26, 2021 6:54:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 48
+avr. 26, 2021 6:54:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:54:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 13 , 41
+avr. 26, 2021 6:54:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 6
+avr. 26, 2021 6:54:54 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (104 dependecies)
+=========================================
+#ResearchGroup(GSat_u1) → #Organization(GSat_u1)
+#emailAddress(GSat_u1,GSat_u2) → #Person(GSat_u1)
+#Article(GSat_u1) → #Publication(GSat_u1)
+#Research(GSat_u1) → #Work(GSat_u1)
+#listedCourse(GSat_u2,GSat_u1) → #Course(GSat_u1)
+#ConferencePaper(GSat_u1) → #Article(GSat_u1)
+#Chair(GSat_u1) → #Professor(GSat_u1)
+#member(GSat_u2,GSat_u1) → #Person(GSat_u1)
+#Lecturer(GSat_u1) → #Faculty(GSat_u1)
+#Institute(GSat_u1) → #Organization(GSat_u1)
+#degreeFrom(GSat_u2,GSat_u1) → #University(GSat_u1)
+#subOrganizationOf(GSat_u2,GSat_u1) → #Organization(GSat_u1)
+#subOrganizationOf(GSat_u1,GSat_u2) → #Organization(GSat_u1)
+#mastersDegreeFrom(GSat_u1,GSat_u2) → #degreeFrom(GSat_u1,GSat_u2)
+#Chair(GSat_u1) → #Person(GSat_u1)
+#Professor(GSat_u1) → #Faculty(GSat_u1)
+#Book(GSat_u1) → #Publication(GSat_u1)
+#teachingAssistantOf(GSat_u2,GSat_u1) → #Course(GSat_u1)
+#publicationAuthor(GSat_u2,GSat_u1) → #Person(GSat_u1)
+#Person(GSat_u1) & #Chair(GSat_u1) → #Employee(GSat_u1)
+#researchProject(GSat_u2,GSat_u1) → #Research(GSat_u1)
+#worksFor(GSat_u1,GSat_u2) → #memberOf(GSat_u1,GSat_u2)
+#PostDoc(GSat_u1) → #Faculty(GSat_u1)
+#telephone(GSat_u1,GSat_u2) → #Person(GSat_u1)
+#orgPublication(GSat_u1,GSat_u2) → #Organization(GSat_u1)
+#VisitingProfessor(GSat_u1) → #Professor(GSat_u1)
+#mastersDegreeFrom(GSat_u1,GSat_u2) → #Person(GSat_u1)
+#publicationDate(GSat_u1,GSat_u2) → #Publication(GSat_u1)
+#Person(GSat_u1) & #Course(GSat_u2) & #teachingAssistantOf(GSat_u1,GSat_u2) → #TeachingAssistant(GSat_u1)
+#ClericalStaff(GSat_u1) → #AdministrativeStaff(GSat_u1)
+#softwareDocumentation(GSat_u2,GSat_u1) → #Publication(GSat_u1)
+#advisor(GSat_u2,GSat_u1) → #Professor(GSat_u1)
+#doctoralDegreeFrom(GSat_u1,GSat_u2) → #Person(GSat_u1)
+#hasAlumnus(GSat_u1,GSat_u2) → #University(GSat_u1)
+#GraduateCourse(GSat_u1) → #Course(GSat_u1)
+#publicationResearch(GSat_u2,GSat_u1) → #Research(GSat_u1)
+#Person(GSat_u1) & #Program(GSat_u2) & #headOf(GSat_u1,GSat_u2) → #Director(GSat_u1)
+#AdministrativeStaff(GSat_u1) → #Employee(GSat_u1)
+#listedCourse(GSat_u1,GSat_u2) → #Schedule(GSat_u1)
+#Faculty(GSat_u1) → #Employee(GSat_u1)
+#FullProfessor(GSat_u1) → #Professor(GSat_u1)
+#undergraduateDegreeFrom(GSat_u1,GSat_u2) → #degreeFrom(GSat_u1,GSat_u2)
+#advisor(GSat_u1,GSat_u2) → #Person(GSat_u1)
+#mastersDegreeFrom(GSat_u2,GSat_u1) → #University(GSat_u1)
+#teacherOf(GSat_u1,GSat_u2) → #Faculty(GSat_u1)
+#publicationAuthor(GSat_u1,GSat_u2) → #Publication(GSat_u1)
+#hasAlumnus(GSat_u2,GSat_u1) → #degreeFrom(GSat_u1,GSat_u2)
+#College(GSat_u1) → #Organization(GSat_u1)
+#Person(GSat_u1) & #ResearchAssistant(GSat_u1) → #Employee(GSat_u1)
+#member(GSat_u1,GSat_u2) → #Organization(GSat_u1)
+#affiliatedOrganizationOf(GSat_u2,GSat_u1) → #Organization(GSat_u1)
+#TeachingAssistant(GSat_u1) → #Person(GSat_u1)
+#degreeFrom(GSat_u1,GSat_u2) → #Person(GSat_u1)
+#Person(GSat_u1) & #Director(GSat_u1) → #Employee(GSat_u1)
+#tenured(GSat_u1,GSat_u2) → #Professor(GSat_u1)
+#ResearchAssistant(GSat_u1) → #Student(GSat_u1)
+#orgPublication(GSat_u2,GSat_u1) → #Publication(GSat_u1)
+#Dean(GSat_u1) → #Person(GSat_u1)
+#Dean(GSat_u1) → #Professor(GSat_u1)
+#SystemsStaff(GSat_u1) → #AdministrativeStaff(GSat_u1)
+#Manual(GSat_u1) → #Publication(GSat_u1)
+#Student(GSat_u1) → #Person(GSat_u1)
+#teacherOf(GSat_u2,GSat_u1) → #Course(GSat_u1)
+#headOf(GSat_u1,GSat_u2) → #worksFor(GSat_u1,GSat_u2)
+#JournalArticle(GSat_u1) → #Article(GSat_u1)
+#doctoralDegreeFrom(GSat_u2,GSat_u1) → #University(GSat_u1)
+#worksFor(GSat_u1,GSat_u2) & #Person(GSat_u1) & #Organization(GSat_u2) → #Employee(GSat_u1)
+#Person(GSat_u1) & #Dean(GSat_u1) → #Employee(GSat_u1)
+#Department(GSat_u1) → #Organization(GSat_u1)
+#title(GSat_u1,GSat_u2) → #Person(GSat_u1)
+#affiliateOf(GSat_u2,GSat_u1) → #Person(GSat_u1)
+#AssociateProfessor(GSat_u1) → #Professor(GSat_u1)
+#affiliatedOrganizationOf(GSat_u1,GSat_u2) → #Organization(GSat_u1)
+#Software(GSat_u1) → #Publication(GSat_u1)
+#UnofficialPublication(GSat_u1) → #Publication(GSat_u1)
+#degreeFrom(GSat_u2,GSat_u1) → #hasAlumnus(GSat_u1,GSat_u2)
+#affiliateOf(GSat_u1,GSat_u2) → #Organization(GSat_u1)
+#teachingAssistantOf(GSat_u1,GSat_u2) → #TeachingAssistant(GSat_u1)
+#Person(GSat_u1) & #GraduateStudent(GSat_u1) → #Student(GSat_u1)
+#University(GSat_u1) → #Organization(GSat_u1)
+#softwareDocumentation(GSat_u1,GSat_u2) → #Software(GSat_u1)
+#UndergraduateStudent(GSat_u1) → #Student(GSat_u1)
+#Course(GSat_u1) → #Work(GSat_u1)
+#publicationResearch(GSat_u1,GSat_u2) → #Publication(GSat_u1)
+#undergraduateDegreeFrom(GSat_u1,GSat_u2) → #Person(GSat_u1)
+#softwareVersion(GSat_u1,GSat_u2) → #Software(GSat_u1)
+#memberOf(GSat_u2,GSat_u1) → #member(GSat_u1,GSat_u2)
+#Employee(GSat_u1) → #Person(GSat_u1)
+#researchProject(GSat_u1,GSat_u2) → #ResearchGroup(GSat_u1)
+#Specification(GSat_u1) → #Publication(GSat_u1)
+#TechnicalReport(GSat_u1) → #Article(GSat_u1)
+#doctoralDegreeFrom(GSat_u1,GSat_u2) → #degreeFrom(GSat_u1,GSat_u2)
+#hasAlumnus(GSat_u2,GSat_u1) → #Person(GSat_u1)
+#Person(GSat_u1) & #headOf(GSat_u1,GSat_u2) & #College(GSat_u2) → #Dean(GSat_u1)
+#Director(GSat_u1) → #Person(GSat_u1)
+#ResearchAssistant(GSat_u1) → #Person(GSat_u1)
+#member(GSat_u2,GSat_u1) → #memberOf(GSat_u1,GSat_u2)
+#GraduateStudent(GSat_u1) → #Person(GSat_u1)
+#Person(GSat_u1) & #Course(GSat_u2) & #takesCourse(GSat_u1,GSat_u2) → #Student(GSat_u1)
+#undergraduateDegreeFrom(GSat_u2,GSat_u1) → #University(GSat_u1)
+#age(GSat_u1,GSat_u2) → #Person(GSat_u1)
+#Person(GSat_u1) & #Department(GSat_u2) & #headOf(GSat_u1,GSat_u2) → #Chair(GSat_u1)
+#Program(GSat_u1) → #Organization(GSat_u1)
+#AssistantProfessor(GSat_u1) → #Professor(GSat_u1)
+=========================================

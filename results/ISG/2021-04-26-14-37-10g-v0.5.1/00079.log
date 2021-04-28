@@ -1,0 +1,63 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 34; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:37:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/34 = 0.000%
+GSat discarded rules : 0/34 = 0.000%
+avr. 26, 2021 5:37:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:37:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 32 , 2
+nonFullTGDs	0		fullTGDs	32			newNonFullTGDs	2		newFullTGDs	0
+avr. 26, 2021 5:37:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 341 ms = 0.34 s
+avr. 26, 2021 5:37:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 2
+avr. 26, 2021 5:37:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:37:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 2
+avr. 26, 2021 5:37:18 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 5:37:18 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (32 dependecies)
+=========================================
+modelInstittue(GSat_u1) → modelOrganization(GSat_u1)
+modelinfoPage(GSat_u2,GSat_u1) → xsdanyURI(GSat_u1)
+modelhasIntegrationScheme(GSat_u2,GSat_u1) → modelIntegration_Scheme(GSat_u1)
+modelOrganization(GSat_u1) → modelDeveloper(GSat_u1)
+modelhasDomain(GSat_u1,GSat_u2) → modelModel(GSat_u1)
+modelFEM2D(GSat_u1) → modelhasIntegrationMethod(GSat_u1,http://loki.cae.drexel.edu/~wbs/ontology/2004/08/model#Finite_Element)
+modelhasModelDimension(GSat_u1,GSat_u2) → modelModel(GSat_u1)
+modelhasDeveloper(GSat_u2,GSat_u1) & modelFEM2D(GSat_u2) → modelIndividual(GSat_u1)
+modelUniversity(GSat_u1) → modelOrganization(GSat_u1)
+modelModel(GSat_u1) → modelNumerical(GSat_u1)
+modelIndividual(GSat_u1) → modelDeveloper(GSat_u1)
+modelhasModelDimension(GSat_u2,GSat_u1) → modelModel_Dimension(GSat_u1)
+modelCompany(GSat_u1) → modelOrganization(GSat_u1)
+modelhasIntegrationMethod(GSat_u2,GSat_u1) → modelIntegration_Method(GSat_u1)
+modelhasIntegrationMethod(GSat_u1,GSat_u2) → modelModel(GSat_u1)
+modelFEM2D(GSat_u1) → modelhasAvailability(GSat_u1,http://loki.cae.drexel.edu/~wbs/ontology/2004/08/model#Restrictricted)
+modelhasCountry(GSat_u1,GSat_u2) → modelDeveloper(GSat_u1)
+modelFEM2D(GSat_u1) → modelhasModelDimension(GSat_u1,http://loki.cae.drexel.edu/~wbs/ontology/2004/08/model#Two_Dimensional)
+modelhasDeveloper(GSat_u1,GSat_u2) → modelModel(GSat_u1)
+modelhasModel(GSat_u2,GSat_u1) → modelModel(GSat_u1)
+modelhasAvailability(GSat_u2,GSat_u1) → modelAvailability(GSat_u1)
+modelhasCountry(GSat_u2,GSat_u1) → modelCountry(GSat_u1)
+modelMathematical(GSat_u1) → modelModels(GSat_u1)
+modelhasDeveloper(GSat_u2,GSat_u1) → modelDeveloper(GSat_u1)
+modelhasAvailability(GSat_u1,GSat_u2) → modelModel(GSat_u1)
+modelhasDomain(GSat_u2,GSat_u1) → modelDomain(GSat_u1)
+modelNumerical(GSat_u1) → modelMathematical(GSat_u1)
+modelFEM2D(GSat_u1) → modelModel(GSat_u1)
+modelModelingSystems(GSat_u1) → modelNumerical(GSat_u1)
+modelhasIntegrationScheme(GSat_u1,GSat_u2) → modelModel(GSat_u1)
+modelhasModel(GSat_u1,GSat_u2) → modelModelingSystems(GSat_u1)
+modelGovernment(GSat_u1) → modelOrganization(GSat_u1)
+=========================================

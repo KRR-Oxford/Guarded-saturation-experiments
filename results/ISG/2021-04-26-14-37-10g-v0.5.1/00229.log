@@ -1,0 +1,67 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 50; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:02:02 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/38 = 0.000%
+GSat discarded rules : 0/38 = 0.000%
+avr. 26, 2021 6:02:02 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:02:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 36 , 2
+nonFullTGDs	0		fullTGDs	36			newNonFullTGDs	2		newFullTGDs	0
+avr. 26, 2021 6:02:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 182 ms = 0.18 s
+avr. 26, 2021 6:02:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 10
+avr. 26, 2021 6:02:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:02:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 5 , 6
+avr. 26, 2021 6:02:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:02:03 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (36 dependecies)
+=========================================
+mcda-ontSupportedObjective(GSat_u2) & mcda-onteffectValue(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+mcda-ontAnalysis(GSat_u2) & mcda-ontsort(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+mcda-ontobjectives(GSat_u1,GSat_u2) → mcda-ontAnalysis(GSat_u1)
+mcda-ontactions(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+mcda-ontsupports(GSat_u1,GSat_u2) → mcda-ontAction(GSat_u1)
+mcda-ontactsOn(GSat_u1,GSat_u2) → mcda-ontAction(GSat_u1)
+mcda-ontobjective(GSat_u1,GSat_u2) → mcda-ontObjectifiableObject(GSat_u1)
+mcda-ontalternatives(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+mcda-ontObjective(GSat_u1) → mcda-ontRankedObject(GSat_u1)
+mcda-ontdescription(GSat_u1,GSat_u2) → mcda-ontMCDAObject(GSat_u1)
+mcda-ontdescription(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+mcda-ontcomputedValue(GSat_u1,GSat_u2) → mcda-ontAlternative(GSat_u1)
+mcda-ontObjectifiableObject(GSat_u1) → mcda-ontMCDAObject(GSat_u1)
+mcda-ontactsOn(GSat_u2,GSat_u1) → mcda-ontActionableObject(GSat_u1)
+mcda-ontimportanceValue(GSat_u2,GSat_u1) & mcda-ontActionableObject(GSat_u2) → xsdinteger(GSat_u1)
+mcda-ontsort(GSat_u1,GSat_u2) → mcda-ontAnalysis(GSat_u1)
+mcda-ontimportanceValue(GSat_u1,GSat_u2) → mcda-ontRankedObject(GSat_u1)
+mcda-ontimportanceValue(GSat_u2,GSat_u1) & mcda-ontObjective(GSat_u2) → xsddouble(GSat_u1)
+mcda-ontObjective(GSat_u2) & mcda-ontdescription(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+mcda-onteffectValue(GSat_u1,GSat_u2) → mcda-ontSupportedObjective(GSat_u1)
+mcda-ontAnalysis(GSat_u1) → mcda-ontObjectifiableObject(GSat_u1)
+mcda-ontRankedObject(GSat_u1) → mcda-ontMCDAObject(GSat_u1)
+mcda-ontAlternative(GSat_u1) → mcda-ontMCDAObject(GSat_u1)
+mcda-ontAction(GSat_u2) & mcda-ontsupports(GSat_u2,GSat_u1) → mcda-ontSupportedObjective(GSat_u1)
+mcda-onteffectValue(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+mcda-ontAction(GSat_u1) → mcda-ontMCDAObject(GSat_u1)
+mcda-ontsupports(GSat_u2,GSat_u1) → mcda-ontSupportedObjective(GSat_u1)
+mcda-ontcomputedValue(GSat_u2,GSat_u1) → xsddecimal(GSat_u1)
+mcda-ontSupportedObjective(GSat_u1) → mcda-ontObjectifiableObject(GSat_u1)
+mcda-ontSupportedObjective(GSat_u2) & mcda-ontobjective(GSat_u2,GSat_u1) → mcda-ontObjective(GSat_u1)
+mcda-ontActionableObject(GSat_u1) → mcda-ontRankedObject(GSat_u1)
+mcda-ontobjective(GSat_u2,GSat_u1) → mcda-ontObjective(GSat_u1)
+mcda-ontsort(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+mcda-ontalternatives(GSat_u1,GSat_u2) → mcda-ontAnalysis(GSat_u1)
+mcda-ontactions(GSat_u1,GSat_u2) → mcda-ontAlternative(GSat_u1)
+mcda-ontobjectives(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+=========================================

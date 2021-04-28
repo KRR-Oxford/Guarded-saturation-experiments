@@ -1,0 +1,92 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 103; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:51:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/73 = 0.000%
+GSat discarded rules : 0/73 = 0.000%
+avr. 26, 2021 5:51:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:51:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 61 , 12
+nonFullTGDs	0		fullTGDs	61			newNonFullTGDs	12		newFullTGDs	0
+avr. 26, 2021 5:51:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 325 ms = 0.33 s
+avr. 26, 2021 5:51:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 21
+avr. 26, 2021 5:51:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:51:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 21
+avr. 26, 2021 5:51:27 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 5:51:27 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (61 dependecies)
+=========================================
+CountriesreferencesCountry(GSat_u1,GSat_u2) → CountriesISO3166DefinedCountry(GSat_u1)
+CountriesmodificationTimestamp(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+CountriessovereigntyChallengedBy(GSat_u2,GSat_u1) → CountriesIndependentState(GSat_u1)
+CountriesassociatedTerritoryOf(GSat_u2,GSat_u1) → CountrieshasAssociatedTerritory(GSat_u1,GSat_u2)
+CountriesnameLocalLong(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+CountriesAssociatedState(GSat_u1) → CountriesCountry(GSat_u1)
+CountrieshasDependentTerritory(GSat_u2,GSat_u1) → CountriesdependentTerritoryOf(GSat_u1,GSat_u2)
+CountriesassociatedTerritoryOf(GSat_u2,GSat_u1) → CountriesIndependentState(GSat_u1)
+CountriesannexedTerritoryOf(GSat_u2,GSat_u1) → CountriesIndependentState(GSat_u1)
+CountriesreferencesCountry(GSat_u2,GSat_u1) → CountriesreferencedByISO3166(GSat_u1,GSat_u2)
+CountrieschallengesSovereigntyOf(GSat_u2,GSat_u1) → CountriessovereigntyChallengedBy(GSat_u1,GSat_u2)
+CountriessovereigntyChallengedBy(GSat_u1,GSat_u2) → CountriesIndependenceDisputedState(GSat_u1)
+CountriesnameLocalLong(GSat_u1,GSat_u2) → CountriesCountry(GSat_u1)
+CountriescountryNameISO3166OfficialName(GSat_u1,GSat_u2) → CountriesISO3166DefinedCountry(GSat_u1)
+CountriesdeletionTimestamp(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+CountriesIndependenceDisputedState(GSat_u1) → CountriesCountry(GSat_u1)
+CountriesnameEnglish(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+CountriescountryCodeUNNumeric3(GSat_u2,GSat_u1) → xsdint(GSat_u1)
+CountriesterritoryOccupiedBy(GSat_u2,GSat_u1) → CountrieshasOccupiedTerritory(GSat_u1,GSat_u2)
+CountriescreationTimestamp(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+CountriesdependentTerritoryOf(GSat_u2,GSat_u1) → CountrieshasDependentTerritory(GSat_u1,GSat_u2)
+CountriesVirtuallyAnnexedTerritory(GSat_u1) → CountriesCountry(GSat_u1)
+CountriesnameLocal(GSat_u1,GSat_u2) → CountriesCountry(GSat_u1)
+CountriescountryCodeISO3166Alpha2(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+CountrieshasAnnexedTerritory(GSat_u2,GSat_u1) → CountriesVirtuallyAnnexedTerritory(GSat_u1)
+CountriesterritoryOccupiedBy(GSat_u1,GSat_u2) → CountriesOccupiedTerritory(GSat_u1)
+CountriesdependentTerritoryOf(GSat_u1,GSat_u2) → CountriesFullyDependentTerritory(GSat_u1)
+CountriesnameEnglish(GSat_u1,GSat_u2) → CountriesCountry(GSat_u1)
+CountriescountryNameISO3166Short(GSat_u1,GSat_u2) → CountriesISO3166DefinedCountry(GSat_u1)
+CountriesFullyDependentTerritory(GSat_u1) → CountriesCountry(GSat_u1)
+CountrieschallengesSovereigntyOf(GSat_u2,GSat_u1) → CountriesIndependenceDisputedState(GSat_u1)
+CountrieshasOccupiedTerritory(GSat_u2,GSat_u1) → CountriesOccupiedTerritory(GSat_u1)
+CountriesdependentTerritoryOf(GSat_u2,GSat_u1) → CountriesIndependentState(GSat_u1)
+CountriesannexedTerritoryOf(GSat_u2,GSat_u1) → CountrieshasAnnexedTerritory(GSat_u1,GSat_u2)
+CountrieseffectiveFrom(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+CountriesnameEnglishLong(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+CountriesnameLocal(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+CountrieshasOccupiedTerritory(GSat_u2,GSat_u1) → CountriesterritoryOccupiedBy(GSat_u1,GSat_u2)
+CountriesnameEnglishLong(GSat_u1,GSat_u2) → CountriesCountry(GSat_u1)
+CountriesreferencedByISO3166(GSat_u2,GSat_u1) → CountriesreferencesCountry(GSat_u1,GSat_u2)
+CountriesOccupiedTerritory(GSat_u1) → CountriesCountry(GSat_u1)
+CountriescountryCodeISO3166Alpha2(GSat_u1,GSat_u2) → CountriesISO3166DefinedCountry(GSat_u1)
+CountriescountryCodeUNNumeric3(GSat_u1,GSat_u2) → CountriesISO3166DefinedCountry(GSat_u1)
+CountriesrevocationEffective(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+CountriesassociatedTerritoryOf(GSat_u1,GSat_u2) → CountriesAssociatedState(GSat_u1)
+CountriesUnclaimableTerritory(GSat_u1) → CountriesCountry(GSat_u1)
+CountriescountryNameISO3166Short(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+CountriesVirtualTerritory(GSat_u1) → CountriesCountry(GSat_u1)
+CountrieshasAssociatedTerritory(GSat_u2,GSat_u1) → CountriesAssociatedState(GSat_u1)
+CountriesreferencedByISO3166(GSat_u1,GSat_u2) → CountriesCountry(GSat_u1)
+CountriescountryCodeISO3166Alpha3(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+CountrieschallengesSovereigntyOf(GSat_u1,GSat_u2) → CountriesIndependentState(GSat_u1)
+CountrieshasAssociatedTerritory(GSat_u2,GSat_u1) → CountriesassociatedTerritoryOf(GSat_u1,GSat_u2)
+CountriescountryNameISO3166OfficialName(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+CountrieshasDependentTerritory(GSat_u2,GSat_u1) → CountriesFullyDependentTerritory(GSat_u1)
+CountriesannexedTerritoryOf(GSat_u1,GSat_u2) → CountriesVirtuallyAnnexedTerritory(GSat_u1)
+CountriesIndependentState(GSat_u1) → CountriesCountry(GSat_u1)
+CountriescountryCodeISO3166Alpha3(GSat_u1,GSat_u2) → CountriesISO3166DefinedCountry(GSat_u1)
+CountriesreferencedByISO3166(GSat_u2,GSat_u1) → CountriesISO3166DefinedCountry(GSat_u1)
+CountrieshasAnnexedTerritory(GSat_u2,GSat_u1) → CountriesannexedTerritoryOf(GSat_u1,GSat_u2)
+CountriessovereigntyChallengedBy(GSat_u2,GSat_u1) → CountrieschallengesSovereigntyOf(GSat_u1,GSat_u2)
+=========================================

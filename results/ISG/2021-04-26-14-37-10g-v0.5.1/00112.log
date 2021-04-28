@@ -1,0 +1,149 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 161; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:40:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/139 = 0.000%
+GSat discarded rules : 0/139 = 0.000%
+avr. 26, 2021 5:40:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:40:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 118 , 15
+nonFullTGDs	0		fullTGDs	118			newNonFullTGDs	15		newFullTGDs	0
+avr. 26, 2021 5:40:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 367 ms = 0.37 s
+avr. 26, 2021 5:40:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 41
+avr. 26, 2021 5:40:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:40:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 12 , 30
+avr. 26, 2021 5:40:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 5:40:29 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (118 dependecies)
+=========================================
+ontologyhasDaughter(GSat_u2,GSat_u1) → ontologyWoman(GSat_u1)
+swrlhead(GSat_u2,GSat_u1) & swrlImp(GSat_u2) → swrlAtomList(GSat_u1)
+swrlDatavaluedPropertyAtom(GSat_u1) → swrlAtom(GSat_u1)
+ontologyhasParent(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+ontologyWoman(GSat_u1) → ontologyhasSex(GSat_u1,http://a.com/ontology#Female)
+ontologyhasSex(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+ontologyDaugther(GSat_u1) → ontologyChild(GSat_u1)
+ontologyhasMother(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+ontologyhasSon(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+swrlBuiltin(GSat_u2) & swrlbminArgs(GSat_u2,GSat_u1) → xsdint(GSat_u1)
+swrlBuiltin(GSat_u2) & swrlbmaxArgs(GSat_u2,GSat_u1) → xsdint(GSat_u1)
+ontologyWoman(GSat_u1) → ontologyPerson(GSat_u1)
+ontologyhasSibling(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+ontologyhasConsort(GSat_u2,GSat_u1) → ontologyPerson(GSat_u1)
+ontologyhasConsort(GSat_u2,GSat_u1) → ontologyhasConsort(GSat_u1,GSat_u2)
+ontologyhasSibling(GSat_u2,GSat_u1) → ontologyPerson(GSat_u1)
+ontologyhasUncle(GSat_u1,GSat_u2) & ontologyWoman(GSat_u1) → ontologyNiece(GSat_u1)
+ontologyhasNephew(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+ontologyhasBrother(GSat_u1,GSat_u2) → ontologyhasSibling(GSat_u1,GSat_u2)
+swrlDatavaluedPropertyAtom(GSat_u1) → errorError3(GSat_u1)
+ontologyhasAunt(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+ontologyname(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+swrlImp(GSat_u2) & swrlbody(GSat_u2,GSat_u1) → swrlAtomList(GSat_u1)
+ontologyhasSibling(GSat_u2,GSat_u1) → ontologyhasSibling(GSat_u1,GSat_u2)
+ontologySibling(GSat_u1) → ontologyPerson(GSat_u1)
+ontologySister(GSat_u1) → ontologyWoman(GSat_u1)
+ontologyMan(GSat_u1) → ontologyhasSex(GSat_u1,http://a.com/ontology#Male)
+ontologyDaugther(GSat_u1) → ontologyWoman(GSat_u1)
+ontologySon(GSat_u1) → ontologyChild(GSat_u1)
+ontologyParent(GSat_u1) → ontologyRelative(GSat_u1)
+ontologyname(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+ontologyhasAunt(GSat_u1,GSat_u2) & ontologyMan(GSat_u1) → ontologyNephew(GSat_u1)
+ontologyNiece(GSat_u1) → ontologyhasSex(GSat_u1,http://a.com/ontology#Female)
+swrlBuiltin(GSat_u2) & swrlbargs(GSat_u2,GSat_u1) → xsdint(GSat_u1)
+ontologyChild(GSat_u1) → ontologyPerson(GSat_u1)
+swrlIndividualPropertyAtom(GSat_u1) → errorError2(GSat_u1)
+swrlClassAtom(GSat_u2) & swrlclassPredicate(GSat_u2,GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+ontologyhasSon(GSat_u1,GSat_u2) → ontologyhasChild(GSat_u1,GSat_u2)
+ontologyChild(GSat_u1) & ontologyWoman(GSat_u1) → ontologyDaugther(GSat_u1)
+ontologyFather(GSat_u1) → ontologyMan(GSat_u1)
+ontologyNephew(GSat_u1) → ontologyhasSex(GSat_u1,http://a.com/ontology#Male)
+ontologyhasSister(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+swrlIndividualPropertyAtom(GSat_u1) → swrlAtom(GSat_u1)
+ontologyhasBrother(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+ontologyUncle(GSat_u1) → ontologyhasSex(GSat_u1,http://a.com/ontology#Male)
+ontologyhasAunt(GSat_u1,GSat_u2) & ontologyWoman(GSat_u1) → ontologyNiece(GSat_u1)
+ontologyPerson(GSat_u1) & ontologyhasSex(GSat_u1,http://a.com/ontology#Male) → ontologyMan(GSat_u1)
+ontologyhasNiece(GSat_u1,GSat_u2) & ontologyMan(GSat_u1) → ontologyUncle(GSat_u1)
+ontologySibling(GSat_u1) → ontologyRelative(GSat_u1)
+ontologyhasFather(GSat_u2,GSat_u1) → ontologyMan(GSat_u1)
+ontologyhasNephew(GSat_u2,GSat_u1) → ontologyMan(GSat_u1)
+ontologyhasNiece(GSat_u1,GSat_u2) & ontologyWoman(GSat_u1) → ontologyAunt(GSat_u1)
+ontologySibling(GSat_u1) & ontologyWoman(GSat_u1) → ontologySister(GSat_u1)
+ontologyhasChild(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+swrlDifferentIndividualsAtom(GSat_u1) → swrlAtom(GSat_u1)
+ontologyhasDaughter(GSat_u1,GSat_u2) → ontologyhasChild(GSat_u1,GSat_u2)
+ontologySon(GSat_u1) → ontologyMan(GSat_u1)
+ontologyhasNiece(GSat_u2,GSat_u1) → ontologyWoman(GSat_u1)
+swrlAtomList(GSat_u1) → errorError5(GSat_u1)
+ontologyhasMother(GSat_u2,GSat_u1) → ontologyWoman(GSat_u1)
+swrlAtomList(GSat_u1) → errorError4(GSat_u1)
+ontologyFather(GSat_u1) → ontologyParent(GSat_u1)
+ontologyParent(GSat_u1) → ontologyPerson(GSat_u1)
+ontologyhasMother(GSat_u1,GSat_u2) → ontologyhasParent(GSat_u1,GSat_u2)
+ontologyhasDaughter(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+ontologyChild(GSat_u1) → ontologyRelative(GSat_u1)
+ontologyhasBrother(GSat_u2,GSat_u1) → ontologyMan(GSat_u1)
+ontologyParent(GSat_u1) & ontologyMan(GSat_u1) → ontologyFather(GSat_u1)
+ontologySibling(GSat_u1) & ontologyMan(GSat_u1) → ontologyBrother(GSat_u1)
+ontologyhasSister(GSat_u2,GSat_u1) → ontologyWoman(GSat_u1)
+ontologyAunt(GSat_u1) → ontologyRelative(GSat_u1)
+swrlbuiltin(GSat_u2,GSat_u1) & swrlBuiltinAtom(GSat_u2) → swrlBuiltin(GSat_u1)
+ontologyNiece(GSat_u1) → ontologyRelative(GSat_u1)
+ontologyChild(GSat_u1) & ontologyMan(GSat_u1) → ontologySon(GSat_u1)
+ontologySister(GSat_u1) → ontologySibling(GSat_u1)
+ontologyMan(GSat_u1) → ontologyPerson(GSat_u1)
+swrlSameIndividualAtom(GSat_u1) → errorError1(GSat_u1)
+ontologyMother(GSat_u1) → ontologyWoman(GSat_u1)
+swrlSameIndividualAtom(GSat_u1) → swrlAtom(GSat_u1)
+ontologyRelative(GSat_u1) → ontologyPerson(GSat_u1)
+swrlClassAtom(GSat_u1) → swrlAtom(GSat_u1)
+ontologyhasChild(GSat_u2,GSat_u1) → ontologyPerson(GSat_u1)
+ontologyhasUncle(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+ontologyhasChild(GSat_u2,GSat_u1) → ontologyhasParent(GSat_u1,GSat_u2)
+ontologyhasSex(GSat_u2,GSat_u1) → ontologyGender(GSat_u1)
+ontologyhasUncle(GSat_u1,GSat_u2) & ontologyMan(GSat_u1) → ontologyNephew(GSat_u1)
+ontologyhasParent(GSat_u2,GSat_u1) → ontologyPerson(GSat_u1)
+ontologyhasNiece(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+swrlDataRangeAtom(GSat_u1) → swrlAtom(GSat_u1)
+swrlAtomList(GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+ontologyhasSister(GSat_u1,GSat_u2) → ontologyhasSibling(GSat_u1,GSat_u2)
+swrlpropertyPredicate(GSat_u2,GSat_u1) & swrlIndividualPropertyAtom(GSat_u2) → http://www.w3.org/2002/07/owl#ObjectProperty(GSat_u1)
+ontologyMan(GSat_u1) & ontologyhasNephew(GSat_u1,GSat_u2) → ontologyUncle(GSat_u1)
+swrlDifferentIndividualsAtom(GSat_u1) → errorError6(GSat_u1)
+ontologyUncle(GSat_u1) → ontologyRelative(GSat_u1)
+ontologyhasParent(GSat_u2,GSat_u1) → ontologyhasChild(GSat_u1,GSat_u2)
+ontologyhasConsort(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+ontologyBrother(GSat_u1) → ontologyMan(GSat_u1)
+ontologyhasSibling(GSat_u1,GSat_u2) & ontologyPerson(GSat_u1) → ontologySibling(GSat_u1)
+ontologyParent(GSat_u1) & ontologyWoman(GSat_u1) → ontologyMother(GSat_u1)
+ontologyhasAunt(GSat_u2,GSat_u1) → ontologyWoman(GSat_u1)
+ontologyNephew(GSat_u1) → ontologyRelative(GSat_u1)
+ontologyPerson(GSat_u1) & ontologyhasParent(GSat_u1,GSat_u2) → ontologyChild(GSat_u1)
+ontologyhasFather(GSat_u1,GSat_u2) → ontologyhasParent(GSat_u1,GSat_u2)
+swrlBuiltinAtom(GSat_u1) → swrlAtom(GSat_u1)
+ontologyBrother(GSat_u1) → ontologySibling(GSat_u1)
+swrlpropertyPredicate(GSat_u2,GSat_u1) & swrlDatavaluedPropertyAtom(GSat_u2) → http://www.w3.org/2002/07/owl#DatatypeProperty(GSat_u1)
+ontologyhasFather(GSat_u1,GSat_u2) → ontologyPerson(GSat_u1)
+swrlarguments(GSat_u2,GSat_u1) & swrlBuiltinAtom(GSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+ontologyhasChild(GSat_u1,GSat_u2) & ontologyPerson(GSat_u1) → ontologyParent(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#rest(GSat_u2,GSat_u1) & swrlAtomList(GSat_u2) → swrlAtomList(GSat_u1)
+ontologyhasSon(GSat_u2,GSat_u1) → ontologyMan(GSat_u1)
+ontologyhasUncle(GSat_u2,GSat_u1) → ontologyMan(GSat_u1)
+ontologyMother(GSat_u1) → ontologyParent(GSat_u1)
+ontologyhasNephew(GSat_u1,GSat_u2) & ontologyWoman(GSat_u1) → ontologyAunt(GSat_u1)
+swrldataRange(GSat_u2,GSat_u1) & swrlDataRangeAtom(GSat_u2) → http://www.w3.org/2000/01/rdf-schema#Datatype(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#first(GSat_u2,GSat_u1) & swrlAtomList(GSat_u2) → swrlAtom(GSat_u1)
+ontologyPerson(GSat_u1) & ontologyhasSex(GSat_u1,http://a.com/ontology#Female) → ontologyWoman(GSat_u1)
+=========================================

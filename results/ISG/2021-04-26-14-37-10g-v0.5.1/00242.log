@@ -1,0 +1,47 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 31; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:03:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/21 = 0.000%
+GSat discarded rules : 0/21 = 0.000%
+avr. 26, 2021 6:03:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:03:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 16 , 5
+nonFullTGDs	0		fullTGDs	16			newNonFullTGDs	5		newFullTGDs	0
+avr. 26, 2021 6:03:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 179 ms = 0.18 s
+avr. 26, 2021 6:03:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 14
+avr. 26, 2021 6:03:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:03:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 14
+avr. 26, 2021 6:03:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:03:17 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (16 dependecies)
+=========================================
+tools-ontuses(GSat_u2,GSat_u1) & tools-ontTool(GSat_u2) → tools-ontTool(GSat_u1)
+tools-ontname(GSat_u2,GSat_u1) & tools-ontProject(GSat_u2) → xsdstring(GSat_u1)
+tools-ontGroup(GSat_u1) → tools-ontUser(GSat_u1)
+tools-ontproject(GSat_u2,GSat_u1) & tools-ontTool(GSat_u2) → tools-ontProject(GSat_u1)
+tools-ontUser(GSat_u2) & tools-onthowUsed(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+tools-ontTool(GSat_u2) & tools-ontprice(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+tools-ontdescription(GSat_u2,GSat_u1) & tools-ontTool(GSat_u2) → xsdstring(GSat_u1)
+tools-ontPerson(GSat_u2) & tools-ontemail(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+tools-ontname(GSat_u2,GSat_u1) & tools-ontGroup(GSat_u2) → xsdstring(GSat_u1)
+tools-ontTool(GSat_u2) & tools-ontname(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+tools-ontsourceCode(GSat_u2,GSat_u1) & tools-ontTool(GSat_u2) → xsdstring(GSat_u1)
+tools-ontPerson(GSat_u1) → tools-ontUser(GSat_u1)
+tools-ontTool(GSat_u2) & tools-ontinterface(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+tools-ontTool(GSat_u2) & tools-ontcategory(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+tools-ontTool(GSat_u2) & tools-ontuser(GSat_u2,GSat_u1) → tools-ontUser(GSat_u1)
+tools-ontsite(GSat_u2,GSat_u1) & tools-ontTool(GSat_u2) → xsduriReference(GSat_u1)
+=========================================

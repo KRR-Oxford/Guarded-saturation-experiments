@@ -1,0 +1,101 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 59; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:40:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 3/58 = 5.172%
+GSat discarded rules : 3/58 = 5.172%
+avr. 26, 2021 5:40:40 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:40:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 43 , 12
+nonFullTGDs	0		fullTGDs	43			newNonFullTGDs	12		newFullTGDs	0
+avr. 26, 2021 5:40:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 665 ms = 0.66 s
+avr. 26, 2021 5:40:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 212
+avr. 26, 2021 5:40:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:40:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 101 , 156
+avr. 26, 2021 5:40:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 27
+avr. 26, 2021 5:40:41 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (70 dependecies)
+=========================================
+generationsPerson(GSat_u1) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & generationsMother(GSat_u1) → generationsFather(GSat_u1)
+generationsSister(GSat_u1) → generationsPerson(GSat_u1)
+generationsSon(GSat_u1) → generationsPerson(GSat_u1)
+generationshasSibling(GSat_u2,GSat_u1) → generationshasSibling(GSat_u1,GSat_u2)
+generationsPerson(GSat_u1) & generationsBrother(GSat_u1) → generationsSibling(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsPerson(GSat_u1) & generationsOffSpring(GSat_u1) → generationsDaughter(GSat_u1)
+generationsPerson(GSat_u1) & generationsMother(GSat_u1) → generationsParent(GSat_u1)
+generationsGrandMother(GSat_u1) & generationsPerson(GSat_u1) → generationsParent(GSat_u1)
+generationsOffSpring(GSat_u1) → generationsPerson(GSat_u1)
+generationsSon(GSat_u1) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsPerson(GSat_u1) → generationsDaughter(GSat_u1)
+generationsSister(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex)
+generationsFather(GSat_u1) & generationsPerson(GSat_u1) → generationsParent(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsPerson(GSat_u1) → generationsWoman(GSat_u1)
+generationshasParent(GSat_u2,GSat_u1) → generationshasChild(GSat_u1,GSat_u2)
+generationsPerson(GSat_u1) & generationsPerson(GSat_u2) & generationshasParent(GSat_u1,GSat_u2) → generationsOffSpring(GSat_u1)
+generationsSon(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex)
+generationsPerson(GSat_u1) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) → generationsMan(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsSibling(GSat_u1) & generationsPerson(GSat_u1) → generationsSister(GSat_u1)
+generationsMother(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsPerson(GSat_u1) & generationsParent(GSat_u1) → generationsMother(GSat_u1)
+generationshasChild(GSat_u2,GSat_u1) → generationshasParent(GSat_u1,GSat_u2)
+generationsPerson(GSat_u1) & generationsDaughter(GSat_u1) → generationsOffSpring(GSat_u1)
+generationsSibling(GSat_u1) → generationsPerson(GSat_u1)
+generationsMan(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex)
+generationsSister(GSat_u1) & generationsPerson(GSat_u1) → generationsSibling(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsPerson(GSat_u1) & generationsGrandFather(GSat_u1) → generationsMother(GSat_u1)
+generationsParent(GSat_u1) → generationsPerson(GSat_u1)
+generationsBrother(GSat_u1) → generationsPerson(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) → generationsMale(GSat_u1)
+generationsGrandMother(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex)
+generationsDaughter(GSat_u1) → generationsPerson(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsFather(GSat_u1) & generationsPerson(GSat_u1) → generationsMother(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsPerson(GSat_u1) & generationsBrother(GSat_u1) → generationsSister(GSat_u1)
+generationsBrother(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex)
+generationsWoman(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex)
+generationsFemale(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex)
+generationsSon(GSat_u1) & generationsPerson(GSat_u1) → generationsOffSpring(GSat_u1)
+generationsWoman(GSat_u1) → generationsPerson(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationshasSibling(GSat_u1,GSat_u2) & generationsPerson(GSat_u1) & generationsPerson(GSat_u2) → generationsSister(GSat_u1)
+generationsPerson(GSat_u1) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & generationsParent(GSat_u1) → generationsFather(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & generationsPerson(GSat_u1) & generationsPerson(GSat_u2) & generationshasParent(GSat_u1,GSat_u2) → generationsSon(GSat_u1)
+generationsFather(GSat_u1) → generationsPerson(GSat_u1)
+generationsGrandFather(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex)
+generationsPerson(GSat_u1) & generationsGrandFather(GSat_u1) → generationsParent(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsPerson(GSat_u1) & generationsPerson(GSat_u2) & generationshasParent(GSat_u1,GSat_u2) → generationsDaughter(GSat_u1)
+generationsFather(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex)
+generationsDaughter(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex)
+generationsPerson(GSat_u1) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & generationsGrandFather(GSat_u1) → generationsFather(GSat_u1)
+generationsGrandParent(GSat_u1) → generationsPerson(GSat_u1)
+generationsPerson(GSat_u1) & generationsPerson(GSat_u2) & generationshasChild(GSat_u1,GSat_u2) → generationsParent(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsGrandMother(GSat_u1) & generationsPerson(GSat_u1) → generationsMother(GSat_u1)
+generationsGrandFather(GSat_u1) → generationsPerson(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & generationsPerson(GSat_u1) & generationsPerson(GSat_u2) & generationshasChild(GSat_u1,GSat_u2) → generationsFather(GSat_u1)
+generationsSister(GSat_u1) & generationsPerson(GSat_u1) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) → generationsBrother(GSat_u1)
+generationsGrandParent(GSat_u1) & generationsPerson(GSat_u1) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) → generationsFather(GSat_u1)
+generationsPerson(GSat_u1) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & generationsDaughter(GSat_u1) → generationsSon(GSat_u1)
+generationsMan(GSat_u1) → generationsPerson(GSat_u1)
+generationshasSex(GSat_u2,GSat_u1) → generationsSex(GSat_u1)
+generationsMother(GSat_u1) → generationsPerson(GSat_u1)
+generationsGrandParent(GSat_u1) & generationsPerson(GSat_u1) → generationsParent(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) → generationsFemale(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsPerson(GSat_u1) & generationsPerson(GSat_u2) & generationshasChild(GSat_u1,GSat_u2) → generationsMother(GSat_u1)
+generationsGrandMother(GSat_u1) → generationsPerson(GSat_u1)
+generationshasSibling(GSat_u1,GSat_u2) & generationsPerson(GSat_u1) & generationsPerson(GSat_u2) → generationsSibling(GSat_u1)
+generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & generationsGrandParent(GSat_u1) & generationsPerson(GSat_u1) → generationsMother(GSat_u1)
+generationsPerson(GSat_u1) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & generationsOffSpring(GSat_u1) → generationsSon(GSat_u1)
+generationshasSibling(GSat_u1,GSat_u2) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & generationsPerson(GSat_u1) & generationsPerson(GSat_u2) → generationsBrother(GSat_u1)
+generationsSibling(GSat_u1) & generationsPerson(GSat_u1) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) → generationsBrother(GSat_u1)
+generationsGrandMother(GSat_u1) & generationsPerson(GSat_u1) & generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) → generationsFather(GSat_u1)
+generationsMale(GSat_u1) → generationshasSex(GSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex)
+=========================================

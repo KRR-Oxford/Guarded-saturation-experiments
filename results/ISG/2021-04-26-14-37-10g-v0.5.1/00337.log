@@ -1,0 +1,57 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 27; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:38:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/27 = 0.000%
+GSat discarded rules : 0/27 = 0.000%
+avr. 26, 2021 6:38:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:38:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 27 , 0
+avr. 26, 2021 6:38:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 111 ms = 0.11 s
+avr. 26, 2021 6:38:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:38:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:38:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:38:55 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:38:55 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (27 dependecies)
+=========================================
+owned_by(GSat_u2,GSat_u1) → PolicyModelPerson_or_Organization(GSat_u1)
+discovery_realized_by(GSat_u1,GSat_u2) → Discovery(GSat_u1)
+search(GSat_u2,GSat_u1) → Resource_Description(GSat_u1)
+Discovery_Service(GSat_u1) → ServiceModelService(GSat_u1)
+search(GSat_u1,GSat_u2) → Discovery_Service(GSat_u1)
+performed_by(GSat_u1,GSat_u2) → Discovery(GSat_u1)
+performed_by(GSat_u2,GSat_u1) → ServiceModelAgent(GSat_u1)
+representation(GSat_u1,GSat_u2) → Representation(GSat_u1)
+used_by(GSat_u2,GSat_u1) → ServiceModelAgent(GSat_u1)
+represented_by(GSat_u2,GSat_u1) → representation(GSat_u1,GSat_u2)
+representation(GSat_u2,GSat_u1) → Resource(GSat_u1)
+resource_description(GSat_u1,GSat_u2) → Resource(GSat_u1)
+publish(GSat_u2,GSat_u1) → Resource_Description(GSat_u1)
+identify(GSat_u2,GSat_u1) → identifier(GSat_u1,GSat_u2)
+publish(GSat_u1,GSat_u2) → Discovery_Service(GSat_u1)
+governed_by(GSat_u2,GSat_u1) → PolicyModelPolicy(GSat_u1)
+discovery_realized_by(GSat_u2,GSat_u1) → Discovery_Service(GSat_u1)
+identify(GSat_u2,GSat_u1) → Resource(GSat_u1)
+identify(GSat_u1,GSat_u2) → Identifier(GSat_u1)
+governed_by(GSat_u1,GSat_u2) → Resource(GSat_u1)
+realized_by(GSat_u1,GSat_u2) → Identifier(GSat_u1)
+identifier(GSat_u2,GSat_u1) → identify(GSat_u1,GSat_u2)
+realized_by(GSat_u2,GSat_u1) → xsduriReference(GSat_u1)
+resource_description(GSat_u2,GSat_u1) → Resource_Description(GSat_u1)
+representation(GSat_u2,GSat_u1) → represented_by(GSat_u1,GSat_u2)
+used_by(GSat_u1,GSat_u2) → Discovery_Service(GSat_u1)
+owned_by(GSat_u1,GSat_u2) → Resource(GSat_u1)
+=========================================

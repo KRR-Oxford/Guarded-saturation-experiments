@@ -1,0 +1,68 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 38; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:02:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/38 = 0.000%
+GSat discarded rules : 0/38 = 0.000%
+avr. 26, 2021 6:02:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:02:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 38 , 0
+avr. 26, 2021 6:02:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 148 ms = 0.15 s
+avr. 26, 2021 6:02:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:02:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:02:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:02:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:02:20 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (38 dependecies)
+=========================================
+hazardous-cargo-ontclass5.2(GSat_u1) → hazardous-cargo-ontclass5(GSat_u1)
+hazardous-cargo-ontclass3(GSat_u1) → hazardous-cargo-ontallHazardousClasses(GSat_u1)
+hazardous-cargo-ontclass8(GSat_u1) → hazardous-cargo-ontallHazardousClasses(GSat_u1)
+hazardous-cargo-ontclassDivCode(GSat_u2,GSat_u1) & hazardous-cargo-ontHazardousCargo(GSat_u2) → hazardous-cargo-ontClassDivCode(GSat_u1)
+hazardous-cargo-ontdivision(GSat_u2,GSat_u1) & hazardous-cargo-ontClassDivCode(GSat_u2) → xsdstring(GSat_u1)
+hazardous-cargo-ontcompatibilityGroup(GSat_u2,GSat_u1) & hazardous-cargo-ontHazardousCargo(GSat_u2) → hazardous-cargo-ontCompatibilityGroup(GSat_u1)
+hazardous-cargo-ontclass1.4(GSat_u1) → hazardous-cargo-ontclass1(GSat_u1)
+hazardous-cargo-ontclass1.5(GSat_u1) → hazardous-cargo-ontclass1(GSat_u1)
+hazardous-cargo-ontunIdNumber(GSat_u2,GSat_u1) & hazardous-cargo-ontHazardousCargo(GSat_u2) → xsdstring(GSat_u1)
+hazardous-cargo-ontclass2.2(GSat_u1) → hazardous-cargo-ontclass2(GSat_u1)
+hazardous-cargo-ontspecialProvision(GSat_u2,GSat_u1) & hazardous-cargo-ontHazardousCargo(GSat_u2) → xsdstring(GSat_u1)
+hazardous-cargo-ontclass1(GSat_u1) → hazardous-cargo-ontallHazardousClasses(GSat_u1)
+hazardous-cargo-ontclass4.1(GSat_u1) → hazardous-cargo-ontclass4(GSat_u1)
+hazardous-cargo-ontclass1.6(GSat_u1) → hazardous-cargo-ontclass1(GSat_u1)
+hazardous-cargo-ontclass4.2(GSat_u1) → hazardous-cargo-ontclass4(GSat_u1)
+hazardous-cargo-ontclassificationCode(GSat_u2,GSat_u1) & hazardous-cargo-ontHazardousCargo(GSat_u2) → xsdstring(GSat_u1)
+hazardous-cargo-ontclass6(GSat_u1) → hazardous-cargo-ontallHazardousClasses(GSat_u1)
+hazardous-cargo-ontpackingGroup(GSat_u2,GSat_u1) & hazardous-cargo-ontHazardousCargo(GSat_u2) → xsdstring(GSat_u1)
+hazardous-cargo-ontClassDivCode(GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+hazardous-cargo-ontclass6.2(GSat_u1) → hazardous-cargo-ontclass6(GSat_u1)
+hazardous-cargo-ontclass5(GSat_u1) → hazardous-cargo-ontallHazardousClasses(GSat_u1)
+hazardous-cargo-ontclass4.3(GSat_u1) → hazardous-cargo-ontclass4(GSat_u1)
+hazardous-cargo-ontclass5.1(GSat_u1) → hazardous-cargo-ontclass5(GSat_u1)
+hazardous-cargo-ontclass1.1(GSat_u1) → hazardous-cargo-ontclass1(GSat_u1)
+hazardous-cargo-ontclass(GSat_u2,GSat_u1) & hazardous-cargo-ontClassDivCode(GSat_u2) → xsdstring(GSat_u1)
+hazardous-cargo-ontproperShippingName(GSat_u2,GSat_u1) & hazardous-cargo-ontHazardousCargo(GSat_u2) → xsdstring(GSat_u1)
+hazardous-cargo-ontclass2.1(GSat_u1) → hazardous-cargo-ontclass2(GSat_u1)
+hazardous-cargo-ontsubsidiaryRisk(GSat_u2,GSat_u1) & hazardous-cargo-ontHazardousCargo(GSat_u2) → xsdstring(GSat_u1)
+hazardous-cargo-ontclass2(GSat_u1) → hazardous-cargo-ontallHazardousClasses(GSat_u1)
+hazardous-cargo-ontclass6.1(GSat_u1) → hazardous-cargo-ontclass6(GSat_u1)
+hazardous-cargo-ontclass1.3(GSat_u1) → hazardous-cargo-ontclass1(GSat_u1)
+hazardous-cargo-ontclass9(GSat_u1) → hazardous-cargo-ontallHazardousClasses(GSat_u1)
+hazardous-cargo-ontclass4(GSat_u1) → hazardous-cargo-ontallHazardousClasses(GSat_u1)
+hazardous-cargo-ontapplicableTo(GSat_u2,GSat_u1) & hazardous-cargo-ontCompatibilityGroup(GSat_u2) → hazardous-cargo-ontClassDivCode(GSat_u1)
+hazardous-cargo-ontsymbol(GSat_u2,GSat_u1) & hazardous-cargo-ontHazardousCargo(GSat_u2) → xsdstring(GSat_u1)
+hazardous-cargo-ontclass2.3(GSat_u1) → hazardous-cargo-ontclass2(GSat_u1)
+hazardous-cargo-ontclass7(GSat_u1) → hazardous-cargo-ontallHazardousClasses(GSat_u1)
+hazardous-cargo-ontclass1.2(GSat_u1) → hazardous-cargo-ontclass1(GSat_u1)
+=========================================

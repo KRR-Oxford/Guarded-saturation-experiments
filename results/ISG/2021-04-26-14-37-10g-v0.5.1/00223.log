@@ -1,0 +1,39 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 16; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:01:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/12 = 0.000%
+GSat discarded rules : 0/12 = 0.000%
+avr. 26, 2021 6:01:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:01:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 8 , 4
+nonFullTGDs	0		fullTGDs	8			newNonFullTGDs	4		newFullTGDs	0
+avr. 26, 2021 6:01:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 262 ms = 0.26 s
+avr. 26, 2021 6:01:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 7
+avr. 26, 2021 6:01:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:01:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 7
+avr. 26, 2021 6:01:29 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:01:29 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (8 dependecies)
+=========================================
+mcdaGetResultsRequest(GSat_u1) → agent-ontRequestMessage(GSat_u1)
+mcdaanalysis(GSat_u2,GSat_u1) & mcdaMCDAParameters(GSat_u2) → mcda-ontAnalysis(GSat_u1)
+mcdanotificationAgent(GSat_u2,GSat_u1) & mcdaMCDAParameters(GSat_u2) → agent-ontAgent(GSat_u1)
+mcdaanalysis(GSat_u2,GSat_u1) & mcdaGetResultsReply(GSat_u2) → mcda-ontAnalysis(GSat_u1)
+mcdaGetResultsReply(GSat_u1) → agent-ontReplyMessage(GSat_u1)
+mcdarepeatInterval(GSat_u2,GSat_u1) & mcdaMCDAParameters(GSat_u2) → xsdtimeDuration(GSat_u1)
+mcdaMCDAParameters(GSat_u1) → agent-ontParameters(GSat_u1)
+mcdaoperation(GSat_u2,GSat_u1) & mcdaMCDAParameters(GSat_u2) → operation-ontOperation(GSat_u1)
+=========================================

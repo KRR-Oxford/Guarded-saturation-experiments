@@ -1,0 +1,103 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 88; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:35:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/82 = 0.000%
+GSat discarded rules : 0/82 = 0.000%
+avr. 26, 2021 5:35:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:35:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 72 , 10
+nonFullTGDs	0		fullTGDs	72			newNonFullTGDs	10		newFullTGDs	0
+avr. 26, 2021 5:35:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 215 ms = 0.22 s
+avr. 26, 2021 5:35:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 10
+avr. 26, 2021 5:35:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:35:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 10
+avr. 26, 2021 5:35:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 5:35:41 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (72 dependecies)
+=========================================
+profile-ontphoneNumber(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontfaxNumber(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontfilter(GSat_u2,GSat_u1) → profile-ontFilterOn(GSat_u1)
+profile-ontendTime(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+profile-ontlastName(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontphoneNumber(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontday(GSat_u2,GSat_u1) → profile-ontDayOfWeek(GSat_u1)
+profile-ontclassification(GSat_u1,GSat_u2) → profile-ontInterest(GSat_u1)
+profile-ontendTime(GSat_u1,GSat_u2) → profile-ontBusyDayTime(GSat_u1)
+profile-ontassertions(GSat_u2,GSat_u1) → profile-ontRelatedTo(GSat_u1)
+profile-ontpager(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontcity(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontwebPageURI(GSat_u2,GSat_u1) → xsdanyURI(GSat_u1)
+profile-onttopic1(GSat_u1,GSat_u2) → profile-ontAssertion(GSat_u1)
+profile-ontcountry(GSat_u1,GSat_u2) → profile-ontAddress(GSat_u1)
+profile-ontlastName(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-onttopic1(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-onttopic(GSat_u1,GSat_u2) → profile-ontInterest(GSat_u1)
+profile-ontscheduleVer1.0(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontlatitude(GSat_u1,GSat_u2) → profile-ontAddress(GSat_u1)
+profile-ontinterests(GSat_u2,GSat_u1) → profile-ontInterest(GSat_u1)
+profile-onttitle(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-onthasSMSContact(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontRelatedTo(GSat_u1) → profile-ontAssertion(GSat_u1)
+profile-ontofficeAddress(GSat_u2,GSat_u1) → profile-ontAddress(GSat_u1)
+profile-ontstartTime(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+profile-ontstreetAddress(GSat_u1,GSat_u2) → profile-ontAddress(GSat_u1)
+profile-ontemail(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontcellNumber(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontSubsumedBy(GSat_u1) → profile-ontAssertion(GSat_u1)
+profile-ontlocation(GSat_u2,GSat_u1) → profile-ontAddress(GSat_u1)
+profile-ontinterests(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontday(GSat_u1,GSat_u2) → profile-ontBusyDayTime(GSat_u1)
+profile-ontfirstName(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontfilter(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontgender(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontclassification(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontlongitude(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+profile-onttopic(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontfirstName(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-onthomeAddress(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontscheduleVer1.0(GSat_u2,GSat_u1) → profile-ontBusyDayTime(GSat_u1)
+profile-ontbioSketch(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontassertions(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-onttitle(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-onthomeAddress(GSat_u2,GSat_u1) → profile-ontAddress(GSat_u1)
+profile-ontpager(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontwebPageURI(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontlocation(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontstate(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontemail(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontstreetAddress(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontstartTime(GSat_u1,GSat_u2) → profile-ontBusyDayTime(GSat_u1)
+profile-onthasSMSContact(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-onttopic2(GSat_u1,GSat_u2) → profile-ontAssertion(GSat_u1)
+profile-ontgender(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontlatitude(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+profile-ontcity(GSat_u1,GSat_u2) → profile-ontAddress(GSat_u1)
+profile-ontscheduleVer0.1(GSat_u2,GSat_u1) → profile-ontDayOfWeek(GSat_u1)
+profile-ontcountry(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontorganization(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontzip(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontscheduleVer0.1(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontfaxNumber(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontorganization(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontofficeAddress(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontcellNumber(GSat_u1,GSat_u2) → profile-ontProfile(GSat_u1)
+profile-ontbioSketch(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontzip(GSat_u1,GSat_u2) → profile-ontAddress(GSat_u1)
+profile-ontstate(GSat_u1,GSat_u2) → profile-ontAddress(GSat_u1)
+profile-onttopic2(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+profile-ontlongitude(GSat_u1,GSat_u2) → profile-ontAddress(GSat_u1)
+=========================================

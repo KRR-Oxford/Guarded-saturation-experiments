@@ -1,0 +1,62 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 37; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:36:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/32 = 0.000%
+GSat discarded rules : 0/32 = 0.000%
+avr. 26, 2021 5:36:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:36:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 31 , 1
+nonFullTGDs	0		fullTGDs	31			newNonFullTGDs	1		newFullTGDs	0
+avr. 26, 2021 5:36:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 150 ms = 0.15 s
+avr. 26, 2021 5:36:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 1
+avr. 26, 2021 5:36:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:36:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 1
+avr. 26, 2021 5:36:37 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 5:36:37 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (31 dependecies)
+=========================================
+projectlogoURI(GSat_u2,GSat_u1) → xsdanyURI(GSat_u1)
+projectrelatedPublication(GSat_u2,GSat_u1) → publicationPublication(GSat_u1)
+projectassociatedWith(GSat_u1,GSat_u2) → projectProject(GSat_u1)
+projectrelatedResource(GSat_u2,GSat_u1) → publicationResource(GSat_u1)
+projectassociatedWith(GSat_u2,GSat_u1) → associationPersonProjectAssociation(GSat_u1)
+projectstartDate(GSat_u1,GSat_u2) → projectProject(GSat_u1)
+projectrelatedResource(GSat_u1,GSat_u2) → projectProject(GSat_u1)
+projectkeyword(GSat_u1,GSat_u2) → projectProject(GSat_u1)
+publicationrelatedProject(GSat_u2,GSat_u1) → projectrelatedPublication(GSat_u1,GSat_u2)
+projectrelatedResearchArea(GSat_u2,GSat_u1) → researchResearch(GSat_u1)
+projectdescription(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+publicationrelatedProject(GSat_u2,GSat_u1) → projectrelatedResource(GSat_u1,GSat_u2)
+projectrelatedPublication(GSat_u1,GSat_u2) → projectProject(GSat_u1)
+projecttitle(GSat_u1,GSat_u2) → projectProject(GSat_u1)
+projectstartDate(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+projectdescription(GSat_u1,GSat_u2) → projectProject(GSat_u1)
+projectendDate(GSat_u2,GSat_u1) → xsddateTime(GSat_u1)
+projectrelatedPublication(GSat_u2,GSat_u1) → publicationrelatedProject(GSat_u1,GSat_u2)
+projectActiveProject(GSat_u1) → projectProject(GSat_u1)
+projectProposal(GSat_u1) → projectProject(GSat_u1)
+projectendDate(GSat_u1,GSat_u2) → projectProject(GSat_u1)
+associationproject(GSat_u2,GSat_u1) → projectassociatedWith(GSat_u1,GSat_u2)
+projectrelatedResource(GSat_u2,GSat_u1) → publicationrelatedProject(GSat_u1,GSat_u2)
+projectrelatedResearchArea(GSat_u1,GSat_u2) → projectProject(GSat_u1)
+projecttitle(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+researchrelatedProject(GSat_u2,GSat_u1) → projectrelatedResearchArea(GSat_u1,GSat_u2)
+projectkeyword(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+projectlogoURI(GSat_u1,GSat_u2) → projectProject(GSat_u1)
+projectassociatedWith(GSat_u2,GSat_u1) → associationproject(GSat_u1,GSat_u2)
+projectPastProject(GSat_u1) → projectProject(GSat_u1)
+projectrelatedResearchArea(GSat_u2,GSat_u1) → researchrelatedProject(GSat_u1,GSat_u2)
+=========================================

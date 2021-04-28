@@ -1,0 +1,80 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 59; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 5:51:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/50 = 0.000%
+GSat discarded rules : 0/50 = 0.000%
+avr. 26, 2021 5:51:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 5:51:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 50 , 0
+avr. 26, 2021 5:51:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 153 ms = 0.15 s
+avr. 26, 2021 5:51:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 5:51:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 5:51:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 5:51:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 5:51:09 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (50 dependecies)
+=========================================
+supportTime-Point(GSat_u1) → supportTime-Position(GSat_u1)
+supportYear(GSat_u1) → supportTime-Interval(GSat_u1)
+supportmonth-of(GSat_u2,GSat_u1) → xsdnonNegativeInteger(GSat_u1)
+supportQuantity(GSat_u1) → supportIntangible-Thing(GSat_u1)
+supportminute-of(GSat_u2,GSat_u1) → xsdnonNegativeInteger(GSat_u1)
+supportTemporal-Thing(GSat_u1) → supportThing(GSat_u1)
+supportyear-of(GSat_u1,GSat_u2) → supportTime-Point(GSat_u1)
+supporthas-unit-of-measure(GSat_u1,GSat_u2) → supportPhysical-Quantity(GSat_u1)
+supporthour-of(GSat_u1,GSat_u2) → supportTime-Point(GSat_u1)
+supportYear(GSat_u1) → supporthas-duration(GSat_u1,http://www.aktors.org/ontology/support#twelve-month-duration)
+supporthas-pretty-name(GSat_u1,GSat_u2) → supportThing(GSat_u1)
+supportends-at-time-point(GSat_u2,GSat_u1) → supportTime-Point(GSat_u1)
+supportminute-of(GSat_u1,GSat_u2) → supportTime-Point(GSat_u1)
+supportWeek(GSat_u1) → supportTime-Interval(GSat_u1)
+supportday-of(GSat_u1,GSat_u2) → supportTime-Point(GSat_u1)
+supportUnit-Of-Measure(GSat_u1) → supportIntangible-Thing(GSat_u1)
+supporthas-unit-of-measure(GSat_u2,GSat_u1) → supportUnit-Of-Measure(GSat_u1)
+supporthas-duration(GSat_u2,GSat_u1) → supportDuration(GSat_u1)
+supportTangible-Thing(GSat_u1) → supportTemporal-Thing(GSat_u1)
+supportCalendar-Date(GSat_u1) → supportTime-Point(GSat_u1)
+supporthas-pretty-name(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+supportPhysical-Quantity(GSat_u1) → supportQuantity(GSat_u1)
+supportWeek(GSat_u1) → supporthas-duration(GSat_u1,http://www.aktors.org/ontology/support#seven-day-duration)
+supporthas-duration(GSat_u1,GSat_u2) → supportTime-Interval(GSat_u1)
+supportTime-Interval(GSat_u1) → supportTime-Position(GSat_u1)
+supporthas-variant-name(GSat_u1,GSat_u2) → supportThing(GSat_u1)
+supportTime-Measure(GSat_u1) → supportUnit-Of-Measure(GSat_u1)
+supportends-at-time-point(GSat_u1,GSat_u2) → supportTime-Interval(GSat_u1)
+supportin-timezone(GSat_u1,GSat_u2) → supportTime-Position(GSat_u1)
+supportDay(GSat_u1) → supportTime-Interval(GSat_u1)
+supportyear-of(GSat_u2,GSat_u1) → xsdnonNegativeInteger(GSat_u1)
+supportmonth-of(GSat_u1,GSat_u2) → supportTime-Point(GSat_u1)
+supporthas-variant-name(GSat_u2,GSat_u1) → xsdstring(GSat_u1)
+supportin-timezone(GSat_u2,GSat_u1) → xsdinteger(GSat_u1)
+supporthas-magnitude(GSat_u2,GSat_u1) → xsddecimal(GSat_u1)
+supportIntangible-Thing(GSat_u1) → supportThing(GSat_u1)
+supportbegins-at-time-point(GSat_u2,GSat_u1) → supportTime-Point(GSat_u1)
+supportTime-Position(GSat_u1) → supportIntangible-Thing(GSat_u1)
+supporthas-time-interval(GSat_u1,GSat_u2) → supportTemporal-Thing(GSat_u1)
+supportbegins-at-time-point(GSat_u1,GSat_u2) → supportTime-Interval(GSat_u1)
+supporthas-unit-of-measure(GSat_u2,GSat_u1) & supportDuration(GSat_u2) → supportTime-Measure(GSat_u1)
+supporthas-magnitude(GSat_u1,GSat_u2) → supportPhysical-Quantity(GSat_u1)
+supporthas-time-interval(GSat_u2,GSat_u1) → supportTime-Interval(GSat_u1)
+supportDuration(GSat_u1) → supportPhysical-Quantity(GSat_u1)
+supportMonth(GSat_u1) → supportTime-Interval(GSat_u1)
+supportDay(GSat_u1) → supporthas-duration(GSat_u1,http://www.aktors.org/ontology/support#twentyfour-hour-duration)
+supportday-of(GSat_u2,GSat_u1) → xsdnonNegativeInteger(GSat_u1)
+supportsecond-of(GSat_u2,GSat_u1) → xsdnonNegativeInteger(GSat_u1)
+supportsecond-of(GSat_u1,GSat_u2) → supportTime-Point(GSat_u1)
+supporthour-of(GSat_u2,GSat_u1) → xsdnonNegativeInteger(GSat_u1)
+=========================================

@@ -1,0 +1,101 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 73; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:30:12 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 0/71 = 0.000%
+GSat discarded rules : 0/71 = 0.000%
+avr. 26, 2021 6:30:12 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:30:12 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 71 , 0
+avr. 26, 2021 6:30:12 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 122 ms = 0.12 s
+avr. 26, 2021 6:30:12 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:30:12 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:30:12 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:30:12 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:30:12 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (71 dependecies)
+=========================================
+Mild(GSat_u1) → Ale(GSat_u1)
+Galena(GSat_u1) → Hops(GSat_u1)
+Pale(GSat_u1) → Malt(GSat_u1)
+Black(GSat_u1) → Malt(GSat_u1)
+awarded(GSat_u2,GSat_u1) → Award(GSat_u1)
+Perle(GSat_u1) → Hops(GSat_u1)
+brewedBy(GSat_u2,GSat_u1) → Brewery(GSat_u1)
+Chocolate(GSat_u1) → Malt(GSat_u1)
+DryStout(GSat_u1) → Stout(GSat_u1)
+hasContent(GSat_u1,GSat_u2) → Beer(GSat_u1)
+TopFermentedBeer(GSat_u1) → Beer(GSat_u1)
+KentGoldings(GSat_u1) → Hops(GSat_u1)
+Lager(GSat_u1) → BottomFermentedBeer(GSat_u1)
+Porter(GSat_u1) → TopFermentedBeer(GSat_u1)
+SweetStout(GSat_u1) → Stout(GSat_u1)
+Chinook(GSat_u1) → Hops(GSat_u1)
+Barley(GSat_u1) → Grain(GSat_u1)
+maltedTo(GSat_u2,GSat_u1) → Malt(GSat_u1)
+BrownAle(GSat_u1) → Ale(GSat_u1)
+sponsors(GSat_u2,GSat_u1) → Festival(GSat_u1)
+hasOriginalWortContent(GSat_u1,GSat_u2) → hasContent(GSat_u1,GSat_u2)
+ImperialStout(GSat_u1) → Stout(GSat_u1)
+hasAlcoholicContent(GSat_u2,GSat_u1) → xsdfloat(GSat_u1)
+Bock(GSat_u1) → BottomFermentedBeer(GSat_u1)
+PaleAle(GSat_u1) → Ale(GSat_u1)
+IndiaPaleAle(GSat_u1) → Ale(GSat_u1)
+MountHood(GSat_u1) → Hops(GSat_u1)
+awardedAt(GSat_u1,GSat_u2) → Award(GSat_u1)
+brewedBy(GSat_u1,GSat_u2) → Beer(GSat_u1)
+Yeast(GSat_u1) → Ingredient(GSat_u1)
+Hallertau(GSat_u1) → Hops(GSat_u1)
+madeFrom(GSat_u2,GSat_u1) → Ingredient(GSat_u1)
+Association(GSat_u1) → Organization(GSat_u1)
+brewedBy(GSat_u2,GSat_u1) → brews(GSat_u1,GSat_u2)
+madeFrom(GSat_u1,GSat_u2) → Beer(GSat_u1)
+Munich(GSat_u1) → Malt(GSat_u1)
+hasAlcoholicContent(GSat_u1,GSat_u2) → Beer(GSat_u1)
+BottomFermentedBeer(GSat_u1) → Beer(GSat_u1)
+awarded(GSat_u1,GSat_u2) → Beer(GSat_u1)
+awardCategory(GSat_u1,GSat_u2) → Award(GSat_u1)
+awardedAt(GSat_u2,GSat_u1) → Festival(GSat_u1)
+maltedTo(GSat_u1,GSat_u2) → Grain(GSat_u1)
+Malt(GSat_u1) → Ingredient(GSat_u1)
+Carapils(GSat_u1) → Malt(GSat_u1)
+locatedIn(GSat_u1,GSat_u2) → Brewery(GSat_u1)
+brews(GSat_u2,GSat_u1) → brewedBy(GSat_u1,GSat_u2)
+Caramel(GSat_u1) → Malt(GSat_u1)
+Town(GSat_u1) → Region(GSat_u1)
+Stout(GSat_u1) → Porter(GSat_u1)
+locatedIn(GSat_u2,GSat_u1) → Region(GSat_u1)
+White(GSat_u1) → TopFermentedBeer(GSat_u1)
+Ale(GSat_u1) → TopFermentedBeer(GSat_u1)
+brews(GSat_u1,GSat_u2) → Brewery(GSat_u1)
+brews(GSat_u2,GSat_u1) → Beer(GSat_u1)
+Grain(GSat_u1) → Ingredient(GSat_u1)
+Water(GSat_u1) → Ingredient(GSat_u1)
+Bitter(GSat_u1) → Ale(GSat_u1)
+ScotchAle(GSat_u1) → Ale(GSat_u1)
+Hops(GSat_u1) → Ingredient(GSat_u1)
+Wheat(GSat_u1) → Grain(GSat_u1)
+Willamette(GSat_u1) → Hops(GSat_u1)
+hasOriginalWortContent(GSat_u2,GSat_u1) → xsdfloat(GSat_u1)
+hasAlcoholicContent(GSat_u1,GSat_u2) → hasContent(GSat_u1,GSat_u2)
+hasOriginalWortContent(GSat_u1,GSat_u2) → Beer(GSat_u1)
+Tettnang(GSat_u1) → Hops(GSat_u1)
+Pilsner(GSat_u1) → BottomFermentedBeer(GSat_u1)
+Cascade(GSat_u1) → Hops(GSat_u1)
+sponsors(GSat_u1,GSat_u2) → Association(GSat_u1)
+Brewery(GSat_u1) → Organization(GSat_u1)
+Microbrewery(GSat_u1) → Brewery(GSat_u1)
+Saaz(GSat_u1) → Hops(GSat_u1)
+=========================================

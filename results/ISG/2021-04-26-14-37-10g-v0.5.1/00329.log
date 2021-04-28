@@ -1,0 +1,46 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 22; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+avr. 26, 2021 6:38:10 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat discarded rules : 6/22 = 27.273%
+GSat discarded rules : 6/22 = 27.273%
+avr. 26, 2021 6:38:10 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumption method : tree_atom
+avr. 26, 2021 6:38:10 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: # initial TGDs: 16 , 0
+avr. 26, 2021 6:38:10 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: GSat total time : 118 ms = 0.12 s
+avr. 26, 2021 6:38:10 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Subsumed elements : 0
+avr. 26, 2021 6:38:10 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Filter discarded elements : 0
+avr. 26, 2021 6:38:10 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: Derived full/non full TGDs: 0 , 0
+avr. 26, 2021 6:38:10 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFOS: ouptput full TGDs not contained in the input: 0
+avr. 26, 2021 6:38:10 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFOS: Rewriting completed!
+Full TGD saturation: (16 dependecies)
+=========================================
+extensionsrelatedPartOf(GSat_u2,GSat_u1) → extensionsrelatedHasPart(GSat_u1,GSat_u2)
+extensionsrelatedHasPart(GSat_u1,GSat_u2) → skosrelated(GSat_u1,GSat_u2)
+extensionsbroaderGeneric(GSat_u1,GSat_u2) → skosbroader(GSat_u1,GSat_u2)
+extensionsnarrowerInstantive(GSat_u1,GSat_u2) → skosnarrower(GSat_u1,GSat_u2)
+extensionsbroaderPartitive(GSat_u2,GSat_u1) → extensionsnarrowerPartitive(GSat_u1,GSat_u2)
+extensionsbroaderPartitive(GSat_u1,GSat_u2) → skosbroader(GSat_u1,GSat_u2)
+extensionsnarrowerGeneric(GSat_u1,GSat_u2) → skosnarrower(GSat_u1,GSat_u2)
+extensionsrelatedPartOf(GSat_u1,GSat_u2) → skosrelated(GSat_u1,GSat_u2)
+extensionsbroaderInstantive(GSat_u1,GSat_u2) → skosbroader(GSat_u1,GSat_u2)
+extensionsnarrowerGeneric(GSat_u2,GSat_u1) → extensionsbroaderGeneric(GSat_u1,GSat_u2)
+extensionsnarrowerPartitive(GSat_u2,GSat_u1) → extensionsbroaderPartitive(GSat_u1,GSat_u2)
+extensionsnarrowerPartitive(GSat_u1,GSat_u2) → skosnarrower(GSat_u1,GSat_u2)
+extensionsnarrowerInstantive(GSat_u2,GSat_u1) → extensionsbroaderInstantive(GSat_u1,GSat_u2)
+extensionsbroaderGeneric(GSat_u2,GSat_u1) → extensionsnarrowerGeneric(GSat_u1,GSat_u2)
+extensionsrelatedHasPart(GSat_u2,GSat_u1) → extensionsrelatedPartOf(GSat_u1,GSat_u2)
+extensionsbroaderInstantive(GSat_u2,GSat_u1) → extensionsnarrowerInstantive(GSat_u1,GSat_u2)
+=========================================
