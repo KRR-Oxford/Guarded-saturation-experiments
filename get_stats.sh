@@ -37,8 +37,8 @@ do
 
             # get derived TGDs
             NEW_TGD_STATS=`grep "Derived full/non full TGDs: " $log || true`
-            NEW_NFTGD_NB=${NEW_TGD_STATS#*$SEPARATOR}
-            NEW_FTGD_NB=${NEW_TGD_STATS:35:$(( ${#NEW_TGD_STAT} - ${#NEW_NFTGD_NB} - ${#SEPARATOR} ))}
+            NEW_FTGD_NB=${NEW_TGD_STATS#*$SEPARATOR}
+            NEW_NFTGD_NB=${NEW_TGD_STATS:35:$(( ${#NEW_TGD_STAT} - ${#NEW_FTGD_NB} - ${#SEPARATOR} ))}
 
             # get subsumed tgds
             OUTPUT_LINE=`grep "Full TGD saturation: (" $log`
