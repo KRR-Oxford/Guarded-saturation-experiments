@@ -21,13 +21,16 @@ else
     exit 1
 fi
 
+# copy the Jar file in the local directory
+cp $SCRIPT_DIR/../target/guarded-saturation-$version-jar-with-dependencies.jar .
+
 for filename in $DIR/*.dlgp
 do
     basenameF=$(basename "$filename" .dlgp)
 	echo "Testing $basenameF - $mem"
 	rm -f "$basepath/$basenameF.log"
         { # try
-	    time java -Xmx$mem -jar $SCRIPT_DIR/../target/guarded-saturation-$version-jar-with-dependencies.jar dlgp $filename &> "$basepath/$basenameF.log"
+	    time java -Xmx$mem -jar guarded-saturation-$version-jar-with-dependencies.jar dlgp $filename &> "$basepath/$basenameF.log"
         } || {
             # catch
             if [[ $? == 124 ]]; then
