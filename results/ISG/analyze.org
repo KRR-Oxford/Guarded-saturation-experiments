@@ -1,0 +1,170 @@
+#+TITLE: Comparison of GSat and the Skolemized version
+
+#+OPTIONS: toc:nil 
+#+PROPERTY: header-args :eval never-export
+#+PROPERTY: header-args:ipython :exports both
+
+In the following, we explore the statistics outputed by the experiments on GSat and on its Skolemized version. The saturation times are in miliseconds in the columns ~GSAT_TIME~ and ~SK_TIME~ respectively. The columns ~NFTGD_NB~ and ~FTGD_NB~ respectively contain the number of non full and full TGDs in input. Each row contain the values of the execution on the ontology whose name is in column ~NAME~.
+
+In the following, we remove the row, where:
+- both algorithm executions reach the timeout
+- and executions on the ontologies, which contains at least one non full TGD and one full TGD
+
+The number of remaining ontologies is:
+#+BEGIN_src ipython :session mysession :results output example
+    import pandas as pd
+    from tabulate import tabulate
+
+    gsat_file='2021-04-26-14-37-10g-v0.5.1/stats.csv'
+    sksat_file='2021-04-27-11-42-10g-v0.5.1/stats.csv'
+
+    df_gsat= pd.read_csv(gsat_file, index_col='NAME').rename(columns={'TIME':'GSAT_TIME'})
+    df_gsat = df_gsat[['NFTGD_NB', 'FTGD_NB', 'GSAT_TIME']]
+
+    df_sksat= pd.read_csv(sksat_file, index_col='NAME').rename(columns={'TIME':'SK_TIME'})
+    df_sksat = df_sksat['SK_TIME']
+
+    df = pd.concat([df_gsat, df_sksat], axis=1)
+
+    # selection of the execution where the input contains full and non full TDGs  
+    df = df[ (df['NFTGD_NB'] > 0) & (df['FTGD_NB'] > 0)  ]
+
+    # selection of the case where at least one algorithm does not reach the timeout
+    df = df[ (df['GSAT_TIME'] != 'TIMEOUT') | (df['SK_TIME'] != 'TIMEOUT')]
+
+    print(len(df.index))
+#+END_src
+
+#+RESULTS:
+: 367
+
+
+The following table contains the rows where Gsat executions reaches the timeout and the Skolemized version is not, sorted by the input size.
+#+BEGIN_src ipython :session mysession :results output raw
+    gsat_timeout = df[ df['GSAT_TIME'] == 'TIMEOUT']
+
+    gsat_timeout = gsat_timeout.sort_values(by="NFTGD_NB").sort_values(by="FTGD_NB")
+
+    print(tabulate(gsat_timeout, headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+| NAME | NFTGD_NB | FTGD_NB | GSAT_TIME | SK_TIME |
+|------+----------+---------+-----------+---------|
+|  729 |       54 |     124 | TIMEOUT   |    2055 |
+|  734 |       78 |     148 | TIMEOUT   |    2751 |
+|  343 |        4 |     156 | TIMEOUT   |     292 |
+|  718 |       97 |     182 | TIMEOUT   |    3354 |
+|  709 |      130 |     211 | TIMEOUT   |   10881 |
+|  708 |      125 |     215 | TIMEOUT   |   11688 |
+|  731 |      148 |     252 | TIMEOUT   |   15534 |
+|  511 |      346 |     282 | TIMEOUT   |    2539 |
+|  714 |      193 |     298 | TIMEOUT   |   52442 |
+|  738 |      159 |     301 | TIMEOUT   |   14762 |
+|  742 |      191 |     312 | TIMEOUT   |   21866 |
+|  753 |      207 |     337 | TIMEOUT   |   41001 |
+|  775 |       52 |     341 | TIMEOUT   |  100047 |
+|  721 |      222 |     347 | TIMEOUT   |   49395 |
+|  737 |      227 |     350 | TIMEOUT   |   80269 |
+|  710 |      240 |     356 | TIMEOUT   |  113635 |
+|  720 |      190 |     364 | TIMEOUT   |   17380 |
+|  723 |      225 |     369 | TIMEOUT   |   89836 |
+|  751 |      248 |     391 | TIMEOUT   |   92301 |
+|  748 |      223 |     398 | TIMEOUT   |   45935 |
+|  739 |      234 |     412 | TIMEOUT   |   56705 |
+|  707 |      257 |     412 | TIMEOUT   |  124991 |
+|  783 |       12 |     415 | TIMEOUT   |   10630 |
+|  750 |      209 |     416 | TIMEOUT   |   31908 |
+|  319 |       12 |     417 | TIMEOUT   |    1456 |
+|  344 |       12 |     417 | TIMEOUT   |    1112 |
+|  345 |       12 |     417 | TIMEOUT   |    1376 |
+|  782 |       12 |     417 | TIMEOUT   |    1173 |
+|  781 |       12 |     417 | TIMEOUT   |    1350 |
+|  711 |      245 |     421 | TIMEOUT   |   89838 |
+|  744 |      228 |     430 | TIMEOUT   |   48279 |
+|  735 |      290 |     455 | TIMEOUT   |  165308 |
+|  740 |      289 |     477 | TIMEOUT   |  201831 |
+|  745 |      329 |     528 | TIMEOUT   |  274939 |
+|  479 |      317 |     566 | TIMEOUT   |  111957 |
+|  726 |      283 |     571 | TIMEOUT   |   93339 |
+|  480 |      320 |     677 | TIMEOUT   |  130160 |
+|  282 |       65 |     883 | TIMEOUT   |    5742 |
+|  283 |       85 |     967 | TIMEOUT   |    7859 |
+|  624 |       98 |     980 | TIMEOUT   |     748 |
+|   19 |       67 |    1078 | TIMEOUT   |    6651 |
+|   18 |       84 |    1136 | TIMEOUT   |    9882 |
+|   17 |       64 |    1177 | TIMEOUT   |    6390 |
+|  284 |       81 |    1227 | TIMEOUT   |    7888 |
+|   13 |       74 |    1265 | TIMEOUT   |    6746 |
+|   20 |       80 |    1315 | TIMEOUT   |    6999 |
+|  410 |      471 |    1339 | TIMEOUT   |  115935 |
+|   24 |      130 |    1545 | TIMEOUT   |   14818 |
+|   14 |      130 |    1545 | TIMEOUT   |   14208 |
+|  788 |       10 |    2538 | TIMEOUT   |     526 |
+|  425 |    11625 |   26750 | TIMEOUT   |  257156 |
+
+The following table contains the rows where the Skolemized version reaches the timeout and Gsat is not, sorted by the input size.
+#+BEGIN_src ipython :session mysession :results output raw
+    sksat_timeout = df[ df['SK_TIME'] == 'TIMEOUT']
+
+    sksat_timeout = sksat_timeout.sort_values(by="NFTGD_NB").sort_values(by="FTGD_NB")
+    print(tabulate(sksat_timeout, headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+| NAME | NFTGD_NB | FTGD_NB | GSAT_TIME | SK_TIME |
+|------+----------+---------+-----------+---------|
+|  422 |      420 |     672 |      3397 | TIMEOUT |
+|  392 |      608 |    1213 |     10276 | TIMEOUT |
+|  421 |      716 |    1271 |      7792 | TIMEOUT |
+|  677 |     1607 |    1282 |      7062 | TIMEOUT |
+|  376 |      694 |    1286 |      5196 | TIMEOUT |
+|  424 |      728 |    1463 |      5270 | TIMEOUT |
+|  579 |      728 |    1463 |      7530 | TIMEOUT |
+|  393 |      776 |    1552 |     13575 | TIMEOUT |
+|  676 |     1921 |    1662 |     11809 | TIMEOUT |
+|  569 |      915 |    1701 |      7185 | TIMEOUT |
+|  766 |      218 |    1845 |     13327 | TIMEOUT |
+|  632 |      500 |    1895 |      4657 | TIMEOUT |
+|  630 |      500 |    1931 |      4308 | TIMEOUT |
+|  628 |      500 |    1931 |      3842 | TIMEOUT |
+|  626 |      500 |    1931 |      3907 | TIMEOUT |
+|  500 |     1621 |    1988 |     13235 | TIMEOUT |
+|  666 |      269 |    2153 |     13466 | TIMEOUT |
+|  633 |      572 |    2452 |      4822 | TIMEOUT |
+|  631 |      572 |    2452 |      5554 | TIMEOUT |
+|  657 |     1642 |    2580 |     16822 | TIMEOUT |
+|  476 |     1834 |    2687 |      9783 | TIMEOUT |
+|  595 |      219 |    2703 |     16325 | TIMEOUT |
+|  597 |      223 |    2742 |     16860 | TIMEOUT |
+|  397 |     1494 |    2922 |     14194 | TIMEOUT |
+|  665 |      299 |    2975 |     16112 | TIMEOUT |
+|  438 |     1512 |    3024 |     45565 | TIMEOUT |
+|  353 |      221 |    3235 |     20750 | TIMEOUT |
+|  352 |      221 |    3256 |     18372 | TIMEOUT |
+|  419 |     1496 |    4468 |     57961 | TIMEOUT |
+|  535 |     8479 |    4621 |     59860 | TIMEOUT |
+|  420 |     1480 |    5169 |     16164 | TIMEOUT |
+|  485 |     2593 |    5291 |     27002 | TIMEOUT |
+|  380 |     3141 |    6000 |     22954 | TIMEOUT |
+|  381 |     3216 |    6053 |     26549 | TIMEOUT |
+|  762 |     2508 |    6634 |    292333 | TIMEOUT |
+|  459 |     4013 |    6900 |     15713 | TIMEOUT |
+|  477 |   156743 |   10606 |     ERROR | TIMEOUT |
+|  680 |     7414 |   10873 |     37589 | TIMEOUT |
+|  678 |     7557 |   11217 |     51247 | TIMEOUT |
+|  540 |     1654 |   13265 |     19500 | TIMEOUT |
+|  436 |     2308 |   24014 |    239183 | TIMEOUT |
+|  390 |     7029 |   26439 |    251188 | TIMEOUT |
+|  398 |     7419 |   27696 |     73192 | TIMEOUT |
+|  371 |     7464 |   27758 |     75112 | TIMEOUT |
+|  386 |     7559 |   28570 |     63751 | TIMEOUT |
+|  400 |     7999 |   29907 |     82503 | TIMEOUT |
+|  374 |     8270 |   30220 |    135841 | TIMEOUT |
+|  394 |     9071 |   31193 |    150812 | TIMEOUT |
+|  536 |     6762 |   36438 |     89188 | TIMEOUT |
+|  415 |     7752 |   39986 |     73963 | TIMEOUT |
+|  537 |    11089 |   51961 |    233116 | TIMEOUT |
+|  416 |    12269 |   56650 |    243473 | TIMEOUT |
+|  553 |    50566 |   90262 |     ERROR | TIMEOUT |
+|  483 |    29022 |  114239 |     ERROR | TIMEOUT |
