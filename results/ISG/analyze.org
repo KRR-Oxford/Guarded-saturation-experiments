@@ -168,3 +168,17 @@ The following table contains the rows where the Skolemized version reaches the t
 |  416 |    12269 |   56650 |    243473 | TIMEOUT |
 |  553 |    50566 |   90262 |     ERROR | TIMEOUT |
 |  483 |    29022 |  114239 |     ERROR | TIMEOUT |
+
+After fixing the issue about non-full rule definition, I have run again the skolemized version on the first ontologies of the table above and I obtained the following results :
+
+| NAME | NFTGD_NB | FTGD_NB | GSAT_TIME | SK_TIME |
+|------+----------+---------+-----------+---------|
+|  422 |      420 |     672 |      3397 | 17610   |
+|  392 |      608 |    1213 |     10276 | TIMEOUT |
+|  421 |      716 |    1271 |      7792 | 295842  |
+|  677 |     1607 |    1282 |      7062 | TIMEOUT |
+|  376 |      694 |    1286 |      5196 | 25630   |
+|  424 |      728 |    1463 |      5270 | 70002   |
+|  579 |      728 |    1463 |      7530 | 72876   |
+|  393 |      776 |    1552 |     13575 | TIMEOUT |
+
