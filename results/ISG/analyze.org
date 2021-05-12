@@ -4,7 +4,7 @@
 #+PROPERTY: header-args :eval never-export
 #+PROPERTY: header-args:ipython :exports both
 
-In the following, we explore the statistics outputed by the experiments on GSat and on its Skolemized version. The saturation times are in miliseconds in the columns ~GSAT_TIME~ and ~SK_TIME~ respectively. The columns ~NFTGD_NB~ and ~FTGD_NB~ respectively contain the number of non full and full TGDs in input. Each row contain the values of the execution on the ontology whose name is in column ~NAME~.
+In the following, we explore the statistics outputed by [[file:2021-04-26-14-37-10g-v0.5.1/][the experiments on GSat]] and on its [[file:2021-04-27-11-42-10g-v0.5.1][Skolemized version]]. The saturation times are in miliseconds in the columns ~GSAT_TIME~ and ~SK_TIME~ respectively. The columns ~NFTGD_NB~ and ~FTGD_NB~ respectively contain the number of non full and full TGDs in input. Each row contain the values of the execution on the ontology whose name is in column ~NAME~.
 
 In the following, we remove the row, where:
 - both algorithm executions reach the timeout
@@ -169,7 +169,7 @@ The following table contains the rows where the Skolemized version reaches the t
 |  553 |    50566 |   90262 |     ERROR | TIMEOUT |
 |  483 |    29022 |  114239 |     ERROR | TIMEOUT |
 
-After fixing the issue about non-full rule definition, I have run again the skolemized version on the first ontologies of the table above and I obtained the following results :
+After fixing the issue about non-full rule definition, I have run [[file:sk_timeouts_after_fix/][again the skolemized version]] on the first ontologies of the table above and I obtained the following results :
 
 | NAME | NFTGD_NB | FTGD_NB | GSAT_TIME | SK_TIME |
 |------+----------+---------+-----------+---------|
