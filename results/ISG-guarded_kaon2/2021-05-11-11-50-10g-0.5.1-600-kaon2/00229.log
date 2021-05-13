@@ -1,0 +1,64 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 38
+Completed!
+Finished!
+KAON2 End; # rules: 40
+KAON2 total time : 295 ms = 0.30 s
+Full TGD saturation: (40 dependecies)
+
+====================
+May 11, 2021 3:19:01 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:19:01 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:19:01 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:19:01 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:19:01 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:19:01 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+xsd:double(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#Objective>(GSAT_U2),<http://www.daml.org/2002/05/mcda/mcda-ont#importanceValue>(GSAT_U2,GSAT_U1).
+xsd:integer(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#ActionableObject>(GSAT_U2),<http://www.daml.org/2002/05/mcda/mcda-ont#importanceValue>(GSAT_U2,GSAT_U1).
+xsd:decimal(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#computedValue>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#importanceValue>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#Objective>(GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#Alternative>(GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject>(GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#ActionableObject>(GSAT_U1).
+q0(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective>(GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#Alternative>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#computedValue>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2002/05/mcda/mcda-ont#Analysis>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#sort>(GSAT_U1,GSAT_U2).
+rdf:List(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#objectives>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject>(GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#description>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#Analysis>(GSAT_U1).
+xsd:integer(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#effectValue>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#Action>(GSAT_U1).
+rdf:List(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#alternatives>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#objective>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective>(GSAT_U1).
+q1(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#Objective>(GSAT_U1).
+q2(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective>(GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#Analysis>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#alternatives>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#effectValue>(GSAT_U1,GSAT_U2).
+q3(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#Action>(GSAT_U1).
+rdf:List(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#actions>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#Analysis>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#objectives>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2002/05/mcda/mcda-ont#ActionableObject>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#actsOn>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#Alternative>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#actions>(GSAT_U1,GSAT_U2).
+xsd:integer(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#sort>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#Action>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#supports>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2002/05/mcda/mcda-ont#Action>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#actsOn>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#description>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#supports>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#Objective>(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#objective>(GSAT_U2,GSAT_U1).
+q4(GSAT_U1):-<http://www.daml.org/2002/05/mcda/mcda-ont#Analysis>(GSAT_U1).
+:-xsd:double(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#double",$1)",GSAT_U1).
+:-xsd:decimal(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#decimal",$1)",GSAT_U1).
+:-xsd:integer(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#integer",$1)",GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+====================

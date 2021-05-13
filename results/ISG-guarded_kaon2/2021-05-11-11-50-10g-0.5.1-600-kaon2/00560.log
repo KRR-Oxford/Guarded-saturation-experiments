@@ -1,0 +1,160 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 138
+Completed!
+Finished!
+KAON2 End; # rules: 136
+KAON2 total time : 311 ms = 0.31 s
+Full TGD saturation: (136 dependecies)
+
+====================
+May 11, 2021 10:26:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 10:26:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 10:26:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 10:26:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 10:26:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 10:26:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://purl.obolibrary.org/obo/OMRSE_00000023>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000020>(GSAT_U1,GSAT_U2),<http://purl.obolibrary.org/obo/NCBITaxon_9606>(GSAT_U2).
+<http://purl.obolibrary.org/obo/OMRSE_00000037>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000020>(GSAT_U1,GSAT_U2),<http://purl.obolibrary.org/obo/OMRSE_00000031>(GSAT_U2).
+<http://purl.obolibrary.org/obo/OMRSE_00000022>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000020>(GSAT_U1,GSAT_U2),<http://purl.obolibrary.org/obo/OBI_0100026>(GSAT_U2).
+<http://purl.obolibrary.org/obo/OBI_0100026>(GSAT_U1):-q1(GSAT_U2),<http://purl.obolibrary.org/obo/BFO_0000052>(GSAT_U2,GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000033>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000037>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000033>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000034>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000033>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000036>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000033>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000020>(GSAT_U1,GSAT_U2),<http://purl.obolibrary.org/obo/OBI_0000245>(GSAT_U2).
+<http://purl.obolibrary.org/obo/OMRSE_00000036>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000020>(GSAT_U1,GSAT_U2),<http://purl.obolibrary.org/obo/OMRSE_00000032>(GSAT_U2).
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000001>(GSAT_U2),<http://purl.obolibrary.org/obo/BFO_0000052>(GSAT_U2,GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000034>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000020>(GSAT_U1,GSAT_U2),<http://purl.obolibrary.org/obo/OMRSE_00000029>(GSAT_U2).
+<http://purl.obolibrary.org/obo/OMRSE_00000035>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000020>(GSAT_U1,GSAT_U2),<http://purl.obolibrary.org/obo/OMRSE_00000028>(GSAT_U2).
+<http://purl.obolibrary.org/obo/BFO_0000053>(GSAT_U1,GSAT_U2):-<http://purl.obolibrary.org/obo/BFO_0000052>(GSAT_U2,GSAT_U1).
+<http://purl.obolibrary.org/obo/BFO_0000052>(GSAT_U1,GSAT_U2):-<http://purl.obolibrary.org/obo/BFO_0000053>(GSAT_U2,GSAT_U1).
+owl:topObjectProperty(GSAT_U1,GSAT_U2):-<http://purl.obolibrary.org/obo/BFO_0000075>(GSAT_U1,GSAT_U2).
+<http://purl.obolibrary.org/obo/OMRSE_00000020>(GSAT_U1,GSAT_U2):-<http://purl.obolibrary.org/obo/BFO_0000075>(GSAT_U1,GSAT_U2).
+<http://purl.obolibrary.org/obo/BFO_0000075>(GSAT_U1,GSAT_U2):-<http://purl.obolibrary.org/obo/OMRSE_00000020>(GSAT_U1,GSAT_U2).
+<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#Continuant>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#Continuant>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OBI_0100026>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_2759>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000024>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000007>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#Occurrent>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000026>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000001>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_7742>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_7776>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000033>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000035>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000022>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000023>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000012>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000014>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#Role>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000024>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000024>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000002>(GSAT_U1).
+<http://purl.obolibrary.org/obo/IAO_0000102>(GSAT_U1):-<http://www.geneontology.org/formats/oboInOwl#Subset>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000028>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000030>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#Role>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_9443>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_376913>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_314146>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_9443>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_7776>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_117570>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#ProcessAggregate>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000030>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000032>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_40674>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_32525>(GSAT_U1).
+<http://purl.obolibrary.org/obo/IAO_0000027>(GSAT_U1):-<http://purl.obolibrary.org/obo/IAO_0000102>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#Function>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000010>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000011>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000004>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000005>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#ProcessBoundary>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInstant>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000035>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000037>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000012>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000018>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000002>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000004>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_8287>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_32523>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#Site>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>(GSAT_U1):-<http://purl.obolibrary.org/obo/IAO_0000030>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000012>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000013>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_33208>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_6072>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#ProcessualContext>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_376913>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_314293>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1#Entity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#Continuant>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_314295>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_9604>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>(GSAT_U1).
+q0(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000030>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#TemporalRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#ScatteredTemporalRegion>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_117571>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_8287>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#Continuant>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OBI_0000245>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000028>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#TemporalInstant>(GSAT_U1).
+<http://purl.obolibrary.org/obo/IAO_0000102>(GSAT_U1):-<http://purl.obolibrary.org/obo/IAO_0000225>(GSAT_U1).
+<http://purl.obolibrary.org/obo/IAO_0000102>(GSAT_U1):-<http://www.geneontology.org/formats/oboInOwl#Synonym>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000035>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000036>(GSAT_U1).
+<http://purl.obolibrary.org/obo/IAO_0000102>(GSAT_U1):-<http://www.geneontology.org/formats/oboInOwl#SynonymType>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_9604>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_207598>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_6072>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_33213>(GSAT_U1).
+q1(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000011>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#Quality>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000015>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000019>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000024>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000025>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_9526>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_314295>(GSAT_U1).
+<http://purl.obolibrary.org/obo/IAO_0000102>(GSAT_U1):-<http://purl.obolibrary.org/obo/IAO_0000409>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInterval>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_117570>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_117571>(GSAT_U1).
+q0(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000031>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_33511>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_7711>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_33154>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_33208>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#Object>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000002>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000003>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#Process>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000025>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000027>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000035>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000034>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000027>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000015>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#FiatProcessPart>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_9605>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_9606>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000001>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000016>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>(GSAT_U1).
+<http://purl.obolibrary.org/obo/IAO_0000102>(GSAT_U1):-<http://www.geneontology.org/formats/oboInOwl#DbXref>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_314293>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_9526>(GSAT_U1).
+<http://purl.obolibrary.org/obo/IAO_0000102>(GSAT_U1):-<http://www.geneontology.org/formats/oboInOwl#Definition>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000030>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000031>(GSAT_U1).
+<http://purl.obolibrary.org/obo/IAO_0000102>(GSAT_U1):-<http://purl.obolibrary.org/obo/IAO_0000078>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_9347>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_314146>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_7711>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_89593>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>(GSAT_U1):-<http://purl.obolibrary.org/obo/OBI_0000245>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000028>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000029>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000015>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000017>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_33213>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_33316>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_33316>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_33511>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#Occurrent>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#TemporalRegion>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000024>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000026>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_207598>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_9605>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>(GSAT_U1).
+q1(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000026>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000007>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000009>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#Object>(GSAT_U1):-<http://purl.obolibrary.org/obo/OBI_0100026>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000010>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000012>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#TemporalInterval>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_89593>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_7742>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_2759>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_33154>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000007>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000008>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000033>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000024>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000010>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_32524>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_40674>(GSAT_U1).
+<http://purl.obolibrary.org/obo/IAO_0000030>(GSAT_U1):-<http://purl.obolibrary.org/obo/IAO_0000027>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/snap#Disposition>(GSAT_U1).
+<http://purl.obolibrary.org/obo/OMRSE_00000002>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000006>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_32525>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_9347>(GSAT_U1).
+<http://purl.obolibrary.org/obo/NCBITaxon_32523>(GSAT_U1):-<http://purl.obolibrary.org/obo/NCBITaxon_32524>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#Occurrent>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/span#TemporalRegion>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1#Entity>(GSAT_U1):-<http://www.ifomis.org/bfo/1.1/span#Occurrent>(GSAT_U1).
+<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>(GSAT_U1):-<http://purl.obolibrary.org/obo/OMRSE_00000022>(GSAT_U1).
+====================

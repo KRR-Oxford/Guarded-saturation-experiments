@@ -1,0 +1,84 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 56
+Completed!
+Finished!
+KAON2 End; # rules: 60
+KAON2 total time : 318 ms = 0.32 s
+Full TGD saturation: (60 dependecies)
+
+====================
+May 11, 2021 3:18:45 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:45 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:45 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:18:45 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:45 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:45 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.daml.org/2002/03/agents/agent-ont#Parameters>(GSAT_U1):-q0(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#parameters>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentType>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#classPath>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-q1(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#className>(GSAT_U2,GSAT_U1).
+xsd:timeInstant(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#Agent>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#creationTime>(GSAT_U2,GSAT_U1).
+xsd:timeInstant(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#lastPublicationTime>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-q2(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#basePublicationDirectory>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#Agent>(GSAT_U1):-q3(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#agent>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-q4(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#description>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#GUI>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentType>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#statusGUI>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#User>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#id>(GSAT_U2,GSAT_U1).
+xsd:long(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#messagesReceived>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#AgentType>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#Agent>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#type>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#dynamicLinkLibrary>(GSAT_U2,GSAT_U1).
+xsd:uriReference(GSAT_U1):-q5(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#basePublicationURI>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#inReplyTo>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#AgentType>(GSAT_U1):-q6(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#agentType>(GSAT_U2,GSAT_U1).
+rdfs:Class(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentType>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#parametersClass>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#Message>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#transactionID>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#PKCS12Identity>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#pkcs12File>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#GUI>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentType>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#setupGUI>(GSAT_U2,GSAT_U1).
+xsd:timeInstant(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#startTime>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#User>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#Agency>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#user>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#Identity>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#Agent>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#identity>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#ErrorMessage>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#error>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#PKCS12Identity>(GSAT_U2),<http://www.daml.org/2002/03/agents/agent-ont#password>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#Plugin>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#GUI>(GSAT_U1).
+q0(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(GSAT_U1).
+q1(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentType>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#Message>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage>(GSAT_U1).
+q1(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin>(GSAT_U1).
+q2(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply>(GSAT_U1).
+q3(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#User>(GSAT_U1).
+q4(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#Agent>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#Message>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AsynchronousMessage>(GSAT_U1).
+q2(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#Agency>(GSAT_U1).
+q4(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentType>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#RequestMessage>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(GSAT_U1).
+q1(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#JavaPlugin>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#ErrorMessage>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#Ack>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#AsynchronousMessage>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#ShutdownMessage>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#RequestMessage>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentStatusRequest>(GSAT_U1).
+q5(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#Plugin>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#JavaPlugin>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#Plugin>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin>(GSAT_U1).
+q6(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#Agency>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#AsynchronousMessage>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#RunImmediately>(GSAT_U1).
+q4(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(GSAT_U1).
+q3(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentAliveMessage>(GSAT_U1).
+q6(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#Message>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentAliveMessage>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#Identity>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#PKCS12Identity>(GSAT_U1).
+q0(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#Agent>(GSAT_U1).
+q5(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#Agency>(GSAT_U1).
+q3(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#Message>(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#RequestMessage>(GSAT_U1).
+q3(GSAT_U1):-<http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply>(GSAT_U1).
+:-xsd:long(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#long",$1)",GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+====================

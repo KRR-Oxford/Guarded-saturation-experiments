@@ -1,0 +1,92 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 62
+Completed!
+Finished!
+KAON2 End; # rules: 68
+KAON2 total time : 322 ms = 0.32 s
+Full TGD saturation: (68 dependecies)
+
+====================
+May 11, 2021 3:12:22 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:12:22 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:12:22 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:12:22 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:12:22 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:12:22 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.owl-ontologies.com/unnamed.owl#CheesyPizza>(GSAT_U1):-q2(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#CheesyPizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#SohoPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#CheesyPizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1),<http://www.owl-ontologies.com/unnamed.owl#hasTopping>(GSAT_U1,GSAT_U2),<http://www.owl-ontologies.com/unnamed.owl#CheeseTopping>(GSAT_U2).
+<http://www.owl-ontologies.com/unnamed.owl#isBaseOf>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/unnamed.owl#hasBase>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#hasBase>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/unnamed.owl#isBaseOf>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#hasIngredient>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/unnamed.owl#hasBase>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/unnamed.owl#isIngredientOf>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/unnamed.owl#isBaseOf>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/unnamed.owl#isIngredientOf>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/unnamed.owl#isToppingOf>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/unnamed.owl#isIngredientOf>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/unnamed.owl#hasIngredient>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#hasIngredient>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/unnamed.owl#isIngredientOf>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#isToppingOf>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/unnamed.owl#hasTopping>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#hasTopping>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/unnamed.owl#isToppingOf>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#hasIngredient>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/unnamed.owl#hasTopping>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/unnamed.owl#CheeseTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#MozzarellaTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PizzaTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#hasTopping>(GSAT_U2,GSAT_U1).
+q0(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#AmericanHotPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1):-q0(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#AmericanaPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1):-q1(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#SeafoodTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#TunaTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#MeatTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#SalamiTopping>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#SohoPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#VegetableTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#PepperTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#isBaseOf>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#NamedPizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#AmericanHotPizza>(GSAT_U1).
+q2(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#SohoPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1):-q2(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PizzaBase>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#DeepPanBase>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PizzaTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#MeatTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#MeatTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#PepperoniTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PizzaTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#isToppingOf>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#AmericanHotPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#SohoPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#hasTopping>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/unnamed.owl#MeatTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#SpicyBeefTopping>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#AmericanHotPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#NamedPizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#SohoPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#VegetableTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#OnionTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#isToppingOf>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PepperTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#RedPepperTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#NamedPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#VegetableTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#OliveTopping>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#MargheritaPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#SeafoodTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#AnchovyTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#CheesyPizza>(GSAT_U1).
+q2(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#AmericanHotPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PepperTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#JalapenoPepperTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PizzaTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#CheeseTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#CheeseTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#InconsistentTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#VegetableTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#CaperTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#VegetableTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#TomatoTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PizzaTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#SeafoodTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PepperTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#GreenPepperTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PizzaBase>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#hasBase>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#VegetableTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#InconsistentTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#MeatTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#HamTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PizzaBase>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#ThinAndCrispyBase>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PizzaTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#VegetableTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#PizzaBase>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#isBaseOf>(GSAT_U1,GSAT_U2).
+q2(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#AmericanaPizza>(GSAT_U1).
+q2(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#MargheritaPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#NamedPizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#AmericanaPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#VegetableTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#MushroomTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#SeafoodTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#PrawnTopping>(GSAT_U1).
+q0(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#AmericanaPizza>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#CheeseTopping>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#ParmezanTopping>(GSAT_U1).
+<http://www.owl-ontologies.com/unnamed.owl#Pizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#hasBase>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/unnamed.owl#NamedPizza>(GSAT_U1):-<http://www.owl-ontologies.com/unnamed.owl#MargheritaPizza>(GSAT_U1).
+====================

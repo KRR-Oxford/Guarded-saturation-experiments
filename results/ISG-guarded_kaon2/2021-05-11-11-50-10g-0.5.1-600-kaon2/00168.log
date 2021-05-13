@@ -1,0 +1,80 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 48
+Completed!
+Finished!
+KAON2 End; # rules: 56
+KAON2 total time : 267 ms = 0.27 s
+Full TGD saturation: (56 dependecies)
+
+====================
+May 11, 2021 3:16:47 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:16:47 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:16:47 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:16:47 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:16:47 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:16:47 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.aktors.org/ontology/support#Time-Interval>(GSAT_U1):-<http://www.aktors.org/ontology/support#ends-at-time-point>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Time-Point>(GSAT_U1):-<http://www.aktors.org/ontology/support#month-of>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Temporal-Thing>(GSAT_U1):-<http://www.aktors.org/ontology/support#Tangible-Thing>(GSAT_U1).
+xsd:nonNegativeInteger(GSAT_U1):-<http://www.aktors.org/ontology/support#second-of>(GSAT_U2,GSAT_U1).
+<http://www.aktors.org/ontology/support#Temporal-Thing>(GSAT_U1):-<http://www.aktors.org/ontology/support#has-time-interval>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Time-Point>(GSAT_U1):-<http://www.aktors.org/ontology/support#Calendar-Date>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Point>(GSAT_U1):-<http://www.aktors.org/ontology/support#day-of>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Time-Interval>(GSAT_U1):-<http://www.aktors.org/ontology/support#has-time-interval>(GSAT_U2,GSAT_U1).
+xsd:nonNegativeInteger(GSAT_U1):-<http://www.aktors.org/ontology/support#day-of>(GSAT_U2,GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Interval>(GSAT_U1):-<http://www.aktors.org/ontology/support#begins-at-time-point>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Intangible-Thing>(GSAT_U1):-<http://www.aktors.org/ontology/support#Quantity>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Intangible-Thing>(GSAT_U1):-<http://www.aktors.org/ontology/support#Unit-Of-Measure>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Position>(GSAT_U1):-<http://www.aktors.org/ontology/support#Time-Point>(GSAT_U1).
+xsd:nonNegativeInteger(GSAT_U1):-<http://www.aktors.org/ontology/support#hour-of>(GSAT_U2,GSAT_U1).
+<http://www.aktors.org/ontology/support#Thing>(GSAT_U1):-<http://www.aktors.org/ontology/support#has-variant-name>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Time-Point>(GSAT_U1):-<http://www.aktors.org/ontology/support#second-of>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Thing>(GSAT_U1):-<http://www.aktors.org/ontology/support#Temporal-Thing>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Point>(GSAT_U1):-<http://www.aktors.org/ontology/support#year-of>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Time-Interval>(GSAT_U1):-<http://www.aktors.org/ontology/support#Month>(GSAT_U1).
+:-<http://www.aktors.org/ontology/support#Calendar-Date>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Physical-Quantity>(GSAT_U1):-<http://www.aktors.org/ontology/support#Duration>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Point>(GSAT_U1):-<http://www.aktors.org/ontology/support#hour-of>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Unit-Of-Measure>(GSAT_U1):-<http://www.aktors.org/ontology/support#has-unit-of-measure>(GSAT_U2,GSAT_U1).
+xsd:nonNegativeInteger(GSAT_U1):-<http://www.aktors.org/ontology/support#year-of>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.aktors.org/ontology/support#has-pretty-name>(GSAT_U2,GSAT_U1).
+xsd:nonNegativeInteger(GSAT_U1):-<http://www.aktors.org/ontology/support#minute-of>(GSAT_U2,GSAT_U1).
+<http://www.aktors.org/ontology/support#Physical-Quantity>(GSAT_U1):-<http://www.aktors.org/ontology/support#has-unit-of-measure>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Duration>(GSAT_U1):-<http://www.aktors.org/ontology/support#has-duration>(GSAT_U2,GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Measure>(GSAT_U1):-<http://www.aktors.org/ontology/support#Duration>(GSAT_U2),<http://www.aktors.org/ontology/support#has-unit-of-measure>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.aktors.org/ontology/support#has-variant-name>(GSAT_U2,GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Position>(GSAT_U1):-<http://www.aktors.org/ontology/support#Time-Interval>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Interval>(GSAT_U1):-<http://www.aktors.org/ontology/support#has-duration>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Time-Interval>(GSAT_U1):-<http://www.aktors.org/ontology/support#Week>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Quantity>(GSAT_U1):-<http://www.aktors.org/ontology/support#Physical-Quantity>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Interval>(GSAT_U1):-<http://www.aktors.org/ontology/support#Year>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Interval>(GSAT_U1):-<http://www.aktors.org/ontology/support#Day>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Point>(GSAT_U1):-<http://www.aktors.org/ontology/support#ends-at-time-point>(GSAT_U2,GSAT_U1).
+<http://www.aktors.org/ontology/support#Unit-Of-Measure>(GSAT_U1):-<http://www.aktors.org/ontology/support#Time-Measure>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Thing>(GSAT_U1):-<http://www.aktors.org/ontology/support#Intangible-Thing>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Thing>(GSAT_U1):-<http://www.aktors.org/ontology/support#has-pretty-name>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Time-Position>(GSAT_U1):-<http://www.aktors.org/ontology/support#in-timezone>(GSAT_U1,GSAT_U2).
+<http://www.aktors.org/ontology/support#Time-Point>(GSAT_U1):-<http://www.aktors.org/ontology/support#begins-at-time-point>(GSAT_U2,GSAT_U1).
+xsd:integer(GSAT_U1):-<http://www.aktors.org/ontology/support#in-timezone>(GSAT_U2,GSAT_U1).
+<http://www.aktors.org/ontology/support#Intangible-Thing>(GSAT_U1):-<http://www.aktors.org/ontology/support#Time-Position>(GSAT_U1).
+<http://www.aktors.org/ontology/support#Time-Point>(GSAT_U1):-<http://www.aktors.org/ontology/support#minute-of>(GSAT_U1,GSAT_U2).
+xsd:nonNegativeInteger(GSAT_U1):-<http://www.aktors.org/ontology/support#month-of>(GSAT_U2,GSAT_U1).
+<http://www.aktors.org/ontology/support#Physical-Quantity>(GSAT_U1):-<http://www.aktors.org/ontology/support#has-magnitude>(GSAT_U1,GSAT_U2).
+xsd:decimal(GSAT_U1):-<http://www.aktors.org/ontology/support#has-magnitude>(GSAT_U2,GSAT_U1).
+:-xsd:decimal(GSAT_U1),xsd:string(GSAT_U1).
+:-xsd:string(GSAT_U1),xsd:decimal(GSAT_U1).
+:-xsd:string(GSAT_U1),xsd:nonNegativeInteger(GSAT_U1).
+:-xsd:string(GSAT_U1),xsd:integer(GSAT_U1).
+:-xsd:nonNegativeInteger(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#nonNegativeInteger",$1)",GSAT_U1).
+:-xsd:integer(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#integer",$1)",GSAT_U1).
+:-xsd:decimal(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#decimal",$1)",GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+====================

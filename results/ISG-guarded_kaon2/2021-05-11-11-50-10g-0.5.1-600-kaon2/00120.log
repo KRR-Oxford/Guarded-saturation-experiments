@@ -1,0 +1,89 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 56
+Completed!
+Finished!
+KAON2 End; # rules: 65
+KAON2 total time : 298 ms = 0.30 s
+Full TGD saturation: (65 dependecies)
+
+====================
+May 11, 2021 3:15:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:15:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:15:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:15:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:15:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:15:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.owl-ontologies.com/travel.owl#BudgetHotelDestination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1),<http://www.owl-ontologies.com/travel.owl#hasAccommodation>(GSAT_U1,GSAT_U2),q3(GSAT_U2).
+q3(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Hotel>(GSAT_U1),<http://www.owl-ontologies.com/travel.owl#BudgetAccommodation>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#BudgetAccommodation>(GSAT_U1):-q2(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#isOfferedAt>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/travel.owl#hasActivity>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#hasActivity>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/travel.owl#isOfferedAt>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Contact>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasContact>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#isOfferedAt>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#UrbanArea>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#City>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Activity>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasActivity>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Relaxation>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Yoga>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#UrbanArea>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Adventure>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Safari>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#City>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Contact>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasStreet>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/travel.owl#City>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Capital>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Contact>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasEMail>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-q0(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasAccommodation>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/travel.owl#Activity>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Relaxation>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasCity>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#RuralArea>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Farmland>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Adventure>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#BunjeeJumping>(GSAT_U1).
+q0(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#RetireeDestination>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#RetireeDestination>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#BudgetHotelDestination>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#BudgetAccommodation>(GSAT_U1):-q1(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Hotel>(GSAT_U1):-q1(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Beach>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Sports>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Surfing>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Activity>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Adventure>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#UrbanArea>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Town>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Accommodation>(GSAT_U1):-q2(GSAT_U1).
+q2(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#BudgetAccommodation>(GSAT_U1).
+q2(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasRating>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/travel.owl#Contact>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasZipCode>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/travel.owl#Activity>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Sightseeing>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Activity>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Sports>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#QuietDestination>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasEMail>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#AccommodationRating>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasRating>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Activity>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#isOfferedAt>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/travel.owl#Sightseeing>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Museums>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Contact>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasCity>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/travel.owl#Accommodation>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#BedAndBreakfast>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#RuralArea>(GSAT_U1).
+xsd:int(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasZipCode>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Accommodation>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#BudgetAccommodation>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Hotel>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#LuxuryHotel>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasPart>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasPart>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasStreet>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Accommodation>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasAccommodation>(GSAT_U2,GSAT_U1).
+q0(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#FamilyDestination>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#FamilyDestination>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Accommodation>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Campground>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Sightseeing>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Safari>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Accommodation>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Hotel>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Relaxation>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Sunbathing>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#RuralArea>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#NationalPark>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Capital>(GSAT_U1).
+<http://www.owl-ontologies.com/travel.owl#Destination>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasActivity>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/travel.owl#Activity>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#hasContact>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/travel.owl#Sports>(GSAT_U1):-<http://www.owl-ontologies.com/travel.owl#Hiking>(GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+:-xsd:int(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#int",$1)",GSAT_U1).
+====================

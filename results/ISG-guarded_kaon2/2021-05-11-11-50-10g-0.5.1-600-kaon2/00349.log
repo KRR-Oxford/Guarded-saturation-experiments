@@ -1,0 +1,127 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 98
+Completed!
+Finished!
+KAON2 End; # rules: 103
+KAON2 total time : 314 ms = 0.31 s
+Full TGD saturation: (103 dependecies)
+
+====================
+May 11, 2021 3:34:35 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:34:35 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:34:35 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:34:35 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:34:35 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:34:35 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Director>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1),<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#headOf>(GSAT_U1,GSAT_U2),<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Program>(GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1),<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#headOf>(GSAT_U1,GSAT_U2),<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#College>(GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1),<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#headOf>(GSAT_U1,GSAT_U2),<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Department>(GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateStudent>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1),<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#takesCourse>(GSAT_U1,GSAT_U2),<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course>(GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Director>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1),<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#worksFor>(GSAT_U1,GSAT_U2),<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom>(GSAT_U1,GSAT_U2):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#doctoralDegreeFrom>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#hasAlumnus>(GSAT_U1,GSAT_U2):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom>(GSAT_U1,GSAT_U2):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#hasAlumnus>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#memberOf>(GSAT_U1,GSAT_U2):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#member>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#member>(GSAT_U1,GSAT_U2):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#memberOf>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom>(GSAT_U1,GSAT_U2):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#mastersDegreeFrom>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#memberOf>(GSAT_U1,GSAT_U2):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#worksFor>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#worksFor>(GSAT_U1,GSAT_U2):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#headOf>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom>(GSAT_U1,GSAT_U2):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#undergraduateDegreeFrom>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchGroup>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Specification>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#teachingAssistantOf>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#publicationAuthor>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#hasAlumnus>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#title>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Book>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#publicationAuthor>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#listedCourse>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#publicationDate>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#affiliateOf>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TeachingAssistant>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#teachingAssistantOf>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#teacherOf>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#undergraduateDegreeFrom>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Research>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#publicationResearch>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Software>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Software>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#softwareDocumentation>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssociateProfessor>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#doctoralDegreeFrom>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TeachingAssistant>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#JournalArticle>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#advisor>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Department>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Software>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#softwareVersion>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Institute>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#orgPublication>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Program>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateCourse>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#member>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ConferencePaper>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#FullProfessor>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UndergraduateStudent>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#undergraduateDegreeFrom>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#member>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#affiliateOf>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#advisor>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#tenured>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#affiliatedOrganizationOf>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#softwareDocumentation>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#affiliatedOrganizationOf>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ClericalStaff>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchGroup>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchProject>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateStudent>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#College>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#age>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#subOrganizationOf>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#subOrganizationOf>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#hasAlumnus>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Director>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#orgPublication>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Work>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Research>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Research>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchProject>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Schedule>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#listedCourse>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TechnicalReport>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Manual>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#publicationResearch>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssistantProfessor>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#VisitingProfessor>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#SystemsStaff>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#doctoralDegreeFrom>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#mastersDegreeFrom>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Work>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#teacherOf>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UnofficialPublication>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone>(GSAT_U1,GSAT_U2).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#mastersDegreeFrom>(GSAT_U2,GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Lecturer>(GSAT_U1).
+<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty>(GSAT_U1):-<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#PostDoc>(GSAT_U1).
+====================

@@ -1,0 +1,28 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 4
+Completed!
+Finished!
+KAON2 End; # rules: 4
+KAON2 total time : 246 ms = 0.25 s
+Full TGD saturation: (4 dependecies)
+
+====================
+May 11, 2021 3:16:05 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:16:05 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:16:05 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:16:05 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:16:05 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:16:05 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#TerroristOrganization>(GSAT_U1).
+<http://reliant.teknowledge.com/DAML/SUMO.owl#Number>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#membersCount>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#TerroristOrganization>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#ForeignTerroristOrganization>(GSAT_U1).
+<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#membersCount>(GSAT_U1,GSAT_U2).
+====================

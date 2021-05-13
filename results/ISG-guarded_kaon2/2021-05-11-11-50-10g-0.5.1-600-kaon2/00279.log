@@ -1,0 +1,195 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 194
+Completed!
+Finished!
+KAON2 End; # rules: 171
+KAON2 total time : 339 ms = 0.34 s
+Full TGD saturation: (171 dependecies)
+
+====================
+May 11, 2021 3:21:03 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:21:03 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:21:03 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:21:03 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:21:03 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:21:03 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+rdfs:subPropertyOf(GSAT_U1,GSAT_U2):-<http://www.daml.org/2001/03/daml+oil#samePropertyAs>(GSAT_U1,GSAT_U2).
+rdfs:subClassOf(GSAT_U1,GSAT_U2):-<http://www.daml.org/2001/03/daml+oil#sameClassAs>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Query>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#isWrittenIn>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Source>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Ontology>(GSAT_U1).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#rest>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#rest>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Axiom>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#TacticOfAxiom>(GSAT_U2,GSAT_U1).
+<http://org.semanticweb.owlapi/error#Error8>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1).
+rdf:Property(GSAT_U1):-rdfs:domain(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceStep>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasInferenceEngine>(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2000/10/XMLSchema#date>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#LastSubmissionDate>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#PrimitiveRule>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceEngineRule>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Question>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#isQueryFor>(GSAT_U2,GSAT_U1).
+rdfs:Class(GSAT_U1):-rdf:type(GSAT_U2,GSAT_U1).
+<http://org.semanticweb.owlapi/error#Error7>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceStep>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Publication>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasAuthor>(GSAT_U1,GSAT_U2).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#cardinalityQ>(GSAT_U1,GSAT_U2).
+rdf:Statement(GSAT_U1):-rdf:predicate(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#RegistryElement>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceEngine>(GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#date>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Date>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Person>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasMember>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceEngine>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceEngineRule>(GSAT_U1,GSAT_U2).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#hasClassQ>(GSAT_U1,GSAT_U2).
+<http://org.semanticweb.owlapi/error#Error9>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#oneOf>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasAntecedent>(GSAT_U2,GSAT_U1).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#disjointUnionOf>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceStep>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#fromAnswer>(GSAT_U1,GSAT_U2).
+rdfs:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#toClass>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceStep>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasDischarge>(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#maxCardinality>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdfs:Container(GSAT_U1).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#unionOf>(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#Restriction>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#isConsequentOf>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#disjointUnionOf>(GSAT_U2,GSAT_U1).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#minCardinalityQ>(GSAT_U1,GSAT_U2).
+rdf:Property(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#ObjectProperty>(GSAT_U1).
+rdfs:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#hasClass>(GSAT_U2,GSAT_U1).
+<http://org.semanticweb.owlapi/error#Error5>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceStep>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Source>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Publication>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#RegistryElement>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#AbstractInferenceRule>(GSAT_U1).
+rdf:List(GSAT_U1):-rdf:rest(GSAT_U1,GSAT_U2).
+rdf:List(GSAT_U1):-rdf:rest(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Language>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasLanguageAxiomSet>(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#oneOf>(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#disjointWith>(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#disjointWith>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#KIF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#SideCondition>(GSAT_U2,GSAT_U1).
+<http://org.semanticweb.owlapi/error#Error3>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#DeclarativeRule>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Ontology>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#DomainSpecificOntology>(GSAT_U1).
+rdfs:Class(GSAT_U1):-rdfs:range(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#AbstractInferenceRule>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#TacticOfAxiom>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#RegistryElement>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasSource>(GSAT_U1,GSAT_U2).
+q0(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceEngine>(GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:type(GSAT_U1,GSAT_U2).
+q0(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#QueryLanguage>(GSAT_U1).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#unionOf>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Query>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#isQueryFor>(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdf:Statement(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceEngine>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#isFromEngine>(GSAT_U2,GSAT_U1).
+owl:ObjectProperty(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>(GSAT_U1).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#cardinality>(GSAT_U1,GSAT_U2).
+rdf:Property(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#UniqueProperty>(GSAT_U1).
+rdf:Statement(GSAT_U1):-rdf:object(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceStep>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasRule>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasDischarge>(GSAT_U2,GSAT_U1).
+rdfs:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#Datatype>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#PrimitiveRule>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#ProceduralRule>(GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:subject(GSAT_U2,GSAT_U1).
+rdfs:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#hasClassQ>(GSAT_U2,GSAT_U1).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#maxCardinalityQ>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceStep>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasVariableMapping>(GSAT_U1,GSAT_U2).
+rdfs:Class(GSAT_U1):-rdfs:subClassOf(GSAT_U1,GSAT_U2).
+rdfs:Class(GSAT_U1):-rdfs:subClassOf(GSAT_U2,GSAT_U1).
+<http://org.semanticweb.owlapi/error#Error6>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceStep>(GSAT_U1).
+rdfs:Class(GSAT_U1):-rdfs:Datatype(GSAT_U1).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#toClass>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#PrimitiveRule>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#DeclarativeRule>(GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#cardinality>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceEngine>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasInferenceEngine>(GSAT_U2,GSAT_U1).
+<http://org.semanticweb.owlapi/error#Error2>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Query>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Axiom>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#AxiomContent>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Ontology>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#LanguageAxiomSet>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#RegistryElement>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Source>(GSAT_U1).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#intersectionOf>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:Property(GSAT_U1).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#hasClass>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Source>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Organization>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#RegistryElement>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Axiom>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Axiom>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasAxiom>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Source>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasSource>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#maxCardinalityQ>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasAnswer>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Person>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasAuthor>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#PrimitiveRule>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Conclusion>(GSAT_U1,GSAT_U2).
+rdf:Property(GSAT_U1):-rdfs:range(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#QueryLanguage>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#isWrittenIn>(GSAT_U2,GSAT_U1).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#onProperty>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Query>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasAnswer>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#RegistryElement>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#QueryLanguage>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Source>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Person>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#DescribedFrom>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#LanguageAxiomSet>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasAxiom>(GSAT_U1,GSAT_U2).
+rdf:Seq(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1).
+<http://org.semanticweb.owlapi/error#Error1>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#KIF>(GSAT_U1).
+q0(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Ontology>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Ontology>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFFOntology>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#date>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#FirstSubmissionDate>(GSAT_U2,GSAT_U1).
+rdf:List(GSAT_U1):-rdf:first(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Source>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Team>(GSAT_U1).
+rdfs:Container(GSAT_U1):-rdf:Alt(GSAT_U1).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#intersectionOf>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#KIF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Premises>(GSAT_U2,GSAT_U1).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#sameClassAs>(GSAT_U2,GSAT_U1).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#sameClassAs>(GSAT_U1,GSAT_U2).
+<http://org.semanticweb.owlapi/error#Error4>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#DeclarativeRule>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Query>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#fromQuery>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#cardinalityQ>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFFOntology>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#KIF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFFContent>(GSAT_U2,GSAT_U1).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#complementOf>(GSAT_U2,GSAT_U1).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#complementOf>(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#minCardinalityQ>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:predicate(GSAT_U2,GSAT_U1).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#maxCardinality>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#isExplanationOf>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#isExplanationOf>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#KIF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Conclusion>(GSAT_U2,GSAT_U1).
+owl:ObjectProperty(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#inverseOf>(GSAT_U2,GSAT_U1).
+owl:ObjectProperty(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#inverseOf>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceStep>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasAntecedent>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Query>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#isFromEngine>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Team>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasMember>(GSAT_U1,GSAT_U2).
+rdfs:Container(GSAT_U1):-rdf:Seq(GSAT_U1).
+owl:ObjectProperty(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#fromAnswer>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#RegistryElement>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Submitter>(GSAT_U1,GSAT_U2).
+rdfs:Container(GSAT_U1):-rdf:Bag(GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:List(GSAT_U1).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#minCardinality>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#KIF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#AxiomContent>(GSAT_U2,GSAT_U1).
+rdf:Property(GSAT_U1):-rdfs:subPropertyOf(GSAT_U2,GSAT_U1).
+rdf:Property(GSAT_U1):-rdfs:subPropertyOf(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#minCardinality>(GSAT_U2,GSAT_U1).
+rdf:Property(GSAT_U1):-rdfs:ContainerMembershipProperty(GSAT_U1).
+rdfs:Class(GSAT_U1):-rdfs:domain(GSAT_U2,GSAT_U1).
+rdf:Property(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#LanguageAxiomSet>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasLanguageAxiomSet>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:first(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Organization>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#QualifyingOrganization>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#AbstractInferenceRule>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#DerivedRule>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#RegistryElement>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Language>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFF>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#WFFContent>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#DerivedRule>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#DescribedFrom>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#InferenceStep>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#fromQuery>(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdfs:Class(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#DeclarativeRule>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#SideCondition>(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdf:object(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#DeclarativeRule>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Premises>(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdfs:member(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdfs:member(GSAT_U1,GSAT_U2).
+rdf:Property(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#onProperty>(GSAT_U2,GSAT_U1).
+rdfs:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#Class>(GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:value(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:value(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#AbstractInferenceRule>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#hasRule>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Source>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#QualifyingOrganization>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Source>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#Submitter>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#AbstractInferenceRule>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00279.owl#PrimitiveRule>(GSAT_U1).
+rdf:Statement(GSAT_U1):-rdf:subject(GSAT_U1,GSAT_U2).
+====================

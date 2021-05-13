@@ -1,0 +1,46 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 17
+Completed!
+Finished!
+KAON2 End; # rules: 22
+KAON2 total time : 278 ms = 0.28 s
+Full TGD saturation: (22 dependecies)
+
+====================
+May 11, 2021 3:18:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:18:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.daml.org/2002/02/telephone/1/areacodes-ont#State>(GSAT_U1):-q0(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#state>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-q1(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#code>(GSAT_U2,GSAT_U1).
+xsd:short(GSAT_U1):-q2(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#number>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/02/telephone/1/areacodes-ont#Switch>(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#Exchange>(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#switch>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/02/telephone/1/areacodes-ont#OperatingCompany>(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#Exchange>(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#operatingCompany>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/02/telephone/1/areacodes-ont#AreaCode>(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#Exchange>(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#areaCode>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/02/telephone/1/areacodes-ont#Exchange>(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#AreaCode>(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#exchange>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/02/telephone/1/areacodes-ont#UseCode>(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#Exchange>(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#use>(GSAT_U2,GSAT_U1).
+xsd:integer(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#OperatingCompany>(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#number>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#OperatingCompany>(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#name>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#Exchange>(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#rc>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#UseCode>(GSAT_U2),<http://www.daml.org/2002/02/telephone/1/areacodes-ont#definition>(GSAT_U2,GSAT_U1).
+q0(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#AreaCode>(GSAT_U1).
+q1(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#UseCode>(GSAT_U1).
+q2(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#AreaCode>(GSAT_U1).
+q1(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#State>(GSAT_U1).
+q0(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#Exchange>(GSAT_U1).
+q2(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#Exchange>(GSAT_U1).
+q1(GSAT_U1):-<http://www.daml.org/2002/02/telephone/1/areacodes-ont#Switch>(GSAT_U1).
+:-xsd:integer(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#integer",$1)",GSAT_U1).
+:-xsd:short(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#short",$1)",GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+====================

@@ -1,0 +1,44 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 20
+Completed!
+Finished!
+KAON2 End; # rules: 20
+KAON2 total time : 259 ms = 0.26 s
+Full TGD saturation: (20 dependecies)
+
+====================
+May 11, 2021 3:32:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:32:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:32:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:32:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:32:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:32:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+rdf:Statement(GSAT_U1):-rdf:subject(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdf:subject(GSAT_U2,GSAT_U1).
+rdf:List(GSAT_U1):-rdf:rest(GSAT_U2,GSAT_U1).
+rdf:List(GSAT_U1):-rdf:rest(GSAT_U1,GSAT_U2).
+rdf:Statement(GSAT_U1):-rdf:object(GSAT_U1,GSAT_U2).
+rdfs:Container(GSAT_U1):-rdf:Seq(GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:predicate(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:Statement(GSAT_U1).
+rdfs:Container(GSAT_U1):-rdf:Bag(GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:first(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:List(GSAT_U1).
+rdfs:Container(GSAT_U1):-rdf:Alt(GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:object(GSAT_U2,GSAT_U1).
+rdfs:Class(GSAT_U1):-rdf:type(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:Property(GSAT_U1).
+rdf:Statement(GSAT_U1):-rdf:predicate(GSAT_U1,GSAT_U2).
+rdf:List(GSAT_U1):-rdf:first(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdf:type(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdf:value(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:value(GSAT_U1,GSAT_U2).
+====================

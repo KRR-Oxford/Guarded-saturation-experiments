@@ -1,0 +1,60 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 36
+Completed!
+Finished!
+KAON2 End; # rules: 36
+KAON2 total time : 298 ms = 0.30 s
+Full TGD saturation: (36 dependecies)
+
+====================
+May 11, 2021 3:17:54 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:17:54 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:17:54 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:17:54 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:17:54 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:17:54 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://sf.us.agentcities.net/ontologies/address.daml#Address>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#location>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#servesFood>(GSAT_U1,GSAT_U2).
+<http://sf.us.agentcities.net/ontologies/calendar.daml#Time>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#startHour>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#pubWebSite>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#pubName>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#PublicHouse>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#affiliatedWith>(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2000/10/XMLSchema#string>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#telNumber>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#OpeningPeriod>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#openingPeriods>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#TimePeriod>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#stopHour>(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2000/10/XMLSchema#boolean>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#onLicense>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#OpeningPeriod>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#periods>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#telNumber>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#servesBeer>(GSAT_U1,GSAT_U2).
+<http://sf.us.agentcities.net/ontologies/calendar.daml#Time>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#stopHour>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Brewery>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#affiliatedWith>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#TimePeriod>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#startHour>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#PublicHouse>(GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Beer>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#servesBeer>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#OpeningPeriod>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#days>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#LiveEntertainmentRegularity>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#liveEntertainment>(GSAT_U2,GSAT_U1).
+<http://sf.us.agentcities.net/ontologies/calendar.daml#DayOfWeek>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#days>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#location>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#onLicense>(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2000/10/XMLSchema#boolean>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#familyFriendly>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#boolean>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#offLicense>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#liveEntertainment>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#offLicense>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#familyFriendly>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#TimePeriod>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#periods>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#FreeHouse>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#ownedBy>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#openingPeriods>(GSAT_U1,GSAT_U2).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#Proprietor>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#ownedBy>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#string>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#pubName>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#anyURI>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#pubWebSite>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#boolean>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#servesFood>(GSAT_U2,GSAT_U1).
+<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>(GSAT_U1):-<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#FreeHouse>(GSAT_U1).
+====================

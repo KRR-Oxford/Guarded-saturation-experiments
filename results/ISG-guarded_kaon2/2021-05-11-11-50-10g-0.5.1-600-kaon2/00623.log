@@ -1,0 +1,62 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 29
+Completed!
+Finished!
+KAON2 End; # rules: 38
+KAON2 total time : 257 ms = 0.26 s
+Full TGD saturation: (38 dependecies)
+
+====================
+May 11, 2021 10:49:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 10:49:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 10:49:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 10:49:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 10:49:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 10:49:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://purl.org/obo/owl/OBO_REL#relationship>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_regulation_of>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#results_in_change_from>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_joining_of>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#relationship>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_regulated_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#results_in_capability_to_change_to>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_possible_product_of_change_in>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#is_possible_product_of_change_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_capability_to_change_to>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#results_in_change_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_source_and_product_of_change_in>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#is_source_and_product_of_change_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_change_in>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#participates_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_product_of_change_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#results_in_change_from>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_division_of>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#results_in_change_from>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_change_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#results_in_joining_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#joins_in>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#joins_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_joining_of>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#results_in_change_to>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_change_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#participates_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_possible_product_of_change_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#results_in_directed_movement_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_object_of_directed_movement_in>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#is_object_of_directed_movement_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_directed_movement_of>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#results_in_change_from>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_source_of_change_in>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#is_source_of_change_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_change_from>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#participates_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_perceived_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#has_participant>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_directed_movement_of>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#is_source_of_change_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#divides_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#is_source_of_change_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_source_and_product_of_change_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#results_in_change_to>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_product_of_change_in>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#is_product_of_change_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_change_to>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#has_participant>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_capability_to_change_to>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#results_in_regulation_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_regulated_in>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#is_regulated_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_regulation_of>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#has_participant>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_change_to>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#participates_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_object_of_directed_movement_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#participates_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_source_of_change_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#is_product_of_change_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_source_and_product_of_change_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#is_source_of_change_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#joins_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#has_participant>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_change_from>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#results_in_division_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#divides_in>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#divides_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_division_of>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#has_participant>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_perception_of>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/UCDHSC#results_in_perception_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#is_perceived_in>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/UCDHSC#is_perceived_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/UCDHSC#results_in_perception_of>(GSAT_U2,GSAT_U1).
+====================

@@ -1,0 +1,37 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 13
+Completed!
+Finished!
+KAON2 End; # rules: 13
+KAON2 total time : 280 ms = 0.28 s
+Full TGD saturation: (13 dependecies)
+
+====================
+May 11, 2021 3:13:09 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:13:09 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:13:09 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:13:09 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:13:09 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:13:09 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://ebiquity.umbc.edu/ontology/project.owl#associatedWith>(GSAT_U1,GSAT_U2):-file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#project(GSAT_U2,GSAT_U1).
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#project(GSAT_U1,GSAT_U2):-<http://ebiquity.umbc.edu/ontology/project.owl#associatedWith>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#associatedWith>(GSAT_U1,GSAT_U2):-file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#person(GSAT_U2,GSAT_U1).
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#person(GSAT_U1,GSAT_U2):-<http://ebiquity.umbc.edu/ontology/person.owl#associatedWith>(GSAT_U2,GSAT_U1).
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation(GSAT_U1):-file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#project(GSAT_U1,GSAT_U2).
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation(GSAT_U1):-file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#person(GSAT_U1,GSAT_U2).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#person(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#comment(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/project.owl#Project>(GSAT_U1):-file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#project(GSAT_U2,GSAT_U1).
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation(GSAT_U1):-file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#comment(GSAT_U1,GSAT_U2).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#role(GSAT_U2,GSAT_U1).
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation(GSAT_U1):-file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#role(GSAT_U1,GSAT_U2).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+====================

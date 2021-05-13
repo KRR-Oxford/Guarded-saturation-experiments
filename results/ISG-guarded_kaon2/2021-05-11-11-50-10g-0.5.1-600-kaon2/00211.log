@@ -1,0 +1,139 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 106
+Completed!
+Finished!
+KAON2 End; # rules: 115
+KAON2 total time : 301 ms = 0.30 s
+Full TGD saturation: (115 dependecies)
+
+====================
+May 11, 2021 3:18:26 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:26 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:26 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:18:26 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:26 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:26 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+q0(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#DraftPick>(GSAT_U1).
+xsd:string(GSAT_U1):-q0(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#round>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Team>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Series>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#home>(GSAT_U2,GSAT_U1).
+q1(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Team>(GSAT_U1).
+xsd:string(GSAT_U1):-q1(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#name>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#round>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Swing>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Bunt>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#year>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Event>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#TeamEvent>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#AggregateEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Inning>(GSAT_U1).
+q2(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#StolenBase>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Player>(GSAT_U1):-q2(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#player>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Employee>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Contract>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#player>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Position>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Infielder>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Event>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#AggregateEvent>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Hit>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Double>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Inning>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Game>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#innings>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Employee>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Coach>(GSAT_U1).
+q3(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Division>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Team>(GSAT_U1):-q3(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#team>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Position>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Outfielder>(GSAT_U1).
+q4(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Inning>(GSAT_U1).
+xsd:string(GSAT_U1):-q4(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#number>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Strike>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Trade>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#HitByPitch>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Event>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#RunningEvent>(GSAT_U1).
+q5(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Start>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Position>(GSAT_U1):-q5(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#position>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#AggregateEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Game>(GSAT_U1).
+q6(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Team>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Location>(GSAT_U1):-q6(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#location>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Event>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#GameEvent>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Person>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Employee>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#person>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Event>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Out>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Out>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#DoublePlay>(GSAT_U1).
+q7(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Game>(GSAT_U1).
+xsd:string(GSAT_U1):-q7(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#date>(GSAT_U2,GSAT_U1).
+q6(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Stadium>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Run>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#HomeRun>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Sacrifice>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#GameEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#RainedOut>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Event>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#FieldingEvent>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#LineupEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Start>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#GameEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#RainDelay>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Out>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Tagged>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Employee>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Player>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#number>(GSAT_U2,GSAT_U1).
+q2(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#AtBat>(GSAT_U1).
+q3(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Contract>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#RunningEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Tagged>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Out>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#PopUp>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Fly>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#FieldingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Error>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#LineupEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Relief>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Division>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#League>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#division>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#AggregateEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#AtBat>(GSAT_U1).
+q2(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Error>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Out>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#StrikeOut>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Game>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#ExhibitionGame>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Game>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Series>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#game>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Hit>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Series>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#WorldSeries>(GSAT_U1).
+q2(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#LineupEvent>(GSAT_U1).
+q8(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Season>(GSAT_U1).
+xsd:string(GSAT_U1):-q8(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#year>(GSAT_U2,GSAT_U1).
+q2(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Award>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Hit>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Single>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Location>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#State>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Foul>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Game>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#AllStarGame>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Event>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#RunningEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Run>(GSAT_U1).
+q2(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Start>(GSAT_U1).
+q7(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Trade>(GSAT_U1).
+q5(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#LineupEvent>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Award>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#CyYoung>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Pitch>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#WildPitch>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Team>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Series>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#away>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#State>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#City>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#location>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Hit>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Triple>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Out>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Sacrifice>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Strike>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#StrikeOut>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#RBI>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Hit>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#HomeRun>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Owner>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Team>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#owner>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Employee>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#employee>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#GameEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#LineupEvent>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Game>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#PostSeasonGame>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Country>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#State>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#location>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Location>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#City>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#PitchingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Pitch>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Employee>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Manager>(GSAT_U1).
+q3(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Employee>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Season>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Team>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#season>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#PopUp>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Out>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Fly>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Hire>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Hire>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#DraftPick>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Event>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#PitchingEvent>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Location>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Country>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Walk>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Series>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#ChampionshipSeries>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Fire>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Out>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#TriplePlay>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Event>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Award>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#Award>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#MVP>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Start>(GSAT_U2),<http://www.daml.org/2001/08/baseball/baseball-ont#battingOrder>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#TeamEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#date>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Ball>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#RunningEvent>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#StolenBase>(GSAT_U1).
+<http://www.daml.org/2001/08/baseball/baseball-ont#PostSeasonGame>(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#WorldSeriesGame>(GSAT_U1).
+q1(GSAT_U1):-<http://www.daml.org/2001/08/baseball/baseball-ont#Stadium>(GSAT_U1).
+====================

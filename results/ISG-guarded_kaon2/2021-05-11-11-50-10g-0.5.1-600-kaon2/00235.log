@@ -1,0 +1,45 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 24
+Completed!
+Finished!
+KAON2 End; # rules: 21
+KAON2 total time : 291 ms = 0.29 s
+Full TGD saturation: (21 dependecies)
+
+====================
+May 11, 2021 3:19:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:19:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:19:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:19:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:19:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:19:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#Relation>(GSAT_U2),<http://www.daml.org/2002/11/jbi/jbi-ont#source>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U2),<http://www.daml.org/2002/11/jbi/jbi-ont#publisherID>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#Relation>(GSAT_U2),<http://www.daml.org/2002/11/jbi/jbi-ont#target>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U2),<http://www.daml.org/2002/11/jbi/jbi-ont#signature>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/04/classification/classification-ont#Marking>(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U2),<http://www.daml.org/2002/11/jbi/jbi-ont#securityClassification>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U2),<http://www.daml.org/2002/11/jbi/jbi-ont#payloadFormat>(GSAT_U2,GSAT_U1).
+xsd:dateTime(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U2),<http://www.daml.org/2002/11/jbi/jbi-ont#temporalExtent>(GSAT_U2,GSAT_U1).
+xsd:long(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U2),<http://www.daml.org/2002/11/jbi/jbi-ont#payloadSize>(GSAT_U2,GSAT_U1).
+xsd:dateTime(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U2),<http://www.daml.org/2002/11/jbi/jbi-ont#publicationTime>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U2),<http://www.daml.org/2002/11/jbi/jbi-ont#infoObjectID>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U2),<http://www.daml.org/2002/11/jbi/jbi-ont#platformID>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/11/jbi/jbi-ont#relation>(GSAT_U1,GSAT_U2):-<http://www.daml.org/2002/11/jbi/jbi-ont#supercedes>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#Relation>(GSAT_U1).
+<http://org.semanticweb.owlapi/error#Error2>(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U1).
+<http://www.daml.org/2002/11/jbi/jbi-ont#Relation>(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#Supercedes>(GSAT_U1).
+<http://org.semanticweb.owlapi/error#Error1>(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U1).
+<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#relation>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(GSAT_U1):-<http://www.daml.org/2002/11/jbi/jbi-ont#relation>(GSAT_U2,GSAT_U1).
+:-xsd:long(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#long",$1)",GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+:-xsd:dateTime(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#dateTime",$1)",GSAT_U1).
+====================

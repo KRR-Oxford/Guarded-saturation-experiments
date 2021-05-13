@@ -1,0 +1,115 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 81
+Completed!
+Finished!
+KAON2 End; # rules: 91
+KAON2 total time : 301 ms = 0.30 s
+Full TGD saturation: (91 dependecies)
+
+====================
+May 11, 2021 3:32:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:32:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:32:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:32:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:32:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:32:44 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#hasItems>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#Agent>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Organization>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#LastName>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Agent>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#HomePage>(GSAT_U1,GSAT_U2).
+xsd:int(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Discount>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Email>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Agent>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Phone>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#OrderDate>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#FirstName>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#City>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Person>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#FirstName>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Comments>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#Person>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#LastName>(GSAT_U1,GSAT_U2).
+xsd:int(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Amount>(GSAT_U2,GSAT_U1).
+xsd:dateTime(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#PurchaseOrderDate>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#HomePage>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#ShipmentDate>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#Organization>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#OrganizationName>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#Agent>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Fax>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Discount>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#PurchasedItem>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#hasItem>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Organization>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#billTo>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Address>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#City>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#Shipper>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#shippedBy>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Supplier>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#suppliedBy>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Title>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Address>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Zip>(GSAT_U1,GSAT_U2).
+xsd:int(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#PartNumber>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Comments>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#ItemDescription>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#PurchasedItem>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#suppliedBy>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#PurchasedItem>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#UPC>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#OrderNumber>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#PurchasedItem>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Price>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#Address>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Street>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#State>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Person>(GSAT_U1).
+xsd:float(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Price>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Personnel>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#contactPerson>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Address>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Country>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#Agent>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#hasAddress>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#billTo>(GSAT_U1,GSAT_U2).
+xsd:dateTime(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#OrderDate>(GSAT_U2,GSAT_U1).
+xsd:int(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Quantity>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#shipTo>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#Personnel>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Title>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Agent>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#ItemName>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Organization>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Supplier>(GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#ItemsCollection>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#hasItems>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Personnel>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Position>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#shippedBy>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#PurchasedItem>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#ItemDescription>(GSAT_U1,GSAT_U2).
+xsd:dateTime(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#ShipmentDate>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#PurchasedItem>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#PartNumber>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Position>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Currency>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Organization>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Shipper>(GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Address>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#hasAddress>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Agent>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Email>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Country>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Organization>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#shipTo>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#PurchasedItem>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Quantity>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Zip>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#PurchaseOrderDate>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#PurchasedItem>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#ItemName>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#ItemsCollection>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#hasItem>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#Address>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#State>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Street>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Currency>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Phone>(GSAT_U2,GSAT_U1).
+xsd:int(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#UPC>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Amount>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#Agent>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Person>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Person>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Fax>(GSAT_U2,GSAT_U1).
+xsd:int(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#OrderNumber>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#OrganizationName>(GSAT_U2,GSAT_U1).
+<http://www.purl.org/net/ontology/order.owl#Organization>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#contactPerson>(GSAT_U1,GSAT_U2).
+<http://www.purl.org/net/ontology/order.owl#Person>(GSAT_U1):-<http://www.purl.org/net/ontology/order.owl#Personnel>(GSAT_U1).
+:-xsd:string(GSAT_U1),xsd:dateTime(GSAT_U1).
+:-xsd:string(GSAT_U1),xsd:float(GSAT_U1).
+:-xsd:string(GSAT_U1),xsd:int(GSAT_U1).
+:-xsd:dateTime(GSAT_U1),xsd:string(GSAT_U1).
+:-xsd:dateTime(GSAT_U1),xsd:float(GSAT_U1).
+:-xsd:dateTime(GSAT_U1),xsd:int(GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+:-xsd:dateTime(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#dateTime",$1)",GSAT_U1).
+:-xsd:float(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#float",$1)",GSAT_U1).
+:-xsd:int(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#int",$1)",GSAT_U1).
+====================

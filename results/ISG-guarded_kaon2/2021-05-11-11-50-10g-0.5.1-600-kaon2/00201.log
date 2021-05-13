@@ -1,0 +1,50 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 25
+Completed!
+Finished!
+KAON2 End; # rules: 26
+KAON2 total time : 271 ms = 0.27 s
+Full TGD saturation: (26 dependecies)
+
+====================
+May 11, 2021 3:18:07 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:07 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:07 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:18:07 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:07 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:07 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.daml.org/2001/01/gedcom/gedcom#individualEventProperty>(GSAT_U1,GSAT_U2):-<http://www.daml.org/2001/01/gedcom/gedcom#death>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2001/01/gedcom/gedcom#familyEventProperty>(GSAT_U1,GSAT_U2):-<http://www.daml.org/2001/01/gedcom/gedcom#marriage>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2001/01/gedcom/gedcom#eventProperty>(GSAT_U1,GSAT_U2):-<http://www.daml.org/2001/01/gedcom/gedcom#familyEventProperty>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2001/01/gedcom/gedcom#individualEventProperty>(GSAT_U1,GSAT_U2):-<http://www.daml.org/2001/01/gedcom/gedcom#birth>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2001/01/gedcom/gedcom#eventProperty>(GSAT_U1,GSAT_U2):-<http://www.daml.org/2001/01/gedcom/gedcom#individualEventProperty>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2001/01/gedcom/gedcom#familyEventProperty>(GSAT_U1,GSAT_U2):-<http://www.daml.org/2001/01/gedcom/gedcom#divorce>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Marriage>(GSAT_U1).
+<http://www.daml.org/2001/01/gedcom/gedcom#Death>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Individual>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#death>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Event>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#date>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Event>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#place>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/01/gedcom/gedcom#Marriage>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Family>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#marriage>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Individual>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#surname>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/01/gedcom/gedcom#Event>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Individual>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#givenName>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Birth>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Individual>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#name>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/01/gedcom/gedcom#Divorce>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Family>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#divorce>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/01/gedcom/gedcom#Family>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Individual>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#spouseIn>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/01/gedcom/gedcom#Family>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Individual>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#childIn>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Individual>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#title>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Death>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Individual>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#sex>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/01/gedcom/gedcom#Birth>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Individual>(GSAT_U2),<http://www.daml.org/2001/01/gedcom/gedcom#birth>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/01/gedcom/gedcom#Event>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent>(GSAT_U1).
+<http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent>(GSAT_U1):-<http://www.daml.org/2001/01/gedcom/gedcom#Divorce>(GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+====================

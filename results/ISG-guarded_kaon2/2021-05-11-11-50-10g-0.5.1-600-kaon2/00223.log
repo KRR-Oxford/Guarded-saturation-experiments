@@ -1,0 +1,35 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 12
+Completed!
+Finished!
+KAON2 End; # rules: 11
+KAON2 total time : 287 ms = 0.29 s
+Full TGD saturation: (11 dependecies)
+
+====================
+May 11, 2021 3:18:48 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:48 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:48 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:18:48 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:48 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:48 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.daml.org/2002/03/agents/agent-ont#Agent>(GSAT_U1):-<http://www.daml.org/2002/03/agents/mcda#MCDAParameters>(GSAT_U2),<http://www.daml.org/2002/03/agents/mcda#notificationAgent>(GSAT_U2,GSAT_U1).
+xsd:timeDuration(GSAT_U1):-<http://www.daml.org/2002/03/agents/mcda#MCDAParameters>(GSAT_U2),<http://www.daml.org/2002/03/agents/mcda#repeatInterval>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/05/mcda/mcda-ont#Analysis>(GSAT_U1):-q1(GSAT_U2),<http://www.daml.org/2002/03/agents/mcda#analysis>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/experiment/ontology/operation-ont#Operation>(GSAT_U1):-<http://www.daml.org/2002/03/agents/mcda#MCDAParameters>(GSAT_U2),<http://www.daml.org/2002/03/agents/mcda#operation>(GSAT_U2,GSAT_U1).
+q0(GSAT_U1):-<http://www.daml.org/2002/03/agents/mcda#MCDAParameters>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage>(GSAT_U1):-<http://www.daml.org/2002/03/agents/mcda#GetResultsReply>(GSAT_U1).
+q1(GSAT_U1):-<http://www.daml.org/2002/03/agents/mcda#MCDAParameters>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#RequestMessage>(GSAT_U1):-<http://www.daml.org/2002/03/agents/mcda#GetResultsRequest>(GSAT_U1).
+q0(GSAT_U1):-<http://www.daml.org/2002/03/agents/mcda#GetResultsReply>(GSAT_U1).
+q1(GSAT_U1):-<http://www.daml.org/2002/03/agents/mcda#GetResultsReply>(GSAT_U1).
+<http://www.daml.org/2002/03/agents/agent-ont#Parameters>(GSAT_U1):-<http://www.daml.org/2002/03/agents/mcda#MCDAParameters>(GSAT_U1).
+====================

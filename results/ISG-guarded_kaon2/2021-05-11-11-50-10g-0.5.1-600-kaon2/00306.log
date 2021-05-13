@@ -1,0 +1,38 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 14
+Completed!
+Finished!
+KAON2 End; # rules: 14
+KAON2 total time : 269 ms = 0.27 s
+Full TGD saturation: (14 dependecies)
+
+====================
+May 11, 2021 3:32:57 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:32:57 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:32:57 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:32:57 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:32:57 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:32:57 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+rdfs:Class(GSAT_U1):-rdfs:range(GSAT_U2,GSAT_U1).
+rdf:Property(GSAT_U1):-rdfs:range(GSAT_U1,GSAT_U2).
+rdfs:Class(GSAT_U1):-rdfs:Datatype(GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdfs:Container(GSAT_U1).
+rdf:Property(GSAT_U1):-rdfs:domain(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdfs:member(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdfs:member(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdfs:Class(GSAT_U1).
+rdfs:Class(GSAT_U1):-rdfs:domain(GSAT_U2,GSAT_U1).
+rdf:Property(GSAT_U1):-rdfs:ContainerMembershipProperty(GSAT_U1).
+rdf:Property(GSAT_U1):-rdfs:subPropertyOf(GSAT_U1,GSAT_U2).
+rdf:Property(GSAT_U1):-rdfs:subPropertyOf(GSAT_U2,GSAT_U1).
+rdfs:Class(GSAT_U1):-rdfs:subClassOf(GSAT_U1,GSAT_U2).
+rdfs:Class(GSAT_U1):-rdfs:subClassOf(GSAT_U2,GSAT_U1).
+====================

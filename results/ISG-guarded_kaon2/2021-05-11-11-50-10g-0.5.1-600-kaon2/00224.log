@@ -1,0 +1,32 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 9
+Completed!
+Finished!
+KAON2 End; # rules: 8
+KAON2 total time : 287 ms = 0.29 s
+Full TGD saturation: (8 dependecies)
+
+====================
+May 11, 2021 3:18:50 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:50 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:50 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:18:50 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:50 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:50 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAOffice>(GSAT_U2),<http://www.daml.org/2002/03/darpadir/darpadir-ont#name>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAOffice>(GSAT_U1):-<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAEmployee>(GSAT_U2),<http://www.daml.org/2002/03/darpadir/darpadir-ont#office>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/projects/integration/projects-20010811#Agency>(GSAT_U1):-<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAOffice>(GSAT_U2),<http://www.daml.org/projects/integration/projects-20010811#partOf>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAEmployee>(GSAT_U2),<http://www.daml.org/2002/03/darpadir/darpadir-ont#room>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/projects/integration/projects-20010811#Organization>(GSAT_U1):-<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAOffice>(GSAT_U1).
+<http://org.semanticweb.owlapi/error#Error1>(GSAT_U1):-<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAEmployee>(GSAT_U1).
+<http://www.daml.org/projects/integration/projects-20010811#Employee>(GSAT_U1):-<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAEmployee>(GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+====================

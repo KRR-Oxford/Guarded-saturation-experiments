@@ -1,0 +1,42 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 16
+Completed!
+Finished!
+KAON2 End; # rules: 18
+KAON2 total time : 263 ms = 0.26 s
+Full TGD saturation: (18 dependecies)
+
+====================
+May 11, 2021 3:15:30 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:15:30 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:15:30 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:15:30 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:15:30 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:15:30 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://purl.org/net/ns/musicalbaton#batonTo>(GSAT_U1,GSAT_U2):-<http://purl.org/net/ns/musicalbaton#batonFrom>(GSAT_U2,GSAT_U1).
+<http://purl.org/net/ns/musicalbaton#batonFrom>(GSAT_U1,GSAT_U2):-<http://purl.org/net/ns/musicalbaton#batonTo>(GSAT_U2,GSAT_U1).
+<http://purl.org/net/ns/musicalbaton#hasBaton>(GSAT_U1,GSAT_U2):-<http://purl.org/net/ns/musicalbaton#batonHolder>(GSAT_U2,GSAT_U1).
+<http://purl.org/net/ns/musicalbaton#batonHolder>(GSAT_U1,GSAT_U2):-<http://purl.org/net/ns/musicalbaton#hasBaton>(GSAT_U2,GSAT_U1).
+<http://purl.org/net/ns/musicalbaton#MusicalBaton>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#batonTo>(GSAT_U2,GSAT_U1).
+<http://purl.org/net/ns/musicalbaton#MusicalBaton>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#batonTo>(GSAT_U1,GSAT_U2).
+<http://purl.org/net/ns/musicalbaton#MusicalBaton>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#batonPage>(GSAT_U1,GSAT_U2).
+<http://purl.org/net/ns/musicalbaton#MusicalBaton>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#batonHolder>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#passedTo>(GSAT_U2,GSAT_U1).
+<http://purl.org/net/ns/musicalbaton#MusicalBaton>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#hasBaton>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#batonPage>(GSAT_U2,GSAT_U1).
+<http://purl.org/net/ns/musicalbaton#MusicalBaton>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#batonFrom>(GSAT_U2,GSAT_U1).
+<http://purl.org/net/ns/musicalbaton#MusicalBaton>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#batonFrom>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#receivedFrom>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#hasBaton>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#batonHolder>(GSAT_U2,GSAT_U1).
+<http://purl.org/net/ns/musicalbaton#MusicalBaton>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#passedTo>(GSAT_U1,GSAT_U2).
+<http://purl.org/net/ns/musicalbaton#MusicalBaton>(GSAT_U1):-<http://purl.org/net/ns/musicalbaton#receivedFrom>(GSAT_U1,GSAT_U2).
+====================

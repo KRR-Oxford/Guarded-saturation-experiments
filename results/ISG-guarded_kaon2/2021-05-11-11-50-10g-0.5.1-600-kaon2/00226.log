@@ -1,0 +1,33 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 5
+Completed!
+Finished!
+KAON2 End; # rules: 9
+KAON2 total time : 1606 ms = 1.61 s
+Full TGD saturation: (9 dependecies)
+
+====================
+May 11, 2021 3:18:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:18:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:18:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:18:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/usnships/ship-ont#Ship>(GSAT_U2),<http://www.daml.org/2002/03/usnships/ship-ont#name>(GSAT_U2,GSAT_U1).
+xsd:dateTime(GSAT_U1):-<http://www.daml.org/2002/03/usnships/ship-ont#Ship>(GSAT_U2),<http://www.daml.org/2002/03/usnships/ship-ont#commissioned>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/usnships/ship-ont#Ship>(GSAT_U2),<http://www.daml.org/2002/03/usnships/ship-ont#hullNumber>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.daml.org/2002/03/usnships/ship-ont#Ship>(GSAT_U2),<http://www.daml.org/2002/03/usnships/ship-ont#status>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2002/03/usnships/ship-ont#Class>(GSAT_U1):-<http://www.daml.org/2002/03/usnships/ship-ont#Ship>(GSAT_U2),<http://www.daml.org/2002/03/usnships/ship-ont#class>(GSAT_U2,GSAT_U1).
+:-xsd:dateTime(GSAT_U1),xsd:string(GSAT_U1).
+:-xsd:string(GSAT_U1),xsd:dateTime(GSAT_U1).
+:-xsd:dateTime(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#dateTime",$1)",GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+====================

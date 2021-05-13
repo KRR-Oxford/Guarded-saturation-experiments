@@ -1,0 +1,160 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 139
+Completed!
+Finished!
+KAON2 End; # rules: 136
+KAON2 total time : 331 ms = 0.33 s
+Full TGD saturation: (136 dependecies)
+
+====================
+May 11, 2021 3:32:33 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:32:33 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:32:33 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:32:33 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:32:33 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:32:33 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.mindswap.org/2004/owl/funding#B2BFunding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#BusinessFunding>(GSAT_U1),<http://www.mindswap.org/2004/owl/funding#destination>(GSAT_U1,GSAT_U2),<http://www.mindswap.org/2004/owl/funding#Business>(GSAT_U2).
+<http://www.mindswap.org/2004/owl/funding#Fundee>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Organization>(GSAT_U1),<http://www.mindswap.org/2004/owl/funding#fundedBy>(GSAT_U1,GSAT_U2),<http://www.mindswap.org/2004/owl/funding#Funding>(GSAT_U2).
+<http://www.mindswap.org/2004/owl/funding#BusinessFunding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Funding>(GSAT_U1),<http://www.mindswap.org/2004/owl/funding#source>(GSAT_U1,GSAT_U2),<http://www.mindswap.org/2004/owl/funding#Business>(GSAT_U2).
+<http://www.mindswap.org/2004/owl/funding#Funder>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Organization>(GSAT_U1),<http://www.mindswap.org/2004/owl/funding#funds>(GSAT_U1,GSAT_U2),<http://www.mindswap.org/2004/owl/funding#Funding>(GSAT_U2).
+<http://www.mindswap.org/2004/owl/funding#GovernmentFunding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Funding>(GSAT_U1),<http://www.mindswap.org/2004/owl/funding#source>(GSAT_U1,GSAT_U2),<http://www.mindswap.org/2004/owl/funding#Government>(GSAT_U2).
+<http://www.mindswap.org/2004/owl/funding#BusinessContract>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Contract>(GSAT_U1),<http://www.mindswap.org/2004/owl/funding#BusinessFunding>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#GovernmentContract>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Contract>(GSAT_U1),<http://www.mindswap.org/2004/owl/funding#GovernmentFunding>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#GovernmentGrant>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Grant>(GSAT_U1),<http://www.mindswap.org/2004/owl/funding#GovernmentFunding>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#BusinessGrant>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Grant>(GSAT_U1),<http://www.mindswap.org/2004/owl/funding#BusinessFunding>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#fundedBy>(GSAT_U1,GSAT_U2):-<http://www.mindswap.org/2004/owl/funding#destination>(GSAT_U2,GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#destination>(GSAT_U1,GSAT_U2):-<http://www.mindswap.org/2004/owl/funding#fundedBy>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/depiction>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/img>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/topic>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/page>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/page>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/topic>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/member>(GSAT_U1,GSAT_U2):-<http://www.mindswap.org/2003/owl/mindswap#memberOf>(GSAT_U2,GSAT_U1).
+<http://www.mindswap.org/2003/owl/mindswap#memberOf>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/member>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/depicts>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/depiction>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/depiction>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/depicts>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/page>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/isPrimaryTopicOf>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/maker>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/made>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/made>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/maker>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/nick>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/aimChatID>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/page>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/weblog>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/primaryTopic>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/isPrimaryTopicOf>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/isPrimaryTopicOf>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/primaryTopic>(GSAT_U2,GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#source>(GSAT_U1,GSAT_U2):-<http://www.mindswap.org/2004/owl/funding#funds>(GSAT_U2,GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#funds>(GSAT_U1,GSAT_U2):-<http://www.mindswap.org/2004/owl/funding#source>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/isPrimaryTopicOf>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/homepage>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/page>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/homepage>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/nick>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/yahooChatID>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/nick>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/icqChatID>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/page>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/tipjar>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/nick>(GSAT_U1,GSAT_U2):-<http://xmlns.com/foaf/0.1/msnChatID>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/page>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/gender>(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Person>(GSAT_U1).
+<http://www.mindswap.org/2003/owl/mindswap#Swapper>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#Faculty>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/member>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/swap/pim/contact#Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Person>(GSAT_U1).
+<http://www.mindswap.org/2003/owl/mindswap#Swapper>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#Staff>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/made>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/primaryTopic>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/weblog>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/schoolHomepage>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/plan>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#Swapper>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Image>(GSAT_U1):-<http://xmlns.com/foaf/0.1/thumbnail>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Image>(GSAT_U1):-<http://xmlns.com/foaf/0.1/thumbnail>(GSAT_U1,GSAT_U2).
+<http://www.mindswap.org/2004/owl/funding#Funding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#BusinessFunding>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/currentProject>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/topic>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/yahooChatID>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/OnlineAccount>(GSAT_U1):-<http://xmlns.com/foaf/0.1/OnlineGamingAccount>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/jabberID>(GSAT_U1,GSAT_U2).
+<http://www.mindswap.org/2003/owl/mindswap#Swapper>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#Visitor>(GSAT_U1).
+<http://www.mindswap.org/2003/owl/mindswap#Swapper>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#Student>(GSAT_U1).
+<http://www.mindswap.org/2003/owl/mindswap#Student>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#UndergraduateStudent>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Organization>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Organization>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/interest>(GSAT_U2,GSAT_U1).
+<http://www.mindswap.org/2003/owl/mindswap#Swapper>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#Alumni>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#Contract>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#BusinessContract>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/workplaceHomepage>(GSAT_U1,GSAT_U2).
+<http://www.mindswap.org/2004/owl/funding#BusinessFunding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#BusinessContract>(GSAT_U1).
+<http://www.mindswap.org/2003/owl/mindswap#Student>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#GraduateStudent>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/OnlineAccount>(GSAT_U1):-<http://xmlns.com/foaf/0.1/OnlineChatAccount>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/tipjar>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/holdsAccount>(GSAT_U1,GSAT_U2).
+<http://www.mindswap.org/2003/owl/mindswap#Staff>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#Programmer>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Group>(GSAT_U1):-<http://xmlns.com/foaf/0.1/member>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/OnlineAccount>(GSAT_U1):-<http://xmlns.com/foaf/0.1/accountName>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/isPrimaryTopicOf>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/OnlineAccount>(GSAT_U1):-<http://xmlns.com/foaf/0.1/OnlineEcommerceAccount>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/tipjar>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/knows>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/knows>(GSAT_U2,GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#Funding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Grant>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#Organization>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Business>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Organization>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#Grant>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#BusinessGrant>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/icqChatID>(GSAT_U1,GSAT_U2).
+<http://www.mindswap.org/2003/owl/mindswap#Staff>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#Researcher>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/aimChatID>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/family_name>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/publications>(GSAT_U2,GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#Funder>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#MindswapFunder>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#Contract>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#GovernmentContract>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/geekcode>(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>(GSAT_U1):-<http://xmlns.com/foaf/0.1/based_near>(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>(GSAT_U1):-<http://xmlns.com/foaf/0.1/based_near>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/pastProject>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/publications>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/surname>(GSAT_U1,GSAT_U2).
+<http://www.mindswap.org/2004/owl/funding#Grant>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#GovernmentGrant>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Project>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Project>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/mbox_sha1sum>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/workplaceHomepage>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/mbox>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/birthday>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/schoolHomepage>(GSAT_U2,GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#Funding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#GovernmentFunding>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Group>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Image>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#Organization>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Fundee>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/homepage>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/accountServiceHomepage>(GSAT_U2,GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#Funding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Contract>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/sha1>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/OnlineAccount>(GSAT_U1):-<http://xmlns.com/foaf/0.1/holdsAccount>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/PersonalProfileDocument>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#BusinessFunding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#BusinessGrant>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/workInfoHomepage>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/topic_interest>(GSAT_U1,GSAT_U2).
+<http://www.mindswap.org/2003/owl/mindswap#EmailAddress>(GSAT_U1):-<http://xmlns.com/foaf/0.1/mbox>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Person>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#Organization>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Funder>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/interest>(GSAT_U1,GSAT_U2).
+<http://www.mindswap.org/2004/owl/funding#GovernmentFunding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#GovernmentGrant>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#Organization>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#Government>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Agent-3>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Document>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Image>(GSAT_U1):-<http://xmlns.com/foaf/0.1/depiction>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/img>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://xmlns.com/foaf/0.1/workInfoHomepage>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/myersBriggs>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/maker>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Image>(GSAT_U1):-<http://xmlns.com/foaf/0.1/img>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Person>(GSAT_U1).
+<http://www.mindswap.org/2003/owl/mindswap#Swapper>(GSAT_U1):-<http://www.mindswap.org/2003/owl/mindswap#Affiliate>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/Person>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://xmlns.com/foaf/0.1/firstName>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Image>(GSAT_U1):-<http://xmlns.com/foaf/0.1/depicts>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/OnlineAccount>(GSAT_U1):-<http://xmlns.com/foaf/0.1/accountServiceHomepage>(GSAT_U1,GSAT_U2).
+<http://www.mindswap.org/2004/owl/funding#GovernmentFunding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#GovernmentContract>(GSAT_U1).
+<http://www.mindswap.org/2004/owl/funding#BusinessFunding>(GSAT_U1):-<http://www.mindswap.org/2004/owl/funding#B2BFunding>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/weblog>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://xmlns.com/foaf/0.1/msnChatID>(GSAT_U1,GSAT_U2).
+====================

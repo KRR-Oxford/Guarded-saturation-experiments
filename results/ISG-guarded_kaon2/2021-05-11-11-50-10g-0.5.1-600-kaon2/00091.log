@@ -1,0 +1,37 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 12
+Completed!
+Finished!
+KAON2 End; # rules: 13
+KAON2 total time : 1211 ms = 1.21 s
+Full TGD saturation: (13 dependecies)
+
+====================
+May 11, 2021 3:13:56 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:13:56 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:13:56 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:13:56 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:13:56 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:13:56 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://my.opera.com/community/xmlns/2006/gallery#depicts>(GSAT_U1,GSAT_U2):-<http://my.opera.com/community/xmlns/2006/gallery#depictions>(GSAT_U2,GSAT_U1).
+<http://my.opera.com/community/xmlns/2006/gallery#depictions>(GSAT_U1,GSAT_U2):-<http://my.opera.com/community/xmlns/2006/gallery#depicts>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Gallery-3>(GSAT_U1):-<http://my.opera.com/community/xmlns/2006/gallery#Gallery>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Document>(GSAT_U1):-<http://my.opera.com/community/xmlns/2006/gallery#Gallery>(GSAT_U1).
+<http://my.opera.com/community/xmlns/2006/gallery#Gallery>(GSAT_U1):-<http://my.opera.com/community/xmlns/2006/gallery#depictions>(GSAT_U2,GSAT_U1).
+<http://my.opera.com/community/xmlns/2006/gallery#Gallery>(GSAT_U1):-<http://my.opera.com/community/xmlns/2006/gallery#image>(GSAT_U1,GSAT_U2).
+rdf:Seq(GSAT_U1):-<http://my.opera.com/community/xmlns/2006/gallery#images>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Image>(GSAT_U1):-<http://my.opera.com/community/xmlns/2006/gallery#image>(GSAT_U2,GSAT_U1).
+<http://my.opera.com/community/xmlns/2006/gallery#Gallery>(GSAT_U1):-<http://my.opera.com/community/xmlns/2006/gallery#highlight>(GSAT_U1,GSAT_U2).
+<http://my.opera.com/community/xmlns/2006/gallery#Gallery>(GSAT_U1):-<http://my.opera.com/community/xmlns/2006/gallery#depicts>(GSAT_U1,GSAT_U2).
+<http://my.opera.com/community/xmlns/2006/gallery#Gallery>(GSAT_U1):-<http://my.opera.com/community/xmlns/2006/gallery#OrderedGallery>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Image>(GSAT_U1):-<http://my.opera.com/community/xmlns/2006/gallery#highlight>(GSAT_U2,GSAT_U1).
+<http://my.opera.com/community/xmlns/2006/gallery#OrderedGallery>(GSAT_U1):-<http://my.opera.com/community/xmlns/2006/gallery#images>(GSAT_U1,GSAT_U2).
+====================

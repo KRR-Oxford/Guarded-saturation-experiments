@@ -1,0 +1,34 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 10
+Completed!
+Finished!
+KAON2 End; # rules: 10
+KAON2 total time : 254 ms = 0.25 s
+Full TGD saturation: (10 dependecies)
+
+====================
+May 11, 2021 3:15:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:15:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:15:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:15:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:15:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:15:32 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://purl.org/net/schemas/book/Book>(GSAT_U1):-<http://purl.org/net/schemas/book/reading>(GSAT_U2,GSAT_U1).
+<http://purl.org/net/schemas/book/Book>(GSAT_U1):-<http://purl.org/net/schemas/book/favourite>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://purl.org/net/schemas/book/toRead>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://purl.org/net/schemas/book/read>(GSAT_U1,GSAT_U2).
+<http://purl.org/net/schemas/book/Book>(GSAT_U1):-<http://purl.org/net/schemas/book/read>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Book>(GSAT_U1):-<http://purl.org/net/schemas/book/Book>(GSAT_U1).
+<http://purl.org/net/schemas/book/Book>(GSAT_U1):-<http://purl.org/net/schemas/book/toRead>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://purl.org/net/schemas/book/reading>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Person>(GSAT_U1):-<http://purl.org/net/schemas/book/favourite>(GSAT_U1,GSAT_U2).
+<http://purl.org/net/schemas/book/Book>(GSAT_U1):-<http://purl.org/net/schemas/book/isbn>(GSAT_U1,GSAT_U2).
+====================

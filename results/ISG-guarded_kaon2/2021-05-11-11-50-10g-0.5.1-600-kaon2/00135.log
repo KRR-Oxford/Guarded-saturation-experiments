@@ -1,0 +1,79 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 55
+Completed!
+Finished!
+KAON2 End; # rules: 55
+KAON2 total time : 307 ms = 0.31 s
+Full TGD saturation: (55 dependecies)
+
+====================
+May 11, 2021 3:15:39 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:15:39 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:15:39 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:15:39 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:15:39 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:15:39 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+rdfs:Resource(GSAT_U1):-<http://rdfs.org/sioc/ns#email>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#User>(GSAT_U1):-<http://rdfs.org/sioc/ns#member_of>(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-<http://rdfs.org/sioc/ns#function_of>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_revisor>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#User>(GSAT_U1):-<http://rdfs.org/sioc/ns#revisor_of>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Forum>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_container>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-<http://rdfs.org/sioc/ns#Site>(GSAT_U1).
+rdfs:Resource(GSAT_U1):-<http://rdfs.org/sioc/ns#Usergroup>(GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_container>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#User>(GSAT_U1):-<http://rdfs.org/sioc/ns#knows>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#User>(GSAT_U1):-<http://rdfs.org/sioc/ns#knows>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Forum>(GSAT_U1):-<http://rdfs.org/sioc/ns#host_of>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#User>(GSAT_U1):-<http://rdfs.org/sioc/ns#creator_of>(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-<http://rdfs.org/sioc/ns#has_scope>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Role>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_function>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#previous_version>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#previous_version>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Role>(GSAT_U1):-<http://rdfs.org/sioc/ns#scope_of>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#next_version>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#next_version>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Forum>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_parent>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Forum>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_parent>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_sibling>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_sibling>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Forum>(GSAT_U1):-<http://rdfs.org/sioc/ns#parent_of>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Forum>(GSAT_U1):-<http://rdfs.org/sioc/ns#parent_of>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#related_to>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#related_to>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-<http://rdfs.org/sioc/ns#Post>(GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#container_of>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#reply_of>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#reply_of>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_creator>(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-<http://rdfs.org/sioc/ns#Role>(GSAT_U1).
+<http://rdfs.org/sioc/ns#User>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_revisor>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#revisor_of>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#creator_of>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Usergroup>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_member>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Forum>(GSAT_U1):-<http://rdfs.org/sioc/ns#container_of>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Usergroup>(GSAT_U1):-<http://rdfs.org/sioc/ns#member_of>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-<http://rdfs.org/sioc/ns#User>(GSAT_U1).
+<http://rdfs.org/sioc/ns#Site>(GSAT_U1):-<http://rdfs.org/sioc/ns#host_of>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#User>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_function>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Role>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_scope>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_reply>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_reply>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#User>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_member>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#User>(GSAT_U1):-<http://rdfs.org/sioc/ns#email>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Role>(GSAT_U1):-<http://rdfs.org/sioc/ns#function_of>(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-<http://rdfs.org/sioc/ns#Forum>(GSAT_U1).
+<http://rdfs.org/sioc/ns#Site>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_host>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#User>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_creator>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#sibling_of>(GSAT_U2,GSAT_U1).
+<http://rdfs.org/sioc/ns#Post>(GSAT_U1):-<http://rdfs.org/sioc/ns#sibling_of>(GSAT_U1,GSAT_U2).
+<http://rdfs.org/sioc/ns#Forum>(GSAT_U1):-<http://rdfs.org/sioc/ns#has_host>(GSAT_U1,GSAT_U2).
+====================

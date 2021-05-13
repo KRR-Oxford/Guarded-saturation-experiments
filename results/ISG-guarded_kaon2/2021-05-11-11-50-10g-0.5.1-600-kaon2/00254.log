@@ -1,0 +1,188 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 164
+Completed!
+Finished!
+KAON2 End; # rules: 164
+KAON2 total time : 296 ms = 0.30 s
+Full TGD saturation: (164 dependecies)
+
+====================
+May 11, 2021 3:20:06 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:20:06 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:20:06 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:20:06 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:20:06 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:20:06 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+rdfs:subClassOf(GSAT_U1,GSAT_U2):-<http://www.daml.org/2001/03/daml+oil#sameClassAs>(GSAT_U1,GSAT_U2).
+rdfs:subPropertyOf(GSAT_U1,GSAT_U2):-<http://www.daml.org/2001/03/daml+oil#samePropertyAs>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasSponsor>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#cardinality>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#disjointUnionOf>(GSAT_U2,GSAT_U1).
+rdf:Property(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>(GSAT_U1).
+rdfs:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#hasClass>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasNote>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasSchool>(GSAT_U2,GSAT_U1).
+<http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-labgroup-ont#Lab>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAssociatedLabGroup>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#CMU_Publictaion_Entry>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasURL>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasChapter>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#CMU_Publictaion_Entry>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAssociatedLabGroup>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasPublisher>(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#disjointUnionOf>(GSAT_U1,GSAT_U2).
+rdfs:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#Datatype>(GSAT_U1).
+<http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-center-ont#Center>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAssociatedCenter>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#rest>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#rest>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAnnote>(GSAT_U2,GSAT_U1).
+rdf:Seq(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAddress>(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdf:value(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdf:value(GSAT_U2,GSAT_U1).
+rdf:List(GSAT_U1):-rdf:first(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#sameClassAs>(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#sameClassAs>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#minCardinality>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasEditor>(GSAT_U2,GSAT_U1).
+rdf:Property(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#UniqueProperty>(GSAT_U1).
+rdfs:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#toClass>(GSAT_U2,GSAT_U1).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#minCardinalityQ>(GSAT_U1,GSAT_U2).
+rdf:Property(GSAT_U1):-rdfs:ContainerMembershipProperty(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasSeries>(GSAT_U2,GSAT_U1).
+rdf:Statement(GSAT_U1):-rdf:object(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#minCardinalityQ>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasTitle>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasEdition>(GSAT_U1,GSAT_U2).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#hasClass>(GSAT_U1,GSAT_U2).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#cardinality>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasType>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#MastersThesis>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasMonth>(GSAT_U1,GSAT_U2).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#minCardinality>(GSAT_U1,GSAT_U2).
+rdf:Statement(GSAT_U1):-rdf:predicate(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasPublisher>(GSAT_U2,GSAT_U1).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#oneOf>(GSAT_U1,GSAT_U2).
+rdf:Property(GSAT_U1):-rdfs:subPropertyOf(GSAT_U1,GSAT_U2).
+rdf:Property(GSAT_U1):-rdfs:subPropertyOf(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAssociatedLabGroup>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:List(GSAT_U1).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#intersectionOf>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Book>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#unpublished>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Entry>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasCiteKey>(GSAT_U1,GSAT_U2).
+rdf:List(GSAT_U1):-rdf:rest(GSAT_U2,GSAT_U1).
+rdf:List(GSAT_U1):-rdf:rest(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasBooktitle>(GSAT_U2,GSAT_U1).
+rdfs:Container(GSAT_U1):-rdf:Bag(GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdfs:Class(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#misc>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#CMU_Publictaion_Entry>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasSponsor>(GSAT_U1,GSAT_U2).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#oneOf>(GSAT_U2,GSAT_U1).
+owl:ObjectProperty(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#inverseOf>(GSAT_U2,GSAT_U1).
+owl:ObjectProperty(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#inverseOf>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasEditor>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAuthor>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasType>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#BibtexEntry>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasBibtexEntry>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:subject(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasGrantID>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasNote>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:type(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasHowpublished>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasKey>(GSAT_U1,GSAT_U2).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#hasClassQ>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Proceedings>(GSAT_U1).
+owl:ObjectProperty(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasPages>(GSAT_U1,GSAT_U2).
+rdfs:Class(GSAT_U1):-rdf:type(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAnnote>(GSAT_U1,GSAT_U2).
+rdfs:Container(GSAT_U1):-rdf:Seq(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasMonth>(GSAT_U2,GSAT_U1).
+rdfs:Class(GSAT_U1):-rdfs:domain(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasVolume>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAssociatedProject>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasNumber>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#PhdThesis>(GSAT_U1).
+rdf:Property(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#onProperty>(GSAT_U2,GSAT_U1).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#intersectionOf>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAddress>(GSAT_U2,GSAT_U1).
+rdfs:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#hasClassQ>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasSeries>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#InBook>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#CMU_Publictaion_Entry>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAssociatedCenter>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasPublication_Type>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasKey>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasJournal>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#CMU_Publictaion_Entry>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasBibtexEntry>(GSAT_U1,GSAT_U2).
+rdfs:Container(GSAT_U1):-rdf:Alt(GSAT_U1).
+rdf:Property(GSAT_U1):-rdfs:domain(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#complementOf>(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#complementOf>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#maxCardinality>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#InProceedings>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#CMU_Publictaion_Entry>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasGrantID>(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdfs:member(GSAT_U1,GSAT_U2).
+rdfs:Resource(GSAT_U1):-rdfs:member(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasCrossref>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasOrganization>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasBooktitle>(GSAT_U1,GSAT_U2).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#maxCardinalityQ>(GSAT_U2,GSAT_U1).
+<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#cardinalityQ>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:Property(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasInstitution>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Manual>(GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:Statement(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasYear>(GSAT_U2,GSAT_U1).
+rdfs:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#Class>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasChapter>(GSAT_U1,GSAT_U2).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#onProperty>(GSAT_U1,GSAT_U2).
+rdf:Property(GSAT_U1):-rdfs:range(GSAT_U1,GSAT_U2).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#cardinalityQ>(GSAT_U1,GSAT_U2).
+rdfs:Class(GSAT_U1):-rdfs:Datatype(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Article>(GSAT_U1).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#maxCardinality>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Booklet>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#InCollection>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasPages>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:predicate(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasSchool>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasNumber>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#TechReport>(GSAT_U1).
+<http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-project-ont#Project>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAssociatedProject>(GSAT_U2,GSAT_U1).
+<http://www.daml.org/2001/03/daml+oil#List>(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#unionOf>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasInstitution>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasEdition>(GSAT_U2,GSAT_U1).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#unionOf>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#CMU_Publictaion_Entry>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAssociatedProject>(GSAT_U1,GSAT_U2).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#toClass>(GSAT_U1,GSAT_U2).
+owl:Restriction(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#maxCardinalityQ>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasOrganization>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasURL>(GSAT_U2,GSAT_U1).
+owl:ObjectProperty(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasCiteKey>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:first(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasTitle>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Literal>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasVolume>(GSAT_U2,GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdfs:Container(GSAT_U1).
+rdfs:Resource(GSAT_U1):-rdf:object(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasHowpublished>(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#disjointWith>(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#disjointWith>(GSAT_U2,GSAT_U1).
+rdf:Statement(GSAT_U1):-rdf:subject(GSAT_U1,GSAT_U2).
+rdfs:Class(GSAT_U1):-rdfs:subClassOf(GSAT_U1,GSAT_U2).
+rdfs:Class(GSAT_U1):-rdfs:subClassOf(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasYear>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Entry>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasPublication_Type>(GSAT_U1,GSAT_U2).
+owl:Class(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#Restriction>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasCrossref>(GSAT_U1,GSAT_U2).
+rdf:Property(GSAT_U1):-<http://www.daml.org/2001/03/daml+oil#ObjectProperty>(GSAT_U1).
+rdfs:Class(GSAT_U1):-rdfs:range(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasAuthor>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#Bibtex_Publication_Type>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00254.owl#hasJournal>(GSAT_U1,GSAT_U2).
+====================

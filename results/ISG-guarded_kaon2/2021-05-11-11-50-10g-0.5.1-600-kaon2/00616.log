@@ -1,0 +1,88 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 53
+Completed!
+Finished!
+KAON2 End; # rules: 64
+KAON2 total time : 282 ms = 0.28 s
+Full TGD saturation: (64 dependecies)
+
+====================
+May 11, 2021 10:49:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 10:49:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 10:49:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 10:49:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 10:49:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 10:49:12 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#specifically_inheres_in>(GSAT_U1,GSAT_U2).
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#relationship>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#relationship>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#participates_in>(GSAT_U1,GSAT_U2).
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#transformed_into>(GSAT_U1,GSAT_U2).
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#improper_part_of>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#relationship>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#transformation_of>(GSAT_U1,GSAT_U2).
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBOL#towards>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#has_part>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#has_proper_part>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#quality_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#has_quality>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#has_quality>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#quality_of>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#regulates>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#positively_regulates>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#part_of>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#proper_part_of>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#regulates>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#regulated_by>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#regulated_by>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#regulates>(GSAT_U2,GSAT_U1).
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#results_in_increased_mass_of>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#part_of>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#improper_part_of>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#results_in_developmental_progression_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#results_in_formation_of>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#overlaps>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#overlaps>(GSAT_U2,GSAT_U1).
+<http://www.obofoundry.org/ro/ro.owl#has_part>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#has_improper_part>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#influences>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#influenced_by>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#influenced_by>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#influences>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#role_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#has_role>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#has_role>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#role_of>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#bearer_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#has_quality>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#has_function>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#function_of>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#function_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#has_function>(GSAT_U2,GSAT_U1).
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#results_in_secretion_of_granules_from>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#regulates>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#negatively_regulates>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#increased_in_magnitude_compared_to>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#decreased_in_magnitude_compared_to>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#decreased_in_magnitude_compared_to>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#increased_in_magnitude_compared_to>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#positively_regulates>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#activates>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#has_part>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#has_integral_part>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#has_participant>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#results_in_morphogenesis_of>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#relationship>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#adjacent_to>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#relationship>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#derived_into>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#participates_in>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#agent_in>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#has_participant>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#has_agent>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#inheres_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#quality_of>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#inheres_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#specifically_inheres_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#bearer_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#has_role>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#inheres_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#function_of>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#relationship>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#has_participant>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#surrounds>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#surrounded_by>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#surrounded_by>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#surrounds>(GSAT_U2,GSAT_U1).
+<http://www.obofoundry.org/ro/ro.owl#part_of>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#integral_part_of>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#realizes>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#realized_by>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#realized_by>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#realizes>(GSAT_U2,GSAT_U1).
+<http://www.obofoundry.org/ro/ro.owl#relationship>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#preceded_by>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#bearer_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#has_function>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#relationship>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#precedes>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#homologous_to>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#homologous_to>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#has_disposition>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#disposition_of>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#disposition_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#has_disposition>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#has_participant>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#results_in_structural_organization_of>(GSAT_U1,GSAT_U2).
+<http://www.obofoundry.org/ro/ro.owl#relationship>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#derives_from>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#negatively_regulates>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#inactivates>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#inheres_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#bearer_of>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#bearer_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#inheres_in>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#inheres_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#role_of>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#ends_at_beginning_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#begins_at_end_of>(GSAT_U2,GSAT_U1).
+<http://purl.org/obo/owl/OBO_REL#begins_at_end_of>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#ends_at_beginning_of>(GSAT_U2,GSAT_U1).
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty>(GSAT_U1,GSAT_U2):-<http://www.obofoundry.org/ro/ro.owl#has_improper_part>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#inheres_in>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#generically_inheres_in>(GSAT_U1,GSAT_U2).
+<http://purl.org/obo/owl/OBO_REL#has_participant>(GSAT_U1,GSAT_U2):-<http://purl.org/obo/owl/OBO_REL#results_in_maturation_of>(GSAT_U1,GSAT_U2).
+====================

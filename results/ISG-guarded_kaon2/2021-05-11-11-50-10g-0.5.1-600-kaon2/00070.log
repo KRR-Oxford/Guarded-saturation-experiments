@@ -1,0 +1,75 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 41
+Completed!
+Finished!
+KAON2 End; # rules: 51
+KAON2 total time : 289 ms = 0.29 s
+Full TGD saturation: (51 dependecies)
+
+====================
+May 11, 2021 3:13:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:13:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:13:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:13:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:13:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:13:17 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://ebiquity.umbc.edu/ontology/person.owl#associatedWith>(GSAT_U1,GSAT_U2):-<http://ebiquity.umbc.edu/ontology/association.owl#person>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/association.owl#person>(GSAT_U1,GSAT_U2):-<http://ebiquity.umbc.edu/ontology/person.owl#associatedWith>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#lastName>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/association.owl#PersonProjectAssociation>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#associatedWith>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#Sponsor>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#lastName>(GSAT_U1,GSAT_U2).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#workContact>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#middleName>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#workContact>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#associatedWith>(GSAT_U1,GSAT_U2).
+xsd:anyURI(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#face>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#Collaborator>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#Student>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#PrincipalInvestigator>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#firstName>(GSAT_U1,GSAT_U2).
+xsd:dateTime(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#graduationDate>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#Visitor>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#firstName>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Student>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#MSStudent>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#name>(GSAT_U1,GSAT_U2).
+<http://ebiquity.umbc.edu/ontology/person.owl#Alumnus>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#BSAlumnus>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/publication.owl#Publication>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#relatedPublication>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#graduationDate>(GSAT_U1,GSAT_U2).
+<http://ebiquity.umbc.edu/ontology/person.owl#Faculty>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#Professor>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#relatedPublication>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#name>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#Faculty>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Faculty>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#AssistantProfessor>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Alumnus>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#PhDAlumnus>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#biography>(GSAT_U1,GSAT_U2).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#GuestSpeaker>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Student>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#PhDStudent>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Faculty>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#PrincipalFaculty>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Faculty>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#AdjunctFaculty>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Student>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#BSStudent>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Faculty>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#AffiliatedFaculty>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#middleName>(GSAT_U1,GSAT_U2).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#face>(GSAT_U1,GSAT_U2).
+<http://ebiquity.umbc.edu/ontology/person.owl#Faculty>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#AssociateProfessor>(GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Person>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#Alumnus>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#biography>(GSAT_U2,GSAT_U1).
+<http://ebiquity.umbc.edu/ontology/person.owl#Alumnus>(GSAT_U1):-<http://ebiquity.umbc.edu/ontology/person.owl#MSAlumnus>(GSAT_U1).
+:-xsd:string(GSAT_U1),xsd:anyURI(GSAT_U1).
+:-xsd:string(GSAT_U1),xsd:dateTime(GSAT_U1).
+:-xsd:anyURI(GSAT_U1),xsd:string(GSAT_U1).
+:-xsd:anyURI(GSAT_U1),xsd:dateTime(GSAT_U1).
+:-xsd:dateTime(GSAT_U1),xsd:string(GSAT_U1).
+:-xsd:dateTime(GSAT_U1),xsd:anyURI(GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+:-xsd:anyURI(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#anyURI",$1)",GSAT_U1).
+:-xsd:dateTime(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#dateTime",$1)",GSAT_U1).
+====================

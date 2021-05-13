@@ -1,0 +1,151 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 129
+Completed!
+Finished!
+KAON2 End; # rules: 127
+KAON2 total time : 330 ms = 0.33 s
+Full TGD saturation: (127 dependecies)
+
+====================
+May 11, 2021 3:16:53 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:16:53 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:16:53 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:16:53 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:16:53 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:16:53 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#conversion>(GSAT_U2),<http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#catalysis>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#modulation>(GSAT_U2),<http://www.biopax.org/release/biopax-level1.owl#CONTROLLED>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#conversion>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#catalysis>(GSAT_U2),<http://www.biopax.org/release/biopax-level1.owl#CONTROLLED>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS>(GSAT_U1,GSAT_U2):-<http://www.biopax.org/release/biopax-level1.owl#CONTROLLED>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS>(GSAT_U1,GSAT_U2):-<http://www.biopax.org/release/biopax-level1.owl#CONTROLLER>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS>(GSAT_U1,GSAT_U2):-<http://www.biopax.org/release/biopax-level1.owl#LEFT>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS>(GSAT_U1,GSAT_U2):-<http://www.biopax.org/release/biopax-level1.owl#RIGHT>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS>(GSAT_U1,GSAT_U2):-<http://www.biopax.org/release/biopax-level1.owl#COFACTOR>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#smallMolecule>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#CELLTYPE>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#SOURCE>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#entity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#SHORT-NAME>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#CONTROLLER>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#interaction>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#STEP-INTERACTIONS>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#relationshipXref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#RELATIONSHIP-TYPE>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#complex>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#RIGHT>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#TITLE>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#interaction>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#control>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#AVAILABILITY>(GSAT_U2,GSAT_U1).
+xsd:double(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DELTA-G>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#COFACTOR>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#control>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#CONTROLLER>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-DATA>(GSAT_U1,GSAT_U2).
+xsd:double(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#MOLECULAR-WEIGHT>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#catalysis>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#COFACTOR>(GSAT_U1,GSAT_U2).
+q0(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#relationshipXref>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#xref>(GSAT_U1):-q0(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#conversion>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#LEFT>(GSAT_U1,GSAT_U2).
+xsd:double(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DELTA-H>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#AUTHORS>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#transportWithBiochemicalReaction>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#URL>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#bioSource>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#TISSUE>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#TERM>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#catalysis>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DIRECTION>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#control>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#CONTROLLED>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#smallMolecule>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#MOLECULAR-WEIGHT>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#NAME>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#COMMENT>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DELTA-H>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#xref>(GSAT_U1):-q1(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#xref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DB>(GSAT_U1,GSAT_U2).
+q0(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#unificationXref>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#YEAR>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#ID>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#KEQ>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#utilityClass>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#xref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#XREF>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#interaction>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#PARTICIPANTS>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#NEXT-STEP>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#NEXT-STEP>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#entity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#pathway>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#CELLULAR-LOCATION>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#smallMolecule>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#CHEMICAL-FORMULA>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DELTA-G>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#publicationXref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#SOURCE>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#conversion>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#pathwayStep>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#STEP-INTERACTIONS>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#dataSource>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DATA-SOURCE>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#conversion>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#complexAssembly>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#protein>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#EC-NUMBER>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#RELATIONSHIP-TYPE>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#entity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#physicalEntity>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#PHYSICAL-ENTITY>(GSAT_U2,GSAT_U1).
+xsd:double(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#YEAR>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#entity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DATA-SOURCE>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#smallMolecule>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#biochemicalReaction>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DELTA-S>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#rna>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#entity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#SYNONYMS>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#xref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#ID>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DB>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#interaction>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#conversion>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#LEFT>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#control>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#catalysis>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#ID-VERSION>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#TERM>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#control>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#modulation>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#complex>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#COMPONENTS>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#URL>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#AUTHORS>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#conversion>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#RIGHT>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#COMPONENTS>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#xref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#relationshipXref>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DB-VERSION>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#CELLULAR-LOCATION>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#SYNONYMS>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#utilityClass>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#TISSUE>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#bioSource>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#TAXON-XREF>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#transport>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#transportWithBiochemicalReaction>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#conversion>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#transport>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#conversion>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#SPONTANEOUS>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#TITLE>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#xref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#ID-VERSION>(GSAT_U1,GSAT_U2).
+xsd:double(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DELTA-S>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#utilityClass>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#dataSource>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#STOICHIOMETRIC-COEFFICIENT>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#control>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#CONTROL-TYPE>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#utilityClass>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#xref>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-FORMAT>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#entity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#AVAILABILITY>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#entity>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#interaction>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#chemicalStructure>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#SHORT-NAME>(GSAT_U2,GSAT_U1).
+xsd:double(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#KEQ>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#CHEMICAL-FORMULA>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#pathway>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#PATHWAY-COMPONENTS>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#bioSource>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#ORGANISM>(GSAT_U2,GSAT_U1).
+xsd:double(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#STOICHIOMETRIC-COEFFICIENT>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#bioSource>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#CELLTYPE>(GSAT_U1,GSAT_U2).
+q1(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#unificationXref>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#EC-NUMBER>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#SEQUENCE>(GSAT_U2,GSAT_U1).
+q1(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#relationshipXref>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#xref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#publicationXref>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#utilityClass>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#pathwayStep>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#xref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#TAXON-XREF>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#xref>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#DB-VERSION>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#STRUCTURE-DATA>(GSAT_U2,GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#utilityClass>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#bioSource>(GSAT_U1).
+<http://www.biopax.org/release/biopax-level1.owl#physicalEntityParticipant>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#PHYSICAL-ENTITY>(GSAT_U1,GSAT_U2).
+<http://www.biopax.org/release/biopax-level1.owl#utilityClass>(GSAT_U1):-<http://www.biopax.org/release/biopax-level1.owl#openControlledVocabulary>(GSAT_U1).
+:-xsd:double(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#double",$1)",GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+====================

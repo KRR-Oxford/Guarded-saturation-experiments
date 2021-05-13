@@ -1,0 +1,61 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 31
+Completed!
+Finished!
+KAON2 End; # rules: 37
+KAON2 total time : 307 ms = 0.31 s
+Full TGD saturation: (37 dependecies)
+
+====================
+May 11, 2021 3:16:36 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:16:36 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:16:36 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:16:36 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:16:36 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:16:36 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Unit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#DerivedUnit>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByScaling>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasScalingNumber>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnitOrUnitDerivedtWithoutChangingOfDimension>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedWithoutChangingOfDimension>(GSAT_U1).
+xsd:double(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasShiftingNumber>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#SimpleUnit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByRaisingToPower>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Unit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasPrefix>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedWithoutChangingOfDimension>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByShifting>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#ComplexUnit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#productOf>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByShifting>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasShiftingNumber>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#PrefixOrUnit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Prefix>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#DerivedUnit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#ComplexUnit>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#PrefixOrUnit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasSymbol>(GSAT_U1,GSAT_U2).
+xsd:double(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasScalingNumber>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#PrefixOrUnit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Unit>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnitOrUnitDerivedtWithoutChangingOfDimension>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#derivedFromUnit>(GSAT_U2,GSAT_U1).
+q0(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Prefix>(GSAT_U1).
+xsd:string(GSAT_U1):-q0(GSAT_U2),<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasSymbol>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#DerivedUnit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#SimpleUnit>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnitOrUnitDerivedtWithoutChangingOfDimension>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnit>(GSAT_U1).
+q1(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByScaling>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Prefix>(GSAT_U1):-q1(GSAT_U2),<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasPrefix>(GSAT_U2,GSAT_U1).
+q2(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByScaling>(GSAT_U1).
+xsd:double(GSAT_U1):-q2(GSAT_U2),<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasScalingNumber>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Unit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#productOf>(GSAT_U2,GSAT_U1).
+xsd:double(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasPower>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Prefix>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasPrefix>(GSAT_U2,GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedWithoutChangingOfDimension>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByScaling>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#SimpleUnit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#derivedFromUnit>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#SimpleUnit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedWithoutChangingOfDimension>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByRaisingToPower>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasPower>(GSAT_U1,GSAT_U2).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Unit>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnit>(GSAT_U1).
+<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Prefix>(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasValue>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasSymbol>(GSAT_U2,GSAT_U1).
+xsd:double(GSAT_U1):-<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Prefix>(GSAT_U2),<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#hasValue>(GSAT_U2,GSAT_U1).
+:-xsd:string(GSAT_U1),xsd:double(GSAT_U1).
+:-xsd:double(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#double",$1)",GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+====================

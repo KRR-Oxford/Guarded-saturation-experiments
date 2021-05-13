@@ -1,0 +1,151 @@
+Starting the KAON2 Executor (from OWL)...
+KAON2 Start
+Started..
+Initial axioms in the ontology: 126
+Completed!
+Finished!
+KAON2 End; # rules: 127
+KAON2 total time : 1893 ms = 1.89 s
+Full TGD saturation: (127 dependecies)
+
+====================
+May 11, 2021 3:20:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:20:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:20:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+May 11, 2021 3:20:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Could not open configuration file.
+May 11, 2021 3:20:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: java.io.FileNotFoundException: config.properties (No such file or directory)
+May 11, 2021 3:20:55 PM uk.ac.ox.cs.gsat.Configuration initialize
+WARNING: Falling back to defaults.
+<http://www.kanzaki.com/ns/music#performs>(GSAT_U1,GSAT_U2):-<http://www.kanzaki.com/ns/music#performer>(GSAT_U2,GSAT_U1).
+<http://www.kanzaki.com/ns/music#performer>(GSAT_U1,GSAT_U2):-<http://www.kanzaki.com/ns/music#performs>(GSAT_U2,GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#BassClarinettist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musical_Event>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Recital>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Venue>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Venue>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Suite>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Suite>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Clarinettist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#BassClarinettist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musician>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Singer>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Violist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Director>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Conductor>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Clarinettist>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Ensemble>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Ensemble>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://www.kanzaki.com/ns/music#composer>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Singer>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Singer>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Flutist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#PiccoloPlayer>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Quartette-4>(GSAT_U1):-<http://www.kanzaki.com/ns/music#String_Quartette>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musician>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Player>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://www.kanzaki.com/ns/music#performer>(GSAT_U2,GSAT_U1).
+<http://www.kanzaki.com/ns/music#Orchestral_Work>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Symphony>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#program>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Musical_Composition>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musical_Event>(GSAT_U1):-<http://www.kanzaki.com/ns/music#performs>(GSAT_U2,GSAT_U1).
+<http://www.kanzaki.com/ns/music#Singer>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Baritone>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Trombonist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Trombonist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Chamber_Music>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Artist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Musician>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Trombonist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musician>(GSAT_U1):-<http://www.kanzaki.com/ns/music#MusicDirector>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Contrabassist>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Music_Director>(GSAT_U1):-<http://www.kanzaki.com/ns/music#MusicDirector>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musician>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Conductor>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#MusicalGroup>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Chorus>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Musical_Composition>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Movement>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Artist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#MusicalGroup>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Religious_Music>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Hornist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Director>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Choreographer>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Conductor>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Conductor>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Violinist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Orchestral_Work>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Concerto>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Singer>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Soprano>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Oboist>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Violinist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Violinist>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Pianist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Pianist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Percussionist>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Symphony>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Symphony>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Flutist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#sections>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/wordnet/1.6/Violist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Violist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musical_Event>(GSAT_U1):-<http://www.kanzaki.com/ns/music#premiere>(GSAT_U2,GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musical_Event>(GSAT_U1):-<http://www.kanzaki.com/ns/music#performer>(GSAT_U1,GSAT_U2).
+<http://www.kanzaki.com/ns/music#MusicalGroup>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Ensemble>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Flutist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Flutist>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Chamber_Music>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Chamber_Music>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Timpanist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Timpanist>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Movement>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Movement>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#CelestaPlayer>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Theatrical_Performance>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Opera_Performance>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Singer>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Tenor>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Symphonic_Poem>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Symphonic_Poem>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Bassoonist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Bassoonist>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Choreographer>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Choreographer>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Orchestra>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Orchestra>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Soprano>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Soprano>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#ContrafagottoPlayer>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Musical_Instrument>(GSAT_U1):-<http://www.kanzaki.com/ns/music#plays>(GSAT_U2,GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Trumpeter>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#MusicalGroup>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Orchestra>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Harpist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#MusicalGroup>(GSAT_U1):-<http://www.kanzaki.com/ns/music#StringQuartetEnsemble>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#published>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Artist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Timpanist>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Group>(GSAT_U1):-<http://www.kanzaki.com/ns/music#MusicalGroup>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Recital-2>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Recital>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://www.kanzaki.com/ns/music#plays>(GSAT_U1,GSAT_U2).
+rdf:Seq(GSAT_U1):-<http://www.kanzaki.com/ns/music#sections>(GSAT_U2,GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#String_Quartette>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Bass-6>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Bass>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Orchestral_Work>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/String_Quartet>(GSAT_U1):-<http://www.kanzaki.com/ns/music#StringQuartetEnsemble>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Cellist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#TubaPlayer>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Opera>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Opera>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Artist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Director>(GSAT_U1).
+rdfs:Resource(GSAT_U1):-<http://www.kanzaki.com/ns/music#published>(GSAT_U2,GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Concert>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Concert>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Director>(GSAT_U1):-<http://www.kanzaki.com/ns/music#MusicDirector>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Orchestral_Work>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Symphonic_Poem>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#composer>(GSAT_U1,GSAT_U2).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Pianist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Singer>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Bass>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#PiccoloPlayer>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Chorus-2>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Chorus>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Alto>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Alto>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Opera>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Religious_Music>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Religious_Music>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Orchestral_Work>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Overture>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Overture>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Overture>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Percussionist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Percussionist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Bassoonist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#ContrafagottoPlayer>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Choral_Music>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musical_Unit>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Movement>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musical_Event>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Concert>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Baritone>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Baritone>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Artist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Composer>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Tenor>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Tenor>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musical_Unit>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musical_Event>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Opera_Performance>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Clarinettist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Clarinettist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Bassoonist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Musical_Event>(GSAT_U1):-<http://www.kanzaki.com/ns/music#program>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/wordnet/1.6/Oboist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Oboist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oboist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#EnglishHornPlayer>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Trumpeter>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Trumpeter>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Singer>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Alto>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Suite>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Cellist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Cellist>(GSAT_U1).
+<http://www.kanzaki.com/ns/music#Player>(GSAT_U1):-<http://www.kanzaki.com/ns/music#EnglishHornPlayer>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Event>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Musical_Event>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Hornist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Hornist>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Harpist>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Harpist>(GSAT_U1).
+<http://xmlns.com/foaf/0.1/Agent>(GSAT_U1):-<http://www.kanzaki.com/ns/music#performs>(GSAT_U1,GSAT_U2).
+<http://www.kanzaki.com/ns/music#Oeuvre>(GSAT_U1):-<http://www.kanzaki.com/ns/music#premiere>(GSAT_U1,GSAT_U2).
+<http://xmlns.com/wordnet/1.6/Player-2>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Player>(GSAT_U1).
+<http://xmlns.com/wordnet/1.6/Concerto>(GSAT_U1):-<http://www.kanzaki.com/ns/music#Concerto>(GSAT_U1).
+====================
