@@ -1,0 +1,615 @@
+====== RULE SET ======
+[_R0]  ! :- <http://www.w3.org/2002/07/owl#Nothing>(X).
+[_R1] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3).
+[_R2] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/RO_0002202>(X0, X3).
+[_R3] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000056>(X0, X3).
+[_R4] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/RO_0002150>(X0, X3).
+[_R5] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X1) :- <http://purl.obolibrary.org/obo/RO_0002180>(X0, X1).
+[_R6] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-189>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-184>(X0).
+[_R7] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-109>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-122>(X0).
+[_R8] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/ENVO_0002036>(X0).
+[_R9] <http://purl.obolibrary.org/obo/GO_0044456>(X0) :- <http://purl.obolibrary.org/obo/GO_0042734>(X0).
+[_R10] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-169>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-174>(X0).
+[_R11] <http://purl.obolibrary.org/obo/CARO_0001000>(X0) :- <http://purl.obolibrary.org/obo/CARO_0001001>(X0).
+[_R12] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000462>(X0).
+[_R13] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-37>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-32>(X0).
+[_R14] <http://purl.obolibrary.org/obo/CARO_0000003>(X0) :- <http://purl.obolibrary.org/obo/CL_0000000>(X0).
+[_R15] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/BSPO_0000071>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/BSPO_0000071>(X3).
+[_R16] <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000467>(X0) :- <http://purl.obolibrary.org/obo/PATO_0000467>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3).
+[_R17] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000117>(X0).
+[_R18] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001421>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001421>(X3).
+[_R19] <http://purl.obolibrary.org/obo/GO_0044464>(X0) :- <http://purl.obolibrary.org/obo/GO_0016020>(X0).
+[_R20] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-128>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-115>(X0).
+[_R21] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001428>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001428>(X3).
+[_R22] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001495>(X0).
+[_R23] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-184>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-189>(X0).
+[_R24] <http://purl.obolibrary.org/obo/BFO_0000001>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000003>(X0).
+[_R25] <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001495>(X0) :- <http://purl.obolibrary.org/obo/PATO_0001495>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3).
+[_R26] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-179>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-174>(X0).
+[_R27] <http://purl.obolibrary.org/obo/CARO_0000003>(X0) :- <http://purl.obolibrary.org/obo/CARO_0000014>(X0).
+[_R28] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-32>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-37>(X0).
+[_R29] <http://purl.obolibrary.org/obo/BFO_0000002>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000004>(X0).
+[_R30] <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000070>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0000070>(X3).
+[_R31] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000223>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000223>(X3).
+[_R32] <http://purl.obolibrary.org/obo/GO_0044456>(X0) :- <http://purl.obolibrary.org/obo/GO_0045211>(X0).
+[_R33] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000467>(X0).
+[_R34] <http://purl.obolibrary.org/obo/CARO_0000014>(X0) :- <http://purl.obolibrary.org/obo/GO_0044464>(X0).
+[_R35] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001238>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001238>(X3).
+[_R36] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-75>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-70>(X0).
+[_R37] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0002254>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0002254>(X3).
+[_R38] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000052>(X0).
+[_R39] <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001855>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0001855>(X3).
+[_R40] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-179>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-184>(X0).
+[_R41] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001855>(X0).
+[_R42] <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000462>(X0) :- <http://purl.obolibrary.org/obo/PATO_0000462>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3).
+[_R43] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001602>(X0).
+[_R44] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-174>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-179>(X0).
+[_R45] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/BSPO_0000084>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/BSPO_0000084>(X3).
+[_R46] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000107>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000107>(X3).
+[_R47] <http://purl.obolibrary.org/obo/CARO_0000014>(X0) :- <http://purl.obolibrary.org/obo/GO_0045202>(X0).
+[_R48] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-169>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-164>(X0).
+[_R49] <http://purl.obolibrary.org/obo/CARO_0000006>(X0) :- <http://purl.obolibrary.org/obo/CARO_0000003>(X0).
+[_R50] <http://purl.obolibrary.org/obo/GO_0016020>(X0) :- <http://purl.obolibrary.org/obo/GO_0045211>(X0).
+[_R51] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000040>(X0).
+[_R52] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000277>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000277>(X3).
+[_R53] <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001854>(X0) :- <http://purl.obolibrary.org/obo/PATO_0001854>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3).
+[_R54] <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001602>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0001602>(X3).
+[_R55] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001418>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001418>(X3).
+[_R56] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-122>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-109>(X0).
+[_R57] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000519>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000519>(X3).
+[_R58] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-184>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-179>(X0).
+[_R59] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-115>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-128>(X0).
+[_R60] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001834>(X0) :- <http://purl.obolibrary.org/obo/TAO_0001834>(X3), <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3).
+[_R61] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000567>(X0) :- <http://purl.obolibrary.org/obo/TAO_0000567>(X3), <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3).
+[_R62] <http://purl.obolibrary.org/obo/GO_0016020>(X0) :- <http://purl.obolibrary.org/obo/GO_0042734>(X0).
+[_R63] <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000052>(X0) :- <http://purl.obolibrary.org/obo/PATO_0000052>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3).
+[_R64] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001189>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001189>(X3).
+[_R65] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-64>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-59>(X0).
+[_R66] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-164>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-169>(X0).
+[_R67] <http://purl.obolibrary.org/obo/CARO_0000003>(X0) :- <http://purl.obolibrary.org/obo/CARO_0001000>(X0).
+[_R68] <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000117>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0000117>(X3).
+[_R69] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001854>(X0).
+[_R70] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-27>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-41>(X0).
+[_R71] <http://purl.obolibrary.org/obo/GO_0043005>(X0) :- <http://purl.obolibrary.org/obo/GO_0030424>(X0).
+[_R72] <http://purl.obolibrary.org/obo/BFO_0000003>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000007>(X0).
+[_R73] <http://purl.obolibrary.org/obo/CL_0000000>(X0) :- <http://purl.obolibrary.org/obo/CL_0000540>(X0).
+[_R74] <http://purl.obolibrary.org/obo/BFO_0000040>(X0) :- <http://purl.obolibrary.org/obo/CARO_0000006>(X0).
+[_R75] <http://purl.obolibrary.org/obo/GO_0043005>(X0) :- <http://purl.obolibrary.org/obo/GO_0030425>(X0).
+[_R76] <http://purl.obolibrary.org/obo/GO_0044464>(X0) :- <http://purl.obolibrary.org/obo/GO_0042995>(X0).
+[_R77] <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001094>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001094>(X3).
+[_R78] <http://purl.obolibrary.org/obo/GO_0042995>(X0) :- <http://purl.obolibrary.org/obo/GO_0043005>(X0).
+[_R79] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-41>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-27>(X0).
+[_R80] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-174>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-169>(X0).
+[_R81] <http://purl.obolibrary.org/obo/CARO_0000014>(X0) :- <http://purl.obolibrary.org/obo/GO_0044456>(X0).
+[_R82] <http://purl.obolibrary.org/obo/BFO_0000001>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000002>(X0).
+[_R83] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-59>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-64>(X0).
+[_R84] <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-70>(X0) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-75>(X0).
+[_R85] <http://purl.obolibrary.org/obo/CARO_0000003>(X0) :- <http://purl.obolibrary.org/obo/CARO_0010000>(X0).
+[_R86] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000070>(X0).
+[_R87] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000052>(X3, X0).
+[_R88] <http://purl.obolibrary.org/obo/BFO_0000003>(X0) :- <http://purl.obolibrary.org/obo/BFO_0000056>(X3, X0).
+[_R89] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/RO_0002150>(X3, X0).
+[_R90] <http://purl.obolibrary.org/obo/BFO_0000004>(X0) :- <http://purl.obolibrary.org/obo/RO_0002202>(X3, X0).
+[_R91] <http://purl.obolibrary.org/obo/BFO_0000053>(X1, X0) :- <http://purl.obolibrary.org/obo/BFO_0000052>(X0, X1).
+[_R92] <http://purl.obolibrary.org/obo/BFO_0000052>(X0, X1) :- <http://purl.obolibrary.org/obo/BFO_0000053>(X1, X0).
+[_R93] <http://purl.obolibrary.org/obo/BFO_0000051>(X1, X0) :- <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X1).
+[_R94] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X1) :- <http://purl.obolibrary.org/obo/BFO_0000051>(X1, X0).
+[_R95] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001834>(X3), <http://purl.obolibrary.org/obo/BFO_0000050>(X3, X4), <http://purl.obolibrary.org/obo/BSPO_0000071>(X4), <http://purl.obolibrary.org/obo/BFO_0000050>(X4, X5), <http://purl.obolibrary.org/obo/TAO_0000223>(X5), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X6), <http://purl.obolibrary.org/obo/PATO_0000462>(X6) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-81>(X0).
+[_R96] <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0000070>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000070>(X0).
+[_R97] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001189>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000070>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-179>(X0).
+[_R98] <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0001855>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001855>(X0).
+[_R99] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001189>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000070>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-169>(X0).
+[_R100] <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0000462>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000462>(X0).
+[_R101] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001094>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001094>(X0).
+[_R102] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001189>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000070>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-189>(X0).
+[_R103] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000277>(X3), <http://purl.obolibrary.org/obo/OBO_REL_connected_to>(X3, X4), <http://purl.obolibrary.org/obo/TAO_0002254>(X4), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X5), <http://purl.obolibrary.org/obo/PATO_0000467>(X5) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-141>(X0).
+[_R104] <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0001602>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001602>(X0).
+[_R105] <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0000052>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000052>(X0).
+[_R106] <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0001854>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001854>(X0).
+[_R107] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001418>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000070>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-59>(X0).
+[_R108] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000277>(X3), <http://purl.obolibrary.org/obo/OBO_REL_connected_to>(X3, X4), <http://purl.obolibrary.org/obo/BSPO_0000084>(X4), <http://purl.obolibrary.org/obo/BFO_0000050>(X4, X5), <http://purl.obolibrary.org/obo/TAO_0001094>(X5), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X6), <http://purl.obolibrary.org/obo/PATO_0000462>(X6) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-148>(X0).
+[_R109] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001428>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0001854>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-52>(X0).
+[_R110] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001189>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000070>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-174>(X0).
+[_R111] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000567>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000052>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-41>(X0).
+[_R112] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001421>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000070>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-70>(X0).
+[_R113] <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0000467>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000467>(X0).
+[_R114] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001834>(X3), <http://purl.obolibrary.org/obo/BFO_0000050>(X3, X4), <http://purl.obolibrary.org/obo/TAO_0001238>(X4), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X5), <http://purl.obolibrary.org/obo/PATO_0000462>(X5) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-96>(X0).
+[_R115] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001428>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001428>(X0).
+[_R116] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001834>(X3), <http://purl.obolibrary.org/obo/BFO_0000050>(X3, X4), <http://purl.obolibrary.org/obo/TAO_0000107>(X4), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X5), <http://purl.obolibrary.org/obo/PATO_0000462>(X5) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-109>(X0).
+[_R117] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000567>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000052>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-27>(X0).
+[_R118] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/BSPO_0000071>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/BSPO_0000071>(X0).
+[_R119] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001421>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001421>(X0).
+[_R120] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001418>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000070>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-64>(X0).
+[_R121] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001834>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001834>(X0).
+[_R122] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000223>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000223>(X0).
+[_R123] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000519>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000117>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-16>(X0).
+[_R124] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000277>(X3), <http://purl.obolibrary.org/obo/OBO_REL_connected_to>(X3, X4), <http://purl.obolibrary.org/obo/TAO_0002254>(X4), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X5), <http://purl.obolibrary.org/obo/PATO_0000462>(X5) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-135>(X0).
+[_R125] <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0001495>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001495>(X0).
+[_R126] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001834>(X3), <http://purl.obolibrary.org/obo/BFO_0000050>(X3, X4), <http://purl.obolibrary.org/obo/BSPO_0000071>(X4), <http://purl.obolibrary.org/obo/BFO_0000050>(X4, X5), <http://purl.obolibrary.org/obo/TAO_0000223>(X5), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X6), <http://purl.obolibrary.org/obo/PATO_0000467>(X6) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-88>(X0).
+[_R127] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001834>(X3), <http://purl.obolibrary.org/obo/BFO_0000050>(X3, X4), <http://purl.obolibrary.org/obo/TAO_0000107>(X4), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X5), <http://purl.obolibrary.org/obo/PATO_0000467>(X5) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-128>(X0).
+[_R128] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001834>(X3), <http://purl.obolibrary.org/obo/BFO_0000050>(X3, X4), <http://purl.obolibrary.org/obo/TAO_0000107>(X4), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X5), <http://purl.obolibrary.org/obo/PATO_0000462>(X5) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-122>(X0).
+[_R129] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001421>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000070>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-75>(X0).
+[_R130] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001418>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001418>(X0).
+[_R131] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000277>(X3), <http://purl.obolibrary.org/obo/OBO_REL_connected_to>(X3, X4), <http://purl.obolibrary.org/obo/BSPO_0000084>(X4), <http://purl.obolibrary.org/obo/BFO_0000050>(X4, X5), <http://purl.obolibrary.org/obo/TAO_0001094>(X5), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X6), <http://purl.obolibrary.org/obo/PATO_0000467>(X6) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-155>(X0).
+[_R132] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001189>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000070>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-164>(X0).
+[_R133] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/BSPO_0000084>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/BSPO_0000084>(X0).
+[_R134] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000567>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0001495>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-37>(X0).
+[_R135] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0002254>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0002254>(X0).
+[_R136] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001834>(X3), <http://purl.obolibrary.org/obo/BFO_0000050>(X3, X4), <http://purl.obolibrary.org/obo/TAO_0001238>(X4), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X5), <http://purl.obolibrary.org/obo/PATO_0000467>(X5) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-102>(X0).
+[_R137] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001238>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001238>(X0).
+[_R138] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001428>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0001855>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-47>(X0).
+[_R139] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000277>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000277>(X0).
+[_R140] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000107>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000107>(X0).
+[_R141] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000519>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0001602>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-21>(X0).
+[_R142] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001189>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001189>(X0).
+[_R143] <http://purl.obolibrary.org/obo/BFO_0000053>(X0, X3), <http://purl.obolibrary.org/obo/PATO_0000117>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000117>(X0).
+[_R144] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001189>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0000070>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-184>(X0).
+[_R145] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000519>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000519>(X0).
+[_R146] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000567>(X3), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X4), <http://purl.obolibrary.org/obo/PATO_0001495>(X4) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-32>(X0).
+[_R147] <http://purl.obolibrary.org/obo/BFO_0000051>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0001834>(X3), <http://purl.obolibrary.org/obo/BFO_0000050>(X3, X4), <http://purl.obolibrary.org/obo/TAO_0000107>(X4), <http://purl.obolibrary.org/obo/BFO_0000053>(X3, X5), <http://purl.obolibrary.org/obo/PATO_0000467>(X5) :- <http://kb.phenoscape.org/uuid/a6bcc5f4-2dfd-4d9d-99b5-ee19d96cfe35-115>(X0).
+[_R148] <http://purl.obolibrary.org/obo/BFO_0000050>(X0, X3), <http://purl.obolibrary.org/obo/TAO_0000567>(X3) :- <http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000567>(X0).
+
+======== GRD =========
+_R1 --> _R29
+_R2 --> _R29
+_R3 --> _R29
+_R4 --> _R29
+_R5 --> _R94
+_R6 --> _R102
+_R7 --> _R116
+_R8 --> _R29
+_R9 --> _R81
+_R10 --> _R66
+_R10 --> _R99
+_R11 --> _R67
+_R12 --> _R29
+_R13 --> _R134
+_R14 --> _R49
+_R15 --> _R118
+_R16 --> _R33
+_R16 --> _R113
+_R17 --> _R29
+_R18 --> _R119
+_R19 --> _R34
+_R20 --> _R127
+_R21 --> _R115
+_R22 --> _R29
+_R23 --> _R40
+_R23 --> _R144
+_R25 --> _R22
+_R25 --> _R125
+_R26 --> _R58
+_R26 --> _R97
+_R27 --> _R49
+_R28 --> _R146
+_R29 --> _R82
+_R30 --> _R86
+_R30 --> _R96
+_R31 --> _R122
+_R32 --> _R81
+_R33 --> _R29
+_R34 --> _R27
+_R35 --> _R137
+_R36 --> _R129
+_R37 --> _R135
+_R38 --> _R29
+_R39 --> _R41
+_R39 --> _R98
+_R40 --> _R44
+_R40 --> _R97
+_R41 --> _R29
+_R42 --> _R12
+_R42 --> _R100
+_R43 --> _R29
+_R44 --> _R10
+_R44 --> _R110
+_R45 --> _R133
+_R46 --> _R140
+_R47 --> _R27
+_R48 --> _R80
+_R48 --> _R99
+_R49 --> _R74
+_R50 --> _R19
+_R51 --> _R29
+_R52 --> _R139
+_R53 --> _R69
+_R53 --> _R106
+_R54 --> _R43
+_R54 --> _R104
+_R55 --> _R130
+_R56 --> _R128
+_R57 --> _R145
+_R58 --> _R6
+_R58 --> _R144
+_R59 --> _R147
+_R60 --> _R121
+_R61 --> _R148
+_R62 --> _R19
+_R63 --> _R38
+_R63 --> _R105
+_R64 --> _R142
+_R65 --> _R120
+_R66 --> _R132
+_R67 --> _R49
+_R68 --> _R17
+_R68 --> _R143
+_R69 --> _R29
+_R70 --> _R117
+_R71 --> _R78
+_R72 --> _R24
+_R73 --> _R14
+_R74 --> _R51
+_R75 --> _R78
+_R76 --> _R34
+_R77 --> _R101
+_R78 --> _R76
+_R79 --> _R111
+_R80 --> _R26
+_R80 --> _R110
+_R81 --> _R27
+_R83 --> _R107
+_R84 --> _R112
+_R85 --> _R49
+_R86 --> _R29
+_R87 --> _R29
+_R88 --> _R24
+_R89 --> _R29
+_R90 --> _R29
+_R91 --> _R1
+_R91 --> _R16
+_R91 --> _R25
+_R91 --> _R30
+_R91 --> _R39
+_R91 --> _R42
+_R91 --> _R53
+_R91 --> _R54
+_R91 --> _R63
+_R91 --> _R68
+_R92 --> _R87
+_R94 --> _R15
+_R94 --> _R18
+_R94 --> _R21
+_R94 --> _R31
+_R94 --> _R35
+_R94 --> _R37
+_R94 --> _R45
+_R94 --> _R46
+_R94 --> _R52
+_R94 --> _R55
+_R94 --> _R57
+_R94 --> _R60
+_R94 --> _R61
+_R94 --> _R64
+_R94 --> _R77
+_R95 --> _R94
+_R95 --> _R15
+_R95 --> _R31
+_R95 --> _R93
+_R95 --> _R1
+_R95 --> _R42
+_R95 --> _R92
+_R96 --> _R1
+_R96 --> _R92
+_R97 --> _R94
+_R97 --> _R1
+_R97 --> _R30
+_R97 --> _R92
+_R98 --> _R1
+_R98 --> _R92
+_R99 --> _R94
+_R99 --> _R1
+_R99 --> _R30
+_R99 --> _R92
+_R100 --> _R1
+_R100 --> _R92
+_R101 --> _R93
+_R102 --> _R94
+_R102 --> _R1
+_R102 --> _R30
+_R102 --> _R92
+_R103 --> _R94
+_R103 --> _R1
+_R103 --> _R16
+_R103 --> _R92
+_R104 --> _R1
+_R104 --> _R92
+_R105 --> _R1
+_R105 --> _R92
+_R106 --> _R1
+_R106 --> _R92
+_R107 --> _R94
+_R107 --> _R1
+_R107 --> _R30
+_R107 --> _R92
+_R108 --> _R94
+_R108 --> _R77
+_R108 --> _R93
+_R108 --> _R1
+_R108 --> _R42
+_R108 --> _R92
+_R109 --> _R94
+_R109 --> _R1
+_R109 --> _R53
+_R109 --> _R92
+_R110 --> _R94
+_R110 --> _R1
+_R110 --> _R30
+_R110 --> _R92
+_R111 --> _R94
+_R111 --> _R1
+_R111 --> _R63
+_R111 --> _R92
+_R112 --> _R94
+_R112 --> _R1
+_R112 --> _R30
+_R112 --> _R92
+_R113 --> _R1
+_R113 --> _R92
+_R114 --> _R94
+_R114 --> _R35
+_R114 --> _R93
+_R114 --> _R1
+_R114 --> _R42
+_R114 --> _R92
+_R115 --> _R93
+_R116 --> _R94
+_R116 --> _R46
+_R116 --> _R93
+_R116 --> _R1
+_R116 --> _R42
+_R116 --> _R92
+_R117 --> _R94
+_R117 --> _R1
+_R117 --> _R63
+_R117 --> _R92
+_R118 --> _R93
+_R119 --> _R93
+_R120 --> _R94
+_R120 --> _R1
+_R120 --> _R30
+_R120 --> _R92
+_R121 --> _R93
+_R122 --> _R93
+_R123 --> _R94
+_R123 --> _R1
+_R123 --> _R68
+_R123 --> _R92
+_R124 --> _R94
+_R124 --> _R1
+_R124 --> _R42
+_R124 --> _R92
+_R125 --> _R1
+_R125 --> _R92
+_R126 --> _R94
+_R126 --> _R15
+_R126 --> _R31
+_R126 --> _R93
+_R126 --> _R1
+_R126 --> _R16
+_R126 --> _R92
+_R127 --> _R94
+_R127 --> _R46
+_R127 --> _R93
+_R127 --> _R1
+_R127 --> _R16
+_R127 --> _R92
+_R128 --> _R94
+_R128 --> _R46
+_R128 --> _R93
+_R128 --> _R1
+_R128 --> _R42
+_R128 --> _R92
+_R129 --> _R94
+_R129 --> _R1
+_R129 --> _R30
+_R129 --> _R92
+_R130 --> _R93
+_R131 --> _R94
+_R131 --> _R77
+_R131 --> _R93
+_R131 --> _R1
+_R131 --> _R16
+_R131 --> _R92
+_R132 --> _R94
+_R132 --> _R1
+_R132 --> _R30
+_R132 --> _R92
+_R133 --> _R93
+_R134 --> _R94
+_R134 --> _R1
+_R134 --> _R25
+_R134 --> _R92
+_R135 --> _R93
+_R136 --> _R94
+_R136 --> _R35
+_R136 --> _R93
+_R136 --> _R1
+_R136 --> _R16
+_R136 --> _R92
+_R137 --> _R93
+_R138 --> _R94
+_R138 --> _R1
+_R138 --> _R39
+_R138 --> _R92
+_R139 --> _R93
+_R140 --> _R93
+_R141 --> _R94
+_R141 --> _R1
+_R141 --> _R54
+_R141 --> _R92
+_R142 --> _R93
+_R143 --> _R1
+_R143 --> _R92
+_R144 --> _R94
+_R144 --> _R1
+_R144 --> _R30
+_R144 --> _R92
+_R145 --> _R93
+_R146 --> _R94
+_R146 --> _R1
+_R146 --> _R25
+_R146 --> _R92
+_R147 --> _R94
+_R147 --> _R46
+_R147 --> _R93
+_R147 --> _R1
+_R147 --> _R16
+_R147 --> _R92
+_R148 --> _R93
+
+
+== RULE PROPERTIES ===
++------+
+|  X   | _R0  
+|  X   | _R1  
+|  X   | _R2  
+|  X   | _R3  
+|  X   | _R4  
+|  X   | _R5  
+|  X   | _R6  
+|  X   | _R7  
+|  X   | _R8  
+|  X   | _R9  
+|  X   | _R10 
+|  X   | _R11 
+|  X   | _R12 
+|  X   | _R13 
+|  X   | _R14 
+|  X   | _R15 
+|  X   | _R16 
+|  X   | _R17 
+|  X   | _R18 
+|  X   | _R19 
+|  X   | _R20 
+|  X   | _R21 
+|  X   | _R22 
+|  X   | _R23 
+|  X   | _R24 
+|  X   | _R25 
+|  X   | _R26 
+|  X   | _R27 
+|  X   | _R28 
+|  X   | _R29 
+|  X   | _R30 
+|  X   | _R31 
+|  X   | _R32 
+|  X   | _R33 
+|  X   | _R34 
+|  X   | _R35 
+|  X   | _R36 
+|  X   | _R37 
+|  X   | _R38 
+|  X   | _R39 
+|  X   | _R40 
+|  X   | _R41 
+|  X   | _R42 
+|  X   | _R43 
+|  X   | _R44 
+|  X   | _R45 
+|  X   | _R46 
+|  X   | _R47 
+|  X   | _R48 
+|  X   | _R49 
+|  X   | _R50 
+|  X   | _R51 
+|  X   | _R52 
+|  X   | _R53 
+|  X   | _R54 
+|  X   | _R55 
+|  X   | _R56 
+|  X   | _R57 
+|  X   | _R58 
+|  X   | _R59 
+|  X   | _R60 
+|  X   | _R61 
+|  X   | _R62 
+|  X   | _R63 
+|  X   | _R64 
+|  X   | _R65 
+|  X   | _R66 
+|  X   | _R67 
+|  X   | _R68 
+|  X   | _R69 
+|  X   | _R70 
+|  X   | _R71 
+|  X   | _R72 
+|  X   | _R73 
+|  X   | _R74 
+|  X   | _R75 
+|  X   | _R76 
+|  X   | _R77 
+|  X   | _R78 
+|  X   | _R79 
+|  X   | _R80 
+|  X   | _R81 
+|  X   | _R82 
+|  X   | _R83 
+|  X   | _R84 
+|  X   | _R85 
+|  X   | _R86 
+|  X   | _R87 
+|  X   | _R88 
+|  X   | _R89 
+|  X   | _R90 
+|  X   | _R91 
+|  X   | _R92 
+|  X   | _R93 
+|  X   | _R94 
+|  -   | _R95 
+|  -   | _R96 
+|  -   | _R97 
+|  -   | _R98 
+|  -   | _R99 
+|  -   |_R100 
+|  -   |_R101 
+|  -   |_R102 
+|  -   |_R103 
+|  -   |_R104 
+|  -   |_R105 
+|  -   |_R106 
+|  -   |_R107 
+|  -   |_R108 
+|  -   |_R109 
+|  -   |_R110 
+|  -   |_R111 
+|  -   |_R112 
+|  -   |_R113 
+|  -   |_R114 
+|  -   |_R115 
+|  -   |_R116 
+|  -   |_R117 
+|  -   |_R118 
+|  -   |_R119 
+|  -   |_R120 
+|  -   |_R121 
+|  -   |_R122 
+|  -   |_R123 
+|  -   |_R124 
+|  -   |_R125 
+|  -   |_R126 
+|  -   |_R127 
+|  -   |_R128 
+|  -   |_R129 
+|  -   |_R130 
+|  -   |_R131 
+|  -   |_R132 
+|  -   |_R133 
+|  -   |_R134 
+|  -   |_R135 
+|  -   |_R136 
+|  -   |_R137 
+|  -   |_R138 
+|  -   |_R139 
+|  -   |_R140 
+|  -   |_R141 
+|  -   |_R142 
+|  -   |_R143 
+|  -   |_R144 
+|  -   |_R145 
+|  -   |_R146 
+|  -   |_R147 
+|  -   |_R148 
++------+
+|  rr  |
++------+
+
