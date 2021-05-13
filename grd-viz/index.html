@@ -125,7 +125,7 @@
               let vertices = edge.split('-->')
               if (vertices.length > 1) {
                 let source = vertices[0].trim().substring(1, vertices[0].length)
-                let target = vertices[1].trim().substring(1, vertices[0].length)
+                let target = vertices[1].trim().substring(1, vertices[1].length)
                 addNode(source, nodes, nodesSet)
                 addNode(target, nodes, nodesSet)
                 addEdge(source, target, edges)
@@ -221,7 +221,7 @@
             let elts = (!isShiftHold) ? node.successors() : node.predecessors()
 
             elts.removeClass(GREY_CLASS)
-            document.getElementById('highlighted-number').innerText = elts.size()
+            document.getElementById('highlighted-number').innerText = elts.nodes().size()
             node.removeClass(GREY_CLASS)
 
           })
