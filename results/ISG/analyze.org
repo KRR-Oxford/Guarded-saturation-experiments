@@ -6,9 +6,7 @@
 
 In the following, we explore the statistics outputed by [[file:2021-04-26-14-37-10g-v0.5.1/][the experiments on GSat]] and on its [[file:2021-04-27-11-42-10g-v0.5.1][Skolemized version]]. The saturation times are in miliseconds in the columns ~GSAT_TIME~ and ~SK_TIME~ respectively. The columns ~NFTGD_NB~ and ~FTGD_NB~ respectively contain the number of non full and full TGDs in input. Each row contain the values of the execution on the ontology whose name is in column ~NAME~.
 
-In the following, we remove the row, where:
-- both algorithm executions reach the timeout
-- and executions on the ontologies, which contains at least one non full TGD and one full TGD
+In the following, we remove the row, where executions on the ontologies, which contains at least one non full TGD and one full TGD
 
 The number of remaining ontologies is:
 #+BEGIN_src ipython :session mysession :results output example
