@@ -1,0 +1,401 @@
+#+TITLE: Comparison of GSat, the Skolemized version and KAON2
+
+#+OPTIONS: toc:nil 
+#+PROPERTY: header-args :eval never-export
+#+PROPERTY: header-args:ipython :exports both
+
+* Introduction 
+In the following, we explore the statistics outputed by [[file:2021-05-13-22-41-10g-v0.5.1][the experiments on GSat]], on its [[file:2021-05-13-22-44-10g-v0.5.1][Skolemized version]] and on [[file:2021-05-11-11-50-10g-0.5.1-600-kaon2][KAON2]]. The saturation times are in miliseconds in the columns ~GSAT_TIME~, ~SK_TIME~ and ~KAON2_TIME~ respectively. The columns ~NFTGD_NB~ and ~FTGD_NB~ respectively contain the number of non full and full TGDs in input. Each row contain the values of the execution on the ontology whose name is in column ~NAME~.
+
+In the following, we remove the row, where executions on the ontologies, which contains at least one non full TGD and one full TGD.
+
+The number of remaining ontologies is:
+#+BEGIN_src ipython :session mysession2 :results output example
+  import pandas as pd
+  from tabulate import tabulate
+
+  gsat_file='2021-05-12-14-29-10g-v0.5.1/stats.csv'
+  sksat_file='2021-05-13-22-44-10g-v0.5.1/stats.csv'
+  kaon2_file='2021-05-11-11-50-10g-0.5.1-600-kaon2/stats.csv'
+
+  df_gsat = pd.read_csv(gsat_file, index_col='NAME').rename(columns={'TIME':'GSAT_TIME'})
+  df_gsat = df_gsat[['NFTGD_NB', 'FTGD_NB', 'GSAT_TIME']]
+
+  df_sksat = pd.read_csv(sksat_file, index_col='NAME').rename(columns={'TIME':'SK_TIME'})
+  df_sksat = df_sksat['SK_TIME']
+
+  df_kaon2 = pd.read_csv(kaon2_file, index_col='NAME').rename(columns={'TIME':'KAON2_TIME'})
+  df_kaon2 = df_kaon2['KAON2_TIME']
+
+  df_interesting = pd.concat([df_gsat, df_sksat, df_kaon2], axis=1)
+
+  # selection of the execution where the input contains full and non full TDGs  
+  df_interesting = df_interesting[ (df_interesting['NFTGD_NB'] > 0) & (df_interesting['FTGD_NB'] > 0)  ]
+  df_interesting = df_interesting[ pd.notnull(df_interesting['SK_TIME']) ]
+  # selection of the case where at least one algorithm does not reach the timeout
+  df = df_interesting[ (df_interesting['GSAT_TIME'] != 'TIMEOUT') | (df_interesting['SK_TIME'] != 'TIMEOUT') ]
+
+  print(len(df.index))
+  #print(tabulate(df_interesting, headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+: 209
+
+* Timeout analysis
+The following table contains the rows where Gsat and the Skolemized executions reach the timeout sorted by the input size.
+#+BEGIN_src ipython :session mysession2 :results output raw
+    both_timeout = df_interesting[ (df_interesting['GSAT_TIME'] == 'TIMEOUT') & (df_interesting['SK_TIME'] == 'TIMEOUT') ]
+
+    both_timeout = both_timeout.sort_values(by="NFTGD_NB").sort_values(by="FTGD_NB")
+
+    print(tabulate(both_timeout, headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+| NAME | NFTGD_NB | FTGD_NB | GSAT_TIME | SK_TIME | KAON2_TIME |
+|------+----------+---------+-----------+---------+------------|
+|    5 |    16705 |    2107 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|    4 |    16705 |    2107 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|    3 |    16709 |    2159 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  174 |     1776 |    3626 | TIMEOUT   | TIMEOUT | 5622       |
+|   31 |     2096 |    3626 | TIMEOUT   | TIMEOUT | 5832       |
+|   30 |     2096 |    3626 | TIMEOUT   | TIMEOUT | 6087       |
+|   32 |     2096 |    4039 | TIMEOUT   | TIMEOUT | 8727       |
+|   29 |     1776 |    4039 | TIMEOUT   | TIMEOUT | 6630       |
+|   34 |    12339 |    9364 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   37 |    12323 |    9445 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   36 |    12329 |    9456 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   38 |    12339 |    9457 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   35 |    12339 |    9462 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   33 |    12339 |    9462 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  463 |     9433 |   10339 | TIMEOUT   | TIMEOUT | 515935     |
+|  477 |   156743 |   10606 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  462 |     9433 |   13435 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   26 |    23858 |   30697 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   27 |    23858 |   31647 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   28 |    23858 |   31647 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  426 |    24421 |   44891 | TIMEOUT   | TIMEOUT | 492927     |
+|  285 |    66179 |   46602 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  382 |     8378 |   47281 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  448 |    24847 |   49406 | TIMEOUT   | TIMEOUT | 549805     |
+|  378 |    21423 |   58205 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  395 |    21802 |   60146 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  383 |    13719 |   65847 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   44 |    14319 |   67400 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   41 |    14319 |   67437 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   47 |    14431 |   67545 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   46 |    15352 |   69253 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   48 |    14739 |   70578 | TIMEOUT   | TIMEOUT | 1933       |
+|   42 |    15417 |   71082 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  470 |    44414 |   75146 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  472 |    44414 |   75146 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  471 |    42734 |   78977 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  473 |    42734 |   78977 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  379 |    38615 |   90653 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  437 |    44247 |   90904 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   45 |    42430 |   98673 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   40 |    43622 |  100787 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  484 |    37999 |  101911 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  483 |    29022 |  114237 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   43 |    18612 |  115810 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+
+
+The following table contains the rows where Gsat executions reach the timeout and the Skolemized version ones are not, sorted by the input size.
+#+BEGIN_src ipython :session mysession :results output raw
+    gsat_timeout = df[ df['GSAT_TIME'] == 'TIMEOUT']
+
+    gsat_timeout = gsat_timeout.sort_values(by="NFTGD_NB").sort_values(by="FTGD_NB")
+
+    print(tabulate(gsat_timeout, headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+| NAME | NFTGD_NB | FTGD_NB | GSAT_TIME | SK_TIME | KAON2_TIME |
+|------+----------+---------+-----------+---------+------------|
+|  343 |        4 |      97 | TIMEOUT   |     166 |       1849 |
+|  319 |       13 |     243 | TIMEOUT   |     205 |        363 |
+|  344 |       13 |     243 | TIMEOUT   |     195 |       2088 |
+|  345 |       13 |     243 | TIMEOUT   |     207 |       1886 |
+|  479 |      323 |     566 | TIMEOUT   |    5257 |        973 |
+|  480 |      327 |     663 | TIMEOUT   |    5687 |       1226 |
+|  284 |       84 |    1222 | TIMEOUT   |    1189 |        599 |
+|  410 |      476 |    1338 | TIMEOUT   |   14214 |       2067 |
+|   14 |      139 |    1533 | TIMEOUT   |    1985 |        983 |
+|   24 |      139 |    1533 | TIMEOUT   |    2297 |        830 |
+|  350 |      942 |    3018 | TIMEOUT   |   67523 |       4271 |
+|  354 |     1501 |    4648 | TIMEOUT   |  247357 |      24894 |
+|   39 |     2437 |    4826 | TIMEOUT   |  592494 |       7741 |
+|  117 |     2437 |    4826 | TIMEOUT   |  591640 |       8108 |
+
+The following table contains the rows where the Skolemized version executions reach the timeout and Gsat ones are not, sorted by the input size.
+#+BEGIN_src ipython :session mysession :results output raw
+    sksat_timeout = df[ df['SK_TIME'] == 'TIMEOUT']
+
+    sksat_timeout = sksat_timeout.sort_values(by="NFTGD_NB").sort_values(by="FTGD_NB")
+    print(tabulate(sksat_timeout, headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+| NAME | NFTGD_NB | FTGD_NB | GSAT_TIME | SK_TIME | KAON2_TIME |
+|------+----------+---------+-----------+---------+------------|
+|  392 |      608 |    1213 |      7866 | TIMEOUT |       3138 |
+|  393 |      776 |    1552 |     10341 | TIMEOUT |      10940 |
+|  438 |     1512 |    3024 |     37171 | TIMEOUT |      24790 |
+|  419 |     1496 |    4468 |     43611 | TIMEOUT |      23023 |
+|  485 |     2593 |    5291 |     20474 | TIMEOUT |     511957 |
+|  380 |     3141 |    6000 |     19623 | TIMEOUT |    TIMEOUT |
+|  381 |     3216 |    6053 |     22793 | TIMEOUT |    TIMEOUT |
+|  436 |     2308 |   24014 |    201858 | TIMEOUT |     163017 |
+|  390 |     7029 |   26439 |    206602 | TIMEOUT |    TIMEOUT |
+|  398 |     7419 |   27696 |     62614 | TIMEOUT |     128474 |
+|  371 |     7464 |   27758 |     58096 | TIMEOUT |     139262 |
+|  400 |     7999 |   29907 |     68317 | TIMEOUT |     122053 |
+|  374 |     8270 |   30220 |    102998 | TIMEOUT |     166841 |
+|  394 |     9071 |   31193 |    121473 | TIMEOUT |    TIMEOUT |
+|  391 |    11279 |   40960 |    473290 | TIMEOUT |    TIMEOUT |
+|  387 |    12025 |   44320 |    227788 | TIMEOUT |    TIMEOUT |
+|  375 |    12632 |   45457 |    242489 | TIMEOUT |     443793 |
+
+The following table contains the rows where KAON2 executions reach the timeout of 10min, sorted by the input size.
+#+BEGIN_src ipython :session mysession :results output raw
+    kaon2_timeout = df_interesting[ df_interesting['KAON2_TIME'] == 'TIMEOUT']
+
+    kaon2_timeout = kaon2_timeout.sort_values(by="NFTGD_NB").sort_values(by="FTGD_NB")
+    print(tabulate(kaon2_timeout, headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+| NAME | NFTGD_NB | FTGD_NB | GSAT_TIME | SK_TIME | KAON2_TIME |
+|------+----------+---------+-----------+---------+------------|
+|    5 |    16705 |    2107 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|    4 |    16705 |    2107 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|    3 |    16709 |    2159 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  380 |     3141 |    6000 | 19623     | TIMEOUT | TIMEOUT    |
+|  381 |     3216 |    6053 | 22793     | TIMEOUT | TIMEOUT    |
+|   34 |    12339 |    9364 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   37 |    12323 |    9445 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   36 |    12329 |    9456 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   38 |    12339 |    9457 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   33 |    12339 |    9462 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   35 |    12339 |    9462 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  477 |   156743 |   10606 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  462 |     9433 |   13435 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  390 |     7029 |   26439 | 206602    | TIMEOUT | TIMEOUT    |
+|   26 |    23858 |   30697 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  394 |     9071 |   31193 | 121473    | TIMEOUT | TIMEOUT    |
+|   27 |    23858 |   31647 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   28 |    23858 |   31647 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  391 |    11279 |   40960 | 473290    | TIMEOUT | TIMEOUT    |
+|  387 |    12025 |   44320 | 227788    | TIMEOUT | TIMEOUT    |
+|  285 |    66179 |   46602 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  382 |     8378 |   47281 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  378 |    21423 |   58205 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  395 |    21802 |   60146 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  383 |    13719 |   65847 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   44 |    14319 |   67400 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   41 |    14319 |   67437 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   47 |    14431 |   67545 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   46 |    15352 |   69253 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   42 |    15417 |   71082 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  470 |    44414 |   75146 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  472 |    44414 |   75146 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  471 |    42734 |   78977 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  473 |    42734 |   78977 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  379 |    38615 |   90653 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  437 |    44247 |   90904 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   45 |    42430 |   98673 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   40 |    43622 |  100787 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  484 |    37999 |  101911 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|  483 |    29022 |  114237 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+|   43 |    18612 |  115810 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+
+* The rest
+All the statistics without timeout:
+#+BEGIN_src ipython :session mysession2 :results output raw
+  no_timeout = df_interesting[ (df_interesting['GSAT_TIME'] != 'TIMEOUT') & (df_interesting['SK_TIME'] != 'TIMEOUT') & (df_interesting['KAON2_TIME'] != 'TIMEOUT') ]
+  no_timeout = no_timeout.sort_values(by="NFTGD_NB").sort_values(by="FTGD_NB")
+  print(tabulate(no_timeout, headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+| NAME | NFTGD_NB | FTGD_NB | GSAT_TIME | SK_TIME | KAON2_TIME |
+|------+----------+---------+-----------+---------+------------|
+|  237 |        1 |       2 |       106 |      81 |        286 |
+|  220 |        2 |       3 |       117 |     107 |        290 |
+|  212 |        2 |       3 |       122 |      82 |        284 |
+|  213 |        2 |       3 |       130 |      81 |        263 |
+|  233 |        1 |       4 |       142 |     113 |        156 |
+|  230 |        2 |       5 |       105 |     102 |        272 |
+|  464 |      229 |       6 |       182 |     340 |        488 |
+|   58 |        3 |       7 |       110 |      88 |        270 |
+|  224 |        2 |       7 |       106 |      81 |        287 |
+|  267 |        4 |       7 |       130 |      88 |        281 |
+|  223 |        4 |       8 |       167 |     121 |        287 |
+|  217 |        1 |       8 |       125 |      82 |        277 |
+|  218 |        6 |       8 |       138 |     114 |        287 |
+|   69 |        1 |       8 |        86 |      80 |        297 |
+|  215 |        7 |      10 |       113 |     102 |        269 |
+|   57 |        3 |      11 |       160 |     100 |        269 |
+|   65 |        3 |      12 |       106 |      96 |        280 |
+|   71 |        1 |      14 |        95 |      89 |        285 |
+|  221 |        1 |      16 |       153 |     132 |        278 |
+|  242 |        5 |      16 |       115 |     119 |        279 |
+|  238 |        5 |      17 |       192 |     115 |        155 |
+|  235 |        6 |      18 |       131 |      92 |        291 |
+|  210 |        6 |      19 |       167 |     147 |        289 |
+|   66 |        1 |      20 |        95 |      92 |        282 |
+|  214 |       11 |      21 |       107 |     188 |        216 |
+|  236 |        6 |      22 |       125 |     100 |        283 |
+|  113 |       12 |      24 |       130 |     133 |        295 |
+|  209 |       18 |      27 |       135 |     140 |        221 |
+|  241 |        1 |      28 |       137 |     120 |        275 |
+|   79 |        2 |      29 |       138 |     106 |        298 |
+|  116 |        7 |      30 |       156 |     157 |        272 |
+|  114 |       12 |      31 |       271 |     266 |        279 |
+|   72 |        1 |      31 |       108 |     115 |        278 |
+|  164 |        3 |      31 |       117 |     119 |        287 |
+|   68 |        2 |      33 |       106 |     102 |        290 |
+|  341 |        2 |      33 |       107 |     102 |        301 |
+|  229 |        2 |      36 |       132 |     140 |        295 |
+|  316 |        1 |      42 |       150 |      94 |        287 |
+|  106 |        4 |      43 |       138 |     125 |        288 |
+|  404 |        2 |      45 |       187 |     106 |        289 |
+|   59 |        5 |      47 |       122 |     107 |        296 |
+|  405 |        4 |      49 |       129 |     188 |        290 |
+|  414 |       25 |      50 |       296 |     323 |        334 |
+|   49 |       15 |      51 |       224 |     221 |        322 |
+|  222 |        5 |      51 |       154 |     120 |        318 |
+|   50 |       15 |      51 |       274 |     239 |        302 |
+|  120 |       10 |      53 |       167 |     177 |        298 |
+|   63 |       12 |      61 |       169 |     112 |        293 |
+|  171 |       12 |      61 |       153 |     137 |        307 |
+|  333 |        5 |      66 |       169 |     104 |        299 |
+|  296 |       16 |      66 |       159 |     144 |        298 |
+|  176 |       30 |      70 |       276 |     197 |       1050 |
+|   62 |       11 |      72 |       146 |     121 |        291 |
+|  474 |       16 |      72 |       161 |     177 |        375 |
+|   60 |        9 |      72 |       118 |     147 |        313 |
+|   73 |        6 |      77 |       118 |     101 |        312 |
+|  475 |       22 |      83 |       205 |     203 |        329 |
+|  118 |       19 |      89 |       353 |     253 |        332 |
+|  406 |        2 |      92 |       166 |     108 |        306 |
+|  339 |        4 |      93 |       140 |     156 |        300 |
+|  366 |       40 |      96 |       341 |     191 |        336 |
+|  367 |       40 |      96 |       269 |     227 |        326 |
+|  407 |        4 |      97 |       150 |     114 |        316 |
+|  173 |      120 |      98 |       369 |    1231 |        364 |
+|  349 |        8 |      98 |       187 |     169 |        314 |
+|  347 |        8 |      98 |       167 |     141 |        313 |
+|  112 |       15 |     113 |       290 |     135 |        314 |
+|  170 |        9 |     120 |       244 |     155 |        330 |
+|   75 |        2 |     125 |       167 |     124 |        358 |
+|  465 |      282 |     132 |       446 |     429 |        461 |
+|  301 |        3 |     134 |       165 |     141 |        159 |
+|  290 |        7 |     136 |       204 |     172 |        331 |
+|  432 |      238 |     137 |       527 |     362 |        464 |
+|  433 |      242 |     137 |       544 |     356 |        409 |
+|   94 |       17 |     138 |       201 |     176 |        327 |
+|  320 |        9 |     146 |       198 |     187 |        314 |
+|  346 |        9 |     146 |       148 |     169 |       2178 |
+|  348 |       13 |     159 |       208 |     183 |        320 |
+|    6 |     1075 |     165 |       188 |    1756 |        896 |
+|   10 |       22 |     168 |       191 |     164 |        341 |
+|  279 |       26 |     168 |       234 |     175 |        339 |
+|  169 |       22 |     168 |       265 |     175 |        349 |
+|    9 |       22 |     168 |       156 |     169 |        327 |
+|    7 |       22 |     168 |       222 |     163 |        321 |
+|   11 |       22 |     168 |       156 |     161 |        400 |
+|    8 |       22 |     168 |       170 |     226 |        332 |
+|  431 |      359 |     178 |       490 |     413 |        416 |
+|  430 |      359 |     178 |       569 |     483 |        415 |
+|  359 |      515 |     181 |       318 |     593 |        457 |
+|  153 |       24 |     186 |       197 |     219 |        344 |
+|  172 |      108 |     190 |      2774 |     755 |        755 |
+|  389 |      100 |     200 |       557 |     848 |        477 |
+|  388 |      106 |     212 |       366 |    1251 |        708 |
+|   55 |       23 |     212 |       270 |     176 |        361 |
+|  338 |        9 |     228 |       175 |     170 |        352 |
+|  332 |        9 |     228 |       153 |     211 |        348 |
+|  336 |        9 |     228 |       224 |     163 |        354 |
+|  334 |        9 |     228 |       179 |     154 |        335 |
+|  340 |        9 |     228 |       194 |     165 |        520 |
+|  110 |      177 |     244 |       573 |     297 |        448 |
+|  151 |       48 |     263 |     15363 |     418 |        404 |
+|   82 |      200 |     263 |       615 |     446 |        508 |
+|  358 |      101 |     267 |       461 |     392 |        396 |
+|   12 |       13 |     277 |       208 |     189 |        380 |
+|  417 |      176 |     343 |       993 |    2732 |       1140 |
+|  281 |       13 |     345 |      1543 |     252 |        391 |
+|   15 |       13 |     345 |      2145 |     240 |        727 |
+|  454 |       69 |     347 |      1746 |    3565 |        389 |
+|  418 |      202 |     395 |      1759 |    4816 |       2042 |
+|   22 |       13 |     425 |      2329 |     317 |        360 |
+|   23 |       13 |     429 |      2215 |     268 |        373 |
+|  167 |       12 |     451 |       281 |     209 |       1211 |
+|  384 |      732 |     548 |      1291 |    4605 |        919 |
+|  385 |      829 |     573 |      2012 |    6746 |        810 |
+|  422 |      420 |     672 |      2869 |   15269 |       1754 |
+|   81 |       93 |     679 |       234 |     228 |        452 |
+|  423 |      619 |     714 |      1716 |     791 |        669 |
+|   78 |       10 |     715 |       196 |     233 |        203 |
+|  468 |        5 |     720 |       227 |     190 |        569 |
+|  427 |      261 |     729 |      3413 |    1797 |        330 |
+|  401 |      423 |     786 |      2194 |    6062 |       1566 |
+|  469 |       53 |     878 |       322 |     250 |        420 |
+|  282 |       66 |     883 |    184161 |     845 |        571 |
+|    2 |      432 |     941 |      2081 |    1374 |        795 |
+|  283 |       86 |     960 |    298111 |    1882 |        581 |
+|   25 |       68 |     987 |      1524 |     427 |        826 |
+|  399 |      512 |     991 |      2140 |    5378 |       2507 |
+|  377 |      570 |    1006 |      2869 |   10603 |       2225 |
+|   16 |       65 |    1055 |    222880 |     888 |        575 |
+|  372 |      557 |    1077 |      2341 |    5952 |       4837 |
+|   19 |       68 |    1078 |    256844 |    1680 |        602 |
+|   18 |       85 |    1129 |    344084 |    1746 |        506 |
+|  396 |      597 |    1153 |      2812 |   20937 |       3909 |
+|   17 |       65 |    1177 |    208119 |     883 |        976 |
+|   21 |      110 |    1190 |    381443 |    1583 |        521 |
+|  411 |      250 |    1199 |      1805 |     604 |        793 |
+|  445 |      120 |    1222 |       540 |     387 |        557 |
+|   13 |       76 |    1265 |    380254 |    1729 |        510 |
+|  421 |      716 |    1271 |      6302 |  277989 |       3442 |
+|  376 |      694 |    1286 |      3232 |   21266 |       6748 |
+|  373 |      668 |    1297 |      1767 |   13141 |       4171 |
+|   20 |       83 |    1310 |    377260 |    1889 |        739 |
+|  424 |      728 |    1463 |      4731 |   65512 |       1523 |
+|  457 |       80 |    1604 |       588 |     338 |        533 |
+|  458 |       80 |    1604 |       583 |     318 |        509 |
+|  360 |     1059 |    1616 |      1422 |    2076 |        650 |
+|  446 |      164 |    1659 |      1207 |    2600 |        706 |
+|  447 |      164 |    1659 |      1774 |    2571 |        918 |
+|  356 |     1719 |    1901 |      1238 |    2262 |       1210 |
+|  357 |     1794 |    1981 |      1460 |    2446 |        997 |
+|  449 |      207 |    2013 |      2263 |    3463 |       1013 |
+|  293 |       16 |    2083 |       188 |     292 |        277 |
+|  402 |     1627 |    2230 |      1793 |    2196 |       1549 |
+|    1 |      254 |    2468 |     43537 |    1705 |       1143 |
+|  476 |     1834 |    2687 |      6159 |  399056 |       9294 |
+|  450 |      341 |    2838 |      2866 |    2614 |       2212 |
+|  451 |     2257 |    2862 |      4728 |    3824 |       1294 |
+|  397 |     1494 |    2922 |      9444 |  420508 |      71688 |
+|  353 |      221 |    3235 |     15258 |  127579 |       1196 |
+|  352 |      221 |    3256 |     13925 |  122252 |       1133 |
+|  412 |      919 |    3532 |      4215 |    2085 |       1053 |
+|  403 |     2479 |    3894 |      2819 |    3453 |       1773 |
+|  452 |     3163 |    4116 |      8306 |    7032 |       1944 |
+|  413 |     1085 |    4625 |      4258 |    2999 |       1176 |
+|  420 |     1480 |    5169 |     15312 |  470380 |       8999 |
+|  459 |     4013 |    6900 |     16355 |   93464 |       5350 |
+|  435 |        1 |    9081 |       462 |     423 |       1514 |
+|  460 |     9023 |   10382 |     66336 |   52860 |      13086 |
+|  461 |     9023 |   10382 |     53888 |   51636 |      14819 |
+|   52 |     3764 |   25233 |     13911 |    9912 |      21166 |
+|  368 |     6657 |   25628 |     48180 |   44743 |      53145 |
+|  425 |    11625 |   26750 |    271173 |  170885 |      85480 |
+|  386 |     7559 |   28570 |     59073 |  449631 |      66800 |
+|  286 |    13961 |   32979 |     86194 |  128581 |      65860 |
+|  369 |    10978 |   39919 |    141545 |  125605 |     159973 |
+|  415 |     7752 |   39986 |     62242 |  113529 |     180166 |
+|  370 |    12070 |   56379 |    157260 |  152997 |     302310 |
+|  416 |    12269 |   56650 |    161024 |  281424 |     570667 |
