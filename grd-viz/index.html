@@ -237,10 +237,18 @@
           const highlighted = window.cy.nodes().not(window.cy.nodes().filter('.'+ GREY_CLASS))
 
           let dlgp = ''
+          let nodes = []
           highlighted.forEach(node => {
+            nodes.push(node)
+          })
+
+          nodes = nodes.sort((n1, n2) => parseInt(n1.data('label').substring(1)) - parseInt(0+n2.data('label').substring(1)))
+
+          for(let node of nodes) {
             dlgp += '%' + node.data('id')+ '\r\n'
             dlgp += ruleDefinitions[node.data('id')] + '\r\n\r\n'
-          })
+          }
+          
           document.querySelector('textarea').value = dlgp
           document.querySelector('textarea').style.display = 'initial'
         }
