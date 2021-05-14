@@ -1,0 +1,135 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 106; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 12, 2021 9:52:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/106 = 0.000%
+GSat discarded rules : 0/106 = 0.000%
+May 12, 2021 9:52:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 12, 2021 9:52:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 98 , 8
+nonFullTGDs	0		fullTGDs	98			newNonFullTGDs	8		newFullTGDs	0
+May 12, 2021 9:52:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 187 ms = 0.19 s
+May 12, 2021 9:52:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 51
+May 12, 2021 9:52:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 12, 2021 9:52:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 12 , 45
+May 12, 2021 9:52:20 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 6
+May 12, 2021 9:52:20 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (104 dependecies)
+=========================================
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Department(GSat_u2) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#headOf(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#College(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Software(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#doctoralDegreeFrom(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#affiliatedOrganizationOf(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Director(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#VisitingProfessor(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#member(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#College(GSat_u2) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#headOf(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#hasAlumnus(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ClericalStaff(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#softwareDocumentation(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Software(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#publicationResearch(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#listedCourse(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Schedule(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#worksFor(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#memberOf(GSat_u1,GSat_u2)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#mastersDegreeFrom(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UnofficialPublication(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Institute(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TechnicalReport(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssistantProfessor(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#teacherOf(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Research(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Work(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#hasAlumnus(GSat_u1,GSat_u2)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#PostDoc(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Department(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#softwareDocumentation(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ConferencePaper(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#tenured(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course(GSat_u2) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#takesCourse(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Book(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssociateProfessor(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#advisor(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#SystemsStaff(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#advisor(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course(GSat_u2) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#teachingAssistantOf(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TeachingAssistant(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#member(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#memberOf(GSat_u1,GSat_u2)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateStudent(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TeachingAssistant(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Lecturer(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#JournalArticle(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateCourse(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#title(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Program(GSat_u2) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#headOf(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Director(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#headOf(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#worksFor(GSat_u1,GSat_u2)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#hasAlumnus(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#listedCourse(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#publicationDate(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#undergraduateDegreeFrom(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Manual(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#teachingAssistantOf(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TeachingAssistant(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#teachingAssistantOf(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchProject(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchGroup(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#mastersDegreeFrom(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom(GSat_u1,GSat_u2)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant(GSat_u1) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchProject(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Research(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Program(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#FullProfessor(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#orgPublication(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Work(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#softwareVersion(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Software(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#subOrganizationOf(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#worksFor(GSat_u1,GSat_u2) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UndergraduateStudent(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#member(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#hasAlumnus(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom(GSat_u1,GSat_u2)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#mastersDegreeFrom(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#affiliateOf(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#orgPublication(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#affiliatedOrganizationOf(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#affiliateOf(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#subOrganizationOf(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchGroup(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#publicationResearch(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Research(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#publicationAuthor(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#doctoralDegreeFrom(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom(GSat_u1,GSat_u2)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateStudent(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#undergraduateDegreeFrom(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#teacherOf(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#publicationAuthor(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#memberOf(GSat_u2,GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#member(GSat_u1,GSat_u2)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Director(GSat_u1) & http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#doctoralDegreeFrom(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#undergraduateDegreeFrom(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#degreeFrom(GSat_u1,GSat_u2)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#age(GSat_u1,GSat_u2) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person(GSat_u1)
+http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Specification(GSat_u1) → http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication(GSat_u1)
+=========================================

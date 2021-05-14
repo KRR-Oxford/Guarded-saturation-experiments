@@ -1,0 +1,43 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 13; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 12, 2021 8:35:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/13 = 0.000%
+GSat discarded rules : 0/13 = 0.000%
+May 12, 2021 8:35:58 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 12, 2021 8:35:59 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 13 , 0
+May 12, 2021 8:35:59 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 106 ms = 0.11 s
+May 12, 2021 8:35:59 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 12, 2021 8:35:59 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 12, 2021 8:35:59 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 12, 2021 8:35:59 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 12, 2021 8:35:59 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (13 dependecies)
+=========================================
+http://www.kanzaki.com/ns/whois#Period(GSat_u1) → http://xmlns.com/wordnet/1.6/Period(GSat_u1)
+http://www.kanzaki.com/ns/whois#where(GSat_u2,GSat_u1) → http://www.kanzaki.com/ns/whois#Place(GSat_u1)
+http://www.kanzaki.com/ns/whois#Education(GSat_u1) → http://www.kanzaki.com/ns/whois#Stage(GSat_u1)
+http://www.kanzaki.com/ns/whois#professionalCareer(GSat_u2,GSat_u1) → http://www.kanzaki.com/ns/whois#Job(GSat_u1)
+http://www.kanzaki.com/ns/whois#Job(GSat_u1) → http://www.kanzaki.com/ns/whois#Stage(GSat_u1)
+http://www.kanzaki.com/ns/whois#academicCareer(GSat_u2,GSat_u1) → http://www.kanzaki.com/ns/whois#Education(GSat_u1)
+http://www.kanzaki.com/ns/whois#Place(GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#Address(GSat_u1)
+http://www.kanzaki.com/ns/whois#Job(GSat_u1) → http://xmlns.com/wordnet/1.6/Job(GSat_u1)
+http://www.kanzaki.com/ns/whois#Stage(GSat_u1) → http://www.kanzaki.com/ns/whois#Period(GSat_u1)
+http://www.kanzaki.com/ns/whois#what(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.kanzaki.com/ns/whois#Education(GSat_u1) → http://xmlns.com/wordnet/1.6/Education(GSat_u1)
+http://www.kanzaki.com/ns/whois#Place(GSat_u1) → http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing(GSat_u1)
+http://www.kanzaki.com/ns/whois#Stage(GSat_u1) → http://xmlns.com/wordnet/1.6/Stage(GSat_u1)
+=========================================

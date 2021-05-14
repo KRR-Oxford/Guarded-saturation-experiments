@@ -1,0 +1,68 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 38; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 12, 2021 8:31:49 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/38 = 0.000%
+GSat discarded rules : 0/38 = 0.000%
+May 12, 2021 8:31:49 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 12, 2021 8:31:49 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 38 , 0
+May 12, 2021 8:31:49 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 113 ms = 0.11 s
+May 12, 2021 8:31:49 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 12, 2021 8:31:49 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 12, 2021 8:31:49 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 12, 2021 8:31:49 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 12, 2021 8:31:49 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (38 dependecies)
+=========================================
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class3(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.3(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.1(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class8(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo(GSat_u2) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#classificationCode(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.3(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#ClassDivCode(GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#ClassDivCode(GSat_u2) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#packingGroup(GSat_u2,GSat_u1) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.2(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.2(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo(GSat_u2) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#subsidiaryRisk(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.4(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.6(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.2(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.5(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6.1(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#specialProvision(GSat_u2,GSat_u1) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#unIdNumber(GSat_u2,GSat_u1) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#ClassDivCode(GSat_u2) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#division(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo(GSat_u2) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#compatibilityGroup(GSat_u2,GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#CompatibilityGroup(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class7(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.1(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#applicableTo(GSat_u2,GSat_u1) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#CompatibilityGroup(GSat_u2) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#ClassDivCode(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5.2(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.3(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo(GSat_u2) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#symbol(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5.1(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6.2(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class9(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#classDivCode(GSat_u2,GSat_u1) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo(GSat_u2) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#ClassDivCode(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.1(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo(GSat_u2) & http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#properShippingName(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2(GSat_u1) → http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses(GSat_u1)
+=========================================

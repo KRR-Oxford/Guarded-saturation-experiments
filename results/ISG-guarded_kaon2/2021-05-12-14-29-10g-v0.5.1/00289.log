@@ -1,0 +1,65 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 35; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 12, 2021 9:06:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/35 = 0.000%
+GSat discarded rules : 0/35 = 0.000%
+May 12, 2021 9:06:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 12, 2021 9:06:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 35 , 0
+May 12, 2021 9:06:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 96 ms = 0.10 s
+May 12, 2021 9:06:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 12, 2021 9:06:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 12, 2021 9:06:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 12, 2021 9:06:46 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 12, 2021 9:06:46 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (35 dependecies)
+=========================================
+http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Seafood(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VegetarianFood(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoLactoVegetarianFood(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarian(GSat_u2) & file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#eats(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarianFood(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#eats(GSat_u2,GSat_u1) & file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarian(GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarianFood(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian(GSat_u1) → http://xmlns.com/foaf/0.1/Person(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarian(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Ovo-LactoVegetarian(GSat_u1)
+http://org.semanticweb.owlapi/error#Error6(GSat_u1) → http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products(GSat_u1)
+http://org.semanticweb.owlapi/error#Error9(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarianFood(GSat_u1) → http://org.semanticweb.owlapi/error#Error8(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoLactoVegetarianFood(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VegetarianFood(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian(GSat_u1) → http://xmlns.com/foaf/0.1/#Person(GSat_u1)
+http://org.semanticweb.owlapi/error#Error4(GSat_u1) → http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy-products-and-eggs(GSat_u1)
+http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products(GSat_u1) → http://org.semanticweb.owlapi/error#Error8(GSat_u1)
+http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products(GSat_u1) → http://org.semanticweb.owlapi/error#Error2(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#eats(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegan(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian(GSat_u1)
+http://org.semanticweb.owlapi/error#Error5(GSat_u1) → http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Ovo-LactoVegetarian(GSat_u2) & file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#eats(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoLactoVegetarianFood(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegan(GSat_u2) & file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#eats(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VeganFood(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian(GSat_u1) → http://www.isi.edu/webscripter/person.o.daml#Person(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian(GSat_u2) & file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#eats(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VegetarianFood(GSat_u1)
+http://org.semanticweb.owlapi/error#Error11(GSat_u1) → http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VeganFood(GSat_u1) → http://org.semanticweb.owlapi/error#Error2(GSat_u1)
+http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products(GSat_u1) → http://org.semanticweb.owlapi/error#Error5(GSat_u1)
+http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Meat(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarian(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Ovo-LactoVegetarian(GSat_u1)
+http://org.semanticweb.owlapi/error#Error2(GSat_u1) → http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products(GSat_u1)
+http://org.semanticweb.owlapi/error#Error8(GSat_u1) → http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarianFood(GSat_u1) → http://org.semanticweb.owlapi/error#Error5(GSat_u1)
+http://org.semanticweb.owlapi/error#Error1(GSat_u1) → http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Eggs(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Ovo-LactoVegetarian(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VegetarianFood(GSat_u1) → http://org.semanticweb.owlapi/error#Error6(GSat_u1)
+http://org.semanticweb.owlapi/error#Error10(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat(GSat_u1)
+http://org.semanticweb.owlapi/error#Error7(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat(GSat_u1)
+http://org.semanticweb.owlapi/error#Error3(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat(GSat_u1)
+=========================================

@@ -1,0 +1,115 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 85; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 12, 2021 8:28:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/85 = 0.000%
+GSat discarded rules : 0/85 = 0.000%
+May 12, 2021 8:28:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 12, 2021 8:28:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 85 , 0
+May 12, 2021 8:28:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 92 ms = 0.09 s
+May 12, 2021 8:28:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 12, 2021 8:28:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 12, 2021 8:28:43 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 12, 2021 8:28:44 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 12, 2021 8:28:44 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (85 dependecies)
+=========================================
+http://www.w3.org/2000/01/rdf-schema#member(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#maxCardinality(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Restriction(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00198.owl#country(GSat_u1,GSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00198.owl#Currency(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#first(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Container(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#disjointWith(GSat_u2,GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Container(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#DatatypeProperty(GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#value(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#ObjectProperty(GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#object(GSat_u1,GSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#hasClass(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#maxCardinalityQ(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#List(GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#toClass(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Restriction(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#rest(GSat_u1,GSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#member(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#minCardinalityQ(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Restriction(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#cardinality(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#Restriction(GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#maxCardinalityQ(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Restriction(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#subClassOf(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#TransitiveProperty(GSat_u1) → http://www.w3.org/2002/07/owl#ObjectProperty(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#cardinalityQ(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Restriction(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#rest(GSat_u1,GSat_u2) → http://www.daml.org/2001/03/daml+oil#List(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#UniqueProperty(GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate(GSat_u1,GSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#range(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#disjointUnionOf(GSat_u2,GSat_u1) → http://www.daml.org/2001/03/daml+oil#List(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty(GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#Container(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#toClass(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#UnambiguousProperty(GSat_u1) → http://www.w3.org/2002/07/owl#ObjectProperty(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#rest(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#sameClassAs(GSat_u2,GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#rest(GSat_u2,GSat_u1) → http://www.daml.org/2001/03/daml+oil#List(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#complementOf(GSat_u2,GSat_u1) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#unionOf(GSat_u2,GSat_u1) → http://www.daml.org/2001/03/daml+oil#List(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#subPropertyOf(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#first(GSat_u1,GSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#disjointUnionOf(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#Datatype(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#unionOf(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#subject(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#minCardinalityQ(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#disjointWith(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#onProperty(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#inverseOf(GSat_u2,GSat_u1) → http://www.w3.org/2002/07/owl#ObjectProperty(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#maxCardinality(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#value(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#intersectionOf(GSat_u2,GSat_u1) → http://www.daml.org/2001/03/daml+oil#List(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#cardinality(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Restriction(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#subject(GSat_u1,GSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#cardinalityQ(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#subClassOf(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#onProperty(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Restriction(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#subPropertyOf(GSat_u1,GSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00198.owl#country(GSat_u2,GSat_u1) → http://www.daml.org/2001/09/countries/iso-3166-ont#Country(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#Class(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#oneOf(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#object(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#range(GSat_u1,GSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Container(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#oneOf(GSat_u2,GSat_u1) → http://www.daml.org/2001/03/daml+oil#List(GSat_u1)
+http://www.w3.org/2000/01/rdf-schema#domain(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#samePropertyAs(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#subPropertyOf(GSat_u1,GSat_u2)
+http://www.w3.org/2000/01/rdf-schema#domain(GSat_u1,GSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#Datatype(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#hasClass(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Restriction(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#minCardinality(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Restriction(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#inverseOf(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#ObjectProperty(GSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#minCardinality(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#intersectionOf(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#hasClassQ(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#sameClassAs(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#sameClassAs(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#subClassOf(GSat_u1,GSat_u2)
+http://www.daml.org/2001/03/daml+oil#complementOf(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Class(GSat_u1)
+http://www.daml.org/2001/03/daml+oil#hasClassQ(GSat_u1,GSat_u2) → http://www.w3.org/2002/07/owl#Restriction(GSat_u1)
+=========================================

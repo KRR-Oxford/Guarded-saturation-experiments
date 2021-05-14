@@ -1,0 +1,72 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 42; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 12, 2021 8:28:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/42 = 0.000%
+GSat discarded rules : 0/42 = 0.000%
+May 12, 2021 8:28:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 12, 2021 8:28:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 42 , 0
+May 12, 2021 8:28:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 94 ms = 0.09 s
+May 12, 2021 8:28:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 12, 2021 8:28:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 12, 2021 8:28:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 12, 2021 8:28:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 12, 2021 8:28:54 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (42 dependecies)
+=========================================
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#cardinalityQ(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#NonNegativeInteger(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#onProperty(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#Restriction(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#hasClassQ(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#TransitiveProperty(GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#hasClass(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#Restriction(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#UniqueProperty(GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#disjointUnionOf(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#List(GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#cardinality(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#Restriction(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#disjointUnionOf(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#List(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#toClass(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#Restriction(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#unionOf(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#List(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#inverseOf(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#UnambiguousProperty(GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#cardinalityQ(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#Restriction(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#toClass(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#inverseOf(GSat_u1,GSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#hasClassQ(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#Restriction(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#complementOf(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#Disjoint(GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#List(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#hasClass(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#minCardinality(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#NonNegativeInteger(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#minCardinalityQ(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#Restriction(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#minCardinalityQ(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#NonNegativeInteger(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#cardinality(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#NonNegativeInteger(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#rest(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#List(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#maxCardinality(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#NonNegativeInteger(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#disjointWith(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#maxCardinality(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#Restriction(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#intersectionOf(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#List(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#rest(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#List(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#oneOf(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#maxCardinalityQ(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#NonNegativeInteger(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#oneOf(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#List(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#unionOf(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#maxCardinalityQ(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#Restriction(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#NonNegativeInteger(GSat_u1) → http://www.w3c.org/xml/xmlschema#integer(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#minCardinality(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#Restriction(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#complementOf(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#onProperty(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#intersectionOf(GSat_u1,GSat_u2) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.daml.org_2000_12_daml+oil.txt#disjointWith(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(GSat_u1)
+=========================================
