@@ -7,7 +7,7 @@ CSV_SEP=","
 
 
 
-if [[ $DIR =~ "kaon2" ]];
+if [[ $DIR =~ "-kaon2" ]];
 then
     echo "NAME,AXIOM_NB,OUTPUT_SIZE,TIME"> $OUTPUT
     for log in $DIR/*.log;

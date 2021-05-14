@@ -12,34 +12,144 @@ In the following, we remove the row, where:
 
 The number of remaining ontologies is:
 #+BEGIN_src ipython :session mysession :results output example
-    import pandas as pd
-    from tabulate import tabulate
+  import pandas as pd
+  from tabulate import tabulate
 
-    gsat_file='2021-04-26-14-37-10g-v0.5.1/stats.csv'
-    sksat_file='2021-04-27-11-42-10g-v0.5.1/stats.csv'
+  gsat_file='2021-04-26-14-37-10g-v0.5.1/stats.csv'
+  sksat_file='2021-04-27-11-42-10g-v0.5.1/stats.csv'
 
-    df_gsat= pd.read_csv(gsat_file, index_col='NAME').rename(columns={'TIME':'GSAT_TIME'})
-    df_gsat = df_gsat[['NFTGD_NB', 'FTGD_NB', 'GSAT_TIME']]
+  df_gsat = pd.read_csv(gsat_file, index_col='NAME').rename(columns={'TIME':'GSAT_TIME'})
+  df_gsat = df_gsat[['NFTGD_NB', 'FTGD_NB', 'GSAT_TIME']]
 
-    df_sksat= pd.read_csv(sksat_file, index_col='NAME').rename(columns={'TIME':'SK_TIME'})
-    df_sksat = df_sksat['SK_TIME']
+  df_sksat = pd.read_csv(sksat_file, index_col='NAME').rename(columns={'TIME':'SK_TIME'})
+  df_sksat = df_sksat['SK_TIME']
 
-    df = pd.concat([df_gsat, df_sksat], axis=1)
+  df_interesting = pd.concat([df_gsat, df_sksat], axis=1)
 
-    # selection of the execution where the input contains full and non full TDGs  
-    df = df[ (df['NFTGD_NB'] > 0) & (df['FTGD_NB'] > 0)  ]
+  # selection of the execution where the input contains full and non full TDGs  
+  df_interesting = df_interesting[ (df_interesting['NFTGD_NB'] > 0) & (df_interesting['FTGD_NB'] > 0)  ]
 
-    # selection of the case where at least one algorithm does not reach the timeout
-    df = df[ (df['GSAT_TIME'] != 'TIMEOUT') | (df['SK_TIME'] != 'TIMEOUT')]
+  # selection of the case where at least one algorithm does not reach the timeout
+  df = df_interesting[ (df_interesting['GSAT_TIME'] != 'TIMEOUT') | (df_interesting['SK_TIME'] != 'TIMEOUT') ]
 
-    print(len(df.index))
+  print(len(df.index))
 #+END_src
 
 #+RESULTS:
 : 367
 
+The following table contains the rows where Gsat and the Skolemized executions reach the timeout sorted by the input size.
+#+BEGIN_src ipython :session mysession :results output raw
+    both_timeout = df_interesting[ (df_interesting['GSAT_TIME'] == 'TIMEOUT') & (df_interesting['SK_TIME'] == 'TIMEOUT') ]
 
-The following table contains the rows where Gsat executions reaches the timeout and the Skolemized version is not, sorted by the input size.
+    both_timeout = both_timeout.sort_values(by="NFTGD_NB").sort_values(by="FTGD_NB")
+
+    print(tabulate(both_timeout, headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+| NAME | NFTGD_NB | FTGD_NB | GSAT_TIME | SK_TIME |
+|------+----------+---------+-----------+---------|
+|  706 |      342 |     520 | TIMEOUT   | TIMEOUT |
+|  705 |      380 |     572 | TIMEOUT   | TIMEOUT |
+|  704 |      355 |     616 | TIMEOUT   | TIMEOUT |
+|  732 |      402 |     633 | TIMEOUT   | TIMEOUT |
+|  713 |      455 |     683 | TIMEOUT   | TIMEOUT |
+|  747 |      419 |     686 | TIMEOUT   | TIMEOUT |
+|  719 |      488 |     713 | TIMEOUT   | TIMEOUT |
+|  722 |      411 |     753 | TIMEOUT   | TIMEOUT |
+|  755 |      459 |     756 | TIMEOUT   | TIMEOUT |
+|  746 |      490 |     768 | TIMEOUT   | TIMEOUT |
+|  715 |      567 |     785 | TIMEOUT   | TIMEOUT |
+|  749 |      469 |     820 | TIMEOUT   | TIMEOUT |
+|  756 |      578 |     950 | TIMEOUT   | TIMEOUT |
+|  712 |      502 |     993 | TIMEOUT   | TIMEOUT |
+|  716 |      640 |     995 | TIMEOUT   | TIMEOUT |
+|  733 |      702 |    1086 | TIMEOUT   | TIMEOUT |
+|  741 |      752 |    1225 | TIMEOUT   | TIMEOUT |
+|  752 |      772 |    1309 | TIMEOUT   | TIMEOUT |
+|  702 |      774 |    1321 | TIMEOUT   | TIMEOUT |
+|  728 |      728 |    1357 | TIMEOUT   | TIMEOUT |
+|  743 |      708 |    1486 | TIMEOUT   | TIMEOUT |
+|  724 |      828 |    1517 | TIMEOUT   | TIMEOUT |
+|  727 |      833 |    1567 | TIMEOUT   | TIMEOUT |
+|  701 |      861 |    1589 | TIMEOUT   | TIMEOUT |
+|  700 |     1053 |    1699 | TIMEOUT   | TIMEOUT |
+|  703 |     1160 |    2004 | TIMEOUT   | TIMEOUT |
+|    4 |    16705 |    2107 | TIMEOUT   | TIMEOUT |
+|  350 |      934 |    3026 | TIMEOUT   | TIMEOUT |
+|    5 |    16705 |    3211 | TIMEOUT   | TIMEOUT |
+|    3 |    16709 |    3263 | TIMEOUT   | TIMEOUT |
+|  174 |     1776 |    3626 | TIMEOUT   | TIMEOUT |
+|   30 |     2096 |    3626 | TIMEOUT   | TIMEOUT |
+|   31 |     2096 |    3626 | TIMEOUT   | TIMEOUT |
+|   29 |     1776 |    4039 | TIMEOUT   | TIMEOUT |
+|   32 |     2096 |    4039 | TIMEOUT   | TIMEOUT |
+|  354 |     1417 |    4648 | TIMEOUT   | TIMEOUT |
+|   39 |     2437 |    4826 | TIMEOUT   | TIMEOUT |
+|  117 |     2437 |    4826 | TIMEOUT   | TIMEOUT |
+|  518 |    11035 |    9363 | TIMEOUT   | TIMEOUT |
+|   34 |    12339 |    9364 | TIMEOUT   | TIMEOUT |
+|   37 |    12323 |    9445 | TIMEOUT   | TIMEOUT |
+|   36 |    12329 |    9456 | TIMEOUT   | TIMEOUT |
+|   38 |    12339 |    9457 | TIMEOUT   | TIMEOUT |
+|   35 |    12339 |    9462 | TIMEOUT   | TIMEOUT |
+|   33 |    12339 |    9462 | TIMEOUT   | TIMEOUT |
+|  794 |     9484 |   10114 | TIMEOUT   | TIMEOUT |
+|  463 |     9433 |   10339 | TIMEOUT   | TIMEOUT |
+|  761 |     5598 |   13153 | TIMEOUT   | TIMEOUT |
+|  462 |     9433 |   13435 | TIMEOUT   | TIMEOUT |
+|  660 |     6673 |   13597 | TIMEOUT   | TIMEOUT |
+|  658 |     9103 |   15170 | TIMEOUT   | TIMEOUT |
+|  541 |     9119 |   27085 | TIMEOUT   | TIMEOUT |
+|   26 |    23858 |   30697 | TIMEOUT   | TIMEOUT |
+|   27 |    23858 |   31647 | TIMEOUT   | TIMEOUT |
+|   28 |    23858 |   31647 | TIMEOUT   | TIMEOUT |
+|  532 |    11943 |   38045 | TIMEOUT   | TIMEOUT |
+|  391 |    11279 |   40960 | TIMEOUT   | TIMEOUT |
+|  791 |     8665 |   41060 | TIMEOUT   | TIMEOUT |
+|  792 |    27874 |   42592 | TIMEOUT   | TIMEOUT |
+|  387 |    12025 |   44320 | TIMEOUT   | TIMEOUT |
+|  426 |    24421 |   44891 | TIMEOUT   | TIMEOUT |
+|  375 |    12632 |   45457 | TIMEOUT   | TIMEOUT |
+|  488 |     7777 |   46967 | TIMEOUT   | TIMEOUT |
+|  486 |     7777 |   46980 | TIMEOUT   | TIMEOUT |
+|  382 |     8378 |   47281 | TIMEOUT   | TIMEOUT |
+|  448 |    24847 |   49406 | TIMEOUT   | TIMEOUT |
+|  682 |    24701 |   50011 | TIMEOUT   | TIMEOUT |
+|  489 |     9507 |   52445 | TIMEOUT   | TIMEOUT |
+|  285 |    66179 |   53294 | TIMEOUT   | TIMEOUT |
+|  572 |    19594 |   57494 | TIMEOUT   | TIMEOUT |
+|  378 |    21423 |   58205 | TIMEOUT   | TIMEOUT |
+|  787 |    45442 |   59419 | TIMEOUT   | TIMEOUT |
+|  395 |    21788 |   60146 | TIMEOUT   | TIMEOUT |
+|  684 |    12683 |   62185 | TIMEOUT   | TIMEOUT |
+|  795 |    47412 |   65393 | TIMEOUT   | TIMEOUT |
+|  487 |    13015 |   65519 | TIMEOUT   | TIMEOUT |
+|  383 |    13719 |   65847 | TIMEOUT   | TIMEOUT |
+|   44 |    14319 |   67400 | TIMEOUT   | TIMEOUT |
+|  764 |    14319 |   67400 | TIMEOUT   | TIMEOUT |
+|  758 |    14319 |   67400 | TIMEOUT   | TIMEOUT |
+|   41 |    14319 |   67437 | TIMEOUT   | TIMEOUT |
+|   47 |    14431 |   67545 | TIMEOUT   | TIMEOUT |
+|  675 |    25194 |   67697 | TIMEOUT   | TIMEOUT |
+|   46 |    15352 |   69253 | TIMEOUT   | TIMEOUT |
+|   48 |    14739 |   70580 | TIMEOUT   | TIMEOUT |
+|   42 |    15417 |   71082 | TIMEOUT   | TIMEOUT |
+|  470 |    44414 |   75146 | TIMEOUT   | TIMEOUT |
+|  472 |    44414 |   75146 | TIMEOUT   | TIMEOUT |
+|  471 |    42734 |   78977 | TIMEOUT   | TIMEOUT |
+|  473 |    42734 |   78977 | TIMEOUT   | TIMEOUT |
+|  437 |    44247 |   90904 | TIMEOUT   | TIMEOUT |
+|   45 |    42412 |   98673 | TIMEOUT   | TIMEOUT |
+|   40 |    43604 |  100787 | TIMEOUT   | TIMEOUT |
+|  796 |    43604 |  100787 | TIMEOUT   | TIMEOUT |
+|  778 |    42054 |  113189 | TIMEOUT   | TIMEOUT |
+|  760 |    50814 |  170834 | TIMEOUT   | TIMEOUT |
+|  797 |   225554 |  236447 | TIMEOUT   | TIMEOUT |
+
+
+The following table contains the rows where Gsat executions reach the timeout and the Skolemized version ones are not, sorted by the input size.
 #+BEGIN_src ipython :session mysession :results output raw
     gsat_timeout = df[ df['GSAT_TIME'] == 'TIMEOUT']
 
@@ -103,7 +213,7 @@ The following table contains the rows where Gsat executions reaches the timeout 
 |  788 |       10 |    2538 | TIMEOUT   |     526 |
 |  425 |    11625 |   26750 | TIMEOUT   |  257156 |
 
-The following table contains the rows where the Skolemized version reaches the timeout and Gsat is not, sorted by the input size.
+The following table contains the rows where the Skolemized version executions reach the timeout and Gsat ones are not, sorted by the input size.
 #+BEGIN_src ipython :session mysession :results output raw
     sksat_timeout = df[ df['SK_TIME'] == 'TIMEOUT']
 
