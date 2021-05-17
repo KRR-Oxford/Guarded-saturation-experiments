@@ -1,0 +1,132 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 43; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 3:19:17 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/43 = 0.000%
+SkSat discarded rules : 0/43 = 0.000%
+May 14, 2021 3:19:17 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 3:19:17 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 61 , 12
+nonFullTGDs	0		fullTGDs	61			newNonFullTGDs	12		newFullTGDs	0
+nonFullTGDs	59		fullTGDs	99			newNonFullTGDs	0		newFullTGDs	97
+nonFullTGDs	74		fullTGDs	169			newNonFullTGDs	1		newFullTGDs	60
+nonFullTGDs	75		fullTGDs	227			newNonFullTGDs	0		newFullTGDs	29
+nonFullTGDs	75		fullTGDs	301			newNonFullTGDs	0		newFullTGDs	12
+May 14, 2021 3:19:17 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 266 ms = 0.27 s
+May 14, 2021 3:19:17 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 177
+May 14, 2021 3:19:17 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 3:19:17 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 391 , 101
+May 14, 2021 3:19:17 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 36
+May 14, 2021 3:19:17 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (97 dependecies)
+=========================================
+http://www.owl-ontologies.com/generations.owl#hasSibling(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#hasSibling(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#Brother(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S11(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S10(SkSat_u1,SkSat_u2,SkSat_u3) → http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#Man(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Brother(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Sister(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Sister(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Brother(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Woman(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#GrandFather(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Parent(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Person(SkSat_u2) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#hasParent(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#OffSpring(SkSat_u1)
+_S10(SkSat_u2,SkSat_u1,SkSat_u3) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S10(SkSat_u3,SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2)
+_S2(SkSat_u1,SkSat_u2,SkSat_u3) → http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) → http://www.owl-ontologies.com/generations.owl#Male(SkSat_u1)
+_S2(SkSat_u3,SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Daughter(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Daughter(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Son(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Woman(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S1(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S8(SkSat_u2,SkSat_u3,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S7(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2) & http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u2) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Father(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#GrandFather(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Sibling(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Father(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Father(SkSat_u1)
+_S6(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Sibling(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Sister(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u2) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Parent(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Parent(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Parent(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#OffSpring(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Son(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#GrandMother(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Parent(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Father(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#GrandFather(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Father(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Daughter(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Son(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#GrandParent(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Father(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#GrandParent(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S0(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Sister(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Son(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#OffSpring(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Sex(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Sister(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Sister(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#GrandParent(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Mother(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Mother(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Mother(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#GrandMother(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Father(SkSat_u1)
+_S9(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#Parent(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#OffSpring(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#OffSpring(SkSat_u1)
+_S3(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Person(SkSat_u2) & http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#hasParent(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#Daughter(SkSat_u1)
+_S5(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u2) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#hasParent(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#Son(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#GrandMother(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Parent(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u2) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#hasSibling(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#Brother(SkSat_u1)
+_S6(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#Person(SkSat_u2) & http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#hasSibling(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#Sister(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Sister(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Sibling(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Daughter(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Father(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S9(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Man(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) → http://www.owl-ontologies.com/generations.owl#Female(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Brother(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Sibling(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Father(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Mother(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Sibling(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Brother(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#GrandParent(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Parent(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Son(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Daughter(SkSat_u1)
+_S3(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasSibling(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#OffSpring(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S8(SkSat_u3,SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#OffSpring(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Daughter(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#GrandMother(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Mother(SkSat_u1)
+_S4(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasParent(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#Sibling(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Sibling(SkSat_u1)
+_S2(SkSat_u2,SkSat_u3,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S4(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S1(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasParent(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#Mother(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S7(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S10(SkSat_u2,SkSat_u3,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Father(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Parent(SkSat_u1)
+_S5(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasSibling(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Mother(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Father(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Son(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Son(SkSat_u1)
+_S0(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasSibling(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#hasParent(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Mother(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Parent(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#MaleSex) & http://www.owl-ontologies.com/generations.owl#Brother(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Brother(SkSat_u1)
+_S8(SkSat_u1,SkSat_u2,SkSat_u3) → http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#hasParent(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#Person(SkSat_u2) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#hasSibling(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#Sibling(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#GrandFather(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Mother(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#Daughter(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#OffSpring(SkSat_u1)
+_S2(SkSat_u2,SkSat_u1,SkSat_u3) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+_S11(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/generations.owl#hasParent(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/generations.owl#hasChild(SkSat_u1,SkSat_u2) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u2) & http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Mother(SkSat_u1)
+_S8(SkSat_u2,SkSat_u1,SkSat_u3) → http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1)
+http://www.owl-ontologies.com/generations.owl#hasSex(SkSat_u1,http://www.owl-ontologies.com/generations.owl#FemaleSex) & http://www.owl-ontologies.com/generations.owl#Person(SkSat_u1) & http://www.owl-ontologies.com/generations.owl#Parent(SkSat_u1) → http://www.owl-ontologies.com/generations.owl#Mother(SkSat_u1)
+=========================================

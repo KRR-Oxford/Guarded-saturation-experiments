@@ -1,0 +1,123 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 66; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 3:12:45 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/66 = 0.000%
+SkSat discarded rules : 0/66 = 0.000%
+May 14, 2021 3:12:45 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 3:12:45 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 81 , 15
+nonFullTGDs	0		fullTGDs	81			newNonFullTGDs	15		newFullTGDs	0
+nonFullTGDs	100		fullTGDs	81			newNonFullTGDs	5		newFullTGDs	14
+May 14, 2021 3:12:45 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 239 ms = 0.24 s
+May 14, 2021 3:12:45 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 114
+May 14, 2021 3:12:45 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 3:12:45 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 49 , 178
+May 14, 2021 3:12:45 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 10
+May 14, 2021 3:12:45 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (91 dependecies)
+=========================================
+_S0(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#OliveTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#VegetableTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#MozzarellaTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CheeseTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isIngredientOf(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#hasIngredient(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#SalamiTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#MeatTopping(SkSat_u1)
+_S5(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PizzaBase(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasIngredient(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#MeatTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PizzaTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#PrawnTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#SeafoodTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#PepperoniTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#MeatTopping(SkSat_u1)
+_S9(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#AnchovyTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#SeafoodTopping(SkSat_u1)
+_S14(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#TomatoTopping(SkSat_u1)
+_S1(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#TomatoTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#ParmezanTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CheeseTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1) & http://www.owl-ontologies.com/unnamed.owl#AmericanHotPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CheesyPizza(SkSat_u1)
+_S5(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasBase(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#hasIngredient(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#isIngredientOf(SkSat_u1,SkSat_u2)
+_S7(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+_S4(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#hasBase(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1)
+_S9(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#JalapenoPepperTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#TomatoTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#VegetableTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#RedPepperTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PepperTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isBaseOf(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#hasBase(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#CaperTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#VegetableTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#InconsistentTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#VegetableTopping(SkSat_u1)
+_S13(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#InconsistentTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CheeseTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1) & http://www.owl-ontologies.com/unnamed.owl#SohoPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CheesyPizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#SpicyBeefTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#MeatTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1) & http://www.owl-ontologies.com/unnamed.owl#CheesyPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CheesyPizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#HamTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#MeatTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#AmericanHotPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#NamedPizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isBaseOf(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#PizzaBase(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isBaseOf(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#isIngredientOf(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#hasBase(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#isBaseOf(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PizzaTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#GreenPepperTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PepperTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#MushroomTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#VegetableTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#MargheritaPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#NamedPizza(SkSat_u1)
+_S2(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#OliveTopping(SkSat_u1)
+_S0(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#MozzarellaTopping(SkSat_u1)
+_S10(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1) & http://www.owl-ontologies.com/unnamed.owl#AmericanaPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CheesyPizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isToppingOf(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+_S4(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#MozzarellaTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasBase(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasIngredient(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#SohoPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#NamedPizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isToppingOf(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#PizzaTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#SohoPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1)
+_S2(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#DeepPanBase(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PizzaBase(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#CheesyPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1)
+_S3(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#MozzarellaTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#PepperTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#VegetableTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#MargheritaPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#CheeseTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PizzaTopping(SkSat_u1)
+_S7(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CheeseTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#TunaTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#SeafoodTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isToppingOf(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#AmericanaPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#isToppingOf(SkSat_u1,SkSat_u2)
+_S11(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#ParmezanTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1) & http://www.owl-ontologies.com/unnamed.owl#CheeseTopping(SkSat_u2) & http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#CheesyPizza(SkSat_u1)
+_S11(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#OnionTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#VegetableTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isToppingOf(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#isIngredientOf(SkSat_u1,SkSat_u2)
+_S12(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isBaseOf(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#JalapenoPepperTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PepperTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#VegetableTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PizzaTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#NamedPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#ThinAndCrispyBase(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PizzaBase(SkSat_u1)
+_S13(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#TomatoTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#AmericanHotPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1)
+_S8(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#AmericanaPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#NamedPizza(SkSat_u1)
+_S8(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#TomatoTopping(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasBase(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PizzaBase(SkSat_u1)
+_S14(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+_S6(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#Pizza(SkSat_u1) & http://www.owl-ontologies.com/unnamed.owl#MargheritaPizza(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CheesyPizza(SkSat_u1)
+_S12(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PepperoniTopping(SkSat_u1)
+_S6(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#MozzarellaTopping(SkSat_u1)
+_S3(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#SeafoodTopping(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PizzaTopping(SkSat_u1)
+_S1(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#hasTopping(SkSat_u1,SkSat_u2)
+_S10(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PepperoniTopping(SkSat_u1)
+=========================================

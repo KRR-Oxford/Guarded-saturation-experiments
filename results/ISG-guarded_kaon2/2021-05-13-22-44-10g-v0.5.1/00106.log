@@ -1,0 +1,76 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 47; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 3:18:33 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/47 = 0.000%
+SkSat discarded rules : 0/47 = 0.000%
+May 14, 2021 3:18:33 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 3:18:33 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 43 , 4
+nonFullTGDs	0		fullTGDs	43			newNonFullTGDs	4		newFullTGDs	0
+May 14, 2021 3:18:33 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 125 ms = 0.13 s
+May 14, 2021 3:18:33 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 4
+May 14, 2021 3:18:33 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 3:18:33 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 4 , 8
+May 14, 2021 3:18:33 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 2
+May 14, 2021 3:18:33 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (45 dependecies)
+=========================================
+http://pervasive.semanticweb.org/ont/2004/01/person#middleName(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#Person(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#IMProvider(SkSat_u1) → http://pervasive.semanticweb.org/ont/2004/01/person#IMProvider(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#nickname(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#Person(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#address(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#sms(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#im(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#myagent(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#fax(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#mobile(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#lastName(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#givenName(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#firstName(SkSat_u1,SkSat_u2)
+http://pervasive.semanticweb.org/ont/2004/01/person#phone(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#firstName(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#givenName(SkSat_u1,SkSat_u2)
+http://pervasive.semanticweb.org/ont/2004/01/person#homepage(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#Person(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#hasWorkContact(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#hasContact(SkSat_u1,SkSat_u2)
+http://pervasive.semanticweb.org/ont/2004/01/person#sms(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#Person(SkSat_u1) → http://pervasive.semanticweb.org/ont/2004/01/person#Person(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#homepage(SkSat_u2,SkSat_u1) → http://pervasive.semanticweb.org/ont/2004/01/person#Homepage(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#providedBy(SkSat_u2,SkSat_u1) → http://pervasive.semanticweb.org/ont/2004/01/person#IMProvider(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#familyName(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#lastName(SkSat_u1,SkSat_u2)
+http://pervasive.semanticweb.org/ont/2004/01/person#firstName(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#email(SkSat_u2,SkSat_u1) → http://pervasive.semanticweb.org/ont/2004/01/person#EmailAddress(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#phone(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#middleName(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#firstName(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#Person(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#fax(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#nickname(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#lastName(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#familyName(SkSat_u1,SkSat_u2)
+http://pervasive.semanticweb.org/ont/2004/01/person#gender(SkSat_u2,SkSat_u1) → http://pervasive.semanticweb.org/ont/2004/01/person#Gender(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#address(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#providedBy(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#ChatID(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#email(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#hasRegisteredChatID(SkSat_u2,SkSat_u1) → http://pervasive.semanticweb.org/ont/2004/01/person#providedBy(SkSat_u1,SkSat_u2)
+http://pervasive.semanticweb.org/ont/2004/01/person#hasContact(SkSat_u2,SkSat_u1) → http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#birthDate(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#mobile(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#hasContact(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#Person(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#hasSchoolContact(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#hasContact(SkSat_u1,SkSat_u2)
+http://pervasive.semanticweb.org/ont/2004/01/person#im(SkSat_u2,SkSat_u1) → http://pervasive.semanticweb.org/ont/2004/01/person#ChatID(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#hasHomeContact(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#hasContact(SkSat_u1,SkSat_u2)
+http://pervasive.semanticweb.org/ont/2004/01/person#gender(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#Person(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#myagent(SkSat_u2,SkSat_u1) → http://pervasive.semanticweb.org/ont/2004/01/person#JADEAgentID(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#birthDate(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#Person(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#lastName(SkSat_u1,SkSat_u2) → http://pervasive.semanticweb.org/ont/2004/01/person#Person(SkSat_u1)
+http://pervasive.semanticweb.org/ont/2004/01/person#providedBy(SkSat_u2,SkSat_u1) → http://pervasive.semanticweb.org/ont/2004/01/person#hasRegisteredChatID(SkSat_u1,SkSat_u2)
+=========================================

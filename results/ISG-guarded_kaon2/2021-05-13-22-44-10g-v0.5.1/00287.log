@@ -1,0 +1,55 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 25; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 4:08:35 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/25 = 0.000%
+SkSat discarded rules : 0/25 = 0.000%
+May 14, 2021 4:08:35 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 4:08:35 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 25 , 0
+May 14, 2021 4:08:35 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 102 ms = 0.10 s
+May 14, 2021 4:08:35 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 14, 2021 4:08:35 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 4:08:35 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 14, 2021 4:08:35 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 14, 2021 4:08:35 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (25 dependecies)
+=========================================
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#hasXAxisReference(SkSat_u2,SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Point(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#zOrigin(SkSat_u1,SkSat_u2) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#LocalCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#LocalCoordinateSystem(SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#CoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#StatePlane(SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#ProjectedCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#hasCoordinateSystem(SkSat_u1,SkSat_u2) → http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialDescription(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#yOrigin(SkSat_u1,SkSat_u2) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#LocalCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#Polar(SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#ProjectedCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#hasCoordinateSystem(SkSat_u1,SkSat_u2) → http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#hasYAxisReference(SkSat_u2,SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Point(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#hasXAxisReference(SkSat_u1,SkSat_u2) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#LocalCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#NationalGrids(SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#ProjectedCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#UTM(SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#ProjectedCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#hasYAxisReference(SkSat_u1,SkSat_u2) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#LocalCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#World(SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#ProjectedCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#Continental(SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#ProjectedCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#ProjectedCoordinateSystem(SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#CoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#hasCoordinateOrigin(SkSat_u2,SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#CoordinateOrigin(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#hasCoordinateOrigin(SkSat_u1,SkSat_u2) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#LocalCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#yOrigin(SkSat_u2,SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#zOrigin(SkSat_u2,SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#GaussKruger(SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#ProjectedCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#xOrigin(SkSat_u1,SkSat_u2) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#LocalCoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#xOrigin(SkSat_u2,SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#hasCoordinateSystem(SkSat_u2,SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#CoordinateSystem(SkSat_u1)
+http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#GeographicCoordinateSystem(SkSat_u1) → http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#CoordinateSystem(SkSat_u1)
+=========================================

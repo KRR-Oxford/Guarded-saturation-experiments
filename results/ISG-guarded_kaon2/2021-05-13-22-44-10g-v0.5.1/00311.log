@@ -1,0 +1,52 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 22; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 4:10:52 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/22 = 0.000%
+SkSat discarded rules : 0/22 = 0.000%
+May 14, 2021 4:10:52 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 4:10:52 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 22 , 0
+May 14, 2021 4:10:52 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 67 ms = 0.07 s
+May 14, 2021 4:10:52 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 14, 2021 4:10:52 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 4:10:52 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 14, 2021 4:10:52 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 14, 2021 4:10:52 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (22 dependecies)
+=========================================
+http://www.w3.org/2000/10/swap/pim/contact#home(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#ContactLocation(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#mailbox(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#SocialEntity(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#motherTongue(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#Person(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#Person(SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#SocialEntity(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#mailboxURI(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#_URI(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#address(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#Address(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#zip(SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#postalCode(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#birthday(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#Date(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#vacationHome(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#Person(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#mobile(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#Person(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#vacationHome(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#ContactLocation(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#emailAddress(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#_EmailAddress(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#address(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#ContactLocation(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#home(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#Person(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#publicHomePage(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#homePage(SkSat_u1,SkSat_u2)
+http://www.w3.org/2000/10/swap/pim/contact#motherTongue(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#LanguageCode(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#office(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#ContactLocation(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#mailboxURI(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#SocialEntity(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#mailbox(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#Mailbox(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#mobile(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#ContactLocation(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#office(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#Person(SkSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#emailAddress(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#SocialEntity(SkSat_u1)
+=========================================

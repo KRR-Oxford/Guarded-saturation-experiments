@@ -1,0 +1,54 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 24; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 3:14:38 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/24 = 0.000%
+SkSat discarded rules : 0/24 = 0.000%
+May 14, 2021 3:14:38 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 3:14:38 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 24 , 0
+May 14, 2021 3:14:38 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 101 ms = 0.10 s
+May 14, 2021 3:14:38 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 14, 2021 3:14:38 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 3:14:38 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 14, 2021 3:14:38 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 14, 2021 3:14:38 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (24 dependecies)
+=========================================
+http://ebiquity.umbc.edu/ontology/contact.owl#postalCode(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#city(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#fax(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#phone(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#room(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#country(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#country(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#url(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#phone(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#room(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#company(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#department(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#email(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#street(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#email(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#department(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#postalCode(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#state(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#city(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#fax(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#street(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#company(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#state(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/contact.owl#url(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#anyURI(SkSat_u1)
+=========================================

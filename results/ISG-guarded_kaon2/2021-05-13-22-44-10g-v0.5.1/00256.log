@@ -1,0 +1,95 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 65; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 3:53:01 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/65 = 0.000%
+SkSat discarded rules : 0/65 = 0.000%
+May 14, 2021 3:53:01 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 3:53:01 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 65 , 0
+May 14, 2021 3:53:01 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 98 ms = 0.10 s
+May 14, 2021 3:53:01 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 14, 2021 3:53:01 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 3:53:01 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 14, 2021 3:53:01 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 14, 2021 3:53:01 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (65 dependecies)
+=========================================
+http://protege.stanford.edu/plugins/owl/protege#PAL-NAME(SkSat_u1,SkSat_u2) → http://protege.stanford.edu/plugins/owl/protege#PAL-CONSTRAINT(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#United_States_Region(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Cell_in_vivo(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Cell(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Wood(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Natural_thing(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Finishing_level(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Grain(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Wood(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Name(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://protege.stanford.edu/plugins/owl/protege#TO(SkSat_u1,SkSat_u2) → http://protege.stanford.edu/plugins/owl/protege#DIRECTED-BINARY-RELATION(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#SoftWood(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Wood(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Metal(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Natural_thing(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Found_in(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Standard_finish(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Finishing(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Cell_by_organism(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Cell_in_vivo(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#North_West_America_Region(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#United_States_Region(SkSat_u1)
+http://protege.stanford.edu/plugins/owl/protege#PAL-STATEMENT(SkSat_u1,SkSat_u2) → http://protege.stanford.edu/plugins/owl/protege#PAL-CONSTRAINT(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#West_Coast_Region(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Africa_Region(SkSat_u1)
+http://protege.stanford.edu/plugins/owl/protege#PAL-DESCRIPTION(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Chemical_constituents(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Wood(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Tracheary_element(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#transporting_cell(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Color(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Wood(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Weight(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Wood(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Plant_cell(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Eukaryotic_cell(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#transporting_cell(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Cell_by_function(SkSat_u1)
+http://protege.stanford.edu/plugins/owl/protege#FROM(SkSat_u1,SkSat_u2) → http://protege.stanford.edu/plugins/owl/protege#DIRECTED-BINARY-RELATION(SkSat_u1)
+http://protege.stanford.edu/plugins/owl/protege#PAL-STATEMENT(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Western_America_Region(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#United_States_Region(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Name(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Natural_thing(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Sealing(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Finishing(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Central_America_Region(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#United_States_Region(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Solvent_name(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Canada_Region(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Bleaching(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Finishing(SkSat_u1)
+http://protege.stanford.edu/plugins/owl/protege#PAL-RANGE(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Hemicellulose_lignin(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Chemical(SkSat_u1)
+http://protege.stanford.edu/plugins/owl/protege#PAL-DESCRIPTION(SkSat_u1,SkSat_u2) → http://protege.stanford.edu/plugins/owl/protege#PAL-CONSTRAINT(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Cell_by_class(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Cell_in_vivo(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#HardWood(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Wood(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Africa_Region(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Tracheary_element(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Plant_cell(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Experimentally_modified_cell(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Cell(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Region_of_growth(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://protege.stanford.edu/plugins/owl/protege#PAL-NAME(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Oil_Stain(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Staining(SkSat_u1)
+http://protege.stanford.edu/plugins/owl/protege#PAL-RANGE(SkSat_u1,SkSat_u2) → http://protege.stanford.edu/plugins/owl/protege#PAL-CONSTRAINT(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Water_Stain(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Staining(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Spirit_Stain(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Staining(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Linear_polymer_crystalline(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Chemical(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Cell_type(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Amazon_Region(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#United_States_Region(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Alaska_Region(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#United_States_Region(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Southern_California(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#United_States_Region(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Cellulose(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Chemical(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#South_Eastern_America_Region(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#United_States_Region(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Eukaryotic_cell(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Cell_by_organism(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Chemical_constituents(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Fiber_tracheid(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Tracheary_element(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#North_Eastern_America_Region(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#United_States_Region(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Cell_by_function(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Cell_by_class(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Cell_type(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Wood(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Solvent_name(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Staining(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Pacific_North_West(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#United_States_Region(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Region_of_growth(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Wood(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Tracheid(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Tracheary_element(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Staining(SkSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Finishing(SkSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Finishing_level(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Wood(SkSat_u1)
+=========================================

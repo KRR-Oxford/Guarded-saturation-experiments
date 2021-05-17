@@ -1,0 +1,102 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 63; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 3:29:48 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/63 = 0.000%
+SkSat discarded rules : 0/63 = 0.000%
+May 14, 2021 3:29:48 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 3:29:48 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 66 , 10
+nonFullTGDs	0		fullTGDs	66			newNonFullTGDs	10		newFullTGDs	0
+May 14, 2021 3:29:48 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 177 ms = 0.18 s
+May 14, 2021 3:29:48 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 30
+May 14, 2021 3:29:48 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 3:29:48 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 28 , 46
+May 14, 2021 3:29:48 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 5
+May 14, 2021 3:29:48 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (71 dependecies)
+=========================================
+http://www.owl-ontologies.com/travel.owl#BunjeeJumping(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Adventure(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasActivity(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Activity(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#BudgetAccommodation(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Accommodation(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#NationalPark(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1) & http://www.owl-ontologies.com/travel.owl#BudgetHotelDestination(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#BudgetHotelDestination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Capital(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#City(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#QuietDestination(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasCity(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#Contact(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Accommodation(SkSat_u1) & http://www.owl-ontologies.com/travel.owl#hasRating(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#BudgetAccommodation(SkSat_u1)
+_S5(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Museums(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasContact(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Contact(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Campground(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Accommodation(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Sunbathing(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Relaxation(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Museums(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Sightseeing(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasStreet(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Hotel(SkSat_u2) & http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1) & http://www.owl-ontologies.com/travel.owl#hasAccommodation(SkSat_u1,SkSat_u2) & http://www.owl-ontologies.com/travel.owl#BudgetAccommodation(SkSat_u2) → http://www.owl-ontologies.com/travel.owl#BudgetHotelDestination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Sports(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Activity(SkSat_u1)
+_S3(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#hasActivity(SkSat_u1,SkSat_u2)
+_S2(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#hasActivity(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/travel.owl#hasZipCode(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#Contact(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#UrbanArea(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Surfing(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Sports(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#FamilyDestination(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+_S0(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#hasAccommodation(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/travel.owl#Hiking(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Sports(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasCity(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+_S5(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#hasActivity(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/travel.owl#hasEMail(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#Contact(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#NationalPark(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#RuralArea(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasPart(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasAccommodation(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Sightseeing(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Activity(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#RuralArea(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#RetireeDestination(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Beach(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Safari(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Adventure(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasAccommodation(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Accommodation(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#isOfferedAt(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#City(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#UrbanArea(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasRating(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#AccommodationRating(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#isOfferedAt(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#Activity(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasContact(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#Activity(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasActivity(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#BedAndBreakfast(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Accommodation(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Safari(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Sightseeing(SkSat_u1)
+_S1(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Hotel(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasStreet(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#Contact(SkSat_u1)
+_S0(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Campground(SkSat_u1)
+_S4(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#LuxuryHotel(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Farmland(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#RuralArea(SkSat_u1)
+_S2(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Sightseeing(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasRating(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#Accommodation(SkSat_u1)
+_S1(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#hasAccommodation(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/travel.owl#BudgetHotelDestination(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Hotel(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Accommodation(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasEMail(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+_S1(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#BudgetAccommodation(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#BudgetAccommodation(SkSat_u1) & http://www.owl-ontologies.com/travel.owl#Accommodation(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#BudgetAccommodation(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Capital(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#LuxuryHotel(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Hotel(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#isOfferedAt(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#hasActivity(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/travel.owl#hasActivity(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#isOfferedAt(SkSat_u1,SkSat_u2)
+_S3(SkSat_u2,SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Hiking(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasPart(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Yoga(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Relaxation(SkSat_u1)
+_S4(SkSat_u1,SkSat_u2) → http://www.owl-ontologies.com/travel.owl#hasAccommodation(SkSat_u1,SkSat_u2)
+http://www.owl-ontologies.com/travel.owl#Adventure(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Activity(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#hasZipCode(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#int(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Town(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#UrbanArea(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#Relaxation(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Activity(SkSat_u1)
+http://www.owl-ontologies.com/travel.owl#City(SkSat_u1) → http://www.owl-ontologies.com/travel.owl#Destination(SkSat_u1)
+=========================================

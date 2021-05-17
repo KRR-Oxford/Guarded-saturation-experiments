@@ -1,0 +1,78 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 48; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 4:12:08 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/48 = 0.000%
+SkSat discarded rules : 0/48 = 0.000%
+May 14, 2021 4:12:08 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 4:12:08 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 48 , 0
+May 14, 2021 4:12:08 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 118 ms = 0.12 s
+May 14, 2021 4:12:08 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 14, 2021 4:12:08 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 4:12:08 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 14, 2021 4:12:08 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 14, 2021 4:12:08 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (48 dependecies)
+=========================================
+http://www.w3.org/2002/12/cal/ical#organizer(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#completed(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#rrule(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/12/cal/ical#Value_RECUR(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#class(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#action(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#transp(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/12/cal/ical#Vevent(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#repeat(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#integer(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#version(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#comment(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#resources(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#tzname(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#tzname(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/12/cal/ical#Vtimezone(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#lastModified(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#dtstamp(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#tzoffsetto(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/12/cal/ical#Vtimezone(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#created(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#summary(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#tzoffsetto(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#tzid(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#tzid(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/12/cal/ical#Vtimezone(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#requestStatus(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#description(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#completed(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/12/cal/ical#Vtodo(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#location(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#tzoffsetfrom(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#categories(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#calscale(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#geo(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/12/cal/ical#List_of_Float(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#percentComplete(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#integer(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#uid(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#exrule(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/12/cal/ical#Value_RECUR(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#transp(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#sequence(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#integer(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#exdate(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/12/cal/ical#DomainOf_rrule(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#recurrenceId(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/12/cal/ical#DomainOf_rrule(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#due(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/12/cal/ical#Vtodo(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#method(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#percentComplete(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/12/cal/ical#Vtodo(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#contact(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#priority(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#integer(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#repeat(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/12/cal/ical#Valarm(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#X-(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#relatedTo(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#duration(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/12/cal/ical#Value_DURATION(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#prodid(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#attendee(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#status(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.w3.org/2002/12/cal/ical#freebusy(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/12/cal/ical#Value_PERIOD(SkSat_u1)
+=========================================

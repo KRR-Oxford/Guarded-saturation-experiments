@@ -1,0 +1,72 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 42; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 3:14:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/42 = 0.000%
+SkSat discarded rules : 0/42 = 0.000%
+May 14, 2021 3:14:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 3:14:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 42 , 0
+May 14, 2021 3:14:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 83 ms = 0.08 s
+May 14, 2021 3:14:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 14, 2021 3:14:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 3:14:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 14, 2021 3:14:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 14, 2021 3:14:55 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (42 dependecies)
+=========================================
+http://ebiquity.umbc.edu/ontology/person.owl#GuestSpeaker(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#firstName(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/association.owl#person(SkSat_u2,SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#associatedWith(SkSat_u1,SkSat_u2)
+http://ebiquity.umbc.edu/ontology/person.owl#AssociateProfessor(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Faculty(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#face(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#PhDStudent(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Student(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#biography(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#PrincipalFaculty(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Faculty(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#Student(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#relatedPublication(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#lastName(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#Visitor(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#workContact(SkSat_u2,SkSat_u1) → http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#firstName(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#biography(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#Collaborator(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#PrincipalInvestigator(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#AdjunctFaculty(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Faculty(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#MSStudent(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Student(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#Sponsor(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#Faculty(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#associatedWith(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#BSStudent(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Student(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#AssistantProfessor(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Faculty(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#name(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#AffiliatedFaculty(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Faculty(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#BSAlumnus(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Alumnus(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#PhDAlumnus(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Alumnus(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#Professor(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Faculty(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#associatedWith(SkSat_u2,SkSat_u1) → http://ebiquity.umbc.edu/ontology/association.owl#PersonProjectAssociation(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#workContact(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#lastName(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#graduationDate(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#middleName(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#name(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#middleName(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#relatedPublication(SkSat_u2,SkSat_u1) → http://ebiquity.umbc.edu/ontology/publication.owl#Publication(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#graduationDate(SkSat_u1,SkSat_u2) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#Alumnus(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Person(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#MSAlumnus(SkSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Alumnus(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#face(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#anyURI(SkSat_u1)
+http://ebiquity.umbc.edu/ontology/person.owl#associatedWith(SkSat_u2,SkSat_u1) → http://ebiquity.umbc.edu/ontology/association.owl#person(SkSat_u1,SkSat_u2)
+=========================================

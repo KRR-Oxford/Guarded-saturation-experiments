@@ -1,0 +1,137 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 107; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 3:52:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/107 = 0.000%
+SkSat discarded rules : 0/107 = 0.000%
+May 14, 2021 3:52:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 3:52:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 107 , 0
+May 14, 2021 3:52:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 95 ms = 0.09 s
+May 14, 2021 3:52:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 14, 2021 3:52:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 3:52:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 14, 2021 3:52:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 14, 2021 3:52:39 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (107 dependecies)
+=========================================
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasPaper(SkSat_u2,SkSat_u1) → http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-publications-ont#Bibtex_Entry(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#cardinalityQ(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#unionOf(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/03/daml+oil#List(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#rest(SkSat_u1,SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#hasClassQ(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#maxCardinality(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasJobType(SkSat_u2,SkSat_u1) → http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-employmenttypes-ont#RI_Employment_Categories(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#rest(SkSat_u2,SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#maxCardinalityQ(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#isMemberOfLab(SkSat_u1,SkSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Member(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasEmail(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Literal(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#hasClass(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#disjointUnionOf(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/03/daml+oil#List(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#range(SkSat_u1,SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#disjointWith(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasPaper(SkSat_u1,SkSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Member(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#isMemberOfProject(SkSat_u1,SkSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Member(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasEmail(SkSat_u1,SkSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Member(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Container(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#TransitiveProperty(SkSat_u1) → http://www.w3.org/2002/07/owl#ObjectProperty(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#range(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasMainURL(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Literal(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#maxCardinalityQ(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#List(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#hasClass(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#subClassOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#onProperty(SkSat_u2,SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#first(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#oneOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#subject(SkSat_u1,SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#subject(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#complementOf(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#complementOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#isMemberOfLab(SkSat_u2,SkSat_u1) → http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-labgroup-ont#Lab(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#toClass(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#samePropertyAs(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/01/rdf-schema#subPropertyOf(SkSat_u1,SkSat_u2)
+http://www.w3.org/2000/01/rdf-schema#Datatype(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#ObjectProperty(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#domain(SkSat_u1,SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasName(SkSat_u1,SkSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Member(SkSat_u1)
+http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-labgroup-ont#hasMember(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#isMemberOfLab(SkSat_u1,SkSat_u2)
+http://www.daml.org/2001/03/daml+oil#DatatypeProperty(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#minCardinalityQ(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#object(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#value(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasName(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Literal(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#first(SkSat_u1,SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#minCardinalityQ(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#disjointWith(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasMainURL(SkSat_u1,SkSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Member(SkSat_u1)
+http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-project-ont#hasAuthor(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasPaper(SkSat_u1,SkSat_u2)
+http://www.daml.org/2001/03/daml+oil#maxCardinality(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#onProperty(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasJobTitle(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Literal(SkSat_u1)
+http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-project-ont#hasMember(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#isMemberOfProject(SkSat_u1,SkSat_u2)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate(SkSat_u1,SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#rest(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/03/daml+oil#List(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#oneOf(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/03/daml+oil#List(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#isMemberOfLab(SkSat_u2,SkSat_u1) → http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-labgroup-ont#hasMember(SkSat_u1,SkSat_u2)
+http://www.w3.org/2000/01/rdf-schema#subPropertyOf(SkSat_u2,SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#inverseOf(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#ObjectProperty(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#Class(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#unionOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#member(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#intersectionOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#sameClassAs(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/01/rdf-schema#subClassOf(SkSat_u1,SkSat_u2)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Container(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#cardinalityQ(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#sameClassAs(SkSat_u2,SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#subClassOf(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#member(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Container(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasJobType(SkSat_u1,SkSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Member(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#isMemberOfProject(SkSat_u2,SkSat_u1) → http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-project-ont#Project(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasJobTitle(SkSat_u1,SkSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Member(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#value(SkSat_u1,SkSat_u2) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#disjointUnionOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#minCardinality(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasPaper(SkSat_u2,SkSat_u1) → http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-project-ont#hasAuthor(SkSat_u1,SkSat_u2)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasHomeURL(SkSat_u1,SkSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Member(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#minCardinality(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#Restriction(SkSat_u1) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#Datatype(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#Container(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#hasHomeURL(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#Literal(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#subPropertyOf(SkSat_u1,SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+http://www.w3.org/2000/01/rdf-schema#domain(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00252.owl#isMemberOfProject(SkSat_u2,SkSat_u1) → http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-project-ont#hasMember(SkSat_u1,SkSat_u2)
+http://www.daml.org/2001/03/daml+oil#toClass(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Class(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#cardinality(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#List(SkSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#UnambiguousProperty(SkSat_u1) → http://www.w3.org/2002/07/owl#ObjectProperty(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#hasClassQ(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Restriction(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#rest(SkSat_u1,SkSat_u2) → http://www.daml.org/2001/03/daml+oil#List(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#sameClassAs(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#Class(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#cardinality(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#intersectionOf(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/03/daml+oil#List(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#UniqueProperty(SkSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Property(SkSat_u1)
+http://www.daml.org/2001/03/daml+oil#inverseOf(SkSat_u1,SkSat_u2) → http://www.w3.org/2002/07/owl#ObjectProperty(SkSat_u1)
+http://www.w3.org/1999/02/22-rdf-syntax-ns#object(SkSat_u1,SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement(SkSat_u1)
+=========================================

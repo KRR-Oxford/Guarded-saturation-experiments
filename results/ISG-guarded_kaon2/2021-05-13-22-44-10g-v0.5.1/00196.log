@@ -1,0 +1,66 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 36; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 3:47:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/36 = 0.000%
+SkSat discarded rules : 0/36 = 0.000%
+May 14, 2021 3:47:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 3:47:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 36 , 0
+May 14, 2021 3:47:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 96 ms = 0.10 s
+May 14, 2021 3:47:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 14, 2021 3:47:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 3:47:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 14, 2021 3:47:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 14, 2021 3:47:09 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (36 dependecies)
+=========================================
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#ownedBy(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#FreeHouse(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#pubName(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#string(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#servesFood(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#boolean(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#servesBeer(SkSat_u2,SkSat_u1) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Beer(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#openingPeriods(SkSat_u2,SkSat_u1) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#OpeningPeriod(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#liveEntertainment(SkSat_u2,SkSat_u1) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#LiveEntertainmentRegularity(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#familyFriendly(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#boolean(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#periods(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#OpeningPeriod(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#days(SkSat_u2,SkSat_u1) → http://sf.us.agentcities.net/ontologies/calendar.daml#DayOfWeek(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#familyFriendly(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#offLicense(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#boolean(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#servesFood(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#pubWebSite(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#telNumber(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#string(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#location(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#offLicense(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#stopHour(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#TimePeriod(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#days(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#OpeningPeriod(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#FreeHouse(SkSat_u1) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#servesBeer(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#telNumber(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#affiliatedWith(SkSat_u2,SkSat_u1) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Brewery(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#affiliatedWith(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#PublicHouse(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#openingPeriods(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#startHour(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#TimePeriod(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#onLicense(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#onLicense(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#boolean(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#stopHour(SkSat_u2,SkSat_u1) → http://sf.us.agentcities.net/ontologies/calendar.daml#Time(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#ownedBy(SkSat_u2,SkSat_u1) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#Proprietor(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#pubName(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#startHour(SkSat_u2,SkSat_u1) → http://sf.us.agentcities.net/ontologies/calendar.daml#Time(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#liveEntertainment(SkSat_u1,SkSat_u2) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#pubWebSite(SkSat_u2,SkSat_u1) → http://www.w3.org/2000/10/XMLSchema#anyURI(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#periods(SkSat_u2,SkSat_u1) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#TimePeriod(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#location(SkSat_u2,SkSat_u1) → http://sf.us.agentcities.net/ontologies/address.daml#Address(SkSat_u1)
+http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#PublicHouse(SkSat_u1) → http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub(SkSat_u1)
+=========================================

@@ -1,0 +1,77 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 27; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolemized Sat
+Running SkSat...
+May 14, 2021 1:30:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/27 = 0.000%
+SkSat discarded rules : 0/27 = 0.000%
+May 14, 2021 1:30:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_atom
+May 14, 2021 1:30:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 36 , 9
+nonFullTGDs	0		fullTGDs	36			newNonFullTGDs	9		newFullTGDs	0
+nonFullTGDs	27		fullTGDs	102			newNonFullTGDs	0		newFullTGDs	15
+May 14, 2021 1:30:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 202 ms = 0.20 s
+May 14, 2021 1:30:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 9
+May 14, 2021 1:30:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 14, 2021 1:30:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 90 , 18
+May 14, 2021 1:30:17 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 9
+May 14, 2021 1:30:17 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (45 dependecies)
+=========================================
+_S0(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/GO#GO_0008307(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0008307(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0030345(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2) & http://purl.org/obo/owl/UBERON#FBbt_00005069-FMA_30316-FMA_32558-MA_0000015-MIAA_0000025-WBbt_0005737-XAO_0000172-ZFA_0000548-ZFA_0005145(SkSat_u2) → http://purl.org/obo/owl/GO#GO_0008307(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/UBERON#WBbt_0005755(SkSat_u2) & http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/GO#GO_0042329(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/UBERON#FBbt_00000038-FMA_80224-ZFA_0000329(SkSat_u2) & http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/GO#GO_0008316(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0042329(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2) & http://purl.org/obo/owl/UBERON#FBbt_00004970(SkSat_u2) → http://purl.org/obo/owl/GO#GO_0005214(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/UBERON#FBbt_00004993-FBbt_00005401-FMA_70596-MA_0000153-MIAA_0000154-WBbt_0005733-XAO_0000028-ZFA_0000105(SkSat_u2) & http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/GO#GO_0030280(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/GO#GO_0008147(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0008147(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/GO#GO_0042302(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0042302(SkSat_u1)
+_S4(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/GO#GO_0005212(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0005212(SkSat_u1)
+_S3(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2)
+http://purl.org/obo/owl/GO#GO_0042329(SkSat_u1) & http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0042329(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/GO#GO_0030345(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0030345(SkSat_u1)
+_S4(SkSat_u2,SkSat_u1) → http://purl.org/obo/owl/UBERON#FMA_30317-MA_0001459-MIAA_0000299-XAO_0000169-ZFA_0001514(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005214(SkSat_u1) & http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0005214(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0042302(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1)
+_S1(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2) & http://purl.org/obo/owl/UBERON#FBbt_00004970-MIAA_0000150-WBbt_0005755(SkSat_u2) → http://purl.org/obo/owl/GO#GO_0042302(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005214(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1)
+_S2(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2)
+_S1(SkSat_u2,SkSat_u1) → http://purl.org/obo/owl/UBERON#FBbt_00000038-FMA_80224-ZFA_0000329(SkSat_u1)
+_S8(SkSat_u2,SkSat_u1) → http://purl.org/obo/owl/UBERON#FBbt_00004970(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005212(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0008307(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1)
+_S6(SkSat_u2,SkSat_u1) → http://purl.org/obo/owl/UBERON#WBbt_0005755(SkSat_u1)
+_S0(SkSat_u2,SkSat_u1) → http://purl.org/obo/owl/UBERON#FBbt_00005069-FMA_30316-FMA_32558-MA_0000015-MIAA_0000025-WBbt_0005737-XAO_0000172-ZFA_0000548-ZFA_0005145(SkSat_u1)
+_S7(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/UBERON#FMA_30317-MA_0001459-MIAA_0000299-XAO_0000169-ZFA_0001514(SkSat_u2) & http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/GO#GO_0008147(SkSat_u1)
+_S5(SkSat_u2,SkSat_u1) → http://purl.org/obo/owl/UBERON#FMA_55629-MA_0002543-ZFA_0005142(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/UBERON#FMA_55629-MA_0002543-ZFA_0005142(SkSat_u2) & http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/GO#GO_0030345(SkSat_u1)
+_S7(SkSat_u2,SkSat_u1) → http://purl.org/obo/owl/UBERON#FBbt_00004199-FMA_58241-MA_0000275-MIAA_0000141-XAO_0000008-ZFA_0000035(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0008316(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1)
+_S2(SkSat_u2,SkSat_u1) → http://purl.org/obo/owl/UBERON#FBbt_00004970-MIAA_0000150-WBbt_0005755(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0008316(SkSat_u1) & http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0008316(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0030280(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1)
+_S3(SkSat_u2,SkSat_u1) → http://purl.org/obo/owl/UBERON#FBbt_00004993-FBbt_00005401-FMA_70596-MA_0000153-MIAA_0000154-WBbt_0005733-XAO_0000028-ZFA_0000105(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0008147(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1)
+_S6(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2)
+_S5(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2)
+_S8(SkSat_u1,SkSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/OBO_REL#inheres_in(SkSat_u1,SkSat_u2) & http://purl.org/obo/owl/UBERON#FBbt_00004199-FMA_58241-MA_0000275-MIAA_0000141-XAO_0000008-ZFA_0000035(SkSat_u2) → http://purl.org/obo/owl/GO#GO_0005212(SkSat_u1)
+http://purl.org/obo/owl/GO#GO_0005198(SkSat_u1) & http://purl.org/obo/owl/GO#GO_0030280(SkSat_u1) → http://purl.org/obo/owl/GO#GO_0030280(SkSat_u1)
+=========================================
