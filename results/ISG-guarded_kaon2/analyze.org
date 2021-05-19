@@ -1,11 +1,19 @@
 #+TITLE: Comparison of GSat, the Skolemized version and KAON2
 
-#+OPTIONS: toc:nil 
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://static.cheredeprince.net/org/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://static.cheredeprince.net/org/css/readtheorg.css"/>
+
+#+HTML_HEAD: <script src="https://static.cheredeprince.net/org/js/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://static.cheredeprince.net/org/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://static.cheredeprince.net/org/js/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://static.cheredeprince.net/org/js/readtheorg.js"></script>
+
+#+OPTIONS: toc:t author:nil
 #+PROPERTY: header-args :eval never-export
-#+PROPERTY: header-args:ipython :exports both
+#+PROPERTY: header-args:ipython :exports results
 
 * Introduction 
-  In the following, we explore the statistics outputed by [[file:2021-05-13-22-41-10g-v0.5.1][the experiments on GSat]], on its [[file:2021-05-13-22-44-10g-v0.5.1][Skolemized version]] and on [[file:2021-05-11-11-50-10g-0.5.1-600-kaon2][KAON2]]. The saturation times are in miliseconds in the columns ~GSAT_TIME~, ~SK_TIME~ and ~KAON2_TIME~ respectively. The columns ~NFTGD_NB~ and ~FTGD_NB~ respectively contain the number of non full and full TGDs in input. Each row contain the values of the execution on the ontology whose name is in column ~NAME~.
+  In the following, we explore the statistics outputed by [[file:2021-05-13-22-41-10g-v0.5.1][the experiments on GSat]], on its [[file:2021-05-13-22-44-10g-v0.5.1][Skolemized version]] and on [[file:2021-05-11-11-50-10g-0.5.1-600-kaon2][KAON2]]. The saturation times are in miliseconds in the columns ~GSAT_TIME~, ~SK_TIME~ and ~KAON2_TIME~ respectively. The columns ~NFTGD_NB~ and ~FTGD_NB~ respectively contain the number of non full and full TGDs in input. Each row contain the values of the execution on the ontology whose name is in column ~NAME~. The *timeout is 10 minutes*.
 
   In the following, we remove the row, where executions on the ontologies, which contains at least one non full TGD and one full TGD.
 
@@ -41,7 +49,6 @@
     df_times = df_interesting[ ['NFTGD_NB', 'FTGD_NB', 'GSAT_TIME', 'SK_TIME', 'KAON2_TIME'] ]
 
     print(len(df_interesting.index))
-    #print(tabulate(df_interesting, headers="keys", tablefmt='orgtbl'))
   #+END_src
 
   #+RESULTS:
@@ -162,7 +169,7 @@
   [[file:plots/times8.png]]
   :end:
 
-    #+BEGIN_SRC ipython :results drawer :async t :session mysession :ipyfile plots/times9.png
+  #+BEGIN_SRC ipython :results drawer :async t :session mysession :ipyfile plots/times9.png
     plot_values(times, 9)
   #+END_SRC
 
@@ -194,14 +201,20 @@
 
 * Timeout analysis
 
-  
 ** GSat and Skolemized reach the timeout
-   The following table contains the rows where Gsat and the Skolemized executions reach the timeout sorted by the input size.
+   The following table contains the rows where Gsat and the Skolemized executions reach the timeout sorted by the input size. Their number:
    #+BEGIN_src ipython :session mysession :results output raw
      both_timeout = df_times[ (df_times['GSAT_TIME'] == 'TIMEOUT') & (df_times['SK_TIME'] == 'TIMEOUT') ]
 
      both_timeout = both_timeout.sort_values(by="NFTGD_NB").sort_values(by="FTGD_NB")
 
+     print(len(both_timeout.index))
+   #+END_src
+
+   #+RESULTS:
+   82
+
+   #+BEGIN_src ipython :session mysession :results output raw
      print(tabulate(both_timeout, headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -291,6 +304,15 @@
    |  760 |    50814 |  170834 | TIMEOUT   | TIMEOUT | TIMEOUT    |
    |  797 |   225554 |  236445 | TIMEOUT   | TIMEOUT | 4344       |
 
+   The number of ontologies on which all algorithms reach the timeout is:
+   #+BEGIN_src ipython :session mysession :results output raw
+     print(len(both_timeout[df_times['KAON2_TIME'] == 'TIMEOUT'].index))
+   #+END_src
+
+   #+RESULTS:
+   54
+
+
 ** Gsat timeout only
 
    The following table contains the rows where Gsat executions reach the timeout and the Skolemized version ones are not, sorted by the input size.
@@ -366,7 +388,6 @@
    |  354 |     1501 |    4648 | TIMEOUT   |  247357 |      24894 |
    |   39 |     2437 |    4826 | TIMEOUT   |  592494 |       7741 |
    |  117 |     2437 |    4826 | TIMEOUT   |  591640 |       8108 |
-   /home/mburon/.anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:2: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
   
 ** Skolemized timeout only
    The following table contains the rows where the Skolemized version executions reach the timeout and Gsat ones are not, sorted by the input size.
@@ -602,14 +623,6 @@
    |  793 |      279 |         153 |        441 |          539 |               0 |     646 |        310 |  0.520124 |
 
 
-   #+BEGIN_src ipython :session mysession :results output example
-     kaon2_win_over_sk = sk_vs_kaon2[diff_sk_kaon2]
-     print(len(kaon2_win_over_sk.index))
-   #+END_src
-
-   #+RESULTS:
-   : 164
-
 ** SkolemSat vs Gsat
    Comparison of skolemSat and GSat.
    #+BEGIN_src ipython :session mysession :results output raw
@@ -731,14 +744,6 @@
    |  454 |       69 |     347 |          69 |        485 |         3550 |           3343 |    3565 |      1746 |  0.510238 |
    |  638 |      124 |     204 |         124 |        452 |          619 |            320 |    1162 |       573 |  0.506885 |
 
-
-   #+BEGIN_src ipython :session mysession :results output example
-     kaon2_win_over_sk = sk_vs_kaon2[diff_sk_kaon2]
-     print(len(kaon2_win_over_sk.index))
-   #+END_src
-
-   #+RESULTS:
-   : 164
 
 ** Gsat vs KAON2
    Comparison of skolemSat and KAON2.
@@ -873,15 +878,6 @@
    |  633 |     3225 |      572 |    2452 |           2802 |            3168 |      4545 |       2176 |  0.521232 |
    |  649 |      947 |      663 |     284 |            284 |             904 |      1003 |        485 |  0.516451 |
    |  626 |     2581 |      500 |    1931 |           2195 |            2551 |      3723 |       1836 |  0.506849 |
-
-
-   #+BEGIN_src ipython :session mysession :results output example
-     kaon2_win_over_sk = sk_vs_kaon2[diff_sk_kaon2]
-     print(len(kaon2_win_over_sk.index))
-   #+END_src
-
-   #+RESULTS:
-   : 164
 
 * All Statistics
   All the statistics:
@@ -1365,3 +1361,77 @@
   |  795 |    47412 |   65392 |          91048 |   TIMEOUT |       47412 |     160216 |       160216 | TIMEOUT |   112804 |               0 |    TIMEOUT |
   |  796 |    43622 |  100787 |         100787 |   TIMEOUT |       43622 |     188031 |       188031 | TIMEOUT |      nan |               0 |       1772 |
   |  797 |   225554 |  236445 |         237675 |   TIMEOUT |      225554 |     687449 |       688378 | TIMEOUT |      nan |               0 |       4344 |
+
+* Questions
+  
+** TODO What ERROR means in GSat statistics ?
+
+   The two ontologies 553 and 703 lead GSat to an error "OutOfMemoryError: Java heap space".
+   #+BEGIN_src ipython :session mysession :results output raw
+     print(tabulate(df_interesting[['NFTGD_NB','FTGD_NB','GSAT_TIME']][df_interesting['GSAT_TIME'] == 'ERROR'], headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   | NAME | NFTGD_NB | FTGD_NB | GSAT_TIME |
+   |------+----------+---------+-----------|
+   |  553 |    50453 |   90333 | ERROR     |
+   |  703 |     1160 |    1210 | ERROR     |
+
+** TODO What is the meaning 0's KAON2 output size
+   The following cases are due to corner cases that were still not handled by the OWL sanitizer.
+ #+BEGIN_src ipython :session mysession :results output raw
+     print(tabulate(df_interesting[(df_interesting['KAON2_OUTPUT_NB'] == 0) & (df_interesting['KAON2_TIME'] != 'TIMEOUT') & pd.notna(df_interesting['AXIOM_NB'])][['NFTGD_NB','FTGD_NB','AXIOM_NB','KAON2_OUTPUT_NB']], headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   | NAME | NFTGD_NB | FTGD_NB | AXIOM_NB | KAON2_OUTPUT_NB |
+   |------+----------+---------+----------+-----------------|
+   |  112 |       15 |     113 |      120 |               0 |
+   |  114 |       12 |      31 |       30 |               0 |
+   |  116 |        7 |      30 |       35 |               0 |
+   |  319 |       13 |     243 |      245 |               0 |
+   |  320 |        9 |     146 |      144 |               0 |
+   |  344 |       13 |     243 |      245 |               0 |
+   |  345 |       13 |     243 |      245 |               0 |
+   |  346 |        9 |     146 |      144 |               0 |
+   |  348 |       13 |     159 |      159 |               0 |
+   |  480 |      327 |     663 |      918 |               0 |
+   |  590 |       14 |     605 |      612 |               0 |
+   |  636 |     1617 |     946 |     2557 |               0 |
+   |  775 |       55 |     337 |      305 |               0 |
+   |  781 |       13 |     243 |      245 |               0 |
+   |  782 |       13 |     243 |      245 |               0 |
+   |  783 |       13 |     241 |      243 |               0 |
+   |  792 |    27874 |   42581 |    56601 |               0 |
+   |  793 |      153 |     135 |      279 |               0 |
+
+   The following cases are due to syntax errors in the original OWL files
+ #+BEGIN_src ipython :session mysession :results output raw
+     print(tabulate(df_interesting[(df_interesting['KAON2_OUTPUT_NB'] == 0) & (df_interesting['KAON2_TIME'] != 'TIMEOUT') & pd.isna(df_interesting['AXIOM_NB'])][['NFTGD_NB','FTGD_NB','AXIOM_NB','KAON2_OUTPUT_NB']], headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   | NAME | NFTGD_NB | FTGD_NB | AXIOM_NB | KAON2_OUTPUT_NB |
+   |------+----------+---------+----------+-----------------|
+   |   48 |    14739 |   70578 |      nan |               0 |
+   |   78 |       10 |     715 |      nan |               0 |
+   |  209 |       18 |      27 |      nan |               0 |
+   |  214 |       11 |      21 |      nan |               0 |
+   |  233 |        1 |       4 |      nan |               0 |
+   |  238 |        5 |      17 |      nan |               0 |
+   |  293 |       16 |    2083 |      nan |               0 |
+   |  301 |        3 |     134 |      nan |               0 |
+   |  427 |      261 |     729 |      nan |               0 |
+   |  506 |      175 |     702 |      nan |               0 |
+   |  507 |      294 |    1048 |      nan |               0 |
+   |  511 |      345 |     275 |      nan |               0 |
+   |  701 |      861 |     982 |      nan |               0 |
+   |  703 |     1160 |    1210 |      nan |               0 |
+   |  712 |      502 |     681 |      nan |               0 |
+   |  728 |      728 |     881 |      nan |               0 |
+   |  754 |      932 |     973 |      nan |               0 |
+   |  778 |    42054 |  113187 |      nan |               0 |
+   |  791 |     8665 |   41060 |      nan |               0 |
+   |  794 |     9484 |   10114 |      nan |               0 |
+   |  796 |    43622 |  100787 |      nan |               0 |
+   |  797 |   225554 |  236445 |      nan |               0 |
