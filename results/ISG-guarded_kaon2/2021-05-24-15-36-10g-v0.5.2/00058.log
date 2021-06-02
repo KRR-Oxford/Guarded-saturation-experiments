@@ -1,0 +1,44 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 10; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/10 = 0.000%
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 7 , 3
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 83 ms = 0.08 s
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 3
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 3
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 3
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 8
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 10 ms = 0.01 s
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 11
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 24, 2021 9:01:50 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (7 dependecies)
+=========================================
+http://daml.umbc.edu/ontologies/ittalks/event#begins(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#location(GSat_u2,GSat_u1) → http://daml.umbc.edu/ontologies/ittalks/event#Place(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#ends(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#location(GSat_u1,GSat_u2) → http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent(GSat_u1) → http://daml.umbc.edu/ontologies/ittalks/event#Event(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#begins(GSat_u2,GSat_u1) → http://daml.umbc.edu/ontologies/ittalks/event#Instant(GSat_u1)
+http://daml.umbc.edu/ontologies/ittalks/event#ends(GSat_u2,GSat_u1) → http://daml.umbc.edu/ontologies/ittalks/event#Instant(GSat_u1)
+=========================================

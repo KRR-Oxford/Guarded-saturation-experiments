@@ -1,0 +1,62 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 25; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/25 = 0.000%
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 25 , 0
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 69 ms = 0.07 s
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 0
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 0
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 0 ms = 0.00 s
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 0
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 24, 2021 9:34:54 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (25 dependecies)
+=========================================
+http://www.daml.org/2001/01/gedcom/gedcom#marriage(GSat_u1,GSat_u2) → http://www.daml.org/2001/01/gedcom/gedcom#familyEventProperty(GSat_u1,GSat_u2)
+http://www.daml.org/2001/01/gedcom/gedcom#marriage(GSat_u2,GSat_u1) & http://www.daml.org/2001/01/gedcom/gedcom#Family(GSat_u2) → http://www.daml.org/2001/01/gedcom/gedcom#Marriage(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#birth(GSat_u1,GSat_u2) → http://www.daml.org/2001/01/gedcom/gedcom#individualEventProperty(GSat_u1,GSat_u2)
+http://www.daml.org/2001/01/gedcom/gedcom#divorce(GSat_u1,GSat_u2) → http://www.daml.org/2001/01/gedcom/gedcom#familyEventProperty(GSat_u1,GSat_u2)
+http://www.daml.org/2001/01/gedcom/gedcom#Birth(GSat_u1) → http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#death(GSat_u1,GSat_u2) → http://www.daml.org/2001/01/gedcom/gedcom#individualEventProperty(GSat_u1,GSat_u2)
+http://www.daml.org/2001/01/gedcom/gedcom#Family(GSat_u2) & http://www.daml.org/2001/01/gedcom/gedcom#divorce(GSat_u2,GSat_u1) → http://www.daml.org/2001/01/gedcom/gedcom#Divorce(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent(GSat_u1) → http://www.daml.org/2001/01/gedcom/gedcom#Event(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#place(GSat_u2,GSat_u1) & http://www.daml.org/2001/01/gedcom/gedcom#Event(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#Individual(GSat_u2) & http://www.daml.org/2001/01/gedcom/gedcom#death(GSat_u2,GSat_u1) → http://www.daml.org/2001/01/gedcom/gedcom#Death(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#Individual(GSat_u2) & http://www.daml.org/2001/01/gedcom/gedcom#childIn(GSat_u2,GSat_u1) → http://www.daml.org/2001/01/gedcom/gedcom#Family(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#familyEventProperty(GSat_u1,GSat_u2) → http://www.daml.org/2001/01/gedcom/gedcom#eventProperty(GSat_u1,GSat_u2)
+http://www.daml.org/2001/01/gedcom/gedcom#name(GSat_u2,GSat_u1) & http://www.daml.org/2001/01/gedcom/gedcom#Individual(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#Marriage(GSat_u1) → http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#Individual(GSat_u2) & http://www.daml.org/2001/01/gedcom/gedcom#surname(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent(GSat_u1) → http://www.daml.org/2001/01/gedcom/gedcom#Event(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#birth(GSat_u2,GSat_u1) & http://www.daml.org/2001/01/gedcom/gedcom#Individual(GSat_u2) → http://www.daml.org/2001/01/gedcom/gedcom#Birth(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#sex(GSat_u2,GSat_u1) & http://www.daml.org/2001/01/gedcom/gedcom#Individual(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#Death(GSat_u1) → http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#Individual(GSat_u2) & http://www.daml.org/2001/01/gedcom/gedcom#title(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#date(GSat_u2,GSat_u1) & http://www.daml.org/2001/01/gedcom/gedcom#Event(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#givenName(GSat_u2,GSat_u1) & http://www.daml.org/2001/01/gedcom/gedcom#Individual(GSat_u2) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#individualEventProperty(GSat_u1,GSat_u2) → http://www.daml.org/2001/01/gedcom/gedcom#eventProperty(GSat_u1,GSat_u2)
+http://www.daml.org/2001/01/gedcom/gedcom#spouseIn(GSat_u2,GSat_u1) & http://www.daml.org/2001/01/gedcom/gedcom#Individual(GSat_u2) → http://www.daml.org/2001/01/gedcom/gedcom#Family(GSat_u1)
+http://www.daml.org/2001/01/gedcom/gedcom#Divorce(GSat_u1) → http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent(GSat_u1)
+=========================================

@@ -1,0 +1,59 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 22; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/22 = 0.000%
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 22 , 0
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 86 ms = 0.09 s
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 0
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 0
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 0 ms = 0.00 s
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 0
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 24, 2021 10:16:03 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (22 dependecies)
+=========================================
+http://www.w3.org/2000/10/swap/pim/contact#zip(GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#postalCode(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#mailboxURI(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#_URI(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#birthday(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#Date(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#office(GSat_u1,GSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#Person(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#Person(GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#SocialEntity(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#home(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#ContactLocation(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#vacationHome(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#ContactLocation(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#publicHomePage(GSat_u1,GSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#homePage(GSat_u1,GSat_u2)
+http://www.w3.org/2000/10/swap/pim/contact#mobile(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#ContactLocation(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#mailbox(GSat_u1,GSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#SocialEntity(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#home(GSat_u1,GSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#Person(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#motherTongue(GSat_u1,GSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#Person(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#motherTongue(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#LanguageCode(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#address(GSat_u1,GSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#ContactLocation(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#mailboxURI(GSat_u1,GSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#SocialEntity(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#address(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#Address(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#office(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#ContactLocation(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#mailbox(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#Mailbox(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#vacationHome(GSat_u1,GSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#Person(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#emailAddress(GSat_u1,GSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#SocialEntity(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#mobile(GSat_u1,GSat_u2) → http://www.w3.org/2000/10/swap/pim/contact#Person(GSat_u1)
+http://www.w3.org/2000/10/swap/pim/contact#emailAddress(GSat_u2,GSat_u1) → http://www.w3.org/2000/10/swap/pim/contact#_EmailAddress(GSat_u1)
+=========================================

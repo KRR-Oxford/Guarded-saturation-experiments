@@ -1,0 +1,81 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 49; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/49 = 0.000%
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 44 , 5
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 230 ms = 0.23 s
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 19
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 4 , 17
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 15
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 99
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 127 ms = 0.13 s
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 129
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 25, 2021 11:18:09 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (44 dependecies)
+=========================================
+http://purl.obolibrary.org/obo/BFO_0000003(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000001(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0016020(GSat_u1) → http://purl.obolibrary.org/obo/GO_0044464(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0045211(GSat_u1) → http://purl.obolibrary.org/obo/GO_0016020(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0000006(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000040(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0045202(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000014(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/RO_0002150(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000002(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0044464(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000014(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000051(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2)
+http://purl.obolibrary.org/obo/BFO_0000002(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000001(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0042995(GSat_u1) → http://purl.obolibrary.org/obo/GO_0044464(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0001001(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0001000(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000051(GSat_u1,GSat_u2)
+http://purl.obolibrary.org/obo/PATO_0000467(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000467(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0000014(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000694(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000694(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0045211(GSat_u1) → http://purl.obolibrary.org/obo/GO_0044456(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000052(GSat_u1,GSat_u2)
+http://purl.obolibrary.org/obo/GO_0042734(GSat_u1) → http://purl.obolibrary.org/obo/GO_0016020(GSat_u1)
+http://purl.obolibrary.org/obo/RO_0002202(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000007(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0030425(GSat_u1) → http://purl.obolibrary.org/obo/GO_0043005(GSat_u1)
+http://purl.obolibrary.org/obo/CL_0000000(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/RO_0002150(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000052(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000056(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000052(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000462(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0043005(GSat_u1) → http://purl.obolibrary.org/obo/GO_0042995(GSat_u1)
+http://purl.obolibrary.org/obo/CL_0000540(GSat_u1) → http://purl.obolibrary.org/obo/CL_0000000(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0000003(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000006(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0042734(GSat_u1) → http://purl.obolibrary.org/obo/GO_0044456(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0000462(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000462(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0030424(GSat_u1) → http://purl.obolibrary.org/obo/GO_0043005(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0010000(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/RO_0002180(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000051(GSat_u1,GSat_u2)
+http://purl.obolibrary.org/obo/GO_0044456(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000014(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000040(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000467(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/RO_0002202(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000056(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0001000(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/ENVO_0002036(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+=========================================

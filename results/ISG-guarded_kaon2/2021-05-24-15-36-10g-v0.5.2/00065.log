@@ -1,0 +1,49 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 15; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/15 = 0.000%
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 12 , 3
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 92 ms = 0.09 s
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 5
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 5
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 5
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 15
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 15 ms = 0.01 s
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 20
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 24, 2021 9:02:28 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (12 dependecies)
+=========================================
+http://ebiquity.umbc.edu/ontology/person.owl#associatedWith(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#person(GSat_u1,GSat_u2)
+http://ebiquity.umbc.edu/ontology/project.owl#associatedWith(GSat_u2,GSat_u1) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#project(GSat_u1,GSat_u2)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#role(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Person(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#person(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#associatedWith(GSat_u1,GSat_u2)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#comment(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#project(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/project.owl#Project(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#person(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#project(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/project.owl#associatedWith(GSat_u1,GSat_u2)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#project(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#person(GSat_u2,GSat_u1) → http://ebiquity.umbc.edu/ontology/person.owl#Person(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#comment(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#role(GSat_u1,GSat_u2) → file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation(GSat_u1)
+=========================================

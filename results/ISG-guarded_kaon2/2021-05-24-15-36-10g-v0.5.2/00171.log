@@ -1,0 +1,98 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 73; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/73 = 0.000%
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 61 , 12
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 127 ms = 0.13 s
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 21
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 21
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 21
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 81
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 41 ms = 0.04 s
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 102
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 24, 2021 9:22:09 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (61 dependecies)
+=========================================
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#nameEnglishLong(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasAssociatedTerritory(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#AssociatedState(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#referencedByISO3166(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#referencesCountry(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#modificationTimestamp(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#referencesCountry(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#territoryOccupiedBy(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#OccupiedTerritory(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#countryCodeISO3166Alpha2(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtualTerritory(GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependenceDisputedState(GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#sovereigntyChallengedBy(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependentState(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#nameLocal(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#nameEnglish(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#associatedTerritoryOf(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#AssociatedState(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#nameLocalLong(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#challengesSovereigntyOf(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#sovereigntyChallengedBy(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#countryNameISO3166Short(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#sovereigntyChallengedBy(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependenceDisputedState(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#countryCodeISO3166Alpha3(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#countryCodeISO3166Alpha3(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#associatedTerritoryOf(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasAssociatedTerritory(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#associatedTerritoryOf(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependentState(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#sovereigntyChallengedBy(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#challengesSovereigntyOf(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#nameEnglishLong(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#challengesSovereigntyOf(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependentState(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#revocationEffective(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependentState(GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#referencesCountry(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#referencedByISO3166(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#effectiveFrom(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#FullyDependentTerritory(GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasOccupiedTerritory(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#territoryOccupiedBy(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#countryNameISO3166OfficialName(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#countryCodeUNNumeric3(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#int(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#nameLocal(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#AssociatedState(GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasAssociatedTerritory(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#associatedTerritoryOf(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#dependentTerritoryOf(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependentState(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#annexedTerritoryOf(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasAnnexedTerritory(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#countryCodeUNNumeric3(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#countryNameISO3166OfficialName(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#territoryOccupiedBy(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasOccupiedTerritory(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#dependentTerritoryOf(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasDependentTerritory(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#nameLocalLong(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#UnclaimableTerritory(GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasOccupiedTerritory(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#OccupiedTerritory(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#nameEnglish(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#annexedTerritoryOf(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtuallyAnnexedTerritory(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#dependentTerritoryOf(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#FullyDependentTerritory(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#countryCodeISO3166Alpha2(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasAnnexedTerritory(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#annexedTerritoryOf(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#annexedTerritoryOf(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependentState(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#referencedByISO3166(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtuallyAnnexedTerritory(GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasAnnexedTerritory(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtuallyAnnexedTerritory(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasDependentTerritory(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#dependentTerritoryOf(GSat_u1,GSat_u2)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#hasDependentTerritory(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#FullyDependentTerritory(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#OccupiedTerritory(GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#deletionTimestamp(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#challengesSovereigntyOf(GSat_u2,GSat_u1) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependenceDisputedState(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#referencedByISO3166(GSat_u1,GSat_u2) → http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#countryNameISO3166Short(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#creationTimestamp(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+=========================================

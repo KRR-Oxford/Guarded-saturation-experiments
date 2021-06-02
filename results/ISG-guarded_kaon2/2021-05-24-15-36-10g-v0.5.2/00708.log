@@ -1,0 +1,198 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 284; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 25, 2021 8:36:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/284 = 0.000%
+May 25, 2021 8:36:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 25, 2021 8:36:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 159 , 125
+May 25, 2021 8:46:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 600014 ms = 600.01 s
+May 25, 2021 8:46:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 219747
+May 25, 2021 8:46:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 25, 2021 8:46:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 254481
+May 25, 2021 8:46:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 6
+May 25, 2021 8:46:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 1316121
+May 25, 2021 8:46:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 295101 ms = 295.10 s
+May 25, 2021 8:46:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 2663299
+May 25, 2021 8:46:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 25, 2021 8:46:21 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: !!! TIME OUT !!!
+May 25, 2021 8:46:21 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (159 dependecies)
+=========================================
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-151(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-142(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000056(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0002045(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0002045(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000052(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2)
+http://purl.obolibrary.org/obo/BFO_0000052(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/RO_0002202(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0002255(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0002255(GSat_u1)
+http://purl.obolibrary.org/obo/RO_0002180(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000051(GSat_u1,GSat_u2)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000467(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000472(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000003(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000001(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000402(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/TAO_0001362(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001362(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0001355(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001355(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000574(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0043005(GSat_u1) → http://purl.obolibrary.org/obo/GO_0042995(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001632(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0001420(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001420(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000965(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/TAO_0000326(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000326(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0002249(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0002249(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001633(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0002180(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0002180(GSat_u1)
+http://purl.obolibrary.org/obo/RO_0002150(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000737(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000737(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000737(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000737(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001631(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-184(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-179(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0000462(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000462(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-329(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-336(GSat_u1)
+http://purl.obolibrary.org/obo/TAO_0000661(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000661(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000561(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000561(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-15(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-21(GSat_u1)
+http://purl.obolibrary.org/obo/TAO_0000661(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000661(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000486(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000486(GSat_u1)
+http://purl.obolibrary.org/obo/TAO_0001885(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001885(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000573(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0001452(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001452(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000052(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0001834(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001834(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0001001(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0001000(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0002250(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0002250(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000514(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000514(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0000003(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000006(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000002(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-147(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-138(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0001184(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001184(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0010000(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0001094(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001094(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0000965(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000965(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001505(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000661(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0000586(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000586(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0001505(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001505(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0001961(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001961(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000263(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000263(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000007(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0000006(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000040(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0045211(GSat_u1) → http://purl.obolibrary.org/obo/GO_0016020(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000452(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000452(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-157(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-162(GSat_u1)
+http://purl.obolibrary.org/obo/BSPO_0000068(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/BSPO_0000068(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000616(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001154(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-336(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-329(GSat_u1)
+http://purl.obolibrary.org/obo/TAO_0001736(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001736(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-162(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-157(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0030425(GSat_u1) → http://purl.obolibrary.org/obo/GO_0043005(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001452(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-231(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-236(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0002212(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0002212(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0045211(GSat_u1) → http://purl.obolibrary.org/obo/GO_0044456(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0001162(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001162(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-195(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-206(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0001173(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001173(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0000070(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000070(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0002212(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0001633(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001633(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/BSPO_0000082(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/BSPO_0000082(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0000014(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000056(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-201(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-190(GSat_u1)
+http://purl.obolibrary.org/obo/BSPO_0000684(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/BSPO_0000684(GSat_u1)
+http://purl.obolibrary.org/obo/RO_0002202(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/TAO_0000472(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000472(GSat_u1)
+http://purl.obolibrary.org/obo/CL_0000000(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001355(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0001631(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001631(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0016020(GSat_u1) → http://purl.obolibrary.org/obo/GO_0044464(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0001631(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001631(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-142(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-151(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000040(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/CARO_0001000(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000003(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/BSPO_0000679(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000470(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000586(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/TAO_0000277(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000277(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000737(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000070(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0042995(GSat_u1) → http://purl.obolibrary.org/obo/GO_0044464(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0000414(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000414(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/BSPO_0000071(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/BSPO_0000071(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0000470(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000470(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000002(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000001(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0000573(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000573(GSat_u1)
+http://purl.obolibrary.org/obo/RO_0002150(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/BSPO_0000679(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/BSPO_0000679(GSat_u1)
+http://purl.obolibrary.org/obo/ENVO_0002036(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000414(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000178(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000178(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001997(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000472(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000472(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0002180(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000623(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000623(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0002232(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0000052(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000052(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000051(GSat_u1,GSat_u2)
+http://purl.obolibrary.org/obo/PATO_0001154(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001154(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0030424(GSat_u1) → http://purl.obolibrary.org/obo/GO_0043005(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0002253(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0002253(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0044456(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000014(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-236(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-231(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-190(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-201(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0045202(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000014(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0001418(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001418(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000561(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000561(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001961(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0042734(GSat_u1) → http://purl.obolibrary.org/obo/GO_0016020(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-21(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-15(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0001539(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0001539(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0000616(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000616(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000550(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000550(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0002232(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0002232(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-138(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-147(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-179(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-184(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000462(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000561(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0000587(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000587(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000550(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000550(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0044464(GSat_u1) → http://purl.obolibrary.org/obo/CARO_0000014(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0000140(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000140(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000178(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000178(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000178(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0000467(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000467(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0001997(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001997(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/BSPO_0000679(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/BSPO_0000679(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0001632(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0001632(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/TAO_0000595(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000050_some_http://purl.obolibrary.org/obo/TAO_0000595(GSat_u1)
+http://purl.obolibrary.org/obo/CL_0000540(GSat_u1) → http://purl.obolibrary.org/obo/CL_0000000(GSat_u1)
+http://purl.obolibrary.org/obo/PATO_0000574(GSat_u2) & http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000574(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000140(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-206(GSat_u1) → http://kb.phenoscape.org/uuid/8c5489c3-c850-4264-b24b-d9dfbd962171-195(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000052(GSat_u1,GSat_u2)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000587(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000053(GSat_u1,GSat_u2) & http://purl.obolibrary.org/obo/PATO_0000402(GSat_u2) → http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/PATO_0000402(GSat_u1)
+http://purl.obolibrary.org/obo/GO_0042734(GSat_u1) → http://purl.obolibrary.org/obo/GO_0044456(GSat_u1)
+http://purl.obolibrary.org/obo/BFO_0000051(GSat_u2,GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000050(GSat_u1,GSat_u2)
+http://purl.obolibrary.org/obo/BFO_0000053_some_http://purl.obolibrary.org/obo/TAO_0000550(GSat_u1) → http://purl.obolibrary.org/obo/BFO_0000004(GSat_u1)
+=========================================
