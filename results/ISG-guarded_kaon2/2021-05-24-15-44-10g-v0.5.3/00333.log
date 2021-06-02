@@ -1,0 +1,106 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 71; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/71 = 0.000%
+GSat discarded rules : 0/71 = 0.000%
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 66 , 5
+nonFullTGDs	0		fullTGDs	66			newNonFullTGDs	5		newFullTGDs	0
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 135 ms = 0.13 s
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 8
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 5 , 4
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 4
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 9
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 13 ms = 0.01 s
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 28
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 1
+May 24, 2021 10:05:26 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (67 dependecies)
+=========================================
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_envelope(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Envelope(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#correlation_id(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#associated_policy(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#service_role(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Header(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#contained_in_msg_env(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#contains_address(GSat_u1,GSat_u2)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#realized_by(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Transport(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#reliability_realized_by(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Reliability(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_body(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#me_message_header(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Header(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#correlation_id(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#constrains(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Transport(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_sender(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Sender(GSat_u1)
+http://www.w3.org/2004/02/wsa/Message(GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#Delivery_Policy(GSat_u1) → http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#recipient(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#message_recipient(GSat_u1,GSat_u2)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#describe_service_invocation(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/Extensions.owl#Service_Invocation(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#contained_by(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Body(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#me_message_header_of(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#me_message_header(GSat_u1,GSat_u2)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#contained_in_msg_env(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Address(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#contained_by(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Envelope(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#realize_mep(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Exchange_Pattern(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#expressedIn(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/Extensions.owl#PolicyDescriptionLanguage(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_transport(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Transport(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#mep_identifier(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#realizedBy(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/Extensions.owl#URI(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#part_of_sequence(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#realized_by(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Reliability(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#content(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/Extensions.owl#Body_Content(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#me_message_header(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#me_message_header_of(GSat_u1,GSat_u2)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#constrained_by(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Delivery_Policy(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#service_role(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Role(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_sender(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#contained_in_msg_env(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Envelope(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#contained_by(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#contains_msg_body(GSat_u1,GSat_u2)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#describedUsing(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_transport(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#content(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Body(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#describedUsing(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceDescriptionLanguage(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_recipient(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Receiver(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#me_message_header(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Envelope(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#mep_identifier(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Exchange_Pattern(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#has_identifier(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#realize_mep(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Sequence(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_body(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Body(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#expressedIn(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Delivery_Policy(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#has_identifier(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#associated_policy(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Delivery_Policy(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Sender(GSat_u1) → http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#realize_correlation(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Correlation(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#realize_correlation(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Exchange_Pattern(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_header(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/ServiceModel.owlService_Intermediary(GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Sender(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_sender(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#originator_of(GSat_u1,GSat_u2)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#constrained_by(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Transport(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#describe_service_invocation(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Exchange_Pattern(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_envelope(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#contains_msg_body(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#contained_by(GSat_u1,GSat_u2)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#realizedBy(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Address(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_recipient(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Receiver(GSat_u1) → http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_header(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Header(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#message_recipient(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#recipient(GSat_u1,GSat_u2)
+http://www.w3.org/2004/02/wsa/ServiceModel.owlService_Intermediary(GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Receiver(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#contains_address(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#contained_in_msg_env(GSat_u1,GSat_u2)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#part_of_sequence(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Sequence(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#constrains(GSat_u1,GSat_u2) → http://www.w3.org/2004/02/wsa/MessageModel.owl#Delivery_Policy(GSat_u1)
+http://www.w3.org/2004/02/wsa/MessageModel.owl#originator_of(GSat_u2,GSat_u1) → http://www.w3.org/2004/02/wsa/MessageModel.owl#message_sender(GSat_u1,GSat_u2)
+=========================================

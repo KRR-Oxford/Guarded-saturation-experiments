@@ -1,0 +1,82 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 44; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/44 = 0.000%
+GSat discarded rules : 0/44 = 0.000%
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 44 , 0
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 115 ms = 0.12 s
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 0
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 0
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 0 ms = 0.00 s
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 0
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 25, 2021 4:57:02 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (44 dependecies)
+=========================================
+http://purl.org/obo/owl/OBO_REL#has_function(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#bearer_of(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#function_of(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#has_function(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#overlaps(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#overlaps(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#inactivates(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#negatively_regulates(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#decreased_in_magnitude_compared_to(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#increased_in_magnitude_compared_to(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#has_disposition(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#disposition_of(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#negatively_regulates(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#regulates(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#has_quality(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#bearer_of(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBOL#towards(GSat_u1,GSat_u2) → http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#results_in_formation_of(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#results_in_developmental_progression_of(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#surrounded_by(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#surrounds(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#quality_of(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#generically_inheres_in(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#results_in_structural_organization_of(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#has_participant(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#results_in_increased_mass_of(GSat_u1,GSat_u2) → http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#quality_of(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#has_quality(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#results_in_morphogenesis_of(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#has_participant(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#begins_at_end_of(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#ends_at_beginning_of(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#has_role(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#role_of(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#results_in_secretion_of_granules_from(GSat_u1,GSat_u2) → http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#influenced_by(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#influences(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#increased_in_magnitude_compared_to(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#decreased_in_magnitude_compared_to(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#role_of(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#has_role(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#homologous_to(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#homologous_to(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#positively_regulates(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#regulates(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#has_quality(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#quality_of(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#specifically_inheres_in(GSat_u1,GSat_u2) → http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#has_function(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#function_of(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#function_of(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#realizes(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#realized_by(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#regulated_by(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#regulates(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#surrounds(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#surrounded_by(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#results_in_maturation_of(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#has_participant(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#activates(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#positively_regulates(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#disposition_of(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#has_disposition(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#realized_by(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#realizes(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#role_of(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#bearer_of(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#ends_at_beginning_of(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#begins_at_end_of(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#specifically_inheres_in(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#regulates(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#regulated_by(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#inheres_in(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#bearer_of(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#influences(GSat_u2,GSat_u1) → http://purl.org/obo/owl/OBO_REL#influenced_by(GSat_u1,GSat_u2)
+http://purl.org/obo/owl/OBO_REL#has_role(GSat_u1,GSat_u2) → http://purl.org/obo/owl/OBO_REL#bearer_of(GSat_u1,GSat_u2)
+=========================================

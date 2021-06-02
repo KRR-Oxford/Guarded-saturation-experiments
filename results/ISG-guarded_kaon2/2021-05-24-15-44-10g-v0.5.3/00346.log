@@ -1,0 +1,185 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 155; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 24, 2021 10:36:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/155 = 0.000%
+GSat discarded rules : 0/155 = 0.000%
+May 24, 2021 10:36:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 24, 2021 10:36:42 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 146 , 9
+nonFullTGDs	0		fullTGDs	146			newNonFullTGDs	9		newFullTGDs	0
+May 24, 2021 10:36:42 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 183 ms = 0.18 s
+May 24, 2021 10:36:42 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 17
+May 24, 2021 10:36:42 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 24, 2021 10:36:42 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 1 , 16
+May 24, 2021 10:36:42 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 16
+May 24, 2021 10:36:42 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 14
+May 24, 2021 10:36:42 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 19 ms = 0.02 s
+May 24, 2021 10:36:42 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 76
+May 24, 2021 10:36:42 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 24, 2021 10:36:42 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (146 dependecies)
+=========================================
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedBordeaux(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#MuscadetRegion) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Muscadet(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#TexasWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasVintageYear(GSat_u1,GSat_u2) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Vintage(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineSugar(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineTaste(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#CabernetSauvignon(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasColor(GSat_u1,GSat_u2) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasSugar(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineSugar(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasWineDescriptor(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineDescriptor(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Bordeaux(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#StEmilionRegion) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#StEmilion(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#CaliforniaRegion) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#CaliforniaWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Anjou(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#BourgogneRegion) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Burgundy(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasBody(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineBody(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryRedWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#SweetRiesling(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Riesling(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#CaliforniaWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteBordeaux(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Bordeaux(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Zinfandel(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryRiesling(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Riesling(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#yearValue(GSat_u1,GSat_u2) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#VintageYear(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u2) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasMaker(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Winery(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Sauterne(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#LateHarvest(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteTableWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#TableWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasSugar(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Dry) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#TableWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#MeursaultRegion) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteBurgundy(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Meursault(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#CheninBlanc(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasMaker(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#producesWine(GSat_u1,GSat_u2)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#TableWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#PinotNoir(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Riesling(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#adjacentRegion(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Region(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedWine(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryRedWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#IceWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DessertWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#SancerreRegion) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Sancerre(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#madeFromGrape(GSat_u1,GSat_u2) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/food#madeFromFruit(GSat_u1,GSat_u2)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasSugar(GSat_u1,GSat_u2) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasWineDescriptor(GSat_u1,GSat_u2)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryWine(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryWhiteWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineGrape(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/food#Grape(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#TableWine(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasColor(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Red) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedTableWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#yearValue(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#positiveInteger(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#EarlyHarvest(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasColor(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#White) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteBurgundy(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#AlsaceRegion) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#AlsatianWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Beaujolais(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#madeFromGrape(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineGrape(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#FrenchWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Riesling(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasSugar(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Sweet) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#SweetRiesling(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryRedWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedBurgundy(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#PauillacRegion) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Medoc(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Pauillac(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasFlavor(GSat_u1,GSat_u2) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasWineDescriptor(GSat_u1,GSat_u2)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#SemillonOrSauvignonBlanc(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#BeaujolaisRegion) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Beaujolais(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#adjacentRegion(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#adjacentRegion(GSat_u1,GSat_u2)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasFlavor(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineFlavor(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteWine(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Bordeaux(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteBordeaux(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Meritage(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#LateHarvest(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasColor(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#White) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DessertWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#IceWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineFlavor(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineTaste(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#madeFromGrape(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#madeIntoWine(GSat_u1,GSat_u2)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#CotesDOrRegion) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedBurgundy(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#CotesDOr(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasSugar(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Sweet) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#SweetWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#MedocRegion) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Bordeaux(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Medoc(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Sauterne(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Bordeaux(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#madeIntoWine(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#madeFromGrape(GSat_u1,GSat_u2)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Pauillac(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Medoc(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#FullBodiedWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineColor(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineDescriptor(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#IceWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#LateHarvest(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedBurgundy(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Burgundy(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteLoire(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasColor(GSat_u1,GSat_u2) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasWineDescriptor(GSat_u1,GSat_u2)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Burgundy(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasBody(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Full) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#FullBodiedWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#SweetWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#AnjouRegion) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Anjou(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryWhiteWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#AlsatianWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasColor(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Rose) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RoseWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Riesling(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasSugar(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Dry) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryRiesling(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedBordeaux(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Bordeaux(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Tours(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Medoc(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Bordeaux(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasVintageYear(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#VintageYear(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DessertWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#CotesDOr(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedBurgundy(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasColor(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineColor(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Bordeaux(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedTableWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#TableWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineTaste(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineDescriptor(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Margaux(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Medoc(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineBody(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WineTaste(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#producesWine(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasMaker(GSat_u1,GSat_u2)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Sancerre(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#PetiteSyrah(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Burgundy(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteBurgundy(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#GermanyRegion) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#GermanWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#SweetRiesling(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DessertWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#GermanWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#SauvignonBlanc(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#SemillonOrSauvignonBlanc(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteBordeaux(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedWine(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Bordeaux(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedBordeaux(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#TexasRegion) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#TexasWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Chianti(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#ItalianWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasColor(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#White) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#TableWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteTableWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#USRegion) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#AmericanWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasBody(GSat_u1,GSat_u2) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasWineDescriptor(GSat_u1,GSat_u2)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#PinotBlanc(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Semillon(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#SemillonOrSauvignonBlanc(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteLoire(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#StEmilion(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Bordeaux(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Burgundy(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedBurgundy(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u2,GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Region(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasSugar(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Dry) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Merlot(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Chardonnay(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Port(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#BordeauxRegion) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Bordeaux(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#LateHarvest(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteLoire(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#AmericanWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteBurgundy(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Burgundy(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#FrenchRegion) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#FrenchWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Gamay(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#CabernetFranc(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#adjacentRegion(GSat_u1,GSat_u2) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Region(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#ItalianRegion) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#ItalianWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/food#PotableLiquid(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#madeFromGrape(GSat_u1,GSat_u2) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteNonSweetWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryWhiteWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#DryWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RoseWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Meursault(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#WhiteBurgundy(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasWineDescriptor(GSat_u1,GSat_u2) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#ToursRegion) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Tours(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Muscadet(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Medoc(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#MargauxRegion) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Margaux(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#hasColor(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Red) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#RedWine(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1) & http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#locatedIn(GSat_u1,http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#LoireRegion) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Loire(GSat_u1)
+http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#ItalianWine(GSat_u1) → http://www.w3.org/TR/2003/CR-owl-guide-20030818/wine#Wine(GSat_u1)
+=========================================

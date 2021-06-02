@@ -1,0 +1,130 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 92; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/92 = 0.000%
+GSat discarded rules : 0/92 = 0.000%
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 92 , 0
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 128 ms = 0.13 s
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 0
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 0
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 0
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 0 ms = 0.00 s
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 0
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 25, 2021 7:19:55 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (92 dependecies)
+=========================================
+http://www.owl-ontologies.com/unnamed.owl#isWithdrawalFor(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Withdrawal(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasPermanentOrder(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#PermanentOrder(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#AfterTransaction(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#StatementIssuanceFrequencyValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#FemaleSex(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#SexValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#DebtRunningLoan(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Running(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#HouseholdPayment(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Payment(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasStatementIssuanceFrequency(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#StatementIssuanceFrequencyValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#RemittanceAnotherBank(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Withdrawal(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isCreditCardOf(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#CreditCard(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasLoanStatusValue(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#LoanStatusValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasSexValue(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Client(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#NorthMoravia(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#CollectionAnotherBank(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Credit(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#InsurrancePayment(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Payment(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasCreditCard(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Client(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasLoanStatusValue(GSat_u2,GSat_u1) & http://www.owl-ontologies.com/unnamed.owl#NoProblemsFinishedLoan(GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#OKStatus(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#IsLoanOf(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Account(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#LoanPayment(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Payment(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Monthly(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#StatementIssuanceFrequencyValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#SanctionInterestCashWithdrawal(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CashWithdrawal(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#CentralBohemia(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#livesIn(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasCreditCard(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#isCreditCardOf(GSat_u1,GSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#IsLoanOf(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#hasLoan(GSat_u1,GSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#isTransactionFrom(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Transaction(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isTransactionFrom(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Account(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasOwner(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#isOwnerOf(GSat_u1,GSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#hasLoan(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Account(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#livesIn(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Client(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasSexValue(GSat_u2,GSat_u1) & http://www.owl-ontologies.com/unnamed.owl#Woman(GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#FemaleSex(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isOwnerOf(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Account(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasLoanStatusValue(GSat_u2,GSat_u1) & http://www.owl-ontologies.com/unnamed.owl#OKRunningLoan(GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#OKStatus(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#OKRunningLoan(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Running(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Leasing(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Payment(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasCreditCard(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CreditCard(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#NotPaidFinishedLoan(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Finished(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#ProblemStatus(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#LoanStatusValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Gold(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CreditCard(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasPermanentOrder(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Account(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Below18(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#AgeValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasSexValue(GSat_u2,GSat_u1) & http://www.owl-ontologies.com/unnamed.owl#Man(GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#MaleSex(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#NorthBohemia(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#OKStatus(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#LoanStatusValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isOwnerOf(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Client(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isPermanentOrderFor(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Payment(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#From50To65(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#AgeValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isWithdrawalFor(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Payment(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isPermanentOrderFor(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#PermanentOrder(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isUserOf(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Client(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Credit(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Transaction(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#SouthBohemia(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Running(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Loan(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasOwner(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Account(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasAgeValue(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#AgeValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#MaleSex(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#SexValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isOwnerOf(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#hasOwner(GSat_u1,GSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#ForStatementPayment(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Payment(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasStatementIssuanceFrequency(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Account(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasOwner(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Client(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#CashWithdrawal(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Withdrawal(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Junior(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CreditCard(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasLoanStatusValue(GSat_u2,GSat_u1) & http://www.owl-ontologies.com/unnamed.owl#DebtRunningLoan(GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#ProblemStatus(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasAgeValue(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Client(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Finished(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Loan(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#WestBohemia(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Classic(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CreditCard(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#NotPaidFinishedLoan(GSat_u2) & http://www.owl-ontologies.com/unnamed.owl#hasLoanStatusValue(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#ProblemStatus(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasLoan(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Loan(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#From18To25(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#AgeValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#From35To50(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#AgeValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isCreditCardOf(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#hasCreditCard(GSat_u1,GSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#OldAgePension(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#CollectionAnotherBank(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#IsLoanOf(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Loan(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isCreditCardOf(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Client(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#CashCredit(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Credit(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Above65(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#AgeValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Weekly(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#StatementIssuanceFrequencyValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasLoanStatusValue(GSat_u1,GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Loan(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Withdrawal(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Transaction(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#SouthMoravia(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#EastBohemia(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#From25To35(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#AgeValue(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasLoan(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#IsLoanOf(GSat_u1,GSat_u2)
+http://www.owl-ontologies.com/unnamed.owl#NoProblemsFinishedLoan(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Finished(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Woman(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Client(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isPermanentOrderFor(GSat_u2,GSat_u1) & http://www.owl-ontologies.com/unnamed.owl#PermanentOrder(GSat_u2) → http://www.owl-ontologies.com/unnamed.owl#Payment(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Prague(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Region(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#InterestsCredited(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Credit(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#CreditCardWithdrawal(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Withdrawal(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#isUserOf(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Account(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#Man(GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#Client(GSat_u1)
+http://www.owl-ontologies.com/unnamed.owl#hasSexValue(GSat_u2,GSat_u1) → http://www.owl-ontologies.com/unnamed.owl#SexValue(GSat_u1)
+=========================================

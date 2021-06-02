@@ -1,0 +1,75 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 38; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/38 = 0.000%
+GSat discarded rules : 0/38 = 0.000%
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumption method : tree_predicate
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 36 , 2
+nonFullTGDs	0		fullTGDs	36			newNonFullTGDs	2		newFullTGDs	0
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 127 ms = 0.13 s
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 4
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Filter discarded elements : 0
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 2 , 2
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Stop because subsumed: 2
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved equals to current: 4
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolved time: 6 ms = 0.01 s
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: evolve count: 11
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 24, 2021 9:26:41 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (36 dependecies)
+=========================================
+http://www.daml.org/2002/05/mcda/mcda-ont#objectives(GSat_u1,GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#Analysis(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#computedValue(GSat_u1,GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#Alternative(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#actsOn(GSat_u2,GSat_u1) → http://www.daml.org/2002/05/mcda/mcda-ont#ActionableObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#description(GSat_u1,GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#sort(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#integer(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#objectives(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#ActionableObject(GSat_u2) & http://www.daml.org/2002/05/mcda/mcda-ont#importanceValue(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#integer(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#effectValue(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#integer(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#Objective(GSat_u2) & http://www.daml.org/2002/05/mcda/mcda-ont#importanceValue(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#double(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#alternatives(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#supports(GSat_u1,GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#Action(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#actions(GSat_u1,GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#Alternative(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#importanceValue(GSat_u1,GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#effectValue(GSat_u1,GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#Action(GSat_u1) → http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#objective(GSat_u2,GSat_u1) & http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective(GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#Objective(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#description(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject(GSat_u1) → http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#supports(GSat_u2,GSat_u1) & http://www.daml.org/2002/05/mcda/mcda-ont#Action(GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#sort(GSat_u2,GSat_u1) & http://www.daml.org/2002/05/mcda/mcda-ont#Analysis(GSat_u2) → http://www.w3.org/2001/XMLSchema#integer(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#actions(GSat_u2,GSat_u1) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#effectValue(GSat_u2,GSat_u1) & http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective(GSat_u2) → http://www.w3.org/2001/XMLSchema#integer(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#objective(GSat_u1,GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#objective(GSat_u2,GSat_u1) → http://www.daml.org/2002/05/mcda/mcda-ont#Objective(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#supports(GSat_u2,GSat_u1) → http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#actsOn(GSat_u1,GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#Action(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#Objective(GSat_u1) → http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#sort(GSat_u1,GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#Analysis(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#Objective(GSat_u2) & http://www.daml.org/2002/05/mcda/mcda-ont#description(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective(GSat_u1) → http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#ActionableObject(GSat_u1) → http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#alternatives(GSat_u1,GSat_u2) → http://www.daml.org/2002/05/mcda/mcda-ont#Analysis(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#Alternative(GSat_u1) → http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#Analysis(GSat_u1) → http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject(GSat_u1) → http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject(GSat_u1)
+http://www.daml.org/2002/05/mcda/mcda-ont#computedValue(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#decimal(GSat_u1)
+=========================================
