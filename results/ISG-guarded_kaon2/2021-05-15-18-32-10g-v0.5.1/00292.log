@@ -1,0 +1,59 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 31; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Simple Sat
+May 16, 2021 4:05:47 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat discarded rules : 0/31 = 0.000%
+May 16, 2021 4:05:47 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: # initial TGDs: 31 , 0
+May 16, 2021 4:05:47 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat width : 2
+May 16, 2021 4:05:47 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat total time : 82 ms = 0.08 s
+May 16, 2021 4:05:47 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Subsumed elements : 0
+May 16, 2021 4:05:47 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Filter discarded elements : 0
+May 16, 2021 4:05:47 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 16, 2021 4:05:47 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 16, 2021 4:05:47 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (31 dependecies)
+=========================================
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#GeneralReliabilityKerberosPolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Kerberos(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#IncoherentPolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Policy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#GeneralReliabilityUsernamePolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#UsernameToken(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Reliable(GSat_u1) & http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#UsernameToken(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#GeneralReliabilityUsernamePolicy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#GeneralReliabilityUsernamePolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Policy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#UsernameToken(GSat_u1) & http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-On-Failure(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-On-FailureUsernamePolicy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#UsernameToken(GSat_u1) & http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-Until-Succeed(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-Until-SucceedUsernamePolicy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#X509(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#SecurityTokenType(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Kerberos(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#SecurityTokenType(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-Until-Succeed(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Reliable(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-Until-SucceedUsernamePolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Policy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#GeneralReliabilityUsernamePolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Reliable(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#ExactlyOneExamplePolicy(GSat_u1) & http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-Until-SucceedUsernamePolicy(GSat_u1) & http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-On-FailureUsernamePolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#IncoherentPolicy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#testSubSubProperty(GSat_u1,GSat_u2) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#testSubProperty(GSat_u1,GSat_u2)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-On-Failure(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Reliable(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-Until-SucceedUsernamePolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#UsernameToken(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-Until-SucceedUsernamePolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-Until-Succeed(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#GeneralReliabilityKerberosPolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Policy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-On-FailureUsernamePolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#UsernameToken(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-On-FailureUsernamePolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-On-Failure(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#testProperty(GSat_u1,GSat_u2) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Reliable(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#IncoherentPolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-On-FailureUsernamePolicy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Reliable(GSat_u1) & http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Kerberos(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#GeneralReliabilityKerberosPolicy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Reliable(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Messaging(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-On-FailureUsernamePolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Policy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#ExactlyOneExamplePolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Policy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#IncoherentPolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#ExactlyOneExamplePolicy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#UsernameToken(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#SecurityTokenType(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#GeneralReliabilityKerberosPolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Reliable(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#IncoherentPolicy(GSat_u1) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#Retry-Until-SucceedUsernamePolicy(GSat_u1)
+http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#testSubProperty(GSat_u1,GSat_u2) → http://www.mindswap.org/dav/ontologies/policyContainmentTest.owl#testProperty(GSat_u1,GSat_u2)
+=========================================

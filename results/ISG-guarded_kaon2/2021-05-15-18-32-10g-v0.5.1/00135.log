@@ -1,0 +1,83 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 55; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Simple Sat
+May 16, 2021 2:10:18 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat discarded rules : 0/55 = 0.000%
+May 16, 2021 2:10:18 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: # initial TGDs: 55 , 0
+May 16, 2021 2:10:18 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat width : 2
+May 16, 2021 2:10:18 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat total time : 104 ms = 0.10 s
+May 16, 2021 2:10:18 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Subsumed elements : 0
+May 16, 2021 2:10:18 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Filter discarded elements : 0
+May 16, 2021 2:10:18 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 16, 2021 2:10:18 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 16, 2021 2:10:18 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (55 dependecies)
+=========================================
+http://rdfs.org/sioc/ns#function_of(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Role(GSat_u1)
+http://rdfs.org/sioc/ns#has_revisor(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#creator_of(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#User(GSat_u1)
+http://rdfs.org/sioc/ns#revisor_of(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#Forum(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://rdfs.org/sioc/ns#container_of(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Forum(GSat_u1)
+http://rdfs.org/sioc/ns#has_reply(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#next_version(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#has_sibling(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#member_of(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Usergroup(GSat_u1)
+http://rdfs.org/sioc/ns#reply_of(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#next_version(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#previous_version(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#has_member(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#User(GSat_u1)
+http://rdfs.org/sioc/ns#previous_version(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#reply_of(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#parent_of(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Forum(GSat_u1)
+http://rdfs.org/sioc/ns#knows(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#User(GSat_u1)
+http://rdfs.org/sioc/ns#has_scope(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Role(GSat_u1)
+http://rdfs.org/sioc/ns#Role(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://rdfs.org/sioc/ns#host_of(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Forum(GSat_u1)
+http://rdfs.org/sioc/ns#email(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#User(GSat_u1)
+http://rdfs.org/sioc/ns#related_to(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#parent_of(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Forum(GSat_u1)
+http://rdfs.org/sioc/ns#has_function(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Role(GSat_u1)
+http://rdfs.org/sioc/ns#function_of(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://rdfs.org/sioc/ns#has_creator(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#member_of(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#User(GSat_u1)
+http://rdfs.org/sioc/ns#has_reply(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#has_parent(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Forum(GSat_u1)
+http://rdfs.org/sioc/ns#Post(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://rdfs.org/sioc/ns#has_container(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#scope_of(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Role(GSat_u1)
+http://rdfs.org/sioc/ns#knows(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#User(GSat_u1)
+http://rdfs.org/sioc/ns#has_creator(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#User(GSat_u1)
+http://rdfs.org/sioc/ns#User(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://rdfs.org/sioc/ns#has_scope(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://rdfs.org/sioc/ns#sibling_of(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#creator_of(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#has_container(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Forum(GSat_u1)
+http://rdfs.org/sioc/ns#Usergroup(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://rdfs.org/sioc/ns#related_to(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#has_parent(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Forum(GSat_u1)
+http://rdfs.org/sioc/ns#has_host(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Site(GSat_u1)
+http://rdfs.org/sioc/ns#has_revisor(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#User(GSat_u1)
+http://rdfs.org/sioc/ns#has_function(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#User(GSat_u1)
+http://rdfs.org/sioc/ns#email(GSat_u2,GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://rdfs.org/sioc/ns#has_host(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Forum(GSat_u1)
+http://rdfs.org/sioc/ns#container_of(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#Site(GSat_u1) → http://www.w3.org/2000/01/rdf-schema#Resource(GSat_u1)
+http://rdfs.org/sioc/ns#revisor_of(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#User(GSat_u1)
+http://rdfs.org/sioc/ns#has_member(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Usergroup(GSat_u1)
+http://rdfs.org/sioc/ns#host_of(GSat_u1,GSat_u2) → http://rdfs.org/sioc/ns#Site(GSat_u1)
+http://rdfs.org/sioc/ns#has_sibling(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+http://rdfs.org/sioc/ns#sibling_of(GSat_u2,GSat_u1) → http://rdfs.org/sioc/ns#Post(GSat_u1)
+=========================================

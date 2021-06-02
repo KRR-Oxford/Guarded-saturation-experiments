@@ -1,0 +1,69 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 41; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Simple Sat
+May 16, 2021 4:05:59 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat discarded rules : 0/41 = 0.000%
+May 16, 2021 4:05:59 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: # initial TGDs: 41 , 0
+May 16, 2021 4:05:59 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat width : 2
+May 16, 2021 4:05:59 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat total time : 85 ms = 0.09 s
+May 16, 2021 4:05:59 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Subsumed elements : 0
+May 16, 2021 4:05:59 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Filter discarded elements : 0
+May 16, 2021 4:05:59 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 16, 2021 4:05:59 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 16, 2021 4:05:59 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (41 dependecies)
+=========================================
+http://www.mindswap.org/~glapizco/technical.owl#hasSegment(GSat_u2,GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#VideoSegment(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#Multimedia(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#regionOf(GSat_u2,GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#hasRegion(GSat_u1,GSat_u2)
+http://www.mindswap.org/~glapizco/technical.owl#VideoSegment(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#Segment(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#frameNumber(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#VideoFrame(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#Video(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#hasRegion(GSat_u2,GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#regionOf(GSat_u1,GSat_u2)
+http://www.mindswap.org/~glapizco/technical.owl#hasDurationSeconds(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#Video(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#frameOf(GSat_u2,GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#Video(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#Mosaic(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#StillRegion(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#MovingRegion(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#Segment(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#depiction(GSat_u2,GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#depicts(GSat_u1,GSat_u2)
+http://www.mindswap.org/~glapizco/technical.owl#depiction(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/depiction(GSat_u1,GSat_u2)
+http://www.mindswap.org/~glapizco/technical.owl#depicts(GSat_u2,GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#depiction(GSat_u1,GSat_u2)
+http://www.mindswap.org/~glapizco/technical.owl#regionOf(GSat_u2,GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#VideoFrame(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#segmentOf(GSat_u2,GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#hasSegment(GSat_u1,GSat_u2)
+http://www.mindswap.org/~glapizco/technical.owl#regionOf(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#ImagePart(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#hasTotalFrames(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#Video(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#hasRegion(GSat_u2,GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#ImagePart(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#svgOutline(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#ImagePart(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#frameOf(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#VideoFrame(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#ImagePart(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#Segment(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#endFrame(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#VideoSegment(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#VideoSegment(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#Video(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#depicts(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/depicts(GSat_u1,GSat_u2)
+http://www.mindswap.org/~glapizco/technical.owl#hasSegment(GSat_u2,GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#segmentOf(GSat_u1,GSat_u2)
+http://www.mindswap.org/~glapizco/technical.owl#StillRegion(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#Segment(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#Segment(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#hasRegion(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#Image(GSat_u1) → http://xmlns.com/foaf/0.1/Image(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#depicts(GSat_u1,GSat_u2) → http://xmlns.com/foaf/0.1/depiction(GSat_u1,GSat_u2)
+http://www.mindswap.org/~glapizco/technical.owl#hasSegment(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#Video(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#segmentOf(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#VideoSegment(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#Image(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#descriptor(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#segmentOf(GSat_u2,GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#Video(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#ImageText(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#StillRegion(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent(GSat_u1) → http://www.mindswap.org/~glapizco/simpleABC.owl#Actuality(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#startFrame(GSat_u1,GSat_u2) → http://www.mindswap.org/~glapizco/technical.owl#VideoSegment(GSat_u1)
+http://www.mindswap.org/~glapizco/technical.owl#VideoText(GSat_u1) → http://www.mindswap.org/~glapizco/technical.owl#MovingRegion(GSat_u1)
+=========================================

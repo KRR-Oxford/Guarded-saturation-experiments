@@ -1,0 +1,53 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 25; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Simple Sat
+May 16, 2021 2:45:11 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat discarded rules : 0/25 = 0.000%
+May 16, 2021 2:45:11 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: # initial TGDs: 25 , 0
+May 16, 2021 2:45:11 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat width : 2
+May 16, 2021 2:45:11 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat total time : 79 ms = 0.08 s
+May 16, 2021 2:45:11 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Subsumed elements : 0
+May 16, 2021 2:45:11 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Filter discarded elements : 0
+May 16, 2021 2:45:11 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Derived full/non full TGDs: 0 , 0
+May 16, 2021 2:45:11 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: ouptput full TGDs not contained in the input: 0
+May 16, 2021 2:45:11 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (25 dependecies)
+=========================================
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#statement(GSat_u1,GSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Proposition(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#object(GSat_u2,GSat_u1) → daml:Literal(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#subject(GSat_u1,GSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Statement(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#object(GSat_u1,GSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Statement(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Answeragent(GSat_u1) → daml:Thing(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#RuleQuery(GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Rule(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Statement(GSat_u1) → daml:Thing(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Rule(GSat_u1) → daml:Thing(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Reply(GSat_u1) → daml:Thing(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Proposition(GSat_u1) → daml:Thing(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Action(GSat_u1) → daml:Thing(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#actor(GSat_u2,GSat_u1) → rdfs:Literal(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#belief(GSat_u1,GSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Proposition(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#predicate(GSat_u1,GSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Statement(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#statement(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Statement(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Ruleml(GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Rule(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#belief(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#True_Or_False(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#act(GSat_u1,GSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Action(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#If(GSat_u1) → daml:Thing(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#if(GSat_u1,GSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Ruleml(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#actor(GSat_u1,GSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Action(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#if(GSat_u2,GSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#If(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#subject(GSat_u2,GSat_u1) → daml:Literal(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#predicate(GSat_u2,GSat_u1) → daml:Literal(GSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#act(GSat_u2,GSat_u1) → rdfs:Literal(GSat_u1)
+=========================================

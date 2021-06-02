@@ -1,0 +1,43 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 15; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Simple Sat
+May 16, 2021 1:23:38 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat discarded rules : 0/15 = 0.000%
+May 16, 2021 1:23:38 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: # initial TGDs: 14 , 1
+May 16, 2021 1:23:38 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat width : 2
+May 16, 2021 1:23:38 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Simple Sat total time : 91 ms = 0.09 s
+May 16, 2021 1:23:38 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Subsumed elements : 6
+May 16, 2021 1:23:38 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Filter discarded elements : 0
+May 16, 2021 1:23:38 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: Derived full/non full TGDs: 2 , 0
+May 16, 2021 1:23:38 AM uk.ac.ox.cs.gsat.SimpleSat run
+INFO: ouptput full TGDs not contained in the input: 1
+May 16, 2021 1:23:38 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (15 dependecies)
+=========================================
+http://ebiquity.umbc.edu/ontology/photo.owl#size(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#nonNegativeInteger(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#size(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/photo.owl#Photo(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#description(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/photo.owl#Photo(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#title(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#width(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/photo.owl#Photo(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#jpegURI(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#anyURI(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#height(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#nonNegativeInteger(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#jpegURI(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/photo.owl#Photo(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#takenOn(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/photo.owl#Photo(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#takenOn(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#height(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/photo.owl#Photo(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#description(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#string(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#Photo(GSat_u1) → http://ebiquity.umbc.edu/ontology/photo.owl#Photo(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#title(GSat_u1,GSat_u2) → http://ebiquity.umbc.edu/ontology/photo.owl#Photo(GSat_u1)
+http://ebiquity.umbc.edu/ontology/photo.owl#width(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#nonNegativeInteger(GSat_u1)
+=========================================
