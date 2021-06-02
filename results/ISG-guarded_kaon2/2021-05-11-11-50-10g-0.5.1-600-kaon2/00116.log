@@ -1,32 +1,59 @@
 Starting the KAON2 Executor (from OWL)...
 KAON2 Start
 Started..
-Initial axioms in the ontology: 35
-org.semanticweb.kaon2.api.KAON2Exception: Unknown description type '[not [oneOf http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#male]]'.
-	at org.semanticweb.kaon2.n4.a(Unknown Source)
-	at org.semanticweb.kaon2.n4.c(Unknown Source)
-	at org.semanticweb.kaon2.n4.a(Unknown Source)
-	at org.semanticweb.kaon2.eab.b(Unknown Source)
-	at org.semanticweb.kaon2.cab.a(Unknown Source)
-	at org.semanticweb.kaon2.cab.visit(Unknown Source)
-	at org.semanticweb.kaon2.eab.visit(Unknown Source)
-	at org.semanticweb.kaon2.hc.accept(Unknown Source)
-	at org.semanticweb.kaon2.j2.a(Unknown Source)
-	at org.semanticweb.kaon2.o2.rewrite(Unknown Source)
-	at org.semanticweb.kaon2.l3.a(Unknown Source)
-	at org.semanticweb.kaon2.l3.getReductionToDisjunctiveDatalog(Unknown Source)
-	at uk.ac.ox.cs.gsat.ExecutorOWL.runKAON2(ExecutorOWL.java:145)
-	at uk.ac.ox.cs.gsat.ExecutorOWL$1.call(ExecutorOWL.java:91)
-	at uk.ac.ox.cs.gsat.ExecutorOWL$1.call(ExecutorOWL.java:87)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-Failed!
+Initial axioms in the ontology: 37
+Completed!
 Finished!
-KAON2 End; # rules: 0
-KAON2 total time : 272 ms = 0.27 s
-Full TGD saturation: (0 dependecies)
+KAON2 End; # rules: 47
+KAON2 total time : 271 ms = 0.27 s
+Full TGD saturation: (47 dependecies)
 
 ====================
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person>(GSAT_U1),<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasHabitat>(GSAT_U1,GSAT_U2),<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#University>(GSAT_U2).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters>(GSAT_U2),<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren>(GSAT_U2,GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD>(GSAT_U1):-q5(GSAT_U1),<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent>(GSAT_U1):-q0(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>(GSAT_U1),<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren>(GSAT_U1,GSAT_U2).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Gender>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasGender>(GSAT_U2,GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#TasmanianDevil>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Quokka>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasHabitat>(GSAT_U1,GSAT_U2).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasHabitat>(GSAT_U2,GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#GraduateStudent>(GSAT_U1).
+q0(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent>(GSAT_U1).
+q3(GSAT_U1):-q0(GSAT_U1).
+xsd:boolean(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#isHardWorking>(GSAT_U2,GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male>(GSAT_U1):-q1(GSAT_U1).
+q1(GSAT_U1):-q2(GSAT_U1).
+q1(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasGender>(GSAT_U1,GSAT_U2).
+q2(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#DryEucalyptForest>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>(GSAT_U1):-q3(GSAT_U1).
+q3(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren>(GSAT_U1,GSAT_U2).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren>(GSAT_U2,GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#University>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials>(GSAT_U1).
+q2(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>(GSAT_U1):-q1(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#isHardWorking>(GSAT_U1,GSAT_U2).
+q4(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#GraduateStudent>(GSAT_U1).
+q5(GSAT_U1):-q4(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person>(GSAT_U1).
+q5(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasDegree>(GSAT_U1,GSAT_U2).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Degree>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasDegree>(GSAT_U2,GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person>(GSAT_U1):-q5(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD>(GSAT_U1).
+q4(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters>(GSAT_U1).
+q0(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters>(GSAT_U1).
+q2(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters>(GSAT_U1).
+q2(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest>(GSAT_U1):-<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Rainforest>(GSAT_U1).
+<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female>(GSAT_U1):-q1(GSAT_U1).
+:-xsd:boolean(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#boolean",$1)",GSAT_U1).
 ====================

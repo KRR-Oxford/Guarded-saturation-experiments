@@ -6,53 +6,53 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 # Rules: 45; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
 Full TGD saturation algorithm: Skolemized Sat
 Running SkSat...
-May 14, 2021 3:48:26 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:22 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: SkSat discarded rules : 0/45 = 0.000%
 SkSat discarded rules : 0/45 = 0.000%
-May 14, 2021 3:48:26 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:22 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: Subsumption method : tree_atom
-May 14, 2021 3:48:26 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:23 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: # initial TGDs: 27 , 18
 nonFullTGDs	0		fullTGDs	27			newNonFullTGDs	18		newFullTGDs	0
-May 14, 2021 3:48:26 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
-INFO: GSat total time : 140 ms = 0.14 s
-May 14, 2021 3:48:26 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:23 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 92 ms = 0.09 s
+May 19, 2021 9:13:23 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: Subsumed elements : 2
-May 14, 2021 3:48:26 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:23 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: Filter discarded elements : 0
-May 14, 2021 3:48:26 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:23 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: Derived full/non full TGDs: 0 , 20
-May 14, 2021 3:48:26 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:23 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: ouptput full TGDs not contained in the input: 0
-May 14, 2021 3:48:26 AM uk.ac.ox.cs.gsat.App executeAllSteps
+May 19, 2021 9:13:23 AM uk.ac.ox.cs.gsat.App executeAllSteps
 INFO: Rewriting completed!
 Full TGD saturation: (27 dependecies)
 =========================================
 http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#passenger(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#aircraft(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.daml.org/2001/06/itinerary/itinerary-ont#Aircraft(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#rentalCar(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary(SkSat_u2) → http://www.daml.org/2001/06/itinerary/itinerary-ont#RentalCar(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#rln(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary(SkSat_u2) → http://www.daml.org/2001/06/itinerary/itinerary-ont#RecordLocatorNumber(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#rate(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) → http://www.w3.org/2001/XMLSchema#decimal(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#smoking(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) → http://www.w3.org/2001/XMLSchema#boolean(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#class(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/06/itinerary/itinerary-ont#Class(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#destination(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.daml.ri.cmu.edu/ont/AirportCodes.daml#AirportCode(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#confirmation(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#checkout(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) → http://www.w3.org/2001/XMLSchema#dateTime(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#flight(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.w3.org/2001/XMLSchema#nonNegativeInteger(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#hotel(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#miles(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.w3.org/2001/XMLSchema#integer(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#hotelName(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#depart(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.w3.org/2001/XMLSchema#dateTime(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#rloc(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#RecordLocatorNumber(SkSat_u2) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#flight(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#checkin(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) → http://www.w3.org/2001/XMLSchema#dateTime(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#duration(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#timeDuration(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#origin(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.daml.ri.cmu.edu/ont/AirportCodes.daml#AirportCode(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#arrive(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.w3.org/2001/XMLSchema#dateTime(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u1) → http://org.semanticweb.owlapi/error#Error1(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#meal(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.daml.org/2001/06/itinerary/itinerary-ont#Meal(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#address(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
 http://www.daml.org/2001/06/itinerary/itinerary-ont#seat(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
-http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#airline(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/06/itinerary/icao#Airline(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#destination(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.daml.ri.cmu.edu/ont/AirportCodes.daml#AirportCode(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#arrive(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.w3.org/2001/XMLSchema#dateTime(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#checkin(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) → http://www.w3.org/2001/XMLSchema#dateTime(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#rate(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#decimal(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#smoking(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#boolean(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#miles(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.w3.org/2001/XMLSchema#integer(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#confirmation(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#depart(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.w3.org/2001/XMLSchema#dateTime(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#RecordLocatorNumber(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#rloc(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#class(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.daml.org/2001/06/itinerary/itinerary-ont#Class(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#duration(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#timeDuration(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#meal(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.daml.org/2001/06/itinerary/itinerary-ont#Meal(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#airline(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.daml.org/2001/06/itinerary/icao#Airline(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#aircraft(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) → http://www.daml.org/2001/06/itinerary/itinerary-ont#Aircraft(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u1) → http://org.semanticweb.owlapi/error#Error1(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#hotel(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary(SkSat_u2) → http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u1)
 http://www.daml.org/2001/06/itinerary/itinerary-ont#airline(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#RecordLocatorNumber(SkSat_u2) → http://www.daml.org/2001/06/itinerary/icao#Airline(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#address(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#rentalCar(SkSat_u2,SkSat_u1) & http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary(SkSat_u2) → http://www.daml.org/2001/06/itinerary/itinerary-ont#RentalCar(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#rln(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/06/itinerary/itinerary-ont#RecordLocatorNumber(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#flight(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#nonNegativeInteger(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#flight(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#hotelName(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#checkout(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#dateTime(SkSat_u1)
+http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight(SkSat_u2) & http://www.daml.org/2001/06/itinerary/itinerary-ont#origin(SkSat_u2,SkSat_u1) → http://www.daml.ri.cmu.edu/ont/AirportCodes.daml#AirportCode(SkSat_u1)
 =========================================

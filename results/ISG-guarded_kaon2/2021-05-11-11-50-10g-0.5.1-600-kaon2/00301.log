@@ -1,48 +1,146 @@
 Starting the KAON2 Executor (from OWL)...
 KAON2 Start
 Started..
-org.semanticweb.kaon2.api.KAON2Exception: Error in parsing.
-	at org.semanticweb.kaon2.ew.a(Unknown Source)
-	at org.semanticweb.kaon2.cw.parseOntology(Unknown Source)
-	at org.semanticweb.kaon2.gr.a(Unknown Source)
-	at org.semanticweb.kaon2.er.b(Unknown Source)
-	at org.semanticweb.kaon2.er.a(Unknown Source)
-	at org.semanticweb.kaon2.be.b(Unknown Source)
-	at org.semanticweb.kaon2.be.f(Unknown Source)
-	at org.semanticweb.kaon2.ud.openOntology(Unknown Source)
-	at org.semanticweb.kaon2.ud.openOntology(Unknown Source)
-	at uk.ac.ox.cs.gsat.ExecutorOWL.runKAON2(ExecutorOWL.java:134)
-	at uk.ac.ox.cs.gsat.ExecutorOWL$1.call(ExecutorOWL.java:91)
-	at uk.ac.ox.cs.gsat.ExecutorOWL$1.call(ExecutorOWL.java:87)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: org.xml.sax.SAXParseException; lineNumber: 0; columnNumber: 0; [line=0,column=0] Object 'http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasAlternativeEntry' cannot be a data property since it is already declared to be a object property.
-	at org.semanticweb.kaon2.ew.a(Unknown Source)
-	at org.semanticweb.kaon2.ew.a(Unknown Source)
-	at org.semanticweb.kaon2.ew.a(Unknown Source)
-	at org.semanticweb.kaon2.rdb.a(Unknown Source)
-	at org.semanticweb.kaon2.nw.a(Unknown Source)
-	at org.semanticweb.kaon2.ow.a(Unknown Source)
-	at org.semanticweb.kaon2.rdb.startElement(Unknown Source)
-	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
-	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
-	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
-	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
-	at org.semanticweb.kaon2.rdb.a(Unknown Source)
-	... 16 more
-Failed!
+Initial axioms in the ontology: 131
+Completed!
 Finished!
-KAON2 End; # rules: 0
-KAON2 total time : 159 ms = 0.16 s
-Full TGD saturation: (0 dependecies)
+KAON2 End; # rules: 134
+KAON2 total time : 291 ms = 0.29 s
+Full TGD saturation: (134 dependecies)
 
 ====================
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tnorm>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Cylindrical>(GSAT_U2),<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasOperationType>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tconorm>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Projection>(GSAT_U2),<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasOperationType>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Child>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#parent>(GSAT_U2),<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasNodes>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasAlternativeEntry>(GSAT_U1,GSAT_U2):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasAlternativeEntry>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasImportOntology>(GSAT_U1,GSAT_U2):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasImportOntology>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasMemebrshipFn>(GSAT_U1,GSAT_U2):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasAssociatedFuzzyTerm>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasAssociatedFuzzyTerm>(GSAT_U1,GSAT_U2):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasMemebrshipFn>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasFuzzificationType>(GSAT_U1,GSAT_U2):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasDefuzzificationType>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasDefuzzificationType>(GSAT_U1,GSAT_U2):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasFuzzificationType>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#prefix>(GSAT_U1,GSAT_U2):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#prefix>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tnorm>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Product>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasHedgeFormula>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasHegeName>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#operatedUpon>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Fuzzification>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasFuzzificationType>(GSAT_U1,GSAT_U2).
+:-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#parent>(GSAT_U1),<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Child>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyInference>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Inductivefuzzy>(GSAT_U1).
+xsd:float(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasFirstpnt>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#yager>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasOmega>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Guassian>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sigmoid>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Operation>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyInference>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasResolutionMethod>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Discrete>(GSAT_U1).
+xsd:float(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasOmega>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Projection>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sugeno>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#haslambda>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasFuzzyTerm>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tnorm>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Complement>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Standard>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#AggregationOf>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasHedge>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Node>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#parent>(GSAT_U1).
+xsd:float(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasMemebeshipValue>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#alphacutSupport>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaImport>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#prefix>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tree>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasHeuristicType>(GSAT_U1,GSAT_U2).
+q0(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Antecedent>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasID>(GSAT_U2,GSAT_U1).
+xsd:boolean(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#isaLeaf>(GSAT_U2,GSAT_U1).
+:-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#parent>(GSAT_U1),<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#isaLeaf>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasValue>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasHedgeFormula>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasIFT_URL>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Complement>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sugeno>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tnorm>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Min>(GSAT_U1).
+q1(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyInference>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#trapazoidal>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasFirstpnt>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Complement>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Crisp>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#ConflictResolution>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasResolutionMethod>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasAssociatedFuzzyTerm>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Node>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Child>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasMemebrshipFn>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Inductivefuzzy>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tree>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Possibility>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Conditional>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Unqualified>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tconorm>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Defuzzification>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasDefuzzificationType>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tconorm>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sum>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Guassian>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasAntecedent>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Fuzzification>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyNumber>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasValue>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Conditional>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Qualified>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyTerm>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#alphacutSupport>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Qualified>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasHedge>(GSAT_U1,GSAT_U2).
+q2(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Similar>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#degreeOfCertain>(GSAT_U1,GSAT_U2).
+xsd:float(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasmean>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tree>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Branch>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Similar>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#similarTo>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasEndPoint>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaImport>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasImportOntology>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaInfo>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaImport>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Complement>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#yager>(GSAT_U1).
+xsd:float(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasEndPoint>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Allpurpose>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasNumberOfPoints>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Operation>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasOperationType>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Inductivefuzzy>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasIFT_URL>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyInference>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MinMax>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Consequent>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasConsequent>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Inductivefuzzy>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Node>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Defuzzification>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasConsequent>(GSAT_U1,GSAT_U2).
+xsd:float(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasVariance>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaInfo>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasAlternativeEntry>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasInputValue>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tconorm>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Max>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#TruthType>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#UserDefined>(GSAT_U1).
+q0(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Consequent>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Antecedent>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasAntecedent>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#operatedUpon>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#trapazoidal>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Node>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasNodes>(GSAT_U2,GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasHegeName>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Cylindrical>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Similar>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#similarIn>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#AggregationOf>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasID>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasCardinality>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#trapazoidal>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasScndpnt>(GSAT_U1,GSAT_U2).
+xsd:float(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasCenter>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MinMax>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Conditional>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasStartPoint>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasInferenceType>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Guassian>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasmean>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasMemebrshipFn>(GSAT_U1,GSAT_U2).
+xsd:float(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasCardinality>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#represents>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaInfo>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#BaseOntology>(GSAT_U1).
+xsd:string(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasHeuristicType>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#triangular>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasCenter>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Node>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#isaLeaf>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyVariable>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasFuzzyVariable>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasAssociatedFuzzyTerm>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyVariable>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#pointsTo>(GSAT_U1,GSAT_U2).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyInference>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasInferenceType>(GSAT_U2,GSAT_U1).
+xsd:float(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#haslambda>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Similar>(GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Guassian>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasVariance>(GSAT_U1,GSAT_U2).
+xsd:string(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasName>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#trapazoidal>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#triangular>(GSAT_U1).
+xsd:float(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasStartPoint>(GSAT_U2,GSAT_U1).
+xsd:float(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#hasScndpnt>(GSAT_U2,GSAT_U1).
+<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation>(GSAT_U1):-<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Similar>(GSAT_U1).
+:-xsd:string(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#string",$1)",GSAT_U1).
+:-xsd:boolean(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#boolean",$1)",GSAT_U1).
+:-xsd:float(GSAT_U1),kaon2:ifTrue("isdataconstant($1) && ! hasdatatype("http://www.w3.org/2001/XMLSchema#float",$1)",GSAT_U1).
 ====================

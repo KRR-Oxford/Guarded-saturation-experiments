@@ -3,64 +3,74 @@ Executing from DLGP files
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-# Rules: 38; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+# Rules: 42; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
 Full TGD saturation algorithm: GSat
 Running GSat...
-May 12, 2021 8:00:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
-INFO: GSat discarded rules : 0/38 = 0.000%
-GSat discarded rules : 0/38 = 0.000%
-May 12, 2021 8:00:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 18, 2021 7:23:51 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat discarded rules : 0/42 = 0.000%
+GSat discarded rules : 0/42 = 0.000%
+May 18, 2021 7:23:51 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: Subsumption method : tree_atom
-May 12, 2021 8:00:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
-INFO: # initial TGDs: 30 , 7
-nonFullTGDs	0		fullTGDs	30			newNonFullTGDs	7		newFullTGDs	0
-May 12, 2021 8:00:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
-INFO: GSat total time : 156 ms = 0.16 s
-May 12, 2021 8:00:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
-INFO: Subsumed elements : 21
-May 12, 2021 8:00:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 18, 2021 7:23:51 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 30 , 11
+nonFullTGDs	0		fullTGDs	30			newNonFullTGDs	11		newFullTGDs	0
+May 18, 2021 7:23:51 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 140 ms = 0.14 s
+May 18, 2021 7:23:51 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Subsumed elements : 59
+May 18, 2021 7:23:51 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: Filter discarded elements : 0
-May 12, 2021 8:00:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
-INFO: Derived full/non full TGDs: 11 , 15
-May 12, 2021 8:00:54 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
-INFO: ouptput full TGDs not contained in the input: 5
-May 12, 2021 8:00:54 PM uk.ac.ox.cs.gsat.App executeAllSteps
+May 18, 2021 7:23:51 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: Derived full/non full TGDs: 33 , 41
+May 18, 2021 7:23:51 PM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: ouptput full TGDs not contained in the input: 15
+May 18, 2021 7:23:51 PM uk.ac.ox.cs.gsat.App executeAllSteps
 INFO: Rewriting completed!
-Full TGD saturation: (35 dependecies)
+Full TGD saturation: (45 dependecies)
 =========================================
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#GraduateStudent(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala(GSat_u1) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasDegree(GSat_u1,http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#PhD) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasGender(GSat_u1,http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#female) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters(GSat_u2) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren(GSat_u2,GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren(GSat_u1,GSat_u2) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent(GSat_u1)
 http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasDegree(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasDegree(GSat_u2,GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Degree(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasHabitat(GSat_u2,GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Rainforest(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters(GSat_u1) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#isHardWorking(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#boolean(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasHabitat(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male(GSat_u1)
 http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Quokka(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#isHardWorking(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#GraduateStudent(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasGender(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#DryEucalyptForest(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasGender(GSat_u1,http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#male) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#TasmanianDevil(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#University(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasHabitat(GSat_u1,GSat_u2) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#University(GSat_u2) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#isHardWorking(GSat_u1,"true") → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasDegree(GSat_u2,GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Degree(GSat_u1)
 http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasGender(GSat_u2,GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Gender(GSat_u1)
-http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren(GSat_u2,GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#GraduateStudent(GSat_u1) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasGender(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#DryEucalyptForest(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasDegree(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Rainforest(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#isHardWorking(GSat_u2,GSat_u1) → http://www.w3.org/2001/XMLSchema#boolean(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren(GSat_u2,GSat_u1) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters(GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female(GSat_u1)
 http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasDegree(GSat_u1,GSat_u2) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasHabitat(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#University(GSat_u2) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1) & http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasHabitat(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#isHardWorking(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasGender(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#TasmanianDevil(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#GraduateStudent(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#University(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasGender(GSat_u1,GSat_u2) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasHabitat(GSat_u2,GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#GraduateStudent(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#hasChildren(GSat_u2,GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
+http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person(GSat_u1) → http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal(GSat_u1)
 =========================================

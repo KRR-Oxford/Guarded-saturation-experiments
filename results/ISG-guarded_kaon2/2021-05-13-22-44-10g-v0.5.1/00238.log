@@ -3,47 +3,44 @@ Executing from DLGP files
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-# Rules: 22; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+# Rules: 19; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
 Full TGD saturation algorithm: Skolemized Sat
 Running SkSat...
-May 14, 2021 3:51:16 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
-INFO: SkSat discarded rules : 0/22 = 0.000%
-SkSat discarded rules : 0/22 = 0.000%
-May 14, 2021 3:51:16 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: SkSat discarded rules : 0/19 = 0.000%
+SkSat discarded rules : 0/19 = 0.000%
+May 19, 2021 9:13:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: Subsumption method : tree_atom
-May 14, 2021 3:51:16 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
-INFO: # initial TGDs: 17 , 5
-nonFullTGDs	0		fullTGDs	17			newNonFullTGDs	5		newFullTGDs	0
-May 14, 2021 3:51:16 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
-INFO: GSat total time : 115 ms = 0.11 s
-May 14, 2021 3:51:16 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: # initial TGDs: 14 , 5
+nonFullTGDs	0		fullTGDs	14			newNonFullTGDs	5		newFullTGDs	0
+May 19, 2021 9:13:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+INFO: GSat total time : 84 ms = 0.08 s
+May 19, 2021 9:13:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: Subsumed elements : 6
-May 14, 2021 3:51:16 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: Filter discarded elements : 0
-May 14, 2021 3:51:16 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: Derived full/non full TGDs: 2 , 15
-May 14, 2021 3:51:16 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
+May 19, 2021 9:13:39 AM uk.ac.ox.cs.gsat.EvolveBasedSat run
 INFO: ouptput full TGDs not contained in the input: 1
-May 14, 2021 3:51:16 AM uk.ac.ox.cs.gsat.App executeAllSteps
+May 19, 2021 9:13:39 AM uk.ac.ox.cs.gsat.App executeAllSteps
 INFO: Rewriting completed!
-Full TGD saturation: (18 dependecies)
+Full TGD saturation: (15 dependecies)
 =========================================
-http://www.w3.org/2000/01/rdf-schema#label(SkSat_u2,SkSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(SkSat_u2) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u2) & http://www.w3.org/2000/01/rdf-schema#label(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#adjacentTo(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u1)
-http://www.cyc.com/2003/04/01/cyc#SubwayStation(SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u1)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#stations(SkSat_u2,SkSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(SkSat_u1)
-http://www.w3.org/2000/01/rdf-schema#label(SkSat_u2,SkSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System(SkSat_u2) → http://www.w3.org/2001/XMLSchema#string(SkSat_u1)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System(SkSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#line(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(SkSat_u1)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(SkSat_u1) → http://org.semanticweb.owlapi/error#Error2(SkSat_u1)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System(SkSat_u1) → http://org.semanticweb.owlapi/error#Error3(SkSat_u1)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u1)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#airport(SkSat_u2,SkSat_u1) → http://www.daml.org/2001/10/html/airport-ont#Airport(SkSat_u1)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#location(SkSat_u2,SkSat_u1) → http://www.daml.org/2003/02/fips55/location-ont#Location(SkSat_u1)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#line(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(SkSat_u1)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Loop(SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(SkSat_u1)
 http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u1) → http://www.cyc.com/2003/04/01/cyc#SubwayStation(SkSat_u1)
 http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u1) → http://org.semanticweb.owlapi/error#Error1(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System(SkSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#line(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#airport(SkSat_u2,SkSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u2) → http://www.daml.org/2001/10/html/airport-ont#Airport(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Loop(SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(SkSat_u1) → http://org.semanticweb.owlapi/error#Error2(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#line(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(SkSat_u1)
+http://www.cyc.com/2003/04/01/cyc#SubwayStation(SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System(SkSat_u1) → http://org.semanticweb.owlapi/error#Error3(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#location(SkSat_u2,SkSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u2) → http://www.daml.org/2003/02/fips55/location-ont#Location(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#homepage(SkSat_u2,SkSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System(SkSat_u2) → http://www.w3.org/2001/XMLSchema#anyURI(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#adjacentTo(SkSat_u2,SkSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u2) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station(SkSat_u1)
+http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#stations(SkSat_u2,SkSat_u1) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line(SkSat_u2) → http://www.w3.org/1999/02/22-rdf-syntax-ns#List(SkSat_u1)
 http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#adjacentTo(SkSat_u2,SkSat_u1) → http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#adjacentTo(SkSat_u1,SkSat_u2)
-http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System(SkSat_u2) & http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#homepage(SkSat_u2,SkSat_u1) → http://www.w3.org/2001/XMLSchema#anyURI(SkSat_u1)
 =========================================

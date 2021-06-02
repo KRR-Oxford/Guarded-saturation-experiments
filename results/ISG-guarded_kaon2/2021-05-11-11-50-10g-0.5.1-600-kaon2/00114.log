@@ -1,32 +1,69 @@
 Starting the KAON2 Executor (from OWL)...
 KAON2 Start
 Started..
-Initial axioms in the ontology: 30
-org.semanticweb.kaon2.api.KAON2Exception: Unknown description type '[not [oneOf http://www.owl-ontologies.com/generations.owl#MaleSex]]'.
-	at org.semanticweb.kaon2.n4.a(Unknown Source)
-	at org.semanticweb.kaon2.n4.c(Unknown Source)
-	at org.semanticweb.kaon2.n4.a(Unknown Source)
-	at org.semanticweb.kaon2.eab.b(Unknown Source)
-	at org.semanticweb.kaon2.cab.a(Unknown Source)
-	at org.semanticweb.kaon2.cab.visit(Unknown Source)
-	at org.semanticweb.kaon2.eab.visit(Unknown Source)
-	at org.semanticweb.kaon2.hc.accept(Unknown Source)
-	at org.semanticweb.kaon2.j2.a(Unknown Source)
-	at org.semanticweb.kaon2.o2.rewrite(Unknown Source)
-	at org.semanticweb.kaon2.l3.a(Unknown Source)
-	at org.semanticweb.kaon2.l3.getReductionToDisjunctiveDatalog(Unknown Source)
-	at uk.ac.ox.cs.gsat.ExecutorOWL.runKAON2(ExecutorOWL.java:145)
-	at uk.ac.ox.cs.gsat.ExecutorOWL$1.call(ExecutorOWL.java:91)
-	at uk.ac.ox.cs.gsat.ExecutorOWL$1.call(ExecutorOWL.java:87)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-Failed!
+Initial axioms in the ontology: 26
+Completed!
 Finished!
-KAON2 End; # rules: 0
-KAON2 total time : 279 ms = 0.28 s
-Full TGD saturation: (0 dependecies)
+KAON2 End; # rules: 57
+KAON2 total time : 275 ms = 0.28 s
+Full TGD saturation: (57 dependecies)
 
 ====================
+<http://www.owl-ontologies.com/generations.owl#Parent>(GSAT_U1):-q0(GSAT_U1),<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Parent>(GSAT_U1):-q3(GSAT_U1),<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Parent>(GSAT_U1):-q4(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Parent>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1),<http://www.owl-ontologies.com/generations.owl#hasChild>(GSAT_U1,GSAT_U2),<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U2).
+<http://www.owl-ontologies.com/generations.owl#OffSpring>(GSAT_U1):-q6(GSAT_U1),<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#OffSpring>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1),<http://www.owl-ontologies.com/generations.owl#hasParent>(GSAT_U1,GSAT_U2),<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U2).
+<http://www.owl-ontologies.com/generations.owl#Sibling>(GSAT_U1):-q2(GSAT_U1),<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Sibling>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1),<http://www.owl-ontologies.com/generations.owl#hasSibling>(GSAT_U1,GSAT_U2),<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U2).
+<http://www.owl-ontologies.com/generations.owl#Man>(GSAT_U1):-q5(GSAT_U1),<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Woman>(GSAT_U1):-q5(GSAT_U1),<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#hasParent>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/generations.owl#hasChild>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#hasChild>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/generations.owl#hasParent>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#hasSibling>(GSAT_U1,GSAT_U2):-<http://www.owl-ontologies.com/generations.owl#hasSibling>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Father>(GSAT_U1).
+q0(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Father>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Father>(GSAT_U1).
+q5(GSAT_U1):-q1(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Brother>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Brother>(GSAT_U1).
+q2(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Brother>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Parent>(GSAT_U1).
+q0(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Parent>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Female>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#GrandFather>(GSAT_U1).
+q3(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#GrandFather>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#GrandFather>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-q4(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Male>(GSAT_U1).
+q5(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#hasSex>(GSAT_U1,GSAT_U2).
+<http://www.owl-ontologies.com/generations.owl#Male>(GSAT_U1):-q5(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Woman>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Woman>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Female>(GSAT_U1):-q5(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#GrandMother>(GSAT_U1).
+q3(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#GrandMother>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#GrandMother>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Mother>(GSAT_U1).
+q0(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Mother>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Mother>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Sex>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#hasSex>(GSAT_U2,GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#OffSpring>(GSAT_U1).
+q6(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#OffSpring>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Sister>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Sister>(GSAT_U1).
+q2(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Sister>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#GrandParent>(GSAT_U1).
+q3(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#GrandParent>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Man>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Man>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Sibling>(GSAT_U1).
+q2(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Sibling>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Son>(GSAT_U1).
+q6(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Son>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Son>(GSAT_U1).
+<http://www.owl-ontologies.com/generations.owl#Person>(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Daughter>(GSAT_U1).
+q6(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Daughter>(GSAT_U1).
+q1(GSAT_U1):-<http://www.owl-ontologies.com/generations.owl#Daughter>(GSAT_U1).
 ====================
