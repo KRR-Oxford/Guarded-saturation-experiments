@@ -53,6 +53,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const path = urlParams.get('path');
         const isFullRules = {}
+        const containsProjection = {}
         const ruleDefinitions = {}
 
         function isFull(v) {
@@ -66,16 +67,22 @@
               data: { id: v, label: v }
             }
 
+            node.classes = []
+
             if (isFull(v))
-              node.classes = ['full']
-            
+              node.classes.push('full')
+            else
+              node.classes.push('non-full')
+
+            if (containsProjection[v])
+              node.classes.push('projection')
+
             nodes.push(node)
             nodesSet[v] = true
           }
         }
 
         function addEdge(source, target, edges) {
-          //if (isFull(target)) //|| isFull(source))
           edges.push({
             data: { source: source, target: target }
           })
@@ -83,11 +90,25 @@
 
         function initFullAndNonFullRules(lines) {
           for (let line of lines) {
-            if (line.startsWith('|  -')) {
-              isFullRules[line.substring(line.indexOf('_') + 1, line.length).trim()] = false
-            }
-            if (line.startsWith('|  X')) {
-              isFullRules[line.substring(line.indexOf('_') + 1, line.length).trim()] = true
+            if (line.startsWith('|')) {
+              // first value is empty, the value is the rule label
+              let values = line.split('|')
+              let label = values[values.length -1].trim().substring(1)
+
+              // first value is full or non-full
+              if (values[1].trim() === '-') {
+                isFullRules[label] = false
+              }
+              if (values[1].trim() === 'X') {
+                isFullRules[label] = true
+              }
+              // second value indicates whether the rule contains a projection
+              if (values.length >= 4 && values[2].trim() === '-') {
+                containsProjection[label] = false
+              }
+              if (values.length >= 4 && values[2].trim() === 'X') {
+                containsProjection[label] = true
+              }
             }
           }
         }
@@ -119,6 +140,7 @@
             }
 
             initFullAndNonFullRules(lines)
+
             initRuleDefinitions(lines)
 
             for (let edge of edgesLines) {
@@ -171,6 +193,12 @@
                 }
               },
               {
+                selector: ".projection",
+                style: {
+                  "shape": "triangle",
+                }
+              },
+              {
                 selector: ".grey",
                 style: {
                   "opacity": ".2"
@@ -196,10 +224,13 @@
             document.getElementById('selected-rule').innerText = ''
             document.getElementById('highlighted-number').innerText = cy.nodes().size()
             document.querySelector('textarea').style.display = 'none'
-            cy.nodes().removeClass(GREY_CLASS)
+            cy.nodes().addClass(GREY_CLASS)
             cy.nodes().removeClass('selected')
-            cy.edges().removeClass(GREY_CLASS)
+            cy.edges().addClass(GREY_CLASS)
+            cy.filter('.non-full').union(cy.filter('.non-full').successors()).intersection(cy.filter('.projection').union(cy.filter('.projection').predecessors())).removeClass(GREY_CLASS)
+
           }
+          initGrey();
           let isShiftHold = false
 
           window.addEventListener('keydown', event => {
@@ -218,7 +249,7 @@
             document.getElementById('selected-rule').innerText = '[' + node.data('id') + ']' + ruleDefinitions[node.data('id')]
             
             node.addClass("selected")
-            let elts = (!isShiftHold) ? node.successors() : node.predecessors()
+            let elts = (!isShiftHold) ? node.successors() : getPredecessors(node)
 
             elts.removeClass(GREY_CLASS)
             document.getElementById('highlighted-number').innerText = elts.nodes().size()
@@ -233,6 +264,23 @@
           })
         }
 
+        getPredecessors = function(result) {
+          let size = result.size()
+
+          result = result.union(result.incomers('.full, edge'))
+
+          // add the non full incoming nodes before returning the result
+          if (result.size() === size) {
+            result = result.union(result.incomers('.non-full'))
+            non_full_descendant = result.filter('.non-full').union(result.filter('.non-full').successors())
+            result = result.intersection(non_full_descendant)
+
+            return result
+          } else {
+            return getPredecessors(result)
+          }
+        }
+        
         showHighlighted = function() {
           const highlighted = window.cy.nodes().not(window.cy.nodes().filter('.'+ GREY_CLASS))
 
