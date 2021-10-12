@@ -50,7 +50,7 @@ then
         echo $NAME$CSV_SEP$AXIOM_NB$CSV_SEP$OUTPUT_SIZE$CSV_SEP$RUN_TIME_MS >> $OUTPUT
     done
 else
-    echo "NAME,NFTGD_NB,FTGD_NB,SUBSUMED,NEW_FTGD_NB,NEW_NFTGD_NB,NEW_OUTPUT_SIZE,OUTPUT_SIZE,TIME"> $OUTPUT
+    echo "NAME,NFTGD_NB,FTGD_NB,SUBSUMED,NEW_FTGD_NB,NEW_NFTGD_NB,NEW_OUTPUT_SIZE,OUTPUT_SIZE,BODY_SK_ATOMS_MAX,EVOL_TIME,SUMB_TIME,TIME"> $OUTPUT
     for log in $DIR/*.log;
     do
         # initialization of the values
@@ -61,8 +61,10 @@ else
         NEW_FTGD_NB="N/A"
         NEW_OUTPUT_SIZE="N/A"
         OUTPUT_SIZE="N/A"
+        EVOL_TIME_MS="N/A"
+        BODY_SK_ATOMS_MAX="N/A"
         RUN_TIME_MS="N/A"
-
+        
         # get stats about input TGDs
         TGD_STATS=`grep "# initial TGDs:" $log || true`
         if [[ -n $TGD_STATS ]];
@@ -102,6 +104,29 @@ else
             fi
         fi
 
+
+        EVOL_TIME_LINE=`grep "evolved time:" $log || true`
+        if [[ -n $EVOL_TIME_LINE ]];
+        then
+            EVOL_TIME_SUFFIX=${EVOL_TIME_LINE#*"time: "}
+            EVOL_TIME=${EVOL_TIME_LINE:$(( ${#EVOL_TIME_LINE} - ${#EVOL_TIME_SUFFIX} )):${#EVOL_TIME_LINE}}
+            EVOL_TIME_MS=${EVOL_TIME%%" ms"*}
+        fi
+
+        SUMB_TIME_LINE=`grep "subsumption time:" $log || true`
+        if [[ -n $SUMB_TIME_LINE ]];
+        then
+            SUMB_TIME_SUFFIX=${SUMB_TIME_LINE#*"time: "}
+            SUMB_TIME=${SUMB_TIME_LINE:$(( ${#SUMB_TIME_LINE} - ${#SUMB_TIME_SUFFIX} )):${#SUMB_TIME_LINE}}
+            SUMB_TIME_MS=${SUMB_TIME%%" ms"*}
+        fi
+
+        BODY_SK_ATOMS_MAX_LINE=`grep "maximum number of Skolem atoms in body:" $log || true`
+        if [[ -n $BODY_SK_ATOMS_MAX_LINE ]];
+        then
+            BODY_SK_ATOMS_MAX=${BODY_SK_ATOMS_MAX_LINE#*"body: "}
+        fi
+
         # Display the time out
         IS_TIMEOUT=`grep "!!! TIME OUT !!!" $log || true`
 
@@ -117,10 +142,10 @@ else
         then
             RUN_TIME_MS="ERROR"
         fi
-        
+
         FILE_NAME=`basename $log`
         NAME=${FILE_NAME%".log"}
-        echo $NAME$CSV_SEP$NFTGD_NB$CSV_SEP$FTGD_NB$CSV_SEP$SUBSUMED$CSV_SEP$NEW_FTGD_NB$CSV_SEP$NEW_NFTGD_NB$CSV_SEP$NEW_OUTPUT_SIZE$CSV_SEP$OUTPUT_SIZE$CSV_SEP$RUN_TIME_MS >> $OUTPUT
+        echo $NAME$CSV_SEP$NFTGD_NB$CSV_SEP$FTGD_NB$CSV_SEP$SUBSUMED$CSV_SEP$NEW_FTGD_NB$CSV_SEP$NEW_NFTGD_NB$CSV_SEP$NEW_OUTPUT_SIZE$CSV_SEP$OUTPUT_SIZE$CSV_SEP$BODY_SK_ATOMS_MAX$CSV_SEP$EVOL_TIME_MS$CSV_SEP$SUMB_TIME_MS$CSV_SEP$RUN_TIME_MS >> $OUTPUT
 
     done
 fi

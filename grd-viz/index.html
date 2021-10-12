@@ -153,6 +153,8 @@
                 addEdge(source, target, edges)
               }
             }
+
+            console.log(elts)
             loadGraph(elts)
           })
 
@@ -160,8 +162,8 @@
           var cy = window.cy = cytoscape({
             container: document.getElementById('cy'),
 
-            boxSelectionEnabled: false,
-            autounselectify: true,
+            boxSelectionEnabled: true,
+            autounselectify: false,
             layout: {
 	      name: 'euler',
               maxSimulationTime: 90000, // max length in ms to run the layout
@@ -179,11 +181,12 @@
                 }
               },
               {
-                selector: '.selected',
+                selector: ':selected',
                 style: {
-                  'overlay-color': "blue",
-                  'overlay-opacity': "0.5",
-                  'overlay-padding': "5"
+                  // 'overlay-color': "blue",
+                  // 'overlay-opacity': "0.5",
+                  // 'overlay-padding': "5"
+                  opacity: 1
                 }
               },
               {
@@ -199,7 +202,7 @@
                 }
               },
               {
-                selector: ".grey",
+                selector: ":unselected",
                 style: {
                   "opacity": ".2"
                 }
@@ -221,40 +224,83 @@
 
           document.getElementById('highlighted-number').innerText = cy.nodes().size()
           function initGrey() {
+            console.log("init")
             document.getElementById('selected-rule').innerText = ''
             document.getElementById('highlighted-number').innerText = cy.nodes().size()
             document.querySelector('textarea').style.display = 'none'
-            cy.nodes().addClass(GREY_CLASS)
-            cy.nodes().removeClass('selected')
-            cy.edges().addClass(GREY_CLASS)
-            cy.filter('.non-full').union(cy.filter('.non-full').successors()).intersection(cy.filter('.projection').union(cy.filter('.projection').predecessors())).removeClass(GREY_CLASS)
+            cy.nodes().selectify()
+              .unselect()
+
+            cy.edges().selectify()
+              .unselect()
+
+
+            let elts = cy.filter('.non-full').union(cy.filter('.non-full').successors()).intersection(cy.filter('.projection').union(cy.filter('.projection').predecessors()))
+                .selectify()
+                .select()
+
+
+            document.getElementById('highlighted-number').innerText = elts.nodes().size()
 
           }
+
           initGrey();
+
           let isShiftHold = false
 
           window.addEventListener('keydown', event => {
             isShiftHold = event.shiftKey
           })
+
           window.addEventListener('keyup', event => {
             isShiftHold = event.shiftKey
           }, true)
-          
+
+          window.addEventListener('keydown', event => {
+            cy.nodes().selectify().unselect()
+          })
+
+          window.addEventListener('keyup', event => {
+            if (cy.nodes().filter(':selected').size() === 0) {
+              initGrey()
+            } else {
+              cy.nodes().unselectify()
+              document.getElementById('highlighted-number').innerText = cy.nodes().filter(':selected').size()
+            }
+
+
+          }, true)
+
+          // cy.on('select', function(event){
+          // console.log("selection")
+          // initGrey()
+          //   cy.nodes().addClass(GREY_CLASS)
+          //   cy.edges().addClass(GREY_CLASS)
+          //   let elts= cy.filter(':selected').removeClass(GREY_CLASS)
+          //   document.getElementById('highlighted-number').innerText = elts.nodes().size()
+          // })
+
           cy.on('tap', 'node', function(evt){
-            initGrey()
-            cy.nodes().addClass(GREY_CLASS)
-            cy.edges().addClass(GREY_CLASS)
+            console.log('tap')
+            cy.nodes().selectify()
+              .unselect()
+              .unselectify()
+            cy.edges().selectify()
+              .unselect()
+              .unselectify()
             var node = evt.target;
 
             document.getElementById('selected-rule').innerText = '[' + node.data('id') + ']' + ruleDefinitions[node.data('id')]
             
-            node.addClass("selected")
+            node.selectify()
+              .select()
+              .unselectify()
             let elts = (!isShiftHold) ? node.successors() : getPredecessors(node)
 
-            elts.removeClass(GREY_CLASS)
+            elts.selectify()
+              .select()
+              .unselectify()
             document.getElementById('highlighted-number').innerText = elts.nodes().size()
-            node.removeClass(GREY_CLASS)
-
           })
 
           cy.on('tap', evt => {
@@ -282,7 +328,7 @@
         }
         
         showHighlighted = function() {
-          const highlighted = window.cy.nodes().not(window.cy.nodes().filter('.'+ GREY_CLASS))
+          const highlighted = window.cy.nodes().filter(':selected')
 
           let dlgp = ''
           let nodes = []
