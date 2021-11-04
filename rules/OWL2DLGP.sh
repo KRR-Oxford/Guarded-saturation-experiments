@@ -15,7 +15,12 @@ for OWL_FILE in $DIR/OWL/*.owl;
 do
     FILE_NAME=`basename $OWL_FILE`
     NAME=${FILE_NAME%".owl"}
-    FILESIZE=$(stat -c%s "$OWL_FILE")
+    if [[ ! -e "ISG-guarded_kaon2/$NAME.owl" ]];
+    then
+        echo "not such file $NAME.owl";
+        continue;
+    fi
+    FILESIZE=$(stat -c%s "ISG-guarded_kaon2/$NAME.owl")
 
     if (( $FILESIZE > $MAXSIZE )); then
         echo "Skipping "$OWL_FILE" because it is too large"
