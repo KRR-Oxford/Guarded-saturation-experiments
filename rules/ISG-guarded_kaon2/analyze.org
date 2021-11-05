@@ -1,0 +1,1596 @@
+We compute the redundant files list using this notebook
+
+#+BEGIN_src ipython :session stats :results output raw
+    import pandas as pd
+    from tabulate import tabulate
+    
+    stats='stats.csv'
+    df = pd.read_csv(stats, index_col='NAME')[['FGTGD', 'ExGTGD']]
+    df['N1'] = df.index
+    df = df[(df['FGTGD'] > 0) & (df['ExGTGD'] > 0)]
+    df1 = pd.read_csv(stats, index_col='NAME')[['FGTGD', 'ExGTGD']]
+    df1 = df1.add_prefix('OTHER_')
+    df1['N2'] = df1.index
+    
+    comp = df.merge(df1, left_on=['FGTGD', 'ExGTGD'], right_on=['OTHER_FGTGD', 'OTHER_ExGTGD'], how='left')
+    comp = comp[comp['N1'] > comp['N2']]
+    
+    print(tabulate(comp, headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+|     | FGTGD | ExGTGD |  N1 | OTHER_FGTGD | OTHER_ExGTGD |  N2 |
+|-----+-------+--------+-----+-------------+--------------+-----|
+|   5 |  2107 |  16705 |   5 |        2107 |        16705 |   4 |
+|  14 |   168 |     22 |   8 |         168 |           22 |   7 |
+|  20 |   168 |     22 |   9 |         168 |           22 |   7 |
+|  21 |   168 |     22 |   9 |         168 |           22 |   8 |
+|  26 |   168 |     22 |  10 |         168 |           22 |   7 |
+|  27 |   168 |     22 |  10 |         168 |           22 |   8 |
+|  28 |   168 |     22 |  10 |         168 |           22 |   9 |
+|  32 |   168 |     22 |  11 |         168 |           22 |   7 |
+|  33 |   168 |     22 |  11 |         168 |           22 |   8 |
+|  34 |   168 |     22 |  11 |         168 |           22 |   9 |
+|  35 |   168 |     22 |  11 |         168 |           22 |  10 |
+|  52 |  1551 |    139 |  24 |        1551 |          139 |  14 |
+|  58 | 31647 |  23858 |  28 |       31647 |        23858 |  27 |
+|  63 |  3626 |   2096 |  31 |        3626 |         2096 |  30 |
+|  69 |  9462 |  12339 |  35 |        9462 |        12339 |  33 |
+|  88 |    51 |     15 |  50 |          51 |           15 |  49 |
+| 120 |  4936 |   2437 | 117 |        4936 |         2437 |  39 |
+| 128 |   168 |     22 | 169 |         168 |           22 |   7 |
+| 129 |   168 |     22 | 169 |         168 |           22 |   8 |
+| 130 |   168 |     22 | 169 |         168 |           22 |   9 |
+| 131 |   168 |     22 | 169 |         168 |           22 |  10 |
+| 132 |   168 |     22 | 169 |         168 |           22 |  11 |
+| 135 |    61 |     12 | 171 |          61 |           12 |  63 |
+| 146 |     3 |      2 | 213 |           3 |            2 | 212 |
+| 151 |     8 |      1 | 217 |           8 |            1 |  69 |
+| 154 |     3 |      2 | 220 |           3 |            2 | 212 |
+| 155 |     3 |      2 | 220 |           3 |            2 | 213 |
+| 172 |   353 |     13 | 281 |         353 |           13 |  15 |
+| 197 |   228 |      9 | 334 |         228 |            9 | 332 |
+| 202 |   228 |      9 | 336 |         228 |            9 | 332 |
+| 203 |   228 |      9 | 336 |         228 |            9 | 334 |
+| 207 |   228 |      9 | 338 |         228 |            9 | 332 |
+| 208 |   228 |      9 | 338 |         228 |            9 | 334 |
+| 209 |   228 |      9 | 338 |         228 |            9 | 336 |
+| 213 |   228 |      9 | 340 |         228 |            9 | 332 |
+| 214 |   228 |      9 | 340 |         228 |            9 | 334 |
+| 215 |   228 |      9 | 340 |         228 |            9 | 336 |
+| 216 |   228 |      9 | 340 |         228 |            9 | 338 |
+| 218 |    33 |      2 | 341 |          33 |            2 |  68 |
+| 222 |   243 |    187 | 344 |         243 |          187 | 319 |
+| 227 |   243 |    187 | 345 |         243 |          187 | 319 |
+| 228 |   243 |    187 | 345 |         243 |          187 | 344 |
+| 232 |   146 |    124 | 346 |         146 |          124 | 320 |
+| 237 |    98 |      8 | 349 |          98 |            8 | 347 |
+| 250 |    96 |     40 | 367 |          96 |           40 | 366 |
+| 291 |    97 |      4 | 407 |          97 |            4 | 343 |
+| 314 |   178 |    359 | 431 |         178 |          359 | 430 |
+| 325 |  1700 |    209 | 447 |        1700 |          209 | 446 |
+| 335 |  1604 |     80 | 458 |        1604 |           80 | 457 |
+| 340 | 10382 |   9023 | 461 |       10382 |         9023 | 460 |
+| 352 | 75146 |  44414 | 472 |       75146 |        44414 | 470 |
+| 354 | 78977 |  42734 | 473 |       78977 |        42734 | 471 |
+| 372 |    23 |   8316 | 498 |          23 |         8316 | 497 |
+| 383 |   309 |     38 | 514 |         309 |           38 | 513 |
+| 392 |   169 |   4233 | 523 |         169 |         4233 | 522 |
+| 410 |    18 |      9 | 543 |          18 |            9 | 542 |
+| 436 |   714 |    619 | 578 |         714 |          619 | 423 |
+| 438 |  1507 |    786 | 579 |        1507 |          786 | 424 |
+| 454 |     1 |      4 | 599 |           1 |            4 | 598 |
+| 459 |   650 |     84 | 606 |         650 |           84 | 605 |
+| 467 |  2108 |    683 | 628 |        2108 |          683 | 626 |
+| 470 |  2221 |    572 | 629 |        2221 |          572 | 627 |
+| 472 |  2108 |    683 | 630 |        2108 |          683 | 626 |
+| 473 |  2108 |    683 | 630 |        2108 |          683 | 628 |
+| 478 |  2653 |    812 | 633 |        2653 |          812 | 631 |
+| 490 |   284 |    663 | 650 |         284 |          663 | 649 |
+| 520 |  1624 |   6207 | 696 |        1624 |         6207 | 694 |
+| 522 |  2842 |   7708 | 697 |        2842 |         7708 | 695 |
+| 581 | 68471 |  21197 | 758 |       68471 |        21197 |  44 |
+| 589 | 68471 |  21197 | 764 |       68471 |        21197 |  44 |
+| 590 | 68471 |  21197 | 764 |       68471 |        21197 | 758 |
+| 599 |   590 |     55 | 774 |         590 |           55 | 773 |
+| 603 |   243 |    187 | 781 |         243 |          187 | 319 |
+| 604 |   243 |    187 | 781 |         243 |          187 | 344 |
+| 605 |   243 |    187 | 781 |         243 |          187 | 345 |
+| 608 |   243 |    187 | 782 |         243 |          187 | 319 |
+| 609 |   243 |    187 | 782 |         243 |          187 | 344 |
+| 610 |   243 |    187 | 782 |         243 |          187 | 345 |
+| 611 |   243 |    187 | 782 |         243 |          187 | 781 |
+
+#+BEGIN_src ipython :session stats :results output raw
+  import os
+  def get_filename(v):
+      name = str(v)
+      while (len(name) != 5):
+          name = '0' + name
+      return name + '.dlgp'
+  
+  redundants = set()
+  
+  for ind, row in comp.iterrows():
+      n1 = get_filename(row['N1'])
+      n2 = get_filename(row['N2'])
+      if ((n2 not in redundants) & (n1 not in redundants)):
+          with open(n1, 'r') as file1: 
+              with open(n2, 'r') as file2:
+                  f1 = set(file1)
+                  f2 = set(file2)
+                  same = f1.issuperset(f2) & f2.issuperset(f1)
+          if (same):
+              os.rename(n1, 'redundants/' + n1)
+              redundants.add(n1)
+              print(n1 + ' and ' + n2 + ' are the same')
+#+END_src
+
+#+RESULTS:
+00005.dlgp and 00004.dlgp are the same
+00008.dlgp and 00007.dlgp are the same
+00009.dlgp and 00007.dlgp are the same
+00010.dlgp and 00007.dlgp are the same
+00011.dlgp and 00007.dlgp are the same
+00028.dlgp and 00027.dlgp are the same
+00031.dlgp and 00030.dlgp are the same
+00035.dlgp and 00033.dlgp are the same
+00050.dlgp and 00049.dlgp are the same
+00117.dlgp and 00039.dlgp are the same
+00334.dlgp and 00332.dlgp are the same
+00336.dlgp and 00332.dlgp are the same
+00338.dlgp and 00332.dlgp are the same
+00340.dlgp and 00332.dlgp are the same
+00344.dlgp and 00319.dlgp are the same
+00345.dlgp and 00319.dlgp are the same
+00346.dlgp and 00320.dlgp are the same
+00367.dlgp and 00366.dlgp are the same
+00431.dlgp and 00430.dlgp are the same
+00447.dlgp and 00446.dlgp are the same
+00458.dlgp and 00457.dlgp are the same
+00461.dlgp and 00460.dlgp are the same
+00578.dlgp and 00423.dlgp are the same
+00579.dlgp and 00424.dlgp are the same
+00599.dlgp and 00598.dlgp are the same
+00606.dlgp and 00605.dlgp are the same
+00628.dlgp and 00626.dlgp are the same
+00629.dlgp and 00627.dlgp are the same
+00630.dlgp and 00626.dlgp are the same
+00633.dlgp and 00631.dlgp are the same
+00650.dlgp and 00649.dlgp are the same
+00696.dlgp and 00694.dlgp are the same
+00697.dlgp and 00695.dlgp are the same
+00758.dlgp and 00044.dlgp are the same
+00764.dlgp and 00044.dlgp are the same
+00774.dlgp and 00773.dlgp are the same
+00782.dlgp and 00781.dlgp are the same
+00005.dlgp and 00004.dlgp are the same
+00008.dlgp and 00007.dlgp are the same
+00009.dlgp and 00007.dlgp are the same
+00010.dlgp and 00007.dlgp are the same
+00011.dlgp and 00007.dlgp are the same
+00028.dlgp and 00027.dlgp are the same
+00031.dlgp and 00030.dlgp are the same
+00035.dlgp and 00033.dlgp are the same
+00050.dlgp and 00049.dlgp are the same
+00117.dlgp and 00039.dlgp are the same
+00334.dlgp and 00332.dlgp are the same
+00336.dlgp and 00332.dlgp are the same
+00338.dlgp and 00332.dlgp are the same
+00340.dlgp and 00332.dlgp are the same
+00344.dlgp and 00319.dlgp are the same
+00345.dlgp and 00319.dlgp are the same
+00346.dlgp and 00320.dlgp are the same
+00367.dlgp and 00366.dlgp are the same
+00431.dlgp and 00430.dlgp are the same
+00447.dlgp and 00446.dlgp are the same
+00458.dlgp and 00457.dlgp are the same
+00461.dlgp and 00460.dlgp are the same
+00578.dlgp and 00423.dlgp are the same
+00579.dlgp and 00424.dlgp are the same
+00599.dlgp and 00598.dlgp are the same
+00606.dlgp and 00605.dlgp are the same
+00628.dlgp and 00626.dlgp are the same
+00629.dlgp and 00627.dlgp are the same
+00630.dlgp and 00626.dlgp are the same
+00633.dlgp and 00631.dlgp are the same
+00650.dlgp and 00649.dlgp are the same
+00696.dlgp and 00694.dlgp are the same
+00697.dlgp and 00695.dlgp are the same
+00758.dlgp and 00044.dlgp are the same
+00764.dlgp and 00044.dlgp are the same
+00774.dlgp and 00773.dlgp are the same
+00782.dlgp and 00781.dlgp are the same
+
+
+
+#+BEGIN_src ipython :session stats :results output raw
+  trivials = set()
+  
+  for ind, row in df1.iterrows():
+      if row['OTHER_FGTGD'] == 0 or row['OTHER_ExGTGD'] == 0 :
+          name = get_filename(row['N2'])
+          print(name + ' has a trivial saturation')
+          os.rename(name, 'trivials/' + name)
+#+END_src
+
+#+RESULTS:
+00051.dlgp has a trivial saturation
+00053.dlgp has a trivial saturation
+00054.dlgp has a trivial saturation
+00056.dlgp has a trivial saturation
+00061.dlgp has a trivial saturation
+00064.dlgp has a trivial saturation
+00067.dlgp has a trivial saturation
+00070.dlgp has a trivial saturation
+00074.dlgp has a trivial saturation
+00076.dlgp has a trivial saturation
+00077.dlgp has a trivial saturation
+00080.dlgp has a trivial saturation
+00083.dlgp has a trivial saturation
+00084.dlgp has a trivial saturation
+00085.dlgp has a trivial saturation
+00086.dlgp has a trivial saturation
+00087.dlgp has a trivial saturation
+00088.dlgp has a trivial saturation
+00089.dlgp has a trivial saturation
+00090.dlgp has a trivial saturation
+00091.dlgp has a trivial saturation
+00092.dlgp has a trivial saturation
+00093.dlgp has a trivial saturation
+00095.dlgp has a trivial saturation
+00096.dlgp has a trivial saturation
+00097.dlgp has a trivial saturation
+00098.dlgp has a trivial saturation
+00099.dlgp has a trivial saturation
+00100.dlgp has a trivial saturation
+00101.dlgp has a trivial saturation
+00102.dlgp has a trivial saturation
+00103.dlgp has a trivial saturation
+00104.dlgp has a trivial saturation
+00105.dlgp has a trivial saturation
+00107.dlgp has a trivial saturation
+00108.dlgp has a trivial saturation
+00109.dlgp has a trivial saturation
+00111.dlgp has a trivial saturation
+00115.dlgp has a trivial saturation
+00119.dlgp has a trivial saturation
+00121.dlgp has a trivial saturation
+00122.dlgp has a trivial saturation
+00123.dlgp has a trivial saturation
+00124.dlgp has a trivial saturation
+00125.dlgp has a trivial saturation
+00126.dlgp has a trivial saturation
+00127.dlgp has a trivial saturation
+00128.dlgp has a trivial saturation
+00129.dlgp has a trivial saturation
+00130.dlgp has a trivial saturation
+00131.dlgp has a trivial saturation
+00132.dlgp has a trivial saturation
+00133.dlgp has a trivial saturation
+00134.dlgp has a trivial saturation
+00135.dlgp has a trivial saturation
+00136.dlgp has a trivial saturation
+00137.dlgp has a trivial saturation
+00138.dlgp has a trivial saturation
+00139.dlgp has a trivial saturation
+00140.dlgp has a trivial saturation
+00141.dlgp has a trivial saturation
+00142.dlgp has a trivial saturation
+00143.dlgp has a trivial saturation
+00144.dlgp has a trivial saturation
+00145.dlgp has a trivial saturation
+00146.dlgp has a trivial saturation
+00147.dlgp has a trivial saturation
+00148.dlgp has a trivial saturation
+00149.dlgp has a trivial saturation
+00150.dlgp has a trivial saturation
+00152.dlgp has a trivial saturation
+00154.dlgp has a trivial saturation
+00155.dlgp has a trivial saturation
+00156.dlgp has a trivial saturation
+00157.dlgp has a trivial saturation
+00159.dlgp has a trivial saturation
+00161.dlgp has a trivial saturation
+00162.dlgp has a trivial saturation
+00163.dlgp has a trivial saturation
+00165.dlgp has a trivial saturation
+00166.dlgp has a trivial saturation
+00168.dlgp has a trivial saturation
+00175.dlgp has a trivial saturation
+00177.dlgp has a trivial saturation
+00178.dlgp has a trivial saturation
+00179.dlgp has a trivial saturation
+00180.dlgp has a trivial saturation
+00181.dlgp has a trivial saturation
+00182.dlgp has a trivial saturation
+00183.dlgp has a trivial saturation
+00184.dlgp has a trivial saturation
+00185.dlgp has a trivial saturation
+00186.dlgp has a trivial saturation
+00187.dlgp has a trivial saturation
+00188.dlgp has a trivial saturation
+00189.dlgp has a trivial saturation
+00190.dlgp has a trivial saturation
+00191.dlgp has a trivial saturation
+00192.dlgp has a trivial saturation
+00193.dlgp has a trivial saturation
+00194.dlgp has a trivial saturation
+00195.dlgp has a trivial saturation
+00196.dlgp has a trivial saturation
+00197.dlgp has a trivial saturation
+00198.dlgp has a trivial saturation
+00199.dlgp has a trivial saturation
+00200.dlgp has a trivial saturation
+00201.dlgp has a trivial saturation
+00202.dlgp has a trivial saturation
+00203.dlgp has a trivial saturation
+00204.dlgp has a trivial saturation
+00205.dlgp has a trivial saturation
+00206.dlgp has a trivial saturation
+00207.dlgp has a trivial saturation
+00208.dlgp has a trivial saturation
+00211.dlgp has a trivial saturation
+00216.dlgp has a trivial saturation
+00219.dlgp has a trivial saturation
+00225.dlgp has a trivial saturation
+00226.dlgp has a trivial saturation
+00227.dlgp has a trivial saturation
+00228.dlgp has a trivial saturation
+00231.dlgp has a trivial saturation
+00232.dlgp has a trivial saturation
+00234.dlgp has a trivial saturation
+00239.dlgp has a trivial saturation
+00240.dlgp has a trivial saturation
+00243.dlgp has a trivial saturation
+00244.dlgp has a trivial saturation
+00245.dlgp has a trivial saturation
+00246.dlgp has a trivial saturation
+00247.dlgp has a trivial saturation
+00248.dlgp has a trivial saturation
+00249.dlgp has a trivial saturation
+00250.dlgp has a trivial saturation
+00251.dlgp has a trivial saturation
+00252.dlgp has a trivial saturation
+00253.dlgp has a trivial saturation
+00254.dlgp has a trivial saturation
+00255.dlgp has a trivial saturation
+00256.dlgp has a trivial saturation
+00257.dlgp has a trivial saturation
+00258.dlgp has a trivial saturation
+00259.dlgp has a trivial saturation
+00260.dlgp has a trivial saturation
+00261.dlgp has a trivial saturation
+00262.dlgp has a trivial saturation
+00263.dlgp has a trivial saturation
+00264.dlgp has a trivial saturation
+00265.dlgp has a trivial saturation
+00266.dlgp has a trivial saturation
+00268.dlgp has a trivial saturation
+00269.dlgp has a trivial saturation
+00270.dlgp has a trivial saturation
+00271.dlgp has a trivial saturation
+00272.dlgp has a trivial saturation
+00273.dlgp has a trivial saturation
+00274.dlgp has a trivial saturation
+00275.dlgp has a trivial saturation
+00276.dlgp has a trivial saturation
+00277.dlgp has a trivial saturation
+00278.dlgp has a trivial saturation
+00280.dlgp has a trivial saturation
+00287.dlgp has a trivial saturation
+00288.dlgp has a trivial saturation
+00289.dlgp has a trivial saturation
+00292.dlgp has a trivial saturation
+00294.dlgp has a trivial saturation
+00295.dlgp has a trivial saturation
+00297.dlgp has a trivial saturation
+00298.dlgp has a trivial saturation
+00299.dlgp has a trivial saturation
+00300.dlgp has a trivial saturation
+00302.dlgp has a trivial saturation
+00303.dlgp has a trivial saturation
+00304.dlgp has a trivial saturation
+00305.dlgp has a trivial saturation
+00306.dlgp has a trivial saturation
+00307.dlgp has a trivial saturation
+00308.dlgp has a trivial saturation
+00309.dlgp has a trivial saturation
+00310.dlgp has a trivial saturation
+00311.dlgp has a trivial saturation
+00312.dlgp has a trivial saturation
+00313.dlgp has a trivial saturation
+00314.dlgp has a trivial saturation
+00315.dlgp has a trivial saturation
+00317.dlgp has a trivial saturation
+00318.dlgp has a trivial saturation
+00321.dlgp has a trivial saturation
+00322.dlgp has a trivial saturation
+00323.dlgp has a trivial saturation
+00324.dlgp has a trivial saturation
+00325.dlgp has a trivial saturation
+00326.dlgp has a trivial saturation
+00327.dlgp has a trivial saturation
+00328.dlgp has a trivial saturation
+00329.dlgp has a trivial saturation
+00330.dlgp has a trivial saturation
+00331.dlgp has a trivial saturation
+00335.dlgp has a trivial saturation
+00337.dlgp has a trivial saturation
+00342.dlgp has a trivial saturation
+00355.dlgp has a trivial saturation
+00361.dlgp has a trivial saturation
+00362.dlgp has a trivial saturation
+00363.dlgp has a trivial saturation
+00364.dlgp has a trivial saturation
+00365.dlgp has a trivial saturation
+00408.dlgp has a trivial saturation
+00409.dlgp has a trivial saturation
+00428.dlgp has a trivial saturation
+00429.dlgp has a trivial saturation
+00434.dlgp has a trivial saturation
+00439.dlgp has a trivial saturation
+00440.dlgp has a trivial saturation
+00441.dlgp has a trivial saturation
+00442.dlgp has a trivial saturation
+00443.dlgp has a trivial saturation
+00444.dlgp has a trivial saturation
+00453.dlgp has a trivial saturation
+00455.dlgp has a trivial saturation
+00456.dlgp has a trivial saturation
+00466.dlgp has a trivial saturation
+00467.dlgp has a trivial saturation
+00478.dlgp has a trivial saturation
+00481.dlgp has a trivial saturation
+00482.dlgp has a trivial saturation
+00490.dlgp has a trivial saturation
+00491.dlgp has a trivial saturation
+00492.dlgp has a trivial saturation
+00493.dlgp has a trivial saturation
+00494.dlgp has a trivial saturation
+00495.dlgp has a trivial saturation
+00499.dlgp has a trivial saturation
+00501.dlgp has a trivial saturation
+00503.dlgp has a trivial saturation
+00509.dlgp has a trivial saturation
+00510.dlgp has a trivial saturation
+00516.dlgp has a trivial saturation
+00517.dlgp has a trivial saturation
+00524.dlgp has a trivial saturation
+00525.dlgp has a trivial saturation
+00528.dlgp has a trivial saturation
+00529.dlgp has a trivial saturation
+00549.dlgp has a trivial saturation
+00551.dlgp has a trivial saturation
+00552.dlgp has a trivial saturation
+00558.dlgp has a trivial saturation
+00559.dlgp has a trivial saturation
+00564.dlgp has a trivial saturation
+00565.dlgp has a trivial saturation
+00567.dlgp has a trivial saturation
+00568.dlgp has a trivial saturation
+00583.dlgp has a trivial saturation
+00584.dlgp has a trivial saturation
+00585.dlgp has a trivial saturation
+00586.dlgp has a trivial saturation
+00587.dlgp has a trivial saturation
+00588.dlgp has a trivial saturation
+00601.dlgp has a trivial saturation
+00602.dlgp has a trivial saturation
+00603.dlgp has a trivial saturation
+00604.dlgp has a trivial saturation
+00607.dlgp has a trivial saturation
+00608.dlgp has a trivial saturation
+00609.dlgp has a trivial saturation
+00610.dlgp has a trivial saturation
+00611.dlgp has a trivial saturation
+00612.dlgp has a trivial saturation
+00613.dlgp has a trivial saturation
+00614.dlgp has a trivial saturation
+00615.dlgp has a trivial saturation
+00616.dlgp has a trivial saturation
+00617.dlgp has a trivial saturation
+00618.dlgp has a trivial saturation
+00619.dlgp has a trivial saturation
+00620.dlgp has a trivial saturation
+00621.dlgp has a trivial saturation
+00622.dlgp has a trivial saturation
+00623.dlgp has a trivial saturation
+00625.dlgp has a trivial saturation
+00634.dlgp has a trivial saturation
+00635.dlgp has a trivial saturation
+00641.dlgp has a trivial saturation
+00642.dlgp has a trivial saturation
+00643.dlgp has a trivial saturation
+00644.dlgp has a trivial saturation
+00647.dlgp has a trivial saturation
+00651.dlgp has a trivial saturation
+00652.dlgp has a trivial saturation
+00653.dlgp has a trivial saturation
+00654.dlgp has a trivial saturation
+00655.dlgp has a trivial saturation
+00656.dlgp has a trivial saturation
+00659.dlgp has a trivial saturation
+00661.dlgp has a trivial saturation
+00662.dlgp has a trivial saturation
+00663.dlgp has a trivial saturation
+00664.dlgp has a trivial saturation
+00671.dlgp has a trivial saturation
+00672.dlgp has a trivial saturation
+00674.dlgp has a trivial saturation
+00688.dlgp has a trivial saturation
+00691.dlgp has a trivial saturation
+00692.dlgp has a trivial saturation
+00693.dlgp has a trivial saturation
+00765.dlgp has a trivial saturation
+00767.dlgp has a trivial saturation
+00771.dlgp has a trivial saturation
+00776.dlgp has a trivial saturation
+00777.dlgp has a trivial saturation
+00779.dlgp has a trivial saturation
+00780.dlgp has a trivial saturation
+00051.dlgp has a trivial saturation
+00053.dlgp has a trivial saturation
+00054.dlgp has a trivial saturation
+00056.dlgp has a trivial saturation
+00061.dlgp has a trivial saturation
+00064.dlgp has a trivial saturation
+00067.dlgp has a trivial saturation
+00070.dlgp has a trivial saturation
+00074.dlgp has a trivial saturation
+00076.dlgp has a trivial saturation
+00077.dlgp has a trivial saturation
+00080.dlgp has a trivial saturation
+00083.dlgp has a trivial saturation
+00084.dlgp has a trivial saturation
+00085.dlgp has a trivial saturation
+00086.dlgp has a trivial saturation
+00087.dlgp has a trivial saturation
+00088.dlgp has a trivial saturation
+00089.dlgp has a trivial saturation
+00090.dlgp has a trivial saturation
+00091.dlgp has a trivial saturation
+00092.dlgp has a trivial saturation
+00093.dlgp has a trivial saturation
+00095.dlgp has a trivial saturation
+00096.dlgp has a trivial saturation
+00097.dlgp has a trivial saturation
+00098.dlgp has a trivial saturation
+00099.dlgp has a trivial saturation
+00100.dlgp has a trivial saturation
+00101.dlgp has a trivial saturation
+00102.dlgp has a trivial saturation
+00103.dlgp has a trivial saturation
+00104.dlgp has a trivial saturation
+00105.dlgp has a trivial saturation
+00107.dlgp has a trivial saturation
+00108.dlgp has a trivial saturation
+00109.dlgp has a trivial saturation
+00111.dlgp has a trivial saturation
+00115.dlgp has a trivial saturation
+00119.dlgp has a trivial saturation
+00121.dlgp has a trivial saturation
+00122.dlgp has a trivial saturation
+00123.dlgp has a trivial saturation
+00124.dlgp has a trivial saturation
+00125.dlgp has a trivial saturation
+00126.dlgp has a trivial saturation
+00127.dlgp has a trivial saturation
+00128.dlgp has a trivial saturation
+00129.dlgp has a trivial saturation
+00130.dlgp has a trivial saturation
+00131.dlgp has a trivial saturation
+00132.dlgp has a trivial saturation
+00133.dlgp has a trivial saturation
+00134.dlgp has a trivial saturation
+00135.dlgp has a trivial saturation
+00136.dlgp has a trivial saturation
+00137.dlgp has a trivial saturation
+00138.dlgp has a trivial saturation
+00139.dlgp has a trivial saturation
+00140.dlgp has a trivial saturation
+00141.dlgp has a trivial saturation
+00142.dlgp has a trivial saturation
+00143.dlgp has a trivial saturation
+00144.dlgp has a trivial saturation
+00145.dlgp has a trivial saturation
+00146.dlgp has a trivial saturation
+00147.dlgp has a trivial saturation
+00148.dlgp has a trivial saturation
+00149.dlgp has a trivial saturation
+00150.dlgp has a trivial saturation
+00152.dlgp has a trivial saturation
+00154.dlgp has a trivial saturation
+00155.dlgp has a trivial saturation
+00156.dlgp has a trivial saturation
+00157.dlgp has a trivial saturation
+00159.dlgp has a trivial saturation
+00161.dlgp has a trivial saturation
+00162.dlgp has a trivial saturation
+00163.dlgp has a trivial saturation
+00165.dlgp has a trivial saturation
+00166.dlgp has a trivial saturation
+00168.dlgp has a trivial saturation
+00175.dlgp has a trivial saturation
+00177.dlgp has a trivial saturation
+00178.dlgp has a trivial saturation
+00179.dlgp has a trivial saturation
+00180.dlgp has a trivial saturation
+00181.dlgp has a trivial saturation
+00182.dlgp has a trivial saturation
+00183.dlgp has a trivial saturation
+00184.dlgp has a trivial saturation
+00185.dlgp has a trivial saturation
+00186.dlgp has a trivial saturation
+00187.dlgp has a trivial saturation
+00188.dlgp has a trivial saturation
+00189.dlgp has a trivial saturation
+00190.dlgp has a trivial saturation
+00191.dlgp has a trivial saturation
+00192.dlgp has a trivial saturation
+00193.dlgp has a trivial saturation
+00194.dlgp has a trivial saturation
+00195.dlgp has a trivial saturation
+00196.dlgp has a trivial saturation
+00197.dlgp has a trivial saturation
+00198.dlgp has a trivial saturation
+00199.dlgp has a trivial saturation
+00200.dlgp has a trivial saturation
+00201.dlgp has a trivial saturation
+00202.dlgp has a trivial saturation
+00203.dlgp has a trivial saturation
+00204.dlgp has a trivial saturation
+00205.dlgp has a trivial saturation
+00206.dlgp has a trivial saturation
+00207.dlgp has a trivial saturation
+00208.dlgp has a trivial saturation
+00211.dlgp has a trivial saturation
+00216.dlgp has a trivial saturation
+00219.dlgp has a trivial saturation
+00225.dlgp has a trivial saturation
+00226.dlgp has a trivial saturation
+00227.dlgp has a trivial saturation
+00228.dlgp has a trivial saturation
+00231.dlgp has a trivial saturation
+00232.dlgp has a trivial saturation
+00234.dlgp has a trivial saturation
+00239.dlgp has a trivial saturation
+00240.dlgp has a trivial saturation
+00243.dlgp has a trivial saturation
+00244.dlgp has a trivial saturation
+00245.dlgp has a trivial saturation
+00246.dlgp has a trivial saturation
+00247.dlgp has a trivial saturation
+00248.dlgp has a trivial saturation
+00249.dlgp has a trivial saturation
+00250.dlgp has a trivial saturation
+00251.dlgp has a trivial saturation
+00252.dlgp has a trivial saturation
+00253.dlgp has a trivial saturation
+00254.dlgp has a trivial saturation
+00255.dlgp has a trivial saturation
+00256.dlgp has a trivial saturation
+00257.dlgp has a trivial saturation
+00258.dlgp has a trivial saturation
+00259.dlgp has a trivial saturation
+00260.dlgp has a trivial saturation
+00261.dlgp has a trivial saturation
+00262.dlgp has a trivial saturation
+00263.dlgp has a trivial saturation
+00264.dlgp has a trivial saturation
+00265.dlgp has a trivial saturation
+00266.dlgp has a trivial saturation
+00268.dlgp has a trivial saturation
+00269.dlgp has a trivial saturation
+00270.dlgp has a trivial saturation
+00271.dlgp has a trivial saturation
+00272.dlgp has a trivial saturation
+00273.dlgp has a trivial saturation
+00274.dlgp has a trivial saturation
+00275.dlgp has a trivial saturation
+00276.dlgp has a trivial saturation
+00277.dlgp has a trivial saturation
+00278.dlgp has a trivial saturation
+00280.dlgp has a trivial saturation
+00287.dlgp has a trivial saturation
+00288.dlgp has a trivial saturation
+00289.dlgp has a trivial saturation
+00292.dlgp has a trivial saturation
+00294.dlgp has a trivial saturation
+00295.dlgp has a trivial saturation
+00297.dlgp has a trivial saturation
+00298.dlgp has a trivial saturation
+00299.dlgp has a trivial saturation
+00300.dlgp has a trivial saturation
+00302.dlgp has a trivial saturation
+00303.dlgp has a trivial saturation
+00304.dlgp has a trivial saturation
+00305.dlgp has a trivial saturation
+00306.dlgp has a trivial saturation
+00307.dlgp has a trivial saturation
+00308.dlgp has a trivial saturation
+00309.dlgp has a trivial saturation
+00310.dlgp has a trivial saturation
+00311.dlgp has a trivial saturation
+00312.dlgp has a trivial saturation
+00313.dlgp has a trivial saturation
+00314.dlgp has a trivial saturation
+00315.dlgp has a trivial saturation
+00317.dlgp has a trivial saturation
+00318.dlgp has a trivial saturation
+00321.dlgp has a trivial saturation
+00322.dlgp has a trivial saturation
+00323.dlgp has a trivial saturation
+00324.dlgp has a trivial saturation
+00325.dlgp has a trivial saturation
+00326.dlgp has a trivial saturation
+00327.dlgp has a trivial saturation
+00328.dlgp has a trivial saturation
+00329.dlgp has a trivial saturation
+00330.dlgp has a trivial saturation
+00331.dlgp has a trivial saturation
+00335.dlgp has a trivial saturation
+00337.dlgp has a trivial saturation
+00342.dlgp has a trivial saturation
+00355.dlgp has a trivial saturation
+00361.dlgp has a trivial saturation
+00362.dlgp has a trivial saturation
+00363.dlgp has a trivial saturation
+00364.dlgp has a trivial saturation
+00365.dlgp has a trivial saturation
+00408.dlgp has a trivial saturation
+00409.dlgp has a trivial saturation
+00428.dlgp has a trivial saturation
+00429.dlgp has a trivial saturation
+00434.dlgp has a trivial saturation
+00439.dlgp has a trivial saturation
+00440.dlgp has a trivial saturation
+00441.dlgp has a trivial saturation
+00442.dlgp has a trivial saturation
+00443.dlgp has a trivial saturation
+00444.dlgp has a trivial saturation
+00453.dlgp has a trivial saturation
+00455.dlgp has a trivial saturation
+00456.dlgp has a trivial saturation
+00466.dlgp has a trivial saturation
+00467.dlgp has a trivial saturation
+00478.dlgp has a trivial saturation
+00481.dlgp has a trivial saturation
+00482.dlgp has a trivial saturation
+00490.dlgp has a trivial saturation
+00491.dlgp has a trivial saturation
+00492.dlgp has a trivial saturation
+00493.dlgp has a trivial saturation
+00494.dlgp has a trivial saturation
+00495.dlgp has a trivial saturation
+00499.dlgp has a trivial saturation
+00501.dlgp has a trivial saturation
+00503.dlgp has a trivial saturation
+00509.dlgp has a trivial saturation
+00510.dlgp has a trivial saturation
+00516.dlgp has a trivial saturation
+00517.dlgp has a trivial saturation
+00524.dlgp has a trivial saturation
+00525.dlgp has a trivial saturation
+00528.dlgp has a trivial saturation
+00529.dlgp has a trivial saturation
+00549.dlgp has a trivial saturation
+00551.dlgp has a trivial saturation
+00552.dlgp has a trivial saturation
+00558.dlgp has a trivial saturation
+00559.dlgp has a trivial saturation
+00564.dlgp has a trivial saturation
+00565.dlgp has a trivial saturation
+00567.dlgp has a trivial saturation
+00568.dlgp has a trivial saturation
+00583.dlgp has a trivial saturation
+00584.dlgp has a trivial saturation
+00585.dlgp has a trivial saturation
+00586.dlgp has a trivial saturation
+00587.dlgp has a trivial saturation
+00588.dlgp has a trivial saturation
+00601.dlgp has a trivial saturation
+00602.dlgp has a trivial saturation
+00603.dlgp has a trivial saturation
+00604.dlgp has a trivial saturation
+00607.dlgp has a trivial saturation
+00608.dlgp has a trivial saturation
+00609.dlgp has a trivial saturation
+00610.dlgp has a trivial saturation
+00611.dlgp has a trivial saturation
+00612.dlgp has a trivial saturation
+00613.dlgp has a trivial saturation
+00614.dlgp has a trivial saturation
+00615.dlgp has a trivial saturation
+00616.dlgp has a trivial saturation
+00617.dlgp has a trivial saturation
+00618.dlgp has a trivial saturation
+00619.dlgp has a trivial saturation
+00620.dlgp has a trivial saturation
+00621.dlgp has a trivial saturation
+00622.dlgp has a trivial saturation
+00623.dlgp has a trivial saturation
+00625.dlgp has a trivial saturation
+00634.dlgp has a trivial saturation
+00635.dlgp has a trivial saturation
+00641.dlgp has a trivial saturation
+00642.dlgp has a trivial saturation
+00643.dlgp has a trivial saturation
+00644.dlgp has a trivial saturation
+00647.dlgp has a trivial saturation
+00651.dlgp has a trivial saturation
+00652.dlgp has a trivial saturation
+00653.dlgp has a trivial saturation
+00654.dlgp has a trivial saturation
+00655.dlgp has a trivial saturation
+00656.dlgp has a trivial saturation
+00659.dlgp has a trivial saturation
+00661.dlgp has a trivial saturation
+00662.dlgp has a trivial saturation
+00663.dlgp has a trivial saturation
+00664.dlgp has a trivial saturation
+00671.dlgp has a trivial saturation
+00672.dlgp has a trivial saturation
+00674.dlgp has a trivial saturation
+00688.dlgp has a trivial saturation
+00691.dlgp has a trivial saturation
+00692.dlgp has a trivial saturation
+00693.dlgp has a trivial saturation
+00765.dlgp has a trivial saturation
+00767.dlgp has a trivial saturation
+00771.dlgp has a trivial saturation
+00776.dlgp has a trivial saturation
+00777.dlgp has a trivial saturation
+00779.dlgp has a trivial saturation
+00780.dlgp has a trivial saturation
+
+#+BEGIN_src ipython :session stats :results output raw
+  for ind, row in df1.iterrows():
+      name = get_filename(row['N2'])
+      if name not in trivials and name not in redundants :
+          print(name)
+#+END_src
+
+#+RESULTS:
+00001.dlgp
+00002.dlgp
+00003.dlgp
+00004.dlgp
+00006.dlgp
+00007.dlgp
+00012.dlgp
+00013.dlgp
+00014.dlgp
+00015.dlgp
+00016.dlgp
+00017.dlgp
+00018.dlgp
+00019.dlgp
+00020.dlgp
+00021.dlgp
+00022.dlgp
+00023.dlgp
+00024.dlgp
+00025.dlgp
+00026.dlgp
+00027.dlgp
+00029.dlgp
+00030.dlgp
+00032.dlgp
+00033.dlgp
+00034.dlgp
+00036.dlgp
+00037.dlgp
+00038.dlgp
+00039.dlgp
+00040.dlgp
+00041.dlgp
+00042.dlgp
+00043.dlgp
+00044.dlgp
+00045.dlgp
+00046.dlgp
+00047.dlgp
+00049.dlgp
+00051.dlgp
+00052.dlgp
+00053.dlgp
+00054.dlgp
+00055.dlgp
+00056.dlgp
+00057.dlgp
+00058.dlgp
+00059.dlgp
+00060.dlgp
+00061.dlgp
+00062.dlgp
+00063.dlgp
+00064.dlgp
+00065.dlgp
+00066.dlgp
+00067.dlgp
+00068.dlgp
+00069.dlgp
+00070.dlgp
+00071.dlgp
+00072.dlgp
+00073.dlgp
+00074.dlgp
+00075.dlgp
+00076.dlgp
+00077.dlgp
+00078.dlgp
+00079.dlgp
+00080.dlgp
+00081.dlgp
+00082.dlgp
+00083.dlgp
+00084.dlgp
+00085.dlgp
+00086.dlgp
+00087.dlgp
+00088.dlgp
+00089.dlgp
+00090.dlgp
+00091.dlgp
+00092.dlgp
+00093.dlgp
+00094.dlgp
+00095.dlgp
+00096.dlgp
+00097.dlgp
+00098.dlgp
+00099.dlgp
+00100.dlgp
+00101.dlgp
+00102.dlgp
+00103.dlgp
+00104.dlgp
+00105.dlgp
+00106.dlgp
+00107.dlgp
+00108.dlgp
+00109.dlgp
+00110.dlgp
+00111.dlgp
+00112.dlgp
+00113.dlgp
+00114.dlgp
+00115.dlgp
+00116.dlgp
+00118.dlgp
+00119.dlgp
+00120.dlgp
+00121.dlgp
+00122.dlgp
+00123.dlgp
+00124.dlgp
+00125.dlgp
+00126.dlgp
+00127.dlgp
+00128.dlgp
+00129.dlgp
+00130.dlgp
+00131.dlgp
+00132.dlgp
+00133.dlgp
+00134.dlgp
+00135.dlgp
+00136.dlgp
+00137.dlgp
+00138.dlgp
+00139.dlgp
+00140.dlgp
+00141.dlgp
+00142.dlgp
+00143.dlgp
+00144.dlgp
+00145.dlgp
+00146.dlgp
+00147.dlgp
+00148.dlgp
+00149.dlgp
+00150.dlgp
+00151.dlgp
+00152.dlgp
+00153.dlgp
+00154.dlgp
+00155.dlgp
+00156.dlgp
+00157.dlgp
+00159.dlgp
+00161.dlgp
+00162.dlgp
+00163.dlgp
+00164.dlgp
+00165.dlgp
+00166.dlgp
+00167.dlgp
+00168.dlgp
+00169.dlgp
+00170.dlgp
+00171.dlgp
+00172.dlgp
+00173.dlgp
+00174.dlgp
+00175.dlgp
+00176.dlgp
+00177.dlgp
+00178.dlgp
+00179.dlgp
+00180.dlgp
+00181.dlgp
+00182.dlgp
+00183.dlgp
+00184.dlgp
+00185.dlgp
+00186.dlgp
+00187.dlgp
+00188.dlgp
+00189.dlgp
+00190.dlgp
+00191.dlgp
+00192.dlgp
+00193.dlgp
+00194.dlgp
+00195.dlgp
+00196.dlgp
+00197.dlgp
+00198.dlgp
+00199.dlgp
+00200.dlgp
+00201.dlgp
+00202.dlgp
+00203.dlgp
+00204.dlgp
+00205.dlgp
+00206.dlgp
+00207.dlgp
+00208.dlgp
+00209.dlgp
+00210.dlgp
+00211.dlgp
+00212.dlgp
+00213.dlgp
+00214.dlgp
+00215.dlgp
+00216.dlgp
+00217.dlgp
+00218.dlgp
+00219.dlgp
+00220.dlgp
+00221.dlgp
+00222.dlgp
+00223.dlgp
+00224.dlgp
+00225.dlgp
+00226.dlgp
+00227.dlgp
+00228.dlgp
+00229.dlgp
+00230.dlgp
+00231.dlgp
+00232.dlgp
+00233.dlgp
+00234.dlgp
+00235.dlgp
+00236.dlgp
+00237.dlgp
+00238.dlgp
+00239.dlgp
+00240.dlgp
+00241.dlgp
+00242.dlgp
+00243.dlgp
+00244.dlgp
+00245.dlgp
+00246.dlgp
+00247.dlgp
+00248.dlgp
+00249.dlgp
+00250.dlgp
+00251.dlgp
+00252.dlgp
+00253.dlgp
+00254.dlgp
+00255.dlgp
+00256.dlgp
+00257.dlgp
+00258.dlgp
+00259.dlgp
+00260.dlgp
+00261.dlgp
+00262.dlgp
+00263.dlgp
+00264.dlgp
+00265.dlgp
+00266.dlgp
+00267.dlgp
+00268.dlgp
+00269.dlgp
+00270.dlgp
+00271.dlgp
+00272.dlgp
+00273.dlgp
+00274.dlgp
+00275.dlgp
+00276.dlgp
+00277.dlgp
+00278.dlgp
+00279.dlgp
+00280.dlgp
+00281.dlgp
+00282.dlgp
+00283.dlgp
+00284.dlgp
+00285.dlgp
+00286.dlgp
+00287.dlgp
+00288.dlgp
+00289.dlgp
+00290.dlgp
+00292.dlgp
+00293.dlgp
+00294.dlgp
+00295.dlgp
+00296.dlgp
+00297.dlgp
+00298.dlgp
+00299.dlgp
+00300.dlgp
+00301.dlgp
+00302.dlgp
+00303.dlgp
+00304.dlgp
+00305.dlgp
+00306.dlgp
+00307.dlgp
+00308.dlgp
+00309.dlgp
+00310.dlgp
+00311.dlgp
+00312.dlgp
+00313.dlgp
+00314.dlgp
+00315.dlgp
+00316.dlgp
+00317.dlgp
+00318.dlgp
+00319.dlgp
+00320.dlgp
+00321.dlgp
+00322.dlgp
+00323.dlgp
+00324.dlgp
+00325.dlgp
+00326.dlgp
+00327.dlgp
+00328.dlgp
+00329.dlgp
+00330.dlgp
+00331.dlgp
+00332.dlgp
+00333.dlgp
+00335.dlgp
+00337.dlgp
+00339.dlgp
+00341.dlgp
+00342.dlgp
+00343.dlgp
+00347.dlgp
+00348.dlgp
+00349.dlgp
+00350.dlgp
+00352.dlgp
+00353.dlgp
+00354.dlgp
+00355.dlgp
+00356.dlgp
+00357.dlgp
+00358.dlgp
+00359.dlgp
+00360.dlgp
+00361.dlgp
+00362.dlgp
+00363.dlgp
+00364.dlgp
+00365.dlgp
+00366.dlgp
+00368.dlgp
+00369.dlgp
+00370.dlgp
+00371.dlgp
+00372.dlgp
+00373.dlgp
+00374.dlgp
+00375.dlgp
+00376.dlgp
+00377.dlgp
+00378.dlgp
+00379.dlgp
+00380.dlgp
+00381.dlgp
+00382.dlgp
+00383.dlgp
+00384.dlgp
+00385.dlgp
+00386.dlgp
+00387.dlgp
+00388.dlgp
+00389.dlgp
+00390.dlgp
+00391.dlgp
+00392.dlgp
+00393.dlgp
+00394.dlgp
+00395.dlgp
+00396.dlgp
+00397.dlgp
+00398.dlgp
+00399.dlgp
+00400.dlgp
+00401.dlgp
+00402.dlgp
+00403.dlgp
+00404.dlgp
+00405.dlgp
+00406.dlgp
+00407.dlgp
+00408.dlgp
+00409.dlgp
+00410.dlgp
+00411.dlgp
+00412.dlgp
+00413.dlgp
+00414.dlgp
+00415.dlgp
+00416.dlgp
+00417.dlgp
+00418.dlgp
+00419.dlgp
+00420.dlgp
+00421.dlgp
+00422.dlgp
+00423.dlgp
+00424.dlgp
+00425.dlgp
+00426.dlgp
+00428.dlgp
+00429.dlgp
+00430.dlgp
+00432.dlgp
+00433.dlgp
+00434.dlgp
+00435.dlgp
+00436.dlgp
+00437.dlgp
+00438.dlgp
+00439.dlgp
+00440.dlgp
+00441.dlgp
+00442.dlgp
+00443.dlgp
+00444.dlgp
+00445.dlgp
+00446.dlgp
+00448.dlgp
+00449.dlgp
+00450.dlgp
+00451.dlgp
+00452.dlgp
+00453.dlgp
+00454.dlgp
+00455.dlgp
+00456.dlgp
+00457.dlgp
+00459.dlgp
+00460.dlgp
+00462.dlgp
+00463.dlgp
+00464.dlgp
+00465.dlgp
+00466.dlgp
+00467.dlgp
+00468.dlgp
+00469.dlgp
+00470.dlgp
+00471.dlgp
+00472.dlgp
+00473.dlgp
+00474.dlgp
+00475.dlgp
+00476.dlgp
+00477.dlgp
+00478.dlgp
+00479.dlgp
+00480.dlgp
+00481.dlgp
+00482.dlgp
+00483.dlgp
+00484.dlgp
+00485.dlgp
+00486.dlgp
+00487.dlgp
+00488.dlgp
+00489.dlgp
+00490.dlgp
+00491.dlgp
+00492.dlgp
+00493.dlgp
+00494.dlgp
+00495.dlgp
+00496.dlgp
+00497.dlgp
+00498.dlgp
+00499.dlgp
+00500.dlgp
+00501.dlgp
+00502.dlgp
+00503.dlgp
+00504.dlgp
+00505.dlgp
+00508.dlgp
+00509.dlgp
+00510.dlgp
+00511.dlgp
+00512.dlgp
+00513.dlgp
+00514.dlgp
+00515.dlgp
+00516.dlgp
+00517.dlgp
+00518.dlgp
+00519.dlgp
+00520.dlgp
+00521.dlgp
+00522.dlgp
+00523.dlgp
+00524.dlgp
+00525.dlgp
+00526.dlgp
+00527.dlgp
+00528.dlgp
+00529.dlgp
+00530.dlgp
+00531.dlgp
+00532.dlgp
+00533.dlgp
+00534.dlgp
+00535.dlgp
+00536.dlgp
+00537.dlgp
+00538.dlgp
+00539.dlgp
+00540.dlgp
+00541.dlgp
+00542.dlgp
+00543.dlgp
+00544.dlgp
+00545.dlgp
+00546.dlgp
+00547.dlgp
+00548.dlgp
+00549.dlgp
+00550.dlgp
+00551.dlgp
+00552.dlgp
+00553.dlgp
+00554.dlgp
+00555.dlgp
+00556.dlgp
+00558.dlgp
+00559.dlgp
+00560.dlgp
+00561.dlgp
+00562.dlgp
+00563.dlgp
+00564.dlgp
+00565.dlgp
+00566.dlgp
+00567.dlgp
+00568.dlgp
+00569.dlgp
+00570.dlgp
+00571.dlgp
+00572.dlgp
+00573.dlgp
+00574.dlgp
+00575.dlgp
+00576.dlgp
+00577.dlgp
+00580.dlgp
+00581.dlgp
+00582.dlgp
+00583.dlgp
+00584.dlgp
+00585.dlgp
+00586.dlgp
+00587.dlgp
+00588.dlgp
+00589.dlgp
+00590.dlgp
+00591.dlgp
+00592.dlgp
+00593.dlgp
+00594.dlgp
+00595.dlgp
+00596.dlgp
+00597.dlgp
+00598.dlgp
+00600.dlgp
+00601.dlgp
+00602.dlgp
+00603.dlgp
+00604.dlgp
+00605.dlgp
+00607.dlgp
+00608.dlgp
+00609.dlgp
+00610.dlgp
+00611.dlgp
+00612.dlgp
+00613.dlgp
+00614.dlgp
+00615.dlgp
+00616.dlgp
+00617.dlgp
+00618.dlgp
+00619.dlgp
+00620.dlgp
+00621.dlgp
+00622.dlgp
+00623.dlgp
+00624.dlgp
+00625.dlgp
+00626.dlgp
+00627.dlgp
+00631.dlgp
+00632.dlgp
+00634.dlgp
+00635.dlgp
+00636.dlgp
+00637.dlgp
+00638.dlgp
+00639.dlgp
+00640.dlgp
+00641.dlgp
+00642.dlgp
+00643.dlgp
+00644.dlgp
+00645.dlgp
+00646.dlgp
+00647.dlgp
+00648.dlgp
+00649.dlgp
+00651.dlgp
+00652.dlgp
+00653.dlgp
+00654.dlgp
+00655.dlgp
+00656.dlgp
+00657.dlgp
+00658.dlgp
+00659.dlgp
+00660.dlgp
+00661.dlgp
+00662.dlgp
+00663.dlgp
+00664.dlgp
+00665.dlgp
+00666.dlgp
+00667.dlgp
+00669.dlgp
+00670.dlgp
+00671.dlgp
+00672.dlgp
+00673.dlgp
+00674.dlgp
+00675.dlgp
+00676.dlgp
+00677.dlgp
+00678.dlgp
+00679.dlgp
+00680.dlgp
+00681.dlgp
+00682.dlgp
+00683.dlgp
+00684.dlgp
+00685.dlgp
+00686.dlgp
+00687.dlgp
+00688.dlgp
+00689.dlgp
+00690.dlgp
+00691.dlgp
+00692.dlgp
+00693.dlgp
+00694.dlgp
+00695.dlgp
+00700.dlgp
+00701.dlgp
+00702.dlgp
+00703.dlgp
+00704.dlgp
+00705.dlgp
+00706.dlgp
+00707.dlgp
+00708.dlgp
+00709.dlgp
+00710.dlgp
+00711.dlgp
+00712.dlgp
+00713.dlgp
+00714.dlgp
+00715.dlgp
+00716.dlgp
+00717.dlgp
+00718.dlgp
+00719.dlgp
+00720.dlgp
+00721.dlgp
+00722.dlgp
+00723.dlgp
+00724.dlgp
+00725.dlgp
+00726.dlgp
+00727.dlgp
+00728.dlgp
+00729.dlgp
+00730.dlgp
+00731.dlgp
+00732.dlgp
+00733.dlgp
+00734.dlgp
+00735.dlgp
+00736.dlgp
+00737.dlgp
+00738.dlgp
+00739.dlgp
+00740.dlgp
+00741.dlgp
+00742.dlgp
+00743.dlgp
+00744.dlgp
+00745.dlgp
+00746.dlgp
+00747.dlgp
+00748.dlgp
+00749.dlgp
+00750.dlgp
+00751.dlgp
+00752.dlgp
+00753.dlgp
+00754.dlgp
+00755.dlgp
+00756.dlgp
+00759.dlgp
+00760.dlgp
+00761.dlgp
+00762.dlgp
+00763.dlgp
+00765.dlgp
+00766.dlgp
+00767.dlgp
+00768.dlgp
+00769.dlgp
+00770.dlgp
+00771.dlgp
+00772.dlgp
+00773.dlgp
+00775.dlgp
+00776.dlgp
+00777.dlgp
+00778.dlgp
+00779.dlgp
+00780.dlgp
+00781.dlgp
+00783.dlgp
+00784.dlgp
+00786.dlgp
+00787.dlgp
+00788.dlgp
+00789.dlgp
+00790.dlgp
+00792.dlgp
+00793.dlgp
+00795.dlgp
