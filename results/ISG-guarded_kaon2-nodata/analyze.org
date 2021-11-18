@@ -1,0 +1,28 @@
+
+#+BEGIN_src ipython :session kaon2 :results output raw 
+  import pandas as pd
+  from tabulate import tabulate
+  
+  
+  new_file='2021-11-03-13-58-10g-0.5.4-600-kaon2/stats.csv'
+  old_file='../ISG-guarded_kaon2/2021-05-11-11-50-10g-0.5.1-600-kaon2/stats.csv'
+  
+  df_old = pd.read_csv(old_file, index_col='NAME').rename(columns={'TIME':'OLD_TIME'})
+  df_new = pd.read_csv(new_file, index_col='NAME').rename(columns={'TIME':'NEW_TIME'})
+  
+
+  comp=df_old[['OLD_TIME']].merge(df_new[['NEW_TIME']], how='inner', on='NAME')
+  comp = comp[ (comp['OLD_TIME'] != 'TIMEOUT') & (comp['NEW_TIME'] == 'TIMEOUT')]#.astype(int)
+  #comp['DIFF'] = 100* (comp['OLD_TIME'] - comp['NEW_TIME']) / comp['OLD_TIME']
+  
+  #print(comp['DIFF'].min())
+  print(tabulate(comp, headers="keys", tablefmt='orgtbl'))
+#+END_src
+#+RESULTS:
+| NAME | OLD_TIME | NEW_TIME |
+|------+----------+----------|
+-99.45787392295
+0.9087866108786611
+
+
+

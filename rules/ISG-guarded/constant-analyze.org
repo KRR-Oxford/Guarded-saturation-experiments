@@ -1,0 +1,658 @@
+#+TITLE: Constant analyze
+
+  #+BEGIN_src ipython :session ISG-guarded :results output example
+    import pandas as pd
+    from tabulate import tabulate
+    
+    isg_guarded='stats.csv'
+    isg_guarded_kaon2='../ISG-guarded_kaon2/stats.csv'
+    
+    
+    df_isg_guarded_data = pd.read_csv(isg_guarded, index_col='NAME')
+    df_isg_guarded_kaon2_data = pd.read_csv(isg_guarded_kaon2, index_col='NAME')
+    
+    df_data = pd.DataFrame([])
+    df_data['FGTGD'] = (df_isg_guarded_data['FGTGD'] - df_isg_guarded_kaon2_data['FGTGD']).clip(lower=0)
+    df_data['ExGTGD'] = (df_isg_guarded_data['ExGTGD'] - df_isg_guarded_kaon2_data['ExGTGD']).clip(lower=0)
+    df_data['GTGD'] = df_data['ExGTGD']  + df_data['FGTGD']
+    df_data['GTGD_percent'] = 100 * df_data['GTGD'] / (df_isg_guarded_data['FGTGD'] + df_isg_guarded_data['ExGTGD'])
+#+END_src
+
+#+RESULTS:
+
+  #+BEGIN_src ipython :session ISG-guarded :results output example
+    print(df_data[df_data['GTGD'] > 0].index.size)
+#+END_src
+
+#+RESULTS:
+: 120
+
+
+  #+BEGIN_src ipython :session ISG-guarded :results output example
+    print(tabulate(df_data[df_data['GTGD'] > 0], headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+#+begin_example
+|   NAME |   FGTGD |   ExGTGD |   GTGD |   GTGD_percent |
+|--------+---------+----------+--------+----------------|
+|      1 |       7 |        0 |      7 |     0.255848   |
+|      2 |       1 |        0 |      1 |     0.0727802  |
+|      3 |    1104 |        0 |   1104 |     5.52774    |
+|      5 |    1104 |        0 |   1104 |     5.54328    |
+|      7 |       1 |        0 |      1 |     0.52356    |
+|      8 |       1 |        0 |      1 |     0.52356    |
+|      9 |       1 |        0 |      1 |     0.52356    |
+|     10 |       1 |        0 |      1 |     0.52356    |
+|     11 |       1 |        0 |      1 |     0.52356    |
+|     12 |       2 |        0 |      2 |     0.680272   |
+|     14 |      12 |        0 |     12 |     0.70713    |
+|     18 |       7 |        0 |      7 |     0.567261   |
+|     20 |       5 |        0 |      5 |     0.354108   |
+|     21 |       7 |        0 |      7 |     0.530303   |
+|     24 |      12 |        0 |     12 |     0.70713    |
+|     49 |       1 |        0 |      1 |     1.49254    |
+|     78 |      33 |        0 |     33 |     4.35356    |
+|     79 |       3 |        0 |      3 |     8.82353    |
+|    103 |       4 |        0 |      4 |     1.52091    |
+|    104 |       6 |        0 |      6 |     0.531444   |
+|    111 |       1 |        0 |      1 |     2.27273    |
+|    112 |       5 |        0 |      5 |     3.7037     |
+|    114 |      18 |        0 |     18 |    32.7273     |
+|    116 |       7 |        0 |      7 |    15.9091     |
+|    120 |       2 |        0 |      2 |     3.125      |
+|    167 |       5 |        0 |      5 |     1.06838    |
+|    168 |       3 |        0 |      3 |     6          |
+|    169 |       1 |        0 |      1 |     0.52356    |
+|    170 |       1 |        0 |      1 |     0.769231   |
+|    176 |       6 |        0 |      6 |     6.45161    |
+|    202 |      60 |        0 |     60 |    26.6667     |
+|    233 |       1 |        0 |      1 |    20          |
+|    238 |       3 |        0 |      3 |    13.6364     |
+|    283 |       7 |        0 |      7 |     0.659134   |
+|    284 |       5 |        0 |      5 |     0.377644   |
+|    285 |    6692 |        0 |   6692 |     5.60127    |
+|    290 |       1 |        0 |      1 |     0.636943   |
+|    301 |       5 |        0 |      5 |     3.64964    |
+|    319 |     174 |        0 |    174 |    40.4651     |
+|    320 |     115 |        0 |    115 |    42.5926     |
+|    343 |      59 |        0 |     59 |    36.875      |
+|    344 |     174 |        0 |    174 |    40.4651     |
+|    345 |     174 |        0 |    174 |    40.4651     |
+|    346 |     115 |        0 |    115 |    42.5926     |
+|    348 |       7 |        0 |      7 |     3.91061    |
+|    350 |       8 |        0 |      8 |     0.199402   |
+|    410 |       1 |        0 |      1 |     0.0550358  |
+|    480 |      14 |        0 |     14 |     1.39442    |
+|    483 |       2 |        0 |      2 |     0.001325   |
+|    511 |       6 |        2 |      8 |     1.27186    |
+|    526 |       8 |        0 |      8 |     1.6632     |
+|    590 |       2 |        0 |      2 |     0.322061   |
+|    624 |      65 |        0 |     65 |     6.02968    |
+|    636 |      71 |        0 |     71 |     2.70065    |
+|    700 |     674 |        0 |    674 |    24.4913     |
+|    701 |     607 |        0 |    607 |    24.7755     |
+|    702 |     532 |        0 |    532 |    25.3938     |
+|    703 |     794 |        0 |    794 |    25.0948     |
+|    704 |     197 |        0 |    197 |    20.2884     |
+|    705 |     235 |        0 |    235 |    24.6849     |
+|    706 |     184 |        0 |    184 |    21.3457     |
+|    707 |     132 |        0 |    132 |    19.7309     |
+|    708 |      56 |        0 |     56 |    16.4706     |
+|    709 |      66 |        0 |     66 |    19.3548     |
+|    710 |     121 |        0 |    121 |    20.302      |
+|    711 |     132 |        0 |    132 |    19.8198     |
+|    712 |     312 |        0 |    312 |    20.8696     |
+|    713 |     258 |        0 |    258 |    22.6714     |
+|    714 |     103 |        0 |    103 |    20.9776     |
+|    715 |     334 |        0 |    334 |    24.7041     |
+|    716 |     390 |        0 |    390 |    23.8532     |
+|    717 |       2 |        0 |      2 |     4          |
+|    718 |      55 |        0 |     55 |    19.7133     |
+|    719 |     292 |        0 |    292 |    24.3131     |
+|    720 |     110 |        0 |    110 |    19.8556     |
+|    721 |     134 |        0 |    134 |    23.5501     |
+|    722 |     263 |        0 |    263 |    22.5945     |
+|    723 |     120 |        0 |    120 |    20.202      |
+|    724 |     570 |        0 |    570 |    24.307      |
+|    725 |       2 |        0 |      2 |     3.92157    |
+|    726 |     183 |        0 |    183 |    21.4286     |
+|    727 |     582 |        0 |    582 |    24.25       |
+|    728 |     476 |        0 |    476 |    22.8297     |
+|    729 |      30 |        0 |     30 |    16.8539     |
+|    730 |       1 |        0 |      1 |     2.17391    |
+|    731 |      79 |        0 |     79 |    19.75       |
+|    732 |     242 |        0 |    242 |    23.3816     |
+|    733 |     410 |        0 |    410 |    22.9306     |
+|    734 |      34 |        0 |     34 |    15.0442     |
+|    735 |     168 |        0 |    168 |    22.5503     |
+|    736 |       4 |        0 |      4 |     6.77966    |
+|    737 |     122 |        0 |    122 |    21.1438     |
+|    738 |      90 |        0 |     90 |    19.5652     |
+|    739 |     141 |        0 |    141 |    21.8266     |
+|    740 |     161 |        0 |    161 |    21.0183     |
+|    741 |     503 |        0 |    503 |    25.4426     |
+|    742 |     114 |        0 |    114 |    22.664      |
+|    743 |     525 |        0 |    525 |    23.9289     |
+|    744 |     127 |        0 |    127 |    19.3009     |
+|    745 |     193 |        0 |    193 |    22.5204     |
+|    746 |     300 |        0 |    300 |    23.8474     |
+|    747 |     249 |        0 |    249 |    22.5339     |
+|    748 |     127 |        0 |    127 |    20.4509     |
+|    749 |     303 |        0 |    303 |    23.5066     |
+|    750 |     133 |        0 |    133 |    21.28       |
+|    751 |     138 |        0 |    138 |    21.5962     |
+|    752 |     521 |        0 |    521 |    25.036      |
+|    753 |     116 |        0 |    116 |    21.3235     |
+|    754 |     631 |        0 |    631 |    24.8817     |
+|    755 |     285 |        0 |    285 |    23.4568     |
+|    756 |     353 |        0 |    353 |    23.1021     |
+|    775 |      11 |        0 |     11 |     2.77078    |
+|    781 |     174 |        0 |    174 |    40.4651     |
+|    782 |     174 |        0 |    174 |    40.4651     |
+|    783 |     174 |        0 |    174 |    40.6542     |
+|    788 |     249 |        0 |    249 |     9.76088    |
+|    789 |     238 |        0 |    238 |     9.17856    |
+|    790 |     233 |        0 |    233 |     8.34228    |
+|    792 |       3 |        0 |      3 |     0.00425725 |
+|    793 |       9 |        0 |      9 |     3.0303     |
+#+end_example
+
+#+BEGIN_src ipython :session ISG-guarded :results output raw
+    import pandas as pd
+    from tabulate import tabulate
+    
+    stats='stats.csv'
+    df = pd.read_csv(stats, index_col='NAME')[['FGTGD', 'ExGTGD']]
+    df['N1'] = df.index
+    df = df[(df['FGTGD'] > 0) & (df['ExGTGD'] > 0)]
+    df1 = pd.read_csv(stats, index_col='NAME')[['FGTGD', 'ExGTGD']]
+    df1 = df1.add_prefix('OTHER_')
+    df1['N2'] = df1.index
+    
+    comp = df.merge(df1, left_on=['FGTGD', 'ExGTGD'], right_on=['OTHER_FGTGD', 'OTHER_ExGTGD'], how='left')
+    comp = comp[comp['N1'] > comp['N2']]
+    
+    print(tabulate(comp, headers="keys", tablefmt='orgtbl'))
+#+END_src
+
+#+RESULTS:
+|     | FGTGD | ExGTGD |  N1 | OTHER_FGTGD | OTHER_ExGTGD |  N2 |
+|-----+-------+--------+-----+-------------+--------------+-----|
+|  12 |   169 |     22 |   8 |         169 |           22 |   7 |
+|  18 |   169 |     22 |   9 |         169 |           22 |   7 |
+|  19 |   169 |     22 |   9 |         169 |           22 |   8 |
+|  24 |   169 |     22 |  10 |         169 |           22 |   7 |
+|  25 |   169 |     22 |  10 |         169 |           22 |   8 |
+|  26 |   169 |     22 |  10 |         169 |           22 |   9 |
+|  30 |   169 |     22 |  11 |         169 |           22 |   7 |
+|  31 |   169 |     22 |  11 |         169 |           22 |   8 |
+|  32 |   169 |     22 |  11 |         169 |           22 |   9 |
+|  33 |   169 |     22 |  11 |         169 |           22 |  10 |
+|  50 |  1563 |    134 |  24 |        1563 |          134 |  14 |
+|  56 | 31647 |  23858 |  28 |       31647 |        23858 |  27 |
+|  61 |  3626 |   2096 |  31 |        3626 |         2096 |  30 |
+|  67 |  9462 |  12339 |  35 |        9462 |        12339 |  33 |
+| 116 |  4936 |   2437 | 117 |        4936 |         2437 |  39 |
+| 124 |   169 |     22 | 169 |         169 |           22 |   7 |
+| 125 |   169 |     22 | 169 |         169 |           22 |   8 |
+| 126 |   169 |     22 | 169 |         169 |           22 |   9 |
+| 127 |   169 |     22 | 169 |         169 |           22 |  10 |
+| 128 |   169 |     22 | 169 |         169 |           22 |  11 |
+| 131 |    61 |     12 | 171 |          61 |           12 |  63 |
+| 142 |     3 |      2 | 213 |           3 |            2 | 212 |
+| 147 |     8 |      1 | 217 |           8 |            1 |  69 |
+| 150 |     3 |      2 | 220 |           3 |            2 | 212 |
+| 151 |     3 |      2 | 220 |           3 |            2 | 213 |
+| 168 |   353 |     13 | 281 |         353 |           13 |  15 |
+| 193 |   228 |      9 | 334 |         228 |            9 | 332 |
+| 198 |   228 |      9 | 336 |         228 |            9 | 332 |
+| 199 |   228 |      9 | 336 |         228 |            9 | 334 |
+| 203 |   228 |      9 | 338 |         228 |            9 | 332 |
+| 204 |   228 |      9 | 338 |         228 |            9 | 334 |
+| 205 |   228 |      9 | 338 |         228 |            9 | 336 |
+| 209 |   228 |      9 | 340 |         228 |            9 | 332 |
+| 210 |   228 |      9 | 340 |         228 |            9 | 334 |
+| 211 |   228 |      9 | 340 |         228 |            9 | 336 |
+| 212 |   228 |      9 | 340 |         228 |            9 | 338 |
+| 214 |    33 |      2 | 341 |          33 |            2 |  68 |
+| 217 |   417 |     13 | 344 |         417 |           13 | 319 |
+| 222 |   417 |     13 | 345 |         417 |           13 | 319 |
+| 223 |   417 |     13 | 345 |         417 |           13 | 344 |
+| 227 |   261 |      9 | 346 |         261 |            9 | 320 |
+| 232 |    98 |      8 | 349 |          98 |            8 | 347 |
+| 245 |    96 |     40 | 367 |          96 |           40 | 366 |
+| 308 |   178 |    359 | 431 |         178 |          359 | 430 |
+| 319 |  1700 |    209 | 447 |        1700 |          209 | 446 |
+| 329 |  1604 |     80 | 458 |        1604 |           80 | 457 |
+| 334 | 10382 |   9023 | 461 |       10382 |         9023 | 460 |
+| 346 | 75146 |  44414 | 472 |       75146 |        44414 | 470 |
+| 348 | 78977 |  42734 | 473 |       78977 |        42734 | 471 |
+| 366 |    23 |   8316 | 498 |          23 |         8316 | 497 |
+| 377 |   309 |     38 | 514 |         309 |           38 | 513 |
+| 386 |   169 |   4233 | 523 |         169 |         4233 | 522 |
+| 404 |    18 |      9 | 543 |          18 |            9 | 542 |
+| 430 |   714 |    619 | 578 |         714 |          619 | 423 |
+| 432 |  1507 |    786 | 579 |        1507 |          786 | 424 |
+| 448 |     1 |      4 | 599 |           1 |            4 | 598 |
+| 453 |   650 |     84 | 606 |         650 |           84 | 605 |
+| 461 |  2108 |    683 | 628 |        2108 |          683 | 626 |
+| 464 |  2221 |    572 | 629 |        2221 |          572 | 627 |
+| 466 |  2108 |    683 | 630 |        2108 |          683 | 626 |
+| 467 |  2108 |    683 | 630 |        2108 |          683 | 628 |
+| 472 |  2653 |    812 | 633 |        2653 |          812 | 631 |
+| 484 |   284 |    663 | 650 |         284 |          663 | 649 |
+| 514 |  1624 |   6207 | 696 |        1624 |         6207 | 694 |
+| 516 |  2842 |   7708 | 697 |        2842 |         7708 | 695 |
+| 575 | 68471 |  21197 | 758 |       68471 |        21197 |  44 |
+| 583 | 68471 |  21197 | 764 |       68471 |        21197 |  44 |
+| 584 | 68471 |  21197 | 764 |       68471 |        21197 | 758 |
+| 593 |   590 |     55 | 774 |         590 |           55 | 773 |
+| 597 |   417 |     13 | 781 |         417 |           13 | 319 |
+| 598 |   417 |     13 | 781 |         417 |           13 | 344 |
+| 599 |   417 |     13 | 781 |         417 |           13 | 345 |
+| 602 |   417 |     13 | 782 |         417 |           13 | 319 |
+| 603 |   417 |     13 | 782 |         417 |           13 | 344 |
+| 604 |   417 |     13 | 782 |         417 |           13 | 345 |
+| 605 |   417 |     13 | 782 |         417 |           13 | 781 |
+
+#+BEGIN_src ipython :session ISG-guarded :results output raw
+  import os
+  def get_filename(v):
+      name = str(v)
+      while (len(name) != 5):
+          name = '0' + name
+      return name + '.dlgp'
+  
+  def get_rules(lines):
+      result = set()
+      is_rule = False
+      for line in lines:
+          if line.startswith('% ---------- existential guarded rules') or line.startswith('% ---------- full guarded rules'):
+              is_rule = True
+          elif not line.startswith('<'):
+              is_rule = False
+          if is_rule:
+              result.add(line)
+      return result
+  
+  redundants = set()
+  
+  for ind, row in comp.iterrows():
+      n1 = get_filename(row['N1'])
+      n2 = get_filename(row['N2'])
+      if ((n2 not in redundants) & (n1 not in redundants)):
+          with open(n1, 'r') as file1:
+              with open(n2, 'r') as file2:
+                  f1 = get_rules(file1)
+                  f2 = get_rules(file2)
+                  same = f1.issuperset(f2) & f2.issuperset(f1)
+          if (same):
+              os.rename(n1, 'redundants/' + n1)
+              redundants.add(n1)
+              print(n1 + ' and ' + n2 + ' are the same')
+#+END_src
+
+#+RESULTS:
+00008.dlgp and 00007.dlgp are the same
+00009.dlgp and 00007.dlgp are the same
+00010.dlgp and 00007.dlgp are the same
+00011.dlgp and 00007.dlgp are the same
+00028.dlgp and 00027.dlgp are the same
+00031.dlgp and 00030.dlgp are the same
+00035.dlgp and 00033.dlgp are the same
+00117.dlgp and 00039.dlgp are the same
+00334.dlgp and 00332.dlgp are the same
+00336.dlgp and 00332.dlgp are the same
+00338.dlgp and 00332.dlgp are the same
+00340.dlgp and 00332.dlgp are the same
+00344.dlgp and 00319.dlgp are the same
+00345.dlgp and 00319.dlgp are the same
+00346.dlgp and 00320.dlgp are the same
+00367.dlgp and 00366.dlgp are the same
+00431.dlgp and 00430.dlgp are the same
+00447.dlgp and 00446.dlgp are the same
+00458.dlgp and 00457.dlgp are the same
+00461.dlgp and 00460.dlgp are the same
+00578.dlgp and 00423.dlgp are the same
+00579.dlgp and 00424.dlgp are the same
+00599.dlgp and 00598.dlgp are the same
+00606.dlgp and 00605.dlgp are the same
+00628.dlgp and 00626.dlgp are the same
+00629.dlgp and 00627.dlgp are the same
+00630.dlgp and 00626.dlgp are the same
+00633.dlgp and 00631.dlgp are the same
+00650.dlgp and 00649.dlgp are the same
+00696.dlgp and 00694.dlgp are the same
+00697.dlgp and 00695.dlgp are the same
+00758.dlgp and 00044.dlgp are the same
+00764.dlgp and 00044.dlgp are the same
+00774.dlgp and 00773.dlgp are the same
+00782.dlgp and 00781.dlgp are the same
+
+
+#+BEGIN_src ipython :session ISG-guarded :results output raw
+  trivials = set()
+  
+  for ind, row in df1.iterrows():
+      if row['OTHER_FGTGD'] == 0 or row['OTHER_ExGTGD'] == 0 :
+          name = get_filename(row['N2'])
+          print(name + ' has a trivial saturation')
+          os.rename(name, 'trivials/' + name)
+#+END_src
+
+#+RESULTS:
+00051.dlgp has a trivial saturation
+00053.dlgp has a trivial saturation
+00054.dlgp has a trivial saturation
+00056.dlgp has a trivial saturation
+00061.dlgp has a trivial saturation
+00064.dlgp has a trivial saturation
+00067.dlgp has a trivial saturation
+00070.dlgp has a trivial saturation
+00074.dlgp has a trivial saturation
+00076.dlgp has a trivial saturation
+00077.dlgp has a trivial saturation
+00080.dlgp has a trivial saturation
+00083.dlgp has a trivial saturation
+00084.dlgp has a trivial saturation
+00085.dlgp has a trivial saturation
+00086.dlgp has a trivial saturation
+00087.dlgp has a trivial saturation
+00088.dlgp has a trivial saturation
+00089.dlgp has a trivial saturation
+00090.dlgp has a trivial saturation
+00091.dlgp has a trivial saturation
+00092.dlgp has a trivial saturation
+00093.dlgp has a trivial saturation
+00095.dlgp has a trivial saturation
+00096.dlgp has a trivial saturation
+00097.dlgp has a trivial saturation
+00098.dlgp has a trivial saturation
+00099.dlgp has a trivial saturation
+00100.dlgp has a trivial saturation
+00101.dlgp has a trivial saturation
+00102.dlgp has a trivial saturation
+00103.dlgp has a trivial saturation
+00104.dlgp has a trivial saturation
+00105.dlgp has a trivial saturation
+00107.dlgp has a trivial saturation
+00108.dlgp has a trivial saturation
+00109.dlgp has a trivial saturation
+00111.dlgp has a trivial saturation
+00115.dlgp has a trivial saturation
+00119.dlgp has a trivial saturation
+00121.dlgp has a trivial saturation
+00122.dlgp has a trivial saturation
+00123.dlgp has a trivial saturation
+00124.dlgp has a trivial saturation
+00125.dlgp has a trivial saturation
+00126.dlgp has a trivial saturation
+00127.dlgp has a trivial saturation
+00128.dlgp has a trivial saturation
+00129.dlgp has a trivial saturation
+00130.dlgp has a trivial saturation
+00131.dlgp has a trivial saturation
+00132.dlgp has a trivial saturation
+00133.dlgp has a trivial saturation
+00134.dlgp has a trivial saturation
+00135.dlgp has a trivial saturation
+00136.dlgp has a trivial saturation
+00137.dlgp has a trivial saturation
+00138.dlgp has a trivial saturation
+00139.dlgp has a trivial saturation
+00140.dlgp has a trivial saturation
+00141.dlgp has a trivial saturation
+00142.dlgp has a trivial saturation
+00143.dlgp has a trivial saturation
+00144.dlgp has a trivial saturation
+00145.dlgp has a trivial saturation
+00146.dlgp has a trivial saturation
+00147.dlgp has a trivial saturation
+00148.dlgp has a trivial saturation
+00149.dlgp has a trivial saturation
+00150.dlgp has a trivial saturation
+00152.dlgp has a trivial saturation
+00154.dlgp has a trivial saturation
+00155.dlgp has a trivial saturation
+00156.dlgp has a trivial saturation
+00157.dlgp has a trivial saturation
+00159.dlgp has a trivial saturation
+00161.dlgp has a trivial saturation
+00162.dlgp has a trivial saturation
+00163.dlgp has a trivial saturation
+00165.dlgp has a trivial saturation
+00166.dlgp has a trivial saturation
+00168.dlgp has a trivial saturation
+00175.dlgp has a trivial saturation
+00177.dlgp has a trivial saturation
+00178.dlgp has a trivial saturation
+00179.dlgp has a trivial saturation
+00180.dlgp has a trivial saturation
+00181.dlgp has a trivial saturation
+00182.dlgp has a trivial saturation
+00183.dlgp has a trivial saturation
+00184.dlgp has a trivial saturation
+00185.dlgp has a trivial saturation
+00186.dlgp has a trivial saturation
+00187.dlgp has a trivial saturation
+00188.dlgp has a trivial saturation
+00189.dlgp has a trivial saturation
+00190.dlgp has a trivial saturation
+00191.dlgp has a trivial saturation
+00192.dlgp has a trivial saturation
+00193.dlgp has a trivial saturation
+00194.dlgp has a trivial saturation
+00195.dlgp has a trivial saturation
+00196.dlgp has a trivial saturation
+00197.dlgp has a trivial saturation
+00198.dlgp has a trivial saturation
+00199.dlgp has a trivial saturation
+00200.dlgp has a trivial saturation
+00201.dlgp has a trivial saturation
+00202.dlgp has a trivial saturation
+00203.dlgp has a trivial saturation
+00204.dlgp has a trivial saturation
+00205.dlgp has a trivial saturation
+00206.dlgp has a trivial saturation
+00207.dlgp has a trivial saturation
+00208.dlgp has a trivial saturation
+00211.dlgp has a trivial saturation
+00216.dlgp has a trivial saturation
+00219.dlgp has a trivial saturation
+00225.dlgp has a trivial saturation
+00226.dlgp has a trivial saturation
+00227.dlgp has a trivial saturation
+00228.dlgp has a trivial saturation
+00231.dlgp has a trivial saturation
+00232.dlgp has a trivial saturation
+00234.dlgp has a trivial saturation
+00239.dlgp has a trivial saturation
+00240.dlgp has a trivial saturation
+00243.dlgp has a trivial saturation
+00244.dlgp has a trivial saturation
+00245.dlgp has a trivial saturation
+00246.dlgp has a trivial saturation
+00247.dlgp has a trivial saturation
+00248.dlgp has a trivial saturation
+00249.dlgp has a trivial saturation
+00250.dlgp has a trivial saturation
+00251.dlgp has a trivial saturation
+00252.dlgp has a trivial saturation
+00253.dlgp has a trivial saturation
+00254.dlgp has a trivial saturation
+00255.dlgp has a trivial saturation
+00256.dlgp has a trivial saturation
+00257.dlgp has a trivial saturation
+00258.dlgp has a trivial saturation
+00259.dlgp has a trivial saturation
+00260.dlgp has a trivial saturation
+00261.dlgp has a trivial saturation
+00262.dlgp has a trivial saturation
+00263.dlgp has a trivial saturation
+00264.dlgp has a trivial saturation
+00265.dlgp has a trivial saturation
+00266.dlgp has a trivial saturation
+00268.dlgp has a trivial saturation
+00269.dlgp has a trivial saturation
+00270.dlgp has a trivial saturation
+00271.dlgp has a trivial saturation
+00272.dlgp has a trivial saturation
+00273.dlgp has a trivial saturation
+00274.dlgp has a trivial saturation
+00275.dlgp has a trivial saturation
+00276.dlgp has a trivial saturation
+00277.dlgp has a trivial saturation
+00278.dlgp has a trivial saturation
+00280.dlgp has a trivial saturation
+00287.dlgp has a trivial saturation
+00288.dlgp has a trivial saturation
+00289.dlgp has a trivial saturation
+00292.dlgp has a trivial saturation
+00294.dlgp has a trivial saturation
+00295.dlgp has a trivial saturation
+00297.dlgp has a trivial saturation
+00298.dlgp has a trivial saturation
+00299.dlgp has a trivial saturation
+00300.dlgp has a trivial saturation
+00302.dlgp has a trivial saturation
+00303.dlgp has a trivial saturation
+00304.dlgp has a trivial saturation
+00305.dlgp has a trivial saturation
+00306.dlgp has a trivial saturation
+00307.dlgp has a trivial saturation
+00308.dlgp has a trivial saturation
+00309.dlgp has a trivial saturation
+00310.dlgp has a trivial saturation
+00311.dlgp has a trivial saturation
+00312.dlgp has a trivial saturation
+00313.dlgp has a trivial saturation
+00314.dlgp has a trivial saturation
+00315.dlgp has a trivial saturation
+00317.dlgp has a trivial saturation
+00318.dlgp has a trivial saturation
+00321.dlgp has a trivial saturation
+00322.dlgp has a trivial saturation
+00323.dlgp has a trivial saturation
+00324.dlgp has a trivial saturation
+00325.dlgp has a trivial saturation
+00326.dlgp has a trivial saturation
+00327.dlgp has a trivial saturation
+00328.dlgp has a trivial saturation
+00329.dlgp has a trivial saturation
+00330.dlgp has a trivial saturation
+00331.dlgp has a trivial saturation
+00335.dlgp has a trivial saturation
+00337.dlgp has a trivial saturation
+00342.dlgp has a trivial saturation
+00355.dlgp has a trivial saturation
+00361.dlgp has a trivial saturation
+00362.dlgp has a trivial saturation
+00363.dlgp has a trivial saturation
+00364.dlgp has a trivial saturation
+00365.dlgp has a trivial saturation
+00408.dlgp has a trivial saturation
+00409.dlgp has a trivial saturation
+00428.dlgp has a trivial saturation
+00429.dlgp has a trivial saturation
+00434.dlgp has a trivial saturation
+00439.dlgp has a trivial saturation
+00440.dlgp has a trivial saturation
+00441.dlgp has a trivial saturation
+00442.dlgp has a trivial saturation
+00443.dlgp has a trivial saturation
+00444.dlgp has a trivial saturation
+00453.dlgp has a trivial saturation
+00455.dlgp has a trivial saturation
+00456.dlgp has a trivial saturation
+00466.dlgp has a trivial saturation
+00467.dlgp has a trivial saturation
+00478.dlgp has a trivial saturation
+00481.dlgp has a trivial saturation
+00482.dlgp has a trivial saturation
+00490.dlgp has a trivial saturation
+00491.dlgp has a trivial saturation
+00492.dlgp has a trivial saturation
+00493.dlgp has a trivial saturation
+00494.dlgp has a trivial saturation
+00495.dlgp has a trivial saturation
+00499.dlgp has a trivial saturation
+00501.dlgp has a trivial saturation
+00503.dlgp has a trivial saturation
+00509.dlgp has a trivial saturation
+00510.dlgp has a trivial saturation
+00516.dlgp has a trivial saturation
+00517.dlgp has a trivial saturation
+00524.dlgp has a trivial saturation
+00525.dlgp has a trivial saturation
+00528.dlgp has a trivial saturation
+00529.dlgp has a trivial saturation
+00549.dlgp has a trivial saturation
+00551.dlgp has a trivial saturation
+00552.dlgp has a trivial saturation
+00558.dlgp has a trivial saturation
+00559.dlgp has a trivial saturation
+00564.dlgp has a trivial saturation
+00565.dlgp has a trivial saturation
+00567.dlgp has a trivial saturation
+00568.dlgp has a trivial saturation
+00583.dlgp has a trivial saturation
+00584.dlgp has a trivial saturation
+00585.dlgp has a trivial saturation
+00586.dlgp has a trivial saturation
+00587.dlgp has a trivial saturation
+00588.dlgp has a trivial saturation
+00601.dlgp has a trivial saturation
+00602.dlgp has a trivial saturation
+00603.dlgp has a trivial saturation
+00604.dlgp has a trivial saturation
+00607.dlgp has a trivial saturation
+00608.dlgp has a trivial saturation
+00609.dlgp has a trivial saturation
+00610.dlgp has a trivial saturation
+00611.dlgp has a trivial saturation
+00612.dlgp has a trivial saturation
+00613.dlgp has a trivial saturation
+00614.dlgp has a trivial saturation
+00615.dlgp has a trivial saturation
+00616.dlgp has a trivial saturation
+00617.dlgp has a trivial saturation
+00618.dlgp has a trivial saturation
+00619.dlgp has a trivial saturation
+00620.dlgp has a trivial saturation
+00621.dlgp has a trivial saturation
+00622.dlgp has a trivial saturation
+00623.dlgp has a trivial saturation
+00625.dlgp has a trivial saturation
+00634.dlgp has a trivial saturation
+00635.dlgp has a trivial saturation
+00641.dlgp has a trivial saturation
+00642.dlgp has a trivial saturation
+00643.dlgp has a trivial saturation
+00644.dlgp has a trivial saturation
+00647.dlgp has a trivial saturation
+00651.dlgp has a trivial saturation
+00652.dlgp has a trivial saturation
+00653.dlgp has a trivial saturation
+00654.dlgp has a trivial saturation
+00655.dlgp has a trivial saturation
+00656.dlgp has a trivial saturation
+00659.dlgp has a trivial saturation
+00661.dlgp has a trivial saturation
+00662.dlgp has a trivial saturation
+00663.dlgp has a trivial saturation
+00664.dlgp has a trivial saturation
+00671.dlgp has a trivial saturation
+00672.dlgp has a trivial saturation
+00674.dlgp has a trivial saturation
+00688.dlgp has a trivial saturation
+00691.dlgp has a trivial saturation
+00692.dlgp has a trivial saturation
+00693.dlgp has a trivial saturation
+00765.dlgp has a trivial saturation
+00767.dlgp has a trivial saturation
+00771.dlgp has a trivial saturation
+00776.dlgp has a trivial saturation
+00777.dlgp has a trivial saturation
+00779.dlgp has a trivial saturation
+00780.dlgp has a trivial saturation

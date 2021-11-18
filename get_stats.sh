@@ -4,22 +4,35 @@ set -e
 DIR=$1
 OUTPUT=$DIR/stats.csv
 CSV_SEP=","
+SEPARATOR=" , "
 
 
 
 if [[ $DIR =~ "-kaon2" ]];
 then
-    echo "NAME,AXIOM_NB,OUTPUT_SIZE,TIME"> $OUTPUT
+    echo "NAME,AXIOM_NB,SUBSUMED,NEW_FTGD_NB,NEW_NFTGD_NB,OUTPUT_SIZE,TIME"> $OUTPUT
     for log in $DIR/*.log;
     do
         # initialization of the values
         AXIOM_NB="N/A"
+        SUBSUMED="N/A"
+        NEW_NFTGD_NB="N/A"
+        NEW_FTGD_NB="N/A"
         OUTPUT_SIZE="N/A"
         RUN_TIME_MS="N/A"
 
         AXIOM_STATS=`grep "Initial axioms in the ontology: " $log || true`
         AXIOM_NB=${AXIOM_STATS#*"ontology: "}
 
+        SUBSUMED_LINE=`grep "Subsumed elements :" $log || true`
+        SUBSUMED=${SUBSUMED_LINE#*"elements : "}
+        
+        # get derived TGDs
+        NEW_TGD_STATS=`grep "Derived full/non full TGDs: " $log || true`
+        NEW_TGD_STATS=${NEW_TGD_STATS#*"TGDs: "}
+        NEW_NFTGD_NB=${NEW_TGD_STATS#*$SEPARATOR}
+        NEW_FTGD_NB=${NEW_TGD_STATS:0:$(( ${#NEW_TGD_STAT} - ${#NEW_NFTGD_NB} - ${#SEPARATOR} ))}
+        
         OUTPUT_STATS=`grep "# rules: " $log || true`
         OUTPUT_SIZE=${OUTPUT_STATS#*"rules: "}
 
@@ -47,7 +60,7 @@ then
         
         FILE_NAME=`basename $log`
         NAME=${FILE_NAME%".log"}
-        echo $NAME$CSV_SEP$AXIOM_NB$CSV_SEP$OUTPUT_SIZE$CSV_SEP$RUN_TIME_MS >> $OUTPUT
+        echo $NAME$CSV_SEP$AXIOM_NB$CSV_SEP$SUBSUMED$CSV_SEP$NEW_FTGD_NB$CSV_SEP$NEW_NFTGD_NB$CSV_SEP$OUTPUT_SIZE$CSV_SEP$RUN_TIME_MS >> $OUTPUT
     done
 else
     echo "NAME,NFTGD_NB,FTGD_NB,SUBSUMED,NEW_FTGD_NB,NEW_NFTGD_NB,NEW_OUTPUT_SIZE,OUTPUT_SIZE,BODY_SK_ATOMS_MAX,EVOL_TIME,SUMB_TIME,TIME"> $OUTPUT
@@ -70,7 +83,6 @@ else
         if [[ -n $TGD_STATS ]];
         then
             TGD_STATS=${TGD_STATS#*"TGDs: "}
-            SEPARATOR=" , "
             NFTGD_NB=${TGD_STATS#*$SEPARATOR}
             FTGD_NB=${TGD_STATS:0:$(( ${#TGD_STAT} - ${#NFTGD_NB} - ${#SEPARATOR} ))}
 
