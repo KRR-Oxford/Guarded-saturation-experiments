@@ -1,0 +1,72 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 21801; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 15, 2021 3:27:55 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/21801 = 0.000%
+GSat discarded rules : 0/21801 = 0.000%
+Nov 15, 2021 3:27:57 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 9.984679
+number of bags: 2
+length of the formulas: 9.984679
+number of bags: 2
+nonFullTGDs	0		fullTGDs	14161			newNonFullTGDs	12339		newFullTGDs	0
+nonFullTGDs	5		fullTGDs	14161			newNonFullTGDs	12341		newFullTGDs	3
+nonFullTGDs	20		fullTGDs	14161			newNonFullTGDs	12357		newFullTGDs	7
+nonFullTGDs	42		fullTGDs	14161			newNonFullTGDs	12351		newFullTGDs	7
+nonFullTGDs	72		fullTGDs	14161			newNonFullTGDs	12349		newFullTGDs	7
+nonFullTGDs	94		fullTGDs	14161			newNonFullTGDs	12346		newFullTGDs	7
+nonFullTGDs	116		fullTGDs	14161			newNonFullTGDs	12337		newFullTGDs	7
+nonFullTGDs	133		fullTGDs	14161			newNonFullTGDs	12353		newFullTGDs	11
+nonFullTGDs	155		fullTGDs	14161			newNonFullTGDs	12351		newFullTGDs	11
+nonFullTGDs	187		fullTGDs	14161			newNonFullTGDs	12346		newFullTGDs	11
+nonFullTGDs	207		fullTGDs	14161			newNonFullTGDs	12342		newFullTGDs	11
+nonFullTGDs	225		fullTGDs	14161			newNonFullTGDs	12342		newFullTGDs	12
+nonFullTGDs	238		fullTGDs	14161			newNonFullTGDs	12355		newFullTGDs	12
+nonFullTGDs	251		fullTGDs	14161			newNonFullTGDs	12354		newFullTGDs	12
+nonFullTGDs	263		fullTGDs	14161			newNonFullTGDs	12354		newFullTGDs	12
+nonFullTGDs	274		fullTGDs	14161			newNonFullTGDs	12366		newFullTGDs	12
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269)
+	at java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400a7440.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.DelegatingMethodHandle$Holder.reinvoke_L(DelegatingMethodHandle$Holder)
+	at java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+Unknown error. The system will now terminate.
+Nov 15, 2021 3:32:23 PM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 15, 2021 3:32:23 PM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269), java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633), java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400a7440.invoke(LambdaForm$MH), java.base/java.lang.invoke.DelegatingMethodHandle$Holder.reinvoke_L(DelegatingMethodHandle$Holder), java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)]
+\n\n!!! ERROR !!!

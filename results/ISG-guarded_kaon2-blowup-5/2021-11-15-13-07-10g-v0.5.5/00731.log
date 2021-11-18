@@ -1,0 +1,43 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 321; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 16, 2021 8:53:19 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/321 = 0.000%
+GSat discarded rules : 0/321 = 0.000%
+Nov 16, 2021 8:53:19 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 8.772586
+number of bags: 1
+length of the formulas: 8.772586
+number of bags: 1
+nonFullTGDs	0		fullTGDs	173			newNonFullTGDs	148		newFullTGDs	0
+nonFullTGDs	90		fullTGDs	173			newNonFullTGDs	610		newFullTGDs	1
+nonFullTGDs	190		fullTGDs	173			newNonFullTGDs	614		newFullTGDs	1
+nonFullTGDs	290		fullTGDs	173			newNonFullTGDs	616		newFullTGDs	1
+nonFullTGDs	390		fullTGDs	173			newNonFullTGDs	602		newFullTGDs	1
+nonFullTGDs	490		fullTGDs	173			newNonFullTGDs	600		newFullTGDs	1
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269)
+	at java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8440.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8840.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+	at uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:74)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 16, 2021 8:55:15 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 16, 2021 8:55:15 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269), java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633), java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8440.invoke(LambdaForm$MH), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8840.invoke(LambdaForm$MH), java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder), uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:74), uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140), uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

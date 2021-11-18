@@ -1,0 +1,57 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 1245; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 16, 2021 7:43:38 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/1245 = 0.000%
+GSat discarded rules : 0/1245 = 0.000%
+Nov 16, 2021 7:43:38 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 7.164054
+number of bags: 1
+length of the formulas: 7.164054
+number of bags: 1
+nonFullTGDs	0		fullTGDs	1146			newNonFullTGDs	640		newFullTGDs	0
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.resize(HashMap.java:699)
+	at java.base/java.util.HashMap.putVal(HashMap.java:658)
+	at java.base/java.util.HashMap.put(HashMap.java:607)
+	at java.base/java.util.HashSet.add(HashSet.java:220)
+	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:352)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+Unknown error. The system will now terminate.
+Nov 16, 2021 7:46:51 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 16, 2021 7:46:51 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.util.HashMap.resize(HashMap.java:699), java.base/java.util.HashMap.putVal(HashMap.java:658), java.base/java.util.HashMap.put(HashMap.java:607), java.base/java.util.HashSet.add(HashSet.java:220), java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:352), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)]
+\n\n!!! ERROR !!!

@@ -1,0 +1,48 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 1474; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 16, 2021 9:58:20 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/1474 = 0.000%
+GSat discarded rules : 0/1474 = 0.000%
+Nov 16, 2021 9:58:20 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 9.332884
+number of bags: 1
+length of the formulas: 9.332884
+number of bags: 1
+nonFullTGDs	0		fullTGDs	1474			newNonFullTGDs	752		newFullTGDs	0
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269)
+	at java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400a7440.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.DelegatingMethodHandle$Holder.reinvoke_L(DelegatingMethodHandle$Holder)
+	at java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56)
+	at uk.ac.ox.cs.pdq.fol.QuantifiedFormula.toString(QuantifiedFormula.java:98)
+	at uk.ac.ox.cs.pdq.fol.TGD.toString(TGD.java:28)
+	at uk.ac.ox.cs.gsat.SaturationUtils.lambda$static$0(SaturationUtils.java:114)
+	at uk.ac.ox.cs.gsat.SaturationUtils$$Lambda$19/0x0000000840097c40.compare(Unknown Source)
+	at java.base/java.util.TreeMap.put(TreeMap.java:550)
+	at java.base/java.util.TreeSet.add(TreeSet.java:255)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.addNewTGD(AbstractSaturation.java:300)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:128)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 16, 2021 9:59:14 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 16, 2021 9:59:14 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269), java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633), java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400a7440.invoke(LambdaForm$MH), java.base/java.lang.invoke.DelegatingMethodHandle$Holder.reinvoke_L(DelegatingMethodHandle$Holder), java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.Conjunction.toString(Conjunction.java:56), uk.ac.ox.cs.pdq.fol.QuantifiedFormula.toString(QuantifiedFormula.java:98), uk.ac.ox.cs.pdq.fol.TGD.toString(TGD.java:28), uk.ac.ox.cs.gsat.SaturationUtils.lambda$static$0(SaturationUtils.java:114), uk.ac.ox.cs.gsat.SaturationUtils$$Lambda$19/0x0000000840097c40.compare(Unknown Source), java.base/java.util.TreeMap.put(TreeMap.java:550), java.base/java.util.TreeSet.add(TreeSet.java:255), uk.ac.ox.cs.gsat.AbstractSaturation.addNewTGD(AbstractSaturation.java:300), uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:128), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

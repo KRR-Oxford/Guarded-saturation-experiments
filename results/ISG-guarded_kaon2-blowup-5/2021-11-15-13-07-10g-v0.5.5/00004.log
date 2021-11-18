@@ -1,0 +1,70 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 18812; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 15, 2021 1:25:58 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/18812 = 0.000%
+GSat discarded rules : 0/18812 = 0.000%
+Nov 15, 2021 1:26:00 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 12.708212
+number of bags: 1
+length of the formulas: 12.708212
+number of bags: 1
+nonFullTGDs	0		fullTGDs	2463			newNonFullTGDs	16705		newFullTGDs	0
+nonFullTGDs	100		fullTGDs	2463			newNonFullTGDs	16655		newFullTGDs	0
+nonFullTGDs	186		fullTGDs	2463			newNonFullTGDs	16612		newFullTGDs	0
+nonFullTGDs	238		fullTGDs	2463			newNonFullTGDs	16586		newFullTGDs	0
+nonFullTGDs	290		fullTGDs	2463			newNonFullTGDs	16560		newFullTGDs	0
+nonFullTGDs	340		fullTGDs	2463			newNonFullTGDs	16535		newFullTGDs	0
+nonFullTGDs	391		fullTGDs	2463			newNonFullTGDs	16510		newFullTGDs	0
+nonFullTGDs	442		fullTGDs	2463			newNonFullTGDs	16484		newFullTGDs	0
+nonFullTGDs	494		fullTGDs	2463			newNonFullTGDs	16458		newFullTGDs	0
+nonFullTGDs	544		fullTGDs	2463			newNonFullTGDs	16433		newFullTGDs	0
+nonFullTGDs	596		fullTGDs	2463			newNonFullTGDs	16407		newFullTGDs	0
+nonFullTGDs	646		fullTGDs	2463			newNonFullTGDs	16382		newFullTGDs	0
+nonFullTGDs	698		fullTGDs	2463			newNonFullTGDs	16356		newFullTGDs	0
+nonFullTGDs	749		fullTGDs	2463			newNonFullTGDs	16331		newFullTGDs	0
+nonFullTGDs	799		fullTGDs	2463			newNonFullTGDs	16306		newFullTGDs	0
+nonFullTGDs	850		fullTGDs	2463			newNonFullTGDs	16280		newFullTGDs	0
+nonFullTGDs	902		fullTGDs	2463			newNonFullTGDs	16254		newFullTGDs	0
+nonFullTGDs	954		fullTGDs	2463			newNonFullTGDs	16228		newFullTGDs	0
+nonFullTGDs	1006		fullTGDs	2463			newNonFullTGDs	16202		newFullTGDs	0
+nonFullTGDs	1056		fullTGDs	2463			newNonFullTGDs	16177		newFullTGDs	0
+nonFullTGDs	1108		fullTGDs	2463			newNonFullTGDs	16151		newFullTGDs	0
+nonFullTGDs	1158		fullTGDs	2463			newNonFullTGDs	16126		newFullTGDs	0
+nonFullTGDs	1206		fullTGDs	2463			newNonFullTGDs	16101		newFullTGDs	0
+nonFullTGDs	1259		fullTGDs	2463			newNonFullTGDs	16075		newFullTGDs	0
+nonFullTGDs	1311		fullTGDs	2463			newNonFullTGDs	16049		newFullTGDs	0
+nonFullTGDs	1362		fullTGDs	2463			newNonFullTGDs	16023		newFullTGDs	0
+nonFullTGDs	1416		fullTGDs	2463			newNonFullTGDs	15996		newFullTGDs	0
+nonFullTGDs	1468		fullTGDs	2463			newNonFullTGDs	15970		newFullTGDs	0
+nonFullTGDs	1535		fullTGDs	2463			newNonFullTGDs	43771		newFullTGDs	3
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269)
+	at java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400bdc40.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400c0c40.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+	at uk.ac.ox.cs.pdq.fol.TGD.toString(TGD.java:28)
+	at uk.ac.ox.cs.gsat.SaturationUtils.lambda$static$0(SaturationUtils.java:114)
+	at uk.ac.ox.cs.gsat.SaturationUtils$$Lambda$19/0x0000000840097c40.compare(Unknown Source)
+	at java.base/java.util.TreeMap.put(TreeMap.java:550)
+	at java.base/java.util.TreeSet.add(TreeSet.java:255)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.addNewTGD(AbstractSaturation.java:300)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:128)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 15, 2021 1:35:47 PM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 15, 2021 1:35:47 PM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269), java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633), java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400bdc40.invoke(LambdaForm$MH), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400c0c40.invoke(LambdaForm$MH), java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder), uk.ac.ox.cs.pdq.fol.TGD.toString(TGD.java:28), uk.ac.ox.cs.gsat.SaturationUtils.lambda$static$0(SaturationUtils.java:114), uk.ac.ox.cs.gsat.SaturationUtils$$Lambda$19/0x0000000840097c40.compare(Unknown Source), java.base/java.util.TreeMap.put(TreeMap.java:550), java.base/java.util.TreeSet.add(TreeSet.java:255), uk.ac.ox.cs.gsat.AbstractSaturation.addNewTGD(AbstractSaturation.java:300), uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:128), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

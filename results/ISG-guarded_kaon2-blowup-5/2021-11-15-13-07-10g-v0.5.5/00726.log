@@ -1,0 +1,71 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 671; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 16, 2021 8:31:16 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/671 = 0.000%
+GSat discarded rules : 0/671 = 0.000%
+Nov 16, 2021 8:31:17 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 9.373627
+number of bags: 1
+length of the formulas: 9.373627
+number of bags: 1
+nonFullTGDs	0		fullTGDs	627			newNonFullTGDs	283		newFullTGDs	0
+nonFullTGDs	92		fullTGDs	627			newNonFullTGDs	1820		newFullTGDs	0
+nonFullTGDs	192		fullTGDs	627			newNonFullTGDs	1817		newFullTGDs	0
+nonFullTGDs	292		fullTGDs	627			newNonFullTGDs	1808		newFullTGDs	0
+nonFullTGDs	392		fullTGDs	627			newNonFullTGDs	1809		newFullTGDs	0
+nonFullTGDs	492		fullTGDs	627			newNonFullTGDs	1801		newFullTGDs	0
+nonFullTGDs	592		fullTGDs	627			newNonFullTGDs	1810		newFullTGDs	0
+nonFullTGDs	692		fullTGDs	627			newNonFullTGDs	1812		newFullTGDs	0
+nonFullTGDs	792		fullTGDs	627			newNonFullTGDs	1801		newFullTGDs	0
+nonFullTGDs	892		fullTGDs	627			newNonFullTGDs	1803		newFullTGDs	0
+nonFullTGDs	992		fullTGDs	627			newNonFullTGDs	1799		newFullTGDs	0
+nonFullTGDs	1092		fullTGDs	627			newNonFullTGDs	1811		newFullTGDs	0
+nonFullTGDs	1192		fullTGDs	627			newNonFullTGDs	1801		newFullTGDs	0
+nonFullTGDs	1292		fullTGDs	627			newNonFullTGDs	1798		newFullTGDs	0
+nonFullTGDs	1392		fullTGDs	627			newNonFullTGDs	1795		newFullTGDs	0
+java.lang.OutOfMemoryError: Java heap space
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:126)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)
+Unknown error. The system will now terminate.
+Nov 16, 2021 8:40:29 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 16, 2021 8:40:29 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:126), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128), uk.ac.ox.cs.pdq.fol.Conjunction.create(Conjunction.java:128)]
+\n\n!!! ERROR !!!

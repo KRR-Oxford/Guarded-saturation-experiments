@@ -1,0 +1,66 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 492; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 16, 2021 10:26:34 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/492 = 0.000%
+GSat discarded rules : 0/492 = 0.000%
+Nov 16, 2021 10:26:34 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 8.223054
+number of bags: 1
+length of the formulas: 8.223054
+number of bags: 1
+nonFullTGDs	0		fullTGDs	459			newNonFullTGDs	209		newFullTGDs	0
+nonFullTGDs	88		fullTGDs	459			newNonFullTGDs	1196		newFullTGDs	1
+nonFullTGDs	188		fullTGDs	459			newNonFullTGDs	1196		newFullTGDs	1
+nonFullTGDs	288		fullTGDs	459			newNonFullTGDs	1183		newFullTGDs	1
+nonFullTGDs	388		fullTGDs	459			newNonFullTGDs	1185		newFullTGDs	1
+nonFullTGDs	488		fullTGDs	459			newNonFullTGDs	1186		newFullTGDs	1
+nonFullTGDs	588		fullTGDs	459			newNonFullTGDs	1193		newFullTGDs	1
+nonFullTGDs	688		fullTGDs	459			newNonFullTGDs	1188		newFullTGDs	1
+nonFullTGDs	788		fullTGDs	459			newNonFullTGDs	1175		newFullTGDs	1
+nonFullTGDs	888		fullTGDs	459			newNonFullTGDs	1182		newFullTGDs	1
+nonFullTGDs	988		fullTGDs	459			newNonFullTGDs	1172		newFullTGDs	1
+nonFullTGDs	1088		fullTGDs	459			newNonFullTGDs	1192		newFullTGDs	1
+nonFullTGDs	1188		fullTGDs	459			newNonFullTGDs	1177		newFullTGDs	1
+nonFullTGDs	1288		fullTGDs	459			newNonFullTGDs	1181		newFullTGDs	1
+nonFullTGDs	1388		fullTGDs	459			newNonFullTGDs	1183		newFullTGDs	1
+nonFullTGDs	1488		fullTGDs	459			newNonFullTGDs	1175		newFullTGDs	1
+nonFullTGDs	1588		fullTGDs	459			newNonFullTGDs	1185		newFullTGDs	1
+nonFullTGDs	1688		fullTGDs	459			newNonFullTGDs	1174		newFullTGDs	1
+nonFullTGDs	1788		fullTGDs	459			newNonFullTGDs	1171		newFullTGDs	1
+nonFullTGDs	1888		fullTGDs	459			newNonFullTGDs	1169		newFullTGDs	1
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3689)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:238)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:243)
+	at java.base/java.util.ArrayList.add(ArrayList.java:486)
+	at java.base/java.util.ArrayList.add(ArrayList.java:499)
+	at java.base/java.util.stream.Collectors$$Lambda$34/0x00000008400d6040.accept(Unknown Source)
+	at java.base/java.util.stream.ReduceOps$3ReducingSink.accept(ReduceOps.java:169)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1603)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at uk.ac.ox.cs.gsat.GSat.getSbody(GSat.java:215)
+	at uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:100)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 16, 2021 10:36:41 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 16, 2021 10:36:41 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.util.Arrays.copyOf(Arrays.java:3689), java.base/java.util.ArrayList.grow(ArrayList.java:238), java.base/java.util.ArrayList.grow(ArrayList.java:243), java.base/java.util.ArrayList.add(ArrayList.java:486), java.base/java.util.ArrayList.add(ArrayList.java:499), java.base/java.util.stream.Collectors$$Lambda$34/0x00000008400d6040.accept(Unknown Source), java.base/java.util.stream.ReduceOps$3ReducingSink.accept(ReduceOps.java:169), java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177), java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1603), java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484), java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474), java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913), java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234), java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578), uk.ac.ox.cs.gsat.GSat.getSbody(GSat.java:215), uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:100), uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140), uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

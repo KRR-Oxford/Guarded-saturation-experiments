@@ -1,0 +1,74 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 1750; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolem Sat
+Running SkSat...
+Nov 16, 2021 1:11:00 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: SkSat discarded rules : 0/1750 = 0.000%
+SkSat discarded rules : 0/1750 = 0.000%
+Nov 16, 2021 1:11:00 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 5.410983
+number of bags: 3
+length of the formulas: 5.410983
+number of bags: 3
+nonFullTGDs	0		fullTGDs	2792			newNonFullTGDs	3454		newFullTGDs	0
+nonFullTGDs	100		fullTGDs	2792			newNonFullTGDs	3354		newFullTGDs	7471
+nonFullTGDs	200		fullTGDs	2792			newNonFullTGDs	3254		newFullTGDs	16579
+nonFullTGDs	300		fullTGDs	2792			newNonFullTGDs	3154		newFullTGDs	23494
+nonFullTGDs	400		fullTGDs	2792			newNonFullTGDs	3054		newFullTGDs	29587
+nonFullTGDs	500		fullTGDs	2792			newNonFullTGDs	2954		newFullTGDs	38509
+nonFullTGDs	600		fullTGDs	2792			newNonFullTGDs	2854		newFullTGDs	49342
+nonFullTGDs	700		fullTGDs	2792			newNonFullTGDs	2754		newFullTGDs	58737
+nonFullTGDs	800		fullTGDs	2792			newNonFullTGDs	2654		newFullTGDs	63932
+nonFullTGDs	900		fullTGDs	2792			newNonFullTGDs	2554		newFullTGDs	70677
+nonFullTGDs	1000		fullTGDs	2792			newNonFullTGDs	2454		newFullTGDs	78785
+nonFullTGDs	1100		fullTGDs	2792			newNonFullTGDs	2354		newFullTGDs	83636
+nonFullTGDs	1200		fullTGDs	2792			newNonFullTGDs	2254		newFullTGDs	91118
+nonFullTGDs	1300		fullTGDs	2792			newNonFullTGDs	2154		newFullTGDs	100144
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 2792 , 3454
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: SkSat total time : 608446 ms = 608.45 s
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Subsumed elements : 72
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Filter discarded elements : 2792304758
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: subsumption time: 599144 ms = 599.14 s
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: forward subsumption time: 385392 ms = 385.39 s
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: backward subsumption time: 213753 ms = 213.75 s
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Derived full/non full TGDs: 103674 , 0
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: discarded tautology count: 444
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: !!! TIME OUT !!!
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: Stop because subsumed: 0
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved equals to current: 0
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved time: 4876 ms = 4.88 s
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolve count: 103674
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: maximum number of Skolem atoms in body: 10
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: left derived TGD with Skolem in the body: 0
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: right derived TGD with Skolem in the body: 103674
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: derived TGD with more than two Skolem atoms in the body: 60514
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: ouptput full TGDs not contained in the input: 0
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (2792 dependecies)
+Nov 16, 2021 1:21:08 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Writing the saturation in the Datalog file 00396.rul
