@@ -6,7 +6,7 @@ for dir in 2021*; do
     cd $dir;
     if [ ! -f $dir.7z ];
     then
-        7z a $dir.7z *.log
+        7z a $dir.7z *.rul
     fi
     cd ..;
 done;

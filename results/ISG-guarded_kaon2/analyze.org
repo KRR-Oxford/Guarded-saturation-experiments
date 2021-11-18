@@ -1762,11 +1762,11 @@
    | NAME | NFTGD_NB | FTGD_NB | KAON3_DERIVED_TGD | SKSAT_DERIVED_TGD | SIZE_FACTOR |
    |------+----------+---------+-------------------+-------------------+-------------|
 ** GSat
-   #+BEGIN_src ipython :session mysession  :results none
-     def color_timeout(df, color):
-         return np.where(df['TIME'] == TIMEOUT, 'grey', color)
+         #+BEGIN_src ipython :session mysession  :results none
+        def color_timeout(df, color):
+            return np.where(df['TIME'] == TIMEOUT, '#0f0f0f00', color)
    #+END_src
-     
+
      Scatter plot of the time in ms in function of the number of intermediate TGDs.
     #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/gsat_intermediate_time.png
        gsat_intermediate = pd.DataFrame([])
@@ -1774,7 +1774,7 @@
        gsat_intermediate['NEW_TGD'] = (df_gsat_data['NEW_FTGD_NB'] + df_gsat_data['NEW_NFTGD_NB']).apply(pd.to_numeric)
        gsat_intermediate['TIME'] = times['GSAT_TIME']
        gsat_intermediate = select_interesting(gsat_intermediate)
-       ax = gsat_intermediate.plot.scatter(x='NEW_TGD', y='TIME', c=color_timeout(gsat_intermediate, 'tab:blue'), figsize=(15,6), label='GSAT')
+       ax = gsat_intermediate.plot.scatter(x='NEW_TGD', y='TIME', color='tab:blue', figsize=(15,6), label='GSAT')
        ax.set_yscale('log')
        ax.set_xscale('log')
    #+END_src

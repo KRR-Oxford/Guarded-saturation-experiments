@@ -6,6 +6,10 @@ The file names correspond to the entries on the [readme](http://krr-nas.cs.ox.ac
 
 ## Get the rules in DLPG format
 
+### By downloading the kept files (not trivial and without redundancy)
+
+download `ISG-guarded_kaon2-kept.7z` in the release
+
 ### By downloading the generated files 
 
 ```bash
