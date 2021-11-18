@@ -1,0 +1,51 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 5402; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 12, 2021 2:48:40 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/5402 = 0.000%
+GSat discarded rules : 0/5402 = 0.000%
+Nov 12, 2021 2:48:40 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.7456498
+number of bags: 8
+length of the formulas: 2.7456498
+number of bags: 8
+nonFullTGDs	0		fullTGDs	3626			newNonFullTGDs	1776		newFullTGDs	0
+nonFullTGDs	12		fullTGDs	3626			newNonFullTGDs	1962		newFullTGDs	0
+nonFullTGDs	56		fullTGDs	3626			newNonFullTGDs	1959		newFullTGDs	0
+nonFullTGDs	101		fullTGDs	3626			newNonFullTGDs	1954		newFullTGDs	0
+nonFullTGDs	126		fullTGDs	3626			newNonFullTGDs	1958		newFullTGDs	0
+nonFullTGDs	160		fullTGDs	3626			newNonFullTGDs	1985		newFullTGDs	0
+nonFullTGDs	189		fullTGDs	3626			newNonFullTGDs	1965		newFullTGDs	0
+nonFullTGDs	216		fullTGDs	3626			newNonFullTGDs	1955		newFullTGDs	0
+nonFullTGDs	252		fullTGDs	3626			newNonFullTGDs	1945		newFullTGDs	0
+nonFullTGDs	276		fullTGDs	3626			newNonFullTGDs	1958		newFullTGDs	0
+java.lang.OutOfMemoryError: Java heap space
+	at uk.ac.ox.cs.pdq.fol.QuantifiedFormula.<init>(QuantifiedFormula.java:62)
+	at uk.ac.ox.cs.pdq.fol.QuantifiedFormula.create(QuantifiedFormula.java:163)
+	at uk.ac.ox.cs.pdq.fol.Dependency.createHead(Dependency.java:92)
+	at uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:63)
+	at uk.ac.ox.cs.pdq.fol.TGD.<init>(TGD.java:19)
+	at uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:41)
+	at uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:49)
+	at uk.ac.ox.cs.gsat.GTGD.<init>(GTGD.java:20)
+	at uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:418)
+	at uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:412)
+	at uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:85)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 12, 2021 2:50:12 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 12, 2021 2:50:12 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [uk.ac.ox.cs.pdq.fol.QuantifiedFormula.<init>(QuantifiedFormula.java:62), uk.ac.ox.cs.pdq.fol.QuantifiedFormula.create(QuantifiedFormula.java:163), uk.ac.ox.cs.pdq.fol.Dependency.createHead(Dependency.java:92), uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:63), uk.ac.ox.cs.pdq.fol.TGD.<init>(TGD.java:19), uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:41), uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:49), uk.ac.ox.cs.gsat.GTGD.<init>(GTGD.java:20), uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:418), uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:412), uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:85), uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140), uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

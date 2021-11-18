@@ -1,0 +1,71 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 1843; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 12, 2021 9:40:04 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/1843 = 0.000%
+GSat discarded rules : 0/1843 = 0.000%
+Nov 12, 2021 9:40:04 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 3.7536626
+number of bags: 3
+length of the formulas: 3.7536626
+number of bags: 3
+nonFullTGDs	0		fullTGDs	982			newNonFullTGDs	861		newFullTGDs	0
+nonFullTGDs	41		fullTGDs	982			newNonFullTGDs	862		newFullTGDs	1
+nonFullTGDs	83		fullTGDs	982			newNonFullTGDs	861		newFullTGDs	2
+nonFullTGDs	112		fullTGDs	982			newNonFullTGDs	858		newFullTGDs	5
+nonFullTGDs	132		fullTGDs	982			newNonFullTGDs	853		newFullTGDs	8
+nonFullTGDs	156		fullTGDs	982			newNonFullTGDs	849		newFullTGDs	12
+nonFullTGDs	194		fullTGDs	982			newNonFullTGDs	850		newFullTGDs	13
+nonFullTGDs	234		fullTGDs	982			newNonFullTGDs	852		newFullTGDs	14
+nonFullTGDs	265		fullTGDs	982			newNonFullTGDs	846		newFullTGDs	17
+nonFullTGDs	302		fullTGDs	982			newNonFullTGDs	848		newFullTGDs	19
+nonFullTGDs	331		fullTGDs	982			newNonFullTGDs	839		newFullTGDs	24
+nonFullTGDs	358		fullTGDs	982			newNonFullTGDs	836		newFullTGDs	28
+nonFullTGDs	384		fullTGDs	982			newNonFullTGDs	831		newFullTGDs	30
+nonFullTGDs	418		fullTGDs	982			newNonFullTGDs	831		newFullTGDs	33
+nonFullTGDs	442		fullTGDs	982			newNonFullTGDs	824		newFullTGDs	37
+nonFullTGDs	469		fullTGDs	982			newNonFullTGDs	822		newFullTGDs	41
+nonFullTGDs	498		fullTGDs	982			newNonFullTGDs	818		newFullTGDs	43
+nonFullTGDs	529		fullTGDs	982			newNonFullTGDs	817		newFullTGDs	46
+nonFullTGDs	558		fullTGDs	982			newNonFullTGDs	813		newFullTGDs	48
+nonFullTGDs	589		fullTGDs	982			newNonFullTGDs	812		newFullTGDs	51
+nonFullTGDs	618		fullTGDs	982			newNonFullTGDs	808		newFullTGDs	53
+nonFullTGDs	649		fullTGDs	982			newNonFullTGDs	807		newFullTGDs	56
+nonFullTGDs	674		fullTGDs	982			newNonFullTGDs	801		newFullTGDs	60
+nonFullTGDs	702		fullTGDs	982			newNonFullTGDs	798		newFullTGDs	63
+nonFullTGDs	735		fullTGDs	982			newNonFullTGDs	798		newFullTGDs	66
+nonFullTGDs	754		fullTGDs	982			newNonFullTGDs	791		newFullTGDs	70
+nonFullTGDs	784		fullTGDs	982			newNonFullTGDs	789		newFullTGDs	74
+nonFullTGDs	813		fullTGDs	982			newNonFullTGDs	785		newFullTGDs	77
+nonFullTGDs	838		fullTGDs	982			newNonFullTGDs	780		newFullTGDs	81
+nonFullTGDs	858		fullTGDs	982			newNonFullTGDs	775		newFullTGDs	86
+nonFullTGDs	887		fullTGDs	982			newNonFullTGDs	776		newFullTGDs	89
+nonFullTGDs	914		fullTGDs	982			newNonFullTGDs	769		newFullTGDs	92
+nonFullTGDs	935		fullTGDs	982			newNonFullTGDs	765		newFullTGDs	98
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.newNode(HashMap.java:1815)
+	at java.base/java.util.HashMap.putVal(HashMap.java:627)
+	at java.base/java.util.HashMap.put(HashMap.java:608)
+	at java.base/java.util.HashSet.add(HashSet.java:220)
+	at uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:426)
+	at uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:418)
+	at uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:412)
+	at uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:85)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 12, 2021 9:44:47 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 12, 2021 9:44:47 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.util.HashMap.newNode(HashMap.java:1815), java.base/java.util.HashMap.putVal(HashMap.java:627), java.base/java.util.HashMap.put(HashMap.java:608), java.base/java.util.HashSet.add(HashSet.java:220), uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:426), uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:418), uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:412), uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:85), uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140), uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

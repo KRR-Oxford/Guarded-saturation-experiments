@@ -1,0 +1,74 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 1280; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 12, 2021 5:20:00 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/1280 = 0.000%
+GSat discarded rules : 0/1280 = 0.000%
+Nov 12, 2021 5:20:00 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.85
+number of bags: 4
+length of the formulas: 2.85
+number of bags: 4
+nonFullTGDs	0		fullTGDs	548			newNonFullTGDs	732		newFullTGDs	0
+nonFullTGDs	32		fullTGDs	548			newNonFullTGDs	700		newFullTGDs	36
+nonFullTGDs	67		fullTGDs	548			newNonFullTGDs	665		newFullTGDs	48
+nonFullTGDs	104		fullTGDs	548			newNonFullTGDs	628		newFullTGDs	100
+nonFullTGDs	137		fullTGDs	548			newNonFullTGDs	595		newFullTGDs	106
+nonFullTGDs	170		fullTGDs	548			newNonFullTGDs	562		newFullTGDs	187
+nonFullTGDs	191		fullTGDs	548			newNonFullTGDs	541		newFullTGDs	520
+nonFullTGDs	226		fullTGDs	548			newNonFullTGDs	506		newFullTGDs	529
+nonFullTGDs	273		fullTGDs	548			newNonFullTGDs	459		newFullTGDs	533
+nonFullTGDs	322		fullTGDs	548			newNonFullTGDs	410		newFullTGDs	540
+nonFullTGDs	380		fullTGDs	548			newNonFullTGDs	352		newFullTGDs	551
+nonFullTGDs	427		fullTGDs	548			newNonFullTGDs	305		newFullTGDs	581
+nonFullTGDs	472		fullTGDs	548			newNonFullTGDs	260		newFullTGDs	588
+nonFullTGDs	515		fullTGDs	548			newNonFullTGDs	217		newFullTGDs	600
+nonFullTGDs	571		fullTGDs	548			newNonFullTGDs	161		newFullTGDs	639
+nonFullTGDs	605		fullTGDs	548			newNonFullTGDs	127		newFullTGDs	644
+nonFullTGDs	647		fullTGDs	548			newNonFullTGDs	85		newFullTGDs	648
+nonFullTGDs	732		fullTGDs	560			newNonFullTGDs	0		newFullTGDs	636
+nonFullTGDs	732		fullTGDs	660			newNonFullTGDs	0		newFullTGDs	536
+nonFullTGDs	732		fullTGDs	760			newNonFullTGDs	0		newFullTGDs	436
+nonFullTGDs	732		fullTGDs	860			newNonFullTGDs	0		newFullTGDs	336
+nonFullTGDs	732		fullTGDs	960			newNonFullTGDs	0		newFullTGDs	236
+nonFullTGDs	732		fullTGDs	1060			newNonFullTGDs	0		newFullTGDs	136
+nonFullTGDs	732		fullTGDs	1160			newNonFullTGDs	0		newFullTGDs	36
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 548 , 732
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: GSat total time : 715 ms = 0.72 s
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Subsumed elements : 1782
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Filter discarded elements : 173361
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: subsumption time: 61 ms = 0.06 s
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: forward subsumption time: 36 ms = 0.04 s
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: backward subsumption time: 26 ms = 0.03 s
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Derived full/non full TGDs: 648 , 1782
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: discarded tautology count: 0
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: Stop because subsumed: 956
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved equals to current: 0
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved time: 380 ms = 0.38 s
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolve count: 16572
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: ouptput full TGDs not contained in the input: 648
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (1196 dependecies)
+Nov 12, 2021 5:20:01 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Writing the saturation in the Datalog file 00384.rul
