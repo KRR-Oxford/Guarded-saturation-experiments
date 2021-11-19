@@ -1,0 +1,75 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 61952; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Nov 18, 2021 6:24:21 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/61952 = 0.000%
+HyperSat discarded rules : 0/61952 = 0.000%
+Nov 18, 2021 6:24:30 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 4.574205
+number of bags: 8
+length of the formulas: 4.574205
+number of bags: 8
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 185797 , 51256
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: HyperSat total time : 619188 ms = 619.19 s
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Subsumed elements : 4531
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Filter discarded elements : 23462187
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: subsumption time: 7960 ms = 7.96 s
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: forward subsumption time: 1130 ms = 1.13 s
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: backward subsumption time: 6830 ms = 6.83 s
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Derived full/non full TGDs: 5314 , 14981
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: discarded tautology count: 145
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: !!! TIME OUT !!!
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.HyperResolutionStatistics log
+INFO: hyperresolution time: 554159 ms = 554.16 s
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.HyperResolutionStatistics log
+INFO: hyperresolution count: 5420769
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.HyperResolutionStatistics log
+INFO: hyperresolution failure count: 5396247
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: ouptput full TGDs not contained in the input: 4227
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (190024 dependecies)
+Nov 18, 2021 6:34:40 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Writing the saturation in the Datalog file 00489.rul
+java.lang.UnsatisfiedLinkError: no net in java.library.path: [/usr/java/packages/lib, /usr/lib64, /lib64, /lib, /usr/lib]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2670)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+	at java.base/java.lang.System.loadLibrary(System.java:1873)
+	at java.base/sun.nio.ch.IOUtil$1.run(IOUtil.java:438)
+	at java.base/sun.nio.ch.IOUtil$1.run(IOUtil.java:436)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.nio.ch.IOUtil.<clinit>(IOUtil.java:435)
+	at java.base/sun.nio.ch.FileChannelImpl.<clinit>(FileChannelImpl.java:1212)
+	at java.base/sun.nio.fs.UnixChannelFactory.newFileChannel(UnixChannelFactory.java:144)
+	at java.base/sun.nio.fs.UnixChannelFactory.newFileChannel(UnixChannelFactory.java:156)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:217)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:220)
+	at java.base/java.nio.file.Files.write(Files.java:3490)
+	at uk.ac.ox.cs.gsat.IO.writeDatalogRules(IO.java:38)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:237)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 18, 2021 6:40:20 AM uk.ac.ox.cs.gsat.App main
+SEVERE: no net in java.library.path: [/usr/java/packages/lib, /usr/lib64, /lib64, /lib, /usr/lib]
+Nov 18, 2021 6:40:20 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2670), java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830), java.base/java.lang.System.loadLibrary(System.java:1873), java.base/sun.nio.ch.IOUtil$1.run(IOUtil.java:438), java.base/sun.nio.ch.IOUtil$1.run(IOUtil.java:436), java.base/java.security.AccessController.doPrivileged(Native Method), java.base/sun.nio.ch.IOUtil.<clinit>(IOUtil.java:435), java.base/sun.nio.ch.FileChannelImpl.<clinit>(FileChannelImpl.java:1212), java.base/sun.nio.fs.UnixChannelFactory.newFileChannel(UnixChannelFactory.java:144), java.base/sun.nio.fs.UnixChannelFactory.newFileChannel(UnixChannelFactory.java:156), java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:217), java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478), java.base/java.nio.file.Files.newOutputStream(Files.java:220), java.base/java.nio.file.Files.write(Files.java:3490), uk.ac.ox.cs.gsat.IO.writeDatalogRules(IO.java:38), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:237), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

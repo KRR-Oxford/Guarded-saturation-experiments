@@ -1,0 +1,36 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 2965; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Nov 18, 2021 10:54:21 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/2965 = 0.000%
+HyperSat discarded rules : 0/2965 = 0.000%
+Nov 18, 2021 10:54:21 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 4.983381
+number of bags: 3
+length of the formulas: 4.983381
+number of bags: 3
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.resize(HashMap.java:700)
+	at java.base/java.util.HashMap.putVal(HashMap.java:659)
+	at java.base/java.util.HashMap.put(HashMap.java:608)
+	at java.base/java.util.HashSet.add(HashSet.java:220)
+	at uk.ac.ox.cs.gsat.filters.TreePredicateFilter$$Lambda$32/0x00000008400bfc40.accept(Unknown Source)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at uk.ac.ox.cs.gsat.filters.TreePredicateFilter.getAll(TreePredicateFilter.java:275)
+	at uk.ac.ox.cs.gsat.subsumers.SimpleSubsumer.getAll(SimpleSubsumer.java:92)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:167)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:193)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 18, 2021 11:20:29 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 18, 2021 11:20:29 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.util.HashMap.resize(HashMap.java:700), java.base/java.util.HashMap.putVal(HashMap.java:659), java.base/java.util.HashMap.put(HashMap.java:608), java.base/java.util.HashSet.add(HashSet.java:220), uk.ac.ox.cs.gsat.filters.TreePredicateFilter$$Lambda$32/0x00000008400bfc40.accept(Unknown Source), java.base/java.lang.Iterable.forEach(Iterable.java:75), uk.ac.ox.cs.gsat.filters.TreePredicateFilter.getAll(TreePredicateFilter.java:275), uk.ac.ox.cs.gsat.subsumers.SimpleSubsumer.getAll(SimpleSubsumer.java:92), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:167), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:193), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

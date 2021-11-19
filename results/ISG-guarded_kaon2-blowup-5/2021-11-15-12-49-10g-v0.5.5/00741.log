@@ -1,0 +1,37 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 1474; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Nov 18, 2021 7:40:30 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/1474 = 0.000%
+HyperSat discarded rules : 0/1474 = 0.000%
+Nov 18, 2021 7:40:31 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 4.656783
+number of bags: 4
+length of the formulas: 4.656783
+number of bags: 4
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.newNode(HashMap.java:1815)
+	at java.base/java.util.HashMap.putVal(HashMap.java:627)
+	at java.base/java.util.HashMap.put(HashMap.java:608)
+	at uk.ac.ox.cs.gsat.TGDFactory.computeVNFAfterSortingByPredicates(TGDFactory.java:143)
+	at uk.ac.ox.cs.gsat.TGDFactory.computeVNF(TGDFactory.java:71)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:152)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:159)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:159)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:94)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:193)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 18, 2021 7:45:09 PM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 18, 2021 7:45:09 PM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.util.HashMap.newNode(HashMap.java:1815), java.base/java.util.HashMap.putVal(HashMap.java:627), java.base/java.util.HashMap.put(HashMap.java:608), uk.ac.ox.cs.gsat.TGDFactory.computeVNFAfterSortingByPredicates(TGDFactory.java:143), uk.ac.ox.cs.gsat.TGDFactory.computeVNF(TGDFactory.java:71), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:152), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:159), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:159), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:94), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:193), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

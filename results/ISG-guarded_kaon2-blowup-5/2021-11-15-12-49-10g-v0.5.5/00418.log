@@ -1,0 +1,36 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 597; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Nov 18, 2021 12:33:47 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/597 = 0.000%
+HyperSat discarded rules : 0/597 = 0.000%
+Nov 18, 2021 12:33:48 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 5.2149076
+number of bags: 2
+length of the formulas: 5.2149076
+number of bags: 2
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.lang.StringConcatHelper.newString(StringConcatHelper.java:348)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400abc40.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400ab040.linkToTargetMethod(LambdaForm$MH)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.getRenameVariableSubstitution(AbstractSaturation.java:341)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.resolveOn(HyperResolutionBasedSat.java:195)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:148)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:94)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:193)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 18, 2021 12:49:39 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 18, 2021 12:49:39 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.lang.StringConcatHelper.newString(StringConcatHelper.java:348), java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400abc40.invoke(LambdaForm$MH), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400ab040.linkToTargetMethod(LambdaForm$MH), uk.ac.ox.cs.gsat.AbstractSaturation.getRenameVariableSubstitution(AbstractSaturation.java:341), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.resolveOn(HyperResolutionBasedSat.java:195), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:148), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:94), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:193), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

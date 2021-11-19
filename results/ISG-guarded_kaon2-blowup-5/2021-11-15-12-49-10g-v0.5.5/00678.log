@@ -1,0 +1,53 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 18774; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Nov 18, 2021 1:31:26 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/18774 = 0.000%
+HyperSat discarded rules : 0/18774 = 0.000%
+Nov 18, 2021 1:31:29 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 4.6611924
+number of bags: 6
+length of the formulas: 4.6611924
+number of bags: 6
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.LinkedHashMap.newNode(LinkedHashMap.java:256)
+	at java.base/java.util.HashMap.putVal(HashMap.java:627)
+	at java.base/java.util.HashMap.put(HashMap.java:608)
+	at java.base/java.util.HashSet.add(HashSet.java:220)
+	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:352)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:46)
+	at uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:63)
+	at uk.ac.ox.cs.pdq.fol.TGD.<init>(TGD.java:19)
+	at uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:41)
+	at uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:49)
+	at uk.ac.ox.cs.gsat.GTGD.<init>(GTGD.java:20)
+	at uk.ac.ox.cs.gsat.SkGTGD.<init>(SkGTGD.java:19)
+	at uk.ac.ox.cs.gsat.Logic.applySubstitutionFunc(Logic.java:113)
+	at uk.ac.ox.cs.gsat.Logic.lambda$applySubstitution$0(Logic.java:75)
+	at uk.ac.ox.cs.gsat.Logic$$Lambda$29/0x00000008400af840.apply(Unknown Source)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at uk.ac.ox.cs.gsat.Logic.applySubstitution(Logic.java:75)
+	at uk.ac.ox.cs.gsat.TGDFactory.computeVNFAfterSortingByPredicates(TGDFactory.java:171)
+	at uk.ac.ox.cs.gsat.TGDFactory.computeVNF(TGDFactory.java:71)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:152)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:94)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:193)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 18, 2021 1:40:05 PM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 18, 2021 1:40:05 PM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.util.LinkedHashMap.newNode(LinkedHashMap.java:256), java.base/java.util.HashMap.putVal(HashMap.java:627), java.base/java.util.HashMap.put(HashMap.java:608), java.base/java.util.HashSet.add(HashSet.java:220), java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:352), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:46), uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:63), uk.ac.ox.cs.pdq.fol.TGD.<init>(TGD.java:19), uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:41), uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:49), uk.ac.ox.cs.gsat.GTGD.<init>(GTGD.java:20), uk.ac.ox.cs.gsat.SkGTGD.<init>(SkGTGD.java:19), uk.ac.ox.cs.gsat.Logic.applySubstitutionFunc(Logic.java:113), uk.ac.ox.cs.gsat.Logic.lambda$applySubstitution$0(Logic.java:75), uk.ac.ox.cs.gsat.Logic$$Lambda$29/0x00000008400af840.apply(Unknown Source), java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705), uk.ac.ox.cs.gsat.Logic.applySubstitution(Logic.java:75), uk.ac.ox.cs.gsat.TGDFactory.computeVNFAfterSortingByPredicates(TGDFactory.java:171), uk.ac.ox.cs.gsat.TGDFactory.computeVNF(TGDFactory.java:71), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:152), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:94), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:193), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

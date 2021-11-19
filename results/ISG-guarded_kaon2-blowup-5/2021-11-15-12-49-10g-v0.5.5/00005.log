@@ -1,0 +1,40 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 18812; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Nov 15, 2021 1:18:40 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/18812 = 0.000%
+HyperSat discarded rules : 0/18812 = 0.000%
+Nov 15, 2021 1:18:48 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 4.397855
+number of bags: 8
+length of the formulas: 4.397855
+number of bags: 8
+java.lang.OutOfMemoryError: Java heap space
+	at uk.ac.ox.cs.pdq.ClassManager.createEntries(ClassManager.java:118)
+	at uk.ac.ox.cs.pdq.ClassManager.retrieve(ClassManager.java:62)
+	at uk.ac.ox.cs.pdq.fol.Atom.create(Atom.java:183)
+	at uk.ac.ox.cs.gsat.Logic.applySubstitutionFunc(Logic.java:124)
+	at uk.ac.ox.cs.gsat.Logic.lambda$applySubstitution$0(Logic.java:75)
+	at uk.ac.ox.cs.gsat.Logic$$Lambda$29/0x00000008400af840.apply(Unknown Source)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1737)
+	at uk.ac.ox.cs.gsat.Logic.applySubstitution(Logic.java:75)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.resolveOn(HyperResolutionBasedSat.java:210)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:148)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:159)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:94)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:193)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 15, 2021 1:25:21 PM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 15, 2021 1:25:21 PM uk.ac.ox.cs.gsat.App main
+SEVERE: [uk.ac.ox.cs.pdq.ClassManager.createEntries(ClassManager.java:118), uk.ac.ox.cs.pdq.ClassManager.retrieve(ClassManager.java:62), uk.ac.ox.cs.pdq.fol.Atom.create(Atom.java:183), uk.ac.ox.cs.gsat.Logic.applySubstitutionFunc(Logic.java:124), uk.ac.ox.cs.gsat.Logic.lambda$applySubstitution$0(Logic.java:75), uk.ac.ox.cs.gsat.Logic$$Lambda$29/0x00000008400af840.apply(Unknown Source), java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1737), uk.ac.ox.cs.gsat.Logic.applySubstitution(Logic.java:75), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.resolveOn(HyperResolutionBasedSat.java:210), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:148), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolve(HyperResolutionBasedSat.java:159), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:94), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:193), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!
