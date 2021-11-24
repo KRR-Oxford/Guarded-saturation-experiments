@@ -655,9 +655,9 @@
 
   #+BEGIN_src ipython :session mysession :results none
     pd.set_option('mode.chained_assignment', None)
-    def create_win(vs, time1, time2):
+    def create_win(vs, time1, time2, factor=2):
         vs['TIME_FACTOR'] = (vs[time2] / vs[time1])
-        one_win_over_two = vs[(vs['TIME_FACTOR'] > 2) & (vs[[time1,time2]].max(axis=1) > 500)]
+        one_win_over_two = vs[(vs['TIME_FACTOR'] > factor) & (vs[[time1,time2]].max(axis=1) > 500)]
         vs.drop(columns=['TIME_FACTOR'])
         one_win_over_two['TIME_FACTOR'] = one_win_over_two.loc[:, ('TIME_FACTOR')].abs()
         one_win_over_two.drop(columns=['TIME_FACTOR'])
@@ -1517,6 +1517,66 @@
    #+RESULTS:
    | NAME | SK_NFTGD | SK_FTGD | HYPER_OUTPUT | KAON3_OUTPUT | HYPER_TIME | KAON3_TIME | TIME_FACTOR |
    |------+----------+---------+--------------+--------------+------------+------------+-------------|
+
+** Winning case summary
+
+   #+BEGIN_src ipython :session mysession :results none
+     def win_sum(prefixes, factor=2):
+         data = []
+     
+         for p1 in prefixes:
+             row = []
+             data.append(row)
+             for p2 in prefixes:
+                 if p1 == p2:
+                     row.append(None)
+                     continue
+                 time1 = p1 + '_TIME'
+                 time2 = p2 + '_TIME'
+                 notimeout = get_no_timeout(time1, time2, [time1, time2])
+                 row.append(len(create_win(notimeout, time1, time2, factor).index))
+         return pd.DataFrame(data, columns=prefixes, index=prefixes)
+   #+END_src
+
+   A table showing the number of ontologies on which the algorithm on the row is winning against the column algorithm by a factor 2: 
+    #+BEGIN_src ipython :session mysession :results output raw
+     print(tabulate(win_sum(['GSAT', 'SK', 'HYPER', 'KAON2']), headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   |       | GSAT |  SK | HYPER | KAON2 |
+   |-------+------+-----+-------+-------|
+   | GSAT  |  nan |  39 |     4 |    53 |
+   | SK    |   45 | nan |     0 |    51 |
+   | HYPER |   54 |  57 |   nan |    71 |
+   | KAON2 |   35 |  45 |    10 |   nan |
+
+   The same with a factor 5:
+    #+BEGIN_src ipython :session mysession :results output raw
+     print(tabulate(win_sum(['GSAT', 'SK', 'HYPER', 'KAON2'], 5), headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   |       | GSAT |  SK | HYPER | KAON2 |
+   |-------+------+-----+-------+-------|
+   | GSAT  |  nan |  20 |     0 |    18 |
+   | SK    |   25 | nan |     0 |    25 |
+   | HYPER |   27 |  24 |   nan |    37 |
+   | KAON2 |   21 |  19 |     1 |   nan |
+
+   The factor with a factor 10 (one order of magnitude):
+    #+BEGIN_src ipython :session mysession :results output raw
+     print(tabulate(win_sum(['GSAT', 'SK', 'HYPER', 'KAON2'], 10), headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   |       | GSAT |  SK | HYPER | KAON2 |
+   |-------+------+-----+-------+-------|
+   | GSAT  |  nan |  13 |     0 |     9 |
+   | SK    |   13 | nan |     0 |    16 |
+   | HYPER |   13 |  12 |   nan |    20 |
+   | KAON2 |   13 |  13 |     0 |   nan |
+
 
 * Percent of time spent for evolve applications
 
