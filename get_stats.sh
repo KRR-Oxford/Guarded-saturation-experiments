@@ -79,6 +79,7 @@ else
         # right TGD with skolem in the body
         NEW_RTGD_BSK="N/A"
         BODY_SK_ATOMS_MAX="N/A"
+        SUMB_TIME_MS="N/A"
         RUN_TIME_MS="N/A"
         
         # get stats about input TGDs
