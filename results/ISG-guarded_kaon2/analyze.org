@@ -33,10 +33,10 @@
     
     gsat_file='2021-11-11-22-01-10g-v0.5.5/stats.csv'
     sksat_file='2021-11-11-22-03-10g-v0.5.5/stats.csv'
-    ordsksat_file='2021-08-12-18-21-10g-v0.5.4/stats.csv'
+    ordsksat_file='2021-11-19-19-54-10g-v0.5.5/stats.csv'
     kaon2_file='../ISG-guarded_kaon2-nodata/2021-11-04-17-47-10g-0.5.4-600-kaon2/stats.csv'
-    ssat_file='2021-05-15-18-32-10g-v0.5.1/stats.csv'
-    hyper_file='2021-08-31-20-17-10g-v0.5.4/stats.csv'
+    #ssat_file='2021-05-15-18-32-10g-v0.5.1/stats.csv'
+    hyper_file='2021-11-18-20-33-10g-v0.5.5/stats.csv'
     
     df_gsat_data = pd.read_csv(gsat_file, index_col='NAME').rename(columns={'TIME':'GSAT_TIME'})
     df_gsat_data = df_gsat_data.rename(columns={'OUTPUT_SIZE':'GSAT_OUTPUT'})
@@ -50,13 +50,6 @@
     df_sksat_data = df_sksat_data.rename(columns={'FTGD_NB':'SK_FTGD'})
     df_sksat = df_sksat_data[['SK_NFTGD', 'SK_FTGD', 'SK_OUTPUT', 'SK_TIME']]
     
-    # df_optsksat_data = pd.read_csv(optsksat_file, index_col='NAME').rename(columns={'TIME':'OPTSK_TIME'})
-    # df_optsksat_data = df_optsksat_data.rename(columns={'OUTPUT_SIZE':'OPTSK_OUTPUT'})
-    # df_optsksat_data = df_optsksat_data.rename(columns={'NFTGD_NB':'OPTSK_NFTGD'})
-    # df_optsksat_data = df_optsksat_data.rename(columns={'FTGD_NB':'OPTSK_FTGD'})
-    # df_optsksat = df_optsksat_data[['OPTSK_NFTGD', 'OPTSK_FTGD', 'OPTSK_OUTPUT', 'OPTSK_TIME']]
-    
-    
     df_kaon3_data = pd.read_csv(ordsksat_file, index_col='NAME').rename(columns={'TIME':'KAON3_TIME'})
     df_kaon3_data = df_kaon3_data.rename(columns={'OUTPUT_SIZE':'KAON3_OUTPUT'})
     df_kaon3_data = df_kaon3_data.rename(columns={'NFTGD_NB':'KAON3_NFTGD'})
@@ -68,9 +61,9 @@
     df_kaon2_data = df_kaon2_data.rename(columns={'AXIOM_NB':'AXIOM'})
     df_kaon2 = df_kaon2_data[['AXIOM', 'KAON2_OUTPUT', 'KAON2_TIME']]
     
-    df_ssat = pd.read_csv(ssat_file, index_col='NAME').rename(columns={'TIME':'SSAT_TIME'})
-    df_ssat = df_ssat.rename(columns={'OUTPUT_SIZE':'SSAT_OUTPUT'})
-    df_ssat = df_ssat[['SSAT_OUTPUT','SSAT_TIME']]
+    #df_ssat = pd.read_csv(ssat_file, index_col='NAME').rename(columns={'TIME':'SSAT_TIME'})
+    #df_ssat = df_ssat.rename(columns={'OUTPUT_SIZE':'SSAT_OUTPUT'})
+    #df_ssat = df_ssat[['SSAT_OUTPUT','SSAT_TIME']]
     
     df_hyper_data = pd.read_csv(hyper_file, index_col='NAME').rename(columns={'TIME':'HYPER_TIME'})
     df_hyper_data = df_hyper_data.rename(columns={'OUTPUT_SIZE':'HYPER_OUTPUT'})
@@ -213,7 +206,7 @@
 
   #+RESULTS:
   :results:
-  # Out[104]:
+  # Out[51]:
   [[file:plots/times0.png]]
   :end:
 
@@ -223,7 +216,7 @@
 
   #+RESULTS:
   :results:
-  # Out[105]:
+  # Out[52]:
   [[file:plots/times1.png]]
   :end:
 
@@ -233,7 +226,7 @@
 
   #+RESULTS:
   :results:
-  # Out[106]:
+  # Out[53]:
   [[file:plots/times2.png]]
   :end:
 
@@ -243,7 +236,7 @@
 
   #+RESULTS:
   :results:
-  # Out[107]:
+  # Out[54]:
   [[file:plots/times3.png]]
   :end:
   
@@ -253,7 +246,7 @@
 
   #+RESULTS:
   :results:
-  # Out[108]:
+  # Out[55]:
   [[file:plots/times4.png]]
   :end:
   
@@ -263,7 +256,7 @@
 
   #+RESULTS:
   :results:
-  # Out[109]:
+  # Out[56]:
   [[file:plots/times5.png]]
   :end:
 
@@ -273,7 +266,7 @@
 
   #+RESULTS:
   :results:
-  # Out[110]:
+  # Out[57]:
   [[file:plots/times6.png]]
   :end:
 
@@ -283,7 +276,7 @@
 
   #+RESULTS:
   :results:
-  # Out[111]:
+  # Out[58]:
   [[file:plots/times7.png]]
   :end:
 
@@ -293,7 +286,7 @@
 
   #+RESULTS:
   :results:
-  # Out[112]:
+  # Out[59]:
   [[file:plots/times8.png]]
   :end:
 
@@ -303,7 +296,7 @@
 
   #+RESULTS:
   :results:
-  # Out[113]:
+  # Out[60]:
   [[file:plots/times9.png]]
   :end:
 
@@ -313,37 +306,42 @@
 
   #+RESULTS:
   :results:
-  # Out[114]:
+  # Out[61]:
   [[file:plots/times10.png]]
   :end:
 
 
 * Timeout analysis
-** GSat and Skolemized reach the timeout
-   The following table contains the rows where Gsat and the Skolemized executions reach the timeout sorted by the input size. Their number:
+** All the algorithm reach the timeout
+   The following table contains the rows where all the algorithm executions reach the timeout sorted by the input size. Their number:
 
    #+BEGIN_src ipython :session mysession :results none
      def get_timeout(prefix, df):
          return df[ ((df[ prefix + '_TIME'] == 'TIMEOUT') | (df[ prefix + '_TIME'] == 'ERROR'))]
+     
+     def get_all_timeout(prefixes, df):
+         res = df
+         for prefix in prefixes:
+             res = res[ res.index.isin(get_timeout(prefix, res).index)]
+     
+         return res
    #+END_src
 
    #+BEGIN_src ipython :session mysession :results output example
-     both_timeout = get_timeout('GSAT', df_times)
-     both_timeout = both_timeout[ both_timeout.index.isin(get_timeout('SK', df_times).index)]
-     single_timeout = df_times[ ~df_times.index.isin(both_timeout.index) ]
+     all_timeout = get_all_timeout(['GSAT', 'SK', 'HYPER', 'KAON3', 'KAON2'], df_times)
+     any_notimeout = df_times[ ~df_times.index.isin(all_timeout.index) ]
      
      def get_timeout_only(prefix):
-         return single_timeout[ ((single_timeout[ prefix + '_TIME'] == 'TIMEOUT') | (single_timeout[ prefix + '_TIME'] == 'ERROR'))]
-     #both_timeout = both_timeout.sort_values(by="GSAT_NFTGD").sort_values(by="GSAT_FTGD")
+         return any_notimeout[ ((any_notimeout[ prefix + '_TIME'] == 'TIMEOUT') | (any_notimeout[ prefix + '_TIME'] == 'ERROR'))]
      
-     print(len(both_timeout.index))
+     print(len(all_timeout.index))
    #+END_src
 
    #+RESULTS:
-   : 33
+   : 29
 
    #+BEGIN_src ipython :session mysession :results output raw
-     print(tabulate(both_timeout, headers="keys", tablefmt='orgtbl'))
+     print(tabulate(all_timeout, headers="keys", tablefmt='orgtbl'))
    #+END_src
 
    #+RESULTS:
@@ -364,39 +362,79 @@
    |   45 |      42430 |     98673 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |   46 |      15352 |     69253 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |   47 |      14431 |     67545 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  378 |      21423 |     58205 | TIMEOUT   | TIMEOUT | 593575     | TIMEOUT    | TIMEOUT    |
    |  379 |      38615 |     90653 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  383 |      13719 |     65847 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  395 |      21802 |     60146 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  483 |      29022 |    114237 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  484 |      37999 |    101911 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  487 |      13015 |     65519 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  533 |      32907 |     61062 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  541 |       9133 |     27085 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  658 |       9117 |     15170 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  660 |       6673 |     13597 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  675 |      25194 |     67697 | TIMEOUT   | TIMEOUT | 336394     | TIMEOUT    | TIMEOUT    |
    |  760 |      50814 |    170834 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  761 |       5598 |     13151 | TIMEOUT   | TIMEOUT | 360814     | TIMEOUT    | TIMEOUT    |
    |  778 |      42054 |    113187 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  787 |      45442 |     59418 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  792 |        nan |       nan | ERROR     | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  795 |      47412 |     65392 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+** Timeout Summary
 
-   The number of ontologies on which both GSat and SkolemSat reach the timeout, but not KAON2:
-   #+BEGIN_src ipython :session mysession :results drawer
-     len(both_timeout[both_timeout['KAON2_TIME'] != 'TIMEOUT'])
+      #+BEGIN_src ipython :session mysession :results none
+        def timeout_intersection(prefixes):
+            data = []
+        
+            for p1 in prefixes:
+                row = []
+                data.append(row)
+                for p2 in prefixes:
+                    row.append(len(get_all_timeout([p1, p2], any_notimeout).index))
+            return pd.DataFrame(data, columns=prefixes, index=prefixes)
+   #+END_src
+
+   #+BEGIN_src ipython :session mysession :results output raw
+     print(tabulate(timeout_intersection(['GSAT', 'SK', 'HYPER', 'KAON2']), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
    #+RESULTS:
-   :results:
-   # Out[118]:
-   : 0
-   :end:
+   |       | GSAT | SK | HYPER | KAON2 |
+   |-------+------+----+-------+-------|
+   | GSAT  |   32 |  4 |     3 |     8 |
+   | SK    |    4 | 22 |     4 |    18 |
+   | HYPER |    3 |  4 |     7 |     7 |
+   | KAON2 |    8 | 18 |     7 |    37 |
 
-** GSat timeout only
+      #+BEGIN_src ipython :session mysession :results none
+        def timeout_single_diff(p1, p2):
+            df1 = get_timeout_only(p1)
+            df2 = get_timeout_only(p2)
+            return df1[ ~df1.index.isin(df2.index)]
+        
+        def timeout_diff(prefixes):
+            data = []
+        
+            for p1 in prefixes:
+                row = []
+                data.append(row)
+                for p2 in prefixes:
+                    row.append(len(timeout_single_diff(p1, p2).index))
+            return pd.DataFrame(data, columns=prefixes, index=prefixes)
+   #+END_src
 
-   The following table contains the rows where the Gsat execution reaches the timeout and the SkolemSat one does not, sorted by the input size.
+    #+BEGIN_src ipython :session mysession :results output raw
+     print(tabulate(timeout_diff(['GSAT', 'SK', 'HYPER', 'KAON2']), headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   |       | GSAT | SK | HYPER | KAON2 |
+   |-------+------+----+-------+-------|
+   | GSAT  |    0 | 28 |    29 |    24 |
+   | SK    |   18 |  0 |    18 |     4 |
+   | HYPER |    4 |  3 |     0 |     0 |
+   | KAON2 |   29 | 19 |    30 |     0 |
+
+   
+** GSat timeout
+
+   The following table contains the rows where the Gsat execution reaches the timeout, while another algorithm is not, sorted by the input size.
    #+BEGIN_src ipython :session mysession :results output raw
      gsat_timeout = get_timeout_only('GSAT')
      gsat_timeout = gsat_timeout.sort_values(by="GSAT_NFTGD").sort_values(by="GSAT_FTGD")
@@ -407,37 +445,41 @@
    #+RESULTS:
    | NAME | GSAT_NFTGD | GSAT_FTGD | GSAT_TIME | SK_TIME | HYPER_TIME | KAON3_TIME | KAON2_TIME |
    |------+------------+-----------+-----------+---------+------------+------------+------------|
-   |  343 |          4 |        97 | TIMEOUT   |     111 |         97 |        140 |        249 |
-   |  783 |        187 |       241 | TIMEOUT   |     298 |        304 |        364 |        332 |
-   |  781 |        187 |       243 | TIMEOUT   |     315 |        316 |        359 |        336 |
-   |  319 |        187 |       243 | TIMEOUT   |     302 |        318 |        377 |        339 |
-   |  511 |        345 |       275 | TIMEOUT   |     508 |        405 |        566 |        388 |
-   |  479 |        323 |       566 | TIMEOUT   |    1225 |       1680 |       1707 |        623 |
-   |  480 |        327 |       663 | TIMEOUT   |    1293 |       1753 |       1674 |        639 |
-   |  624 |         98 |       915 | TIMEOUT   |     296 |        286 |        342 |        440 |
-   |   21 |        110 |      1190 | TIMEOUT   |     504 |        554 |        605 |        435 |
-   |  284 |         84 |      1222 | TIMEOUT   |     435 |        488 |        624 |        471 |
-   |   20 |         83 |      1310 | TIMEOUT   |     434 |        513 |        601 |        438 |
-   |  410 |        476 |      1338 | TIMEOUT   |    2960 |       1909 |       3184 |       1813 |
-   |   14 |        139 |      1533 | TIMEOUT   |     622 |        782 |        790 |        484 |
-   |   24 |        139 |      1533 | TIMEOUT   |     596 |        793 |        891 |        477 |
-   |    4 |      16705 |      2107 | TIMEOUT   |  138622 |    TIMEOUT |     177154 |    TIMEOUT |
-   |    3 |      16709 |      2159 | TIMEOUT   |  151215 |    TIMEOUT |     160245 |    TIMEOUT |
-   |  350 |        942 |      3018 | TIMEOUT   |    3251 |       4286 |       6121 |       3222 |
-   |  354 |       1501 |      4648 | TIMEOUT   |   18866 |      13104 |    TIMEOUT |      21044 |
-   |  285 |      66179 |     46602 | TIMEOUT   |  267422 |    TIMEOUT |     422544 |    TIMEOUT |
-   |   29 |        nan |       nan | ERROR     |   19376 |      39396 |      23618 |       5958 |
-   |   30 |        nan |       nan | ERROR     |   23714 |      55846 |      41662 |       5377 |
-   |   32 |        nan |       nan | ERROR     |   25878 |      58362 |      49201 |       7536 |
-   |   39 |        nan |       nan | ERROR     |   16362 |      16931 |      77521 |       6734 |
-   |  174 |        nan |       nan | ERROR     |   17052 |      41671 |      35365 |       4317 |
-   |  553 |        nan |       nan | ERROR     |  584786 |     170254 |    TIMEOUT |    TIMEOUT |
-   |  701 |        nan |       nan | ERROR     |   10592 |      12877 |       9245 |      56451 |
-   |  703 |        nan |       nan | ERROR     |   19120 |      23280 |      15248 |     236211 |
-   |  775 |        nan |       nan | ERROR     |     499 |        860 |        715 |        356 |
+   |  343 |          4 |        97 | TIMEOUT   |     111 |        122 |        112 |        257 |
+   |  783 |        187 |       241 | TIMEOUT   |     298 |        340 |        305 |        352 |
+   |  781 |        187 |       243 | TIMEOUT   |     315 |        332 |        358 |        347 |
+   |  319 |        187 |       243 | TIMEOUT   |     302 |        348 |        343 |        344 |
+   |  511 |        345 |       275 | TIMEOUT   |     508 |        461 |        478 |        394 |
+   |  479 |        323 |       566 | TIMEOUT   |    1225 |       1642 |       1504 |        562 |
+   |  480 |        327 |       663 | TIMEOUT   |    1293 |       1742 |       1526 |        610 |
+   |  624 |         98 |       915 | TIMEOUT   |     296 |        302 |        304 |        442 |
+   |   21 |        110 |      1190 | TIMEOUT   |     504 |        541 |        574 |        447 |
+   |  284 |         84 |      1222 | TIMEOUT   |     435 |        448 |        516 |        457 |
+   |   20 |         83 |      1310 | TIMEOUT   |     434 |        496 |        542 |        459 |
+   |  410 |        476 |      1338 | TIMEOUT   |    2960 |       2183 |       2348 |       1838 |
+   |   14 |        139 |      1533 | TIMEOUT   |     622 |        673 |        730 |        535 |
+   |   24 |        139 |      1533 | TIMEOUT   |     596 |        673 |        688 |        582 |
+   |    4 |      16705 |      2107 | TIMEOUT   |  138622 |    TIMEOUT |     126294 |    TIMEOUT |
+   |    3 |      16709 |      2159 | TIMEOUT   |  151215 |    TIMEOUT |     153142 |    TIMEOUT |
+   |  350 |        942 |      3018 | TIMEOUT   |    3251 |       3576 |       5842 |       3685 |
+   |  354 |       1501 |      4648 | TIMEOUT   |   18866 |      12973 |    TIMEOUT |      20487 |
+   |  761 |       5598 |     13151 | TIMEOUT   | TIMEOUT |     201219 |    TIMEOUT |    TIMEOUT |
+   |  285 |      66179 |     46602 | TIMEOUT   |  267422 |    TIMEOUT |     431800 |    TIMEOUT |
+   |  378 |      21423 |     58205 | TIMEOUT   | TIMEOUT |     569296 |    TIMEOUT |    TIMEOUT |
+   |  533 |      32907 |     61062 | TIMEOUT   | TIMEOUT |      79065 |    TIMEOUT |    TIMEOUT |
+   |  675 |      25194 |     67697 | TIMEOUT   | TIMEOUT |     239938 |    TIMEOUT |    TIMEOUT |
+   |   29 |        nan |       nan | ERROR     |   19376 |       9565 |      43390 |       6984 |
+   |   30 |        nan |       nan | ERROR     |   23714 |      10027 |      44481 |       6904 |
+   |   32 |        nan |       nan | ERROR     |   25878 |      11506 |      45829 |      10678 |
+   |   39 |        nan |       nan | ERROR     |   16362 |      12561 |      63526 |      11060 |
+   |  174 |        nan |       nan | ERROR     |   17052 |       8024 |      22998 |       4980 |
+   |  553 |        nan |       nan | ERROR     |  584786 |     101512 |    TIMEOUT |    TIMEOUT |
+   |  701 |        nan |       nan | ERROR     |   10592 |       9545 |       8867 |      62168 |
+   |  703 |        nan |       nan | ERROR     |   19120 |      17773 |      15628 |     286437 |
+   |  775 |        nan |       nan | ERROR     |     499 |        580 |        653 |        360 |
   
-** SkolemSat timeout only
-   The following table contains the rows where the SkolemSat executions reach the timeout and Gsat do not, sorted by the input size.
+** SkolemSat timeout
+   The following table contains the rows where the SkolemSat executions reach the timeout, while another algorithm is not, sorted by the input size.
    #+BEGIN_src ipython :session mysession :results output raw
      sksat_timeout = get_timeout_only('SK')
      sksat_timeout = sksat_timeout.sort_values(by="GSAT_NFTGD").sort_values(by="GSAT_FTGD")
@@ -447,27 +489,31 @@
    #+RESULTS:
    | NAME | GSAT_NFTGD | GSAT_FTGD | GSAT_TIME | SK_TIME | HYPER_TIME | KAON3_TIME | KAON2_TIME |
    |------+------------+-----------+-----------+---------+------------+------------+------------|
-   |  393 |        776 |      1552 |      7785 | TIMEOUT |       8546 | TIMEOUT    | 10233      |
-   |  438 |       1512 |      3024 |     27164 | TIMEOUT |      35794 | TIMEOUT    | 22956      |
-   |  535 |       8479 |      4621 |     34441 | TIMEOUT |      53969 | TIMEOUT    | 472385     |
-   |  485 |       2593 |      5291 |     15645 | TIMEOUT |      17074 | TIMEOUT    | 527448     |
-   |  380 |       3141 |      6000 |     15112 | TIMEOUT |      18231 | TIMEOUT    | TIMEOUT    |
-   |  381 |       3216 |      6053 |     18370 | TIMEOUT |      20130 | TIMEOUT    | TIMEOUT    |
-   |  762 |       2508 |      6634 |    127334 | TIMEOUT |      69295 | TIMEOUT    | TIMEOUT    |
-   |  518 |      11035 |      9363 |    152414 | TIMEOUT |     416342 | TIMEOUT    | TIMEOUT    |
-   |  463 |       9433 |     10339 |    582183 | TIMEOUT |    TIMEOUT | TIMEOUT    | 469295     |
-   |  462 |       9433 |     13435 |    574268 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
-   |  391 |      11279 |     40960 |    147432 | TIMEOUT |     371140 | TIMEOUT    | TIMEOUT    |
+   |  393 |        776 |      1552 |      7785 | TIMEOUT |       7650 | TIMEOUT    | 10515      |
+   |  438 |       1512 |      3024 |     27164 | TIMEOUT |      23379 | TIMEOUT    | 23576      |
+   |  535 |       8479 |      4621 |     34441 | TIMEOUT |      35569 | TIMEOUT    | 442660     |
+   |  485 |       2593 |      5291 |     15645 | TIMEOUT |      14950 | TIMEOUT    | 547530     |
+   |  380 |       3141 |      6000 |     15112 | TIMEOUT |      15257 | TIMEOUT    | TIMEOUT    |
+   |  381 |       3216 |      6053 |     18370 | TIMEOUT |      17583 | TIMEOUT    | TIMEOUT    |
+   |  762 |       2508 |      6634 |    127334 | TIMEOUT |      58391 | TIMEOUT    | TIMEOUT    |
+   |  518 |      11035 |      9363 |    152414 | TIMEOUT |     412659 | TIMEOUT    | TIMEOUT    |
+   |  463 |       9433 |     10339 |    582183 | TIMEOUT |     416813 | TIMEOUT    | TIMEOUT    |
+   |  761 |       5598 |     13151 |   TIMEOUT | TIMEOUT |     201219 | TIMEOUT    | TIMEOUT    |
+   |  462 |       9433 |     13435 |    574268 | TIMEOUT |     416413 | TIMEOUT    | TIMEOUT    |
+   |  391 |      11279 |     40960 |    147432 | TIMEOUT |     274986 | TIMEOUT    | TIMEOUT    |
    |  488 |       7777 |     46967 |    268813 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
    |  486 |       7777 |     46980 |    264926 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
    |  382 |       8378 |     47281 |    285408 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
    |  489 |       9507 |     52445 |    555145 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
-   |  437 |      44247 |     90904 |    124104 | TIMEOUT |     374186 | TIMEOUT    | TIMEOUT    |
-   |  554 |      74233 |    106867 |    326395 | TIMEOUT |     435898 | TIMEOUT    | TIMEOUT    |
-   |  786 |      76399 |    109114 |    331225 | TIMEOUT |     461702 | TIMEOUT    | TIMEOUT    |
+   |  378 |      21423 |     58205 |   TIMEOUT | TIMEOUT |     569296 | TIMEOUT    | TIMEOUT    |
+   |  533 |      32907 |     61062 |   TIMEOUT | TIMEOUT |      79065 | TIMEOUT    | TIMEOUT    |
+   |  675 |      25194 |     67697 |   TIMEOUT | TIMEOUT |     239938 | TIMEOUT    | TIMEOUT    |
+   |  437 |      44247 |     90904 |    124104 | TIMEOUT |      57732 | TIMEOUT    | TIMEOUT    |
+   |  554 |      74233 |    106867 |    326395 | TIMEOUT |     277391 | TIMEOUT    | TIMEOUT    |
+   |  786 |      76399 |    109114 |    331225 | TIMEOUT |     287079 | TIMEOUT    | TIMEOUT    |
 
-** HyperSat timeout, where GSat or the Skolemized does not reach the timeout
-   The following table contains the rows where the HyperSat executions reach the timeout and Gsat do not, sorted by the input size.
+** HyperSat timeout
+   The following table contains the rows where the HyperSat executions reach the timeout, while another algorithm is not, sorted by the input size.
    #+BEGIN_src ipython :session mysession :results output raw
      hyper_timeout = get_timeout_only('HYPER')
      
@@ -478,18 +524,16 @@
    #+RESULTS:
    | NAME | GSAT_NFTGD | GSAT_FTGD | GSAT_TIME | SK_TIME | HYPER_TIME | KAON3_TIME | KAON2_TIME |
    |------+------------+-----------+-----------+---------+------------+------------+------------|
-   |    4 |      16705 |      2107 |   TIMEOUT | 138622  | TIMEOUT    | 177154     | TIMEOUT    |
-   |    3 |      16709 |      2159 |   TIMEOUT | 151215  | TIMEOUT    | 160245     | TIMEOUT    |
-   |  463 |       9433 |     10339 |    582183 | TIMEOUT | TIMEOUT    | TIMEOUT    | 469295     |
-   |  462 |       9433 |     13435 |    574268 | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  285 |      66179 |     46602 |   TIMEOUT | 267422  | TIMEOUT    | 422544     | TIMEOUT    |
+   |    4 |      16705 |      2107 |   TIMEOUT | 138622  | TIMEOUT    | 126294     | TIMEOUT    |
+   |    3 |      16709 |      2159 |   TIMEOUT | 151215  | TIMEOUT    | 153142     | TIMEOUT    |
+   |  285 |      66179 |     46602 |   TIMEOUT | 267422  | TIMEOUT    | 431800     | TIMEOUT    |
    |  488 |       7777 |     46967 |    268813 | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  486 |       7777 |     46980 |    264926 | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  382 |       8378 |     47281 |    285408 | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  489 |       9507 |     52445 |    555145 | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
 
-** KAON3 timeout, where GSat or the Skolemized does not reach the timeout
-   The following table contains the rows where the KAON3 executions reach the timeout and Gsat do not, sorted by the input size.
+** KAON3 timeout
+   The following table contains the rows where the KAON3 executions reach the timeout, while another algorithm is not, sorted by the input size.
    #+BEGIN_src ipython :session mysession :results output raw
      kaon3_timeout = get_timeout_only('KAON3')
      
@@ -500,48 +544,53 @@
    #+RESULTS:
    | NAME | GSAT_NFTGD | GSAT_FTGD | GSAT_TIME | SK_TIME | HYPER_TIME | KAON3_TIME | KAON2_TIME |
    |------+------------+-----------+-----------+---------+------------+------------+------------|
-   |  393 |        776 |      1552 |      7785 | TIMEOUT |       8546 | TIMEOUT    |      10233 |
-   |  766 |        218 |      1845 |      3948 |    5902 |       4840 | TIMEOUT    |        526 |
-   |  666 |        269 |      2153 |      3704 |    5699 |       5074 | TIMEOUT    |        540 |
-   |  595 |        219 |      2703 |      3844 |    5917 |       5139 | TIMEOUT    |        582 |
-   |  597 |        223 |      2742 |      3809 |    6044 |       4865 | TIMEOUT    |        582 |
-   |  665 |        299 |      2975 |      4222 |    6324 |       5197 | TIMEOUT    |        634 |
-   |  438 |       1512 |      3024 |     27164 | TIMEOUT |      35794 | TIMEOUT    |      22956 |
-   |  353 |        221 |      3235 |      5917 |    5035 |       4937 | TIMEOUT    |        627 |
-   |  352 |        221 |      3256 |      5584 |    4922 |       4803 | TIMEOUT    |        627 |
-   |  535 |       8479 |      4621 |     34441 | TIMEOUT |      53969 | TIMEOUT    |     472385 |
-   |  354 |       1501 |      4648 |   TIMEOUT |   18866 |      13104 | TIMEOUT    |      21044 |
-   |  485 |       2593 |      5291 |     15645 | TIMEOUT |      17074 | TIMEOUT    |     527448 |
-   |  380 |       3141 |      6000 |     15112 | TIMEOUT |      18231 | TIMEOUT    |    TIMEOUT |
-   |  381 |       3216 |      6053 |     18370 | TIMEOUT |      20130 | TIMEOUT    |    TIMEOUT |
-   |  762 |       2508 |      6634 |    127334 | TIMEOUT |      69295 | TIMEOUT    |    TIMEOUT |
-   |  518 |      11035 |      9363 |    152414 | TIMEOUT |     416342 | TIMEOUT    |    TIMEOUT |
-   |  463 |       9433 |     10339 |    582183 | TIMEOUT |    TIMEOUT | TIMEOUT    |     469295 |
-   |  680 |       7414 |     10873 |      5915 |    6952 |       6788 | TIMEOUT    |      14348 |
-   |  678 |       7557 |     11217 |      6727 |   12801 |       9414 | TIMEOUT    |      32953 |
-   |  462 |       9433 |     13435 |    574268 | TIMEOUT |    TIMEOUT | TIMEOUT    |    TIMEOUT |
-   |  436 |       2308 |     24014 |     71249 |  352469 |      56527 | TIMEOUT    |     140725 |
-   |  390 |       7029 |     26439 |     71855 |  536336 |     143669 | TIMEOUT    |     591087 |
-   |  374 |       8270 |     30220 |     91689 |  142960 |      86327 | TIMEOUT    |     146915 |
-   |  391 |      11279 |     40960 |    147432 | TIMEOUT |     371140 | TIMEOUT    |    TIMEOUT |
-   |  387 |      12025 |     44320 |     27186 |   74510 |      39223 | TIMEOUT    |     591074 |
-   |  375 |      12632 |     45457 |    192410 |  226470 |     261927 | TIMEOUT    |     372190 |
-   |  488 |       7777 |     46967 |    268813 | TIMEOUT |    TIMEOUT | TIMEOUT    |    TIMEOUT |
-   |  486 |       7777 |     46980 |    264926 | TIMEOUT |    TIMEOUT | TIMEOUT    |    TIMEOUT |
-   |  382 |       8378 |     47281 |    285408 | TIMEOUT |    TIMEOUT | TIMEOUT    |    TIMEOUT |
-   |  448 |      24847 |     49406 |    184427 |   30027 |      25776 | TIMEOUT    |     475424 |
-   |  682 |      24701 |     50011 |    169379 |   28609 |      25123 | TIMEOUT    |     465890 |
-   |  489 |       9507 |     52445 |    555145 | TIMEOUT |    TIMEOUT | TIMEOUT    |    TIMEOUT |
-   |  684 |      12683 |     62185 |     23589 |   42202 |      27402 | TIMEOUT    |    TIMEOUT |
-   |  437 |      44247 |     90904 |    124104 | TIMEOUT |     374186 | TIMEOUT    |    TIMEOUT |
-   |  573 |      36864 |     91611 |    211769 |  146914 |      73584 | TIMEOUT    |    TIMEOUT |
-   |  686 |      36894 |    106414 |    199740 |   38444 |      33103 | TIMEOUT    |    TIMEOUT |
-   |  554 |      74233 |    106867 |    326395 | TIMEOUT |     435898 | TIMEOUT    |    TIMEOUT |
-   |  786 |      76399 |    109114 |    331225 | TIMEOUT |     461702 | TIMEOUT    |    TIMEOUT |
-   |  553 |        nan |       nan |     ERROR |  584786 |     170254 | TIMEOUT    |    TIMEOUT |
+   |  393 |        776 |      1552 |      7785 | TIMEOUT |       7650 | TIMEOUT    | 10515      |
+   |  766 |        218 |      1845 |      3948 | 5902    |       2746 | TIMEOUT    | 557        |
+   |  666 |        269 |      2153 |      3704 | 5699    |       2919 | TIMEOUT    | 545        |
+   |  595 |        219 |      2703 |      3844 | 5917    |       2702 | TIMEOUT    | 566        |
+   |  597 |        223 |      2742 |      3809 | 6044    |       2679 | TIMEOUT    | 592        |
+   |  665 |        299 |      2975 |      4222 | 6324    |       3128 | TIMEOUT    | 664        |
+   |  438 |       1512 |      3024 |     27164 | TIMEOUT |      23379 | TIMEOUT    | 23576      |
+   |  353 |        221 |      3235 |      5917 | 5035    |       2939 | TIMEOUT    | 648        |
+   |  352 |        221 |      3256 |      5584 | 4922    |       3003 | TIMEOUT    | 603        |
+   |  419 |       1496 |      4468 |     47627 | 211531  |      52762 | TIMEOUT    | 71784      |
+   |  535 |       8479 |      4621 |     34441 | TIMEOUT |      35569 | TIMEOUT    | 442660     |
+   |  354 |       1501 |      4648 |   TIMEOUT | 18866   |      12973 | TIMEOUT    | 20487      |
+   |  485 |       2593 |      5291 |     15645 | TIMEOUT |      14950 | TIMEOUT    | 547530     |
+   |  380 |       3141 |      6000 |     15112 | TIMEOUT |      15257 | TIMEOUT    | TIMEOUT    |
+   |  381 |       3216 |      6053 |     18370 | TIMEOUT |      17583 | TIMEOUT    | TIMEOUT    |
+   |  762 |       2508 |      6634 |    127334 | TIMEOUT |      58391 | TIMEOUT    | TIMEOUT    |
+   |  518 |      11035 |      9363 |    152414 | TIMEOUT |     412659 | TIMEOUT    | TIMEOUT    |
+   |  463 |       9433 |     10339 |    582183 | TIMEOUT |     416813 | TIMEOUT    | TIMEOUT    |
+   |  680 |       7414 |     10873 |      5915 | 6952    |       4441 | TIMEOUT    | 13137      |
+   |  678 |       7557 |     11217 |      6727 | 12801   |       5371 | TIMEOUT    | 51963      |
+   |  761 |       5598 |     13151 |   TIMEOUT | TIMEOUT |     201219 | TIMEOUT    | TIMEOUT    |
+   |  462 |       9433 |     13435 |    574268 | TIMEOUT |     416413 | TIMEOUT    | TIMEOUT    |
+   |  436 |       2308 |     24014 |     71249 | 352469  |      23421 | TIMEOUT    | 246549     |
+   |  390 |       7029 |     26439 |     71855 | 536336  |      85127 | TIMEOUT    | TIMEOUT    |
+   |  374 |       8270 |     30220 |     91689 | 142960  |      27584 | TIMEOUT    | 210567     |
+   |  391 |      11279 |     40960 |    147432 | TIMEOUT |     274986 | TIMEOUT    | TIMEOUT    |
+   |  387 |      12025 |     44320 |     27186 | 74510   |      34516 | TIMEOUT    | TIMEOUT    |
+   |  375 |      12632 |     45457 |    192410 | 226470  |      39426 | TIMEOUT    | TIMEOUT    |
+   |  488 |       7777 |     46967 |    268813 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
+   |  486 |       7777 |     46980 |    264926 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
+   |  382 |       8378 |     47281 |    285408 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
+   |  448 |      24847 |     49406 |    184427 | 30027   |      27519 | TIMEOUT    | 455440     |
+   |  682 |      24701 |     50011 |    169379 | 28609   |      26809 | TIMEOUT    | 428424     |
+   |  489 |       9507 |     52445 |    555145 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
+   |  378 |      21423 |     58205 |   TIMEOUT | TIMEOUT |     569296 | TIMEOUT    | TIMEOUT    |
+   |  533 |      32907 |     61062 |   TIMEOUT | TIMEOUT |      79065 | TIMEOUT    | TIMEOUT    |
+   |  684 |      12683 |     62185 |     23589 | 42202   |      13240 | TIMEOUT    | TIMEOUT    |
+   |  675 |      25194 |     67697 |   TIMEOUT | TIMEOUT |     239938 | TIMEOUT    | TIMEOUT    |
+   |  437 |      44247 |     90904 |    124104 | TIMEOUT |      57732 | TIMEOUT    | TIMEOUT    |
+   |  573 |      36864 |     91611 |    211769 | 146914  |      68371 | TIMEOUT    | TIMEOUT    |
+   |  686 |      36894 |    106414 |    199740 | 38444   |      38004 | TIMEOUT    | TIMEOUT    |
+   |  554 |      74233 |    106867 |    326395 | TIMEOUT |     277391 | TIMEOUT    | TIMEOUT    |
+   |  786 |      76399 |    109114 |    331225 | TIMEOUT |     287079 | TIMEOUT    | TIMEOUT    |
+   |  553 |        nan |       nan |     ERROR | 584786  |     101512 | TIMEOUT    | TIMEOUT    |
 
-** Kaon2 timeouts, where GSat or the Skolemized does not reach the timeout
-   The following table contains the rows where KAON2 executions reach the timeout of 10min, sorted by the input size.
+** Kaon2 timeouts
+   The following table contains the rows where KAON2 executions reach the timeout of 10min, while another algorithm is not, sorted by the input size.
    #+BEGIN_src ipython :session mysession :results output raw
      kaon2_timeout = get_timeout_only('KAON2')
      
@@ -552,33 +601,43 @@
    #+RESULTS:
    | NAME | GSAT_NFTGD | GSAT_FTGD | GSAT_TIME | SK_TIME | HYPER_TIME | KAON3_TIME | KAON2_TIME |
    |------+------------+-----------+-----------+---------+------------+------------+------------|
-   |    4 |      16705 |      2107 |   TIMEOUT |  138622 |    TIMEOUT | 177154     | TIMEOUT    |
-   |    3 |      16709 |      2159 |   TIMEOUT |  151215 |    TIMEOUT | 160245     | TIMEOUT    |
-   |  380 |       3141 |      6000 |     15112 | TIMEOUT |      18231 | TIMEOUT    | TIMEOUT    |
-   |  381 |       3216 |      6053 |     18370 | TIMEOUT |      20130 | TIMEOUT    | TIMEOUT    |
-   |  762 |       2508 |      6634 |    127334 | TIMEOUT |      69295 | TIMEOUT    | TIMEOUT    |
-   |  518 |      11035 |      9363 |    152414 | TIMEOUT |     416342 | TIMEOUT    | TIMEOUT    |
-   |  477 |     156743 |     10606 |      7972 |   14393 |      14139 | 14713      | TIMEOUT    |
-   |  462 |       9433 |     13435 |    574268 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
-   |  536 |       6762 |     36438 |     14175 |   25968 |      13010 | 27015      | TIMEOUT    |
-   |  391 |      11279 |     40960 |    147432 | TIMEOUT |     371140 | TIMEOUT    | TIMEOUT    |
-   |  285 |      66179 |     46602 |   TIMEOUT |  267422 |    TIMEOUT | 422544     | TIMEOUT    |
+   |    4 |      16705 |      2107 |   TIMEOUT |  138622 |    TIMEOUT | 126294     | TIMEOUT    |
+   |    3 |      16709 |      2159 |   TIMEOUT |  151215 |    TIMEOUT | 153142     | TIMEOUT    |
+   |  380 |       3141 |      6000 |     15112 | TIMEOUT |      15257 | TIMEOUT    | TIMEOUT    |
+   |  381 |       3216 |      6053 |     18370 | TIMEOUT |      17583 | TIMEOUT    | TIMEOUT    |
+   |  762 |       2508 |      6634 |    127334 | TIMEOUT |      58391 | TIMEOUT    | TIMEOUT    |
+   |  518 |      11035 |      9363 |    152414 | TIMEOUT |     412659 | TIMEOUT    | TIMEOUT    |
+   |  463 |       9433 |     10339 |    582183 | TIMEOUT |     416813 | TIMEOUT    | TIMEOUT    |
+   |  477 |     156743 |     10606 |      7972 |   14393 |      16159 | 14710      | TIMEOUT    |
+   |  761 |       5598 |     13151 |   TIMEOUT | TIMEOUT |     201219 | TIMEOUT    | TIMEOUT    |
+   |  462 |       9433 |     13435 |    574268 | TIMEOUT |     416413 | TIMEOUT    | TIMEOUT    |
+   |  390 |       7029 |     26439 |     71855 |  536336 |      85127 | TIMEOUT    | TIMEOUT    |
+   |  394 |       9071 |     31193 |     34910 |  230353 |      67162 | 253256     | TIMEOUT    |
+   |  536 |       6762 |     36438 |     14175 |   25968 |      14702 | 27547      | TIMEOUT    |
+   |  391 |      11279 |     40960 |    147432 | TIMEOUT |     274986 | TIMEOUT    | TIMEOUT    |
+   |  387 |      12025 |     44320 |     27186 |   74510 |      34516 | TIMEOUT    | TIMEOUT    |
+   |  375 |      12632 |     45457 |    192410 |  226470 |      39426 | TIMEOUT    | TIMEOUT    |
+   |  285 |      66179 |     46602 |   TIMEOUT |  267422 |    TIMEOUT | 431800     | TIMEOUT    |
    |  488 |       7777 |     46967 |    268813 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
    |  486 |       7777 |     46980 |    264926 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
    |  382 |       8378 |     47281 |    285408 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
-   |  537 |      11089 |     51961 |     24657 |   56793 |      18877 | 56687      | TIMEOUT    |
+   |  537 |      11089 |     51961 |     24657 |   56793 |      21496 | 54644      | TIMEOUT    |
    |  489 |       9507 |     52445 |    555145 | TIMEOUT |    TIMEOUT | TIMEOUT    | TIMEOUT    |
-   |  684 |      12683 |     62185 |     23589 |   42202 |      27402 | TIMEOUT    | TIMEOUT    |
-   |  472 |      44414 |     75146 |     65642 |   23768 |      25066 | 23185      | TIMEOUT    |
-   |  470 |      44414 |     75146 |     64611 |   23433 |      23474 | 22826      | TIMEOUT    |
-   |  473 |      42734 |     78977 |     41970 |   20823 |      22515 | 21569      | TIMEOUT    |
-   |  471 |      42734 |     78977 |     42394 |   20825 |      21854 | 20802      | TIMEOUT    |
-   |  437 |      44247 |     90904 |    124104 | TIMEOUT |     374186 | TIMEOUT    | TIMEOUT    |
-   |  573 |      36864 |     91611 |    211769 |  146914 |      73584 | TIMEOUT    | TIMEOUT    |
-   |  686 |      36894 |    106414 |    199740 |   38444 |      33103 | TIMEOUT    | TIMEOUT    |
-   |  554 |      74233 |    106867 |    326395 | TIMEOUT |     435898 | TIMEOUT    | TIMEOUT    |
-   |  786 |      76399 |    109114 |    331225 | TIMEOUT |     461702 | TIMEOUT    | TIMEOUT    |
-   |  553 |        nan |       nan |     ERROR |  584786 |     170254 | TIMEOUT    | TIMEOUT    |
+   |  572 |      19594 |     57494 |     70344 |   30051 |      17509 | 31797      | TIMEOUT    |
+   |  378 |      21423 |     58205 |   TIMEOUT | TIMEOUT |     569296 | TIMEOUT    | TIMEOUT    |
+   |  533 |      32907 |     61062 |   TIMEOUT | TIMEOUT |      79065 | TIMEOUT    | TIMEOUT    |
+   |  684 |      12683 |     62185 |     23589 |   42202 |      13240 | TIMEOUT    | TIMEOUT    |
+   |  675 |      25194 |     67697 |   TIMEOUT | TIMEOUT |     239938 | TIMEOUT    | TIMEOUT    |
+   |  472 |      44414 |     75146 |     65642 |   23768 |      30913 | 23985      | TIMEOUT    |
+   |  470 |      44414 |     75146 |     64611 |   23433 |      31214 | 22588      | TIMEOUT    |
+   |  471 |      42734 |     78977 |     42394 |   20825 |      26548 | 20546      | TIMEOUT    |
+   |  473 |      42734 |     78977 |     41970 |   20823 |      27465 | 21389      | TIMEOUT    |
+   |  437 |      44247 |     90904 |    124104 | TIMEOUT |      57732 | TIMEOUT    | TIMEOUT    |
+   |  573 |      36864 |     91611 |    211769 |  146914 |      68371 | TIMEOUT    | TIMEOUT    |
+   |  686 |      36894 |    106414 |    199740 |   38444 |      38004 | TIMEOUT    | TIMEOUT    |
+   |  554 |      74233 |    106867 |    326395 | TIMEOUT |     277391 | TIMEOUT    | TIMEOUT    |
+   |  786 |      76399 |    109114 |    331225 | TIMEOUT |     287079 | TIMEOUT    | TIMEOUT    |
+   |  553 |        nan |       nan |     ERROR |  584786 |     101512 | TIMEOUT    | TIMEOUT    |
 
 * Winning Algorithms
   #+BEGIN_src ipython :session mysession :results output raw
@@ -630,13 +689,6 @@
    #+RESULTS:
    | NAME | SK_NFTGD | SK_FTGD | SK_OUTPUT | KAON3_OUTPUT | SK_TIME | KAON3_TIME | TIME_FACTOR |
    |------+----------+---------+-----------+--------------+---------+------------+-------------|
-   |  400 |    15998 |   29907 |     30603 |        30603 |   13836 |     118897 |         8.6 |
-   |  561 |      214 |     662 |       853 |          853 |     324 |       1588 |         4.9 |
-   |   39 |     6858 |    4826 |      8155 |         8155 |   16362 |      77521 |         4.7 |
-   |  371 |    14928 |   27758 |     28375 |        28375 |   15391 |      45529 |           3 |
-   |  419 |     2992 |    4470 |      9785 |         9785 |  211531 |     581709 |         2.7 |
-   |  398 |    14838 |   27696 |     28188 |        28188 |   12911 |      30991 |         2.4 |
-   |  174 |     4884 |    3712 |      6176 |         6176 |   17052 |      35365 |         2.1 |
 
    Ontologies on which KAON3 wins over SkolemSat:
    #+BEGIN_src ipython :session mysession :results output raw
@@ -1713,38 +1765,58 @@
      derived_tgds['KAON3_TIME'] = df_kaon3_data['KAON3_TIME']
      derived_tgds['KAON2_TIME'] = df_kaon2_data['KAON2_TIME']
      derived_tgds['SK_TIME'] = df_sksat_data['SK_TIME']
-     derived_tgds = derived_tgds[derived_tgds['SIZE_FACTOR'] > 2].sort_values(by="SIZE_FACTOR", ascending=False)
+     derived_tgds = derived_tgds[derived_tgds['SIZE_FACTOR'] > 1].sort_values(by="SIZE_FACTOR", ascending=False)
      print(tabulate(derived_tgds.astype(str), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
    #+RESULTS:
    | NAME | SK_NFTGD | SK_FTGD | KAON3_DERIVED_TGD | SK_DERIVED_TGD | SIZE_FACTOR | KAON3_TIME | KAON2_TIME | SK_TIME |
    |------+----------+---------+-------------------+----------------+-------------+------------+------------+---------|
-   |  766 |      436 |    1845 |           7590349 |          81382 |     93.2682 | TIMEOUT    |        526 |    5902 |
-   |  597 |      446 |    2742 |           6363212 |          82000 |     77.6001 | TIMEOUT    |        582 |    6044 |
-   |  595 |      438 |    2703 |           6082543 |          82000 |     74.1774 | TIMEOUT    |        582 |    5917 |
-   |  666 |      538 |    2153 |           6166012 |          83827 |     73.5564 | TIMEOUT    |        540 |    5699 |
-   |  353 |      442 |    3235 |           6050169 |          82880 |     72.9991 | TIMEOUT    |        627 |    5035 |
-   |  665 |      598 |    2975 |           7901097 |         110578 |     71.4527 | TIMEOUT    |        634 |    6324 |
-   |  680 |    14828 |   10873 |           6485061 |         106095 |      61.125 | TIMEOUT    |      14348 |    6952 |
-   |  352 |      442 |    3256 |           4683243 |          82880 |     56.5063 | TIMEOUT    |        627 |    4922 |
-   |  678 |    15114 |   11217 |           6407594 |         157256 |     40.7463 | TIMEOUT    |      32953 |   12801 |
-   |  684 |    25366 |   62185 |           6690081 |         357045 |     18.7374 | TIMEOUT    |    TIMEOUT |   42202 |
-   |  354 |     3001 |    4648 |           5459400 |         419527 |     13.0132 | TIMEOUT    |      21044 |   18866 |
-   |  561 |      214 |     662 |             23441 |           2093 |     11.1997 | 1588       |        376 |     324 |
-   |  448 |    49694 |   49406 |           6419351 |         734207 |     8.74324 | TIMEOUT    |     475424 |   30027 |
-   |  682 |    49402 |   50011 |           6043874 |         694105 |     8.70743 | TIMEOUT    |     465890 |   28609 |
-   |  400 |    15998 |   29907 |           1492809 |         177373 |     8.41621 | 118897     |     105555 |   13836 |
-   |  387 |    24050 |   44320 |           4495314 |         554950 |     8.10039 | TIMEOUT    |     591074 |   74510 |
-   |  686 |    73788 |  106414 |           4737670 |         816819 |     5.80015 | TIMEOUT    |    TIMEOUT |   38444 |
-   |   39 |     6858 |    4826 |           1384162 |         268391 |     5.15726 | 77521      |       6734 |   16362 |
-   |  573 |    73728 |   91611 |           4783310 |        1302130 |     3.67345 | TIMEOUT    |    TIMEOUT |  146914 |
-   |  421 |     1432 |    1273 |            489130 |         140775 |     3.47455 | 57117      |       3049 |   34551 |
-   |  371 |    14928 |   27758 |            657678 |         194320 |     3.38451 | 45529      |     122229 |   15391 |
-   |  374 |    16540 |   30220 |           3974473 |        1252937 |     3.17213 | TIMEOUT    |     146915 |  142960 |
-   |  398 |    14838 |   27696 |            511730 |         172222 |     2.97134 | 30991      |     115308 |   12911 |
-   |  419 |     2992 |    4470 |           3516072 |        1253901 |     2.80411 | 581709     |      21300 |  211531 |
-   |  420 |     2960 |    5169 |            305130 |         141899 |     2.15033 | 16008      |       7845 |    9208 |
+   |  350 |     2209 |    3019 |             94782 |          73994 |     1.28094 | 4617       | 3685       | 3251    |
+   |  778 |    84108 |  113187 |           2896485 |        2376478 |     1.21881 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   40 |    87244 |  100788 |           1341271 |        1176821 |     1.13974 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  554 |   148466 |  106867 |            606713 |         532884 |     1.13855 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   45 |    84860 |   98674 |           1587492 |        1412619 |     1.12379 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   26 |    59236 |   30697 |           2941311 |        2648070 |     1.11074 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  487 |    26030 |   65519 |           4652883 |        4237897 |     1.09792 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   47 |    28865 |   67547 |           3482979 |        3185548 |     1.09337 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   46 |    30704 |   69253 |           3537118 |        3255554 |     1.08649 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  792 |    62914 |   42585 |           2605369 |        2408976 |     1.08153 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  378 |    42846 |   58205 |           3139423 |        2907286 |     1.07985 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   33 |    26956 |    9462 |           3211772 |        2987939 |     1.07491 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  786 |   152798 |  109114 |            609997 |         571211 |      1.0679 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  533 |    65814 |   61062 |           2313255 |        2166557 |     1.06771 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  395 |    43604 |   60242 |           1925741 |        1808395 |     1.06489 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   34 |    26956 |    9364 |           3210506 |        3026602 |     1.06076 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  660 |    13346 |   13597 |           3468234 |        3290327 |     1.05407 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  518 |    22070 |    9363 |           3440610 |        3275406 |     1.05044 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   41 |    28638 |   67437 |           3626918 |        3457031 |     1.04914 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  485 |     5186 |    5291 |           1226839 |        1178388 |     1.04112 | TIMEOUT    | 547530     | TIMEOUT |
+   |  489 |    19014 |   52445 |           4336138 |        4166176 |      1.0408 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  795 |    94824 |   65392 |           3920663 |        3768503 |     1.04038 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  437 |    88494 |   90904 |           1115105 |        1078642 |      1.0338 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  383 |    27438 |   65847 |           4606042 |        4467003 |     1.03113 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  382 |    16756 |   47281 |           4165196 |        4044236 |     1.02991 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  535 |    16958 |    4621 |           2812129 |        2731434 |     1.02954 | TIMEOUT    | 442660     | TIMEOUT |
+   |  379 |    77230 |   90653 |           2886429 |        2805549 |     1.02883 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  438 |     3024 |    3024 |            994896 |         967680 |     1.02812 | TIMEOUT    | 23576      | TIMEOUT |
+   |  380 |     6282 |    6000 |           1393435 |        1355878 |      1.0277 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  658 |    18234 |   15266 |           3580560 |        3492569 |     1.02519 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   43 |    37224 |  115810 |           2943560 |        2876159 |     1.02343 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  488 |    15554 |   46967 |           4059150 |        3973316 |      1.0216 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  761 |    11195 |   13151 |           3569991 |        3495199 |      1.0214 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  391 |    22558 |   40960 |           2490533 |        2440571 |     1.02047 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   37 |    26916 |    9445 |           3151371 |        3093866 |     1.01859 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  762 |     5016 |    6634 |           1919121 |        1884711 |     1.01826 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  463 |    18866 |   10339 |           3324039 |        3267432 |     1.01732 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  486 |    15554 |   46980 |           4103512 |        4033739 |      1.0173 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   36 |    26932 |    9456 |           3151058 |        3106164 |     1.01445 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |   42 |    30834 |   71082 |           3422913 |        3377713 |     1.01338 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  541 |    18266 |   27181 |           3085685 |        3051798 |      1.0111 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  483 |    58044 |  114237 |           2300724 |        2287336 |     1.00585 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  484 |    75998 |  101911 |           4025519 |        4005839 |     1.00491 | TIMEOUT    | TIMEOUT    | TIMEOUT |
+   |  775 |      209 |     330 |              6487 |           6470 |     1.00263 | 483        | 360        | 499     |
+   |  354 |     3001 |    4648 |            419817 |         419527 |     1.00069 | 18028      | 20487      | 18866   |
 
    The table shows the ontologies, where the SkolemSat derives twice as much TGD than KAON3 
    #+BEGIN_src ipython :session mysession :results output raw

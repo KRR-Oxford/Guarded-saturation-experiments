@@ -1,0 +1,74 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 331; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: ordered skolemized Sat
+Running OrderedSkSat...
+Nov 20, 2021 6:25:22 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: OrderedSkSat discarded rules : 0/331 = 0.000%
+OrderedSkSat discarded rules : 0/331 = 0.000%
+Nov 20, 2021 6:25:22 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.2684932
+number of bags: 4
+length of the formulas: 2.2684932
+number of bags: 4
+nonFullTGDs	0		fullTGDs	181			newNonFullTGDs	184		newFullTGDs	0
+nonFullTGDs	100		fullTGDs	181			newNonFullTGDs	116		newFullTGDs	146
+nonFullTGDs	200		fullTGDs	181			newNonFullTGDs	23		newFullTGDs	986
+nonFullTGDs	223		fullTGDs	258			newNonFullTGDs	0		newFullTGDs	1231
+nonFullTGDs	223		fullTGDs	355			newNonFullTGDs	0		newFullTGDs	1132
+nonFullTGDs	223		fullTGDs	454			newNonFullTGDs	0		newFullTGDs	1033
+nonFullTGDs	223		fullTGDs	553			newNonFullTGDs	0		newFullTGDs	934
+nonFullTGDs	223		fullTGDs	647			newNonFullTGDs	0		newFullTGDs	838
+nonFullTGDs	223		fullTGDs	747			newNonFullTGDs	0		newFullTGDs	738
+nonFullTGDs	223		fullTGDs	841			newNonFullTGDs	0		newFullTGDs	642
+nonFullTGDs	223		fullTGDs	929			newNonFullTGDs	0		newFullTGDs	548
+nonFullTGDs	223		fullTGDs	1025			newNonFullTGDs	0		newFullTGDs	450
+nonFullTGDs	223		fullTGDs	1121			newNonFullTGDs	0		newFullTGDs	353
+nonFullTGDs	223		fullTGDs	1212			newNonFullTGDs	0		newFullTGDs	257
+nonFullTGDs	223		fullTGDs	1309			newNonFullTGDs	0		newFullTGDs	160
+nonFullTGDs	223		fullTGDs	1401			newNonFullTGDs	0		newFullTGDs	63
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 181 , 184
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: OrderedSkSat total time : 333 ms = 0.33 s
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Subsumed elements : 139
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Filter discarded elements : 192609
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: subsumption time: 86 ms = 0.09 s
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: forward subsumption time: 44 ms = 0.04 s
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: backward subsumption time: 42 ms = 0.04 s
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Derived full/non full TGDs: 1438 , 67
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: discarded tautology count: 51
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: Stop because subsumed: 52
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved equals to current: 0
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved time: 56 ms = 0.06 s
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolve count: 1572
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: maximum number of Skolem atoms in body: 1
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: left derived TGD with Skolem in the body: 0
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: right derived TGD with Skolem in the body: 1358
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: derived TGD with more than two Skolem atoms in the body: 0
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: ouptput full TGDs not contained in the input: 52
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (233 dependecies)
+Nov 20, 2021 6:25:23 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Writing the saturation in the Datalog file 00637.rul

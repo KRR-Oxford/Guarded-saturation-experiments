@@ -1,0 +1,79 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 959; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: ordered skolemized Sat
+Running OrderedSkSat...
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: OrderedSkSat discarded rules : 0/959 = 0.000%
+OrderedSkSat discarded rules : 0/959 = 0.000%
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.03428
+number of bags: 7
+length of the formulas: 2.03428
+number of bags: 7
+nonFullTGDs	0		fullTGDs	884			newNonFullTGDs	137		newFullTGDs	0
+nonFullTGDs	100		fullTGDs	884			newNonFullTGDs	148		newFullTGDs	66
+nonFullTGDs	200		fullTGDs	884			newNonFullTGDs	151		newFullTGDs	124
+nonFullTGDs	300		fullTGDs	884			newNonFullTGDs	172		newFullTGDs	153
+nonFullTGDs	400		fullTGDs	884			newNonFullTGDs	158		newFullTGDs	206
+nonFullTGDs	500		fullTGDs	884			newNonFullTGDs	151		newFullTGDs	272
+nonFullTGDs	600		fullTGDs	884			newNonFullTGDs	169		newFullTGDs	311
+nonFullTGDs	700		fullTGDs	884			newNonFullTGDs	208		newFullTGDs	352
+nonFullTGDs	800		fullTGDs	884			newNonFullTGDs	208		newFullTGDs	399
+nonFullTGDs	900		fullTGDs	884			newNonFullTGDs	200		newFullTGDs	446
+nonFullTGDs	1000		fullTGDs	884			newNonFullTGDs	151		newFullTGDs	446
+nonFullTGDs	1100		fullTGDs	884			newNonFullTGDs	107		newFullTGDs	454
+nonFullTGDs	1200		fullTGDs	884			newNonFullTGDs	55		newFullTGDs	457
+nonFullTGDs	1284		fullTGDs	900			newNonFullTGDs	0		newFullTGDs	441
+nonFullTGDs	1284		fullTGDs	987			newNonFullTGDs	0		newFullTGDs	368
+nonFullTGDs	1284		fullTGDs	1087			newNonFullTGDs	0		newFullTGDs	268
+nonFullTGDs	1284		fullTGDs	1185			newNonFullTGDs	0		newFullTGDs	170
+nonFullTGDs	1284		fullTGDs	1279			newNonFullTGDs	0		newFullTGDs	90
+nonFullTGDs	1284		fullTGDs	1376			newNonFullTGDs	0		newFullTGDs	15
+nonFullTGDs	1312		fullTGDs	1446			newNonFullTGDs	0		newFullTGDs	39
+nonFullTGDs	1333		fullTGDs	1495			newNonFullTGDs	0		newFullTGDs	11
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 884 , 137
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: OrderedSkSat total time : 455 ms = 0.46 s
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Subsumed elements : 2345
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Filter discarded elements : 41181
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: subsumption time: 80 ms = 0.08 s
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: forward subsumption time: 51 ms = 0.05 s
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: backward subsumption time: 29 ms = 0.03 s
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Derived full/non full TGDs: 1024 , 3179
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: discarded tautology count: 46
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: Stop because subsumed: 82
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved equals to current: 0
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved time: 116 ms = 0.12 s
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolve count: 4281
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: maximum number of Skolem atoms in body: 2
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: left derived TGD with Skolem in the body: 594
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: right derived TGD with Skolem in the body: 600
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: derived TGD with more than two Skolem atoms in the body: 72
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: ouptput full TGDs not contained in the input: 91
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (975 dependecies)
+Nov 19, 2021 10:46:56 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Writing the saturation in the Datalog file 00282.rul

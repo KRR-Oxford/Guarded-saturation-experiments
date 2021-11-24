@@ -1,0 +1,72 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 155241; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: ordered skolemized Sat
+Running OrderedSkSat...
+Nov 20, 2021 9:04:20 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: OrderedSkSat discarded rules : 0/155241 = 0.000%
+OrderedSkSat discarded rules : 0/155241 = 0.000%
+Nov 20, 2021 9:04:24 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.4643605
+number of bags: 46
+length of the formulas: 2.4643605
+number of bags: 46
+nonFullTGDs	0		fullTGDs	113187			newNonFullTGDs	84108		newFullTGDs	0
+nonFullTGDs	100		fullTGDs	113187			newNonFullTGDs	110755		newFullTGDs	293144
+nonFullTGDs	200		fullTGDs	113187			newNonFullTGDs	137389		newFullTGDs	586288
+nonFullTGDs	300		fullTGDs	113187			newNonFullTGDs	170686		newFullTGDs	842789
+nonFullTGDs	400		fullTGDs	113187			newNonFullTGDs	190663		newFullTGDs	1099290
+nonFullTGDs	500		fullTGDs	113187			newNonFullTGDs	213954		newFullTGDs	1319148
+nonFullTGDs	600		fullTGDs	113187			newNonFullTGDs	237265		newFullTGDs	1575649
+nonFullTGDs	700		fullTGDs	113187			newNonFullTGDs	247260		newFullTGDs	1685578
+nonFullTGDs	800		fullTGDs	113187			newNonFullTGDs	277215		newFullTGDs	2015365
+nonFullTGDs	900		fullTGDs	113187			newNonFullTGDs	297197		newFullTGDs	2125294
+nonFullTGDs	1000		fullTGDs	113187			newNonFullTGDs	310525		newFullTGDs	2381795
+nonFullTGDs	1100		fullTGDs	113187			newNonFullTGDs	327174		newFullTGDs	2565010
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 113187 , 84108
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: OrderedSkSat total time : 606954 ms = 606.95 s
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Subsumed elements : 618
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Filter discarded elements : 423736494
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: subsumption time: 492980 ms = 492.98 s
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: forward subsumption time: 145767 ms = 145.77 s
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: backward subsumption time: 347213 ms = 347.21 s
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Derived full/non full TGDs: 2711730 , 257968
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: discarded tautology count: 0
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: !!! TIME OUT !!!
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: Stop because subsumed: 0
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved equals to current: 0
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved time: 28087 ms = 28.09 s
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolve count: 2969777
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: maximum number of Skolem atoms in body: 1
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: left derived TGD with Skolem in the body: 256999
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: right derived TGD with Skolem in the body: 2711730
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: derived TGD with more than two Skolem atoms in the body: 0
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: ouptput full TGDs not contained in the input: 0
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (113187 dependecies)
+Nov 20, 2021 9:14:27 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Writing the saturation in the Datalog file 00778.rul

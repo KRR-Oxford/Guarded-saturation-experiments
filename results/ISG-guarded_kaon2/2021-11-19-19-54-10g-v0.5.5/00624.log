@@ -1,0 +1,74 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 1013; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: ordered skolemized Sat
+Running OrderedSkSat...
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: OrderedSkSat discarded rules : 0/1013 = 0.000%
+OrderedSkSat discarded rules : 0/1013 = 0.000%
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.0289593
+number of bags: 8
+length of the formulas: 2.0289593
+number of bags: 8
+nonFullTGDs	0		fullTGDs	915			newNonFullTGDs	190		newFullTGDs	0
+nonFullTGDs	100		fullTGDs	915			newNonFullTGDs	204		newFullTGDs	32
+nonFullTGDs	200		fullTGDs	915			newNonFullTGDs	239		newFullTGDs	43
+nonFullTGDs	300		fullTGDs	915			newNonFullTGDs	245		newFullTGDs	45
+nonFullTGDs	400		fullTGDs	915			newNonFullTGDs	265		newFullTGDs	71
+nonFullTGDs	500		fullTGDs	915			newNonFullTGDs	307		newFullTGDs	73
+nonFullTGDs	600		fullTGDs	915			newNonFullTGDs	302		newFullTGDs	76
+nonFullTGDs	700		fullTGDs	915			newNonFullTGDs	298		newFullTGDs	84
+nonFullTGDs	800		fullTGDs	915			newNonFullTGDs	345		newFullTGDs	86
+nonFullTGDs	900		fullTGDs	915			newNonFullTGDs	321		newFullTGDs	87
+nonFullTGDs	1000		fullTGDs	915			newNonFullTGDs	256		newFullTGDs	87
+nonFullTGDs	1100		fullTGDs	915			newNonFullTGDs	209		newFullTGDs	87
+nonFullTGDs	1200		fullTGDs	915			newNonFullTGDs	155		newFullTGDs	87
+nonFullTGDs	1300		fullTGDs	915			newNonFullTGDs	93		newFullTGDs	87
+nonFullTGDs	1400		fullTGDs	915			newNonFullTGDs	39		newFullTGDs	87
+nonFullTGDs	1461		fullTGDs	954			newNonFullTGDs	0		newFullTGDs	48
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 915 , 190
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: OrderedSkSat total time : 304 ms = 0.30 s
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Subsumed elements : 744
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Filter discarded elements : 10040
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: subsumption time: 34 ms = 0.03 s
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: forward subsumption time: 23 ms = 0.02 s
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: backward subsumption time: 10 ms = 0.01 s
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Derived full/non full TGDs: 177 , 1929
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: discarded tautology count: 4
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: Stop because subsumed: 0
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved equals to current: 0
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved time: 67 ms = 0.07 s
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolve count: 2243
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: maximum number of Skolem atoms in body: 1
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: left derived TGD with Skolem in the body: 0
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: right derived TGD with Skolem in the body: 67
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: derived TGD with more than two Skolem atoms in the body: 0
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: ouptput full TGDs not contained in the input: 25
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (940 dependecies)
+Nov 20, 2021 6:24:39 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Writing the saturation in the Datalog file 00624.rul
