@@ -392,7 +392,15 @@
                 for p2 in prefixes:
                     row.append(len(get_all_timeout([p1, p2], any_notimeout).index))
             return pd.DataFrame(data, columns=prefixes, index=prefixes)
-   #+END_src
+        
+        def one_timeout_atleast_indexes(prefixes):
+            indexes = set()
+            for p1 in prefixes:
+                indexes.update(get_all_timeout([p1], any_notimeout).index)
+            indexes = list(indexes)
+            indexes.sort()
+            return indexes
+      #+END_src
 
    #+BEGIN_src ipython :session mysession :results output raw
      print(tabulate(timeout_intersection(['GSAT', 'SK', 'HYPER', 'KAON2']), headers="keys", tablefmt='orgtbl'))
@@ -435,7 +443,39 @@
    | HYPER |    4 |  3 |     0 |     0 |
    | KAON2 |   29 | 19 |    30 |     0 |
 
-   
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/anynotimeout0.png
+    plot_values(times[ times.index.isin(one_timeout_atleast_indexes(['GSAT', 'SK', 'HYPER', 'KAON2']))].drop(columns=['KAON3_TIME']), 0)
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[326]:
+  [[file:plots/anynotimeout0.png]]
+  :end:
+
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/anynotimeout1.png
+    plot_values(times[ times.index.isin(one_timeout_atleast_indexes(['GSAT', 'SK', 'HYPER', 'KAON2']))].drop(columns=['KAON3_TIME']), 1)
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[325]:
+  [[file:plots/anynotimeout1.png]]
+  :end:
+
+  
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/interesting_timeout.png
+    interesting_timeout_indexes = [ 4, 21, 174, 354, 381, 382, 410, 470, 477, 479, 518, 553, 684, 703, 783 ]
+    plot_values(times[ times.index.isin(interesting_timeout_indexes)].drop(columns=['KAON3_TIME']), 0)
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[344]:
+  [[file:plots/interesting_timeout.png]]
+  :end:
+
+  
 ** GSat timeout
 
    The following table contains the rows where the Gsat execution reaches the timeout, while another algorithm is not, sorted by the input size.
@@ -1656,18 +1696,19 @@
    
   #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/kept-times.png
     win_indexes_10 = win_collect(['GSAT', 'SK', 'HYPER', 'KAON2'], 10)
-    win_indexes_10_similar = [ 13, 16, 17, 18, 19, 151, 283, 368, 369, 370, 389, 398, 415, 417, 426, 532, 574, 575, 595, 597, 666, 676, 772, 788, 789]
-    interesting_indexes = [ 353, 377, 632, 394, 454, 498, 553, 719, 729,  ]
+    win_indexes_10_similar = [ 13, 16, 17, 18, 19, 151, 283, 368, 369, 370, 386, 389, 396, 398, 415, 417, 421, 426, 532, 574, 575, 595, 597, 666, 677, 676, 700, 772, 788, 789]
+    interesting_indexes = [ 353, 632, 394, 454, 498, 553, 719,  ]
     
     displayed_indexes = set (win_indexes_10)
     displayed_indexes.difference_update(win_indexes_10_similar)
     displayed_indexes.update(interesting_indexes)
+    displayed_indexes.update(interesting_timeout_indexes)
     plot_values(times[ times.index.isin(displayed_indexes)].drop(columns=['KAON3_TIME']), 0)
   #+END_SRC
 
   #+RESULTS:
   :results:
-  # Out[315]:
+  # Out[349]:
   [[file:plots/kept-times.png]]
   :end:
 
