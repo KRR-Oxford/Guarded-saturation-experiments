@@ -1540,6 +1540,22 @@
                  notimeout = get_no_timeout(time1, time2, [time1, time2])
                  row.append(len(create_win(notimeout, time1, time2, factor).index))
          return pd.DataFrame(data, columns=prefixes, index=prefixes)
+     
+     def win_collect(prefixes, factor=2):
+         indexes = set()
+     
+         for p1 in prefixes:
+             for p2 in prefixes:
+                 if p1 == p2:
+                     continue
+                 time1 = p1 + '_TIME'
+                 time2 = p2 + '_TIME'
+                 notimeout = get_no_timeout(time1, time2, [time1, time2])
+                 indexes.update(create_win(notimeout, time1, time2, factor).index)
+         indexes = list(indexes)
+         indexes.sort()
+         return indexes
+     
    #+END_src
 
    A table showing the number of ontologies on which the algorithm on the row is winning against the column algorithm by a factor 2: 
@@ -1568,7 +1584,7 @@
    | HYPER |   27 |  24 |   nan |    37 |
    | KAON2 |   21 |  19 |     1 |   nan |
 
-   The factor with a factor 10 (one order of magnitude):
+   The same with a factor 10 (one order of magnitude):
     #+BEGIN_src ipython :session mysession :results output raw
      print(tabulate(win_sum(['GSAT', 'SK', 'HYPER', 'KAON2'], 10), headers="keys", tablefmt='orgtbl'))
    #+END_src
@@ -1581,7 +1597,81 @@
    | HYPER |   13 |  12 |   nan |    20 |
    | KAON2 |   13 |  13 |     0 |   nan |
 
+   Times corresponding to the table with a factor 10
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win10-0.png
+    win_indexes_10 = win_collect(['GSAT', 'SK', 'HYPER', 'KAON2'], 10)
+    plot_values(times[ times.index.isin(win_indexes_10)].drop(columns=['KAON3_TIME']), 0)
+  #+END_SRC
 
+  #+RESULTS:
+  :results:
+  # Out[296]:
+  [[file:plots/win10-0.png]]
+  :end:
+
+    #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win10-1.png
+    plot_values(times[ times.index.isin(win_indexes_10)].drop(columns=['KAON3_TIME']), 1)
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[297]:
+  [[file:plots/win10-1.png]]
+  :end:
+
+  Times corresponding to the table with a factor 5 (without those of factor 10)
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win5-0.png
+    win_indexes_5 = win_collect(['GSAT', 'SK', 'HYPER', 'KAON2'], 5)
+    plot_values(times[ (~times.index.isin(win_indexes_10)) & (times.index.isin(win_indexes_5)) ].drop(columns=['KAON3_TIME']), 0)
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[299]:
+  [[file:plots/win5-0.png]]
+  :end:
+
+    Times corresponding to the table with a factor 2 (without those of factor 5 and 10)
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win2-0.png
+    win_indexes_2 = win_collect(['GSAT', 'SK', 'HYPER', 'KAON2'], 2)
+    plot_values(times[ (~times.index.isin(win_indexes_10)) & (~times.index.isin(win_indexes_5)) & (times.index.isin(win_indexes_2)) ].drop(columns=['KAON3_TIME']), 0)
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[306]:
+  [[file:plots/win2-0.png]]
+  :end:
+
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win2-1.png
+    plot_values(times[ (~times.index.isin(win_indexes_10)) & (~times.index.isin(win_indexes_5)) & (times.index.isin(win_indexes_2)) ].drop(columns=['KAON3_TIME']), 1)
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[311]:
+  [[file:plots/win2-1.png]]
+  :end:
+
+   
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/kept-times.png
+    win_indexes_10 = win_collect(['GSAT', 'SK', 'HYPER', 'KAON2'], 10)
+    win_indexes_10_similar = [ 13, 16, 17, 18, 19, 151, 283, 368, 369, 370, 389, 398, 415, 417, 426, 532, 574, 575, 595, 597, 666, 676, 772, 788, 789]
+    interesting_indexes = [ 353, 377, 632, 394, 454, 498, 553, 719, 729,  ]
+    
+    displayed_indexes = set (win_indexes_10)
+    displayed_indexes.difference_update(win_indexes_10_similar)
+    displayed_indexes.update(interesting_indexes)
+    plot_values(times[ times.index.isin(displayed_indexes)].drop(columns=['KAON3_TIME']), 0)
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[315]:
+  [[file:plots/kept-times.png]]
+  :end:
+
+   
 * Percent of time spent for evolve applications
 
   #+BEGIN_SRC ipython :results none :session mysession
