@@ -90,31 +90,19 @@
 
 ** Statistics on the input ontologies
 
-   #+BEGIN_src ipython :results output  :session mysession
+   #+BEGIN_src ipython :results none  :session mysession
      INPUT_ONTOLOGIES_STATS='../../rules/ISG-guarded_kaon2/stats.csv'
      df_input = pd.read_csv(INPUT_ONTOLOGIES_STATS, index_col='NAME')
-     # disabled ontologies
-     df_input = df_input.drop([48, 427, 506, 507, 553, 791, 794, 796, 797])
    #+END_src
 
-   #+RESULTS:
-
-   The original set of ontologies contains the following number of ontologies:
+   We keep for the experiments only the ontologies which contains both full and non-full TGDs and removing the redundant ontologies, so the number of remaining ontologies is:
    #+BEGIN_src ipython :results output  :session mysession
-     print(len(df_input.index))
-   #+END_src
-
-   #+RESULTS:
-   : 778
-
-   We keep for the experiments only the ontologies which contains both full and non-full TGDs, so the number of remaining ontologies is:
-   #+BEGIN_src ipython :results output  :session mysession
-     df_remaining_input = df_input[ (df_input['FGTGD'] > 0) & (df_input['ExGTGD'] > 0) ]
+     df_remaining_input = select_interesting(df_input)
      print(len(df_remaining_input))
    #+END_src
 
    #+RESULTS:
-   : 464
+   : 428
 
    Among the remaining ontologies the minimal ontology contains the following number of TGDs:  
    #+BEGIN_src ipython :results output :session mysession
@@ -139,7 +127,15 @@
    #+END_src
 
    #+RESULTS:
-   : 10459.17025862069
+   : 11030.072429906542
+
+   the median number of full TGDs is:  
+   #+BEGIN_src ipython :results output :session mysession
+     print(df_remaining_input['FGTGD'].median())
+   #+END_src
+
+   #+RESULTS:
+   : 788.5
 
    The minimum number of full TGDs is:  
    #+BEGIN_src ipython :results output :session mysession
@@ -163,16 +159,24 @@
    #+END_src
 
    #+RESULTS:
-   : 5014.502155172414
+   : 5255.429906542056
 
+   the average number of non-full TGDs is:  
+   #+BEGIN_src ipython :results output :session mysession
+     print(df_remaining_input['ExGTGD'].median())
+   #+END_src
+
+   #+RESULTS:
+   : 282.5
+
+   
    The average proportion of full TGDs in the remaining ontologies is:  
    #+BEGIN_src ipython :results output :session mysession
      print((df_remaining_input['FGTGD'] / (df_remaining_input['FGTGD'] + df_remaining_input['ExGTGD'])).mean())
    #+END_src
 
    #+RESULTS:
-   : 0.6989794420245459
-
+   : 0.6928617493946536
 
    
 * Times Comparison
@@ -376,7 +380,7 @@
    |  787 |      45442 |     59418 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  792 |        nan |       nan | ERROR     | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
    |  795 |      47412 |     65392 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-** Timeout Summary
+** Timeout summary
 
       #+BEGIN_src ipython :session mysession :results none
         def timeout_intersection(prefixes):
