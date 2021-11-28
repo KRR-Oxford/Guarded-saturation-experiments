@@ -35,7 +35,7 @@
     sksat_file='2021-11-11-22-03-10g-v0.5.5/stats.csv'
     ordsksat_file='2021-11-19-19-54-10g-v0.5.5/stats.csv'
     kaon2_file='../ISG-guarded_kaon2-nodata/2021-11-04-17-47-10g-0.5.4-600-kaon2/stats.csv'
-    #ssat_file='2021-05-15-18-32-10g-v0.5.1/stats.csv'
+    ssat_file='2021-05-15-18-32-10g-v0.5.1/stats.csv'
     hyper_file='2021-11-18-20-33-10g-v0.5.5/stats.csv'
     
     df_gsat_data = pd.read_csv(gsat_file, index_col='NAME').rename(columns={'TIME':'GSAT_TIME'})
@@ -61,15 +61,15 @@
     df_kaon2_data = df_kaon2_data.rename(columns={'AXIOM_NB':'AXIOM'})
     df_kaon2 = df_kaon2_data[['AXIOM', 'KAON2_OUTPUT', 'KAON2_TIME']]
     
-    #df_ssat = pd.read_csv(ssat_file, index_col='NAME').rename(columns={'TIME':'SSAT_TIME'})
-    #df_ssat = df_ssat.rename(columns={'OUTPUT_SIZE':'SSAT_OUTPUT'})
-    #df_ssat = df_ssat[['SSAT_OUTPUT','SSAT_TIME']]
+    df_ssat = pd.read_csv(ssat_file, index_col='NAME').rename(columns={'TIME':'SSAT_TIME'})
+    df_ssat = df_ssat.rename(columns={'OUTPUT_SIZE':'SSAT_OUTPUT'})
+    df_ssat = df_ssat[['SSAT_OUTPUT','SSAT_TIME']]
     
     df_hyper_data = pd.read_csv(hyper_file, index_col='NAME').rename(columns={'TIME':'HYPER_TIME'})
     df_hyper_data = df_hyper_data.rename(columns={'OUTPUT_SIZE':'HYPER_OUTPUT'})
     df_hyper = df_hyper_data[['HYPER_OUTPUT','HYPER_TIME']]
     
-    df_interesting = pd.concat([df_gsat, df_sksat, df_kaon3, df_hyper, df_kaon2], axis=1)
+    df_interesting = pd.concat([df_gsat, df_sksat, df_kaon3, df_hyper, df_kaon2, df_ssat], axis=1)
     
     df_kept = pd.read_csv('../../rules/ISG-guarded_kaon2/kept.csv', index_col='NAME')
     
@@ -80,7 +80,7 @@
     df_interesting = select_interesting(df_interesting)
     
     # selection of interesting columns for times comparison
-    df_times = df_interesting[ ['GSAT_NFTGD', 'GSAT_FTGD', 'GSAT_TIME', 'SK_TIME', 'HYPER_TIME', 'KAON3_TIME', 'KAON2_TIME'] ]
+    df_times = df_interesting[ ['GSAT_NFTGD', 'GSAT_FTGD', 'GSAT_TIME', 'SSAT_TIME', 'SK_TIME', 'HYPER_TIME', 'KAON3_TIME', 'KAON2_TIME'] ]
     
     print(len(df_interesting.index))
   #+END_src
@@ -314,6 +314,37 @@
   [[file:plots/times10.png]]
   :end:
 
+  Cactus plot of the times
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/cactus_times.png
+    def create_sorted_times(prefixes) :
+        sorted_times = []
+        for prefix in prefixes:
+            sorted_times.append(times[[prefix + '_TIME']].sort_values(by=prefix + "_TIME").reset_index(drop=True).rename(columns={prefix + "_TIME": prefix}))
+    
+        return pd.concat(sorted_times)
+    
+    sorted_times = create_sorted_times(['GSAT', 'SK', 'HYPER', 'KAON2']) #, 'SSAT_TIME',
+    sorted_times.plot.line(figsize=(15,6))
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[28]:
+  : <AxesSubplot:>
+  [[file:plots/cactus_times.png]]
+  :end:
+
+  The same in log scale
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/cactus_times_log.png
+    sorted_times.plot.line(figsize=(15,6)).set_yscale('log')
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[29]:
+  [[file:plots/cactus_times_log.png]]
+  :end:
+
 
 * Timeout analysis
 ** All the algorithm reach the timeout
@@ -349,37 +380,37 @@
    #+END_src
 
    #+RESULTS:
-   | NAME | GSAT_NFTGD | GSAT_FTGD | GSAT_TIME | SK_TIME | HYPER_TIME | KAON3_TIME | KAON2_TIME |
-   |------+------------+-----------+-----------+---------+------------+------------+------------|
-   |   26 |        nan |       nan | ERROR     | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   27 |      23858 |     31647 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   33 |      12339 |      9462 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   34 |      12339 |      9364 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   36 |      12329 |      9456 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   37 |      12323 |      9445 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   38 |      12339 |      9457 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   40 |      43622 |    100787 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   41 |      14319 |     67437 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   42 |      15417 |     71082 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   43 |      18612 |    115810 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   44 |      14319 |     67400 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   45 |      42430 |     98673 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   46 |      15352 |     69253 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |   47 |      14431 |     67545 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  379 |      38615 |     90653 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  383 |      13719 |     65847 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  395 |      21802 |     60146 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  483 |      29022 |    114237 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  484 |      37999 |    101911 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  487 |      13015 |     65519 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  541 |       9133 |     27085 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  658 |       9117 |     15170 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  660 |       6673 |     13597 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  760 |      50814 |    170834 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  778 |      42054 |    113187 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  787 |      45442 |     59418 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  792 |        nan |       nan | ERROR     | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
-   |  795 |      47412 |     65392 | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   | NAME | GSAT_NFTGD | GSAT_FTGD | GSAT_TIME | SSAT_TIME | SK_TIME | HYPER_TIME | KAON3_TIME | KAON2_TIME |
+   |------+------------+-----------+-----------+-----------+---------+------------+------------+------------|
+   |   26 |        nan |       nan | ERROR     | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   27 |      23858 |     31647 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   33 |      12339 |      9462 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   34 |      12339 |      9364 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   36 |      12329 |      9456 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   37 |      12323 |      9445 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   38 |      12339 |      9457 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   40 |      43622 |    100787 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   41 |      14319 |     67437 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   42 |      15417 |     71082 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   43 |      18612 |    115810 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   44 |      14319 |     67400 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   45 |      42430 |     98673 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   46 |      15352 |     69253 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |   47 |      14431 |     67545 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  379 |      38615 |     90653 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  383 |      13719 |     65847 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  395 |      21802 |     60146 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  483 |      29022 |    114237 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  484 |      37999 |    101911 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  487 |      13015 |     65519 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  541 |       9133 |     27085 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  658 |       9117 |     15170 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  660 |       6673 |     13597 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  760 |      50814 |    170834 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  778 |      42054 |    113187 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  787 |      45442 |     59418 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  792 |        nan |       nan | ERROR     | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
+   |  795 |      47412 |     65392 | TIMEOUT   | TIMEOUT   | TIMEOUT | TIMEOUT    | TIMEOUT    | TIMEOUT    |
 ** Timeout summary
 
       #+BEGIN_src ipython :session mysession :results none
@@ -402,17 +433,20 @@
             return indexes
       #+END_src
 
+      The number of ontologies on which two algorithms reach the timeout simultaneously
    #+BEGIN_src ipython :session mysession :results output raw
-     print(tabulate(timeout_intersection(['GSAT', 'SK', 'HYPER', 'KAON2']), headers="keys", tablefmt='orgtbl'))
+     print(tabulate(timeout_intersection(['GSAT', 'SSAT', 'SK', 'HYPER', 'KAON3', 'KAON2']), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
    #+RESULTS:
-   |       | GSAT | SK | HYPER | KAON2 |
-   |-------+------+----+-------+-------|
-   | GSAT  |   32 |  4 |     3 |     8 |
-   | SK    |    4 | 22 |     4 |    18 |
-   | HYPER |    3 |  4 |     7 |     7 |
-   | KAON2 |    8 | 18 |     7 |    37 |
+   |       | GSAT | SSAT | SK | HYPER | KAON3 | KAON2 |
+   |-------+------+------+----+-------+-------+-------|
+   | GSAT  |   32 |   29 |  4 |     3 |     6 |     8 |
+   | SSAT  |   29 |  176 | 22 |     7 |    44 |    37 |
+   | SK    |    4 |   22 | 22 |     4 |    22 |    18 |
+   | HYPER |    3 |    7 |  4 |     7 |     4 |     7 |
+   | KAON3 |    6 |   44 | 22 |     4 |    44 |    25 |
+   | KAON2 |    8 |   37 | 18 |     7 |    25 |    37 |
 
       #+BEGIN_src ipython :session mysession :results none
         def timeout_single_diff(p1, p2):
@@ -431,7 +465,7 @@
             return pd.DataFrame(data, columns=prefixes, index=prefixes)
    #+END_src
 
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src ipython :session mysession :results output raw :exports none
      print(tabulate(timeout_diff(['GSAT', 'SK', 'HYPER', 'KAON2']), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -443,6 +477,7 @@
    | HYPER |    4 |  3 |     0 |     0 |
    | KAON2 |   29 | 19 |    30 |     0 |
 
+   The times on the ontologies where at least one algorithm reaches timeout. 
   #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/anynotimeout0.png
     plot_values(times[ times.index.isin(one_timeout_atleast_indexes(['GSAT', 'SK', 'HYPER', 'KAON2']))].drop(columns=['KAON3_TIME']), 0)
   #+END_SRC
@@ -463,15 +498,15 @@
   [[file:plots/anynotimeout1.png]]
   :end:
 
-  
+  A interesting selection of these times
   #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/interesting_timeout.png
     interesting_timeout_indexes = [ 4, 21, 174, 354, 381, 382, 410, 470, 477, 479, 518, 553, 684, 703, 783 ]
-    plot_values(times[ times.index.isin(interesting_timeout_indexes)].drop(columns=['KAON3_TIME']), 0)
+    plot_values(times[ times.index.isin(interesting_timeout_indexes)].drop(columns=['KAON3_TIME']).sort_values(by="HYPER_TIME"), 1)
   #+END_SRC
 
   #+RESULTS:
   :results:
-  # Out[344]:
+  # Out[351]:
   [[file:plots/interesting_timeout.png]]
   :end:
 
@@ -487,40 +522,40 @@
    #+END_src
 
    #+RESULTS:
-   | NAME | GSAT_NFTGD | GSAT_FTGD | GSAT_TIME | SK_TIME | HYPER_TIME | KAON3_TIME | KAON2_TIME |
-   |------+------------+-----------+-----------+---------+------------+------------+------------|
-   |  343 |          4 |        97 | TIMEOUT   |     111 |        122 |        112 |        257 |
-   |  783 |        187 |       241 | TIMEOUT   |     298 |        340 |        305 |        352 |
-   |  781 |        187 |       243 | TIMEOUT   |     315 |        332 |        358 |        347 |
-   |  319 |        187 |       243 | TIMEOUT   |     302 |        348 |        343 |        344 |
-   |  511 |        345 |       275 | TIMEOUT   |     508 |        461 |        478 |        394 |
-   |  479 |        323 |       566 | TIMEOUT   |    1225 |       1642 |       1504 |        562 |
-   |  480 |        327 |       663 | TIMEOUT   |    1293 |       1742 |       1526 |        610 |
-   |  624 |         98 |       915 | TIMEOUT   |     296 |        302 |        304 |        442 |
-   |   21 |        110 |      1190 | TIMEOUT   |     504 |        541 |        574 |        447 |
-   |  284 |         84 |      1222 | TIMEOUT   |     435 |        448 |        516 |        457 |
-   |   20 |         83 |      1310 | TIMEOUT   |     434 |        496 |        542 |        459 |
-   |  410 |        476 |      1338 | TIMEOUT   |    2960 |       2183 |       2348 |       1838 |
-   |   14 |        139 |      1533 | TIMEOUT   |     622 |        673 |        730 |        535 |
-   |   24 |        139 |      1533 | TIMEOUT   |     596 |        673 |        688 |        582 |
-   |    4 |      16705 |      2107 | TIMEOUT   |  138622 |    TIMEOUT |     126294 |    TIMEOUT |
-   |    3 |      16709 |      2159 | TIMEOUT   |  151215 |    TIMEOUT |     153142 |    TIMEOUT |
-   |  350 |        942 |      3018 | TIMEOUT   |    3251 |       3576 |       5842 |       3685 |
-   |  354 |       1501 |      4648 | TIMEOUT   |   18866 |      12973 |    TIMEOUT |      20487 |
-   |  761 |       5598 |     13151 | TIMEOUT   | TIMEOUT |     201219 |    TIMEOUT |    TIMEOUT |
-   |  285 |      66179 |     46602 | TIMEOUT   |  267422 |    TIMEOUT |     431800 |    TIMEOUT |
-   |  378 |      21423 |     58205 | TIMEOUT   | TIMEOUT |     569296 |    TIMEOUT |    TIMEOUT |
-   |  533 |      32907 |     61062 | TIMEOUT   | TIMEOUT |      79065 |    TIMEOUT |    TIMEOUT |
-   |  675 |      25194 |     67697 | TIMEOUT   | TIMEOUT |     239938 |    TIMEOUT |    TIMEOUT |
-   |   29 |        nan |       nan | ERROR     |   19376 |       9565 |      43390 |       6984 |
-   |   30 |        nan |       nan | ERROR     |   23714 |      10027 |      44481 |       6904 |
-   |   32 |        nan |       nan | ERROR     |   25878 |      11506 |      45829 |      10678 |
-   |   39 |        nan |       nan | ERROR     |   16362 |      12561 |      63526 |      11060 |
-   |  174 |        nan |       nan | ERROR     |   17052 |       8024 |      22998 |       4980 |
-   |  553 |        nan |       nan | ERROR     |  584786 |     101512 |    TIMEOUT |    TIMEOUT |
-   |  701 |        nan |       nan | ERROR     |   10592 |       9545 |       8867 |      62168 |
-   |  703 |        nan |       nan | ERROR     |   19120 |      17773 |      15628 |     286437 |
-   |  775 |        nan |       nan | ERROR     |     499 |        580 |        653 |        360 |
+   | NAME | GSAT_NFTGD | GSAT_FTGD | GSAT_TIME | SSAT_TIME | SK_TIME | HYPER_TIME | KAON3_TIME | KAON2_TIME |
+   |------+------------+-----------+-----------+-----------+---------+------------+------------+------------|
+   |  343 |          4 |        97 | TIMEOUT   | 299       |     111 |        122 |        112 |        257 |
+   |  783 |        187 |       241 | TIMEOUT   | TIMEOUT   |     298 |        340 |        305 |        352 |
+   |  781 |        187 |       243 | TIMEOUT   | TIMEOUT   |     315 |        332 |        358 |        347 |
+   |  319 |        187 |       243 | TIMEOUT   | TIMEOUT   |     302 |        348 |        343 |        344 |
+   |  511 |        345 |       275 | TIMEOUT   | TIMEOUT   |     508 |        461 |        478 |        394 |
+   |  479 |        323 |       566 | TIMEOUT   | TIMEOUT   |    1225 |       1642 |       1504 |        562 |
+   |  480 |        327 |       663 | TIMEOUT   | TIMEOUT   |    1293 |       1742 |       1526 |        610 |
+   |  624 |         98 |       915 | TIMEOUT   | 12410     |     296 |        302 |        304 |        442 |
+   |   21 |        110 |      1190 | TIMEOUT   | TIMEOUT   |     504 |        541 |        574 |        447 |
+   |  284 |         84 |      1222 | TIMEOUT   | TIMEOUT   |     435 |        448 |        516 |        457 |
+   |   20 |         83 |      1310 | TIMEOUT   | TIMEOUT   |     434 |        496 |        542 |        459 |
+   |  410 |        476 |      1338 | TIMEOUT   | 119314    |    2960 |       2183 |       2348 |       1838 |
+   |   14 |        139 |      1533 | TIMEOUT   | TIMEOUT   |     622 |        673 |        730 |        535 |
+   |   24 |        139 |      1533 | TIMEOUT   | TIMEOUT   |     596 |        673 |        688 |        582 |
+   |    4 |      16705 |      2107 | TIMEOUT   | TIMEOUT   |  138622 |    TIMEOUT |     126294 |    TIMEOUT |
+   |    3 |      16709 |      2159 | TIMEOUT   | TIMEOUT   |  151215 |    TIMEOUT |     153142 |    TIMEOUT |
+   |  350 |        942 |      3018 | TIMEOUT   | TIMEOUT   |    3251 |       3576 |       5842 |       3685 |
+   |  354 |       1501 |      4648 | TIMEOUT   | TIMEOUT   |   18866 |      12973 |    TIMEOUT |      20487 |
+   |  761 |       5598 |     13151 | TIMEOUT   | TIMEOUT   | TIMEOUT |     201219 |    TIMEOUT |    TIMEOUT |
+   |  285 |      66179 |     46602 | TIMEOUT   | TIMEOUT   |  267422 |    TIMEOUT |     431800 |    TIMEOUT |
+   |  378 |      21423 |     58205 | TIMEOUT   | TIMEOUT   | TIMEOUT |     569296 |    TIMEOUT |    TIMEOUT |
+   |  533 |      32907 |     61062 | TIMEOUT   | TIMEOUT   | TIMEOUT |      79065 |    TIMEOUT |    TIMEOUT |
+   |  675 |      25194 |     67697 | TIMEOUT   | TIMEOUT   | TIMEOUT |     239938 |    TIMEOUT |    TIMEOUT |
+   |   29 |        nan |       nan | ERROR     | TIMEOUT   |   19376 |       9565 |      43390 |       6984 |
+   |   30 |        nan |       nan | ERROR     | TIMEOUT   |   23714 |      10027 |      44481 |       6904 |
+   |   32 |        nan |       nan | ERROR     | TIMEOUT   |   25878 |      11506 |      45829 |      10678 |
+   |   39 |        nan |       nan | ERROR     | TIMEOUT   |   16362 |      12561 |      63526 |      11060 |
+   |  174 |        nan |       nan | ERROR     | TIMEOUT   |   17052 |       8024 |      22998 |       4980 |
+   |  553 |        nan |       nan | ERROR     | TIMEOUT   |  584786 |     101512 |    TIMEOUT |    TIMEOUT |
+   |  701 |        nan |       nan | ERROR     | TIMEOUT   |   10592 |       9545 |       8867 |      62168 |
+   |  703 |        nan |       nan | ERROR     | TIMEOUT   |   19120 |      17773 |      15628 |     286437 |
+   |  775 |        nan |       nan | ERROR     | TIMEOUT   |     499 |        580 |        653 |        360 |
   
 ** SkolemSat timeout
    The following table contains the rows where the SkolemSat executions reach the timeout, while another algorithm is not, sorted by the input size.
@@ -1577,7 +1612,7 @@
                      continue
                  time1 = p1 + '_TIME'
                  time2 = p2 + '_TIME'
-                 notimeout = get_no_timeout(time1, time2, [time1, time2])
+                 notimeout = df_times.copy().replace('TIMEOUT', TIMEOUT).replace('ERROR', TIMEOUT).apply(pd.to_numeric)
                  row.append(len(create_win(notimeout, time1, time2, factor).index))
          return pd.DataFrame(data, columns=prefixes, index=prefixes)
      
@@ -1590,7 +1625,7 @@
                      continue
                  time1 = p1 + '_TIME'
                  time2 = p2 + '_TIME'
-                 notimeout = get_no_timeout(time1, time2, [time1, time2])
+                 notimeout = df_times.copy().replace('TIMEOUT', TIMEOUT).replace('ERROR', TIMEOUT).apply(pd.to_numeric)
                  indexes.update(create_win(notimeout, time1, time2, factor).index)
          indexes = list(indexes)
          indexes.sort()
@@ -1600,42 +1635,45 @@
 
    A table showing the number of ontologies on which the algorithm on the row is winning against the column algorithm by a factor 2: 
     #+BEGIN_src ipython :session mysession :results output raw
-     print(tabulate(win_sum(['GSAT', 'SK', 'HYPER', 'KAON2']), headers="keys", tablefmt='orgtbl'))
+     print(tabulate(win_sum(['GSAT', 'SSAT', 'SK', 'HYPER', 'KAON2']), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
    #+RESULTS:
-   |       | GSAT |  SK | HYPER | KAON2 |
-   |-------+------+-----+-------+-------|
-   | GSAT  |  nan |  39 |     4 |    53 |
-   | SK    |   45 | nan |     0 |    51 |
-   | HYPER |   54 |  57 |   nan |    71 |
-   | KAON2 |   35 |  45 |    10 |   nan |
+   |       | GSAT | SSAT |  SK | HYPER | KAON2 |
+   |-------+------+------+-----+-------+-------|
+   | GSAT  |  nan |  254 |  52 |     7 |    77 |
+   | SSAT  |    5 |  nan |   0 |     0 |    10 |
+   | SK    |   72 |  288 | nan |     3 |    68 |
+   | HYPER |   82 |  309 |  71 |   nan |    97 |
+   | KAON2 |   59 |  252 |  47 |    10 |   nan |
 
    The same with a factor 5:
     #+BEGIN_src ipython :session mysession :results output raw
-     print(tabulate(win_sum(['GSAT', 'SK', 'HYPER', 'KAON2'], 5), headers="keys", tablefmt='orgtbl'))
+     print(tabulate(win_sum(['GSAT', 'SSAT', 'SK', 'HYPER', 'KAON2'], 5), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
    #+RESULTS:
-   |       | GSAT |  SK | HYPER | KAON2 |
-   |-------+------+-----+-------+-------|
-   | GSAT  |  nan |  20 |     0 |    18 |
-   | SK    |   25 | nan |     0 |    25 |
-   | HYPER |   27 |  24 |   nan |    37 |
-   | KAON2 |   21 |  19 |     1 |   nan |
+   |       | GSAT | SSAT |  SK | HYPER | KAON2 |
+   |-------+------+------+-----+-------+-------|
+   | GSAT  |  nan |  206 |  26 |     0 |    32 |
+   | SSAT  |    4 |  nan |   0 |     0 |     1 |
+   | SK    |   49 |  232 | nan |     0 |    36 |
+   | HYPER |   53 |  253 |  33 |   nan |    58 |
+   | KAON2 |   44 |  190 |  21 |     1 |   nan |
 
    The same with a factor 10 (one order of magnitude):
     #+BEGIN_src ipython :session mysession :results output raw
-     print(tabulate(win_sum(['GSAT', 'SK', 'HYPER', 'KAON2'], 10), headers="keys", tablefmt='orgtbl'))
+     print(tabulate(win_sum(['GSAT', 'SSAT', 'SK', 'HYPER', 'KAON2'], 10), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
    #+RESULTS:
-   |       | GSAT |  SK | HYPER | KAON2 |
-   |-------+------+-----+-------+-------|
-   | GSAT  |  nan |  13 |     0 |     9 |
-   | SK    |   13 | nan |     0 |    16 |
-   | HYPER |   13 |  12 |   nan |    20 |
-   | KAON2 |   13 |  13 |     0 |   nan |
+   |       | GSAT | SSAT |  SK | HYPER | KAON2 |
+   |-------+------+------+-----+-------+-------|
+   | GSAT  |  nan |  172 |  19 |     0 |    19 |
+   | SSAT  |    2 |  nan |   0 |     0 |     0 |
+   | SK    |   37 |  205 | nan |     0 |    26 |
+   | HYPER |   37 |  225 |  20 |   nan |    36 |
+   | KAON2 |   35 |  164 |  15 |     0 |   nan |
 
    Times corresponding to the table with a factor 10
   #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win10-0.png
