@@ -1616,10 +1616,10 @@
                  row.append(len(create_win(notimeout, time1, time2, factor).index))
          return pd.DataFrame(data, columns=prefixes, index=prefixes)
      
-     def win_collect(prefixes, factor=2):
+     def win_collect(prefixes, factor=2, competitors=None):
          indexes = set()
-     
-         for p1 in prefixes:
+         oponents = prefixes if competitors == None else competitors
+         for p1 in oponents:
              for p2 in prefixes:
                  if p1 == p2:
                      continue
@@ -1674,6 +1674,37 @@
    | SK    |   37 |  205 | nan |     0 |    26 |
    | HYPER |   37 |  225 |  20 |   nan |    36 |
    | KAON2 |   35 |  164 |  15 |     0 |   nan |
+
+   The number of ontologies on which HyperSat wins with an order of magnitude against another algorithm:
+   #+BEGIN_src ipython :session mysession :results output 
+      print(len(win_collect(['GSAT', 'SK', 'KAON2'], 10, ['HYPER'])))
+   #+END_src
+
+   #+RESULTS:
+   : 84
+
+
+   The same with a factor 100 (two orders of magnitude):
+    #+BEGIN_src ipython :session mysession :results output raw
+     print(tabulate(win_sum(['GSAT', 'SSAT', 'SK', 'HYPER', 'KAON2'], 100), headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   |       | GSAT | SSAT |  SK | HYPER | KAON2 |
+   |-------+------+------+-----+-------+-------|
+   | GSAT  |  nan |   90 |   0 |     0 |     0 |
+   | SSAT  |    1 |  nan |   0 |     0 |     0 |
+   | SK    |   26 |  106 | nan |     0 |     0 |
+   | HYPER |   26 |  124 |   0 |   nan |     0 |
+   | KAON2 |   27 |  108 |   1 |     0 |   nan |
+
+      The number of ontologies on which GSat loses with two orders of magnitude against another algorithm:
+   #+BEGIN_src ipython :session mysession :results output 
+      print(len(win_collect(['GSAT'], 100, ['HYPER', 'SK', 'KAON2'])))
+   #+END_src
+
+   #+RESULTS:
+   : 27
 
    Times corresponding to the table with a factor 10
   #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win10-0.png
@@ -1731,7 +1762,10 @@
   [[file:plots/win2-1.png]]
   :end:
 
-   
+  
+  
+
+  A manual selection of interesting ontologies
   #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/kept-times.png
     win_indexes_10 = win_collect(['GSAT', 'SK', 'HYPER', 'KAON2'], 10)
     win_indexes_10_similar = [ 13, 16, 17, 18, 19, 151, 283, 368, 369, 370, 386, 389, 396, 398, 415, 417, 421, 426, 532, 574, 575, 595, 597, 666, 677, 676, 700, 772, 788, 789]
