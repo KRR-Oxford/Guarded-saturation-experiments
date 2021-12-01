@@ -366,7 +366,7 @@
      all_timeout = get_all_timeout(['GSAT', 'SK', 'HYPER', 'KAON3', 'KAON2'], df_times)
      any_notimeout = df_times[ ~df_times.index.isin(all_timeout.index) ]
      
-     def get_timeout_only(prefix):
+     def get_timeout_only(prefix, any_notimeout):
          return any_notimeout[ ((any_notimeout[ prefix + '_TIME'] == 'TIMEOUT') | (any_notimeout[ prefix + '_TIME'] == 'ERROR'))]
      
      print(len(all_timeout.index))
@@ -414,7 +414,7 @@
 ** Timeout summary
 
       #+BEGIN_src ipython :session mysession :results none
-        def timeout_intersection(prefixes):
+        def timeout_intersection(prefixes, any_notimeout):
             data = []
         
             for p1 in prefixes:
@@ -424,7 +424,7 @@
                     row.append(len(get_all_timeout([p1, p2], any_notimeout).index))
             return pd.DataFrame(data, columns=prefixes, index=prefixes)
         
-        def one_timeout_atleast_indexes(prefixes):
+        def one_timeout_atleast_indexes(prefixes, any_notimeout):
             indexes = set()
             for p1 in prefixes:
                 indexes.update(get_all_timeout([p1], any_notimeout).index)
@@ -435,7 +435,7 @@
 
       The number of ontologies on which two algorithms reach the timeout simultaneously
    #+BEGIN_src ipython :session mysession :results output raw
-     print(tabulate(timeout_intersection(['GSAT', 'SSAT', 'SK', 'HYPER', 'KAON3', 'KAON2']), headers="keys", tablefmt='orgtbl'))
+     print(tabulate(timeout_intersection(['GSAT', 'SSAT', 'SK', 'HYPER', 'KAON3', 'KAON2'], any_notimeout), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
    #+RESULTS:
@@ -449,24 +449,24 @@
    | KAON2 |    8 |   37 | 18 |     7 |    25 |    37 |
 
       #+BEGIN_src ipython :session mysession :results none
-        def timeout_single_diff(p1, p2):
-            df1 = get_timeout_only(p1)
-            df2 = get_timeout_only(p2)
+        def timeout_single_diff(p1, p2, any_notimeout):
+            df1 = get_timeout_only(p1, any_notimeout)
+            df2 = get_timeout_only(p2, any_notimeout)
             return df1[ ~df1.index.isin(df2.index)]
         
-        def timeout_diff(prefixes):
+        def timeout_diff(prefixes, any_notimeout):
             data = []
         
             for p1 in prefixes:
                 row = []
                 data.append(row)
                 for p2 in prefixes:
-                    row.append(len(timeout_single_diff(p1, p2).index))
+                    row.append(len(timeout_single_diff(p1, p2, any_notimeout).index))
             return pd.DataFrame(data, columns=prefixes, index=prefixes)
    #+END_src
 
     #+BEGIN_src ipython :session mysession :results output raw :exports none
-     print(tabulate(timeout_diff(['GSAT', 'SK', 'HYPER', 'KAON2']), headers="keys", tablefmt='orgtbl'))
+     print(tabulate(timeout_diff(['GSAT', 'SK', 'HYPER', 'KAON2'], any_notimeout), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
    #+RESULTS:
@@ -3863,10 +3863,10 @@
     import pandas as pd
     from tabulate import tabulate
     
-    gsat_nsfile='2021-10-19-12-21-10g-v0.5.4/stats.csv'
-    sksat_nsfile='2021-10-21-11-44-10g-v0.5.4/stats.csv'
-    hyper_nsfile='2021-10-22-14-04-10g-v0.5.4/stats.csv'
-    kaon3_nsfile='2021-11-01-21-41-10g-v0.5.4/stats.csv'
+    gsat_nsfile='2021-11-19-19-41-10g-v0.5.5/stats.csv'
+    sksat_nsfile='2021-11-21-01-55-10g-v0.5.5/stats.csv'
+    hyper_nsfile='2021-11-26-17-20-10g-v0.5.5/stats.csv'
+    #kaon3_nsfile='2021-11-01-21-41-10g-v0.5.4/stats.csv'
     
     df_gsat_nsdata = pd.read_csv(gsat_nsfile, index_col='NAME').rename(columns={'TIME':'GSAT_TIME'})
     df_gsat_nsdata = df_gsat_nsdata.rename(columns={'OUTPUT_SIZE':'GSAT_OUTPUT'})
@@ -3880,17 +3880,17 @@
     df_sksat_nsdata = df_sksat_nsdata.rename(columns={'FTGD_NB':'SK_FTGD'})
     df_sksat_ns = df_sksat_nsdata[['SK_NFTGD', 'SK_FTGD', 'SK_OUTPUT', 'SK_TIME']]
     
-    df_kaon3_nsdata = pd.read_csv(kaon3_nsfile, index_col='NAME')
-    df_kaon3_nsdata = df_kaon3_nsdata.rename(columns={'OUTPUT_SIZE':'OUTPUT'})
-    df_kaon3_nsdata = df_kaon3_nsdata.rename(columns={'NFTGD_NB':'NFTGD'})
-    df_kaon3_nsdata = df_kaon3_nsdata.rename(columns={'FTGD_NB':'FTGD'}).add_prefix('NS_KAON3_')
-    df_kaon3_ns = df_kaon3_nsdata[['NS_KAON3_NFTGD', 'NS_KAON3_FTGD', 'NS_KAON3_OUTPUT', 'NS_KAON3_TIME']]
+    #df_kaon3_nsdata = pd.read_csv(kaon3_nsfile, index_col='NAME')
+    #df_kaon3_nsdata = df_kaon3_nsdata.rename(columns={'OUTPUT_SIZE':'OUTPUT'})
+    #df_kaon3_nsdata = df_kaon3_nsdata.rename(columns={'NFTGD_NB':'NFTGD'})
+    #df_kaon3_nsdata = df_kaon3_nsdata.rename(columns={'FTGD_NB':'FTGD'}).add_prefix('NS_KAON3_')
+    #df_kaon3_ns = df_kaon3_nsdata[['NS_KAON3_NFTGD', 'NS_KAON3_FTGD', 'NS_KAON3_OUTPUT', 'NS_KAON3_TIME']]
     
     df_hyper_nsdata = pd.read_csv(hyper_nsfile, index_col='NAME').rename(columns={'TIME':'HYPER_TIME'})
     df_hyper_nsdata = df_hyper_nsdata.rename(columns={'OUTPUT_SIZE':'HYPER_OUTPUT'})
     df_hyper_ns = df_hyper_nsdata[['HYPER_OUTPUT','HYPER_TIME']]
     
-    df_interesting_ns = pd.concat([df_gsat_ns, df_sksat_ns, df_kaon3_ns, df_hyper_ns], axis=1)
+    df_interesting_ns = pd.concat([df_gsat_ns, df_sksat_ns, df_hyper_ns], axis=1) #, df_kaon3_ns
     
     # selection of the execution where the input contains full and non full TDGs  
     df_interesting_ns = select_interesting(df_interesting_ns)
@@ -3905,6 +3905,131 @@
   In the following, the prefix ~NS~ means "no subsumption index".
 
 ** Timeout comparison with and without the subsumption index
+*** All the algorithm reach the timeout
+   The following table contains the rows where all the algorithm executions reach the timeout sorted by the input size. Their number:
+
+   #+BEGIN_src ipython :session mysession :results output example
+     all_timeout_ns = get_all_timeout(['GSAT', 'SK', 'HYPER'], df_times_ns)
+     any_notimeout_ns = df_times_ns[ ~df_times_ns.index.isin(all_timeout_ns.index) ]
+     
+     print(len(all_timeout_ns.index))
+   #+END_src
+
+   #+RESULTS:
+   : 46
+
+   #+BEGIN_src ipython :session mysession :results output raw
+     print(tabulate(all_timeout_ns, headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   | NAME | GSAT_NFTGD | GSAT_FTGD | GSAT_TIME | SK_TIME | HYPER_TIME |
+   |------+------------+-----------+-----------+---------+------------|
+   |   26 |      23858 |     30697 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   27 |      23858 |     31647 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   29 |        nan |       nan | ERROR     | TIMEOUT | TIMEOUT    |
+   |   32 |        nan |       nan | ERROR     | TIMEOUT | TIMEOUT    |
+   |   33 |      12339 |      9462 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   34 |      12339 |      9364 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   36 |      12329 |      9456 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   37 |      12323 |      9445 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   38 |      12339 |      9457 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   40 |      43622 |    100787 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   41 |      14319 |     67437 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   42 |      15417 |     71082 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   43 |      18612 |    115810 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   44 |      14319 |     67400 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   45 |      42430 |     98673 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   46 |      15352 |     69253 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |   47 |      14431 |     67545 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  319 |        187 |       243 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  350 |        942 |      3018 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  379 |      38615 |     90653 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  382 |       8378 |     47281 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  383 |      13719 |     65847 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  395 |      21802 |     60146 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  462 |       9433 |     13435 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  463 |       9433 |     10339 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  483 |      29022 |    114237 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  484 |      37999 |    101911 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  486 |       7777 |     46980 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  487 |      13015 |     65519 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  488 |       7777 |     46967 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  489 |       9507 |     52445 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  541 |       9133 |     27085 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  554 |      74233 |    106867 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  658 |       9117 |     15170 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  660 |       6673 |     13597 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  675 |      25194 |     67697 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  760 |      50814 |    170834 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  761 |       5598 |     13151 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  762 |       2508 |      6634 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  778 |      42054 |    113187 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  781 |        187 |       243 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  783 |        187 |       241 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  786 |      76399 |    109114 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  787 |      45442 |     59418 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  792 |      27874 |     42585 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+   |  795 |      47412 |     65392 | TIMEOUT   | TIMEOUT | TIMEOUT    |
+
+*** Timeout summary
+
+      The number of ontologies on which two algorithms reach the timeout simultaneously
+   #+BEGIN_src ipython :session mysession :results output raw
+     print(tabulate(timeout_intersection(['GSAT', 'SK', 'HYPER'], any_notimeout_ns), headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   |       | GSAT | SK | HYPER |
+   |-------+------+----+-------|
+   | GSAT  |   84 |  1 |    67 |
+   | SK    |    1 |  1 |     0 |
+   | HYPER |   67 |  0 |   198 |
+
+    #+BEGIN_src ipython :session mysession :results output raw :exports none
+     print(tabulate(timeout_diff(['GSAT', 'SK', 'HYPER'], any_notimeout_ns), headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   |       | GSAT |  SK | HYPER |
+   |-------+------+-----+-------|
+   | GSAT  |    0 |  83 |    17 |
+   | SK    |    0 |   0 |     1 |
+   | HYPER |  131 | 198 |     0 |
+
+   The times on the ontologies where at least one algorithm reaches timeout. 
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/anynotimeout0.png
+    plot_values(times[ times.index.isin(one_timeout_atleast_indexes(['GSAT', 'SK', 'HYPER', 'KAON2']))].drop(columns=['KAON3_TIME']), 0)
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[326]:
+  [[file:plots/anynotimeout0.png]]
+  :end:
+
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/anynotimeout1.png
+    plot_values(times[ times.index.isin(one_timeout_atleast_indexes(['GSAT', 'SK', 'HYPER', 'KAON2']))].drop(columns=['KAON3_TIME']), 1)
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[325]:
+  [[file:plots/anynotimeout1.png]]
+  :end:
+
+  A interesting selection of these times
+  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/interesting_timeout.png
+    interesting_timeout_indexes = [ 4, 21, 174, 354, 381, 382, 410, 470, 477, 479, 518, 553, 684, 703, 783 ]
+    plot_values(times[ times.index.isin(interesting_timeout_indexes)].drop(columns=['KAON3_TIME']).sort_values(by="HYPER_TIME"), 1)
+  #+END_SRC
+
+  #+RESULTS:
+  :results:
+  # Out[351]:
+  [[file:plots/interesting_timeout.png]]
+  :end:
+
 
 *** GSat
     Cases, where GSat reaches timeout and GSat without subsumption is not.
