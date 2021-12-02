@@ -1,0 +1,74 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 4536; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolem Sat
+Running SkSat...
+Nov 23, 2021 12:52:55 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: SkSat discarded rules : 0/4536 = 0.000%
+SkSat discarded rules : 0/4536 = 0.000%
+Nov 23, 2021 12:52:55 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.5
+number of bags: 11
+length of the formulas: 2.5
+number of bags: 11
+nonFullTGDs	0		fullTGDs	3024			newNonFullTGDs	3024		newFullTGDs	0
+nonFullTGDs	100		fullTGDs	3024			newNonFullTGDs	2924		newFullTGDs	75548
+nonFullTGDs	200		fullTGDs	3024			newNonFullTGDs	2824		newFullTGDs	151096
+nonFullTGDs	300		fullTGDs	3024			newNonFullTGDs	2724		newFullTGDs	226646
+nonFullTGDs	400		fullTGDs	3024			newNonFullTGDs	2624		newFullTGDs	302194
+nonFullTGDs	500		fullTGDs	3024			newNonFullTGDs	2524		newFullTGDs	377740
+nonFullTGDs	600		fullTGDs	3024			newNonFullTGDs	2424		newFullTGDs	453289
+nonFullTGDs	700		fullTGDs	3024			newNonFullTGDs	2324		newFullTGDs	528837
+nonFullTGDs	800		fullTGDs	3024			newNonFullTGDs	2224		newFullTGDs	604385
+nonFullTGDs	900		fullTGDs	3024			newNonFullTGDs	2124		newFullTGDs	679932
+nonFullTGDs	1000		fullTGDs	3024			newNonFullTGDs	2024		newFullTGDs	755481
+nonFullTGDs	1100		fullTGDs	3024			newNonFullTGDs	1924		newFullTGDs	831029
+nonFullTGDs	1200		fullTGDs	3024			newNonFullTGDs	1824		newFullTGDs	906575
+nonFullTGDs	1300		fullTGDs	3024			newNonFullTGDs	1724		newFullTGDs	982118
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 3024 , 3024
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: SkSat total time : 600775 ms = 600.78 s
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Subsumed elements : 36
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Filter discarded elements : 2346873873
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: subsumption time: 556885 ms = 556.89 s
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: forward subsumption time: 317800 ms = 317.80 s
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: backward subsumption time: 239085 ms = 239.08 s
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Derived full/non full TGDs: 1000944 , 0
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: discarded tautology count: 662
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: !!! TIME OUT !!!
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: Stop because subsumed: 0
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved equals to current: 0
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved time: 12379 ms = 12.38 s
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolve count: 4003776
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: maximum number of Skolem atoms in body: 1
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: left derived TGD with Skolem in the body: 0
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: right derived TGD with Skolem in the body: 1000944
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: derived TGD with more than two Skolem atoms in the body: 0
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: ouptput full TGDs not contained in the input: 0
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (3024 dependecies)
+Nov 23, 2021 1:02:56 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Writing the saturation in the Datalog file 00438.rul

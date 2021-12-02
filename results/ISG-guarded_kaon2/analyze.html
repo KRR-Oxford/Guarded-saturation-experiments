@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2021-12-01 Wed 17:21 -->
+<!-- 2021-12-01 Wed 17:29 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Comparison of GSat, SkolemSat, KAON3, HyperSat and KAON2</title>
@@ -226,141 +226,141 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org2c92010">1. Index of the experiments</a></li>
-<li><a href="#org0470a26">2. Introduction</a>
+<li><a href="#orgbe4b24a">1. Index of the experiments</a></li>
+<li><a href="#org8d72916">2. Introduction</a>
 <ul>
-<li><a href="#org8d7c505">2.1. Statistics on the input ontologies</a></li>
+<li><a href="#orgc18d3c1">2.1. Statistics on the input ontologies</a></li>
 </ul>
 </li>
-<li><a href="#org286fa30">3. Times Comparison</a></li>
-<li><a href="#org4624022">4. Timeout analysis</a>
+<li><a href="#org231dd13">3. Times Comparison</a></li>
+<li><a href="#orgbf47d45">4. Timeout analysis</a>
 <ul>
-<li><a href="#org1ae7c20">4.1. All the algorithm reach the timeout</a></li>
-<li><a href="#orgd1b36a2">4.2. Timeout summary</a></li>
-<li><a href="#org2134582">4.3. GSat timeout</a></li>
-<li><a href="#org9ba7e4c">4.4. SkolemSat timeout</a></li>
-<li><a href="#org02a2143">4.5. HyperSat timeout</a></li>
-<li><a href="#orgba96f30">4.6. KAON3 timeout</a></li>
-<li><a href="#org9b6696b">4.7. Kaon2 timeouts</a></li>
+<li><a href="#orgf6b666f">4.1. All the algorithm reach the timeout</a></li>
+<li><a href="#orgb7fb6af">4.2. Timeout summary</a></li>
+<li><a href="#org4266e41">4.3. GSat timeout</a></li>
+<li><a href="#orga114082">4.4. SkolemSat timeout</a></li>
+<li><a href="#org6266c36">4.5. HyperSat timeout</a></li>
+<li><a href="#org0990008">4.6. KAON3 timeout</a></li>
+<li><a href="#org9ffe2ad">4.7. Kaon2 timeouts</a></li>
 </ul>
 </li>
-<li><a href="#org717c3c7">5. Winning Algorithms</a>
+<li><a href="#org341d195">5. Winning Algorithms</a>
 <ul>
-<li><a href="#orgb9423f4">5.1. SkolemSat vs KAON3</a></li>
-<li><a href="#orgc15b060">5.2. KAON3 vs KAON2</a></li>
-<li><a href="#org6b3d0de">5.3. SkolemSat vs KAON2</a></li>
-<li><a href="#orgdf1db99">5.4. SkolemSat vs Gsat</a></li>
-<li><a href="#orga133cad">5.5. GSat vs KAON2</a></li>
-<li><a href="#org3c68235">5.6. SkolemSat vs HyperSat</a></li>
-<li><a href="#org83ffdef">5.7. HyperSat vs KAON2</a></li>
-<li><a href="#org4f6d39c">5.8. HyperSat vs Gsat</a></li>
-<li><a href="#org846fb36">5.9. HyperSat vs KAON3</a></li>
-<li><a href="#orga8a24b5">5.10. Winning case summary</a></li>
+<li><a href="#org5c4225a">5.1. SkolemSat vs KAON3</a></li>
+<li><a href="#orgd56471f">5.2. KAON3 vs KAON2</a></li>
+<li><a href="#org5e870c7">5.3. SkolemSat vs KAON2</a></li>
+<li><a href="#org2d8f81e">5.4. SkolemSat vs Gsat</a></li>
+<li><a href="#org8a5fa4f">5.5. GSat vs KAON2</a></li>
+<li><a href="#org96c15a9">5.6. SkolemSat vs HyperSat</a></li>
+<li><a href="#org9ee4439">5.7. HyperSat vs KAON2</a></li>
+<li><a href="#org2645c25">5.8. HyperSat vs Gsat</a></li>
+<li><a href="#org89f0129">5.9. HyperSat vs KAON3</a></li>
+<li><a href="#org5258001">5.10. Winning case summary</a></li>
 </ul>
 </li>
-<li><a href="#org1ac6b91">6. Percent of time spent for evolve applications</a>
+<li><a href="#orgf427a7d">6. Percent of time spent for evolve applications</a>
 <ul>
-<li><a href="#orgbb6bdb2">6.1. GSat</a></li>
-<li><a href="#org125a6a1">6.2. SkolemSat</a></li>
+<li><a href="#orgc26a73a">6.1. GSat</a></li>
+<li><a href="#org66de724">6.2. SkolemSat</a></li>
 </ul>
 </li>
-<li><a href="#orgfccdc78">7. Intermediate TGDs Analysis</a>
+<li><a href="#org2165adf">7. Intermediate TGDs Analysis</a>
 <ul>
-<li><a href="#orgcf20a59">7.1. SkolemSat and KAON3 derived TGDs</a></li>
-<li><a href="#org2daf3b6">7.2. GSat</a></li>
-<li><a href="#orgead93e2">7.3. SkolemSat</a></li>
-<li><a href="#org4aaf636">7.4. HyperSat</a></li>
-<li><a href="#orgc183c96">7.5. KAON3</a></li>
-<li><a href="#orgc15fa01">7.6. KAON2</a></li>
-<li><a href="#orgb3d3f16">7.7. Comparison</a></li>
+<li><a href="#org7df081d">7.1. SkolemSat and KAON3 derived TGDs</a></li>
+<li><a href="#org2b264a3">7.2. GSat</a></li>
+<li><a href="#orge764963">7.3. SkolemSat</a></li>
+<li><a href="#org494ea71">7.4. HyperSat</a></li>
+<li><a href="#org10ba4d5">7.5. KAON3</a></li>
+<li><a href="#org256f1e8">7.6. KAON2</a></li>
+<li><a href="#org60fafd0">7.7. Comparison</a></li>
 </ul>
 </li>
-<li><a href="#org23d8760">8. Intermediate TGDs vs subsumption time</a>
+<li><a href="#org4777dc8">8. Intermediate TGDs vs subsumption time</a>
 <ul>
-<li><a href="#org9d33dc0">8.1. SkolemSat</a></li>
+<li><a href="#org6a3076b">8.1. SkolemSat</a></li>
 </ul>
 </li>
-<li><a href="#org146eac6">9. Times vs input size</a>
+<li><a href="#org1924af3">9. Times vs input size</a>
 <ul>
-<li><a href="#orgc791b1f">9.1. GSat</a></li>
-<li><a href="#org5bc045e">9.2. SkolemSat</a></li>
-<li><a href="#org4b5ecfd">9.3. HyperSat</a></li>
-<li><a href="#orgc3f945a">9.4. KAON3</a></li>
-<li><a href="#orgfc4fca9">9.5. KAON2</a></li>
-<li><a href="#orge848758">9.6. Comparison</a></li>
+<li><a href="#org56bfba8">9.1. GSat</a></li>
+<li><a href="#org2d6a840">9.2. SkolemSat</a></li>
+<li><a href="#org7600a60">9.3. HyperSat</a></li>
+<li><a href="#orgda6cf41">9.4. KAON3</a></li>
+<li><a href="#org03aaee3">9.5. KAON2</a></li>
+<li><a href="#org8789053">9.6. Comparison</a></li>
 </ul>
 </li>
-<li><a href="#org4a8bce6">10. Output size comparison</a>
+<li><a href="#org156a0d0">10. Output size comparison</a>
 <ul>
-<li><a href="#orgc3f5b2d">10.1. Between GSat and SkolemSat</a></li>
-<li><a href="#org9085ec6">10.2. Between GSat and KAON3</a></li>
-<li><a href="#orgd7a5d29">10.3. Between GSat and KAON2</a></li>
-<li><a href="#org565a950">10.4. Between GSat and HyperSat</a></li>
-<li><a href="#orgc252ad7">10.5. Between SkolemSat and KAON2</a></li>
-<li><a href="#org53d4343">10.6. Between KAON3 and KAON2</a></li>
+<li><a href="#org086d2cd">10.1. Between GSat and SkolemSat</a></li>
+<li><a href="#org0cc33fc">10.2. Between GSat and KAON3</a></li>
+<li><a href="#orgc9fe879">10.3. Between GSat and KAON2</a></li>
+<li><a href="#orge5fbd43">10.4. Between GSat and HyperSat</a></li>
+<li><a href="#org874d996">10.5. Between SkolemSat and KAON2</a></li>
+<li><a href="#org0732ca1">10.6. Between KAON3 and KAON2</a></li>
 </ul>
 </li>
-<li><a href="#orgc51c61b">11. All Statistics</a></li>
-<li><a href="#orgb3cd454">12. Experiment without subsumption index</a>
+<li><a href="#orgc097c49">11. All Statistics</a></li>
+<li><a href="#orgc746834">12. Experiment without subsumption index</a>
 <ul>
-<li><a href="#org7c03808">12.1. Timeout comparison with and without the subsumption index</a>
+<li><a href="#org02b8ea3">12.1. Timeout comparison with and without the subsumption index</a>
 <ul>
-<li><a href="#org6c50af0">12.1.1. All the algorithm reach the timeout</a></li>
-<li><a href="#org11a283d">12.1.2. Timeout summary</a></li>
-<li><a href="#orgb780146">12.1.3. GSat</a></li>
-<li><a href="#orgbc8c659">12.1.4. SkolemSat</a></li>
-<li><a href="#org176e580">12.1.5. HyperSat</a></li>
+<li><a href="#org2bf7323">12.1.1. All the algorithm reach the timeout</a></li>
+<li><a href="#org424a649">12.1.2. Timeout summary</a></li>
+<li><a href="#org69712f3">12.1.3. GSat</a></li>
+<li><a href="#org3a793c7">12.1.4. SkolemSat</a></li>
+<li><a href="#org9201101">12.1.5. HyperSat</a></li>
 </ul>
 </li>
-<li><a href="#org7d18ef0">12.2. Winning algorithm between with and without subsumption index</a>
+<li><a href="#orga3b0395">12.2. Winning algorithm between with and without subsumption index</a>
 <ul>
-<li><a href="#orgec463d1">12.2.1. GSat</a></li>
-<li><a href="#orga6776e3">12.2.2. SkolemSat</a></li>
-<li><a href="#orgf2e9754">12.2.3. HyperSat</a></li>
+<li><a href="#org37c9c27">12.2.1. GSat</a></li>
+<li><a href="#orgf31a8fa">12.2.2. SkolemSat</a></li>
+<li><a href="#org33d0d3f">12.2.3. HyperSat</a></li>
 </ul>
 </li>
-<li><a href="#org9d25949">12.3. Impact of the subsumption on the intermediate TGDs</a>
+<li><a href="#orga32886f">12.3. Impact of the subsumption on the intermediate TGDs</a>
 <ul>
-<li><a href="#org3df2710">12.3.1. GSAT</a></li>
-<li><a href="#orgabe1aa2">12.3.2. SkolemSat</a></li>
-<li><a href="#org5fd25e1">12.3.3. HyperSat</a></li>
+<li><a href="#org761935b">12.3.1. GSAT</a></li>
+<li><a href="#orga8d8003">12.3.2. SkolemSat</a></li>
+<li><a href="#org54ebaec">12.3.3. HyperSat</a></li>
 </ul>
 </li>
-<li><a href="#org767a968">12.4. All Statistics</a></li>
+<li><a href="#org0a41ea4">12.4. All Statistics</a></li>
 </ul>
 </li>
-<li><a href="#org2415d63">13. Experiences with KAON2 structural transformation</a>
+<li><a href="#orgbb166ea">13. Experiences with KAON2 structural transformation</a>
 <ul>
-<li><a href="#orgdc62f2c">13.1. Timeout analysis</a></li>
-<li><a href="#orgea3c476">13.2. Winning cases</a></li>
+<li><a href="#org9c336e5">13.1. Timeout analysis</a></li>
+<li><a href="#org2bbb731">13.2. Winning cases</a></li>
 </ul>
 </li>
-<li><a href="#org52248db">14. Examples</a>
+<li><a href="#org00c8d43">14. Examples</a>
 <ul>
-<li><a href="#org8b28a38">14.1. An example where GSat looses exponentially against SkolemSat (case of 729)</a>
+<li><a href="#org0beb2e2">14.1. An example where GSat looses exponentially against SkolemSat (case of 729)</a>
 <ul>
-<li><a href="#org3a48d75">14.1.1. Simple example</a></li>
-<li><a href="#orgca9ab6b">14.1.2. GSat</a></li>
-<li><a href="#org1091c06">14.1.3. Skolemized version</a></li>
+<li><a href="#org177e415">14.1.1. Simple example</a></li>
+<li><a href="#org23d4be4">14.1.2. GSat</a></li>
+<li><a href="#orgfe4b9f8">14.1.3. Skolemized version</a></li>
 </ul>
 </li>
-<li><a href="#orge500167">14.2. An example where SkolemSat looses against GSat (case of 392)</a></li>
+<li><a href="#org159bf96">14.2. An example where SkolemSat looses against GSat (case of 392)</a></li>
 </ul>
 </li>
-<li><a href="#org10a190a">15. Questions</a>
+<li><a href="#org08b4f8f">15. Questions</a>
 <ul>
-<li><a href="#org7158d1b">15.1. What are the GSat errors</a></li>
-<li><a href="#org3658293">15.2. What are the SkolemSat errors</a></li>
-<li><a href="#org2ff47bd">15.3. What are the KAON3 errors</a></li>
-<li><a href="#orgbe16147">15.4. What are the HyperSat errors</a></li>
+<li><a href="#org607c42a">15.1. What are the GSat errors</a></li>
+<li><a href="#org365d9bf">15.2. What are the SkolemSat errors</a></li>
+<li><a href="#org1429f74">15.3. What are the KAON3 errors</a></li>
+<li><a href="#org0e78e3a">15.4. What are the HyperSat errors</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org2c92010" class="outline-2">
-<h2 id="org2c92010"><span class="section-number-2">1.</span> Index of the experiments</h2>
+<div id="outline-container-orgbe4b24a" class="outline-2">
+<h2 id="orgbe4b24a"><span class="section-number-2">1.</span> Index of the experiments</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Below, the links to the different experiments:
@@ -368,13 +368,13 @@ Below, the links to the different experiments:
 <ul class="org-ul">
 <li>this page is about Oxford ontology library (ISG) transformed into guarded TGDs without constants.</li>
 <li><a href="blowup-5.html">the same experiment with a size 5 blowup without permutation</a></li>
-<li><a href="#orgb3cd454">the same experiment without subsumption index</a></li>
+<li><a href="#orgc746834">the same experiment without subsumption index</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org0470a26" class="outline-2">
-<h2 id="org0470a26"><span class="section-number-2">2.</span> Introduction</h2>
+<div id="outline-container-org8d72916" class="outline-2">
+<h2 id="org8d72916"><span class="section-number-2">2.</span> Introduction</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 In the following, we explore the statistics outputted by the experiments on GSat, on SkolemSat, on simple sat, on KAON3 and on KAON2. The saturation times are in miliseconds in the columns <code>GSAT_TIME</code>, <code>SK_TIME</code>, <code>SSAT_TIME</code>, <code>KAON3_TIME</code> and <code>KAON2_TIME</code> respectively. The columns <code>NFTGD_NB</code> and <code>FTGD_NB</code> respectively contain the number of non full and full TGDs in input. Each row contain the values of the execution on the ontology whose name is in column <code>NAME</code>. The <b>timeout is 10 minutes</b>.
@@ -392,8 +392,8 @@ The number of remaining ontologies is:
 </pre>
 </div>
 
-<div id="outline-container-org8d7c505" class="outline-3">
-<h3 id="org8d7c505"><span class="section-number-3">2.1.</span> Statistics on the input ontologies</h3>
+<div id="outline-container-orgc18d3c1" class="outline-3">
+<h3 id="orgc18d3c1"><span class="section-number-3">2.1.</span> Statistics on the input ontologies</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 We keep for the experiments only the ontologies which contains both full and non-full TGDs and removing the redundant ontologies, so the number of remaining ontologies is:
@@ -480,71 +480,71 @@ The average proportion of full TGDs in the remaining ontologies is:
 </div>
 
 
-<div id="outline-container-org286fa30" class="outline-2">
-<h2 id="org286fa30"><span class="section-number-2">3.</span> Times Comparison</h2>
+<div id="outline-container-org231dd13" class="outline-2">
+<h2 id="org231dd13"><span class="section-number-2">3.</span> Times Comparison</h2>
 <div class="outline-text-2" id="text-3">
 
-<div id="org45ae867" class="figure">
+<div id="org85131c3" class="figure">
 <p><img src="plots/times0.png" alt="times0.png">
 </p>
 </div>
 
 
-<div id="orgdf0d8eb" class="figure">
+<div id="orgeb2086c" class="figure">
 <p><img src="plots/times1.png" alt="times1.png">
 </p>
 </div>
 
 
-<div id="orgd01fbe4" class="figure">
+<div id="orgb92737d" class="figure">
 <p><img src="plots/times2.png" alt="times2.png">
 </p>
 </div>
 
 
-<div id="org51b1ad8" class="figure">
+<div id="orgf319954" class="figure">
 <p><img src="plots/times3.png" alt="times3.png">
 </p>
 </div>
 
 
-<div id="orga3882c5" class="figure">
+<div id="orgcec8203" class="figure">
 <p><img src="plots/times4.png" alt="times4.png">
 </p>
 </div>
 
 
-<div id="org2b328bc" class="figure">
+<div id="org0d28abd" class="figure">
 <p><img src="plots/times5.png" alt="times5.png">
 </p>
 </div>
 
 
-<div id="org26d5fa2" class="figure">
+<div id="org91a188d" class="figure">
 <p><img src="plots/times6.png" alt="times6.png">
 </p>
 </div>
 
 
-<div id="orgcdd9b43" class="figure">
+<div id="org7983eb2" class="figure">
 <p><img src="plots/times7.png" alt="times7.png">
 </p>
 </div>
 
 
-<div id="org8ff221e" class="figure">
+<div id="orgb19f5f0" class="figure">
 <p><img src="plots/times8.png" alt="times8.png">
 </p>
 </div>
 
 
-<div id="orgf0cea62" class="figure">
+<div id="org189a5fe" class="figure">
 <p><img src="plots/times9.png" alt="times9.png">
 </p>
 </div>
 
 
-<div id="org82373d4" class="figure">
+<div id="org9bc2e5b" class="figure">
 <p><img src="plots/times10.png" alt="times10.png">
 </p>
 </div>
@@ -557,7 +557,7 @@ Cactus plot of the times
 </pre>
 
 
-<div id="org3b7dbe6" class="figure">
+<div id="orgb1b843b" class="figure">
 <p><img src="plots/cactus_times.png" alt="cactus_times.png">
 </p>
 </div>
@@ -566,7 +566,7 @@ Cactus plot of the times
 The same in log scale
 </p>
 
-<div id="orgb6b6965" class="figure">
+<div id="org0edb103" class="figure">
 <p><img src="plots/cactus_times_log.png" alt="cactus_times_log.png">
 </p>
 </div>
@@ -574,12 +574,12 @@ The same in log scale
 </div>
 
 
-<div id="outline-container-org4624022" class="outline-2">
-<h2 id="org4624022"><span class="section-number-2">4.</span> Timeout analysis</h2>
+<div id="outline-container-orgbf47d45" class="outline-2">
+<h2 id="orgbf47d45"><span class="section-number-2">4.</span> Timeout analysis</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org1ae7c20" class="outline-3">
-<h3 id="org1ae7c20"><span class="section-number-3">4.1.</span> All the algorithm reach the timeout</h3>
+<div id="outline-container-orgf6b666f" class="outline-3">
+<h3 id="orgf6b666f"><span class="section-number-3">4.1.</span> All the algorithm reach the timeout</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 The following table contains the rows where all the algorithm executions reach the timeout sorted by the input size. Their number:
@@ -977,8 +977,8 @@ The following table contains the rows where all the algorithm executions reach t
 </table>
 </div>
 </div>
-<div id="outline-container-orgd1b36a2" class="outline-3">
-<h3 id="orgd1b36a2"><span class="section-number-3">4.2.</span> Timeout summary</h3>
+<div id="outline-container-orgb7fb6af" class="outline-3">
+<h3 id="orgb7fb6af"><span class="section-number-3">4.2.</span> Timeout summary</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 The number of ontologies on which two algorithms reach the timeout simultaneously
@@ -1079,13 +1079,13 @@ The number of ontologies on which two algorithms reach the timeout simultaneousl
 The times on the ontologies where at least one algorithm reaches timeout. 
 </p>
 
-<div id="orgb3c9bff" class="figure">
+<div id="org22dd1dd" class="figure">
 <p><img src="plots/anynotimeout0.png" alt="anynotimeout0.png">
 </p>
 </div>
 
 
-<div id="org8c2922b" class="figure">
+<div id="orge338e2d" class="figure">
 <p><img src="plots/anynotimeout1.png" alt="anynotimeout1.png">
 </p>
 </div>
@@ -1094,7 +1094,7 @@ The times on the ontologies where at least one algorithm reaches timeout.
 A interesting selection of these times
 </p>
 
-<div id="org011d3b3" class="figure">
+<div id="orgceb14b0" class="figure">
 <p><img src="plots/interesting_timeout.png" alt="interesting_timeout.png">
 </p>
 </div>
@@ -1102,8 +1102,8 @@ A interesting selection of these times
 </div>
 
 
-<div id="outline-container-org2134582" class="outline-3">
-<h3 id="org2134582"><span class="section-number-3">4.3.</span> GSat timeout</h3>
+<div id="outline-container-org4266e41" class="outline-3">
+<h3 id="org4266e41"><span class="section-number-3">4.3.</span> GSat timeout</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 The following table contains the rows where the Gsat execution reaches the timeout, while another algorithm is not, sorted by the input size.
@@ -1532,8 +1532,8 @@ The following table contains the rows where the Gsat execution reaches the timeo
 </div>
 </div>
 
-<div id="outline-container-org9ba7e4c" class="outline-3">
-<h3 id="org9ba7e4c"><span class="section-number-3">4.4.</span> SkolemSat timeout</h3>
+<div id="outline-container-orga114082" class="outline-3">
+<h3 id="orga114082"><span class="section-number-3">4.4.</span> SkolemSat timeout</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 The following table contains the rows where the SkolemSat executions reach the timeout, while another algorithm is not, sorted by the input size.
@@ -1817,8 +1817,8 @@ The following table contains the rows where the SkolemSat executions reach the t
 </div>
 </div>
 
-<div id="outline-container-org02a2143" class="outline-3">
-<h3 id="org02a2143"><span class="section-number-3">4.5.</span> HyperSat timeout</h3>
+<div id="outline-container-org6266c36" class="outline-3">
+<h3 id="org6266c36"><span class="section-number-3">4.5.</span> HyperSat timeout</h3>
 <div class="outline-text-3" id="text-4-5">
 <p>
 The following table contains the rows where the HyperSat executions reach the timeout, while another algorithm is not, sorted by the input size.
@@ -1937,8 +1937,8 @@ The following table contains the rows where the HyperSat executions reach the ti
 </div>
 </div>
 
-<div id="outline-container-orgba96f30" class="outline-3">
-<h3 id="orgba96f30"><span class="section-number-3">4.6.</span> KAON3 timeout</h3>
+<div id="outline-container-org0990008" class="outline-3">
+<h3 id="org0990008"><span class="section-number-3">4.6.</span> KAON3 timeout</h3>
 <div class="outline-text-3" id="text-4-6">
 <p>
 The following table contains the rows where the KAON3 executions reach the timeout, while another algorithm is not, sorted by the input size.
@@ -2464,8 +2464,8 @@ The following table contains the rows where the KAON3 executions reach the timeo
 </div>
 </div>
 
-<div id="outline-container-org9b6696b" class="outline-3">
-<h3 id="org9b6696b"><span class="section-number-3">4.7.</span> Kaon2 timeouts</h3>
+<div id="outline-container-org9ffe2ad" class="outline-3">
+<h3 id="org9ffe2ad"><span class="section-number-3">4.7.</span> Kaon2 timeouts</h3>
 <div class="outline-text-3" id="text-4-7">
 <p>
 The following table contains the rows where KAON2 executions reach the timeout of 10min, while another algorithm is not, sorted by the input size.
@@ -2915,8 +2915,8 @@ The following table contains the rows where KAON2 executions reach the timeout o
 </div>
 </div>
 
-<div id="outline-container-org717c3c7" class="outline-2">
-<h2 id="org717c3c7"><span class="section-number-2">5.</span> Winning Algorithms</h2>
+<div id="outline-container-org341d195" class="outline-2">
+<h2 id="org341d195"><span class="section-number-2">5.</span> Winning Algorithms</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 In the following, we show the ontologies on which an algorithm "wins" over another meaning that:
@@ -2927,8 +2927,8 @@ In the following, we show the ontologies on which an algorithm "wins" over anoth
 </ol>
 </div>
 
-<div id="outline-container-orgb9423f4" class="outline-3">
-<h3 id="orgb9423f4"><span class="section-number-3">5.1.</span> SkolemSat vs KAON3</h3>
+<div id="outline-container-org5c4225a" class="outline-3">
+<h3 id="org5c4225a"><span class="section-number-3">5.1.</span> SkolemSat vs KAON3</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 Comparison of skolemSat and KAON3.
@@ -3009,8 +3009,8 @@ Ontologies on which KAON3 wins over SkolemSat:
 </div>
 </div>
 
-<div id="outline-container-orgc15b060" class="outline-3">
-<h3 id="orgc15b060"><span class="section-number-3">5.2.</span> KAON3 vs KAON2</h3>
+<div id="outline-container-orgd56471f" class="outline-3">
+<h3 id="orgd56471f"><span class="section-number-3">5.2.</span> KAON3 vs KAON2</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 Comparison of KAON3 and KAON2.
@@ -4191,8 +4191,8 @@ Ontologies on which KAON2 wins over KAON3:
 </div>
 </div>
 
-<div id="outline-container-org6b3d0de" class="outline-3">
-<h3 id="org6b3d0de"><span class="section-number-3">5.3.</span> SkolemSat vs KAON2</h3>
+<div id="outline-container-org5e870c7" class="outline-3">
+<h3 id="org5e870c7"><span class="section-number-3">5.3.</span> SkolemSat vs KAON2</h3>
 <div class="outline-text-3" id="text-5-3">
 <p>
 Comparison of skolemSat and KAON2.
@@ -5505,8 +5505,8 @@ Ontologies on which KAON2 wins over SkolemSat:
 </div>
 </div>
 
-<div id="outline-container-orgdf1db99" class="outline-3">
-<h3 id="orgdf1db99"><span class="section-number-3">5.4.</span> SkolemSat vs Gsat</h3>
+<div id="outline-container-org2d8f81e" class="outline-3">
+<h3 id="org2d8f81e"><span class="section-number-3">5.4.</span> SkolemSat vs Gsat</h3>
 <div class="outline-text-3" id="text-5-4">
 <p>
 Comparison of skolemSat and GSat.
@@ -6693,8 +6693,8 @@ Ontologies on which GSat wins over SkolemSat:
 </div>
 </div>
 
-<div id="outline-container-orga133cad" class="outline-3">
-<h3 id="orga133cad"><span class="section-number-3">5.5.</span> GSat vs KAON2</h3>
+<div id="outline-container-org8a5fa4f" class="outline-3">
+<h3 id="org8a5fa4f"><span class="section-number-3">5.5.</span> GSat vs KAON2</h3>
 <div class="outline-text-3" id="text-5-5">
 <p>
 Comparison of skolemSat and KAON2.
@@ -7828,8 +7828,8 @@ Ontologies on which KAON2 wins over GSat:
 </div>
 </div>
 
-<div id="outline-container-org3c68235" class="outline-3">
-<h3 id="org3c68235"><span class="section-number-3">5.6.</span> SkolemSat vs HyperSat</h3>
+<div id="outline-container-org96c15a9" class="outline-3">
+<h3 id="org96c15a9"><span class="section-number-3">5.6.</span> SkolemSat vs HyperSat</h3>
 <div class="outline-text-3" id="text-5-6">
 <p>
 Comparison of skolemSat and HyperSat.
@@ -8444,8 +8444,8 @@ Ontologies on which HyperSat wins over SkolemSat:
 </div>
 </div>
 
-<div id="outline-container-org83ffdef" class="outline-3">
-<h3 id="org83ffdef"><span class="section-number-3">5.7.</span> HyperSat vs KAON2</h3>
+<div id="outline-container-org9ee4439" class="outline-3">
+<h3 id="org9ee4439"><span class="section-number-3">5.7.</span> HyperSat vs KAON2</h3>
 <div class="outline-text-3" id="text-5-7">
 <p>
 Comparison of HyperSat and KAON2.
@@ -9674,8 +9674,8 @@ Ontologies on which KAON2 wins over HyperSat:
 </div>
 </div>
 
-<div id="outline-container-org4f6d39c" class="outline-3">
-<h3 id="org4f6d39c"><span class="section-number-3">5.8.</span> HyperSat vs Gsat</h3>
+<div id="outline-container-org2645c25" class="outline-3">
+<h3 id="org2645c25"><span class="section-number-3">5.8.</span> HyperSat vs Gsat</h3>
 <div class="outline-text-3" id="text-5-8">
 <p>
 Comparison of HyperSat and GSat.
@@ -10459,8 +10459,8 @@ Ontologies on which GSat wins over HyperSat:
 </div>
 </div>
 
-<div id="outline-container-org846fb36" class="outline-3">
-<h3 id="org846fb36"><span class="section-number-3">5.9.</span> HyperSat vs KAON3</h3>
+<div id="outline-container-org89f0129" class="outline-3">
+<h3 id="org89f0129"><span class="section-number-3">5.9.</span> HyperSat vs KAON3</h3>
 <div class="outline-text-3" id="text-5-9">
 <p>
 Comparison of HyperSat and KAON3.
@@ -11037,8 +11037,8 @@ Ontologies on which KAON3 wins over HyperSat:
 </div>
 </div>
 
-<div id="outline-container-orga8a24b5" class="outline-3">
-<h3 id="orga8a24b5"><span class="section-number-3">5.10.</span> Winning case summary</h3>
+<div id="outline-container-org5258001" class="outline-3">
+<h3 id="org5258001"><span class="section-number-3">5.10.</span> Winning case summary</h3>
 <div class="outline-text-3" id="text-5-10">
 <p>
 A table showing the number of ontologies on which the algorithm on the row is winning against the column algorithm by a factor 2: 
@@ -11369,13 +11369,13 @@ The number of ontologies on which GSat loses with two orders of magnitude agains
 Times corresponding to the table with a factor 10
 </p>
 
-<div id="orgb50de89" class="figure">
+<div id="org24ce5ae" class="figure">
 <p><img src="plots/win10-0.png" alt="win10-0.png">
 </p>
 </div>
 
 
-<div id="org04e8ebe" class="figure">
+<div id="org477fb18" class="figure">
 <p><img src="plots/win10-1.png" alt="win10-1.png">
 </p>
 </div>
@@ -11384,7 +11384,7 @@ Times corresponding to the table with a factor 10
 Times corresponding to the table with a factor 5 (without those of factor 10)
 </p>
 
-<div id="org613a454" class="figure">
+<div id="org13a6d17" class="figure">
 <p><img src="plots/win5-0.png" alt="win5-0.png">
 </p>
 </div>
@@ -11393,13 +11393,13 @@ Times corresponding to the table with a factor 5 (without those of factor 10)
 Times corresponding to the table with a factor 2 (without those of factor 5 and 10)
 </p>
 
-<div id="orgdaa7d80" class="figure">
+<div id="orgb00eb5f" class="figure">
 <p><img src="plots/win2-0.png" alt="win2-0.png">
 </p>
 </div>
 
 
-<div id="org4f3f771" class="figure">
+<div id="orgabd0451" class="figure">
 <p><img src="plots/win2-1.png" alt="win2-1.png">
 </p>
 </div>
@@ -11411,7 +11411,7 @@ Times corresponding to the table with a factor 2 (without those of factor 5 and 
 A manual selection of interesting ontologies
 </p>
 
-<div id="org9beb1aa" class="figure">
+<div id="orgdd13872" class="figure">
 <p><img src="plots/kept-times.png" alt="kept-times.png">
 </p>
 </div>
@@ -11420,17 +11420,17 @@ A manual selection of interesting ontologies
 </div>
 
 
-<div id="outline-container-org1ac6b91" class="outline-2">
-<h2 id="org1ac6b91"><span class="section-number-2">6.</span> Percent of time spent for evolve applications</h2>
+<div id="outline-container-orgf427a7d" class="outline-2">
+<h2 id="orgf427a7d"><span class="section-number-2">6.</span> Percent of time spent for evolve applications</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-orgbb6bdb2" class="outline-3">
-<h3 id="orgbb6bdb2"><span class="section-number-3">6.1.</span> GSat</h3>
+<div id="outline-container-orgc26a73a" class="outline-3">
+<h3 id="orgc26a73a"><span class="section-number-3">6.1.</span> GSat</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 Below, you can find the percent of time spent for evolving TGD at different quantiles.
 </p>
-<pre class="example" id="org91c6db0">
+<pre class="example" id="orgd577175">
 0.10    42.941224
 0.25    51.476618
 0.50    61.431065
@@ -11442,13 +11442,13 @@ Name: PERCENT, dtype: float64
 </div>
 
 
-<div id="outline-container-org125a6a1" class="outline-3">
-<h3 id="org125a6a1"><span class="section-number-3">6.2.</span> SkolemSat</h3>
+<div id="outline-container-org66de724" class="outline-3">
+<h3 id="org66de724"><span class="section-number-3">6.2.</span> SkolemSat</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 Below, you can find the percent of time spent for evolving TGD at different quantiles.
 </p>
-<pre class="example" id="org7648c1a">
+<pre class="example" id="org8c2ad64">
 0.10     4.533700
 0.25    10.240582
 0.50    16.585392
@@ -13022,12 +13022,12 @@ Name: PERCENT, dtype: float64
 </div>
 </div>
 
-<div id="outline-container-orgfccdc78" class="outline-2">
-<h2 id="orgfccdc78"><span class="section-number-2">7.</span> Intermediate TGDs Analysis</h2>
+<div id="outline-container-org2165adf" class="outline-2">
+<h2 id="org2165adf"><span class="section-number-2">7.</span> Intermediate TGDs Analysis</h2>
 <div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-orgcf20a59" class="outline-3">
-<h3 id="orgcf20a59"><span class="section-number-3">7.1.</span> SkolemSat and KAON3 derived TGDs</h3>
+<div id="outline-container-org7df081d" class="outline-3">
+<h3 id="org7df081d"><span class="section-number-3">7.1.</span> SkolemSat and KAON3 derived TGDs</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
 We compare the number of TGDs derived by SkolemSat and by KAON3, by showing the ontologies where KAON3 derives twice as much TGD than SkolemSat. 
@@ -15070,70 +15070,70 @@ The table shows the ontologies, where the SkolemSat derives twice as much TGD th
 </table>
 </div>
 </div>
-<div id="outline-container-org2daf3b6" class="outline-3">
-<h3 id="org2daf3b6"><span class="section-number-3">7.2.</span> GSat</h3>
+<div id="outline-container-org2b264a3" class="outline-3">
+<h3 id="org2b264a3"><span class="section-number-3">7.2.</span> GSat</h3>
 <div class="outline-text-3" id="text-7-2">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </p>
 
-<div id="org183241d" class="figure">
+<div id="org818fee1" class="figure">
 <p><img src="plots/gsat_intermediate_time.png" alt="gsat_intermediate_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgead93e2" class="outline-3">
-<h3 id="orgead93e2"><span class="section-number-3">7.3.</span> SkolemSat</h3>
+<div id="outline-container-orge764963" class="outline-3">
+<h3 id="orge764963"><span class="section-number-3">7.3.</span> SkolemSat</h3>
 <div class="outline-text-3" id="text-7-3">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </p>
 
-<div id="orgf21fcba" class="figure">
+<div id="orge676474" class="figure">
 <p><img src="plots/sk_intermediate_time.png" alt="sk_intermediate_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org4aaf636" class="outline-3">
-<h3 id="org4aaf636"><span class="section-number-3">7.4.</span> HyperSat</h3>
+<div id="outline-container-org494ea71" class="outline-3">
+<h3 id="org494ea71"><span class="section-number-3">7.4.</span> HyperSat</h3>
 <div class="outline-text-3" id="text-7-4">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </p>
 
-<div id="org0c96fd6" class="figure">
+<div id="orgd6b0e58" class="figure">
 <p><img src="plots/hyper_intermediate_time.png" alt="hyper_intermediate_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgc183c96" class="outline-3">
-<h3 id="orgc183c96"><span class="section-number-3">7.5.</span> KAON3</h3>
+<div id="outline-container-org10ba4d5" class="outline-3">
+<h3 id="org10ba4d5"><span class="section-number-3">7.5.</span> KAON3</h3>
 <div class="outline-text-3" id="text-7-5">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </p>
 
-<div id="org5142704" class="figure">
+<div id="orgb213d74" class="figure">
 <p><img src="plots/kaon3_intermediate_time.png" alt="kaon3_intermediate_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgc15fa01" class="outline-3">
-<h3 id="orgc15fa01"><span class="section-number-3">7.6.</span> KAON2</h3>
+<div id="outline-container-org256f1e8" class="outline-3">
+<h3 id="org256f1e8"><span class="section-number-3">7.6.</span> KAON2</h3>
 <div class="outline-text-3" id="text-7-6">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </p>
 
-<div id="org613b7d5" class="figure">
+<div id="orgeb77fe8" class="figure">
 <p><img src="plots/kaon2_intermediate_time.png" alt="kaon2_intermediate_time.png">
 </p>
 </div>
@@ -15141,8 +15141,8 @@ Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </div>
 
 
-<div id="outline-container-orgb3d3f16" class="outline-3">
-<h3 id="orgb3d3f16"><span class="section-number-3">7.7.</span> Comparison</h3>
+<div id="outline-container-org60fafd0" class="outline-3">
+<h3 id="org60fafd0"><span class="section-number-3">7.7.</span> Comparison</h3>
 <div class="outline-text-3" id="text-7-7">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
@@ -15152,7 +15152,7 @@ Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </pre>
 
 
-<div id="org476e678" class="figure">
+<div id="org62115b9" class="figure">
 <p><img src="plots/all_intermediate_time.png" alt="all_intermediate_time.png">
 </p>
 </div>
@@ -15165,7 +15165,7 @@ Scatter plot the number of intermediate TGDs in function of the size of the inpu
 </pre>
 
 
-<div id="org7a6e67d" class="figure">
+<div id="org5af8a5f" class="figure">
 <p><img src="plots/all_input_intermediate.png" alt="all_input_intermediate.png">
 </p>
 </div>
@@ -15173,12 +15173,12 @@ Scatter plot the number of intermediate TGDs in function of the size of the inpu
 </div>
 </div>
 
-<div id="outline-container-org23d8760" class="outline-2">
-<h2 id="org23d8760"><span class="section-number-2">8.</span> Intermediate TGDs vs subsumption time</h2>
+<div id="outline-container-org4777dc8" class="outline-2">
+<h2 id="org4777dc8"><span class="section-number-2">8.</span> Intermediate TGDs vs subsumption time</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-org9d33dc0" class="outline-3">
-<h3 id="org9d33dc0"><span class="section-number-3">8.1.</span> SkolemSat</h3>
+<div id="outline-container-org6a3076b" class="outline-3">
+<h3 id="org6a3076b"><span class="section-number-3">8.1.</span> SkolemSat</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
 Scatter plot of the subsumption time in ms in function of the number of intermediate TGDs. The subsumption is sub-linear.
@@ -15188,7 +15188,7 @@ Scatter plot of the subsumption time in ms in function of the number of intermed
 </pre>
 
 
-<div id="orgb0a7804" class="figure">
+<div id="org383981c" class="figure">
 <p><img src="plots/sk_intermediate_sumb_time.png" alt="sk_intermediate_sumb_time.png">
 </p>
 </div>
@@ -15196,75 +15196,75 @@ Scatter plot of the subsumption time in ms in function of the number of intermed
 </div>
 </div>
 
-<div id="outline-container-org146eac6" class="outline-2">
-<h2 id="org146eac6"><span class="section-number-2">9.</span> Times vs input size</h2>
+<div id="outline-container-org1924af3" class="outline-2">
+<h2 id="org1924af3"><span class="section-number-2">9.</span> Times vs input size</h2>
 <div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-orgc791b1f" class="outline-3">
-<h3 id="orgc791b1f"><span class="section-number-3">9.1.</span> GSat</h3>
+<div id="outline-container-org56bfba8" class="outline-3">
+<h3 id="org56bfba8"><span class="section-number-3">9.1.</span> GSat</h3>
 <div class="outline-text-3" id="text-9-1">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs
 </p>
 
-<div id="org9fb33f7" class="figure">
+<div id="org36ad068" class="figure">
 <p><img src="plots/gsat_input_time_time.png" alt="gsat_input_time_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org5bc045e" class="outline-3">
-<h3 id="org5bc045e"><span class="section-number-3">9.2.</span> SkolemSat</h3>
+<div id="outline-container-org2d6a840" class="outline-3">
+<h3 id="org2d6a840"><span class="section-number-3">9.2.</span> SkolemSat</h3>
 <div class="outline-text-3" id="text-9-2">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
 </p>
 
-<div id="orgbdeb1c0" class="figure">
+<div id="org8c843d2" class="figure">
 <p><img src="plots/sk_input_time_time.png" alt="sk_input_time_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org4b5ecfd" class="outline-3">
-<h3 id="org4b5ecfd"><span class="section-number-3">9.3.</span> HyperSat</h3>
+<div id="outline-container-org7600a60" class="outline-3">
+<h3 id="org7600a60"><span class="section-number-3">9.3.</span> HyperSat</h3>
 <div class="outline-text-3" id="text-9-3">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
 </p>
 
-<div id="org90d7c71" class="figure">
+<div id="orgad47f2b" class="figure">
 <p><img src="plots/hyper_input_time_time.png" alt="hyper_input_time_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgc3f945a" class="outline-3">
-<h3 id="orgc3f945a"><span class="section-number-3">9.4.</span> KAON3</h3>
+<div id="outline-container-orgda6cf41" class="outline-3">
+<h3 id="orgda6cf41"><span class="section-number-3">9.4.</span> KAON3</h3>
 <div class="outline-text-3" id="text-9-4">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
 </p>
 
-<div id="org15a26d9" class="figure">
+<div id="org1db32a9" class="figure">
 <p><img src="plots/kaon3_input_time_time.png" alt="kaon3_input_time_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgfc4fca9" class="outline-3">
-<h3 id="orgfc4fca9"><span class="section-number-3">9.5.</span> KAON2</h3>
+<div id="outline-container-org03aaee3" class="outline-3">
+<h3 id="org03aaee3"><span class="section-number-3">9.5.</span> KAON2</h3>
 <div class="outline-text-3" id="text-9-5">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
 </p>
 
 
-<div id="org73ceee2" class="figure">
+<div id="org3542d87" class="figure">
 <p><img src="plots/kaon2_input_time_time.png" alt="kaon2_input_time_time.png">
 </p>
 </div>
@@ -15272,8 +15272,8 @@ Scatter plot of the time in ms in function of the size of the input i.e. number 
 </div>
 
 
-<div id="outline-container-orge848758" class="outline-3">
-<h3 id="orge848758"><span class="section-number-3">9.6.</span> Comparison</h3>
+<div id="outline-container-org8789053" class="outline-3">
+<h3 id="org8789053"><span class="section-number-3">9.6.</span> Comparison</h3>
 <div class="outline-text-3" id="text-9-6">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full for GSat)
@@ -15283,7 +15283,7 @@ Scatter plot of the time in ms in function of the size of the input i.e. number 
 </pre>
 
 
-<div id="orga69ac85" class="figure">
+<div id="org826aa6e" class="figure">
 <p><img src="plots/all_input_time_time.png" alt="all_input_time_time.png">
 </p>
 </div>
@@ -15291,15 +15291,15 @@ Scatter plot of the time in ms in function of the size of the input i.e. number 
 </div>
 </div>
 
-<div id="outline-container-org4a8bce6" class="outline-2">
-<h2 id="org4a8bce6"><span class="section-number-2">10.</span> Output size comparison</h2>
+<div id="outline-container-org156a0d0" class="outline-2">
+<h2 id="org156a0d0"><span class="section-number-2">10.</span> Output size comparison</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 Below we compare the number of the outputted full TGDs of the different algorithm, we remove from this number the number of full TGDs in the input without transformation.
 </p>
 </div>
-<div id="outline-container-orgc3f5b2d" class="outline-3">
-<h3 id="orgc3f5b2d"><span class="section-number-3">10.1.</span> Between GSat and SkolemSat</h3>
+<div id="outline-container-org086d2cd" class="outline-3">
+<h3 id="org086d2cd"><span class="section-number-3">10.1.</span> Between GSat and SkolemSat</h3>
 <div class="outline-text-3" id="text-10-1">
 <p>
 Cases where GSat output is larger than the one of SkolemSat
@@ -15402,8 +15402,8 @@ Cases where SkolemSat output is larger than the one of GSat
 </div>
 
 
-<div id="outline-container-org9085ec6" class="outline-3">
-<h3 id="org9085ec6"><span class="section-number-3">10.2.</span> Between GSat and KAON3</h3>
+<div id="outline-container-org0cc33fc" class="outline-3">
+<h3 id="org0cc33fc"><span class="section-number-3">10.2.</span> Between GSat and KAON3</h3>
 <div class="outline-text-3" id="text-10-2">
 <p>
 Cases where GSat output is larger
@@ -15504,8 +15504,8 @@ Cases where KAON3 output is larger
 </div>
 </div>
 
-<div id="outline-container-orgd7a5d29" class="outline-3">
-<h3 id="orgd7a5d29"><span class="section-number-3">10.3.</span> Between GSat and KAON2</h3>
+<div id="outline-container-orgc9fe879" class="outline-3">
+<h3 id="orgc9fe879"><span class="section-number-3">10.3.</span> Between GSat and KAON2</h3>
 <div class="outline-text-3" id="text-10-3">
 <p>
 Cases where GSat output is larger
@@ -18599,8 +18599,8 @@ Cases where KAON2 output is larger
 </div>
 </div>
 
-<div id="outline-container-org565a950" class="outline-3">
-<h3 id="org565a950"><span class="section-number-3">10.4.</span> Between GSat and HyperSat</h3>
+<div id="outline-container-orge5fbd43" class="outline-3">
+<h3 id="orge5fbd43"><span class="section-number-3">10.4.</span> Between GSat and HyperSat</h3>
 <div class="outline-text-3" id="text-10-4">
 <p>
 Cases where GSat output is larger
@@ -18701,8 +18701,8 @@ Cases where HyperSat output is larger
 </div>
 </div>
 
-<div id="outline-container-orgc252ad7" class="outline-3">
-<h3 id="orgc252ad7"><span class="section-number-3">10.5.</span> Between SkolemSat and KAON2</h3>
+<div id="outline-container-org874d996" class="outline-3">
+<h3 id="org874d996"><span class="section-number-3">10.5.</span> Between SkolemSat and KAON2</h3>
 <div class="outline-text-3" id="text-10-5">
 <p>
 Cases where SkolemSat output is larger 
@@ -21301,8 +21301,8 @@ Cases where KAON2 output is larger
 </div>
 </div>
 
-<div id="outline-container-org53d4343" class="outline-3">
-<h3 id="org53d4343"><span class="section-number-3">10.6.</span> Between KAON3 and KAON2</h3>
+<div id="outline-container-org0732ca1" class="outline-3">
+<h3 id="org0732ca1"><span class="section-number-3">10.6.</span> Between KAON3 and KAON2</h3>
 <div class="outline-text-3" id="text-10-6">
 <p>
 Cases where KAON3 output is larger
@@ -23891,8 +23891,8 @@ Cases where KAON2 output is larger
 </div>
 </div>
 
-<div id="outline-container-orgc51c61b" class="outline-2">
-<h2 id="orgc51c61b"><span class="section-number-2">11.</span> All Statistics</h2>
+<div id="outline-container-orgc097c49" class="outline-2">
+<h2 id="orgc097c49"><span class="section-number-2">11.</span> All Statistics</h2>
 <div class="outline-text-2" id="text-11">
 <p>
 All the statistics:
@@ -32952,8 +32952,8 @@ All the statistics:
 </div>
 </div>
 
-<div id="outline-container-orgb3cd454" class="outline-2">
-<h2 id="orgb3cd454"><span class="section-number-2">12.</span> Experiment without subsumption index</h2>
+<div id="outline-container-orgc746834" class="outline-2">
+<h2 id="orgc746834"><span class="section-number-2">12.</span> Experiment without subsumption index</h2>
 <div class="outline-text-2" id="text-12">
 <p>
 The conclusion of these experiments is that enabling the subsumption helps all the algorithms except SkolemSat and KAON3.
@@ -32964,12 +32964,12 @@ In the following, the prefix <code>NS</code> means "no subsumption index".
 </p>
 </div>
 
-<div id="outline-container-org7c03808" class="outline-3">
-<h3 id="org7c03808"><span class="section-number-3">12.1.</span> Timeout comparison with and without the subsumption index</h3>
+<div id="outline-container-org02b8ea3" class="outline-3">
+<h3 id="org02b8ea3"><span class="section-number-3">12.1.</span> Timeout comparison with and without the subsumption index</h3>
 <div class="outline-text-3" id="text-12-1">
 </div>
-<div id="outline-container-org6c50af0" class="outline-4">
-<h4 id="org6c50af0"><span class="section-number-4">12.1.1.</span> All the algorithm reach the timeout</h4>
+<div id="outline-container-org2bf7323" class="outline-4">
+<h4 id="org2bf7323"><span class="section-number-4">12.1.1.</span> All the algorithm reach the timeout</h4>
 <div class="outline-text-4" id="text-12-1-1">
 <p>
 The following table contains the rows where all the algorithm executions reach the timeout sorted by the input size. Their number:
@@ -33425,8 +33425,8 @@ The following table contains the rows where all the algorithm executions reach t
 </div>
 </div>
 
-<div id="outline-container-org11a283d" class="outline-4">
-<h4 id="org11a283d"><span class="section-number-4">12.1.2.</span> Timeout summary</h4>
+<div id="outline-container-org424a649" class="outline-4">
+<h4 id="org424a649"><span class="section-number-4">12.1.2.</span> Timeout summary</h4>
 <div class="outline-text-4" id="text-12-1-2">
 <p>
 The number of ontologies on which two algorithms reach the timeout simultaneously
@@ -33474,35 +33474,11 @@ The number of ontologies on which two algorithms reach the timeout simultaneousl
 </tr>
 </tbody>
 </table>
-
-<p>
-The times on the ontologies where at least one algorithm reaches timeout. 
-</p>
-
-<div id="org2524cdc" class="figure">
-<p><img src="plots/anynotimeout0.png" alt="anynotimeout0.png">
-</p>
-</div>
-
-
-<div id="orgf6e109e" class="figure">
-<p><img src="plots/anynotimeout1.png" alt="anynotimeout1.png">
-</p>
-</div>
-
-<p>
-A interesting selection of these times
-</p>
-
-<div id="org342498d" class="figure">
-<p><img src="plots/interesting_timeout.png" alt="interesting_timeout.png">
-</p>
-</div>
 </div>
 </div>
 
-<div id="outline-container-orgb780146" class="outline-4">
-<h4 id="orgb780146"><span class="section-number-4">12.1.3.</span> GSat</h4>
+<div id="outline-container-org69712f3" class="outline-4">
+<h4 id="org69712f3"><span class="section-number-4">12.1.3.</span> GSat</h4>
 <div class="outline-text-4" id="text-12-1-3">
 <p>
 Cases, where GSat reaches timeout and GSat without subsumption is not.
@@ -33523,7 +33499,7 @@ Cases, where GSat reaches timeout and GSat without subsumption is not.
 
 <col  class="org-right">
 
-<col  class="org-right">
+<col  class="org-left">
 </colgroup>
 <thead>
 <tr>
@@ -33533,7 +33509,7 @@ Cases, where GSat reaches timeout and GSat without subsumption is not.
 <th scope="col" class="org-right">GSAT<sub>OUTPUT</sub></th>
 <th scope="col" class="org-left">GSAT<sub>TIME</sub></th>
 <th scope="col" class="org-right">NS<sub>GSAT</sub><sub>OUTPUT</sub></th>
-<th scope="col" class="org-right">NS<sub>GSAT</sub><sub>TIME</sub></th>
+<th scope="col" class="org-left">NS<sub>GSAT</sub><sub>TIME</sub></th>
 </tr>
 </thead>
 <tbody>
@@ -33544,7 +33520,7 @@ Cases, where GSat reaches timeout and GSat without subsumption is not.
 <td class="org-right">2159</td>
 <td class="org-left">TIMEOUT</td>
 <td class="org-right">nan</td>
-<td class="org-right">ERROR</td>
+<td class="org-left">ERROR</td>
 </tr>
 
 <tr>
@@ -33554,87 +33530,7 @@ Cases, where GSat reaches timeout and GSat without subsumption is not.
 <td class="org-right">2107</td>
 <td class="org-left">TIMEOUT</td>
 <td class="org-right">nan</td>
-<td class="org-right">ERROR</td>
-</tr>
-
-<tr>
-<td class="org-right">5</td>
-<td class="org-right">16705</td>
-<td class="org-right">2107</td>
-<td class="org-right">2107</td>
-<td class="org-left">TIMEOUT</td>
-<td class="org-right">nan</td>
-<td class="org-right">nan</td>
-</tr>
-
-<tr>
-<td class="org-right">28</td>
-<td class="org-right">23858</td>
-<td class="org-right">31647</td>
-<td class="org-right">31653</td>
-<td class="org-left">TIMEOUT</td>
-<td class="org-right">nan</td>
-<td class="org-right">nan</td>
-</tr>
-
-<tr>
-<td class="org-right">35</td>
-<td class="org-right">12339</td>
-<td class="org-right">9462</td>
-<td class="org-right">9463</td>
-<td class="org-left">TIMEOUT</td>
-<td class="org-right">nan</td>
-<td class="org-right">nan</td>
-</tr>
-
-<tr>
-<td class="org-right">344</td>
-<td class="org-right">187</td>
-<td class="org-right">243</td>
-<td class="org-right">254</td>
-<td class="org-left">TIMEOUT</td>
-<td class="org-right">nan</td>
-<td class="org-right">nan</td>
-</tr>
-
-<tr>
-<td class="org-right">345</td>
-<td class="org-right">187</td>
-<td class="org-right">243</td>
-<td class="org-right">254</td>
-<td class="org-left">TIMEOUT</td>
-<td class="org-right">nan</td>
-<td class="org-right">nan</td>
-</tr>
-
-<tr>
-<td class="org-right">758</td>
-<td class="org-right">14319</td>
-<td class="org-right">67400</td>
-<td class="org-right">67827</td>
-<td class="org-left">TIMEOUT</td>
-<td class="org-right">nan</td>
-<td class="org-right">nan</td>
-</tr>
-
-<tr>
-<td class="org-right">764</td>
-<td class="org-right">14319</td>
-<td class="org-right">67400</td>
-<td class="org-right">67827</td>
-<td class="org-left">TIMEOUT</td>
-<td class="org-right">nan</td>
-<td class="org-right">nan</td>
-</tr>
-
-<tr>
-<td class="org-right">782</td>
-<td class="org-right">187</td>
-<td class="org-right">243</td>
-<td class="org-right">254</td>
-<td class="org-left">TIMEOUT</td>
-<td class="org-right">nan</td>
-<td class="org-right">nan</td>
+<td class="org-left">ERROR</td>
 </tr>
 </tbody>
 </table>
@@ -34391,8 +34287,8 @@ Cases, where GSat without subsumption reaches timeout and GSat is not.
 </div>
 </div>
 
-<div id="outline-container-orgbc8c659" class="outline-4">
-<h4 id="orgbc8c659"><span class="section-number-4">12.1.4.</span> SkolemSat</h4>
+<div id="outline-container-org3a793c7" class="outline-4">
+<h4 id="org3a793c7"><span class="section-number-4">12.1.4.</span> SkolemSat</h4>
 <div class="outline-text-4" id="text-12-1-4">
 <p>
 Cases, where SkolemSat reaches timeout and SkolemSat without subsumption is not.
@@ -34670,8 +34566,8 @@ Cases, where SkolemSat without subsumption reaches timeout and SkolemSat is not.
 </div>
 </div>
 
-<div id="outline-container-org176e580" class="outline-4">
-<h4 id="org176e580"><span class="section-number-4">12.1.5.</span> HyperSat</h4>
+<div id="outline-container-org9201101" class="outline-4">
+<h4 id="org9201101"><span class="section-number-4">12.1.5.</span> HyperSat</h4>
 <div class="outline-text-4" id="text-12-1-5">
 <p>
 Cases, where HyperSat reaches timeout and HyperSat without subsumption is not.
@@ -36403,12 +36299,12 @@ Cases, where HyperSat without subsumption reaches timeout and HyperSat is not. T
 </div>
 
 
-<div id="outline-container-org7d18ef0" class="outline-3">
-<h3 id="org7d18ef0"><span class="section-number-3">12.2.</span> Winning algorithm between with and without subsumption index</h3>
+<div id="outline-container-orga3b0395" class="outline-3">
+<h3 id="orga3b0395"><span class="section-number-3">12.2.</span> Winning algorithm between with and without subsumption index</h3>
 <div class="outline-text-3" id="text-12-2">
 </div>
-<div id="outline-container-orgec463d1" class="outline-4">
-<h4 id="orgec463d1"><span class="section-number-4">12.2.1.</span> GSat</h4>
+<div id="outline-container-org37c9c27" class="outline-4">
+<h4 id="org37c9c27"><span class="section-number-4">12.2.1.</span> GSat</h4>
 <div class="outline-text-4" id="text-12-2-1">
 <p>
 Ontologies on which GSat with subsumption wins:
@@ -36984,8 +36880,8 @@ Ontologies on which GSat without subsumption wins:
 </div>
 </div>
 
-<div id="outline-container-orga6776e3" class="outline-4">
-<h4 id="orga6776e3"><span class="section-number-4">12.2.2.</span> SkolemSat</h4>
+<div id="outline-container-orgf31a8fa" class="outline-4">
+<h4 id="orgf31a8fa"><span class="section-number-4">12.2.2.</span> SkolemSat</h4>
 <div class="outline-text-4" id="text-12-2-2">
 <p>
 Ontologies on which SkolemSat with subsumption wins:
@@ -38330,8 +38226,8 @@ Ontologies on which SkolemSat without subsumption wins:
 </div>
 </div>
 
-<div id="outline-container-orgf2e9754" class="outline-4">
-<h4 id="orgf2e9754"><span class="section-number-4">12.2.3.</span> HyperSat</h4>
+<div id="outline-container-org33d0d3f" class="outline-4">
+<h4 id="org33d0d3f"><span class="section-number-4">12.2.3.</span> HyperSat</h4>
 <div class="outline-text-4" id="text-12-2-3">
 <p>
 Ontologies on which HyperSat with subsumption wins:
@@ -38399,13 +38295,13 @@ Ontologies on which HyperSat without subsumption wins:
 </div>
 </div>
 
-<div id="outline-container-org9d25949" class="outline-3">
-<h3 id="org9d25949"><span class="section-number-3">12.3.</span> Impact of the subsumption on the intermediate TGDs</h3>
+<div id="outline-container-orga32886f" class="outline-3">
+<h3 id="orga32886f"><span class="section-number-3">12.3.</span> Impact of the subsumption on the intermediate TGDs</h3>
 <div class="outline-text-3" id="text-12-3">
 </div>
 
-<div id="outline-container-org3df2710" class="outline-4">
-<h4 id="org3df2710"><span class="section-number-4">12.3.1.</span> GSAT</h4>
+<div id="outline-container-org761935b" class="outline-4">
+<h4 id="org761935b"><span class="section-number-4">12.3.1.</span> GSAT</h4>
 <div class="outline-text-4" id="text-12-3-1">
 <p>
 Among the case where it does not reach the timeout with subsumption, disabling the subsumption increases on average the number of intermediate TGDs derived in 10min by the factor:
@@ -38528,8 +38424,8 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 </div>
 </div>
 
-<div id="outline-container-orgabe1aa2" class="outline-4">
-<h4 id="orgabe1aa2"><span class="section-number-4">12.3.2.</span> SkolemSat</h4>
+<div id="outline-container-orga8d8003" class="outline-4">
+<h4 id="orga8d8003"><span class="section-number-4">12.3.2.</span> SkolemSat</h4>
 <div class="outline-text-4" id="text-12-3-2">
 <p>
 Among the case where it does not reach the timeout with subsumption, disabling the subsumption increases on average the number of intermediate TGDs derived in 10min by the factor:
@@ -38574,8 +38470,8 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 </div>
 </div>
 
-<div id="outline-container-org5fd25e1" class="outline-4">
-<h4 id="org5fd25e1"><span class="section-number-4">12.3.3.</span> HyperSat</h4>
+<div id="outline-container-org54ebaec" class="outline-4">
+<h4 id="org54ebaec"><span class="section-number-4">12.3.3.</span> HyperSat</h4>
 <div class="outline-text-4" id="text-12-3-3">
 <p>
 Among the case where it does not reach the timeout, disabling the subsumption increases on average the number of intermediate TGDs by:
@@ -38621,8 +38517,8 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 </div>
 </div>
 
-<div id="outline-container-org767a968" class="outline-3">
-<h3 id="org767a968"><span class="section-number-3">12.4.</span> All Statistics</h3>
+<div id="outline-container-org0a41ea4" class="outline-3">
+<h3 id="org0a41ea4"><span class="section-number-3">12.4.</span> All Statistics</h3>
 <div class="outline-text-3" id="text-12-4">
 <p>
 All the statistics:
@@ -44666,16 +44562,16 @@ All the statistics:
 </div>
 </div>
 
-<div id="outline-container-org2415d63" class="outline-2">
-<h2 id="org2415d63"><span class="section-number-2">13.</span> Experiences with KAON2 structural transformation</h2>
+<div id="outline-container-orgbb166ea" class="outline-2">
+<h2 id="orgbb166ea"><span class="section-number-2">13.</span> Experiences with KAON2 structural transformation</h2>
 <div class="outline-text-2" id="text-13">
 <p>
 NS stands for no subsumption, ST for structural transformation.
 </p>
 </div>
 
-<div id="outline-container-orgdc62f2c" class="outline-3">
-<h3 id="orgdc62f2c"><span class="section-number-3">13.1.</span> Timeout analysis</h3>
+<div id="outline-container-org9c336e5" class="outline-3">
+<h3 id="org9c336e5"><span class="section-number-3">13.1.</span> Timeout analysis</h3>
 <div class="outline-text-3" id="text-13-1">
 <p>
 Cases, where SkolemSat reaches timeout and SkolemSat without subsumption is not.
@@ -44930,8 +44826,8 @@ Cases, where SkolemSat without subsumption reaches timeout and SkolemSat is not.
 </div>
 
 
-<div id="outline-container-orgea3c476" class="outline-3">
-<h3 id="orgea3c476"><span class="section-number-3">13.2.</span> Winning cases</h3>
+<div id="outline-container-org2bbb731" class="outline-3">
+<h3 id="org2bbb731"><span class="section-number-3">13.2.</span> Winning cases</h3>
 <div class="outline-text-3" id="text-13-2">
 <p>
 Ontologies on which SkolemSat with subsumption wins:
@@ -48348,26 +48244,26 @@ The same where we compare with SkolemSat without structural transformation and w
 </div>
 
 
-<div id="outline-container-org52248db" class="outline-2">
-<h2 id="org52248db"><span class="section-number-2">14.</span> Examples</h2>
+<div id="outline-container-org00c8d43" class="outline-2">
+<h2 id="org00c8d43"><span class="section-number-2">14.</span> Examples</h2>
 <div class="outline-text-2" id="text-14">
 </div>
-<div id="outline-container-org8b28a38" class="outline-3">
-<h3 id="org8b28a38"><span class="section-number-3">14.1.</span> An example where GSat looses exponentially against SkolemSat (case of 729)</h3>
+<div id="outline-container-org0beb2e2" class="outline-3">
+<h3 id="org0beb2e2"><span class="section-number-3">14.1.</span> An example where GSat looses exponentially against SkolemSat (case of 729)</h3>
 <div class="outline-text-3" id="text-14-1">
 </div>
-<div id="outline-container-org3a48d75" class="outline-4">
-<h4 id="org3a48d75"><span class="section-number-4">14.1.1.</span> Simple example</h4>
+<div id="outline-container-org177e415" class="outline-4">
+<h4 id="org177e415"><span class="section-number-4">14.1.1.</span> Simple example</h4>
 <div class="outline-text-4" id="text-14-1-1">
 <p>
 We consider the single following non full TGD and the n full TGD as follows: 
 </p>
 
-<pre class="example" id="orgaa9abf4">
+<pre class="example" id="org36eca54">
 A(x) -&gt; B(x, y)
 </pre>
 
-<pre class="example" id="org45574d2">
+<pre class="example" id="org5321c51">
 B(x, y), C_i(x) -&gt; D_i(y) for i in 1..n
 </pre>
 
@@ -48377,13 +48273,13 @@ These TGDs are inspired from the ontology 729, more details are available on <a 
 </div>
 </div>
 
-<div id="outline-container-orgca9ab6b" class="outline-4">
-<h4 id="orgca9ab6b"><span class="section-number-4">14.1.2.</span> GSat</h4>
+<div id="outline-container-org23d4be4" class="outline-4">
+<h4 id="org23d4be4"><span class="section-number-4">14.1.2.</span> GSat</h4>
 <div class="outline-text-4" id="text-14-1-2">
 <p>
 Applying Evolve of these TGDs will produce the following TGDs, for I a subset of {1&#x2026;n}:
 </p>
-<pre class="example" id="orgcaabfd2">
+<pre class="example" id="orgf55b400">
 R_I : A(x), \wedge_{i \in I} C_i(x) -&gt; B(x, y) \wedge_{i \in I} D_i(y)
 </pre>
 <p>
@@ -48392,13 +48288,13 @@ Since R<sub>I</sub> is not subsumed by R<sub>J</sub> if I is not equal to J, it 
 </div>
 </div>
 
-<div id="outline-container-org1091c06" class="outline-4">
-<h4 id="org1091c06"><span class="section-number-4">14.1.3.</span> Skolemized version</h4>
+<div id="outline-container-orgfe4b9f8" class="outline-4">
+<h4 id="orgfe4b9f8"><span class="section-number-4">14.1.3.</span> Skolemized version</h4>
 <div class="outline-text-4" id="text-14-1-3">
 <p>
 If we simulate the behaviour of the skolemized version of the saturation on the simple example above, we obtain the following input TGDs:
 </p>
-<pre class="example" id="org2986b9c">
+<pre class="example" id="org217660b">
 A(x) -&gt; B(x, f(x))
 B(x, y), C_i(x) -&gt; D_i(y) for i in 1..n
 </pre>
@@ -48406,7 +48302,7 @@ B(x, y), C_i(x) -&gt; D_i(y) for i in 1..n
 <p>
 It is possible to evolve the first non-full TGD with each of the full TGD to obtain the following non-full TGDs:
 </p>
-<pre class="example" id="orgc359cc3">
+<pre class="example" id="org1e4b0b1">
 A(x) -&gt; C_i(x) -&gt; D_i(f(x)) for i in 1..n
 </pre>
 
@@ -48417,8 +48313,8 @@ This time, the number of derived TGDs is n.
 </div>
 </div>
 
-<div id="outline-container-orge500167" class="outline-3">
-<h3 id="orge500167"><span class="section-number-3">14.2.</span> An example where SkolemSat looses against GSat (case of 392)</h3>
+<div id="outline-container-org159bf96" class="outline-3">
+<h3 id="org159bf96"><span class="section-number-3">14.2.</span> An example where SkolemSat looses against GSat (case of 392)</h3>
 <div class="outline-text-3" id="text-14-2">
 <p>
 The reason why SkolemSat fails on this ontology is finally quite simple.
@@ -48461,12 +48357,12 @@ This large production of witnesses seems impossible to avoid, but a real perform
 </div>
 </div>
 
-<div id="outline-container-org10a190a" class="outline-2">
-<h2 id="org10a190a"><span class="section-number-2">15.</span> Questions</h2>
+<div id="outline-container-org08b4f8f" class="outline-2">
+<h2 id="org08b4f8f"><span class="section-number-2">15.</span> Questions</h2>
 <div class="outline-text-2" id="text-15">
 </div>
-<div id="outline-container-org7158d1b" class="outline-3">
-<h3 id="org7158d1b"><span class="section-number-3">15.1.</span> What are the GSat errors</h3>
+<div id="outline-container-org607c42a" class="outline-3">
+<h3 id="org607c42a"><span class="section-number-3">15.1.</span> What are the GSat errors</h3>
 <div class="outline-text-3" id="text-15-1">
 <p>
 There are several errors on GSAT, all of them are caused by out of memory error (10g was available).
@@ -48573,8 +48469,8 @@ There are several errors on GSAT, all of them are caused by out of memory error 
 </div>
 </div>
 
-<div id="outline-container-org3658293" class="outline-3">
-<h3 id="org3658293"><span class="section-number-3">15.2.</span> What are the SkolemSat errors</h3>
+<div id="outline-container-org365d9bf" class="outline-3">
+<h3 id="org365d9bf"><span class="section-number-3">15.2.</span> What are the SkolemSat errors</h3>
 <div class="outline-text-3" id="text-15-2">
 <p>
 There is three errors out of memory error (10g was available) using SkolemSat with predicate tree index.
@@ -48608,8 +48504,8 @@ There is three errors out of memory error (10g was available) using SkolemSat wi
 
 
 
-<div id="outline-container-org2ff47bd" class="outline-3">
-<h3 id="org2ff47bd"><span class="section-number-3">15.3.</span> What are the KAON3 errors</h3>
+<div id="outline-container-org1429f74" class="outline-3">
+<h3 id="org1429f74"><span class="section-number-3">15.3.</span> What are the KAON3 errors</h3>
 <div class="outline-text-3" id="text-15-3">
 <p>
 There are no error using KAON3
@@ -48639,8 +48535,8 @@ There are no error using KAON3
 </div>
 
 
-<div id="outline-container-orgbe16147" class="outline-3">
-<h3 id="orgbe16147"><span class="section-number-3">15.4.</span> What are the HyperSat errors</h3>
+<div id="outline-container-org0e78e3a" class="outline-3">
+<h3 id="org0e78e3a"><span class="section-number-3">15.4.</span> What are the HyperSat errors</h3>
 <div class="outline-text-3" id="text-15-4">
 <p>
 There are no error using hyper sat
@@ -48671,7 +48567,7 @@ There are no error using hyper sat
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-12-01 Wed 17:21</p>
+<p class="date">Created: 2021-12-01 Wed 17:29</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -38,46 +38,43 @@
     ssat_file='2021-05-15-18-32-10g-v0.5.1/stats.csv'
     hyper_file='2021-11-18-20-33-10g-v0.5.5/stats.csv'
     
-    df_gsat_data = pd.read_csv(gsat_file, index_col='NAME').rename(columns={'TIME':'GSAT_TIME'})
+    def select_interesting(df, nf_col='GSAT_NFTGD', f_col='GSAT_FTGD') :
+        return df[ df.index.isin(df_kept.index) ]
+    
+    df_gsat_data = select_interesting(pd.read_csv(gsat_file, index_col='NAME')).rename(columns={'TIME':'GSAT_TIME'})
     df_gsat_data = df_gsat_data.rename(columns={'OUTPUT_SIZE':'GSAT_OUTPUT'})
     df_gsat_data = df_gsat_data.rename(columns={'NFTGD_NB':'GSAT_NFTGD'})
     df_gsat_data = df_gsat_data.rename(columns={'FTGD_NB':'GSAT_FTGD'})
     df_gsat = df_gsat_data[['GSAT_NFTGD', 'GSAT_FTGD', 'GSAT_OUTPUT', 'GSAT_TIME']]
     
-    df_sksat_data = pd.read_csv(sksat_file, index_col='NAME').rename(columns={'TIME':'SK_TIME'})
+    df_sksat_data = select_interesting(pd.read_csv(sksat_file, index_col='NAME')).rename(columns={'TIME':'SK_TIME'})
     df_sksat_data = df_sksat_data.rename(columns={'OUTPUT_SIZE':'SK_OUTPUT'})
     df_sksat_data = df_sksat_data.rename(columns={'NFTGD_NB':'SK_NFTGD'})
     df_sksat_data = df_sksat_data.rename(columns={'FTGD_NB':'SK_FTGD'})
     df_sksat = df_sksat_data[['SK_NFTGD', 'SK_FTGD', 'SK_OUTPUT', 'SK_TIME']]
     
-    df_kaon3_data = pd.read_csv(ordsksat_file, index_col='NAME').rename(columns={'TIME':'KAON3_TIME'})
+    df_kaon3_data = select_interesting(pd.read_csv(ordsksat_file, index_col='NAME')).rename(columns={'TIME':'KAON3_TIME'})
     df_kaon3_data = df_kaon3_data.rename(columns={'OUTPUT_SIZE':'KAON3_OUTPUT'})
     df_kaon3_data = df_kaon3_data.rename(columns={'NFTGD_NB':'KAON3_NFTGD'})
     df_kaon3_data = df_kaon3_data.rename(columns={'FTGD_NB':'KAON3_FTGD'})
     df_kaon3 = df_kaon3_data[['KAON3_NFTGD', 'KAON3_FTGD', 'KAON3_OUTPUT', 'KAON3_TIME']]
     
-    df_kaon2_data = pd.read_csv(kaon2_file, index_col='NAME').rename(columns={'TIME':'KAON2_TIME'})
+    df_kaon2_data = select_interesting(pd.read_csv(kaon2_file, index_col='NAME')).rename(columns={'TIME':'KAON2_TIME'})
     df_kaon2_data = df_kaon2_data.rename(columns={'OUTPUT_SIZE':'KAON2_OUTPUT'})
     df_kaon2_data = df_kaon2_data.rename(columns={'AXIOM_NB':'AXIOM'})
     df_kaon2 = df_kaon2_data[['AXIOM', 'KAON2_OUTPUT', 'KAON2_TIME']]
     
-    df_ssat = pd.read_csv(ssat_file, index_col='NAME').rename(columns={'TIME':'SSAT_TIME'})
+    df_ssat = select_interesting(pd.read_csv(ssat_file, index_col='NAME')).rename(columns={'TIME':'SSAT_TIME'})
     df_ssat = df_ssat.rename(columns={'OUTPUT_SIZE':'SSAT_OUTPUT'})
     df_ssat = df_ssat[['SSAT_OUTPUT','SSAT_TIME']]
     
-    df_hyper_data = pd.read_csv(hyper_file, index_col='NAME').rename(columns={'TIME':'HYPER_TIME'})
+    df_hyper_data = select_interesting(pd.read_csv(hyper_file, index_col='NAME')).rename(columns={'TIME':'HYPER_TIME'})
     df_hyper_data = df_hyper_data.rename(columns={'OUTPUT_SIZE':'HYPER_OUTPUT'})
     df_hyper = df_hyper_data[['HYPER_OUTPUT','HYPER_TIME']]
     
     df_interesting = pd.concat([df_gsat, df_sksat, df_kaon3, df_hyper, df_kaon2, df_ssat], axis=1)
     
     df_kept = pd.read_csv('../../rules/ISG-guarded_kaon2/kept.csv', index_col='NAME')
-    
-    def select_interesting(df, nf_col='GSAT_NFTGD', f_col='GSAT_FTGD') :
-        return df[ df.index.isin(df_kept.index) ]
-    
-    # selection of the execution where the input contains full and non full TDGs  
-    df_interesting = select_interesting(df_interesting)
     
     # selection of interesting columns for times comparison
     df_times = df_interesting[ ['GSAT_NFTGD', 'GSAT_FTGD', 'GSAT_TIME', 'SSAT_TIME', 'SK_TIME', 'HYPER_TIME', 'KAON3_TIME', 'KAON2_TIME'] ]
@@ -3997,38 +3994,6 @@
    | SK    |    0 |   0 |     1 |
    | HYPER |  131 | 198 |     0 |
 
-   The times on the ontologies where at least one algorithm reaches timeout. 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/anynotimeout0.png
-    plot_values(times[ times.index.isin(one_timeout_atleast_indexes(['GSAT', 'SK', 'HYPER', 'KAON2']))].drop(columns=['KAON3_TIME']), 0)
-  #+END_SRC
-
-  #+RESULTS:
-  :results:
-  # Out[326]:
-  [[file:plots/anynotimeout0.png]]
-  :end:
-
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/anynotimeout1.png
-    plot_values(times[ times.index.isin(one_timeout_atleast_indexes(['GSAT', 'SK', 'HYPER', 'KAON2']))].drop(columns=['KAON3_TIME']), 1)
-  #+END_SRC
-
-  #+RESULTS:
-  :results:
-  # Out[325]:
-  [[file:plots/anynotimeout1.png]]
-  :end:
-
-  A interesting selection of these times
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/interesting_timeout.png
-    interesting_timeout_indexes = [ 4, 21, 174, 354, 381, 382, 410, 470, 477, 479, 518, 553, 684, 703, 783 ]
-    plot_values(times[ times.index.isin(interesting_timeout_indexes)].drop(columns=['KAON3_TIME']).sort_values(by="HYPER_TIME"), 1)
-  #+END_SRC
-
-  #+RESULTS:
-  :results:
-  # Out[351]:
-  [[file:plots/interesting_timeout.png]]
-  :end:
 
 *** GSat
     Cases, where GSat reaches timeout and GSat without subsumption is not.
@@ -4041,16 +4006,8 @@
     #+RESULTS:
     | NAME | GSAT_NFTGD | GSAT_FTGD | GSAT_OUTPUT | GSAT_TIME | NS_GSAT_OUTPUT | NS_GSAT_TIME |
     |------+------------+-----------+-------------+-----------+----------------+--------------|
-    |    3 |      16709 |      2159 |        2159 | TIMEOUT   |            nan |        ERROR |
-    |    4 |      16705 |      2107 |        2107 | TIMEOUT   |            nan |        ERROR |
-    |    5 |      16705 |      2107 |        2107 | TIMEOUT   |            nan |          nan |
-    |   28 |      23858 |     31647 |       31653 | TIMEOUT   |            nan |          nan |
-    |   35 |      12339 |      9462 |        9463 | TIMEOUT   |            nan |          nan |
-    |  344 |        187 |       243 |         254 | TIMEOUT   |            nan |          nan |
-    |  345 |        187 |       243 |         254 | TIMEOUT   |            nan |          nan |
-    |  758 |      14319 |     67400 |       67827 | TIMEOUT   |            nan |          nan |
-    |  764 |      14319 |     67400 |       67827 | TIMEOUT   |            nan |          nan |
-    |  782 |        187 |       243 |         254 | TIMEOUT   |            nan |          nan |
+    |    3 |      16709 |      2159 |        2159 | TIMEOUT   |            nan | ERROR        |
+    |    4 |      16705 |      2107 |        2107 | TIMEOUT   |            nan | ERROR        |
 
     Cases, where GSat without subsumption reaches timeout and GSat is not.
         #+BEGIN_src ipython :session mysession :results output 
