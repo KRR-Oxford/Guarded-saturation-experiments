@@ -1,0 +1,38 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 3274; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Dec 06, 2021 12:18:55 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/3274 = 0.000%
+HyperSat discarded rules : 0/3274 = 0.000%
+Dec 06, 2021 12:18:56 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 4.6085854
+number of bags: 4
+length of the formulas: 4.6085854
+number of bags: 4
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269)
+	at java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8440.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8840.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+	at uk.ac.ox.cs.gsat.TGDFactory.computeVNFAfterSortingByPredicates(TGDFactory.java:172)
+	at uk.ac.ox.cs.gsat.TGDFactory.computeVNF(TGDFactory.java:71)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolveWithNewNonFullTGD(HyperResolutionBasedSat.java:138)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:86)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Dec 06, 2021 12:26:45 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Dec 06, 2021 12:26:45 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269), java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633), java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8440.invoke(LambdaForm$MH), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8840.invoke(LambdaForm$MH), java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder), uk.ac.ox.cs.gsat.TGDFactory.computeVNFAfterSortingByPredicates(TGDFactory.java:172), uk.ac.ox.cs.gsat.TGDFactory.computeVNF(TGDFactory.java:71), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolveWithNewNonFullTGD(HyperResolutionBasedSat.java:138), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:86), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

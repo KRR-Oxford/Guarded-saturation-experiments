@@ -1,0 +1,33 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 9627; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Dec 05, 2021 9:08:07 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/9627 = 0.000%
+HyperSat discarded rules : 0/9627 = 0.000%
+Dec 05, 2021 9:08:08 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 4.5066266
+number of bags: 5
+length of the formulas: 4.5066266
+number of bags: 5
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.ImmutableCollections$SetN.iterator(ImmutableCollections.java:670)
+	at java.base/java.util.AbstractCollection.containsAll(AbstractCollection.java:324)
+	at uk.ac.ox.cs.gsat.subsumers.SimpleSubsumer.subsumed(SimpleSubsumer.java:74)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.addNewTGD(AbstractSaturation.java:275)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:102)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Dec 05, 2021 9:17:54 PM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Dec 05, 2021 9:17:54 PM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.util.ImmutableCollections$SetN.iterator(ImmutableCollections.java:670), java.base/java.util.AbstractCollection.containsAll(AbstractCollection.java:324), uk.ac.ox.cs.gsat.subsumers.SimpleSubsumer.subsumed(SimpleSubsumer.java:74), uk.ac.ox.cs.gsat.AbstractSaturation.addNewTGD(AbstractSaturation.java:275), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:102), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

@@ -1,0 +1,49 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 81978; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Dec 05, 2021 5:02:40 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/81978 = 0.000%
+HyperSat discarded rules : 0/81978 = 0.000%
+Dec 05, 2021 5:02:52 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 4.9109864
+number of bags: 7
+length of the formulas: 4.9109864
+number of bags: 7
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.LinkedHashMap.newNode(LinkedHashMap.java:256)
+	at java.base/java.util.HashMap.putVal(HashMap.java:627)
+	at java.base/java.util.HashMap.put(HashMap.java:608)
+	at java.base/java.util.HashSet.add(HashSet.java:220)
+	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:352)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:75)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:46)
+	at uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:63)
+	at uk.ac.ox.cs.pdq.fol.TGD.<init>(TGD.java:19)
+	at uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:42)
+	at uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:50)
+	at uk.ac.ox.cs.gsat.GTGD.<init>(GTGD.java:20)
+	at uk.ac.ox.cs.gsat.SkGTGD.<init>(SkGTGD.java:19)
+	at uk.ac.ox.cs.gsat.TGDFactory$SkGTGDConstructor.create(TGDFactory.java:365)
+	at uk.ac.ox.cs.gsat.TGDFactory$SkGTGDConstructor.create(TGDFactory.java:361)
+	at uk.ac.ox.cs.gsat.TGDFactory.create(TGDFactory.java:57)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.resolveOn(HyperResolutionBasedSat.java:315)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolveWithNewNonFullTGD(HyperResolutionBasedSat.java:136)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:86)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Dec 05, 2021 5:08:42 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Dec 05, 2021 5:08:42 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.util.LinkedHashMap.newNode(LinkedHashMap.java:256), java.base/java.util.HashMap.putVal(HashMap.java:627), java.base/java.util.HashMap.put(HashMap.java:608), java.base/java.util.HashSet.add(HashSet.java:220), java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:352), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:75), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:46), uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:63), uk.ac.ox.cs.pdq.fol.TGD.<init>(TGD.java:19), uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:42), uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:50), uk.ac.ox.cs.gsat.GTGD.<init>(GTGD.java:20), uk.ac.ox.cs.gsat.SkGTGD.<init>(SkGTGD.java:19), uk.ac.ox.cs.gsat.TGDFactory$SkGTGDConstructor.create(TGDFactory.java:365), uk.ac.ox.cs.gsat.TGDFactory$SkGTGDConstructor.create(TGDFactory.java:361), uk.ac.ox.cs.gsat.TGDFactory.create(TGDFactory.java:57), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.resolveOn(HyperResolutionBasedSat.java:315), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolveWithNewNonFullTGD(HyperResolutionBasedSat.java:136), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:86), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

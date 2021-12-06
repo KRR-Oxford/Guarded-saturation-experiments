@@ -1,0 +1,38 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 3960; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Dec 05, 2021 7:55:34 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/3960 = 0.000%
+HyperSat discarded rules : 0/3960 = 0.000%
+Dec 05, 2021 7:55:35 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 4.646743
+number of bags: 4
+length of the formulas: 4.646743
+number of bags: 4
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3689)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:238)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:243)
+	at java.base/java.util.ArrayList.add(ArrayList.java:486)
+	at java.base/java.util.ArrayList.add(ArrayList.java:499)
+	at uk.ac.ox.cs.gsat.SaturationUtils.getProduct(SaturationUtils.java:45)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.computeCandidatesForSkolemAtoms(HyperResolutionBasedSat.java:275)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolveStartingWith(HyperResolutionBasedSat.java:203)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolveWithNewNonFullTGD(HyperResolutionBasedSat.java:132)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:86)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Dec 05, 2021 8:03:16 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Dec 05, 2021 8:03:16 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.util.Arrays.copyOf(Arrays.java:3689), java.base/java.util.ArrayList.grow(ArrayList.java:238), java.base/java.util.ArrayList.grow(ArrayList.java:243), java.base/java.util.ArrayList.add(ArrayList.java:486), java.base/java.util.ArrayList.add(ArrayList.java:499), uk.ac.ox.cs.gsat.SaturationUtils.getProduct(SaturationUtils.java:45), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.computeCandidatesForSkolemAtoms(HyperResolutionBasedSat.java:275), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolveStartingWith(HyperResolutionBasedSat.java:203), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolveWithNewNonFullTGD(HyperResolutionBasedSat.java:132), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:86), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

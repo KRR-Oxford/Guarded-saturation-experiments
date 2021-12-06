@@ -4,7 +4,7 @@ set -e
 
 mem=10g
 sleep=5s
-version=0.5.5
+version=0.5.6
 date=`date +%Y-%m-%d-%H-%M`
 
 
