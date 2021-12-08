@@ -1644,6 +1644,49 @@ The number of remaining ontologies is:
    [[file:plots/all_input_intermediate.png]]
    :end:
    
+* Blow-up impact on the number of intermediate TGDs
+** SkolemSat
+
+   
+   #+BEGIN_src ipython :session mysession2  :results output raw
+     
+     sksat_file_nb='../ISG-guarded_kaon2/2021-11-11-22-03-10g-v0.5.5/stats.csv'
+     df_sksat_data_nb = get_data(sksat_file_nb, 'SK')
+     df_sksat_data_nb = df_sksat_data_nb.rename(columns={'SK_NEW_RTGD_BSK': 'SK_NEW_BSKTGD'})
+     df_sksat_data_nb['SK_NEW_FTGD'] = df_sksat_data_nb['SK_NEW_FTGD'] - df_sksat_data_nb['SK_NEW_BSKTGD']
+     
+     sk_intermediate_comp = pd.DataFrame([])
+     sk_intermediate_comp['INPUT'] = (df_sksat_data_nb['SK_FTGD'] + df_sksat_data_nb['SK_NFTGD']).apply(pd.to_numeric)
+     sk_intermediate_comp['NEW_TGD_BLOW'] = (df_sksat_data['SK_NEW_FTGD'] + df_sksat_data['SK_NEW_NFTGD'] + df_sksat_data['SK_NEW_BSKTGD']).apply(pd.to_numeric)
+     sk_intermediate_comp['NEW_TGD'] = (df_sksat_data_nb['SK_NEW_FTGD'] + df_sksat_data_nb['SK_NEW_NFTGD'] + df_sksat_data_nb['SK_NEW_BSKTGD']).apply(pd.to_numeric)
+     sk_intermediate_comp['FACTOR'] = sk_intermediate_comp['NEW_TGD_BLOW'] / sk_intermediate_comp['NEW_TGD']
+     sk_intermediate_comp = select_interesting(sk_intermediate_comp)
+     sk_intermediate_comp = sk_intermediate_comp[df_sksat_data['SK_TIME'] != 'TIMEOUT']
+     sk_intermediate_comp = sk_intermediate_comp[sk_intermediate_comp['NEW_TGD'] > 0]
+     sk_intermediate_comp = sk_intermediate_comp[sk_intermediate_comp['FACTOR'] > 40]
+     print(tabulate(sk_intermediate_comp, headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   | NAME | INPUT | NEW_TGD_BLOW | NEW_TGD |  FACTOR |
+   |------+-------+--------------+---------+---------|
+   |   13 |  1424 |       189780 |    4286 |  44.279 |
+   |   19 |  1220 |       261532 |    3893 | 67.1801 |
+   |   49 |    81 |         7726 |     152 | 50.8289 |
+   |  172 |   406 |       244589 |    3872 | 63.1686 |
+   |  218 |    14 |          128 |       3 | 42.6667 |
+   |  224 |     9 |           57 |       1 |      57 |
+   |  235 |    24 |           85 |       2 |    42.5 |
+   |  282 |  1021 |       546485 |    3678 | 148.582 |
+   |  284 |  1399 |       318396 |    5482 | 58.0803 |
+   |  293 |  2099 |           51 |       1 |      51 |
+   |  475 |   127 |         3123 |      70 | 44.6143 |
+   |  717 |    57 |         1381 |      33 | 41.8485 |
+   |  730 |    50 |         1148 |      18 | 63.7778 |
+   |  734 |   392 |       115823 |    2645 | 43.7894 |
+   |  783 |   429 |       498919 |    1978 | 252.234 |
+   |  788 |  2311 |        22157 |     471 | 47.0425 |
+   |  790 |  2568 |        14445 |     332 |  43.509 |
    
 *  All Statistics
 
