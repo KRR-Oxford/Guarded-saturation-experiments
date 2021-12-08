@@ -1641,7 +1641,7 @@
                  row.append(len(create_win(notimeout, time1, time2, factor).index))
          return pd.DataFrame(data, columns=prefixes, index=prefixes)
      
-     def win_collect(prefixes, factor=2, competitors=None):
+     def win_collect(prefixes, factor=2, competitors=None, df_times=df_times):
          indexes = set()
          oponents = prefixes if competitors == None else competitors
          for p1 in oponents:
@@ -6800,7 +6800,43 @@ NS stands for no subsumption, ST for structural transformation.
    |  795 |      47412 |     65392 |       66531 |   TIMEOUT |    94824 |   65392 |     65392 | TIMEOUT |        83626 |    TIMEOUT |
 
 
+* Experiment without the subsumption index clustering
+
+  #+BEGIN_src ipython :session mysession :results none
+    sksat_file_nc='2021-12-07-09-38-10g-v0.5.5_nsfix/stats.csv'
+    
+    df_sksat_data_nc = get_data(sksat_file_nc, 'SK-NC')
+    df_sksat_data_nc = df_sksat_data_nc.rename(columns={'SK-NC_NEW_RTGD_BSK': 'SK-NC_NEW_BSKTGD'})
+    df_sksat_data_nc['SK-NC_NEW_FTGD'] = df_sksat_data_nc['SK-NC_NEW_FTGD'] - df_sksat_data_nc['SK-NC_NEW_BSKTGD']
+    
+  #+END_src
+
   
+** Winning cases
+
+    Number of ontology where SkolemSat without subsumption index clustering and KAON2 beat each other by one order of magnitude:
+    #+BEGIN_src ipython :session mysession :results output raw
+      df_times_nc = pd.concat([df_sksat_data_nc, df_gsat, df_kaon2], axis=1)
+      
+      print(tabulate(win_sum(['GSAT', 'SK-NC', 'KAON2'], 10, df_times_nc), headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   |       | GSAT | SK-NC | KAON2 |
+   |-------+------+-------+-------|
+   | GSAT  |  nan |    44 |    19 |
+   | SK-NC |   29 |   nan |     1 |
+   | KAON2 |   35 |    31 |   nan |
+
+   The ontology where KAON2 still loses by one order of magnitude.
+   #+BEGIN_src ipython :session mysession :results output 
+      print((win_collect(['KAON2'], 10, ['SK-NC'], df_times_nc)))
+   #+END_src
+
+   #+RESULTS:
+   : [477]
+
+   
 * Examples
 ** An example where GSat looses exponentially against SkolemSat (case of 729)
 *** Simple example

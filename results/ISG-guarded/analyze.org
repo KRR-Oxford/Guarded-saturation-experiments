@@ -1,0 +1,95 @@
+#+BEGIN_src ipython :session mysessionnc :results none
+  import pandas as pd
+  from tabulate import tabulate
+  df_kept = pd.read_csv('../../rules/ISG-guarded_kaon2/kept.csv', index_col='NAME')
+  
+  def select_interesting(df, nf_col='GSAT_NFTGD', f_col='GSAT_FTGD') :
+      return df[ df.index.isin(df_kept.index) ]
+#+END_src
+
+#+BEGIN_src ipython :session mysessionnc :results output example
+  gsat_file_nc='../ISG-guarded_kaon2/2021-11-11-22-01-10g-v0.5.5/stats.csv'
+  gsat_file='2021-11-21-02-06-10g-v0.5.5/stats.csv'
+  def get_data(file_name, prefix):
+      df = select_interesting(pd.read_csv(file_name, index_col='NAME'))
+      df = df.rename(columns={'OUTPUT_SIZE':'OUTPUT'})
+      df = df.rename(columns={'NFTGD_NB':'NFTGD'})
+      df = df.rename(columns={'FTGD_NB':'FTGD'})
+      df = df.rename(columns={'NEW_NFTGD_NB':'NEW_NFTGD'})
+      df = df.rename(columns={'NEW_FTGD_NB':'NEW_FTGD'})
+      return df.add_prefix(prefix + '_')
+  
+  
+  df_gsat_nc = get_data(gsat_file_nc, 'GSAT-NC')
+  df_gsat = get_data(gsat_file, 'GSAT')
+  
+  df_interesting = pd.concat([df_gsat_nc, df_gsat], axis=1)
+#+END_src
+
+#+RESULTS:
+
+
+  #+BEGIN_src ipython :session mysessionnc :results none
+    pd.set_option('mode.chained_assignment', None)
+    def create_win(vs, time1, time2, factor=2):
+        vs['TIME_FACTOR'] = (vs[time2] / vs[time1])
+        one_win_over_two = vs[(vs['TIME_FACTOR'] > factor) & (vs[[time1,time2]].max(axis=1) > 500)]
+        vs.drop(columns=['TIME_FACTOR'])
+        one_win_over_two['TIME_FACTOR'] = one_win_over_two.loc[:, ('TIME_FACTOR')].abs()
+        one_win_over_two.drop(columns=['TIME_FACTOR'])
+        one_win_over_two = one_win_over_two.sort_values(by="TIME_FACTOR", ascending=False)
+        return one_win_over_two
+    
+    def display_win(vs, time1, time2):
+        one_win_over_two = create_win(vs, time1, time2).round(1)
+        print(tabulate(one_win_over_two, headers="keys", tablefmt='orgtbl'))
+    
+  #+END_src
+
+
+   #+BEGIN_src ipython :session mysessionnc :results none
+     
+     TIMEOUT=600000
+     def win_sum(prefixes, factor=2):
+         data = []
+     
+         for p1 in prefixes:
+             row = []
+             data.append(row)
+             for p2 in prefixes:
+                 if p1 == p2:
+                     row.append(None)
+                     continue
+                 time1 = p1 + '_TIME'
+                 time2 = p2 + '_TIME'
+                 notimeout = df_interesting.copy().replace('TIMEOUT', TIMEOUT).replace('ERROR', TIMEOUT).apply(pd.to_numeric)
+                 row.append(len(create_win(notimeout, time1, time2, factor).index))
+         return pd.DataFrame(data, columns=prefixes, index=prefixes)
+     
+     def win_collect(prefixes, factor=2, competitors=None):
+         indexes = set()
+         oponents = prefixes if competitors == None else competitors
+         for p1 in oponents:
+             for p2 in prefixes:
+                 if p1 == p2:
+                     continue
+                 time1 = p1 + '_TIME'
+                 time2 = p2 + '_TIME'
+                 notimeout = df_interesting.copy().replace('TIMEOUT', TIMEOUT).replace('ERROR', TIMEOUT).apply(pd.to_numeric)
+                 indexes.update(create_win(notimeout, time1, time2, factor).index)
+         indexes = list(indexes)
+         indexes.sort()
+         return indexes
+     
+   #+END_src
+
+
+    #+BEGIN_src ipython :session mysessionnc :results output raw
+     print(tabulate(win_sum(['GSAT', 'GSAT-NC']), headers="keys", tablefmt='orgtbl'))
+   #+END_src
+
+   #+RESULTS:
+   |         | GSAT | GSAT-NC |
+   |---------+------+---------|
+   | GSAT    |  nan |       1 |
+   | GSAT-NC |    5 |     nan |

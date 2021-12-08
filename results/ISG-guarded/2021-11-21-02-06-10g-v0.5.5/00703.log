@@ -1,0 +1,45 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 3164; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 21, 2021 12:41:27 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/3164 = 0.000%
+GSat discarded rules : 0/3164 = 0.000%
+Nov 21, 2021 12:41:27 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 3.2699115
+number of bags: 5
+length of the formulas: 3.2699115
+number of bags: 5
+nonFullTGDs	0		fullTGDs	2004			newNonFullTGDs	1160		newFullTGDs	0
+nonFullTGDs	33		fullTGDs	2004			newNonFullTGDs	1171		newFullTGDs	1
+nonFullTGDs	69		fullTGDs	2004			newNonFullTGDs	1167		newFullTGDs	2
+nonFullTGDs	101		fullTGDs	2004			newNonFullTGDs	1159		newFullTGDs	4
+nonFullTGDs	134		fullTGDs	2004			newNonFullTGDs	1161		newFullTGDs	7
+nonFullTGDs	169		fullTGDs	2004			newNonFullTGDs	1169		newFullTGDs	8
+nonFullTGDs	206		fullTGDs	2004			newNonFullTGDs	1152		newFullTGDs	8
+nonFullTGDs	241		fullTGDs	2004			newNonFullTGDs	1156		newFullTGDs	9
+nonFullTGDs	276		fullTGDs	2004			newNonFullTGDs	1156		newFullTGDs	10
+nonFullTGDs	312		fullTGDs	2004			newNonFullTGDs	1151		newFullTGDs	13
+nonFullTGDs	340		fullTGDs	2004			newNonFullTGDs	1143		newFullTGDs	17
+java.lang.OutOfMemoryError: Java heap space
+	at uk.ac.ox.cs.pdq.fol.Variable.create(Variable.java:70)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.getRenameVariableSubstitution(AbstractSaturation.java:341)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.renameVariable(AbstractSaturation.java:329)
+	at uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:72)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 21, 2021 12:45:31 PM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 21, 2021 12:45:31 PM uk.ac.ox.cs.gsat.App main
+SEVERE: [uk.ac.ox.cs.pdq.fol.Variable.create(Variable.java:70), uk.ac.ox.cs.gsat.AbstractSaturation.getRenameVariableSubstitution(AbstractSaturation.java:341), uk.ac.ox.cs.gsat.AbstractSaturation.renameVariable(AbstractSaturation.java:329), uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:72), uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140), uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!
