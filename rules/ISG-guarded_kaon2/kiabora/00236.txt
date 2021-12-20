@@ -1,0 +1,280 @@
+====== RULE SET ======
+[_R0]  ! :- <http://www.w3.org/2002/07/owl#Nothing>(X).
+[_R1] <http://www.daml.org/2003/01/movienight/movienight-ont#NominatedMovie>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#votedBy>(X0, X3).
+[_R2] <http://www.daml.org/2003/01/movienight/movienight-ont#MovieNight>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#primaryMovie>(X0, X3).
+[_R3] <http://www.daml.org/2003/01/movienight/movienight-ont#MovieNight>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#hostedBy>(X0, X3).
+[_R4] <http://www.daml.org/2003/01/movienight/movienight-ont#Movie>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#imdbLink>(X0, X3).
+[_R5] <http://www.daml.org/2003/01/movienight/movienight-ont#Member>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#hasMovie>(X0, X3).
+[_R6] <http://www.daml.org/2003/01/movienight/movienight-ont#Member>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#hasTV>(X0, X3).
+[_R7] <http://www.daml.org/2003/01/movienight/movienight-ont#Member>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#hasAudio>(X0, X3).
+[_R8] <http://www.daml.org/2003/01/movienight/movienight-ont#MovieNight>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#hasNomination>(X0, X3).
+[_R9] <http://www.w3.org/2001/XMLSchema#nonNegativeInteger>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#seatingCapacity>(X1, X0).
+[_R10] <http://www.w3.org/2001/XMLSchema#dateTime>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#date>(X1, X0).
+[_R11] <http://www.daml.org/2003/01/movienight/movienight-ont#Member>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#seatingCapacity>(X0, X3).
+[_R12] <http://www.daml.org/2003/01/movienight/movienight-ont#MovieNight>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#date>(X0, X3).
+[_R13] <http://org.semanticweb.owlapi/error#Error1>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#MovieNight>(X0).
+[_R14] <http://www.daml.org/2003/01/movienight/movienight-ont#Movie>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#NominatedMovie>(X0).
+[_R15] <http://www.daml.org/2003/01/movienight/movienight-ont#AudioSystem>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#hasAudio>(X3, X0).
+[_R16] <http://www.daml.org/2003/01/movienight/movienight-ont#Movie>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#hasMovie>(X3, X0).
+[_R17] <http://www.daml.org/2003/01/movienight/movienight-ont#Member>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#hostedBy>(X3, X0).
+[_R18] <http://www.w3.org/2001/XMLSchema#uriReference>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#imdbLink>(X3, X0).
+[_R19] <http://www.daml.org/2003/01/movienight/movienight-ont#Movie>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#primaryMovie>(X3, X0).
+[_R20] <http://www.daml.org/2003/01/movienight/movienight-ont#Television>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#hasTV>(X3, X0).
+[_R21] <http://www.daml.org/2003/01/movienight/movienight-ont#Member>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#votedBy>(X3, X0).
+[_R22] <http://www.daml.org/2003/01/movienight/movienight-ont#Movie>(X0) :- <http://www.daml.org/2003/01/movienight/movienight-ont#hasNomination>(X3, X0).
+[_R23] <http://www.daml.org/2003/01/movienight/movienight-ont#seatingCapacity>(X0, X3) :- <http://www.daml.org/2003/01/movienight/movienight-ont#Member>(X0).
+[_R24] <http://www.daml.org/2003/01/movienight/movienight-ont#votedBy>(X0, X3) :- <http://www.daml.org/2003/01/movienight/movienight-ont#NominatedMovie>(X0).
+[_R25] <http://www.daml.org/2003/01/movienight/movienight-ont#hostedBy>(X0, X3) :- <http://www.daml.org/2003/01/movienight/movienight-ont#MovieNight>(X0).
+[_R26] <http://www.daml.org/2003/01/movienight/movienight-ont#hasTV>(X0, X3) :- <http://www.daml.org/2003/01/movienight/movienight-ont#Member>(X0).
+[_R27] <http://www.daml.org/2003/01/movienight/movienight-ont#hasAudio>(X0, X3) :- <http://www.daml.org/2003/01/movienight/movienight-ont#Member>(X0).
+[_R28] <http://www.daml.org/2003/01/movienight/movienight-ont#imdbLink>(X0, X3) :- <http://www.daml.org/2003/01/movienight/movienight-ont#Movie>(X0).
+
+======== GRD =========
+_R1 -{T::X0->S::X0}-> _R14
+_R1 -{T::X0->S::X0}-> _R24
+_R2 -{T::X0->S::X0}-> _R13
+_R2 -{T::X0->S::X0}-> _R25
+_R3 -{T::X0->S::X0}-> _R13
+_R3 -{T::X0->S::X0}-> _R25
+_R4 -{T::X0->S::X0}-> _R28
+_R5 -{T::X0->S::X0}-> _R23
+_R5 -{T::X0->S::X0}-> _R26
+_R5 -{T::X0->S::X0}-> _R27
+_R6 -{T::X0->S::X0}-> _R23
+_R6 -{T::X0->S::X0}-> _R26
+_R6 -{T::X0->S::X0}-> _R27
+_R7 -{T::X0->S::X0}-> _R23
+_R7 -{T::X0->S::X0}-> _R26
+_R7 -{T::X0->S::X0}-> _R27
+_R8 -{T::X0->S::X0}-> _R13
+_R8 -{T::X0->S::X0}-> _R25
+_R11 -{T::X0->S::X0}-> _R23
+_R11 -{T::X0->S::X0}-> _R26
+_R11 -{T::X0->S::X0}-> _R27
+_R12 -{T::X0->S::X0}-> _R13
+_R12 -{T::X0->S::X0}-> _R25
+_R14 -{T::X0->S::X0}-> _R28
+_R16 -{T::X0->S::X0}-> _R28
+_R17 -{T::X0->S::X0}-> _R23
+_R17 -{T::X0->S::X0}-> _R26
+_R17 -{T::X0->S::X0}-> _R27
+_R19 -{T::X0->S::X0}-> _R28
+_R21 -{T::X0->S::X0}-> _R23
+_R21 -{T::X0->S::X0}-> _R26
+_R21 -{T::X0->S::X0}-> _R27
+_R22 -{T::X0->S::X0}-> _R28
+_R23 -{T::X0->S::X3,T::X1->S::X0}-> _R9
+_R24 -{T::X3->S::X0,T::X0->S::X3}-> _R21
+_R25 -{T::X3->S::X0,T::X0->S::X3}-> _R17
+_R26 -{T::X3->S::X0,T::X0->S::X3}-> _R20
+_R27 -{T::X3->S::X0,T::X0->S::X3}-> _R15
+_R28 -{T::X3->S::X0,T::X0->S::X3}-> _R18
+
+
+======== SCC =========
+C0 = {_R22}
+C1 = {_R7}
+C2 = {_R2}
+C3 = {_R3}
+C4 = {_R12}
+C5 = {_R4}
+C6 = {_R8}
+C7 = {_R13}
+C8 = {_R1}
+C9 = {_R5}
+C10 = {_R19}
+C11 = {_R14}
+C12 = {_R0}
+C13 = {_R11}
+C14 = {_R10}
+C15 = {_R6}
+C16 = {_R16}
+C17 = {_R28}
+C18 = {_R18}
+C19 = {_R24}
+C20 = {_R21}
+C21 = {_R25}
+C22 = {_R17}
+C23 = {_R23}
+C24 = {_R9}
+C25 = {_R26}
+C26 = {_R20}
+C27 = {_R27}
+C28 = {_R15}
+
+
+===== SCC GRAPH ======
+C0 ---> C17
+C1 ---> C23, C25, C27
+C2 ---> C7, C21
+C3 ---> C7, C21
+C4 ---> C7, C21
+C5 ---> C17
+C6 ---> C7, C21
+C7
+C8 ---> C11, C19
+C9 ---> C23, C25, C27
+C10 ---> C17
+C11 ---> C17
+C12
+C13 ---> C23, C25, C27
+C14
+C15 ---> C23, C25, C27
+C16 ---> C17
+C17 ---> C18
+C18
+C19 ---> C20
+C20 ---> C23, C25, C27
+C21 ---> C22
+C22 ---> C23, C25, C27
+C23 ---> C24
+C24
+C25 ---> C26
+C26
+C27 ---> C28
+C28
+
+
+== RULE PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R0  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R1  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R2  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R3  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R4  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R5  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R6  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R7  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R8  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R9  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R10 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R11 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R12 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R13 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R14 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R15 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R16 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R17 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R18 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R19 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R20 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R21 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R22 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R23 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R24 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R25 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R26 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R27 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R28 
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== PROPERTIES =====
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+=== SCC PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C0  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C1  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C2  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C3  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C4  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C5  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C6  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C7  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C8  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C9  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C10  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C11  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C12  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C13  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C14  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C15  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C16  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C17  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C18  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C19  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C20  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C21  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C22  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C23  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C24  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C25  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C26  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C27  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C28  
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== ANALYSIS: DECIDABLE =====
+
+=== COMBINE (FES) ====
+C0: FES
+C1: FES
+C2: FES
+C3: FES
+C4: FES
+C5: FES
+C6: FES
+C7: FES
+C8: FES
+C9: FES
+C10: FES
+C11: FES
+C12: FES
+C13: FES
+C14: FES
+C15: FES
+C16: FES
+C17: FES
+C18: FES
+C19: FES
+C20: FES
+C21: FES
+C22: FES
+C23: FES
+C24: FES
+C25: FES
+C26: FES
+C27: FES
+C28: FES
+
+
+=== COMBINE (FUS) ====
+C0: FUS
+C1: FUS
+C2: FUS
+C3: FUS
+C4: FUS
+C5: FUS
+C6: FUS
+C7: FUS
+C8: FUS
+C9: FUS
+C10: FUS
+C11: FUS
+C12: FUS
+C13: FUS
+C14: FUS
+C15: FUS
+C16: FUS
+C17: FUS
+C18: FUS
+C19: FUS
+C20: FUS
+C21: FUS
+C22: FUS
+C23: FUS
+C24: FUS
+C25: FUS
+C26: FUS
+C27: FUS
+C28: FUS
+
+

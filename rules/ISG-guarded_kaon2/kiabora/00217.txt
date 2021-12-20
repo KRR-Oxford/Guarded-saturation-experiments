@@ -1,0 +1,109 @@
+====== RULE SET ======
+[_R0]  ! :- <http://www.w3.org/2002/07/owl#Nothing>(X).
+[_R1] <http://www.w3.org/2001/XMLSchema#dateTime>(X1) :- <http://www.daml.org/2001/10/html/nyse-ont#Symbol>(X0), <http://www.daml.org/2001/10/html/nyse-ont#listingDate>(X0, X1).
+[_R2] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2001/10/html/nyse-ont#Symbol>(X0), <http://www.daml.org/2001/10/html/nyse-ont#issueType>(X0, X1).
+[_R3] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2001/10/html/nyse-ont#Symbol>(X0), <http://www.daml.org/2001/10/html/nyse-ont#country>(X0, X1).
+[_R4] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2001/10/html/nyse-ont#Symbol>(X0), <http://www.daml.org/2001/10/html/nyse-ont#symbol>(X0, X1).
+[_R5] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2001/10/html/nyse-ont#Symbol>(X0), <http://www.daml.org/2001/10/html/nyse-ont#name>(X0, X1).
+[_R6] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2001/10/html/nyse-ont#Symbol>(X0), <http://www.daml.org/2001/10/html/nyse-ont#industry>(X0, X1).
+[_R7] <http://www.w3.org/2001/XMLSchema#uriReference>(X0) :- <http://www.daml.org/2001/10/html/nyse-ont#Symbol>(X3), <http://www.daml.org/2001/10/html/nyse-ont#homePage>(X3, X0).
+[_R8] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2001/10/html/nyse-ont#Symbol>(X0), <http://www.daml.org/2001/10/html/nyse-ont#description>(X0, X1).
+[_R9] <http://www.daml.org/2001/10/html/nyse-ont#symbol>(X0, X3) :- <http://www.daml.org/2001/10/html/nyse-ont#Symbol>(X0).
+
+======== GRD =========
+_R9 -{T::X0->S::X0,T::X1->S::X3}-> _R4
+
+
+======== SCC =========
+C0 = {_R3}
+C1 = {_R8}
+C2 = {_R7}
+C3 = {_R1}
+C4 = {_R0}
+C5 = {_R5}
+C6 = {_R2}
+C7 = {_R6}
+C8 = {_R9}
+C9 = {_R4}
+
+
+===== SCC GRAPH ======
+C0
+C1
+C2
+C3
+C4
+C5
+C6
+C7
+C8 ---> C9
+C9
+
+
+== RULE PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R0  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R1  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R2  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R3  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R4  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R5  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R6  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R7  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R8  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R9  
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== PROPERTIES =====
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+=== SCC PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C0  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C1  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C2  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C3  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C4  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C5  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C6  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C7  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  C8  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C9  
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== ANALYSIS: DECIDABLE =====
+
+=== COMBINE (FES) ====
+C0: FES
+C1: FES
+C2: FES
+C3: FES
+C4: FES
+C5: FES
+C6: FES
+C7: FES
+C8: FES
+C9: FES
+
+
+=== COMBINE (FUS) ====
+C0: FUS
+C1: FUS
+C2: FUS
+C3: FUS
+C4: FUS
+C5: FUS
+C6: FUS
+C7: FUS
+C8: FUS
+C9: FUS
+
+

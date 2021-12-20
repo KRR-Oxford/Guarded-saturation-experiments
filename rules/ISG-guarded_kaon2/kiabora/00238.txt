@@ -1,0 +1,201 @@
+====== RULE SET ======
+[_R0]  ! :- <http://www.w3.org/2002/07/owl#Nothing>(X).
+[_R1] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#adjacentTo>(X1, X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#adjacentTo>(X0, X1).
+[_R2] <http://www.w3.org/1999/02/22-rdf-syntax-ns#List>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line>(X3), <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#stations>(X3, X0).
+[_R3] <http://www.daml.org/2001/10/html/airport-ont#Airport>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#airport>(X3, X0), <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>(X3).
+[_R4] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#line>(X3, X0), <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System>(X3).
+[_R5] <http://www.daml.org/2003/02/fips55/location-ont#Location>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#location>(X3, X0), <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>(X3).
+[_R6] <http://www.cyc.com/2003/04/01/cyc#SubwayStation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>(X0).
+[_R7] <http://org.semanticweb.owlapi/error#Error1>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>(X0).
+[_R8] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Loop>(X0).
+[_R9] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>(X0) :- <http://www.cyc.com/2003/04/01/cyc#SubwayStation>(X0).
+[_R10] <http://org.semanticweb.owlapi/error#Error3>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System>(X0).
+[_R11] <http://www.w3.org/2001/XMLSchema#anyURI>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#homepage>(X3, X0), <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System>(X3).
+[_R12] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#line>(X3, X0), <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>(X3).
+[_R13] <http://org.semanticweb.owlapi/error#Error2>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line>(X0).
+[_R14] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#adjacentTo>(X3, X0), <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>(X3).
+[_R15] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#adjacentTo>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>(X0).
+[_R16] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#line>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System>(X0).
+[_R17] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#homepage>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System>(X0).
+[_R18] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#line>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>(X0).
+[_R19] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#stations>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line>(X0).
+
+======== GRD =========
+_R1 -{T::X3->S::X1,T::X0->S::X0}-> _R14
+_R4 -{T::X3->S::X0}-> _R2
+_R4 -{T::X0->S::X0}-> _R13
+_R4 -{T::X0->S::X0}-> _R19
+_R8 -{T::X3->S::X0}-> _R2
+_R8 -{T::X0->S::X0}-> _R13
+_R8 -{T::X0->S::X0}-> _R19
+_R9 -{T::X3->S::X0}-> _R3
+_R9 -{T::X3->S::X0}-> _R5
+_R9 -{T::X0->S::X0}-> _R7
+_R9 -{T::X3->S::X0}-> _R12
+_R9 -{T::X3->S::X0}-> _R14
+_R9 -{T::X0->S::X0}-> _R15
+_R9 -{T::X0->S::X0}-> _R18
+_R12 -{T::X3->S::X0}-> _R2
+_R12 -{T::X0->S::X0}-> _R13
+_R12 -{T::X0->S::X0}-> _R19
+_R14 -{T::X3->S::X0}-> _R3
+_R14 -{T::X3->S::X0}-> _R5
+_R14 -{T::X0->S::X0}-> _R6
+_R14 -{T::X0->S::X0}-> _R7
+_R14 -{T::X3->S::X0}-> _R12
+_R14 -{T::X3->S::X0}-> _R14
+_R14 -{T::X0->S::X0}-> _R15
+_R14 -{T::X0->S::X0}-> _R18
+_R15 -{T::X0->S::X0,T::X1->S::X3}-> _R1
+_R15 -{T::X3->S::X0,T::X0->S::X3}-> _R14
+_R16 -{T::X3->S::X0,T::X0->S::X3}-> _R4
+_R16 -{T::X3->S::X0,T::X0->S::X3}-> _R12
+_R17 -{T::X3->S::X0,T::X0->S::X3}-> _R11
+_R18 -{T::X3->S::X0,T::X0->S::X3}-> _R4
+_R18 -{T::X3->S::X0,T::X0->S::X3}-> _R12
+_R19 -{T::X3->S::X0,T::X0->S::X3}-> _R2
+
+
+======== SCC =========
+C0 = {_R0}
+C1 = {_R17}
+C2 = {_R11}
+C3 = {_R10}
+C4 = {_R8}
+C5 = {_R16}
+C6 = {_R9}
+C7 = {_R15, _R1, _R14}
+C8 = {_R3}
+C9 = {_R5}
+C10 = {_R6}
+C11 = {_R7}
+C12 = {_R18}
+C13 = {_R4}
+C14 = {_R12}
+C15 = {_R13}
+C16 = {_R19}
+C17 = {_R2}
+
+
+===== SCC GRAPH ======
+C0
+C1 ---> C2
+C2
+C3
+C4 ---> C15, C16, C17
+C5 ---> C13, C14
+C6 ---> C7, C8, C9, C11, C12, C14
+C7 ---> C8, C9, C10, C11, C12, C14
+C8
+C9
+C10
+C11
+C12 ---> C13, C14
+C13 ---> C15, C16, C17
+C14 ---> C15, C16, C17
+C15
+C16 ---> C17
+C17
+
+
+== RULE PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R0  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R1  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R2  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R3  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R4  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R5  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R6  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R7  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R8  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R9  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R10 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R11 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R12 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R13 
+|  -   |  X   |  -   |  -   |  X   |  X   |  X   |  ?   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R14 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R15 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R16 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R17 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R18 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R19 
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== PROPERTIES =====
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  -   |  X   |  -   |  -   |  ?   |  X   |  -   |  ?   |  X   |  X   |  X   |  -   |  -   |  -   |  -   |  -   |  -   |  X   |  X   |  -   |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+=== SCC PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C0  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  C1  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C2  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C3  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C4  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  C5  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C6  
+|  -   |  X   |  -   |  -   |  ?   |  X   |  -   |  ?   |  X   |  X   |  X   |  -   |  -   |  -   |  -   |  -   |  -   |  X   |  X   |  -   |  C7  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C8  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C9  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C10  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C11  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C12  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C13  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C14  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C15  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C16  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C17  
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== ANALYSIS: DECIDABLE =====
+
+=== COMBINE (FES) ====
+C0: FES
+C1: FES
+C2: FES
+C3: FES
+C4: FES
+C5: FES
+C6: FES
+C7: BTS
+C8: FUS
+C9: FUS
+C10: FUS
+C11: FUS
+C12: FUS
+C13: FUS
+C14: FUS
+C15: FUS
+C16: FUS
+C17: FUS
+
+
+=== COMBINE (FUS) ====
+C0: FUS
+C1: FUS
+C2: FUS
+C3: FUS
+C4: FUS
+C5: FUS
+C6: FES
+C7: BTS
+C8: FUS
+C9: FUS
+C10: FUS
+C11: FUS
+C12: FUS
+C13: FUS
+C14: FUS
+C15: FUS
+C16: FUS
+C17: FUS
+
+

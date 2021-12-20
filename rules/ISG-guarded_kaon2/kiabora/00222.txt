@@ -1,0 +1,517 @@
+====== RULE SET ======
+[_R0]  ! :- <http://www.w3.org/2002/07/owl#Nothing>(X).
+[_R1] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#className>(X0, X1), <http://www.daml.org/2002/03/agents/agent-ont#JavaPlugin>(X0).
+[_R2] <http://www.daml.org/2002/03/agents/agent-ont#GUI>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentType>(X3), <http://www.daml.org/2002/03/agents/agent-ont#statusGUI>(X3, X0).
+[_R3] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#classPath>(X0, X1), <http://www.daml.org/2002/03/agents/agent-ont#AgentType>(X0).
+[_R4] <http://www.daml.org/2002/03/agents/agent-ont#GUI>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#setupGUI>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#AgentType>(X3).
+[_R5] <http://www.w3.org/2001/XMLSchema#timeInstant>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#Agent>(X3), <http://www.daml.org/2002/03/agents/agent-ont#creationTime>(X3, X0).
+[_R6] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#error>(X0, X1), <http://www.daml.org/2002/03/agents/agent-ont#ErrorMessage>(X0).
+[_R7] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(X0), <http://www.daml.org/2002/03/agents/agent-ont#description>(X0, X1).
+[_R8] <http://www.daml.org/2002/03/agents/agent-ont#Agent>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(X3), <http://www.daml.org/2002/03/agents/agent-ont#agent>(X3, X0).
+[_R9] <http://www.daml.org/2002/03/agents/agent-ont#Plugin>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin>(X0).
+[_R10] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#PKCS12Identity>(X0), <http://www.daml.org/2002/03/agents/agent-ont#pkcs12File>(X0, X1).
+[_R11] <http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#ErrorMessage>(X0).
+[_R12] <http://www.daml.org/2002/03/agents/agent-ont#Agent>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#agent>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply>(X3).
+[_R13] <http://www.daml.org/2002/03/agents/agent-ont#AgentType>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#agentType>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#Agency>(X3).
+[_R14] <http://www.daml.org/2002/03/agents/agent-ont#Agent>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#agent>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#User>(X3).
+[_R15] <http://www.w3.org/2001/XMLSchema#uriReference>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#basePublicationURI>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(X3).
+[_R16] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#className>(X0, X1), <http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin>(X0).
+[_R17] <http://www.daml.org/2002/03/agents/agent-ont#RequestMessage>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(X0).
+[_R18] <http://www.daml.org/2002/03/agents/agent-ont#AgentType>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#type>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#Agent>(X3).
+[_R19] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin>(X0), <http://www.daml.org/2002/03/agents/agent-ont#dynamicLinkLibrary>(X0, X1).
+[_R20] <http://www.daml.org/2002/03/agents/agent-ont#Parameters>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(X3), <http://www.daml.org/2002/03/agents/agent-ont#parameters>(X3, X0).
+[_R21] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#basePublicationDirectory>(X0, X1), <http://www.daml.org/2002/03/agents/agent-ont#Agency>(X0).
+[_R22] <http://www.w3.org/2000/01/rdf-schema#Class>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#parametersClass>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#AgentType>(X3).
+[_R23] <http://www.daml.org/2002/03/agents/agent-ont#User>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#user>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#Agency>(X3).
+[_R24] <http://www.daml.org/2002/03/agents/agent-ont#Plugin>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#GUI>(X0).
+[_R25] <http://www.daml.org/2002/03/agents/agent-ont#Message>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#AsynchronousMessage>(X0).
+[_R26] <http://www.daml.org/2002/03/agents/agent-ont#Message>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentAliveMessage>(X0).
+[_R27] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#Message>(X0), <http://www.daml.org/2002/03/agents/agent-ont#transactionID>(X0, X1).
+[_R28] <http://www.daml.org/2002/03/agents/agent-ont#Plugin>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#JavaPlugin>(X0).
+[_R29] <http://www.daml.org/2002/03/agents/agent-ont#Agent>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentAliveMessage>(X3), <http://www.daml.org/2002/03/agents/agent-ont#agent>(X3, X0).
+[_R30] <http://www.daml.org/2002/03/agents/agent-ont#AgentType>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#agentType>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(X3).
+[_R31] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#Agent>(X0), <http://www.daml.org/2002/03/agents/agent-ont#description>(X0, X1).
+[_R32] <http://www.daml.org/2002/03/agents/agent-ont#Parameters>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#parameters>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#Agent>(X3).
+[_R33] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentType>(X0), <http://www.daml.org/2002/03/agents/agent-ont#description>(X0, X1).
+[_R34] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#basePublicationDirectory>(X0, X1), <http://www.daml.org/2002/03/agents/agent-ont#AgentInitializationRequest>(X0).
+[_R35] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#inReplyTo>(X0, X1), <http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage>(X0).
+[_R36] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#className>(X0, X1), <http://www.daml.org/2002/03/agents/agent-ont#AgentType>(X0).
+[_R37] <http://www.w3.org/2001/XMLSchema#long>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#messagesReceived>(X0, X1), <http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply>(X0).
+[_R38] <http://www.daml.org/2002/03/agents/agent-ont#AsynchronousMessage>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#RunImmediately>(X0).
+[_R39] <http://www.w3.org/2000/01/rdf-schema#Resource>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#User>(X3), <http://www.daml.org/2002/03/agents/agent-ont#id>(X3, X0).
+[_R40] <http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply>(X0).
+[_R41] <http://www.w3.org/2001/XMLSchema#timeInstant>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#startTime>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply>(X3).
+[_R42] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/03/agents/agent-ont#PKCS12Identity>(X0), <http://www.daml.org/2002/03/agents/agent-ont#password>(X0, X1).
+[_R43] <http://www.daml.org/2002/03/agents/agent-ont#AsynchronousMessage>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#ShutdownMessage>(X0).
+[_R44] <http://www.daml.org/2002/03/agents/agent-ont#Identity>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#identity>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#Agent>(X3).
+[_R45] <http://www.daml.org/2002/03/agents/agent-ont#Message>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage>(X0).
+[_R46] <http://www.daml.org/2002/03/agents/agent-ont#RequestMessage>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentStatusRequest>(X0).
+[_R47] <http://www.daml.org/2002/03/agents/agent-ont#ReplyMessage>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#Ack>(X0).
+[_R48] <http://www.daml.org/2002/03/agents/agent-ont#Identity>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#PKCS12Identity>(X0).
+[_R49] <http://www.w3.org/2001/XMLSchema#timeInstant>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#lastPublicationTime>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply>(X3).
+[_R50] <http://www.daml.org/2002/03/agents/agent-ont#Message>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#RequestMessage>(X0).
+[_R51] <http://www.w3.org/2001/XMLSchema#uriReference>(X0) :- <http://www.daml.org/2002/03/agents/agent-ont#basePublicationURI>(X3, X0), <http://www.daml.org/2002/03/agents/agent-ont#Agency>(X3).
+[_R52] <http://www.daml.org/2002/03/agents/agent-ont#classPath>(X0, X3) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentType>(X0).
+[_R53] <http://www.daml.org/2002/03/agents/agent-ont#agent>(X0, X3) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentStatusReply>(X0).
+[_R54] <http://www.daml.org/2002/03/agents/agent-ont#type>(X0, X3) :- <http://www.daml.org/2002/03/agents/agent-ont#Agent>(X0).
+[_R55] <http://www.daml.org/2002/03/agents/agent-ont#className>(X0, X3) :- <http://www.daml.org/2002/03/agents/agent-ont#AgentType>(X0).
+[_R56] <http://www.daml.org/2002/03/agents/agent-ont#creationTime>(X0, X3) :- <http://www.daml.org/2002/03/agents/agent-ont#Agent>(X0).
+
+======== GRD =========
+_R2 -{T::X0->S::X0}-> _R24
+_R4 -{T::X0->S::X0}-> _R24
+_R8 -{T::X3->S::X0}-> _R5
+_R8 -{T::X3->S::X0}-> _R18
+_R8 -{T::X0->S::X0}-> _R31
+_R8 -{T::X3->S::X0}-> _R32
+_R8 -{T::X3->S::X0}-> _R44
+_R8 -{T::X0->S::X0}-> _R54
+_R8 -{T::X0->S::X0}-> _R56
+_R11 -{T::X0->S::X0}-> _R35
+_R11 -{T::X0->S::X0}-> _R45
+_R12 -{T::X3->S::X0}-> _R5
+_R12 -{T::X3->S::X0}-> _R18
+_R12 -{T::X0->S::X0}-> _R31
+_R12 -{T::X3->S::X0}-> _R32
+_R12 -{T::X3->S::X0}-> _R44
+_R12 -{T::X0->S::X0}-> _R54
+_R12 -{T::X0->S::X0}-> _R56
+_R13 -{T::X3->S::X0}-> _R2
+_R13 -{T::X0->S::X0}-> _R3
+_R13 -{T::X3->S::X0}-> _R4
+_R13 -{T::X3->S::X0}-> _R22
+_R13 -{T::X0->S::X0}-> _R33
+_R13 -{T::X0->S::X0}-> _R36
+_R13 -{T::X0->S::X0}-> _R52
+_R13 -{T::X0->S::X0}-> _R55
+_R14 -{T::X3->S::X0}-> _R5
+_R14 -{T::X3->S::X0}-> _R18
+_R14 -{T::X0->S::X0}-> _R31
+_R14 -{T::X3->S::X0}-> _R32
+_R14 -{T::X3->S::X0}-> _R44
+_R14 -{T::X0->S::X0}-> _R54
+_R14 -{T::X0->S::X0}-> _R56
+_R17 -{T::X0->S::X0}-> _R50
+_R18 -{T::X3->S::X0}-> _R2
+_R18 -{T::X0->S::X0}-> _R3
+_R18 -{T::X3->S::X0}-> _R4
+_R18 -{T::X3->S::X0}-> _R22
+_R18 -{T::X0->S::X0}-> _R33
+_R18 -{T::X0->S::X0}-> _R36
+_R18 -{T::X0->S::X0}-> _R52
+_R18 -{T::X0->S::X0}-> _R55
+_R23 -{T::X3->S::X0}-> _R14
+_R23 -{T::X3->S::X0}-> _R39
+_R25 -{T::X0->S::X0}-> _R27
+_R26 -{T::X0->S::X0}-> _R27
+_R29 -{T::X3->S::X0}-> _R5
+_R29 -{T::X3->S::X0}-> _R18
+_R29 -{T::X0->S::X0}-> _R31
+_R29 -{T::X3->S::X0}-> _R32
+_R29 -{T::X3->S::X0}-> _R44
+_R29 -{T::X0->S::X0}-> _R54
+_R29 -{T::X0->S::X0}-> _R56
+_R30 -{T::X3->S::X0}-> _R2
+_R30 -{T::X0->S::X0}-> _R3
+_R30 -{T::X3->S::X0}-> _R4
+_R30 -{T::X3->S::X0}-> _R22
+_R30 -{T::X0->S::X0}-> _R33
+_R30 -{T::X0->S::X0}-> _R36
+_R30 -{T::X0->S::X0}-> _R52
+_R30 -{T::X0->S::X0}-> _R55
+_R38 -{T::X0->S::X0}-> _R25
+_R40 -{T::X0->S::X0}-> _R35
+_R40 -{T::X0->S::X0}-> _R45
+_R43 -{T::X0->S::X0}-> _R25
+_R45 -{T::X0->S::X0}-> _R27
+_R46 -{T::X0->S::X0}-> _R50
+_R47 -{T::X0->S::X0}-> _R35
+_R47 -{T::X0->S::X0}-> _R45
+_R50 -{T::X0->S::X0}-> _R27
+_R52 -{T::X0->S::X0,T::X1->S::X3}-> _R3
+_R53 -{T::X3->S::X0,T::X0->S::X3}-> _R8
+_R53 -{T::X3->S::X0,T::X0->S::X3}-> _R12
+_R53 -{T::X3->S::X0,T::X0->S::X3}-> _R14
+_R53 -{T::X3->S::X0,T::X0->S::X3}-> _R29
+_R54 -{T::X3->S::X0,T::X0->S::X3}-> _R18
+_R55 -{T::X0->S::X0,T::X1->S::X3}-> _R1
+_R55 -{T::X0->S::X0,T::X1->S::X3}-> _R16
+_R55 -{T::X0->S::X0,T::X1->S::X3}-> _R36
+_R56 -{T::X3->S::X0,T::X0->S::X3}-> _R5
+
+
+======== SCC =========
+C0 = {_R49}
+C1 = {_R41}
+C2 = {_R19}
+C3 = {_R43}
+C4 = {_R26}
+C5 = {_R40}
+C6 = {_R38}
+C7 = {_R46}
+C8 = {_R0}
+C9 = {_R37}
+C10 = {_R42}
+C11 = {_R51}
+C12 = {_R53}
+C13 = {_R8}
+C14 = {_R12}
+C15 = {_R29}
+C16 = {_R10}
+C17 = {_R47}
+C18 = {_R13}
+C19 = {_R7}
+C20 = {_R21}
+C21 = {_R20}
+C22 = {_R48}
+C23 = {_R15}
+C24 = {_R34}
+C25 = {_R23}
+C26 = {_R14}
+C27 = {_R31}
+C28 = {_R32}
+C29 = {_R44}
+C30 = {_R54}
+C31 = {_R39}
+C32 = {_R18}
+C33 = {_R56}
+C34 = {_R5}
+C35 = {_R28}
+C36 = {_R11}
+C37 = {_R35}
+C38 = {_R45}
+C39 = {_R17}
+C40 = {_R50}
+C41 = {_R6}
+C42 = {_R30}
+C43 = {_R2}
+C44 = {_R4}
+C45 = {_R22}
+C46 = {_R33}
+C47 = {_R52}
+C48 = {_R3}
+C49 = {_R55}
+C50 = {_R1}
+C51 = {_R16}
+C52 = {_R36}
+C53 = {_R24}
+C54 = {_R9}
+C55 = {_R25}
+C56 = {_R27}
+
+
+===== SCC GRAPH ======
+C0
+C1
+C2
+C3 ---> C55
+C4 ---> C56
+C5 ---> C37, C38
+C6 ---> C55
+C7 ---> C40
+C8
+C9
+C10
+C11
+C12 ---> C13, C14, C15, C26
+C13 ---> C27, C28, C29, C30, C32, C33, C34
+C14 ---> C27, C28, C29, C30, C32, C33, C34
+C15 ---> C27, C28, C29, C30, C32, C33, C34
+C16
+C17 ---> C37, C38
+C18 ---> C43, C44, C45, C46, C47, C48, C49, C52
+C19
+C20
+C21
+C22
+C23
+C24
+C25 ---> C26, C31
+C26 ---> C27, C28, C29, C30, C32, C33, C34
+C27
+C28
+C29
+C30 ---> C32
+C31
+C32 ---> C43, C44, C45, C46, C47, C48, C49, C52
+C33 ---> C34
+C34
+C35
+C36 ---> C37, C38
+C37
+C38 ---> C56
+C39 ---> C40
+C40 ---> C56
+C41
+C42 ---> C43, C44, C45, C46, C47, C48, C49, C52
+C43 ---> C53
+C44 ---> C53
+C45
+C46
+C47 ---> C48
+C48
+C49 ---> C50, C51, C52
+C50
+C51
+C52
+C53
+C54
+C55 ---> C56
+C56
+
+
+== RULE PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R0  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R1  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R2  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R3  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R4  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R5  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R6  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R7  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R8  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R9  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R10 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R11 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R12 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R13 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R14 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R15 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R16 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R17 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R18 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R19 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R20 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R21 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R22 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R23 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R24 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R25 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R26 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R27 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R28 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R29 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R30 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R31 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R32 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R33 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R34 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R35 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R36 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R37 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R38 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R39 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R40 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R41 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R42 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R43 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R44 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R45 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R46 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R47 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R48 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R49 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R50 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R51 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R52 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R53 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R54 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R55 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R56 
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== PROPERTIES =====
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+=== SCC PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C0  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C1  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C2  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C3  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C4  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C5  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C6  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C7  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C8  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C9  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C10  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C11  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C12  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C13  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C14  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C15  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C16  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C17  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C18  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C19  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C20  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C21  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C22  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C23  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C24  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C25  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C26  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C27  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C28  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C29  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C30  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C31  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C32  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C33  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C34  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C35  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C36  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C37  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C38  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C39  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C40  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C41  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C42  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C43  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C44  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C45  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C46  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C47  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C48  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C49  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C50  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C51  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C52  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C53  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C54  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C55  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C56  
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== ANALYSIS: DECIDABLE =====
+
+=== COMBINE (FES) ====
+C0: FES
+C1: FES
+C2: FES
+C3: FES
+C4: FES
+C5: FES
+C6: FES
+C7: FES
+C8: FES
+C9: FES
+C10: FES
+C11: FES
+C12: FES
+C13: FES
+C14: FES
+C15: FES
+C16: FES
+C17: FES
+C18: FES
+C19: FES
+C20: FES
+C21: FES
+C22: FES
+C23: FES
+C24: FES
+C25: FES
+C26: FES
+C27: FES
+C28: FES
+C29: FES
+C30: FES
+C31: FES
+C32: FES
+C33: FES
+C34: FES
+C35: FES
+C36: FES
+C37: FES
+C38: FES
+C39: FES
+C40: FES
+C41: FES
+C42: FES
+C43: FES
+C44: FES
+C45: FES
+C46: FES
+C47: FES
+C48: FES
+C49: FES
+C50: FES
+C51: FES
+C52: FES
+C53: FES
+C54: FES
+C55: FES
+C56: FES
+
+
+=== COMBINE (FUS) ====
+C0: FUS
+C1: FUS
+C2: FUS
+C3: FUS
+C4: FUS
+C5: FUS
+C6: FUS
+C7: FUS
+C8: FUS
+C9: FUS
+C10: FUS
+C11: FUS
+C12: FUS
+C13: FUS
+C14: FUS
+C15: FUS
+C16: FUS
+C17: FUS
+C18: FUS
+C19: FUS
+C20: FUS
+C21: FUS
+C22: FUS
+C23: FUS
+C24: FUS
+C25: FUS
+C26: FUS
+C27: FUS
+C28: FUS
+C29: FUS
+C30: FUS
+C31: FUS
+C32: FUS
+C33: FUS
+C34: FUS
+C35: FUS
+C36: FUS
+C37: FUS
+C38: FUS
+C39: FUS
+C40: FUS
+C41: FUS
+C42: FUS
+C43: FUS
+C44: FUS
+C45: FUS
+C46: FUS
+C47: FUS
+C48: FUS
+C49: FUS
+C50: FUS
+C51: FUS
+C52: FUS
+C53: FUS
+C54: FUS
+C55: FUS
+C56: FUS
+
+

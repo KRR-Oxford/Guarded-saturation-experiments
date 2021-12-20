@@ -1,0 +1,301 @@
+====== RULE SET ======
+[_R0]  ! :- <http://www.w3.org/2002/07/owl#Nothing>(X).
+[_R1] <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0) :- <http://www.daml.org/2002/11/jbi/jbi-ont#relation>(X0, X3).
+[_R2] <http://www.daml.org/2002/11/jbi/jbi-ont#relation>(X0, X1) :- <http://www.daml.org/2002/11/jbi/jbi-ont#supercedes>(X0, X1).
+[_R3] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0), <http://www.daml.org/2002/11/jbi/jbi-ont#infoObjectID>(X0, X1).
+[_R4] <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0) :- <http://www.daml.org/2002/11/jbi/jbi-ont#Relation>(X0).
+[_R5] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0), <http://www.daml.org/2002/11/jbi/jbi-ont#publisherID>(X0, X1).
+[_R6] <http://org.semanticweb.owlapi/error#Error2>(X0) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0).
+[_R7] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0), <http://www.daml.org/2002/11/jbi/jbi-ont#signature>(X0, X1).
+[_R8] <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0) :- <http://www.daml.org/2002/11/jbi/jbi-ont#Relation>(X3), <http://www.daml.org/2002/11/jbi/jbi-ont#source>(X3, X0).
+[_R9] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0), <http://www.daml.org/2002/11/jbi/jbi-ont#payloadFormat>(X0, X1).
+[_R10] <http://www.w3.org/2001/XMLSchema#dateTime>(X1) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0), <http://www.daml.org/2002/11/jbi/jbi-ont#publicationTime>(X0, X1).
+[_R11] <http://www.w3.org/2001/XMLSchema#string>(X1) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0), <http://www.daml.org/2002/11/jbi/jbi-ont#platformID>(X0, X1).
+[_R12] <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0) :- <http://www.daml.org/2002/11/jbi/jbi-ont#Relation>(X3), <http://www.daml.org/2002/11/jbi/jbi-ont#target>(X3, X0).
+[_R13] <http://www.w3.org/2001/XMLSchema#long>(X1) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0), <http://www.daml.org/2002/11/jbi/jbi-ont#payloadSize>(X0, X1).
+[_R14] <http://www.daml.org/2002/11/jbi/jbi-ont#Relation>(X0) :- <http://www.daml.org/2002/11/jbi/jbi-ont#Supercedes>(X0).
+[_R15] <http://www.daml.org/2002/04/classification/classification-ont#Marking>(X0) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X3), <http://www.daml.org/2002/11/jbi/jbi-ont#securityClassification>(X3, X0).
+[_R16] <http://www.w3.org/2001/XMLSchema#dateTime>(X1) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0), <http://www.daml.org/2002/11/jbi/jbi-ont#temporalExtent>(X0, X1).
+[_R17] <http://org.semanticweb.owlapi/error#Error1>(X0) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0).
+[_R18] <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0) :- <http://www.daml.org/2002/11/jbi/jbi-ont#relation>(X3, X0).
+[_R19] <http://www.daml.org/2002/11/jbi/jbi-ont#source>(X0, X3) :- <http://www.daml.org/2002/11/jbi/jbi-ont#Relation>(X0).
+[_R20] <http://www.daml.org/2002/11/jbi/jbi-ont#platformID>(X0, X3) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0).
+[_R21] <http://www.daml.org/2002/11/jbi/jbi-ont#publicationTime>(X0, X3) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0).
+[_R22] <http://www.daml.org/2002/11/jbi/jbi-ont#publisherID>(X0, X3) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0).
+[_R23] <http://www.daml.org/2002/11/jbi/jbi-ont#infoObjectID>(X0, X3) :- <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>(X0).
+[_R24] <http://www.daml.org/2002/11/jbi/jbi-ont#target>(X0, X3) :- <http://www.daml.org/2002/11/jbi/jbi-ont#Relation>(X0).
+
+======== GRD =========
+_R1 -{T::X0->S::X0}-> _R3
+_R1 -{T::X0->S::X0}-> _R5
+_R1 -{T::X0->S::X0}-> _R6
+_R1 -{T::X0->S::X0}-> _R7
+_R1 -{T::X0->S::X0}-> _R9
+_R1 -{T::X0->S::X0}-> _R10
+_R1 -{T::X0->S::X0}-> _R11
+_R1 -{T::X0->S::X0}-> _R13
+_R1 -{T::X3->S::X0}-> _R15
+_R1 -{T::X0->S::X0}-> _R16
+_R1 -{T::X0->S::X0}-> _R17
+_R1 -{T::X0->S::X0}-> _R20
+_R1 -{T::X0->S::X0}-> _R21
+_R1 -{T::X0->S::X0}-> _R22
+_R1 -{T::X0->S::X0}-> _R23
+_R2 -{T::X3->S::X1,T::X0->S::X0}-> _R1
+_R2 -{T::X3->S::X0,T::X0->S::X1}-> _R18
+_R4 -{T::X0->S::X0}-> _R3
+_R4 -{T::X0->S::X0}-> _R5
+_R4 -{T::X0->S::X0}-> _R6
+_R4 -{T::X0->S::X0}-> _R7
+_R4 -{T::X0->S::X0}-> _R9
+_R4 -{T::X0->S::X0}-> _R10
+_R4 -{T::X0->S::X0}-> _R11
+_R4 -{T::X0->S::X0}-> _R13
+_R4 -{T::X3->S::X0}-> _R15
+_R4 -{T::X0->S::X0}-> _R16
+_R4 -{T::X0->S::X0}-> _R17
+_R4 -{T::X0->S::X0}-> _R20
+_R4 -{T::X0->S::X0}-> _R21
+_R4 -{T::X0->S::X0}-> _R22
+_R4 -{T::X0->S::X0}-> _R23
+_R8 -{T::X0->S::X0}-> _R3
+_R8 -{T::X0->S::X0}-> _R5
+_R8 -{T::X0->S::X0}-> _R6
+_R8 -{T::X0->S::X0}-> _R7
+_R8 -{T::X0->S::X0}-> _R9
+_R8 -{T::X0->S::X0}-> _R10
+_R8 -{T::X0->S::X0}-> _R11
+_R8 -{T::X0->S::X0}-> _R13
+_R8 -{T::X3->S::X0}-> _R15
+_R8 -{T::X0->S::X0}-> _R16
+_R8 -{T::X0->S::X0}-> _R17
+_R8 -{T::X0->S::X0}-> _R20
+_R8 -{T::X0->S::X0}-> _R21
+_R8 -{T::X0->S::X0}-> _R22
+_R8 -{T::X0->S::X0}-> _R23
+_R12 -{T::X0->S::X0}-> _R3
+_R12 -{T::X0->S::X0}-> _R5
+_R12 -{T::X0->S::X0}-> _R6
+_R12 -{T::X0->S::X0}-> _R7
+_R12 -{T::X0->S::X0}-> _R9
+_R12 -{T::X0->S::X0}-> _R10
+_R12 -{T::X0->S::X0}-> _R11
+_R12 -{T::X0->S::X0}-> _R13
+_R12 -{T::X3->S::X0}-> _R15
+_R12 -{T::X0->S::X0}-> _R16
+_R12 -{T::X0->S::X0}-> _R17
+_R12 -{T::X0->S::X0}-> _R20
+_R12 -{T::X0->S::X0}-> _R21
+_R12 -{T::X0->S::X0}-> _R22
+_R12 -{T::X0->S::X0}-> _R23
+_R14 -{T::X0->S::X0}-> _R4
+_R14 -{T::X3->S::X0}-> _R8
+_R14 -{T::X3->S::X0}-> _R12
+_R14 -{T::X0->S::X0}-> _R19
+_R14 -{T::X0->S::X0}-> _R24
+_R18 -{T::X0->S::X0}-> _R3
+_R18 -{T::X0->S::X0}-> _R5
+_R18 -{T::X0->S::X0}-> _R6
+_R18 -{T::X0->S::X0}-> _R7
+_R18 -{T::X0->S::X0}-> _R9
+_R18 -{T::X0->S::X0}-> _R10
+_R18 -{T::X0->S::X0}-> _R11
+_R18 -{T::X0->S::X0}-> _R13
+_R18 -{T::X3->S::X0}-> _R15
+_R18 -{T::X0->S::X0}-> _R16
+_R18 -{T::X0->S::X0}-> _R17
+_R18 -{T::X0->S::X0}-> _R20
+_R18 -{T::X0->S::X0}-> _R21
+_R18 -{T::X0->S::X0}-> _R22
+_R18 -{T::X0->S::X0}-> _R23
+_R19 -{T::X3->S::X0,T::X0->S::X3}-> _R8
+_R20 -{T::X0->S::X0,T::X1->S::X3}-> _R11
+_R21 -{T::X0->S::X0,T::X1->S::X3}-> _R10
+_R22 -{T::X0->S::X0,T::X1->S::X3}-> _R5
+_R23 -{T::X0->S::X0,T::X1->S::X3}-> _R3
+_R24 -{T::X3->S::X0,T::X0->S::X3}-> _R12
+
+
+======== SCC =========
+C0 = {_R2}
+C1 = {_R1}
+C2 = {_R14}
+C3 = {_R4}
+C4 = {_R19}
+C5 = {_R8}
+C6 = {_R0}
+C7 = {_R18}
+C8 = {_R24}
+C9 = {_R12}
+C10 = {_R6}
+C11 = {_R7}
+C12 = {_R13}
+C13 = {_R15}
+C14 = {_R16}
+C15 = {_R17}
+C16 = {_R20}
+C17 = {_R11}
+C18 = {_R21}
+C19 = {_R10}
+C20 = {_R22}
+C21 = {_R5}
+C22 = {_R23}
+C23 = {_R3}
+C24 = {_R9}
+
+
+===== SCC GRAPH ======
+C0 ---> C1, C7
+C1 ---> C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24
+C2 ---> C3, C4, C5, C8, C9
+C3 ---> C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24
+C4 ---> C5
+C5 ---> C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24
+C6
+C7 ---> C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24
+C8 ---> C9
+C9 ---> C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24
+C10
+C11
+C12
+C13
+C14
+C15
+C16 ---> C17
+C17
+C18 ---> C19
+C19
+C20 ---> C21
+C21
+C22 ---> C23
+C23
+C24
+
+
+== RULE PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R0  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R1  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R2  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R3  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R4  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R5  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R6  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R7  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R8  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R9  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R10 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R11 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R12 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R13 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R14 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R15 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | _R16 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R17 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R18 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R19 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R20 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R21 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R22 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R23 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R24 
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== PROPERTIES =====
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  -   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+=== SCC PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C0  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C1  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C2  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C3  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  C4  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C5  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C6  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C7  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  C8  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  C9  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C10  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C11  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C12  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C13  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C14  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C15  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C16  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C17  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C18  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C19  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C20  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C21  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C22  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C23  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   | C24  
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== ANALYSIS: DECIDABLE =====
+
+=== COMBINE (FES) ====
+C0: FES
+C1: FES
+C2: FES
+C3: FES
+C4: FES
+C5: FES
+C6: FES
+C7: FES
+C8: FES
+C9: FES
+C10: FES
+C11: FES
+C12: FES
+C13: FES
+C14: FES
+C15: FES
+C16: FES
+C17: FES
+C18: FES
+C19: FES
+C20: FES
+C21: FES
+C22: FES
+C23: FES
+C24: FES
+
+
+=== COMBINE (FUS) ====
+C0: FUS
+C1: FUS
+C2: FUS
+C3: FUS
+C4: FUS
+C5: FUS
+C6: FUS
+C7: FUS
+C8: FUS
+C9: FUS
+C10: FUS
+C11: FUS
+C12: FUS
+C13: FUS
+C14: FUS
+C15: FUS
+C16: FUS
+C17: FUS
+C18: FUS
+C19: FUS
+C20: FUS
+C21: FUS
+C22: FUS
+C23: FUS
+C24: FUS
+
+

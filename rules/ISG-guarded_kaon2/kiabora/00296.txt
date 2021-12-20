@@ -1,0 +1,678 @@
+====== RULE SET ======
+[_R0]  ! :- <http://www.w3.org/2002/07/owl#Nothing>(X).
+[_R1] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Location>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#locationOf>(X0, X3).
+[_R2] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presenter>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#presenterOf>(X0, X3).
+[_R3] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#participantOf>(X0, X3).
+[_R4] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasSubEvent>(X0, X3).
+[_R5] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasParticipant>(X0, X3).
+[_R6] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Location>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasSubLocation>(X0, X3).
+[_R7] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presentation>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasPresenter>(X0, X3).
+[_R8] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasOrganizer>(X0, X3).
+[_R9] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#subEventOf>(X0, X3).
+[_R10] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasLocation>(X0, X3).
+[_R11] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasMember>(X0, X3).
+[_R12] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Location>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#subLocationOf>(X0, X3).
+[_R13] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#memberOf>(X0, X3).
+[_R14] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#organizerOf>(X0, X3).
+[_R15] <http://www.w3.org/2001/XMLSchema#dateTime>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasEndTime>(X1, X0).
+[_R16] <http://www.w3.org/2001/XMLSchema#dateTime>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasStartTime>(X1, X0).
+[_R17] <http://www.w3.org/2001/XMLSchema#dateTime>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasEndDate>(X1, X0).
+[_R18] <http://www.w3.org/2001/XMLSchema#dateTime>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasStartDate>(X1, X0).
+[_R19] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasStartTime>(X0, X3).
+[_R20] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasEndTime>(X0, X3).
+[_R21] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasStartDate>(X0, X3).
+[_R22] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasEndDate>(X0, X3).
+[_R23] <http://xmlns.com/foaf/0.1/Organization>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Organization>(X0).
+[_R24] <http://xmlns.com/foaf/0.1/Person>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>(X0).
+[_R25] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Workshop>(X0).
+[_R26] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Attendee>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presenter>(X0).
+[_R27] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#SocialEvent>(X0).
+[_R28] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presentation>(X0).
+[_R29] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Attendee>(X0).
+[_R30] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>(X0) :- <http://xmlns.com/foaf/0.1/Person>(X0).
+[_R31] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Panel>(X0).
+[_R32] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Conference>(X0).
+[_R33] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Organization>(X0).
+[_R34] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Chair>(X0).
+[_R35] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presentation>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteTalk>(X0).
+[_R36] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Committee>(X0).
+[_R37] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#CommitteeMember>(X0).
+[_R38] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presenter>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteSpeaker>(X0).
+[_R39] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Location>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasSubLocation>(X3, X0).
+[_R40] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasOrganizer>(X3, X0).
+[_R41] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#subEventOf>(X3, X0).
+[_R42] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#memberOf>(X3, X0).
+[_R43] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasParticipant>(X3, X0).
+[_R44] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#organizerOf>(X3, X0).
+[_R45] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presenter>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasPresenter>(X3, X0).
+[_R46] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasSubEvent>(X3, X0).
+[_R47] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Location>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasLocation>(X3, X0).
+[_R48] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#locationOf>(X3, X0).
+[_R49] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Location>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#subLocationOf>(X3, X0).
+[_R50] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presentation>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#presenterOf>(X3, X0).
+[_R51] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#participantOf>(X3, X0).
+[_R52] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>(X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasMember>(X3, X0).
+[_R53] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#presenterOf>(X1, X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasPresenter>(X0, X1).
+[_R54] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasPresenter>(X0, X1) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#presenterOf>(X1, X0).
+[_R55] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#locationOf>(X1, X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasLocation>(X0, X1).
+[_R56] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasLocation>(X0, X1) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#locationOf>(X1, X0).
+[_R57] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#subLocationOf>(X1, X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasSubLocation>(X0, X1).
+[_R58] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasSubLocation>(X0, X1) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#subLocationOf>(X1, X0).
+[_R59] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#subEventOf>(X1, X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasSubEvent>(X0, X1).
+[_R60] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasSubEvent>(X0, X1) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#subEventOf>(X1, X0).
+[_R61] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#participantOf>(X1, X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasParticipant>(X0, X1).
+[_R62] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasParticipant>(X0, X1) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#participantOf>(X1, X0).
+[_R63] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#organizerOf>(X1, X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasOrganizer>(X0, X1).
+[_R64] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasOrganizer>(X0, X1) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#organizerOf>(X1, X0).
+[_R65] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#memberOf>(X1, X0) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasMember>(X0, X1).
+[_R66] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasMember>(X0, X1) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#memberOf>(X1, X0).
+[_R67] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#presenterOf>(X0, X3), <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteTalk>(X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteSpeaker>(X0).
+[_R68] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasPresenter>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presentation>(X0).
+[_R69] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasMember>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Committee>(X0).
+[_R70] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#participantOf>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Attendee>(X0).
+[_R71] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#presenterOf>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presenter>(X0).
+[_R72] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasLocation>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Workshop>(X0).
+[_R73] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasEndDate>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Conference>(X0).
+[_R74] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasStartDate>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Workshop>(X0).
+[_R75] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#memberOf>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#CommitteeMember>(X0).
+[_R76] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasStartDate>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Conference>(X0).
+[_R77] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#memberOf>(X0, X3), <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Committee>(X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#CommitteeMember>(X0).
+[_R78] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#organizerOf>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Chair>(X0).
+[_R79] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasMember>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Panel>(X0).
+[_R80] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasLocation>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Conference>(X0).
+[_R81] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasPresenter>(X0, X3), <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteSpeaker>(X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteTalk>(X0).
+[_R82] <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#hasEndDate>(X0, X3) :- <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Workshop>(X0).
+
+======== GRD =========
+_R2 -{T::X0->S::X0}-> _R26
+_R2 -{T::X0->S::X0}-> _R71
+_R3 -{T::X0->S::X0}-> _R24
+_R7 -{T::X0->S::X0}-> _R28
+_R7 -{T::X0->S::X0}-> _R68
+_R13 -{T::X0->S::X0}-> _R24
+_R14 -{T::X0->S::X0}-> _R24
+_R26 -{T::X0->S::X0}-> _R29
+_R26 -{T::X0->S::X0}-> _R70
+_R29 -{T::X0->S::X0}-> _R24
+_R34 -{T::X0->S::X0}-> _R24
+_R35 -{T::X0->S::X0}-> _R28
+_R35 -{T::X0->S::X0}-> _R68
+_R37 -{T::X0->S::X0}-> _R24
+_R38 -{T::X0->S::X0}-> _R26
+_R38 -{T::X0->S::X0}-> _R71
+_R40 -{T::X0->S::X0}-> _R24
+_R43 -{T::X0->S::X0}-> _R24
+_R45 -{T::X0->S::X0}-> _R26
+_R45 -{T::X0->S::X0}-> _R71
+_R50 -{T::X0->S::X0}-> _R28
+_R50 -{T::X0->S::X0}-> _R68
+_R52 -{T::X0->S::X0}-> _R24
+_R53 -{T::X3->S::X0,T::X0->S::X1}-> _R2
+_R53 -{T::X3->S::X1,T::X0->S::X0}-> _R50
+_R54 -{T::X3->S::X1,T::X0->S::X0}-> _R7
+_R54 -{T::X3->S::X0,T::X0->S::X1}-> _R45
+_R55 -{T::X3->S::X0,T::X0->S::X1}-> _R1
+_R55 -{T::X3->S::X1,T::X0->S::X0}-> _R48
+_R56 -{T::X3->S::X1,T::X0->S::X0}-> _R10
+_R56 -{T::X3->S::X0,T::X0->S::X1}-> _R47
+_R57 -{T::X3->S::X0,T::X0->S::X1}-> _R12
+_R57 -{T::X3->S::X1,T::X0->S::X0}-> _R49
+_R58 -{T::X3->S::X1,T::X0->S::X0}-> _R6
+_R58 -{T::X3->S::X0,T::X0->S::X1}-> _R39
+_R59 -{T::X3->S::X0,T::X0->S::X1}-> _R9
+_R59 -{T::X3->S::X1,T::X0->S::X0}-> _R41
+_R60 -{T::X3->S::X1,T::X0->S::X0}-> _R4
+_R60 -{T::X3->S::X0,T::X0->S::X1}-> _R46
+_R61 -{T::X3->S::X0,T::X0->S::X1}-> _R3
+_R61 -{T::X3->S::X1,T::X0->S::X0}-> _R51
+_R62 -{T::X3->S::X1,T::X0->S::X0}-> _R5
+_R62 -{T::X3->S::X0,T::X0->S::X1}-> _R43
+_R63 -{T::X3->S::X0,T::X0->S::X1}-> _R14
+_R63 -{T::X3->S::X1,T::X0->S::X0}-> _R44
+_R64 -{T::X3->S::X1,T::X0->S::X0}-> _R8
+_R64 -{T::X3->S::X0,T::X0->S::X1}-> _R40
+_R65 -{T::X3->S::X0,T::X0->S::X1}-> _R13
+_R65 -{T::X3->S::X1,T::X0->S::X0}-> _R42
+_R66 -{T::X3->S::X1,T::X0->S::X0}-> _R11
+_R66 -{T::X3->S::X0,T::X0->S::X1}-> _R52
+_R67 -{T::X3->S::X3,T::X0->S::X0}-> _R2
+_R67 -{T::X3->S::X0,T::X0->S::X3}-> _R50
+_R67 -{T::X0->S::X3,T::X1->S::X0}-> _R54
+_R67 -{T::X0->S::X3}-> _R35
+_R67 -{T::X0->S::X3}-> _R81
+_R68 -{T::X3->S::X0,T::X0->S::X3}-> _R45
+_R68 -{T::X0->S::X0,T::X1->S::X3}-> _R53
+_R69 -{T::X3->S::X3,T::X0->S::X0}-> _R11
+_R69 -{T::X3->S::X0,T::X0->S::X3}-> _R52
+_R69 -{T::X0->S::X0,T::X1->S::X3}-> _R65
+_R70 -{T::X3->S::X3,T::X0->S::X0}-> _R3
+_R70 -{T::X3->S::X0,T::X0->S::X3}-> _R51
+_R70 -{T::X0->S::X3,T::X1->S::X0}-> _R62
+_R71 -{T::X3->S::X0,T::X0->S::X3}-> _R50
+_R71 -{T::X0->S::X3,T::X1->S::X0}-> _R54
+_R72 -{T::X3->S::X3,T::X0->S::X0}-> _R10
+_R72 -{T::X3->S::X0,T::X0->S::X3}-> _R47
+_R72 -{T::X0->S::X0,T::X1->S::X3}-> _R55
+_R73 -{T::X0->S::X3,T::X1->S::X0}-> _R17
+_R73 -{T::X3->S::X3,T::X0->S::X0}-> _R22
+_R74 -{T::X0->S::X3,T::X1->S::X0}-> _R18
+_R74 -{T::X3->S::X3,T::X0->S::X0}-> _R21
+_R75 -{T::X3->S::X3,T::X0->S::X0}-> _R13
+_R75 -{T::X3->S::X0,T::X0->S::X3}-> _R42
+_R75 -{T::X0->S::X3,T::X1->S::X0}-> _R66
+_R76 -{T::X0->S::X3,T::X1->S::X0}-> _R18
+_R76 -{T::X3->S::X3,T::X0->S::X0}-> _R21
+_R77 -{T::X3->S::X3,T::X0->S::X0}-> _R13
+_R77 -{T::X3->S::X0,T::X0->S::X3}-> _R42
+_R77 -{T::X0->S::X3,T::X1->S::X0}-> _R66
+_R77 -{T::X0->S::X3}-> _R36
+_R77 -{T::X0->S::X3}-> _R69
+_R78 -{T::X3->S::X3,T::X0->S::X0}-> _R14
+_R78 -{T::X3->S::X0,T::X0->S::X3}-> _R44
+_R78 -{T::X0->S::X3,T::X1->S::X0}-> _R64
+_R79 -{T::X3->S::X3,T::X0->S::X0}-> _R11
+_R79 -{T::X3->S::X0,T::X0->S::X3}-> _R52
+_R79 -{T::X0->S::X0,T::X1->S::X3}-> _R65
+_R80 -{T::X3->S::X3,T::X0->S::X0}-> _R10
+_R80 -{T::X3->S::X0,T::X0->S::X3}-> _R47
+_R80 -{T::X0->S::X0,T::X1->S::X3}-> _R55
+_R81 -{T::X3->S::X3,T::X0->S::X0}-> _R7
+_R81 -{T::X3->S::X0,T::X0->S::X3}-> _R45
+_R81 -{T::X0->S::X0,T::X1->S::X3}-> _R53
+_R81 -{T::X0->S::X3}-> _R38
+_R81 -{T::X0->S::X3}-> _R67
+_R82 -{T::X0->S::X3,T::X1->S::X0}-> _R17
+_R82 -{T::X3->S::X3,T::X0->S::X0}-> _R22
+
+
+======== SCC =========
+C0 = {_R79}
+C1 = {_R76}
+C2 = {_R61}
+C3 = {_R63}
+C4 = {_R31}
+C5 = {_R60}
+C6 = {_R19}
+C7 = {_R46}
+C8 = {_R0}
+C9 = {_R37}
+C10 = {_R74}
+C11 = {_R16}
+C12 = {_R32}
+C13 = {_R80}
+C14 = {_R59}
+C15 = {_R41}
+C16 = {_R21}
+C17 = {_R20}
+C18 = {_R78}
+C19 = {_R14}
+C20 = {_R64}
+C21 = {_R8}
+C22 = {_R40}
+C23 = {_R82}
+C24 = {_R44}
+C25 = {_R4}
+C26 = {_R57}
+C27 = {_R12}
+C28 = {_R49}
+C29 = {_R77}
+C30 = {_R36}
+C31 = {_R69}
+C32 = {_R65}
+C33 = {_R15}
+C34 = {_R34}
+C35 = {_R73}
+C36 = {_R22}
+C37 = {_R23}
+C38 = {_R18}
+C39 = {_R56}
+C40 = {_R33}
+C41 = {_R27}
+C42 = {_R58}
+C43 = {_R39}
+C44 = {_R75}
+C45 = {_R13}
+C46 = {_R42}
+C47 = {_R66}
+C48 = {_R11}
+C49 = {_R52}
+C50 = {_R17}
+C51 = {_R67, _R81}
+C52 = {_R38}
+C53 = {_R35}
+C54 = {_R71, _R2, _R68, _R54, _R7, _R53, _R45, _R50}
+C55 = {_R26}
+C56 = {_R29}
+C57 = {_R70}
+C58 = {_R3}
+C59 = {_R51}
+C60 = {_R62}
+C61 = {_R5}
+C62 = {_R43}
+C63 = {_R28}
+C64 = {_R6}
+C65 = {_R30}
+C66 = {_R24}
+C67 = {_R9}
+C68 = {_R25}
+C69 = {_R72}
+C70 = {_R10}
+C71 = {_R47}
+C72 = {_R55}
+C73 = {_R1}
+C74 = {_R48}
+
+
+===== SCC GRAPH ======
+C0 ---> C32, C48, C49
+C1 ---> C16, C38
+C2 ---> C58, C59
+C3 ---> C19, C24
+C4
+C5 ---> C7, C25
+C6
+C7
+C8
+C9 ---> C66
+C10 ---> C16, C38
+C11
+C12
+C13 ---> C70, C71, C72
+C14 ---> C15, C67
+C15
+C16
+C17
+C18 ---> C19, C20, C24
+C19 ---> C66
+C20 ---> C21, C22
+C21
+C22 ---> C66
+C23 ---> C36, C50
+C24
+C25
+C26 ---> C27, C28
+C27
+C28
+C29 ---> C30, C31, C45, C46, C47
+C30
+C31 ---> C32, C48, C49
+C32 ---> C45, C46
+C33
+C34 ---> C66
+C35 ---> C36, C50
+C36
+C37
+C38
+C39 ---> C70, C71
+C40
+C41
+C42 ---> C43, C64
+C43
+C44 ---> C45, C46, C47
+C45 ---> C66
+C46
+C47 ---> C48, C49
+C48
+C49 ---> C66
+C50
+C51 ---> C52, C53, C54
+C52 ---> C54, C55
+C53 ---> C54, C63
+C54 ---> C55, C63
+C55 ---> C56, C57
+C56 ---> C66
+C57 ---> C58, C59, C60
+C58 ---> C66
+C59
+C60 ---> C61, C62
+C61
+C62 ---> C66
+C63
+C64
+C65
+C66
+C67
+C68
+C69 ---> C70, C71, C72
+C70
+C71
+C72 ---> C73, C74
+C73
+C74
+
+
+== RULE PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R0  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R1  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R2  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R3  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R4  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R5  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R6  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R7  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R8  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R9  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R10 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R11 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R12 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R13 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R14 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R15 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R16 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R17 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R18 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R19 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R20 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R21 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R22 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R23 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R24 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R25 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R26 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R27 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R28 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R29 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R30 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R31 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R32 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R33 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R34 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R35 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R36 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R37 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R38 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R39 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R40 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R41 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R42 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R43 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R44 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R45 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R46 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R47 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R48 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R49 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R50 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R51 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R52 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R53 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R54 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R55 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R56 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R57 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R58 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R59 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R60 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R61 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R62 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R63 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R64 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R65 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R66 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R67 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R68 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R69 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R70 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R71 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R72 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R73 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R74 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R75 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R76 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R77 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R78 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R79 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R80 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R81 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | _R82 
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== PROPERTIES =====
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  -   |  X   |  -   |  -   |  ?   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  -   |  -   |  -   |  X   |  -   |  X   |  X   |  X   |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+=== SCC PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  C0  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  C1  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C2  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C3  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C4  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C5  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C6  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C7  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C8  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C9  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C10  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C11  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C12  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C13  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C14  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C15  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C16  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C17  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C18  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C19  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C20  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C21  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C22  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C23  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C24  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C25  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C26  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C27  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C28  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C29  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C30  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C31  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C32  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C33  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C34  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C35  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C36  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C37  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C38  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C39  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C40  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C41  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C42  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C43  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C44  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C45  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C46  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C47  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C48  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C49  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C50  
+|  -   |  X   |  -   |  X   |  ?   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  -   |  -   |  X   |  -   |  X   |  X   |  X   | C51  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C52  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C53  
+|  -   |  X   |  -   |  -   |  ?   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  -   |  -   |  -   |  X   |  -   |  X   |  X   |  X   | C54  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C55  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C56  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C57  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C58  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C59  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C60  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C61  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C62  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C63  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C64  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C65  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C66  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C67  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C68  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C69  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C70  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C71  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C72  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C73  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C74  
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== ANALYSIS: DECIDABLE =====
+
+=== COMBINE (FES) ====
+C0: FES
+C1: FES
+C2: FES
+C3: FES
+C4: FES
+C5: FES
+C6: FES
+C7: FES
+C8: FES
+C9: FES
+C10: FES
+C11: FES
+C12: FES
+C13: FES
+C14: FES
+C15: FES
+C16: FES
+C17: FES
+C18: FES
+C19: FES
+C20: FES
+C21: FES
+C22: FES
+C23: FES
+C24: FES
+C25: FES
+C26: FES
+C27: FES
+C28: FES
+C29: FES
+C30: FES
+C31: FES
+C32: FES
+C33: FES
+C34: FES
+C35: FES
+C36: FES
+C37: FES
+C38: FES
+C39: FES
+C40: FES
+C41: FES
+C42: FES
+C43: FES
+C44: FES
+C45: FES
+C46: FES
+C47: FES
+C48: FES
+C49: FES
+C50: FES
+C51: FUS
+C52: FUS
+C53: FUS
+C54: FUS
+C55: FUS
+C56: FUS
+C57: FUS
+C58: FUS
+C59: FUS
+C60: FUS
+C61: FUS
+C62: FUS
+C63: FUS
+C64: FES
+C65: FES
+C66: FUS
+C67: FES
+C68: FES
+C69: FES
+C70: FES
+C71: FES
+C72: FES
+C73: FES
+C74: FES
+
+
+=== COMBINE (FUS) ====
+C0: FUS
+C1: FUS
+C2: FUS
+C3: FUS
+C4: FUS
+C5: FUS
+C6: FUS
+C7: FUS
+C8: FUS
+C9: FUS
+C10: FUS
+C11: FUS
+C12: FUS
+C13: FUS
+C14: FUS
+C15: FUS
+C16: FUS
+C17: FUS
+C18: FUS
+C19: FUS
+C20: FUS
+C21: FUS
+C22: FUS
+C23: FUS
+C24: FUS
+C25: FUS
+C26: FUS
+C27: FUS
+C28: FUS
+C29: FUS
+C30: FUS
+C31: FUS
+C32: FUS
+C33: FUS
+C34: FUS
+C35: FUS
+C36: FUS
+C37: FUS
+C38: FUS
+C39: FUS
+C40: FUS
+C41: FUS
+C42: FUS
+C43: FUS
+C44: FUS
+C45: FUS
+C46: FUS
+C47: FUS
+C48: FUS
+C49: FUS
+C50: FUS
+C51: FUS
+C52: FUS
+C53: FUS
+C54: FUS
+C55: FUS
+C56: FUS
+C57: FUS
+C58: FUS
+C59: FUS
+C60: FUS
+C61: FUS
+C62: FUS
+C63: FUS
+C64: FUS
+C65: FUS
+C66: FUS
+C67: FUS
+C68: FUS
+C69: FUS
+C70: FUS
+C71: FUS
+C72: FUS
+C73: FUS
+C74: FUS
+
+

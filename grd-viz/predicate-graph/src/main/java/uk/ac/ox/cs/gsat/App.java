@@ -17,6 +17,7 @@ import uk.ac.ox.cs.pdq.fol.Atom;
 import uk.ac.ox.cs.pdq.fol.Dependency;
 import uk.ac.ox.cs.pdq.fol.Predicate;
 import uk.ac.ox.cs.pdq.fol.TGD;
+import uk.ac.ox.cs.pdq.fol.Variable;
 
 /**
  * Hello world!
@@ -128,11 +129,33 @@ public class App {
         for (TGD tgd : rules) {
             Set<Predicate> bag = new HashSet<>();
             bags.add(bag);
-            Atom[] atoms = (forHead) ? tgd.getHeadAtoms() : tgd.getBodyAtoms();
+            Atom[] atoms = (forHead) ? tgd.getHeadAtoms() : new Atom[] { computeGuard(tgd) };
             for (Atom atom : atoms) {
                 bag.add(atom.getPredicate());
             }
         }
         return bags;
     }
+
+    public static Atom computeGuard(TGD tgd) {
+
+        List<Variable> universalList = Arrays.asList(tgd.getTopLevelQuantifiedVariables());
+
+        Atom currentGuard = null;
+        for (Atom atom : tgd.getBodyAtoms())
+            if (Arrays.asList(atom.getVariables()).containsAll(universalList))
+                if (currentGuard == null || atom.getPredicate().getArity() < currentGuard.getPredicate().getArity())
+                    currentGuard = atom;
+                else if (atom.getPredicate().getArity() == currentGuard.getPredicate().getArity()
+                        && atom.getPredicate().getName().compareTo(currentGuard.getPredicate().getName()) < 0)
+                    currentGuard = atom;
+
+        if (currentGuard == null)
+            throw new IllegalArgumentException("GTGD must be guarded! But found " + tgd);
+
+        return currentGuard;
+
+    }
+
+
 }

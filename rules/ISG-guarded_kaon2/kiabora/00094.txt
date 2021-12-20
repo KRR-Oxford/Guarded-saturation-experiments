@@ -1,0 +1,1291 @@
+====== RULE SET ======
+[_R0]  ! :- <http://www.w3.org/2002/07/owl#Nothing>(X).
+[_R1] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#targetNamespace>(X0, X3).
+[_R2] <http://www.w3.org/2002/07/owl#Restriction>(X0) :- <http://www.daml.org/2001/03/daml+oil#hasClass>(X0, X3).
+[_R3] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ParamFault>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#paramMessage>(X0, X3).
+[_R4] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Import>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#location>(X0, X3).
+[_R5] <http://www.w3.org/2002/07/owl#Restriction>(X0) :- <http://www.daml.org/2001/03/daml+oil#maxCardinality>(X0, X3).
+[_R6] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#fault>(X0, X3).
+[_R7] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#PortType>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#operation>(X0, X3).
+[_R8] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Import>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#namespace>(X0, X3).
+[_R9] <http://www.w3.org/2002/07/owl#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#sameClassAs>(X0, X3).
+[_R10] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Message>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#part>(X0, X3).
+[_R11] <http://www.w3.org/2002/07/owl#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#unionOf>(X0, X3).
+[_R12] <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>(X0) :- <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>(X0, X3).
+[_R13] <http://www.w3.org/2002/07/owl#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#complementOf>(X0, X3).
+[_R14] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#import>(X0, X3).
+[_R15] <http://www.w3.org/2002/07/owl#Restriction>(X0) :- <http://www.daml.org/2001/03/daml+oil#toClass>(X0, X3).
+[_R16] <http://www.w3.org/2000/01/rdf-schema#Resource>(X0) :- <http://www.w3.org/2000/01/rdf-schema#member>(X0, X3).
+[_R17] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#binding>(X0, X3).
+[_R18] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Service>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#port>(X0, X3).
+[_R19] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Binding>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#type>(X0, X3).
+[_R20] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#portType>(X0, X3).
+[_R21] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#bindingOutput>(X0, X3).
+[_R22] <http://www.w3.org/2002/07/owl#ObjectProperty>(X0) :- <http://www.daml.org/2001/03/daml+oil#inverseOf>(X0, X3).
+[_R23] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#input>(X0, X3).
+[_R24] <http://www.w3.org/2002/07/owl#Restriction>(X0) :- <http://www.daml.org/2001/03/daml+oil#minCardinalityQ>(X0, X3).
+[_R25] <http://www.w3.org/2000/01/rdf-schema#Class>(X0) :- <http://www.w3.org/2000/01/rdf-schema#subClassOf>(X0, X3).
+[_R26] <http://www.w3.org/2002/07/owl#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#disjointWith>(X0, X3).
+[_R27] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Part>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#partElement>(X0, X3).
+[_R28] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Part>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#partType>(X0, X3).
+[_R29] <http://www.w3.org/2002/07/owl#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#intersectionOf>(X0, X3).
+[_R30] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Binding>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#bindingOperation>(X0, X3).
+[_R31] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#bindingFault>(X0, X3).
+[_R32] <http://www.w3.org/2002/07/owl#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#oneOf>(X0, X3).
+[_R33] <http://www.w3.org/2002/07/owl#Restriction>(X0) :- <http://www.daml.org/2001/03/daml+oil#onProperty>(X0, X3).
+[_R34] <http://www.w3.org/2002/07/owl#Restriction>(X0) :- <http://www.daml.org/2001/03/daml+oil#maxCardinalityQ>(X0, X3).
+[_R35] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#service>(X0, X3).
+[_R36] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#output>(X0, X3).
+[_R37] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#message>(X0, X3).
+[_R38] <http://www.w3.org/2002/07/owl#Restriction>(X0) :- <http://www.daml.org/2001/03/daml+oil#minCardinality>(X0, X3).
+[_R39] <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>(X0) :- <http://www.w3.org/2000/01/rdf-schema#domain>(X0, X3).
+[_R40] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#types>(X0, X3).
+[_R41] <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>(X0) :- <http://www.w3.org/2000/01/rdf-schema#range>(X0, X3).
+[_R42] <http://www.w3.org/2002/07/owl#Restriction>(X0) :- <http://www.daml.org/2001/03/daml+oil#cardinality>(X0, X3).
+[_R43] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Port>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#portBinding>(X0, X3).
+[_R44] <http://www.w3.org/2002/07/owl#Restriction>(X0) :- <http://www.daml.org/2001/03/daml+oil#cardinalityQ>(X0, X3).
+[_R45] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X0, X3).
+[_R46] <http://www.w3.org/2002/07/owl#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#disjointUnionOf>(X0, X3).
+[_R47] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#bindingInput>(X0, X3).
+[_R48] <http://www.daml.org/2001/03/daml+oil#List>(X0) :- <http://www.daml.org/2001/03/daml+oil#rest>(X0, X3).
+[_R49] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#documentation>(X0, X3).
+[_R50] <http://www.w3.org/2002/07/owl#Restriction>(X0) :- <http://www.daml.org/2001/03/daml+oil#hasClassQ>(X0, X3).
+[_R51] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#WSDLDOC>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#definition>(X0, X3).
+[_R52] <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>(X0, X1) :- <http://www.daml.org/2001/03/daml+oil#samePropertyAs>(X0, X1).
+[_R53] <http://www.w3.org/2000/01/rdf-schema#subClassOf>(X0, X1) :- <http://www.daml.org/2001/03/daml+oil#sameClassAs>(X0, X1).
+[_R54] <http://www.w3.org/2000/01/rdf-schema#Resource>(X0) :- <http://www.w3.org/2000/01/rdf-schema#Class>(X0).
+[_R55] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ParamFault>(X0).
+[_R56] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ParamFault>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Fault>(X0).
+[_R57] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperation>(X0).
+[_R58] <http://www.w3.org/2002/07/owl#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#Restriction>(X0).
+[_R59] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#OneWayOperation>(X0).
+[_R60] <http://www.w3.org/2002/07/owl#ObjectProperty>(X0) :- <http://www.daml.org/2001/03/daml+oil#TransitiveProperty>(X0).
+[_R61] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ParamFault>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Param>(X0).
+[_R62] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Port>(X0).
+[_R63] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#NotificationOperation>(X0).
+[_R64] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#RequestResponseOperation>(X0).
+[_R65] <http://www.w3.org/2000/01/rdf-schema#Resource>(X0) :- <http://www.w3.org/2000/01/rdf-schema#Container>(X0).
+[_R66] <http://www.w3.org/2000/01/rdf-schema#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#Datatype>(X0).
+[_R67] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>(X0).
+[_R68] <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq>(X0) :- <http://www.daml.org/2001/03/daml+oil#List>(X0).
+[_R69] <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>(X0) :- <http://www.daml.org/2001/03/daml+oil#UniqueProperty>(X0).
+[_R70] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented>(X0).
+[_R71] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationFault>(X0).
+[_R72] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>(X0).
+[_R73] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>(X0).
+[_R74] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#SolicitResponseOperation>(X0).
+[_R75] <http://www.w3.org/2000/01/rdf-schema#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#Class>(X0).
+[_R76] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Binding>(X0).
+[_R77] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Types>(X0).
+[_R78] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Import>(X0).
+[_R79] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationMessage>(X0).
+[_R80] <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>(X0) :- <http://www.daml.org/2001/03/daml+oil#DatatypeProperty>(X0).
+[_R81] <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>(X0) :- <http://www.daml.org/2001/03/daml+oil#ObjectProperty>(X0).
+[_R82] <http://www.w3.org/2000/01/rdf-schema#Class>(X0) :- <http://www.w3.org/2000/01/rdf-schema#Datatype>(X0).
+[_R83] <http://www.w3.org/2002/07/owl#ObjectProperty>(X0) :- <http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>(X0).
+[_R84] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#PortType>(X0).
+[_R85] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Part>(X0).
+[_R86] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Service>(X0).
+[_R87] <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>(X0) :- <http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty>(X0).
+[_R88] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Message>(X0).
+[_R89] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Binding>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#binding>(X3, X0).
+[_R90] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Types>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#partType>(X3, X0).
+[_R91] <http://www.daml.org/2001/03/daml+oil#List>(X0) :- <http://www.daml.org/2001/03/daml+oil#intersectionOf>(X3, X0).
+[_R92] <http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(X0) :- <http://www.daml.org/2001/03/daml+oil#minCardinality>(X3, X0).
+[_R93] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#PortType>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#portType>(X3, X0).
+[_R94] <http://www.w3.org/2000/01/rdf-schema#Class>(X0) :- <http://www.w3.org/2000/01/rdf-schema#subClassOf>(X3, X0).
+[_R95] <http://www.w3.org/2000/10/XMLSchema#NCName>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X3, X0).
+[_R96] <http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(X0) :- <http://www.daml.org/2001/03/daml+oil#cardinality>(X3, X0).
+[_R97] <http://www.w3.org/2002/07/owl#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#complementOf>(X3, X0).
+[_R98] <http://www.daml.org/2001/03/daml+oil#List>(X0) :- <http://www.daml.org/2001/03/daml+oil#oneOf>(X3, X0).
+[_R99] <http://www.daml.org/2001/03/daml+oil#List>(X0) :- <http://www.daml.org/2001/03/daml+oil#unionOf>(X3, X0).
+[_R100] <http://www.daml.org/2001/03/daml+oil#List>(X0) :- <http://www.daml.org/2001/03/daml+oil#disjointUnionOf>(X3, X0).
+[_R101] <http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(X0) :- <http://www.daml.org/2001/03/daml+oil#minCardinalityQ>(X3, X0).
+[_R102] <http://www.w3.org/2000/01/rdf-schema#Class>(X0) :- <http://www.w3.org/2000/01/rdf-schema#domain>(X3, X0).
+[_R103] <http://www.w3.org/2002/07/owl#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#disjointWith>(X3, X0).
+[_R104] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documentation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#documentation>(X3, X0).
+[_R105] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationFault>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#bindingFault>(X3, X0).
+[_R106] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Param>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#input>(X3, X0).
+[_R107] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#PortType>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#type>(X3, X0).
+[_R108] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#definition>(X3, X0).
+[_R109] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Fault>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#fault>(X3, X0).
+[_R110] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#operation>(X3, X0).
+[_R111] <http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(X0) :- <http://www.daml.org/2001/03/daml+oil#maxCardinality>(X3, X0).
+[_R112] <http://www.w3.org/2002/07/owl#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#sameClassAs>(X3, X0).
+[_R113] <http://www.w3.org/2000/01/rdf-schema#Class>(X0) :- <http://www.w3.org/2000/01/rdf-schema#range>(X3, X0).
+[_R114] <http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(X0) :- <http://www.daml.org/2001/03/daml+oil#maxCardinalityQ>(X3, X0).
+[_R115] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationMessage>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#bindingInput>(X3, X0).
+[_R116] <http://www.w3.org/2000/10/XMLSchema#anyURI>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#targetNamespace>(X3, X0).
+[_R117] <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>(X0) :- <http://www.daml.org/2001/03/daml+oil#onProperty>(X3, X0).
+[_R118] <http://www.w3.org/2000/01/rdf-schema#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#toClass>(X3, X0).
+[_R119] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Service>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#service>(X3, X0).
+[_R120] <http://www.w3.org/2000/01/rdf-schema#Resource>(X0) :- <http://www.w3.org/2000/01/rdf-schema#member>(X3, X0).
+[_R121] <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>(X0) :- <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>(X3, X0).
+[_R122] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Port>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#port>(X3, X0).
+[_R123] <http://www.w3.org/2000/10/XMLSchema#anyURI>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#namespace>(X3, X0).
+[_R124] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Part>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#part>(X3, X0).
+[_R125] <http://www.daml.org/2001/03/daml+oil#List>(X0) :- <http://www.daml.org/2001/03/daml+oil#rest>(X3, X0).
+[_R126] <http://www.w3.org/2002/07/owl#ObjectProperty>(X0) :- <http://www.daml.org/2001/03/daml+oil#inverseOf>(X3, X0).
+[_R127] <http://www.w3.org/2000/10/XMLSchema#anyURI>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#location>(X3, X0).
+[_R128] <http://www.w3.org/2000/01/rdf-schema#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#hasClassQ>(X3, X0).
+[_R129] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Message>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#paramMessage>(X3, X0).
+[_R130] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Message>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#message>(X3, X0).
+[_R131] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Binding>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#portBinding>(X3, X0).
+[_R132] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Import>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#import>(X3, X0).
+[_R133] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperation>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#bindingOperation>(X3, X0).
+[_R134] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationMessage>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#bindingOutput>(X3, X0).
+[_R135] <http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>(X0) :- <http://www.daml.org/2001/03/daml+oil#cardinalityQ>(X3, X0).
+[_R136] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Types>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#types>(X3, X0).
+[_R137] <http://www.w3.org/2000/01/rdf-schema#Class>(X0) :- <http://www.daml.org/2001/03/daml+oil#hasClass>(X3, X0).
+[_R138] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Param>(X0) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#output>(X3, X0).
+[_R139] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#location>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Import>(X0).
+[_R140] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#paramMessage>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ParamFault>(X0).
+[_R141] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Fault>(X0).
+[_R142] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#type>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Binding>(X0).
+[_R143] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Binding>(X0).
+[_R144] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperation>(X0).
+[_R145] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>(X0).
+[_R146] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#output>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#NotificationOperation>(X0).
+[_R147] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#input>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#OneWayOperation>(X0).
+[_R148] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Message>(X0).
+[_R149] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Port>(X0).
+[_R150] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#PortType>(X0).
+[_R151] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#namespace>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Import>(X0).
+[_R152] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Part>(X0).
+[_R153] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Service>(X0).
+[_R154] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#binding>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Port>(X0).
+[_R155] <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#name>(X0, X3) :- <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationFault>(X0).
+
+======== GRD =========
+_R1 -{T::X0->S::X0}-> _R72
+_R3 -{T::X0->S::X0}-> _R55
+_R3 -{T::X0->S::X0}-> _R140
+_R4 -{T::X0->S::X0}-> _R78
+_R4 -{T::X0->S::X0}-> _R139
+_R4 -{T::X0->S::X0}-> _R151
+_R6 -{T::X0->S::X0}-> _R73
+_R6 -{T::X0->S::X0}-> _R145
+_R7 -{T::X0->S::X0}-> _R84
+_R7 -{T::X0->S::X0}-> _R150
+_R8 -{T::X0->S::X0}-> _R78
+_R8 -{T::X0->S::X0}-> _R139
+_R8 -{T::X0->S::X0}-> _R151
+_R10 -{T::X0->S::X0}-> _R88
+_R10 -{T::X0->S::X0}-> _R148
+_R14 -{T::X0->S::X0}-> _R72
+_R17 -{T::X0->S::X0}-> _R72
+_R18 -{T::X0->S::X0}-> _R86
+_R18 -{T::X0->S::X0}-> _R153
+_R19 -{T::X0->S::X0}-> _R76
+_R19 -{T::X0->S::X0}-> _R142
+_R19 -{T::X0->S::X0}-> _R143
+_R20 -{T::X0->S::X0}-> _R72
+_R21 -{T::X0->S::X0}-> _R57
+_R21 -{T::X0->S::X0}-> _R144
+_R23 -{T::X0->S::X0}-> _R73
+_R23 -{T::X0->S::X0}-> _R145
+_R25 -{T::X0->S::X0}-> _R54
+_R27 -{T::X0->S::X0}-> _R85
+_R27 -{T::X0->S::X0}-> _R152
+_R28 -{T::X0->S::X0}-> _R85
+_R28 -{T::X0->S::X0}-> _R152
+_R30 -{T::X0->S::X0}-> _R76
+_R30 -{T::X0->S::X0}-> _R142
+_R30 -{T::X0->S::X0}-> _R143
+_R31 -{T::X0->S::X0}-> _R57
+_R31 -{T::X0->S::X0}-> _R144
+_R35 -{T::X0->S::X0}-> _R72
+_R36 -{T::X0->S::X0}-> _R73
+_R36 -{T::X0->S::X0}-> _R145
+_R37 -{T::X0->S::X0}-> _R72
+_R40 -{T::X0->S::X0}-> _R72
+_R43 -{T::X0->S::X0}-> _R62
+_R43 -{T::X0->S::X0}-> _R149
+_R43 -{T::X0->S::X0}-> _R154
+_R47 -{T::X0->S::X0}-> _R57
+_R47 -{T::X0->S::X0}-> _R144
+_R48 -{T::X0->S::X0}-> _R68
+_R52 -{T::X3->S::X1,T::X0->S::X0}-> _R12
+_R52 -{T::X3->S::X0,T::X0->S::X1}-> _R121
+_R53 -{T::X3->S::X1,T::X0->S::X0}-> _R25
+_R53 -{T::X3->S::X0,T::X0->S::X1}-> _R94
+_R55 -{T::X0->S::X0}-> _R70
+_R56 -{T::X0->S::X0}-> _R55
+_R56 -{T::X0->S::X0}-> _R140
+_R57 -{T::X0->S::X0}-> _R67
+_R59 -{T::X0->S::X0}-> _R73
+_R59 -{T::X0->S::X0}-> _R145
+_R61 -{T::X0->S::X0}-> _R55
+_R61 -{T::X0->S::X0}-> _R140
+_R62 -{T::X0->S::X0}-> _R67
+_R63 -{T::X0->S::X0}-> _R73
+_R63 -{T::X0->S::X0}-> _R145
+_R64 -{T::X0->S::X0}-> _R73
+_R64 -{T::X0->S::X0}-> _R145
+_R66 -{T::X0->S::X0}-> _R54
+_R71 -{T::X0->S::X0}-> _R67
+_R72 -{T::X0->S::X0}-> _R67
+_R73 -{T::X0->S::X0}-> _R67
+_R74 -{T::X0->S::X0}-> _R73
+_R74 -{T::X0->S::X0}-> _R145
+_R75 -{T::X0->S::X0}-> _R54
+_R76 -{T::X0->S::X0}-> _R67
+_R77 -{T::X0->S::X0}-> _R67
+_R78 -{T::X0->S::X0}-> _R70
+_R79 -{T::X0->S::X0}-> _R67
+_R82 -{T::X0->S::X0}-> _R54
+_R84 -{T::X0->S::X0}-> _R70
+_R85 -{T::X0->S::X0}-> _R70
+_R86 -{T::X0->S::X0}-> _R67
+_R88 -{T::X0->S::X0}-> _R67
+_R89 -{T::X0->S::X0}-> _R76
+_R89 -{T::X0->S::X0}-> _R142
+_R89 -{T::X0->S::X0}-> _R143
+_R90 -{T::X0->S::X0}-> _R77
+_R91 -{T::X0->S::X0}-> _R68
+_R93 -{T::X0->S::X0}-> _R84
+_R93 -{T::X0->S::X0}-> _R150
+_R94 -{T::X0->S::X0}-> _R54
+_R98 -{T::X0->S::X0}-> _R68
+_R99 -{T::X0->S::X0}-> _R68
+_R100 -{T::X0->S::X0}-> _R68
+_R102 -{T::X0->S::X0}-> _R54
+_R105 -{T::X0->S::X0}-> _R71
+_R105 -{T::X0->S::X0}-> _R155
+_R106 -{T::X0->S::X0}-> _R61
+_R107 -{T::X0->S::X0}-> _R84
+_R107 -{T::X0->S::X0}-> _R150
+_R108 -{T::X0->S::X0}-> _R72
+_R109 -{T::X0->S::X0}-> _R56
+_R109 -{T::X0->S::X0}-> _R141
+_R110 -{T::X0->S::X0}-> _R73
+_R110 -{T::X0->S::X0}-> _R145
+_R113 -{T::X0->S::X0}-> _R54
+_R115 -{T::X0->S::X0}-> _R79
+_R118 -{T::X0->S::X0}-> _R54
+_R119 -{T::X0->S::X0}-> _R86
+_R119 -{T::X0->S::X0}-> _R153
+_R122 -{T::X0->S::X0}-> _R62
+_R122 -{T::X0->S::X0}-> _R149
+_R122 -{T::X0->S::X0}-> _R154
+_R124 -{T::X0->S::X0}-> _R85
+_R124 -{T::X0->S::X0}-> _R152
+_R125 -{T::X0->S::X0}-> _R68
+_R128 -{T::X0->S::X0}-> _R54
+_R129 -{T::X0->S::X0}-> _R88
+_R129 -{T::X0->S::X0}-> _R148
+_R130 -{T::X0->S::X0}-> _R88
+_R130 -{T::X0->S::X0}-> _R148
+_R131 -{T::X0->S::X0}-> _R76
+_R131 -{T::X0->S::X0}-> _R142
+_R131 -{T::X0->S::X0}-> _R143
+_R132 -{T::X0->S::X0}-> _R78
+_R132 -{T::X0->S::X0}-> _R139
+_R132 -{T::X0->S::X0}-> _R151
+_R133 -{T::X0->S::X0}-> _R57
+_R133 -{T::X0->S::X0}-> _R144
+_R134 -{T::X0->S::X0}-> _R79
+_R136 -{T::X0->S::X0}-> _R77
+_R137 -{T::X0->S::X0}-> _R54
+_R138 -{T::X0->S::X0}-> _R61
+_R139 -{T::X3->S::X0,T::X0->S::X3}-> _R127
+_R140 -{T::X3->S::X0,T::X0->S::X3}-> _R129
+_R141 -{T::X3->S::X3,T::X0->S::X0}-> _R45
+_R141 -{T::X3->S::X0,T::X0->S::X3}-> _R95
+_R142 -{T::X3->S::X0,T::X0->S::X3}-> _R107
+_R143 -{T::X3->S::X3,T::X0->S::X0}-> _R45
+_R143 -{T::X3->S::X0,T::X0->S::X3}-> _R95
+_R144 -{T::X3->S::X3,T::X0->S::X0}-> _R45
+_R144 -{T::X3->S::X0,T::X0->S::X3}-> _R95
+_R145 -{T::X3->S::X3,T::X0->S::X0}-> _R45
+_R145 -{T::X3->S::X0,T::X0->S::X3}-> _R95
+_R146 -{T::X3->S::X3,T::X0->S::X0}-> _R36
+_R146 -{T::X3->S::X0,T::X0->S::X3}-> _R138
+_R147 -{T::X3->S::X3,T::X0->S::X0}-> _R23
+_R147 -{T::X3->S::X0,T::X0->S::X3}-> _R106
+_R148 -{T::X3->S::X3,T::X0->S::X0}-> _R45
+_R148 -{T::X3->S::X0,T::X0->S::X3}-> _R95
+_R149 -{T::X3->S::X3,T::X0->S::X0}-> _R45
+_R149 -{T::X3->S::X0,T::X0->S::X3}-> _R95
+_R150 -{T::X3->S::X3,T::X0->S::X0}-> _R45
+_R150 -{T::X3->S::X0,T::X0->S::X3}-> _R95
+_R151 -{T::X3->S::X0,T::X0->S::X3}-> _R123
+_R152 -{T::X3->S::X3,T::X0->S::X0}-> _R45
+_R152 -{T::X3->S::X0,T::X0->S::X3}-> _R95
+_R153 -{T::X3->S::X3,T::X0->S::X0}-> _R45
+_R153 -{T::X3->S::X0,T::X0->S::X3}-> _R95
+_R154 -{T::X3->S::X3,T::X0->S::X0}-> _R17
+_R154 -{T::X3->S::X0,T::X0->S::X3}-> _R89
+_R155 -{T::X3->S::X3,T::X0->S::X0}-> _R45
+_R155 -{T::X3->S::X0,T::X0->S::X3}-> _R95
+
+
+======== SCC =========
+C0 = {_R49}
+C1 = {_R114}
+C2 = {_R31}
+C3 = {_R147}
+C4 = {_R60}
+C5 = {_R1}
+C6 = {_R90}
+C7 = {_R122}
+C8 = {_R105}
+C9 = {_R38}
+C10 = {_R14}
+C11 = {_R46}
+C12 = {_R101}
+C13 = {_R100}
+C14 = {_R92}
+C15 = {_R134}
+C16 = {_R133}
+C17 = {_R10}
+C18 = {_R116}
+C19 = {_R47}
+C20 = {_R16}
+C21 = {_R80}
+C22 = {_R52}
+C23 = {_R12}
+C24 = {_R111}
+C25 = {_R13}
+C26 = {_R120}
+C27 = {_R83}
+C28 = {_R20}
+C29 = {_R130}
+C30 = {_R3}
+C31 = {_R4}
+C32 = {_R110}
+C33 = {_R15}
+C34 = {_R121}
+C35 = {_R35}
+C36 = {_R132}
+C37 = {_R113}
+C38 = {_R23}
+C39 = {_R18}
+C40 = {_R33}
+C41 = {_R115}
+C42 = {_R106}
+C43 = {_R137}
+C44 = {_R11}
+C45 = {_R128}
+C46 = {_R6}
+C47 = {_R104}
+C48 = {_R9}
+C49 = {_R102}
+C50 = {_R79}
+C51 = {_R93}
+C52 = {_R124}
+C53 = {_R63}
+C54 = {_R41}
+C55 = {_R131}
+C56 = {_R64}
+C57 = {_R8}
+C58 = {_R136}
+C59 = {_R77}
+C60 = {_R19}
+C61 = {_R43}
+C62 = {_R149}
+C63 = {_R29}
+C64 = {_R26}
+C65 = {_R40}
+C66 = {_R62}
+C67 = {_R154}
+C68 = {_R17}
+C69 = {_R69}
+C70 = {_R50}
+C71 = {_R39}
+C72 = {_R112}
+C73 = {_R0}
+C74 = {_R103}
+C75 = {_R71}
+C76 = {_R37}
+C77 = {_R42}
+C78 = {_R51}
+C79 = {_R53}
+C80 = {_R25}
+C81 = {_R94}
+C82 = {_R74}
+C83 = {_R125}
+C84 = {_R65}
+C85 = {_R126}
+C86 = {_R32}
+C87 = {_R22}
+C88 = {_R7}
+C89 = {_R99}
+C90 = {_R151}
+C91 = {_R123}
+C92 = {_R2}
+C93 = {_R59}
+C94 = {_R21}
+C95 = {_R57}
+C96 = {_R144}
+C97 = {_R135}
+C98 = {_R117}
+C99 = {_R78}
+C100 = {_R82}
+C101 = {_R66}
+C102 = {_R48}
+C103 = {_R44}
+C104 = {_R118}
+C105 = {_R5}
+C106 = {_R87}
+C107 = {_R34}
+C108 = {_R139}
+C109 = {_R127}
+C110 = {_R97}
+C111 = {_R146}
+C112 = {_R36}
+C113 = {_R145}
+C114 = {_R138}
+C115 = {_R61}
+C116 = {_R73}
+C117 = {_R109}
+C118 = {_R141}
+C119 = {_R56}
+C120 = {_R55}
+C121 = {_R140}
+C122 = {_R27}
+C123 = {_R96}
+C124 = {_R58}
+C125 = {_R155}
+C126 = {_R91}
+C127 = {_R28}
+C128 = {_R85}
+C129 = {_R152}
+C130 = {_R129}
+C131 = {_R88}
+C132 = {_R148}
+C133 = {_R75}
+C134 = {_R54}
+C135 = {_R108}
+C136 = {_R89}
+C137 = {_R81}
+C138 = {_R30}
+C139 = {_R76}
+C140 = {_R142}
+C141 = {_R107}
+C142 = {_R84}
+C143 = {_R70}
+C144 = {_R150}
+C145 = {_R24}
+C146 = {_R143}
+C147 = {_R119}
+C148 = {_R86}
+C149 = {_R153}
+C150 = {_R45}
+C151 = {_R95}
+C152 = {_R98}
+C153 = {_R68}
+C154 = {_R72}
+C155 = {_R67}
+
+
+===== SCC GRAPH ======
+C0
+C1
+C2 ---> C95, C96
+C3 ---> C38, C42
+C4
+C5 ---> C154
+C6 ---> C59
+C7 ---> C62, C66, C67
+C8 ---> C75, C125
+C9
+C10 ---> C154
+C11
+C12
+C13 ---> C153
+C14
+C15 ---> C50
+C16 ---> C95, C96
+C17 ---> C131, C132
+C18
+C19 ---> C95, C96
+C20
+C21
+C22 ---> C23, C34
+C23
+C24
+C25
+C26
+C27
+C28 ---> C154
+C29 ---> C131, C132
+C30 ---> C120, C121
+C31 ---> C90, C99, C108
+C32 ---> C113, C116
+C33
+C34
+C35 ---> C154
+C36 ---> C90, C99, C108
+C37 ---> C134
+C38 ---> C113, C116
+C39 ---> C148, C149
+C40
+C41 ---> C50
+C42 ---> C115
+C43 ---> C134
+C44
+C45 ---> C134
+C46 ---> C113, C116
+C47
+C48
+C49 ---> C134
+C50 ---> C155
+C51 ---> C142, C144
+C52 ---> C128, C129
+C53 ---> C113, C116
+C54
+C55 ---> C139, C140, C146
+C56 ---> C113, C116
+C57 ---> C90, C99, C108
+C58 ---> C59
+C59 ---> C155
+C60 ---> C139, C140, C146
+C61 ---> C62, C66, C67
+C62 ---> C150, C151
+C63
+C64
+C65 ---> C154
+C66 ---> C155
+C67 ---> C68, C136
+C68 ---> C154
+C69
+C70
+C71
+C72
+C73
+C74
+C75 ---> C155
+C76 ---> C154
+C77
+C78
+C79 ---> C80, C81
+C80 ---> C134
+C81 ---> C134
+C82 ---> C113, C116
+C83 ---> C153
+C84
+C85
+C86
+C87
+C88 ---> C142, C144
+C89 ---> C153
+C90 ---> C91
+C91
+C92
+C93 ---> C113, C116
+C94 ---> C95, C96
+C95 ---> C155
+C96 ---> C150, C151
+C97
+C98
+C99 ---> C143
+C100 ---> C134
+C101 ---> C134
+C102 ---> C153
+C103
+C104 ---> C134
+C105
+C106
+C107
+C108 ---> C109
+C109
+C110
+C111 ---> C112, C114
+C112 ---> C113, C116
+C113 ---> C150, C151
+C114 ---> C115
+C115 ---> C120, C121
+C116 ---> C155
+C117 ---> C118, C119
+C118 ---> C150, C151
+C119 ---> C120, C121
+C120 ---> C143
+C121 ---> C130
+C122 ---> C128, C129
+C123
+C124
+C125 ---> C150, C151
+C126 ---> C153
+C127 ---> C128, C129
+C128 ---> C143
+C129 ---> C150, C151
+C130 ---> C131, C132
+C131 ---> C155
+C132 ---> C150, C151
+C133 ---> C134
+C134
+C135 ---> C154
+C136 ---> C139, C140, C146
+C137
+C138 ---> C139, C140, C146
+C139 ---> C155
+C140 ---> C141
+C141 ---> C142, C144
+C142 ---> C143
+C143
+C144 ---> C150, C151
+C145
+C146 ---> C150, C151
+C147 ---> C148, C149
+C148 ---> C155
+C149 ---> C150, C151
+C150
+C151
+C152 ---> C153
+C153
+C154 ---> C155
+C155
+
+
+== RULE PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R0  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R1  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R2  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R3  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R4  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R5  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R6  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R7  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R8  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R9  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R10 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R11 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R12 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R13 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R14 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R15 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R16 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R17 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R18 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R19 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R20 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R21 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R22 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R23 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R24 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R25 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R26 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R27 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R28 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R29 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R30 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R31 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R32 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R33 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R34 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R35 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R36 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R37 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R38 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R39 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R40 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R41 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R42 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R43 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R44 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R45 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R46 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R47 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R48 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R49 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R50 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R51 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R52 
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R53 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R54 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R55 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R56 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R57 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R58 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R59 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R60 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R61 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R62 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R63 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R64 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R65 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R66 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R67 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R68 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R69 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R70 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R71 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R72 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R73 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R74 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R75 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R76 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R77 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R78 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R79 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R80 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R81 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R82 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R83 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R84 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R85 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R86 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R87 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R88 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R89 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R90 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R91 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R92 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R93 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R94 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R95 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R96 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R97 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R98 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | _R99 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R100 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R101 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R102 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R103 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R104 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R105 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R106 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R107 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R108 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R109 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R110 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R111 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R112 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R113 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R114 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R115 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R116 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R117 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R118 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R119 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R120 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R121 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R122 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R123 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R124 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R125 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R126 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R127 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R128 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R129 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R130 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R131 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R132 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R133 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R134 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R135 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R136 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R137 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |_R138 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R139 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R140 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R141 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R142 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R143 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R144 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R145 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R146 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R147 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R148 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R149 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R150 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R151 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R152 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R153 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R154 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |_R155 
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== PROPERTIES =====
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  -   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+=== SCC PROPERTIES ===
++-------------------------------------------------------------------------------------------------------------------------------------------+
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C0  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C1  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C2  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  C3  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C4  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C5  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C6  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C7  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C8  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  C9  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C10  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C11  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C12  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C13  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C14  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C15  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C16  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C17  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C18  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C19  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C20  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C21  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C22  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C23  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C24  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C25  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C26  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C27  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C28  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C29  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C30  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C31  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C32  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C33  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C34  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C35  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C36  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C37  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C38  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C39  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C40  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C41  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C42  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C43  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C44  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C45  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C46  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C47  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C48  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C49  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C50  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C51  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C52  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C53  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C54  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C55  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C56  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C57  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C58  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C59  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C60  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C61  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C62  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C63  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C64  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C65  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C66  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C67  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C68  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C69  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C70  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C71  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C72  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C73  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C74  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C75  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C76  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C77  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C78  
+|  X   |  X   |  -   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C79  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C80  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C81  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C82  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C83  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C84  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C85  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C86  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C87  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C88  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C89  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C90  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C91  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C92  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C93  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C94  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C95  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C96  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C97  
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C98  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C99  
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C100 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C101 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C102 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C103 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C104 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C105 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C106 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C107 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C108 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C109 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C110 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C111 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C112 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C113 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C114 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C115 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C116 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C117 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C118 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C119 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C120 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C121 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C122 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C123 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C124 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C125 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C126 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C127 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C128 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C129 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C130 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C131 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C132 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C133 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C134 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C135 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C136 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C137 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C138 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C139 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C140 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C141 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C142 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C143 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C144 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C145 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C146 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C147 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C148 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   | C149 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C150 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C151 
+|  X   |  X   |  -   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C152 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C153 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C154 
+|  X   |  X   |  -   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   |  X   | C155 
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| agrd | bts  | disc |  dr  | fes  |  fg  | fr1  | fus  |  g   | gbts | jfg  | lin  | mfa  | msa  |  rr  |  s   |  wa  | wfg  |  wg  |  ws  |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+
+===== ANALYSIS: DECIDABLE =====
+
+=== COMBINE (FES) ====
+C0: FES
+C1: FES
+C2: FES
+C3: FES
+C4: FES
+C5: FES
+C6: FES
+C7: FES
+C8: FES
+C9: FES
+C10: FES
+C11: FES
+C12: FES
+C13: FES
+C14: FES
+C15: FES
+C16: FES
+C17: FES
+C18: FES
+C19: FES
+C20: FES
+C21: FES
+C22: FES
+C23: FES
+C24: FES
+C25: FES
+C26: FES
+C27: FES
+C28: FES
+C29: FES
+C30: FES
+C31: FES
+C32: FES
+C33: FES
+C34: FES
+C35: FES
+C36: FES
+C37: FES
+C38: FES
+C39: FES
+C40: FES
+C41: FES
+C42: FES
+C43: FES
+C44: FES
+C45: FES
+C46: FES
+C47: FES
+C48: FES
+C49: FES
+C50: FES
+C51: FES
+C52: FES
+C53: FES
+C54: FES
+C55: FES
+C56: FES
+C57: FES
+C58: FES
+C59: FES
+C60: FES
+C61: FES
+C62: FES
+C63: FES
+C64: FES
+C65: FES
+C66: FES
+C67: FES
+C68: FES
+C69: FES
+C70: FES
+C71: FES
+C72: FES
+C73: FES
+C74: FES
+C75: FES
+C76: FES
+C77: FES
+C78: FES
+C79: FES
+C80: FES
+C81: FES
+C82: FES
+C83: FES
+C84: FES
+C85: FES
+C86: FES
+C87: FES
+C88: FES
+C89: FES
+C90: FES
+C91: FES
+C92: FES
+C93: FES
+C94: FES
+C95: FES
+C96: FES
+C97: FES
+C98: FES
+C99: FES
+C100: FES
+C101: FES
+C102: FES
+C103: FES
+C104: FES
+C105: FES
+C106: FES
+C107: FES
+C108: FES
+C109: FES
+C110: FES
+C111: FES
+C112: FES
+C113: FES
+C114: FES
+C115: FES
+C116: FES
+C117: FES
+C118: FES
+C119: FES
+C120: FES
+C121: FES
+C122: FES
+C123: FES
+C124: FES
+C125: FES
+C126: FES
+C127: FES
+C128: FES
+C129: FES
+C130: FES
+C131: FES
+C132: FES
+C133: FES
+C134: FES
+C135: FES
+C136: FES
+C137: FES
+C138: FES
+C139: FES
+C140: FES
+C141: FES
+C142: FES
+C143: FES
+C144: FES
+C145: FES
+C146: FES
+C147: FES
+C148: FES
+C149: FES
+C150: FES
+C151: FES
+C152: FES
+C153: FES
+C154: FES
+C155: FES
+
+
+=== COMBINE (FUS) ====
+C0: FUS
+C1: FUS
+C2: FUS
+C3: FUS
+C4: FUS
+C5: FUS
+C6: FUS
+C7: FUS
+C8: FUS
+C9: FUS
+C10: FUS
+C11: FUS
+C12: FUS
+C13: FUS
+C14: FUS
+C15: FUS
+C16: FUS
+C17: FUS
+C18: FUS
+C19: FUS
+C20: FUS
+C21: FUS
+C22: FUS
+C23: FUS
+C24: FUS
+C25: FUS
+C26: FUS
+C27: FUS
+C28: FUS
+C29: FUS
+C30: FUS
+C31: FUS
+C32: FUS
+C33: FUS
+C34: FUS
+C35: FUS
+C36: FUS
+C37: FUS
+C38: FUS
+C39: FUS
+C40: FUS
+C41: FUS
+C42: FUS
+C43: FUS
+C44: FUS
+C45: FUS
+C46: FUS
+C47: FUS
+C48: FUS
+C49: FUS
+C50: FUS
+C51: FUS
+C52: FUS
+C53: FUS
+C54: FUS
+C55: FUS
+C56: FUS
+C57: FUS
+C58: FUS
+C59: FUS
+C60: FUS
+C61: FUS
+C62: FUS
+C63: FUS
+C64: FUS
+C65: FUS
+C66: FUS
+C67: FUS
+C68: FUS
+C69: FUS
+C70: FUS
+C71: FUS
+C72: FUS
+C73: FUS
+C74: FUS
+C75: FUS
+C76: FUS
+C77: FUS
+C78: FUS
+C79: FUS
+C80: FUS
+C81: FUS
+C82: FUS
+C83: FUS
+C84: FUS
+C85: FUS
+C86: FUS
+C87: FUS
+C88: FUS
+C89: FUS
+C90: FUS
+C91: FUS
+C92: FUS
+C93: FUS
+C94: FUS
+C95: FUS
+C96: FUS
+C97: FUS
+C98: FUS
+C99: FUS
+C100: FUS
+C101: FUS
+C102: FUS
+C103: FUS
+C104: FUS
+C105: FUS
+C106: FUS
+C107: FUS
+C108: FUS
+C109: FUS
+C110: FUS
+C111: FUS
+C112: FUS
+C113: FUS
+C114: FUS
+C115: FUS
+C116: FUS
+C117: FUS
+C118: FUS
+C119: FUS
+C120: FUS
+C121: FUS
+C122: FUS
+C123: FUS
+C124: FUS
+C125: FUS
+C126: FUS
+C127: FUS
+C128: FUS
+C129: FUS
+C130: FUS
+C131: FUS
+C132: FUS
+C133: FUS
+C134: FUS
+C135: FUS
+C136: FUS
+C137: FUS
+C138: FUS
+C139: FUS
+C140: FUS
+C141: FUS
+C142: FUS
+C143: FUS
+C144: FUS
+C145: FUS
+C146: FUS
+C147: FUS
+C148: FUS
+C149: FUS
+C150: FUS
+C151: FUS
+C152: FUS
+C153: FUS
+C154: FUS
+C155: FUS
+
+
