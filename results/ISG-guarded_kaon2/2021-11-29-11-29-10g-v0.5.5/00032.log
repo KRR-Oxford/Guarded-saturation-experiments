@@ -1,0 +1,56 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 6136; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 29, 2021 1:42:17 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/6136 = 0.000%
+GSat discarded rules : 0/6136 = 0.000%
+Nov 29, 2021 1:42:18 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.7202933
+number of bags: 9
+length of the formulas: 2.7202933
+number of bags: 9
+nonFullTGDs	0		fullTGDs	4039			newNonFullTGDs	2096		newFullTGDs	0
+nonFullTGDs	8		fullTGDs	4039			newNonFullTGDs	2338		newFullTGDs	0
+nonFullTGDs	56		fullTGDs	4039			newNonFullTGDs	2872		newFullTGDs	0
+nonFullTGDs	129		fullTGDs	4039			newNonFullTGDs	2836		newFullTGDs	0
+nonFullTGDs	219		fullTGDs	4039			newNonFullTGDs	2834		newFullTGDs	0
+nonFullTGDs	307		fullTGDs	4039			newNonFullTGDs	2830		newFullTGDs	0
+nonFullTGDs	407		fullTGDs	4039			newNonFullTGDs	2831		newFullTGDs	0
+nonFullTGDs	507		fullTGDs	4039			newNonFullTGDs	2835		newFullTGDs	0
+nonFullTGDs	607		fullTGDs	4039			newNonFullTGDs	2833		newFullTGDs	0
+nonFullTGDs	707		fullTGDs	4039			newNonFullTGDs	2831		newFullTGDs	0
+nonFullTGDs	807		fullTGDs	4039			newNonFullTGDs	2832		newFullTGDs	0
+nonFullTGDs	907		fullTGDs	4039			newNonFullTGDs	2824		newFullTGDs	0
+nonFullTGDs	1007		fullTGDs	4039			newNonFullTGDs	2833		newFullTGDs	0
+nonFullTGDs	1107		fullTGDs	4039			newNonFullTGDs	2829		newFullTGDs	0
+nonFullTGDs	1207		fullTGDs	4039			newNonFullTGDs	2830		newFullTGDs	0
+nonFullTGDs	1307		fullTGDs	4039			newNonFullTGDs	2827		newFullTGDs	0
+nonFullTGDs	1407		fullTGDs	4039			newNonFullTGDs	2827		newFullTGDs	0
+nonFullTGDs	1507		fullTGDs	4039			newNonFullTGDs	2829		newFullTGDs	0
+nonFullTGDs	1607		fullTGDs	4039			newNonFullTGDs	2821		newFullTGDs	0
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269)
+	at java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8440.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8840.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+	at uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:74)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Nov 29, 2021 1:49:49 PM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 29, 2021 1:49:49 PM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1269), java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.newArray(StringConcatFactory.java:1633), java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8440.invoke(LambdaForm$MH), java.base/java.lang.invoke.LambdaForm$MH/0x00000008400b8840.invoke(LambdaForm$MH), java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder), uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:74), uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140), uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:134), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

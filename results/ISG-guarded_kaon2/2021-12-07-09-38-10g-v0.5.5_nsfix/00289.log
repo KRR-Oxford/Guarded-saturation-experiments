@@ -1,0 +1,21 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 35; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolem Sat
+Running SkSat...
+Dec 07, 2021 2:37:14 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: SkSat discarded rules : 0/35 = 0.000%
+SkSat discarded rules : 0/35 = 0.000%
+Dec 07, 2021 2:37:14 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.142857
+number of bags: 0
+Full TGD saturation algorithm failed. The system will now terminate.
+Dec 07, 2021 2:37:14 PM uk.ac.ox.cs.gsat.App executeAllSteps
+SEVERE: [java.base/java.util.PriorityQueue.<init>(PriorityQueue.java:171), uk.ac.ox.cs.gsat.filters.TreePredicateFilter.computeBags(TreePredicateFilter.java:410), uk.ac.ox.cs.gsat.filters.TreePredicateFilter.init(TreePredicateFilter.java:368), uk.ac.ox.cs.gsat.filters.TreePredicateFilter.init(TreePredicateFilter.java:314), uk.ac.ox.cs.gsat.SaturationUtils.createSubsumer(SaturationUtils.java:157), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:148), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:197), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+Dec 07, 2021 2:37:14 PM uk.ac.ox.cs.gsat.App executeAllSteps
+SEVERE: null
+\n\n!!! ERROR !!!

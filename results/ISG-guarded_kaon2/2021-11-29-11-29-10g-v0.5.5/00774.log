@@ -1,0 +1,58 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 645; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 30, 2021 8:54:04 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/645 = 0.000%
+GSat discarded rules : 0/645 = 0.000%
+Nov 30, 2021 8:54:04 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.0712025
+number of bags: 6
+length of the formulas: 2.0712025
+number of bags: 6
+nonFullTGDs	0		fullTGDs	577			newNonFullTGDs	55		newFullTGDs	0
+nonFullTGDs	6		fullTGDs	577			newNonFullTGDs	49		newFullTGDs	5
+nonFullTGDs	11		fullTGDs	577			newNonFullTGDs	44		newFullTGDs	9
+nonFullTGDs	17		fullTGDs	577			newNonFullTGDs	38		newFullTGDs	15
+nonFullTGDs	23		fullTGDs	577			newNonFullTGDs	32		newFullTGDs	21
+nonFullTGDs	31		fullTGDs	577			newNonFullTGDs	24		newFullTGDs	29
+nonFullTGDs	40		fullTGDs	577			newNonFullTGDs	15		newFullTGDs	38
+nonFullTGDs	47		fullTGDs	577			newNonFullTGDs	8		newFullTGDs	42
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 577 , 55
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: GSat total time : 526 ms = 0.53 s
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Subsumed elements : 1078
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Filter discarded elements : 11920
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: subsumption time: 28 ms = 0.03 s
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: forward subsumption time: 18 ms = 0.02 s
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: backward subsumption time: 10 ms = 0.01 s
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Derived full/non full TGDs: 288 , 833
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: discarded tautology count: 0
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: Stop because subsumed: 661
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved equals to current: 812
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved time: 292 ms = 0.29 s
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolve count: 5870
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: ouptput full TGDs not contained in the input: 43
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (620 dependecies)
+Nov 30, 2021 8:54:05 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Writing the saturation in the Datalog file 00774.rul

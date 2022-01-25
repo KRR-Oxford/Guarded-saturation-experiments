@@ -1,0 +1,48 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 74903; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Dec 05, 2021 8:24:46 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/74903 = 0.000%
+HyperSat discarded rules : 0/74903 = 0.000%
+Dec 05, 2021 8:24:48 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.0043454
+number of bags: 80
+length of the formulas: 2.0043454
+number of bags: 80
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 50011 , 49402
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: HyperSat total time : 30657 ms = 30.66 s
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Subsumed elements : 161333
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Filter discarded elements : 1758445
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: subsumption time: 10861 ms = 10.86 s
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: forward subsumption time: 8209 ms = 8.21 s
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: backward subsumption time: 2652 ms = 2.65 s
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Derived full/non full TGDs: 19057 , 636010
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: discarded tautology count: 216
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.HyperResolutionStatistics log
+INFO: hyperresolution time: 12110 ms = 12.11 s
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.HyperResolutionStatistics log
+INFO: hyperresolution count: 747910
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.HyperResolutionStatistics log
+INFO: hyperresolution failure count: 92843
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: ouptput full TGDs not contained in the input: 18450
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (68461 dependecies)
+Dec 05, 2021 8:25:16 AM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Writing the saturation in the Datalog file 00682.rul

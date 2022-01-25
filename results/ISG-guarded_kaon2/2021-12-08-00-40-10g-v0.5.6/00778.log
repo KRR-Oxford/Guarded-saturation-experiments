@@ -1,0 +1,38 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 155241; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Dec 08, 2021 10:27:58 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/155241 = 0.000%
+HyperSat discarded rules : 0/155241 = 0.000%
+Dec 08, 2021 10:28:02 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.4643605
+number of bags: 46
+length of the formulas: 2.4643605
+number of bags: 46
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap.newNode(HashMap.java:1797)
+	at java.base/java.util.HashMap.putVal(HashMap.java:626)
+	at java.base/java.util.HashMap.put(HashMap.java:607)
+	at java.base/java.util.HashSet.add(HashSet.java:220)
+	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:352)
+	at java.base/java.util.HashSet.<init>(HashSet.java:120)
+	at uk.ac.ox.cs.gsat.unification.AtomPathUnificationIndex.get(AtomPathUnificationIndex.java:111)
+	at uk.ac.ox.cs.gsat.unification.AtomPathUnificationIndex.get(AtomPathUnificationIndex.java:41)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolveWithNewNonFullTGD(HyperResolutionBasedSat.java:141)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:86)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Dec 08, 2021 10:46:58 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Dec 08, 2021 10:46:58 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.util.HashMap.newNode(HashMap.java:1797), java.base/java.util.HashMap.putVal(HashMap.java:626), java.base/java.util.HashMap.put(HashMap.java:607), java.base/java.util.HashSet.add(HashSet.java:220), java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:352), java.base/java.util.HashSet.<init>(HashSet.java:120), uk.ac.ox.cs.gsat.unification.AtomPathUnificationIndex.get(AtomPathUnificationIndex.java:111), uk.ac.ox.cs.gsat.unification.AtomPathUnificationIndex.get(AtomPathUnificationIndex.java:41), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.hyperresolveWithNewNonFullTGD(HyperResolutionBasedSat.java:141), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.process(HyperResolutionBasedSat.java:86), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

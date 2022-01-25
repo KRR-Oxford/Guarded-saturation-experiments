@@ -1,0 +1,51 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 150941; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Dec 07, 2021 11:35:21 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/150941 = 0.000%
+HyperSat discarded rules : 0/150941 = 0.000%
+Dec 07, 2021 11:35:24 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : disabled
+Dec 07, 2021 11:46:27 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 114237 , 58044
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.lang.invoke.InvokerBytecodeGenerator.generateCustomizedCodeBytes(InvokerBytecodeGenerator.java:734)
+	at java.base/java.lang.invoke.InvokerBytecodeGenerator.generateCustomizedCode(InvokerBytecodeGenerator.java:693)
+	at java.base/java.lang.invoke.LambdaForm.compileToBytecode(LambdaForm.java:871)
+	at java.base/java.lang.invoke.LambdaForm.prepare(LambdaForm.java:829)
+	at java.base/java.lang.invoke.MethodHandle.<init>(MethodHandle.java:468)
+	at java.base/java.lang.invoke.BoundMethodHandle.<init>(BoundMethodHandle.java:54)
+	at java.base/java.lang.invoke.BoundMethodHandle$Species_LL.<init>(java/lang/invoke/BoundMethodHandle$Species_LL)
+	at java.base/java.lang.invoke.BoundMethodHandle$Species_LL.make(java/lang/invoke/BoundMethodHandle$Species_LL)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.BoundMethodHandle$Species_LL.copyWith(java/lang/invoke/BoundMethodHandle$Species_LL)
+	at java.base/java.lang.invoke.MethodHandles.dropArguments0(MethodHandles.java:3603)
+	at java.base/java.lang.invoke.MethodHandles.dropArguments(MethodHandles.java:3667)
+	at java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.generate(StringConcatFactory.java:1536)
+	at java.base/java.lang.invoke.StringConcatFactory.generate(StringConcatFactory.java:756)
+	at java.base/java.lang.invoke.StringConcatFactory.doStringConcat(StringConcatFactory.java:665)
+	at java.base/java.lang.invoke.StringConcatFactory.makeConcatWithConstants(StringConcatFactory.java:581)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.DelegatingMethodHandle$Holder.delegate(DelegatingMethodHandle$Holder)
+	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+	at java.base/java.lang.invoke.BootstrapMethodInvoker.invoke(BootstrapMethodInvoker.java:99)
+	at java.base/java.lang.invoke.CallSite.makeSite(CallSite.java:307)
+	at java.base/java.lang.invoke.MethodHandleNatives.linkCallSiteImpl(MethodHandleNatives.java:258)
+	at java.base/java.lang.invoke.MethodHandleNatives.linkCallSite(MethodHandleNatives.java:248)
+	at uk.ac.ox.cs.gsat.SaturationStatistics.log(SaturationStatistics.java:30)
+	at uk.ac.ox.cs.gsat.HyperResolutionStatistics.log(HyperResolutionStatistics.java:18)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:170)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Dec 07, 2021 11:48:45 PM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Dec 07, 2021 11:48:45 PM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.lang.invoke.InvokerBytecodeGenerator.generateCustomizedCodeBytes(InvokerBytecodeGenerator.java:734), java.base/java.lang.invoke.InvokerBytecodeGenerator.generateCustomizedCode(InvokerBytecodeGenerator.java:693), java.base/java.lang.invoke.LambdaForm.compileToBytecode(LambdaForm.java:871), java.base/java.lang.invoke.LambdaForm.prepare(LambdaForm.java:829), java.base/java.lang.invoke.MethodHandle.<init>(MethodHandle.java:468), java.base/java.lang.invoke.BoundMethodHandle.<init>(BoundMethodHandle.java:54), java.base/java.lang.invoke.BoundMethodHandle$Species_LL.<init>(java/lang/invoke/BoundMethodHandle$Species_LL), java.base/java.lang.invoke.BoundMethodHandle$Species_LL.make(java/lang/invoke/BoundMethodHandle$Species_LL), java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder), java.base/java.lang.invoke.BoundMethodHandle$Species_LL.copyWith(java/lang/invoke/BoundMethodHandle$Species_LL), java.base/java.lang.invoke.MethodHandles.dropArguments0(MethodHandles.java:3603), java.base/java.lang.invoke.MethodHandles.dropArguments(MethodHandles.java:3667), java.base/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.generate(StringConcatFactory.java:1536), java.base/java.lang.invoke.StringConcatFactory.generate(StringConcatFactory.java:756), java.base/java.lang.invoke.StringConcatFactory.doStringConcat(StringConcatFactory.java:665), java.base/java.lang.invoke.StringConcatFactory.makeConcatWithConstants(StringConcatFactory.java:581), java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder), java.base/java.lang.invoke.DelegatingMethodHandle$Holder.delegate(DelegatingMethodHandle$Holder), java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder), java.base/java.lang.invoke.BootstrapMethodInvoker.invoke(BootstrapMethodInvoker.java:99), java.base/java.lang.invoke.CallSite.makeSite(CallSite.java:307), java.base/java.lang.invoke.MethodHandleNatives.linkCallSiteImpl(MethodHandleNatives.java:258), java.base/java.lang.invoke.MethodHandleNatives.linkCallSite(MethodHandleNatives.java:248), uk.ac.ox.cs.gsat.SaturationStatistics.log(SaturationStatistics.java:30), uk.ac.ox.cs.gsat.HyperResolutionStatistics.log(HyperResolutionStatistics.java:18), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:170), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

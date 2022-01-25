@@ -1,0 +1,33 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 150360; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: hyperresolution Sat
+Running HyperSat...
+Dec 05, 2021 2:28:27 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: HyperSat discarded rules : 0/150360 = 0.000%
+HyperSat discarded rules : 0/150360 = 0.000%
+Dec 05, 2021 2:28:30 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.1410038
+number of bags: 81
+length of the formulas: 2.1410038
+number of bags: 81
+java.lang.OutOfMemoryError: Java heap space
+	at uk.ac.ox.cs.gsat.TGD.hashCode(TGD.java:77)
+	at java.base/java.util.HashMap.hash(HashMap.java:339)
+	at java.base/java.util.HashMap.put(HashMap.java:607)
+	at java.base/java.util.HashSet.add(HashSet.java:220)
+	at uk.ac.ox.cs.gsat.HyperResolutionBasedSat.getOutput(HyperResolutionBasedSat.java:330)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:167)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Unknown error. The system will now terminate.
+Dec 05, 2021 2:42:34 AM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Dec 05, 2021 2:42:34 AM uk.ac.ox.cs.gsat.App main
+SEVERE: [uk.ac.ox.cs.gsat.TGD.hashCode(TGD.java:77), java.base/java.util.HashMap.hash(HashMap.java:339), java.base/java.util.HashMap.put(HashMap.java:607), java.base/java.util.HashSet.add(HashSet.java:220), uk.ac.ox.cs.gsat.HyperResolutionBasedSat.getOutput(HyperResolutionBasedSat.java:330), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:167), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:205), uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138), uk.ac.ox.cs.gsat.App.main(App.java:55)]
+\n\n!!! ERROR !!!

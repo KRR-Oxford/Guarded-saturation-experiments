@@ -1,0 +1,92 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 7373; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: GSat
+Running GSat...
+Nov 29, 2021 2:50:36 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: GSat discarded rules : 0/7373 = 0.000%
+GSat discarded rules : 0/7373 = 0.000%
+Nov 29, 2021 2:50:36 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.737574
+number of bags: 9
+length of the formulas: 2.737574
+number of bags: 9
+nonFullTGDs	0		fullTGDs	4826			newNonFullTGDs	2437		newFullTGDs	0
+nonFullTGDs	15		fullTGDs	4826			newNonFullTGDs	2726		newFullTGDs	0
+nonFullTGDs	77		fullTGDs	4826			newNonFullTGDs	2812		newFullTGDs	0
+nonFullTGDs	177		fullTGDs	4826			newNonFullTGDs	2806		newFullTGDs	0
+nonFullTGDs	271		fullTGDs	4826			newNonFullTGDs	2807		newFullTGDs	0
+nonFullTGDs	132		fullTGDs	4826			newNonFullTGDs	2802		newFullTGDs	0
+nonFullTGDs	213		fullTGDs	4826			newNonFullTGDs	2807		newFullTGDs	0
+nonFullTGDs	313		fullTGDs	4826			newNonFullTGDs	2804		newFullTGDs	0
+nonFullTGDs	386		fullTGDs	4826			newNonFullTGDs	2797		newFullTGDs	0
+nonFullTGDs	481		fullTGDs	4826			newNonFullTGDs	2801		newFullTGDs	0
+nonFullTGDs	471		fullTGDs	4826			newNonFullTGDs	2812		newFullTGDs	0
+nonFullTGDs	456		fullTGDs	4826			newNonFullTGDs	2811		newFullTGDs	0
+nonFullTGDs	503		fullTGDs	4826			newNonFullTGDs	2803		newFullTGDs	0
+nonFullTGDs	593		fullTGDs	4826			newNonFullTGDs	2802		newFullTGDs	0
+nonFullTGDs	691		fullTGDs	4826			newNonFullTGDs	2807		newFullTGDs	0
+nonFullTGDs	741		fullTGDs	4826			newNonFullTGDs	2810		newFullTGDs	0
+nonFullTGDs	810		fullTGDs	4826			newNonFullTGDs	2802		newFullTGDs	0
+nonFullTGDs	641		fullTGDs	4826			newNonFullTGDs	2801		newFullTGDs	0
+nonFullTGDs	725		fullTGDs	4826			newNonFullTGDs	2800		newFullTGDs	0
+nonFullTGDs	805		fullTGDs	4826			newNonFullTGDs	2794		newFullTGDs	0
+nonFullTGDs	905		fullTGDs	4826			newNonFullTGDs	2790		newFullTGDs	0
+nonFullTGDs	956		fullTGDs	4826			newNonFullTGDs	2801		newFullTGDs	0
+nonFullTGDs	1018		fullTGDs	4826			newNonFullTGDs	2794		newFullTGDs	0
+nonFullTGDs	1038		fullTGDs	4826			newNonFullTGDs	2791		newFullTGDs	0
+nonFullTGDs	1098		fullTGDs	4826			newNonFullTGDs	2792		newFullTGDs	0
+nonFullTGDs	1160		fullTGDs	4826			newNonFullTGDs	2797		newFullTGDs	0
+nonFullTGDs	1232		fullTGDs	4826			newNonFullTGDs	2797		newFullTGDs	0
+nonFullTGDs	1332		fullTGDs	4826			newNonFullTGDs	2790		newFullTGDs	0
+nonFullTGDs	1318		fullTGDs	4826			newNonFullTGDs	2791		newFullTGDs	0
+nonFullTGDs	1120		fullTGDs	4826			newNonFullTGDs	2787		newFullTGDs	0
+nonFullTGDs	1126		fullTGDs	4826			newNonFullTGDs	2781		newFullTGDs	0
+nonFullTGDs	1195		fullTGDs	4826			newNonFullTGDs	2785		newFullTGDs	0
+nonFullTGDs	1257		fullTGDs	4826			newNonFullTGDs	2779		newFullTGDs	0
+nonFullTGDs	1325		fullTGDs	4826			newNonFullTGDs	2775		newFullTGDs	0
+nonFullTGDs	1410		fullTGDs	4826			newNonFullTGDs	2774		newFullTGDs	0
+nonFullTGDs	1506		fullTGDs	4826			newNonFullTGDs	2787		newFullTGDs	0
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.LinkedHashMap.newNode(LinkedHashMap.java:256)
+	at java.base/java.util.HashMap.putVal(HashMap.java:638)
+	at java.base/java.util.HashMap.put(HashMap.java:608)
+	at java.base/java.util.HashSet.add(HashSet.java:220)
+	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:352)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76)
+	at uk.ac.ox.cs.pdq.fol.QuantifiedFormula.getAtoms(QuantifiedFormula.java:117)
+	at uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:47)
+	at uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:63)
+	at uk.ac.ox.cs.pdq.fol.TGD.<init>(TGD.java:19)
+	at uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:41)
+	at uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:49)
+	at uk.ac.ox.cs.gsat.GTGD.<init>(GTGD.java:20)
+	at uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:418)
+	at uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:412)
+	at uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:85)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181)
+Unknown error. The system will now terminate.
+Nov 29, 2021 2:55:05 PM uk.ac.ox.cs.gsat.App main
+SEVERE: Java heap space
+Nov 29, 2021 2:55:05 PM uk.ac.ox.cs.gsat.App main
+SEVERE: [java.base/java.util.LinkedHashMap.newNode(LinkedHashMap.java:256), java.base/java.util.HashMap.putVal(HashMap.java:638), java.base/java.util.HashMap.put(HashMap.java:608), java.base/java.util.HashSet.add(HashSet.java:220), java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:352), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.Conjunction.getAtoms(Conjunction.java:76), uk.ac.ox.cs.pdq.fol.QuantifiedFormula.getAtoms(QuantifiedFormula.java:117), uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:47), uk.ac.ox.cs.pdq.fol.Dependency.<init>(Dependency.java:63), uk.ac.ox.cs.pdq.fol.TGD.<init>(TGD.java:19), uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:41), uk.ac.ox.cs.gsat.TGD.<init>(TGD.java:49), uk.ac.ox.cs.gsat.GTGD.<init>(GTGD.java:20), uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:418), uk.ac.ox.cs.gsat.Logic.applyMGU(Logic.java:412), uk.ac.ox.cs.gsat.GSat.evolveNew(GSat.java:85), uk.ac.ox.cs.gsat.EvolveBasedSat.fillToAdd(EvolveBasedSat.java:140), uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:86), uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164), uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:181)]
+\n\n!!! ERROR !!!

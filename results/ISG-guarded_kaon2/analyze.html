@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2021-12-20 Mon 09:02 -->
+<!-- 2022-01-20 Thu 18:52 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Comparison of GSat, SkolemSat, KAON3, HyperSat and KAON2</title>
@@ -226,175 +226,175 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org890187f">1. Index of the experiments</a></li>
-<li><a href="#org74d44c2">2. Introduction</a>
+<li><a href="#orga8d9dd5">1. Index of the experiments</a></li>
+<li><a href="#org16329a0">2. Introduction</a>
 <ul>
-<li><a href="#org2d7a410">2.1. Statistics on the input ontologies</a></li>
+<li><a href="#orgefa0946">2.1. Statistics on the input ontologies</a></li>
 </ul>
 </li>
-<li><a href="#org57220cb">3. Times Comparison</a></li>
-<li><a href="#org542025d">4. Timeout analysis</a>
+<li><a href="#org435475f">3. Times Comparison</a></li>
+<li><a href="#orgd55a7d2">4. Timeout analysis</a>
 <ul>
-<li><a href="#org063067a">4.1. All the algorithm reach the timeout</a></li>
-<li><a href="#org9ace08c">4.2. Timeout summary</a></li>
-<li><a href="#org2dd008b">4.3. GSat timeout</a></li>
-<li><a href="#orgebbff60">4.4. SkolemSat timeout</a></li>
-<li><a href="#org36c6851">4.5. HyperSat timeout</a></li>
-<li><a href="#org9d5da73">4.6. KAON3 timeout</a></li>
-<li><a href="#orgbfa7059">4.7. Kaon2 timeouts</a></li>
+<li><a href="#org8890b8c">4.1. All the algorithm reach the timeout</a></li>
+<li><a href="#orgc172b97">4.2. Timeout summary</a></li>
+<li><a href="#orge416a90">4.3. GSat timeout</a></li>
+<li><a href="#org673d818">4.4. SkolemSat timeout</a></li>
+<li><a href="#orge63c319">4.5. HyperSat timeout</a></li>
+<li><a href="#orgc4d7615">4.6. KAON3 timeout</a></li>
+<li><a href="#orge78b87c">4.7. Kaon2 timeouts</a></li>
 </ul>
 </li>
-<li><a href="#org366c594">5. Winning Algorithms</a>
+<li><a href="#org3a981ec">5. Winning Algorithms</a>
 <ul>
-<li><a href="#org1ea1b14">5.1. SkolemSat vs KAON3</a></li>
-<li><a href="#org767f4a8">5.2. KAON3 vs KAON2</a></li>
-<li><a href="#orgdd49002">5.3. SkolemSat vs KAON2</a></li>
-<li><a href="#org1858237">5.4. SkolemSat vs Gsat</a></li>
-<li><a href="#org60721c6">5.5. GSat vs KAON2</a></li>
-<li><a href="#orgf349652">5.6. SkolemSat vs HyperSat</a></li>
-<li><a href="#orgde68264">5.7. HyperSat vs KAON2</a></li>
-<li><a href="#orgf1dd932">5.8. HyperSat vs Gsat</a></li>
-<li><a href="#org2281eb8">5.9. HyperSat vs KAON3</a></li>
-<li><a href="#org57e63b1">5.10. Winning case summary</a></li>
+<li><a href="#org520d619">5.1. SkolemSat vs KAON3</a></li>
+<li><a href="#org8cd8f2d">5.2. KAON3 vs KAON2</a></li>
+<li><a href="#org3311938">5.3. SkolemSat vs KAON2</a></li>
+<li><a href="#orgfae65bf">5.4. SkolemSat vs Gsat</a></li>
+<li><a href="#orgee66a0d">5.5. GSat vs KAON2</a></li>
+<li><a href="#org699f7b7">5.6. SkolemSat vs HyperSat</a></li>
+<li><a href="#org70ac483">5.7. HyperSat vs KAON2</a></li>
+<li><a href="#orgd41df99">5.8. HyperSat vs Gsat</a></li>
+<li><a href="#org87f2975">5.9. HyperSat vs KAON3</a></li>
+<li><a href="#orga70ebdb">5.10. Winning case summary</a></li>
 </ul>
 </li>
-<li><a href="#org866a9f5">6. Percent of time spent for evolve applications</a>
+<li><a href="#orgb7c281e">6. Percent of time spent for evolve applications</a>
 <ul>
-<li><a href="#orgb49c113">6.1. GSat</a></li>
-<li><a href="#orgb2a8e92">6.2. SkolemSat</a></li>
+<li><a href="#orga1d8ab0">6.1. GSat</a></li>
+<li><a href="#org7e7b3a4">6.2. SkolemSat</a></li>
 </ul>
 </li>
-<li><a href="#org574b65a">7. Intermediate TGDs Analysis</a>
+<li><a href="#org64fc3d4">7. Intermediate TGDs Analysis</a>
 <ul>
-<li><a href="#org979ac0d">7.1. SkolemSat and KAON3 derived TGDs</a></li>
-<li><a href="#org18f94c7">7.2. GSat</a></li>
-<li><a href="#org208c56b">7.3. SkolemSat</a></li>
-<li><a href="#org36a87de">7.4. HyperSat</a></li>
-<li><a href="#org4f96bcd">7.5. KAON3</a></li>
-<li><a href="#org9367b94">7.6. KAON2</a></li>
-<li><a href="#org6a2dffb">7.7. Comparison</a></li>
+<li><a href="#org0d3e253">7.1. SkolemSat and KAON3 derived TGDs</a></li>
+<li><a href="#orgdf03b95">7.2. GSat</a></li>
+<li><a href="#org1e8398b">7.3. SkolemSat</a></li>
+<li><a href="#orgef18310">7.4. HyperSat</a></li>
+<li><a href="#org1317b88">7.5. KAON3</a></li>
+<li><a href="#orgfd82bbe">7.6. KAON2</a></li>
+<li><a href="#orgac5fe0e">7.7. Comparison</a></li>
 </ul>
 </li>
-<li><a href="#org55eac78">8. Intermediate TGDs vs subsumption time</a>
+<li><a href="#org538a4f5">8. Intermediate TGDs vs subsumption time</a>
 <ul>
-<li><a href="#org289ad03">8.1. SkolemSat</a></li>
+<li><a href="#org957b283">8.1. SkolemSat</a></li>
 </ul>
 </li>
-<li><a href="#org3a6dfce">9. Times vs input size</a>
+<li><a href="#org4b9d35b">9. Times vs input size</a>
 <ul>
-<li><a href="#org40e27a0">9.1. GSat</a></li>
-<li><a href="#org461022c">9.2. SkolemSat</a></li>
-<li><a href="#org7ef92b0">9.3. HyperSat</a></li>
-<li><a href="#orgb1d6863">9.4. KAON3</a></li>
-<li><a href="#org68575bf">9.5. KAON2</a></li>
-<li><a href="#orga10f99f">9.6. Comparison</a></li>
+<li><a href="#org22c0737">9.1. GSat</a></li>
+<li><a href="#org6a62476">9.2. SkolemSat</a></li>
+<li><a href="#org635e81c">9.3. HyperSat</a></li>
+<li><a href="#org54c1083">9.4. KAON3</a></li>
+<li><a href="#orgf150754">9.5. KAON2</a></li>
+<li><a href="#org66774fd">9.6. Comparison</a></li>
 </ul>
 </li>
-<li><a href="#orgd042aa9">10. Output Analysis</a>
+<li><a href="#org943564b">10. Output Analysis</a>
 <ul>
-<li><a href="#org8742382">10.1. Output summary</a></li>
-<li><a href="#org5136e20">10.2. Output size comparison</a>
+<li><a href="#org437fcba">10.1. Output summary</a></li>
+<li><a href="#org1d41865">10.2. Output size comparison</a>
 <ul>
-<li><a href="#orgff968d7">10.2.1. Between GSat and SkolemSat</a></li>
-<li><a href="#org108938f">10.2.2. Between GSat and KAON3</a></li>
-<li><a href="#org26f3c50">10.2.3. Between GSat and KAON2</a></li>
-<li><a href="#org67ca974">10.2.4. Between GSat and HyperSat</a></li>
-<li><a href="#orgf897089">10.2.5. Between SkolemSat and KAON2</a></li>
-<li><a href="#org9e143d6">10.2.6. Between KAON3 and KAON2</a></li>
+<li><a href="#org1640cd5">10.2.1. Between GSat and SkolemSat</a></li>
+<li><a href="#org385f5c1">10.2.2. Between GSat and KAON3</a></li>
+<li><a href="#org80482fe">10.2.3. Between GSat and KAON2</a></li>
+<li><a href="#org7668b8d">10.2.4. Between GSat and HyperSat</a></li>
+<li><a href="#org7485aad">10.2.5. Between SkolemSat and KAON2</a></li>
+<li><a href="#orgb8d70eb">10.2.6. Between KAON3 and KAON2</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org16ce219">11. All Statistics</a></li>
-<li><a href="#orgd30dc99">12. Experiment without subsumption index</a>
+<li><a href="#orgbf83212">11. All Statistics</a></li>
+<li><a href="#orgb7fac3e">12. Experiment without subsumption index</a>
 <ul>
-<li><a href="#org84f6bd5">12.1. Timeout comparison with and without the subsumption index</a>
+<li><a href="#org8edc997">12.1. Timeout comparison with and without the subsumption index</a>
 <ul>
-<li><a href="#orge5a1867">12.1.1. All the algorithm reach the timeout</a></li>
-<li><a href="#org52255b9">12.1.2. Timeout summary</a></li>
-<li><a href="#org4d823ac">12.1.3. GSat</a></li>
-<li><a href="#org33d04ea">12.1.4. SkolemSat</a></li>
-<li><a href="#org95c9d15">12.1.5. Hyper2Sat</a></li>
+<li><a href="#org785ff0a">12.1.1. All the algorithm reach the timeout</a></li>
+<li><a href="#org9ee70eb">12.1.2. Timeout summary</a></li>
+<li><a href="#org1f3f280">12.1.3. GSat</a></li>
+<li><a href="#orgb6a02f3">12.1.4. SkolemSat</a></li>
+<li><a href="#org7b7898e">12.1.5. Hyper2Sat</a></li>
 </ul>
 </li>
-<li><a href="#org4ec0ba2">12.2. Winning algorithm between with and without subsumption index</a>
+<li><a href="#org1b371b2">12.2. Winning algorithm between with and without subsumption index</a>
 <ul>
-<li><a href="#org5990b1f">12.2.1. GSat</a></li>
-<li><a href="#orgec2f4e9">12.2.2. SkolemSat</a></li>
-<li><a href="#orgb0c2d5c">12.2.3. Hyper2Sat</a></li>
+<li><a href="#orgb9ecebe">12.2.1. GSat</a></li>
+<li><a href="#org4104d0f">12.2.2. SkolemSat</a></li>
+<li><a href="#orgeae07a1">12.2.3. Hyper2Sat</a></li>
 </ul>
 </li>
-<li><a href="#orgff831a4">12.3. Impact of the subsumption on the intermediate TGDs</a>
+<li><a href="#org99b399e">12.3. Impact of the subsumption on the intermediate TGDs</a>
 <ul>
-<li><a href="#orga4e1e90">12.3.1. GSAT</a></li>
-<li><a href="#org934dda7">12.3.2. SkolemSat</a></li>
-<li><a href="#orgae9a52b">12.3.3. Hyper2Sat</a></li>
+<li><a href="#orgfbcc020">12.3.1. GSAT</a></li>
+<li><a href="#org1bd269c">12.3.2. SkolemSat</a></li>
+<li><a href="#org24a80b1">12.3.3. Hyper2Sat</a></li>
 </ul>
 </li>
-<li><a href="#org95e647f">12.4. All Statistics</a></li>
+<li><a href="#orgaa6989b">12.4. All Statistics</a></li>
 </ul>
 </li>
-<li><a href="#org1f212fd">13. Experiences with KAON2 structural transformation</a>
+<li><a href="#orgcd6a571">13. Experiences with KAON2 structural transformation</a>
 <ul>
-<li><a href="#orgbd4c871">13.1. Timeout analysis</a></li>
-<li><a href="#orgc103d19">13.2. Summary</a></li>
-<li><a href="#orgb46620f">13.3. SkolemSat</a></li>
-<li><a href="#orgb8c21d3">13.4. Winning cases</a>
+<li><a href="#orgf881cff">13.1. Timeout analysis</a></li>
+<li><a href="#org138697e">13.2. Summary</a></li>
+<li><a href="#org5f524b4">13.3. SkolemSat</a></li>
+<li><a href="#orgb4b60de">13.4. Winning cases</a>
 <ul>
-<li><a href="#orgc7f0662">13.4.1. SkolemSat with structural transformation with/without subsumption</a></li>
-<li><a href="#orgd51045f">13.4.2. SkolemSat</a></li>
-<li><a href="#org1263709">13.4.3. HyperSat2</a></li>
-<li><a href="#orgbb7c68a">13.4.4. Winning cases summary</a></li>
+<li><a href="#org6e5b3c0">13.4.1. SkolemSat with structural transformation with/without subsumption</a></li>
+<li><a href="#org4d4f285">13.4.2. SkolemSat</a></li>
+<li><a href="#org998bcbf">13.4.3. HyperSat2</a></li>
+<li><a href="#orgdb2a96e">13.4.4. Winning cases summary</a></li>
 </ul>
 </li>
-<li><a href="#orgdd072fb">13.5. Output summary</a></li>
+<li><a href="#orgeca6d2b">13.5. Output summary</a></li>
 </ul>
 </li>
-<li><a href="#orgc8aed66">14. Experiment without unification index</a>
+<li><a href="#org83bbe15">14. Experiment without unification index</a>
 <ul>
-<li><a href="#org1f10c35">14.1. Timeout comparison with and without the subsumption index</a>
+<li><a href="#org87b334d">14.1. Timeout comparison with and without the subsumption index</a>
 <ul>
-<li><a href="#org88821d4">14.1.1. All the algorithm reach the timeout</a></li>
-<li><a href="#org7e0692f">14.1.2. Timeout summary</a></li>
-<li><a href="#orgc835b9f">14.1.3. GSat</a></li>
-<li><a href="#orge6f2e68">14.1.4. SkolemSat</a></li>
-<li><a href="#orgf9784d3">14.1.5. HyperSat</a></li>
+<li><a href="#orgda46578">14.1.1. All the algorithm reach the timeout</a></li>
+<li><a href="#orgbfc1367">14.1.2. Timeout summary</a></li>
+<li><a href="#org03d725e">14.1.3. GSat</a></li>
+<li><a href="#orgf029aa4">14.1.4. SkolemSat</a></li>
+<li><a href="#org1d43d84">14.1.5. HyperSat</a></li>
 </ul>
 </li>
-<li><a href="#orge062601">14.2. All Statistics</a></li>
+<li><a href="#orgc7ad9bc">14.2. All Statistics</a></li>
 </ul>
 </li>
-<li><a href="#orgfbf6381">15. Experiment without the subsumption index clustering</a>
+<li><a href="#org9edd33b">15. Experiment without the subsumption index clustering</a>
 <ul>
-<li><a href="#org20fcb7b">15.1. Winning cases</a></li>
+<li><a href="#org236f571">15.1. Winning cases</a></li>
 </ul>
 </li>
-<li><a href="#org1cd00f0">16. Examples</a>
+<li><a href="#org03ce48b">16. Examples</a>
 <ul>
-<li><a href="#org743eb70">16.1. An example where GSat looses exponentially against SkolemSat (case of 729)</a>
+<li><a href="#org77a8e93">16.1. An example where GSat looses exponentially against SkolemSat (case of 729)</a>
 <ul>
-<li><a href="#org18884bf">16.1.1. Simple example</a></li>
-<li><a href="#org722c1fe">16.1.2. GSat</a></li>
-<li><a href="#org6d9629f">16.1.3. Skolemized version</a></li>
+<li><a href="#orga352ff6">16.1.1. Simple example</a></li>
+<li><a href="#org4c60d9b">16.1.2. GSat</a></li>
+<li><a href="#org92b8795">16.1.3. Skolemized version</a></li>
 </ul>
 </li>
-<li><a href="#org7b3673b">16.2. An example where SkolemSat looses against GSat (case of 392)</a></li>
+<li><a href="#org0d547f8">16.2. An example where SkolemSat looses against GSat (case of 392)</a></li>
 </ul>
 </li>
-<li><a href="#org06e84da">17. Questions</a>
+<li><a href="#org267eeca">17. Questions</a>
 <ul>
-<li><a href="#orgfe9a299">17.1. What are the GSat errors</a></li>
-<li><a href="#org829146b">17.2. What are the SkolemSat errors</a></li>
-<li><a href="#orge6f1321">17.3. What are the KAON3 errors</a></li>
-<li><a href="#orgd290c81">17.4. What are the HyperSat errors</a></li>
+<li><a href="#orge812640">17.1. What are the GSat errors</a></li>
+<li><a href="#org4ef17eb">17.2. What are the SkolemSat errors</a></li>
+<li><a href="#org18ae1cf">17.3. What are the KAON3 errors</a></li>
+<li><a href="#org381b14d">17.4. What are the HyperSat errors</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org890187f" class="outline-2">
-<h2 id="org890187f"><span class="section-number-2">1.</span> Index of the experiments</h2>
+<div id="outline-container-orga8d9dd5" class="outline-2">
+<h2 id="orga8d9dd5"><span class="section-number-2">1.</span> Index of the experiments</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Below, the links to the different experiments:
@@ -402,14 +402,14 @@ Below, the links to the different experiments:
 <ul class="org-ul">
 <li>this page is about Oxford ontology library (ISG) transformed into guarded TGDs without constants.</li>
 <li><a href="blowup-5.html">the same experiment with a size 5 blowup without permutation</a></li>
-<li><a href="#orgd30dc99">the same experiment without subsumption index</a></li>
-<li><a href="#orgc8aed66">the same experiment without unification index</a></li>
+<li><a href="#orgb7fac3e">the same experiment without subsumption index</a></li>
+<li><a href="#org83bbe15">the same experiment without unification index</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org74d44c2" class="outline-2">
-<h2 id="org74d44c2"><span class="section-number-2">2.</span> Introduction</h2>
+<div id="outline-container-org16329a0" class="outline-2">
+<h2 id="org16329a0"><span class="section-number-2">2.</span> Introduction</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 In the following, we explore the statistics outputted by the experiments on GSat, on SkolemSat, on simple sat, on KAON3 and on KAON2. The saturation times are in miliseconds in the columns <code>GSAT_TIME</code>, <code>SK_TIME</code>, <code>SSAT_TIME</code>, <code>KAON3_TIME</code> and <code>KAON2_TIME</code> respectively. The columns <code>NFTGD_NB</code> and <code>FTGD_NB</code> respectively contain the number of non full and full TGDs in input. Each row contain the values of the execution on the ontology whose name is in column <code>NAME</code>. The <b>timeout is 10 minutes</b>.
@@ -423,12 +423,12 @@ In the following, we remove the row, where executions on the ontologies, which c
 The number of remaining ontologies is:
 </p>
 <pre class="example">
-779
+428
 </pre>
 </div>
 
-<div id="outline-container-org2d7a410" class="outline-3">
-<h3 id="org2d7a410"><span class="section-number-3">2.1.</span> Statistics on the input ontologies</h3>
+<div id="outline-container-orgefa0946" class="outline-3">
+<h3 id="orgefa0946"><span class="section-number-3">2.1.</span> Statistics on the input ontologies</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 We keep for the experiments only the ontologies which contains both full and non-full TGDs and removing the redundant ontologies, so the number of remaining ontologies is:
@@ -515,71 +515,71 @@ The average proportion of full TGDs in the remaining ontologies is:
 </div>
 
 
-<div id="outline-container-org57220cb" class="outline-2">
-<h2 id="org57220cb"><span class="section-number-2">3.</span> Times Comparison</h2>
+<div id="outline-container-org435475f" class="outline-2">
+<h2 id="org435475f"><span class="section-number-2">3.</span> Times Comparison</h2>
 <div class="outline-text-2" id="text-3">
 
-<div id="org55b0ca7" class="figure">
+<div id="org7affa13" class="figure">
 <p><img src="plots/times0.png" alt="times0.png">
 </p>
 </div>
 
 
-<div id="orgaea6ae6" class="figure">
+<div id="orgccac259" class="figure">
 <p><img src="plots/times1.png" alt="times1.png">
 </p>
 </div>
 
 
-<div id="org94d1cb1" class="figure">
+<div id="org0230ae4" class="figure">
 <p><img src="plots/times2.png" alt="times2.png">
 </p>
 </div>
 
 
-<div id="org843a25b" class="figure">
+<div id="orgc48db3d" class="figure">
 <p><img src="plots/times3.png" alt="times3.png">
 </p>
 </div>
 
 
-<div id="org377977a" class="figure">
+<div id="org5a38444" class="figure">
 <p><img src="plots/times4.png" alt="times4.png">
 </p>
 </div>
 
 
-<div id="orge84c83e" class="figure">
+<div id="orgbc873f8" class="figure">
 <p><img src="plots/times5.png" alt="times5.png">
 </p>
 </div>
 
 
-<div id="orgdc5a6c8" class="figure">
+<div id="org54995a2" class="figure">
 <p><img src="plots/times6.png" alt="times6.png">
 </p>
 </div>
 
 
-<div id="org7fba83c" class="figure">
+<div id="org866e52b" class="figure">
 <p><img src="plots/times7.png" alt="times7.png">
 </p>
 </div>
 
 
-<div id="org779b814" class="figure">
+<div id="org188896d" class="figure">
 <p><img src="plots/times8.png" alt="times8.png">
 </p>
 </div>
 
 
-<div id="org02244af" class="figure">
+<div id="org3e053a5" class="figure">
 <p><img src="plots/times9.png" alt="times9.png">
 </p>
 </div>
 
 
-<div id="org2bbec88" class="figure">
+<div id="org8ec1315" class="figure">
 <p><img src="plots/times10.png" alt="times10.png">
 </p>
 </div>
@@ -592,7 +592,7 @@ Cactus plot of the times
 </pre>
 
 
-<div id="org77fc3cd" class="figure">
+<div id="orgce32e08" class="figure">
 <p><img src="plots/cactus_times.png" alt="cactus_times.png">
 </p>
 </div>
@@ -601,7 +601,7 @@ Cactus plot of the times
 The same in log scale
 </p>
 
-<div id="orgcfa15d7" class="figure">
+<div id="org07656e6" class="figure">
 <p><img src="plots/cactus_times_log.png" alt="cactus_times_log.png">
 </p>
 </div>
@@ -609,12 +609,12 @@ The same in log scale
 </div>
 
 
-<div id="outline-container-org542025d" class="outline-2">
-<h2 id="org542025d"><span class="section-number-2">4.</span> Timeout analysis</h2>
+<div id="outline-container-orgd55a7d2" class="outline-2">
+<h2 id="orgd55a7d2"><span class="section-number-2">4.</span> Timeout analysis</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org063067a" class="outline-3">
-<h3 id="org063067a"><span class="section-number-3">4.1.</span> All the algorithm reach the timeout</h3>
+<div id="outline-container-org8890b8c" class="outline-3">
+<h3 id="org8890b8c"><span class="section-number-3">4.1.</span> All the algorithm reach the timeout</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 The following table contains the rows where all the algorithm executions reach the timeout sorted by the input size. Their number:
@@ -1045,8 +1045,8 @@ The following table contains the rows where all the algorithm executions reach t
 </div>
 </div>
 
-<div id="outline-container-org9ace08c" class="outline-3">
-<h3 id="org9ace08c"><span class="section-number-3">4.2.</span> Timeout summary</h3>
+<div id="outline-container-orgc172b97" class="outline-3">
+<h3 id="orgc172b97"><span class="section-number-3">4.2.</span> Timeout summary</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 The number of ontologies on which two algorithms reach the timeout simultaneously
@@ -1167,13 +1167,13 @@ The number of ontologies on which two algorithms reach the timeout simultaneousl
 The times on the ontologies where at least one algorithm reaches timeout. 
 </p>
 
-<div id="org1ae187f" class="figure">
+<div id="orge14e24c" class="figure">
 <p><img src="plots/anynotimeout0.png" alt="anynotimeout0.png">
 </p>
 </div>
 
 
-<div id="org808ca8b" class="figure">
+<div id="orgb684b55" class="figure">
 <p><img src="plots/anynotimeout1.png" alt="anynotimeout1.png">
 </p>
 </div>
@@ -1182,7 +1182,7 @@ The times on the ontologies where at least one algorithm reaches timeout.
 A interesting selection of these times
 </p>
 
-<div id="orge2411d9" class="figure">
+<div id="org8157f9c" class="figure">
 <p><img src="plots/interesting_timeout.png" alt="interesting_timeout.png">
 </p>
 </div>
@@ -1190,8 +1190,8 @@ A interesting selection of these times
 </div>
 
 
-<div id="outline-container-org2dd008b" class="outline-3">
-<h3 id="org2dd008b"><span class="section-number-3">4.3.</span> GSat timeout</h3>
+<div id="outline-container-orge416a90" class="outline-3">
+<h3 id="orge416a90"><span class="section-number-3">4.3.</span> GSat timeout</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 The following table contains the rows where the Gsat execution reaches the timeout, while another algorithm is not, sorted by the input size.
@@ -1655,8 +1655,8 @@ The following table contains the rows where the Gsat execution reaches the timeo
 </div>
 </div>
 
-<div id="outline-container-orgebbff60" class="outline-3">
-<h3 id="orgebbff60"><span class="section-number-3">4.4.</span> SkolemSat timeout</h3>
+<div id="outline-container-org673d818" class="outline-3">
+<h3 id="org673d818"><span class="section-number-3">4.4.</span> SkolemSat timeout</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 The following table contains the rows where the SkolemSat executions reach the timeout, while another algorithm is not, sorted by the input size.
@@ -1990,8 +1990,8 @@ The following table contains the rows where the SkolemSat executions reach the t
 </div>
 </div>
 
-<div id="outline-container-org36c6851" class="outline-3">
-<h3 id="org36c6851"><span class="section-number-3">4.5.</span> HyperSat timeout</h3>
+<div id="outline-container-orge63c319" class="outline-3">
+<h3 id="orge63c319"><span class="section-number-3">4.5.</span> HyperSat timeout</h3>
 <div class="outline-text-3" id="text-4-5">
 <p>
 The following table contains the rows where the HyperSat executions reach the timeout, while another algorithm is not, sorted by the input size.
@@ -2130,8 +2130,8 @@ The following table contains the rows where the HyperSat executions reach the ti
 </div>
 </div>
 
-<div id="outline-container-org9d5da73" class="outline-3">
-<h3 id="org9d5da73"><span class="section-number-3">4.6.</span> KAON3 timeout</h3>
+<div id="outline-container-orgc4d7615" class="outline-3">
+<h3 id="orgc4d7615"><span class="section-number-3">4.6.</span> KAON3 timeout</h3>
 <div class="outline-text-3" id="text-4-6">
 <p>
 The following table contains the rows where the KAON3 executions reach the timeout, while another algorithm is not, sorted by the input size.
@@ -2751,8 +2751,8 @@ The following table contains the rows where the KAON3 executions reach the timeo
 </div>
 </div>
 
-<div id="outline-container-orgbfa7059" class="outline-3">
-<h3 id="orgbfa7059"><span class="section-number-3">4.7.</span> Kaon2 timeouts</h3>
+<div id="outline-container-orge78b87c" class="outline-3">
+<h3 id="orge78b87c"><span class="section-number-3">4.7.</span> Kaon2 timeouts</h3>
 <div class="outline-text-3" id="text-4-7">
 <p>
 The following table contains the rows where KAON2 executions reach the timeout of 10min, while another algorithm is not, sorted by the input size.
@@ -3282,8 +3282,8 @@ The following table contains the rows where KAON2 executions reach the timeout o
 </div>
 </div>
 
-<div id="outline-container-org366c594" class="outline-2">
-<h2 id="org366c594"><span class="section-number-2">5.</span> Winning Algorithms</h2>
+<div id="outline-container-org3a981ec" class="outline-2">
+<h2 id="org3a981ec"><span class="section-number-2">5.</span> Winning Algorithms</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 In the following, we show the ontologies on which an algorithm "wins" over another meaning that:
@@ -3294,8 +3294,8 @@ In the following, we show the ontologies on which an algorithm "wins" over anoth
 </ol>
 </div>
 
-<div id="outline-container-org1ea1b14" class="outline-3">
-<h3 id="org1ea1b14"><span class="section-number-3">5.1.</span> SkolemSat vs KAON3</h3>
+<div id="outline-container-org520d619" class="outline-3">
+<h3 id="org520d619"><span class="section-number-3">5.1.</span> SkolemSat vs KAON3</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 Comparison of skolemSat and KAON3.
@@ -3443,8 +3443,8 @@ Ontologies on which KAON3 wins over SkolemSat:
 </div>
 </div>
 
-<div id="outline-container-org767f4a8" class="outline-3">
-<h3 id="org767f4a8"><span class="section-number-3">5.2.</span> KAON3 vs KAON2</h3>
+<div id="outline-container-org8cd8f2d" class="outline-3">
+<h3 id="org8cd8f2d"><span class="section-number-3">5.2.</span> KAON3 vs KAON2</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 Comparison of KAON3 and KAON2.
@@ -4589,8 +4589,8 @@ Ontologies on which KAON2 wins over KAON3:
 </div>
 </div>
 
-<div id="outline-container-orgdd49002" class="outline-3">
-<h3 id="orgdd49002"><span class="section-number-3">5.3.</span> SkolemSat vs KAON2</h3>
+<div id="outline-container-org3311938" class="outline-3">
+<h3 id="org3311938"><span class="section-number-3">5.3.</span> SkolemSat vs KAON2</h3>
 <div class="outline-text-3" id="text-5-3">
 <p>
 Comparison of skolemSat and KAON2.
@@ -5831,8 +5831,8 @@ Ontologies on which KAON2 wins over SkolemSat:
 </div>
 </div>
 
-<div id="outline-container-org1858237" class="outline-3">
-<h3 id="org1858237"><span class="section-number-3">5.4.</span> SkolemSat vs Gsat</h3>
+<div id="outline-container-orgfae65bf" class="outline-3">
+<h3 id="orgfae65bf"><span class="section-number-3">5.4.</span> SkolemSat vs Gsat</h3>
 <div class="outline-text-3" id="text-5-4">
 <p>
 Comparison of skolemSat and GSat.
@@ -7019,8 +7019,8 @@ Ontologies on which GSat wins over SkolemSat:
 </div>
 </div>
 
-<div id="outline-container-org60721c6" class="outline-3">
-<h3 id="org60721c6"><span class="section-number-3">5.5.</span> GSat vs KAON2</h3>
+<div id="outline-container-orgee66a0d" class="outline-3">
+<h3 id="orgee66a0d"><span class="section-number-3">5.5.</span> GSat vs KAON2</h3>
 <div class="outline-text-3" id="text-5-5">
 <p>
 Comparison of skolemSat and KAON2.
@@ -8166,8 +8166,8 @@ Ontologies on which KAON2 wins over GSat:
 </div>
 </div>
 
-<div id="outline-container-orgf349652" class="outline-3">
-<h3 id="orgf349652"><span class="section-number-3">5.6.</span> SkolemSat vs HyperSat</h3>
+<div id="outline-container-org699f7b7" class="outline-3">
+<h3 id="org699f7b7"><span class="section-number-3">5.6.</span> SkolemSat vs HyperSat</h3>
 <div class="outline-text-3" id="text-5-6">
 <p>
 Comparison of skolemSat and HyperSat.
@@ -9002,8 +9002,8 @@ Ontologies on which HyperSat wins over SkolemSat:
 </div>
 </div>
 
-<div id="outline-container-orgde68264" class="outline-3">
-<h3 id="orgde68264"><span class="section-number-3">5.7.</span> HyperSat vs KAON2</h3>
+<div id="outline-container-org70ac483" class="outline-3">
+<h3 id="org70ac483"><span class="section-number-3">5.7.</span> HyperSat vs KAON2</h3>
 <div class="outline-text-3" id="text-5-7">
 <p>
 Comparison of HyperSat and KAON2.
@@ -10064,8 +10064,8 @@ Ontologies on which KAON2 wins over HyperSat:
 </div>
 </div>
 
-<div id="outline-container-orgf1dd932" class="outline-3">
-<h3 id="orgf1dd932"><span class="section-number-3">5.8.</span> HyperSat vs Gsat</h3>
+<div id="outline-container-orgd41df99" class="outline-3">
+<h3 id="orgd41df99"><span class="section-number-3">5.8.</span> HyperSat vs Gsat</h3>
 <div class="outline-text-3" id="text-5-8">
 <p>
 Comparison of HyperSat and GSat.
@@ -10914,8 +10914,8 @@ Ontologies on which GSat wins over HyperSat:
 </div>
 </div>
 
-<div id="outline-container-org2281eb8" class="outline-3">
-<h3 id="org2281eb8"><span class="section-number-3">5.9.</span> HyperSat vs KAON3</h3>
+<div id="outline-container-org87f2975" class="outline-3">
+<h3 id="org87f2975"><span class="section-number-3">5.9.</span> HyperSat vs KAON3</h3>
 <div class="outline-text-3" id="text-5-9">
 <p>
 Comparison of HyperSat and KAON3.
@@ -11536,8 +11536,8 @@ Ontologies on which KAON3 wins over HyperSat:
 </div>
 </div>
 
-<div id="outline-container-org57e63b1" class="outline-3">
-<h3 id="org57e63b1"><span class="section-number-3">5.10.</span> Winning case summary</h3>
+<div id="outline-container-orga70ebdb" class="outline-3">
+<h3 id="orga70ebdb"><span class="section-number-3">5.10.</span> Winning case summary</h3>
 <div class="outline-text-3" id="text-5-10">
 <p>
 A table showing the number of ontologies on which the algorithm on the row is winning against the column algorithm by a factor 2: 
@@ -11948,13 +11948,13 @@ The number of ontologies on which GSat loses with two orders of magnitude agains
 Times corresponding to the table with a factor 10
 </p>
 
-<div id="org9f843a5" class="figure">
+<div id="orgde6a3e7" class="figure">
 <p><img src="plots/win10-0.png" alt="win10-0.png">
 </p>
 </div>
 
 
-<div id="org6ff9721" class="figure">
+<div id="org0c903ce" class="figure">
 <p><img src="plots/win10-1.png" alt="win10-1.png">
 </p>
 </div>
@@ -11963,7 +11963,7 @@ Times corresponding to the table with a factor 10
 Times corresponding to the table with a factor 5 (without those of factor 10)
 </p>
 
-<div id="org1125493" class="figure">
+<div id="org2668894" class="figure">
 <p><img src="plots/win5-0.png" alt="win5-0.png">
 </p>
 </div>
@@ -11972,13 +11972,13 @@ Times corresponding to the table with a factor 5 (without those of factor 10)
 Times corresponding to the table with a factor 2 (without those of factor 5 and 10)
 </p>
 
-<div id="org80fce3d" class="figure">
+<div id="org442fed4" class="figure">
 <p><img src="plots/win2-0.png" alt="win2-0.png">
 </p>
 </div>
 
 
-<div id="orga18efa4" class="figure">
+<div id="orgc65661d" class="figure">
 <p><img src="plots/win2-1.png" alt="win2-1.png">
 </p>
 </div>
@@ -11990,7 +11990,7 @@ Times corresponding to the table with a factor 2 (without those of factor 5 and 
 A manual selection of interesting ontologies
 </p>
 
-<div id="orgd412804" class="figure">
+<div id="orgd172f4c" class="figure">
 <p><img src="plots/kept-times.png" alt="kept-times.png">
 </p>
 </div>
@@ -11998,17 +11998,17 @@ A manual selection of interesting ontologies
 </div>
 </div>
 
-<div id="outline-container-org866a9f5" class="outline-2">
-<h2 id="org866a9f5"><span class="section-number-2">6.</span> Percent of time spent for evolve applications</h2>
+<div id="outline-container-orgb7c281e" class="outline-2">
+<h2 id="orgb7c281e"><span class="section-number-2">6.</span> Percent of time spent for evolve applications</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-orgb49c113" class="outline-3">
-<h3 id="orgb49c113"><span class="section-number-3">6.1.</span> GSat</h3>
+<div id="outline-container-orga1d8ab0" class="outline-3">
+<h3 id="orga1d8ab0"><span class="section-number-3">6.1.</span> GSat</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 Below, you can find the percent of time spent for evolving TGD at different quantiles.
 </p>
-<pre class="example" id="org8b28df9">
+<pre class="example" id="orgfb0a307">
 0.10    42.941224
 0.25    51.476618
 0.50    61.431065
@@ -12020,13 +12020,13 @@ Name: PERCENT, dtype: float64
 </div>
 
 
-<div id="outline-container-orgb2a8e92" class="outline-3">
-<h3 id="orgb2a8e92"><span class="section-number-3">6.2.</span> SkolemSat</h3>
+<div id="outline-container-org7e7b3a4" class="outline-3">
+<h3 id="org7e7b3a4"><span class="section-number-3">6.2.</span> SkolemSat</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 Below, you can find the percent of time spent for evolving TGD at different quantiles.
 </p>
-<pre class="example" id="org55bc658">
+<pre class="example" id="orgdfe54c7">
 0.10     4.533700
 0.25    10.240582
 0.50    16.585392
@@ -13600,12 +13600,12 @@ Name: PERCENT, dtype: float64
 </div>
 </div>
 
-<div id="outline-container-org574b65a" class="outline-2">
-<h2 id="org574b65a"><span class="section-number-2">7.</span> Intermediate TGDs Analysis</h2>
+<div id="outline-container-org64fc3d4" class="outline-2">
+<h2 id="org64fc3d4"><span class="section-number-2">7.</span> Intermediate TGDs Analysis</h2>
 <div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-org979ac0d" class="outline-3">
-<h3 id="org979ac0d"><span class="section-number-3">7.1.</span> SkolemSat and KAON3 derived TGDs</h3>
+<div id="outline-container-org0d3e253" class="outline-3">
+<h3 id="org0d3e253"><span class="section-number-3">7.1.</span> SkolemSat and KAON3 derived TGDs</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
 We compare the number of TGDs derived by SkolemSat and by KAON3, by showing the ontologies where KAON3 derives twice as much TGD than SkolemSat. 
@@ -15648,70 +15648,70 @@ The table shows the ontologies, where the SkolemSat derives twice as much TGD th
 </table>
 </div>
 </div>
-<div id="outline-container-org18f94c7" class="outline-3">
-<h3 id="org18f94c7"><span class="section-number-3">7.2.</span> GSat</h3>
+<div id="outline-container-orgdf03b95" class="outline-3">
+<h3 id="orgdf03b95"><span class="section-number-3">7.2.</span> GSat</h3>
 <div class="outline-text-3" id="text-7-2">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </p>
 
-<div id="org8b39b80" class="figure">
+<div id="org7241afd" class="figure">
 <p><img src="plots/gsat_intermediate_time.png" alt="gsat_intermediate_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org208c56b" class="outline-3">
-<h3 id="org208c56b"><span class="section-number-3">7.3.</span> SkolemSat</h3>
+<div id="outline-container-org1e8398b" class="outline-3">
+<h3 id="org1e8398b"><span class="section-number-3">7.3.</span> SkolemSat</h3>
 <div class="outline-text-3" id="text-7-3">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </p>
 
-<div id="org443e723" class="figure">
+<div id="org7c08a4e" class="figure">
 <p><img src="plots/sk_intermediate_time.png" alt="sk_intermediate_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org36a87de" class="outline-3">
-<h3 id="org36a87de"><span class="section-number-3">7.4.</span> HyperSat</h3>
+<div id="outline-container-orgef18310" class="outline-3">
+<h3 id="orgef18310"><span class="section-number-3">7.4.</span> HyperSat</h3>
 <div class="outline-text-3" id="text-7-4">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </p>
 
-<div id="orgb9daed3" class="figure">
+<div id="org70efe01" class="figure">
 <p><img src="plots/hyper_intermediate_time.png" alt="hyper_intermediate_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org4f96bcd" class="outline-3">
-<h3 id="org4f96bcd"><span class="section-number-3">7.5.</span> KAON3</h3>
+<div id="outline-container-org1317b88" class="outline-3">
+<h3 id="org1317b88"><span class="section-number-3">7.5.</span> KAON3</h3>
 <div class="outline-text-3" id="text-7-5">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </p>
 
-<div id="org8ad330d" class="figure">
+<div id="orgbae7a44" class="figure">
 <p><img src="plots/kaon3_intermediate_time.png" alt="kaon3_intermediate_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org9367b94" class="outline-3">
-<h3 id="org9367b94"><span class="section-number-3">7.6.</span> KAON2</h3>
+<div id="outline-container-orgfd82bbe" class="outline-3">
+<h3 id="orgfd82bbe"><span class="section-number-3">7.6.</span> KAON2</h3>
 <div class="outline-text-3" id="text-7-6">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </p>
 
-<div id="org70e44ff" class="figure">
+<div id="org5f697a0" class="figure">
 <p><img src="plots/kaon2_intermediate_time.png" alt="kaon2_intermediate_time.png">
 </p>
 </div>
@@ -15719,8 +15719,8 @@ Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </div>
 
 
-<div id="outline-container-org6a2dffb" class="outline-3">
-<h3 id="org6a2dffb"><span class="section-number-3">7.7.</span> Comparison</h3>
+<div id="outline-container-orgac5fe0e" class="outline-3">
+<h3 id="orgac5fe0e"><span class="section-number-3">7.7.</span> Comparison</h3>
 <div class="outline-text-3" id="text-7-7">
 <p>
 Scatter plot of the time in ms in function of the number of intermediate TGDs.
@@ -15730,7 +15730,7 @@ Scatter plot of the time in ms in function of the number of intermediate TGDs.
 </pre>
 
 
-<div id="orga13acba" class="figure">
+<div id="orgb70c429" class="figure">
 <p><img src="plots/all_intermediate_time.png" alt="all_intermediate_time.png">
 </p>
 </div>
@@ -15743,7 +15743,7 @@ Scatter plot the number of intermediate TGDs in function of the size of the inpu
 </pre>
 
 
-<div id="orgba57224" class="figure">
+<div id="org4dc142d" class="figure">
 <p><img src="plots/all_input_intermediate.png" alt="all_input_intermediate.png">
 </p>
 </div>
@@ -15751,12 +15751,12 @@ Scatter plot the number of intermediate TGDs in function of the size of the inpu
 </div>
 </div>
 
-<div id="outline-container-org55eac78" class="outline-2">
-<h2 id="org55eac78"><span class="section-number-2">8.</span> Intermediate TGDs vs subsumption time</h2>
+<div id="outline-container-org538a4f5" class="outline-2">
+<h2 id="org538a4f5"><span class="section-number-2">8.</span> Intermediate TGDs vs subsumption time</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-org289ad03" class="outline-3">
-<h3 id="org289ad03"><span class="section-number-3">8.1.</span> SkolemSat</h3>
+<div id="outline-container-org957b283" class="outline-3">
+<h3 id="org957b283"><span class="section-number-3">8.1.</span> SkolemSat</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
 Scatter plot of the subsumption time in ms in function of the number of intermediate TGDs. The subsumption is sub-linear.
@@ -15766,7 +15766,7 @@ Scatter plot of the subsumption time in ms in function of the number of intermed
 </pre>
 
 
-<div id="org1545b65" class="figure">
+<div id="org212f567" class="figure">
 <p><img src="plots/sk_intermediate_sumb_time.png" alt="sk_intermediate_sumb_time.png">
 </p>
 </div>
@@ -15774,75 +15774,75 @@ Scatter plot of the subsumption time in ms in function of the number of intermed
 </div>
 </div>
 
-<div id="outline-container-org3a6dfce" class="outline-2">
-<h2 id="org3a6dfce"><span class="section-number-2">9.</span> Times vs input size</h2>
+<div id="outline-container-org4b9d35b" class="outline-2">
+<h2 id="org4b9d35b"><span class="section-number-2">9.</span> Times vs input size</h2>
 <div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-org40e27a0" class="outline-3">
-<h3 id="org40e27a0"><span class="section-number-3">9.1.</span> GSat</h3>
+<div id="outline-container-org22c0737" class="outline-3">
+<h3 id="org22c0737"><span class="section-number-3">9.1.</span> GSat</h3>
 <div class="outline-text-3" id="text-9-1">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs
 </p>
 
-<div id="org8b346c7" class="figure">
+<div id="org1714f74" class="figure">
 <p><img src="plots/gsat_input_time_time.png" alt="gsat_input_time_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org461022c" class="outline-3">
-<h3 id="org461022c"><span class="section-number-3">9.2.</span> SkolemSat</h3>
+<div id="outline-container-org6a62476" class="outline-3">
+<h3 id="org6a62476"><span class="section-number-3">9.2.</span> SkolemSat</h3>
 <div class="outline-text-3" id="text-9-2">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
 </p>
 
-<div id="orgc72eac8" class="figure">
+<div id="org5bd1bd2" class="figure">
 <p><img src="plots/sk_input_time_time.png" alt="sk_input_time_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org7ef92b0" class="outline-3">
-<h3 id="org7ef92b0"><span class="section-number-3">9.3.</span> HyperSat</h3>
+<div id="outline-container-org635e81c" class="outline-3">
+<h3 id="org635e81c"><span class="section-number-3">9.3.</span> HyperSat</h3>
 <div class="outline-text-3" id="text-9-3">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
 </p>
 
-<div id="org11748ea" class="figure">
+<div id="org5c63d74" class="figure">
 <p><img src="plots/hyper_input_time_time.png" alt="hyper_input_time_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgb1d6863" class="outline-3">
-<h3 id="orgb1d6863"><span class="section-number-3">9.4.</span> KAON3</h3>
+<div id="outline-container-org54c1083" class="outline-3">
+<h3 id="org54c1083"><span class="section-number-3">9.4.</span> KAON3</h3>
 <div class="outline-text-3" id="text-9-4">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
 </p>
 
-<div id="orge794685" class="figure">
+<div id="orgab8dac8" class="figure">
 <p><img src="plots/kaon3_input_time_time.png" alt="kaon3_input_time_time.png">
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org68575bf" class="outline-3">
-<h3 id="org68575bf"><span class="section-number-3">9.5.</span> KAON2</h3>
+<div id="outline-container-orgf150754" class="outline-3">
+<h3 id="orgf150754"><span class="section-number-3">9.5.</span> KAON2</h3>
 <div class="outline-text-3" id="text-9-5">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
 </p>
 
 
-<div id="orgc708abc" class="figure">
+<div id="orga626e44" class="figure">
 <p><img src="plots/kaon2_input_time_time.png" alt="kaon2_input_time_time.png">
 </p>
 </div>
@@ -15850,8 +15850,8 @@ Scatter plot of the time in ms in function of the size of the input i.e. number 
 </div>
 
 
-<div id="outline-container-orga10f99f" class="outline-3">
-<h3 id="orga10f99f"><span class="section-number-3">9.6.</span> Comparison</h3>
+<div id="outline-container-org66774fd" class="outline-3">
+<h3 id="org66774fd"><span class="section-number-3">9.6.</span> Comparison</h3>
 <div class="outline-text-3" id="text-9-6">
 <p>
 Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full for GSat)
@@ -15861,7 +15861,7 @@ Scatter plot of the time in ms in function of the size of the input i.e. number 
 </pre>
 
 
-<div id="org9eedf61" class="figure">
+<div id="org303b43e" class="figure">
 <p><img src="plots/all_input_time_time.png" alt="all_input_time_time.png">
 </p>
 </div>
@@ -15869,13 +15869,33 @@ Scatter plot of the time in ms in function of the size of the input i.e. number 
 </div>
 </div>
 
-<div id="outline-container-orgd042aa9" class="outline-2">
-<h2 id="orgd042aa9"><span class="section-number-2">10.</span> Output Analysis</h2>
+<div id="outline-container-org943564b" class="outline-2">
+<h2 id="org943564b"><span class="section-number-2">10.</span> Output Analysis</h2>
 <div class="outline-text-2" id="text-10">
 </div>
-<div id="outline-container-org8742382" class="outline-3">
-<h3 id="org8742382"><span class="section-number-3">10.1.</span> Output summary</h3>
+<div id="outline-container-org437fcba" class="outline-3">
+<h3 id="org437fcba"><span class="section-number-3">10.1.</span> Output summary</h3>
 <div class="outline-text-3" id="text-10-1">
+<p>
+The following statistics are performed on the ontologies where no algorithm reaches the timeout. Their number is:
+</p>
+<pre class="example">
+334
+</pre>
+
+
+<p>
+The number of ontologies with a empty saturation:
+</p>
+<pre class="example">
+201
+</pre>
+
+
+
+<p>
+The maximal number of atoms in the body among all the output rules on every ontology:
+</p>
 <table>
 
 
@@ -15889,4307 +15909,29 @@ Scatter plot of the time in ms in function of the size of the input i.e. number 
 <col  class="org-right">
 
 <col  class="org-right">
-
-<col  class="org-right">
-
-<col  class="org-right">
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="org-right">NAME</th>
-<th scope="col" class="org-right">AXIOM</th>
-<th scope="col" class="org-right">SUBSUMED</th>
-<th scope="col" class="org-right">NEW<sub>FTGD</sub><sub>NB</sub></th>
-<th scope="col" class="org-right">NEW<sub>NFTGD</sub><sub>NB</sub></th>
-<th scope="col" class="org-right">KAON2<sub>OUTPUT</sub></th>
-<th scope="col" class="org-right">KAON2<sub>TIME</sub></th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">GSAT</th>
+<th scope="col" class="org-right">SK</th>
+<th scope="col" class="org-right">HYPER2</th>
+<th scope="col" class="org-right">KAON2</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="org-right">1</td>
-<td class="org-right">2615</td>
-<td class="org-right">822</td>
-<td class="org-right">2658</td>
-<td class="org-right">2959</td>
-<td class="org-right">2612</td>
-<td class="org-right">752</td>
-</tr>
-
-<tr>
-<td class="org-right">2</td>
-<td class="org-right">1367</td>
-<td class="org-right">768</td>
-<td class="org-right">4010</td>
-<td class="org-right">2726</td>
-<td class="org-right">1281</td>
-<td class="org-right">787</td>
-</tr>
-
-<tr>
-<td class="org-right">3</td>
-<td class="org-right">18866</td>
-<td class="org-right">265432</td>
-<td class="org-right">456960</td>
-<td class="org-right">539788</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">4</td>
-<td class="org-right">18810</td>
-<td class="org-right">223868</td>
-<td class="org-right">449917</td>
-<td class="org-right">479989</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">6</td>
-<td class="org-right">1230</td>
-<td class="org-right">2</td>
-<td class="org-right">948</td>
-<td class="org-right">1057</td>
-<td class="org-right">1213</td>
-<td class="org-right">490</td>
-</tr>
-
-<tr>
-<td class="org-right">7</td>
-<td class="org-right">190</td>
-<td class="org-right">7</td>
-<td class="org-right">104</td>
-<td class="org-right">137</td>
-<td class="org-right">172</td>
-<td class="org-right">271</td>
-</tr>
-
-<tr>
-<td class="org-right">12</td>
-<td class="org-right">291</td>
-<td class="org-right">6</td>
-<td class="org-right">172</td>
-<td class="org-right">156</td>
-<td class="org-right">279</td>
-<td class="org-right">290</td>
-</tr>
-
-<tr>
-<td class="org-right">13</td>
-<td class="org-right">1188</td>
-<td class="org-right">1724</td>
-<td class="org-right">1806</td>
-<td class="org-right">2727</td>
-<td class="org-right">1371</td>
-<td class="org-right">435</td>
-</tr>
-
-<tr>
-<td class="org-right">14</td>
-<td class="org-right">1468</td>
-<td class="org-right">3838</td>
-<td class="org-right">3604</td>
-<td class="org-right">5315</td>
-<td class="org-right">1791</td>
-<td class="org-right">535</td>
-</tr>
-
-<tr>
-<td class="org-right">15</td>
-<td class="org-right">326</td>
-<td class="org-right">159</td>
-<td class="org-right">341</td>
-<td class="org-right">340</td>
-<td class="org-right">353</td>
-<td class="org-right">304</td>
-</tr>
-
-<tr>
-<td class="org-right">16</td>
-<td class="org-right">991</td>
-<td class="org-right">1164</td>
-<td class="org-right">1527</td>
-<td class="org-right">1986</td>
-<td class="org-right">1146</td>
-<td class="org-right">413</td>
-</tr>
-
-<tr>
-<td class="org-right">17</td>
-<td class="org-right">1098</td>
-<td class="org-right">1238</td>
-<td class="org-right">1581</td>
-<td class="org-right">2072</td>
-<td class="org-right">1273</td>
-<td class="org-right">421</td>
-</tr>
-
-<tr>
-<td class="org-right">18</td>
-<td class="org-right">1075</td>
-<td class="org-right">1941</td>
-<td class="org-right">2312</td>
-<td class="org-right">2511</td>
-<td class="org-right">1258</td>
-<td class="org-right">451</td>
-</tr>
-
-<tr>
-<td class="org-right">19</td>
-<td class="org-right">1013</td>
-<td class="org-right">1396</td>
-<td class="org-right">1620</td>
-<td class="org-right">2257</td>
-<td class="org-right">1171</td>
-<td class="org-right">441</td>
-</tr>
-
-<tr>
-<td class="org-right">20</td>
-<td class="org-right">1226</td>
-<td class="org-right">1962</td>
-<td class="org-right">2081</td>
-<td class="org-right">3042</td>
-<td class="org-right">1441</td>
-<td class="org-right">459</td>
-</tr>
-
-<tr>
-<td class="org-right">21</td>
-<td class="org-right">1143</td>
-<td class="org-right">2338</td>
-<td class="org-right">2178</td>
-<td class="org-right">3499</td>
-<td class="org-right">1376</td>
-<td class="org-right">447</td>
-</tr>
-
-<tr>
-<td class="org-right">22</td>
-<td class="org-right">396</td>
-<td class="org-right">155</td>
-<td class="org-right">403</td>
-<td class="org-right">361</td>
-<td class="org-right">436</td>
-<td class="org-right">308</td>
-</tr>
-
-<tr>
-<td class="org-right">23</td>
-<td class="org-right">401</td>
-<td class="org-right">140</td>
-<td class="org-right">402</td>
-<td class="org-right">342</td>
-<td class="org-right">440</td>
-<td class="org-right">312</td>
-</tr>
-
-<tr>
-<td class="org-right">24</td>
-<td class="org-right">1468</td>
-<td class="org-right">3542</td>
-<td class="org-right">3562</td>
-<td class="org-right">4892</td>
-<td class="org-right">1790</td>
-<td class="org-right">582</td>
-</tr>
-
-<tr>
-<td class="org-right">25</td>
-<td class="org-right">937</td>
-<td class="org-right">573</td>
-<td class="org-right">812</td>
-<td class="org-right">1288</td>
-<td class="org-right">1010</td>
-<td class="org-right">387</td>
-</tr>
-
-<tr>
-<td class="org-right">26</td>
-<td class="org-right">42924</td>
-<td class="org-right">12586</td>
-<td class="org-right">129451</td>
-<td class="org-right">208193</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">27</td>
-<td class="org-right">43399</td>
-<td class="org-right">236157</td>
-<td class="org-right">86504</td>
-<td class="org-right">559240</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">29</td>
-<td class="org-right">4702</td>
-<td class="org-right">21108</td>
-<td class="org-right">23577</td>
-<td class="org-right">43056</td>
-<td class="org-right">5825</td>
-<td class="org-right">6984</td>
-</tr>
-
-<tr>
-<td class="org-right">30</td>
-<td class="org-right">4736</td>
-<td class="org-right">14181</td>
-<td class="org-right">32321</td>
-<td class="org-right">18698</td>
-<td class="org-right">5559</td>
-<td class="org-right">6904</td>
-</tr>
-
-<tr>
-<td class="org-right">32</td>
-<td class="org-right">4943</td>
-<td class="org-right">34943</td>
-<td class="org-right">33561</td>
-<td class="org-right">61486</td>
-<td class="org-right">5974</td>
-<td class="org-right">10678</td>
-</tr>
-
-<tr>
-<td class="org-right">33</td>
-<td class="org-right">17540</td>
-<td class="org-right">91312</td>
-<td class="org-right">230183</td>
-<td class="org-right">254182</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">34</td>
-<td class="org-right">17491</td>
-<td class="org-right">278966</td>
-<td class="org-right">652589</td>
-<td class="org-right">112705</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">36</td>
-<td class="org-right">17530</td>
-<td class="org-right">33261</td>
-<td class="org-right">148506</td>
-<td class="org-right">184866</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">37</td>
-<td class="org-right">17518</td>
-<td class="org-right">39440</td>
-<td class="org-right">156781</td>
-<td class="org-right">216215</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">38</td>
-<td class="org-right">17533</td>
-<td class="org-right">39928</td>
-<td class="org-right">187328</td>
-<td class="org-right">224469</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">39</td>
-<td class="org-right">6076</td>
-<td class="org-right">22765</td>
-<td class="org-right">44239</td>
-<td class="org-right">28280</td>
-<td class="org-right">7278</td>
-<td class="org-right">11060</td>
-</tr>
-
-<tr>
-<td class="org-right">40</td>
-<td class="org-right">140874</td>
-<td class="org-right">13463</td>
-<td class="org-right">85788</td>
-<td class="org-right">90557</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">41</td>
-<td class="org-right">82156</td>
-<td class="org-right">50062</td>
-<td class="org-right">107409</td>
-<td class="org-right">143883</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">42</td>
-<td class="org-right">86438</td>
-<td class="org-right">48367</td>
-<td class="org-right">94595</td>
-<td class="org-right">145163</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">43</td>
-<td class="org-right">130622</td>
-<td class="org-right">22404</td>
-<td class="org-right">103619</td>
-<td class="org-right">91187</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">44</td>
-<td class="org-right">82119</td>
-<td class="org-right">51101</td>
-<td class="org-right">109025</td>
-<td class="org-right">142468</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">45</td>
-<td class="org-right">137671</td>
-<td class="org-right">13308</td>
-<td class="org-right">83905</td>
-<td class="org-right">91589</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">46</td>
-<td class="org-right">84985</td>
-<td class="org-right">42931</td>
-<td class="org-right">102130</td>
-<td class="org-right">137310</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">47</td>
-<td class="org-right">82338</td>
-<td class="org-right">44150</td>
-<td class="org-right">108486</td>
-<td class="org-right">135710</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">49</td>
-<td class="org-right">62</td>
-<td class="org-right">56</td>
-<td class="org-right">69</td>
-<td class="org-right">113</td>
-<td class="org-right">67</td>
-<td class="org-right">248</td>
-</tr>
-
-<tr>
-<td class="org-right">52</td>
-<td class="org-right">28997</td>
-<td class="org-right">2988</td>
-<td class="org-right">29376</td>
-<td class="org-right">20629</td>
-<td class="org-right">27911</td>
-<td class="org-right">22027</td>
-</tr>
-
-<tr>
-<td class="org-right">55</td>
-<td class="org-right">227</td>
-<td class="org-right">34</td>
-<td class="org-right">196</td>
-<td class="org-right">143</td>
-<td class="org-right">230</td>
-<td class="org-right">283</td>
-</tr>
-
-<tr>
-<td class="org-right">57</td>
-<td class="org-right">14</td>
-<td class="org-right">0</td>
-<td class="org-right">5</td>
-<td class="org-right">12</td>
-<td class="org-right">11</td>
-<td class="org-right">214</td>
-</tr>
-
-<tr>
-<td class="org-right">58</td>
-<td class="org-right">10</td>
-<td class="org-right">0</td>
-<td class="org-right">3</td>
-<td class="org-right">10</td>
-<td class="org-right">7</td>
-<td class="org-right">220</td>
-</tr>
-
-<tr>
-<td class="org-right">59</td>
-<td class="org-right">52</td>
-<td class="org-right">0</td>
-<td class="org-right">23</td>
-<td class="org-right">36</td>
-<td class="org-right">47</td>
-<td class="org-right">226</td>
-</tr>
-
-<tr>
-<td class="org-right">60</td>
-<td class="org-right">81</td>
-<td class="org-right">0</td>
-<td class="org-right">36</td>
-<td class="org-right">58</td>
-<td class="org-right">72</td>
-<td class="org-right">233</td>
-</tr>
-
-<tr>
-<td class="org-right">62</td>
-<td class="org-right">83</td>
-<td class="org-right">0</td>
-<td class="org-right">36</td>
-<td class="org-right">61</td>
-<td class="org-right">72</td>
-<td class="org-right">238</td>
-</tr>
-
-<tr>
-<td class="org-right">63</td>
-<td class="org-right">73</td>
-<td class="org-right">0</td>
-<td class="org-right">30</td>
-<td class="org-right">60</td>
-<td class="org-right">61</td>
-<td class="org-right">234</td>
-</tr>
-
-<tr>
-<td class="org-right">65</td>
-<td class="org-right">13</td>
-<td class="org-right">2</td>
-<td class="org-right">8</td>
-<td class="org-right">14</td>
-<td class="org-right">12</td>
-<td class="org-right">218</td>
-</tr>
-
-<tr>
-<td class="org-right">66</td>
-<td class="org-right">21</td>
-<td class="org-right">0</td>
-<td class="org-right">10</td>
-<td class="org-right">13</td>
-<td class="org-right">20</td>
-<td class="org-right">221</td>
-</tr>
-
-<tr>
-<td class="org-right">68</td>
-<td class="org-right">33</td>
-<td class="org-right">0</td>
-<td class="org-right">22</td>
-<td class="org-right">16</td>
-<td class="org-right">35</td>
-<td class="org-right">223</td>
-</tr>
-
-<tr>
-<td class="org-right">69</td>
-<td class="org-right">9</td>
 <td class="org-right">0</td>
 <td class="org-right">4</td>
-<td class="org-right">7</td>
-<td class="org-right">8</td>
-<td class="org-right">217</td>
-</tr>
-
-<tr>
-<td class="org-right">71</td>
-<td class="org-right">15</td>
-<td class="org-right">0</td>
-<td class="org-right">7</td>
-<td class="org-right">10</td>
-<td class="org-right">14</td>
-<td class="org-right">209</td>
-</tr>
-
-<tr>
-<td class="org-right">72</td>
-<td class="org-right">28</td>
-<td class="org-right">0</td>
-<td class="org-right">21</td>
-<td class="org-right">13</td>
-<td class="org-right">31</td>
-<td class="org-right">218</td>
-</tr>
-
-<tr>
-<td class="org-right">73</td>
-<td class="org-right">82</td>
-<td class="org-right">2</td>
-<td class="org-right">45</td>
-<td class="org-right">51</td>
-<td class="org-right">78</td>
-<td class="org-right">235</td>
-</tr>
-
-<tr>
-<td class="org-right">75</td>
-<td class="org-right">127</td>
-<td class="org-right">0</td>
-<td class="org-right">100</td>
-<td class="org-right">54</td>
-<td class="org-right">126</td>
-<td class="org-right">257</td>
-</tr>
-
-<tr>
-<td class="org-right">78</td>
-<td class="org-right">758</td>
-<td class="org-right">57</td>
-<td class="org-right">629</td>
-<td class="org-right">465</td>
-<td class="org-right">803</td>
-<td class="org-right">357</td>
-</tr>
-
-<tr>
-<td class="org-right">79</td>
-<td class="org-right">31</td>
-<td class="org-right">0</td>
-<td class="org-right">20</td>
-<td class="org-right">14</td>
-<td class="org-right">31</td>
-<td class="org-right">221</td>
-</tr>
-
-<tr>
-<td class="org-right">81</td>
-<td class="org-right">773</td>
-<td class="org-right">9</td>
-<td class="org-right">356</td>
-<td class="org-right">539</td>
-<td class="org-right">680</td>
-<td class="org-right">347</td>
-</tr>
-
-<tr>
-<td class="org-right">82</td>
-<td class="org-right">463</td>
-<td class="org-right">20</td>
-<td class="org-right">283</td>
-<td class="org-right">656</td>
-<td class="org-right">342</td>
-<td class="org-right">348</td>
-</tr>
-
-<tr>
-<td class="org-right">94</td>
-<td class="org-right">155</td>
-<td class="org-right">2</td>
-<td class="org-right">90</td>
-<td class="org-right">88</td>
-<td class="org-right">150</td>
-<td class="org-right">256</td>
-</tr>
-
-<tr>
-<td class="org-right">106</td>
-<td class="org-right">46</td>
-<td class="org-right">2</td>
-<td class="org-right">26</td>
-<td class="org-right">31</td>
-<td class="org-right">43</td>
-<td class="org-right">226</td>
-</tr>
-
-<tr>
-<td class="org-right">110</td>
-<td class="org-right">421</td>
-<td class="org-right">3</td>
-<td class="org-right">233</td>
-<td class="org-right">552</td>
-<td class="org-right">308</td>
-<td class="org-right">366</td>
-</tr>
-
-<tr>
-<td class="org-right">112</td>
-<td class="org-right">123</td>
-<td class="org-right">35</td>
-<td class="org-right">97</td>
-<td class="org-right">100</td>
-<td class="org-right">130</td>
-<td class="org-right">274</td>
-</tr>
-
-<tr>
-<td class="org-right">113</td>
-<td class="org-right">36</td>
-<td class="org-right">2</td>
-<td class="org-right">23</td>
-<td class="org-right">21</td>
-<td class="org-right">32</td>
-<td class="org-right">266</td>
-</tr>
-
-<tr>
-<td class="org-right">114</td>
-<td class="org-right">26</td>
-<td class="org-right">24</td>
-<td class="org-right">48</td>
-<td class="org-right">54</td>
-<td class="org-right">57</td>
-<td class="org-right">240</td>
-</tr>
-
-<tr>
-<td class="org-right">116</td>
-<td class="org-right">37</td>
-<td class="org-right">9</td>
-<td class="org-right">40</td>
-<td class="org-right">45</td>
-<td class="org-right">46</td>
-<td class="org-right">236</td>
-</tr>
-
-<tr>
-<td class="org-right">118</td>
-<td class="org-right">83</td>
-<td class="org-right">85</td>
-<td class="org-right">133</td>
-<td class="org-right">142</td>
-<td class="org-right">113</td>
-<td class="org-right">270</td>
-</tr>
-
-<tr>
-<td class="org-right">120</td>
-<td class="org-right">56</td>
-<td class="org-right">24</td>
-<td class="org-right">56</td>
-<td class="org-right">65</td>
-<td class="org-right">63</td>
-<td class="org-right">242</td>
-</tr>
-
-<tr>
-<td class="org-right">151</td>
-<td class="org-right">304</td>
-<td class="org-right">34</td>
-<td class="org-right">236</td>
-<td class="org-right">275</td>
-<td class="org-right">335</td>
-<td class="org-right">302</td>
-</tr>
-
-<tr>
-<td class="org-right">153</td>
-<td class="org-right">210</td>
-<td class="org-right">14</td>
-<td class="org-right">185</td>
-<td class="org-right">128</td>
-<td class="org-right">212</td>
-<td class="org-right">286</td>
-</tr>
-
-<tr>
-<td class="org-right">164</td>
-<td class="org-right">34</td>
-<td class="org-right">0</td>
-<td class="org-right">17</td>
-<td class="org-right">22</td>
-<td class="org-right">34</td>
-<td class="org-right">231</td>
-</tr>
-
-<tr>
-<td class="org-right">167</td>
-<td class="org-right">463</td>
-<td class="org-right">22</td>
-<td class="org-right">337</td>
-<td class="org-right">237</td>
-<td class="org-right">456</td>
-<td class="org-right">311</td>
-</tr>
-
-<tr>
-<td class="org-right">169</td>
-<td class="org-right">190</td>
-<td class="org-right">8</td>
-<td class="org-right">98</td>
-<td class="org-right">140</td>
-<td class="org-right">172</td>
-<td class="org-right">269</td>
-</tr>
-
-<tr>
-<td class="org-right">170</td>
-<td class="org-right">129</td>
-<td class="org-right">3</td>
-<td class="org-right">74</td>
-<td class="org-right">75</td>
-<td class="org-right">125</td>
-<td class="org-right">254</td>
-</tr>
-
-<tr>
-<td class="org-right">171</td>
-<td class="org-right">67</td>
-<td class="org-right">7</td>
-<td class="org-right">42</td>
-<td class="org-right">65</td>
-<td class="org-right">61</td>
-<td class="org-right">235</td>
-</tr>
-
-<tr>
-<td class="org-right">172</td>
-<td class="org-right">290</td>
-<td class="org-right">103</td>
-<td class="org-right">214</td>
-<td class="org-right">288</td>
-<td class="org-right">327</td>
-<td class="org-right">307</td>
-</tr>
-
-<tr>
-<td class="org-right">173</td>
-<td class="org-right">216</td>
-<td class="org-right">129</td>
-<td class="org-right">234</td>
-<td class="org-right">317</td>
-<td class="org-right">224</td>
-<td class="org-right">293</td>
-</tr>
-
-<tr>
-<td class="org-right">174</td>
-<td class="org-right">4495</td>
-<td class="org-right">6939</td>
-<td class="org-right">20985</td>
-<td class="org-right">17837</td>
-<td class="org-right">5412</td>
-<td class="org-right">4980</td>
-</tr>
-
-<tr>
-<td class="org-right">176</td>
-<td class="org-right">72</td>
-<td class="org-right">57</td>
-<td class="org-right">110</td>
-<td class="org-right">108</td>
-<td class="org-right">95</td>
-<td class="org-right">271</td>
-</tr>
-
-<tr>
-<td class="org-right">209</td>
-<td class="org-right">45</td>
-<td class="org-right">0</td>
-<td class="org-right">25</td>
-<td class="org-right">50</td>
-<td class="org-right">30</td>
-<td class="org-right">241</td>
-</tr>
-
-<tr>
-<td class="org-right">210</td>
-<td class="org-right">25</td>
-<td class="org-right">0</td>
-<td class="org-right">16</td>
-<td class="org-right">19</td>
-<td class="org-right">25</td>
-<td class="org-right">223</td>
-</tr>
-
-<tr>
-<td class="org-right">212</td>
-<td class="org-right">5</td>
-<td class="org-right">0</td>
-<td class="org-right">2</td>
-<td class="org-right">7</td>
-<td class="org-right">3</td>
-<td class="org-right">224</td>
-</tr>
-
-<tr>
-<td class="org-right">213</td>
-<td class="org-right">5</td>
-<td class="org-right">0</td>
-<td class="org-right">2</td>
-<td class="org-right">7</td>
-<td class="org-right">3</td>
-<td class="org-right">214</td>
-</tr>
-
-<tr>
-<td class="org-right">214</td>
-<td class="org-right">32</td>
-<td class="org-right">1</td>
-<td class="org-right">17</td>
-<td class="org-right">34</td>
-<td class="org-right">25</td>
-<td class="org-right">240</td>
-</tr>
-
-<tr>
-<td class="org-right">215</td>
-<td class="org-right">17</td>
-<td class="org-right">0</td>
-<td class="org-right">13</td>
-<td class="org-right">16</td>
-<td class="org-right">14</td>
-<td class="org-right">224</td>
-</tr>
-
-<tr>
-<td class="org-right">217</td>
-<td class="org-right">9</td>
-<td class="org-right">0</td>
-<td class="org-right">8</td>
-<td class="org-right">3</td>
-<td class="org-right">8</td>
-<td class="org-right">219</td>
-</tr>
-
-<tr>
-<td class="org-right">218</td>
-<td class="org-right">14</td>
-<td class="org-right">1</td>
-<td class="org-right">8</td>
-<td class="org-right">19</td>
-<td class="org-right">8</td>
-<td class="org-right">219</td>
-</tr>
-
-<tr>
-<td class="org-right">220</td>
-<td class="org-right">5</td>
-<td class="org-right">0</td>
-<td class="org-right">3</td>
-<td class="org-right">5</td>
-<td class="org-right">3</td>
-<td class="org-right">216</td>
-</tr>
-
-<tr>
-<td class="org-right">221</td>
-<td class="org-right">17</td>
-<td class="org-right">1</td>
-<td class="org-right">15</td>
-<td class="org-right">7</td>
-<td class="org-right">19</td>
-<td class="org-right">224</td>
-</tr>
-
-<tr>
-<td class="org-right">222</td>
-<td class="org-right">56</td>
-<td class="org-right">2</td>
-<td class="org-right">41</td>
-<td class="org-right">30</td>
-<td class="org-right">58</td>
-<td class="org-right">236</td>
-</tr>
-
-<tr>
-<td class="org-right">223</td>
-<td class="org-right">12</td>
-<td class="org-right">0</td>
-<td class="org-right">6</td>
-<td class="org-right">11</td>
-<td class="org-right">11</td>
-<td class="org-right">216</td>
-</tr>
-
-<tr>
-<td class="org-right">224</td>
-<td class="org-right">9</td>
-<td class="org-right">0</td>
 <td class="org-right">4</td>
-<td class="org-right">8</td>
-<td class="org-right">7</td>
-<td class="org-right">217</td>
-</tr>
-
-<tr>
-<td class="org-right">229</td>
-<td class="org-right">38</td>
-<td class="org-right">7</td>
-<td class="org-right">25</td>
-<td class="org-right">28</td>
-<td class="org-right">36</td>
-<td class="org-right">230</td>
-</tr>
-
-<tr>
-<td class="org-right">230</td>
-<td class="org-right">7</td>
-<td class="org-right">0</td>
-<td class="org-right">5</td>
 <td class="org-right">4</td>
-<td class="org-right">5</td>
-<td class="org-right">217</td>
-</tr>
-
-<tr>
-<td class="org-right">233</td>
 <td class="org-right">4</td>
-<td class="org-right">0</td>
-<td class="org-right">3</td>
-<td class="org-right">3</td>
-<td class="org-right">3</td>
-<td class="org-right">210</td>
-</tr>
-
-<tr>
-<td class="org-right">235</td>
-<td class="org-right">24</td>
-<td class="org-right">0</td>
-<td class="org-right">15</td>
-<td class="org-right">19</td>
-<td class="org-right">18</td>
-<td class="org-right">230</td>
-</tr>
-
-<tr>
-<td class="org-right">236</td>
-<td class="org-right">28</td>
-<td class="org-right">0</td>
-<td class="org-right">11</td>
-<td class="org-right">24</td>
-<td class="org-right">22</td>
-<td class="org-right">226</td>
-</tr>
-
-<tr>
-<td class="org-right">237</td>
-<td class="org-right">3</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">3</td>
-<td class="org-right">2</td>
-<td class="org-right">213</td>
-</tr>
-
-<tr>
-<td class="org-right">238</td>
-<td class="org-right">19</td>
-<td class="org-right">1</td>
-<td class="org-right">10</td>
-<td class="org-right">18</td>
-<td class="org-right">17</td>
-<td class="org-right">222</td>
-</tr>
-
-<tr>
-<td class="org-right">241</td>
-<td class="org-right">25</td>
-<td class="org-right">3</td>
-<td class="org-right">21</td>
-<td class="org-right">14</td>
-<td class="org-right">28</td>
-<td class="org-right">223</td>
-</tr>
-
-<tr>
-<td class="org-right">242</td>
-<td class="org-right">21</td>
-<td class="org-right">0</td>
-<td class="org-right">18</td>
-<td class="org-right">11</td>
-<td class="org-right">20</td>
-<td class="org-right">223</td>
-</tr>
-
-<tr>
-<td class="org-right">267</td>
-<td class="org-right">11</td>
-<td class="org-right">0</td>
-<td class="org-right">7</td>
-<td class="org-right">8</td>
-<td class="org-right">7</td>
-<td class="org-right">218</td>
-</tr>
-
-<tr>
-<td class="org-right">279</td>
-<td class="org-right">194</td>
-<td class="org-right">0</td>
-<td class="org-right">93</td>
-<td class="org-right">126</td>
-<td class="org-right">171</td>
-<td class="org-right">276</td>
-</tr>
-
-<tr>
-<td class="org-right">281</td>
-<td class="org-right">326</td>
-<td class="org-right">159</td>
-<td class="org-right">351</td>
-<td class="org-right">323</td>
-<td class="org-right">355</td>
-<td class="org-right">294</td>
-</tr>
-
-<tr>
-<td class="org-right">282</td>
-<td class="org-right">839</td>
-<td class="org-right">1379</td>
-<td class="org-right">1425</td>
-<td class="org-right">2131</td>
-<td class="org-right">980</td>
-<td class="org-right">387</td>
-</tr>
-
-<tr>
-<td class="org-right">283</td>
-<td class="org-right">926</td>
-<td class="org-right">1762</td>
-<td class="org-right">1970</td>
-<td class="org-right">2467</td>
-<td class="org-right">1097</td>
-<td class="org-right">424</td>
-</tr>
-
-<tr>
-<td class="org-right">284</td>
-<td class="org-right">1149</td>
-<td class="org-right">2199</td>
-<td class="org-right">2241</td>
-<td class="org-right">3299</td>
-<td class="org-right">1357</td>
-<td class="org-right">457</td>
-</tr>
-
-<tr>
-<td class="org-right">285</td>
-<td class="org-right">111183</td>
-<td class="org-right">4367</td>
-<td class="org-right">40775</td>
-<td class="org-right">134556</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">286</td>
-<td class="org-right">46940</td>
-<td class="org-right">9063</td>
-<td class="org-right">49233</td>
-<td class="org-right">45147</td>
-<td class="org-right">47422</td>
-<td class="org-right">65637</td>
-</tr>
-
-<tr>
-<td class="org-right">290</td>
-<td class="org-right">139</td>
-<td class="org-right">34</td>
-<td class="org-right">104</td>
-<td class="org-right">102</td>
-<td class="org-right">136</td>
-<td class="org-right">269</td>
-</tr>
-
-<tr>
-<td class="org-right">293</td>
-<td class="org-right">2743</td>
-<td class="org-right">0</td>
-<td class="org-right">1371</td>
-<td class="org-right">1399</td>
-<td class="org-right">2728</td>
-<td class="org-right">478</td>
-</tr>
-
-<tr>
-<td class="org-right">296</td>
-<td class="org-right">75</td>
-<td class="org-right">41</td>
-<td class="org-right">65</td>
-<td class="org-right">98</td>
-<td class="org-right">77</td>
-<td class="org-right">245</td>
-</tr>
-
-<tr>
-<td class="org-right">301</td>
-<td class="org-right">131</td>
-<td class="org-right">4</td>
-<td class="org-right">89</td>
-<td class="org-right">60</td>
-<td class="org-right">131</td>
-<td class="org-right">253</td>
-</tr>
-
-<tr>
-<td class="org-right">316</td>
-<td class="org-right">43</td>
-<td class="org-right">0</td>
-<td class="org-right">31</td>
-<td class="org-right">13</td>
-<td class="org-right">42</td>
-<td class="org-right">234</td>
-</tr>
-
-<tr>
-<td class="org-right">319</td>
-<td class="org-right">373</td>
-<td class="org-right">153</td>
-<td class="org-right">422</td>
-<td class="org-right">307</td>
-<td class="org-right">439</td>
-<td class="org-right">344</td>
-</tr>
-
-<tr>
-<td class="org-right">320</td>
-<td class="org-right">213</td>
-<td class="org-right">204</td>
-<td class="org-right">375</td>
-<td class="org-right">193</td>
-<td class="org-right">274</td>
-<td class="org-right">311</td>
-</tr>
-
-<tr>
-<td class="org-right">332</td>
-<td class="org-right">223</td>
-<td class="org-right">10</td>
-<td class="org-right">141</td>
-<td class="org-right">122</td>
-<td class="org-right">230</td>
-<td class="org-right">271</td>
-</tr>
-
-<tr>
-<td class="org-right">333</td>
-<td class="org-right">66</td>
-<td class="org-right">6</td>
-<td class="org-right">43</td>
-<td class="org-right">43</td>
-<td class="org-right">67</td>
-<td class="org-right">234</td>
-</tr>
-
-<tr>
-<td class="org-right">339</td>
-<td class="org-right">91</td>
-<td class="org-right">4</td>
-<td class="org-right">59</td>
-<td class="org-right">49</td>
-<td class="org-right">94</td>
-<td class="org-right">243</td>
-</tr>
-
-<tr>
-<td class="org-right">341</td>
-<td class="org-right">37</td>
-<td class="org-right">1</td>
-<td class="org-right">17</td>
-<td class="org-right">28</td>
-<td class="org-right">39</td>
-<td class="org-right">234</td>
-</tr>
-
-<tr>
-<td class="org-right">343</td>
-<td class="org-right">101</td>
-<td class="org-right">25</td>
-<td class="org-right">91</td>
-<td class="org-right">109</td>
-<td class="org-right">98</td>
-<td class="org-right">257</td>
-</tr>
-
-<tr>
-<td class="org-right">347</td>
-<td class="org-right">98</td>
-<td class="org-right">29</td>
-<td class="org-right">81</td>
-<td class="org-right">84</td>
-<td class="org-right">103</td>
-<td class="org-right">252</td>
-</tr>
-
-<tr>
-<td class="org-right">348</td>
-<td class="org-right">159</td>
-<td class="org-right">68</td>
-<td class="org-right">170</td>
-<td class="org-right">154</td>
-<td class="org-right">188</td>
-<td class="org-right">286</td>
-</tr>
-
-<tr>
-<td class="org-right">349</td>
-<td class="org-right">98</td>
-<td class="org-right">34</td>
-<td class="org-right">86</td>
-<td class="org-right">83</td>
-<td class="org-right">102</td>
-<td class="org-right">252</td>
-</tr>
-
-<tr>
-<td class="org-right">350</td>
-<td class="org-right">3862</td>
-<td class="org-right">14921</td>
-<td class="org-right">17664</td>
-<td class="org-right">23917</td>
-<td class="org-right">4415</td>
-<td class="org-right">3685</td>
-</tr>
-
-<tr>
-<td class="org-right">352</td>
-<td class="org-right">3458</td>
-<td class="org-right">589</td>
-<td class="org-right">4096</td>
-<td class="org-right">991</td>
-<td class="org-right">3449</td>
-<td class="org-right">603</td>
-</tr>
-
-<tr>
-<td class="org-right">353</td>
-<td class="org-right">3437</td>
-<td class="org-right">654</td>
-<td class="org-right">4236</td>
-<td class="org-right">1027</td>
-<td class="org-right">3425</td>
-<td class="org-right">648</td>
-</tr>
-
-<tr>
-<td class="org-right">354</td>
-<td class="org-right">6122</td>
-<td class="org-right">61397</td>
-<td class="org-right">25346</td>
-<td class="org-right">180596</td>
-<td class="org-right">5776</td>
-<td class="org-right">20487</td>
-</tr>
-
-<tr>
-<td class="org-right">356</td>
-<td class="org-right">3620</td>
-<td class="org-right">31</td>
-<td class="org-right">2970</td>
-<td class="org-right">2715</td>
-<td class="org-right">3478</td>
-<td class="org-right">759</td>
-</tr>
-
-<tr>
-<td class="org-right">357</td>
-<td class="org-right">3775</td>
-<td class="org-right">24</td>
-<td class="org-right">3028</td>
-<td class="org-right">2970</td>
-<td class="org-right">3632</td>
-<td class="org-right">813</td>
-</tr>
-
-<tr>
-<td class="org-right">358</td>
-<td class="org-right">368</td>
-<td class="org-right">3</td>
-<td class="org-right">280</td>
-<td class="org-right">318</td>
-<td class="org-right">350</td>
-<td class="org-right">314</td>
-</tr>
-
-<tr>
-<td class="org-right">359</td>
-<td class="org-right">696</td>
-<td class="org-right">0</td>
-<td class="org-right">535</td>
-<td class="org-right">467</td>
-<td class="org-right">657</td>
-<td class="org-right">377</td>
-</tr>
-
-<tr>
-<td class="org-right">360</td>
-<td class="org-right">2675</td>
-<td class="org-right">7</td>
-<td class="org-right">2215</td>
-<td class="org-right">1726</td>
-<td class="org-right">2562</td>
-<td class="org-right">582</td>
-</tr>
-
-<tr>
-<td class="org-right">366</td>
-<td class="org-right">135</td>
-<td class="org-right">7</td>
-<td class="org-right">97</td>
-<td class="org-right">153</td>
-<td class="org-right">112</td>
-<td class="org-right">272</td>
-</tr>
-
-<tr>
-<td class="org-right">368</td>
-<td class="org-right">32285</td>
-<td class="org-right">11201</td>
-<td class="org-right">34401</td>
-<td class="org-right">56529</td>
-<td class="org-right">28051</td>
-<td class="org-right">59153</td>
-</tr>
-
-<tr>
-<td class="org-right">369</td>
-<td class="org-right">50897</td>
-<td class="org-right">17651</td>
-<td class="org-right">53556</td>
-<td class="org-right">89921</td>
-<td class="org-right">43718</td>
-<td class="org-right">168651</td>
-</tr>
-
-<tr>
-<td class="org-right">370</td>
-<td class="org-right">68449</td>
-<td class="org-right">23393</td>
-<td class="org-right">73361</td>
-<td class="org-right">106654</td>
-<td class="org-right">61030</td>
-<td class="org-right">293995</td>
-</tr>
-
-<tr>
-<td class="org-right">371</td>
-<td class="org-right">34865</td>
-<td class="org-right">41758</td>
-<td class="org-right">108625</td>
-<td class="org-right">56861</td>
-<td class="org-right">30720</td>
-<td class="org-right">173985</td>
-</tr>
-
-<tr>
-<td class="org-right">372</td>
-<td class="org-right">1078</td>
-<td class="org-right">28667</td>
-<td class="org-right">32541</td>
-<td class="org-right">1612</td>
-<td class="org-right">1252</td>
-<td class="org-right">2364</td>
-</tr>
-
-<tr>
-<td class="org-right">373</td>
-<td class="org-right">1298</td>
-<td class="org-right">46956</td>
-<td class="org-right">53577</td>
-<td class="org-right">1933</td>
-<td class="org-right">1457</td>
-<td class="org-right">3840</td>
-</tr>
-
-<tr>
-<td class="org-right">374</td>
-<td class="org-right">38075</td>
-<td class="org-right">56657</td>
-<td class="org-right">126734</td>
-<td class="org-right">80929</td>
-<td class="org-right">33926</td>
-<td class="org-right">210567</td>
-</tr>
-
-<tr>
-<td class="org-right">375</td>
-<td class="org-right">57663</td>
-<td class="org-right">1331194</td>
-<td class="org-right">857304</td>
-<td class="org-right">681930</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">376</td>
-<td class="org-right">1288</td>
-<td class="org-right">17104</td>
-<td class="org-right">35952</td>
-<td class="org-right">1732</td>
-<td class="org-right">1610</td>
-<td class="org-right">2705</td>
-</tr>
-
-<tr>
-<td class="org-right">377</td>
-<td class="org-right">1006</td>
-<td class="org-right">28838</td>
-<td class="org-right">30765</td>
-<td class="org-right">1403</td>
-<td class="org-right">1196</td>
-<td class="org-right">2005</td>
-</tr>
-
-<tr>
-<td class="org-right">378</td>
-<td class="org-right">76713</td>
-<td class="org-right">24284</td>
-<td class="org-right">84374</td>
-<td class="org-right">137482</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">379</td>
-<td class="org-right">126314</td>
-<td class="org-right">6292</td>
-<td class="org-right">74379</td>
-<td class="org-right">100757</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">380</td>
-<td class="org-right">6000</td>
-<td class="org-right">1279657</td>
-<td class="org-right">1341207</td>
-<td class="org-right">8954</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">381</td>
-<td class="org-right">6053</td>
-<td class="org-right">1188861</td>
-<td class="org-right">1373054</td>
-<td class="org-right">8902</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">382</td>
-<td class="org-right">54883</td>
-<td class="org-right">40662</td>
-<td class="org-right">266927</td>
-<td class="org-right">67776</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">383</td>
-<td class="org-right">78891</td>
-<td class="org-right">63656</td>
-<td class="org-right">125897</td>
-<td class="org-right">137530</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">384</td>
-<td class="org-right">548</td>
-<td class="org-right">5246</td>
-<td class="org-right">9154</td>
-<td class="org-right">834</td>
-<td class="org-right">1129</td>
-<td class="org-right">731</td>
-</tr>
-
-<tr>
-<td class="org-right">385</td>
-<td class="org-right">574</td>
-<td class="org-right">5254</td>
-<td class="org-right">9881</td>
-<td class="org-right">840</td>
-<td class="org-right">1240</td>
-<td class="org-right">777</td>
-</tr>
-
-<tr>
-<td class="org-right">386</td>
-<td class="org-right">36044</td>
-<td class="org-right">11465</td>
-<td class="org-right">41467</td>
-<td class="org-right">54480</td>
-<td class="org-right">31677</td>
-<td class="org-right">71333</td>
-</tr>
-
-<tr>
-<td class="org-right">387</td>
-<td class="org-right">56302</td>
-<td class="org-right">27819</td>
-<td class="org-right">170742</td>
-<td class="org-right">107025</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">388</td>
-<td class="org-right">212</td>
-<td class="org-right">1655</td>
-<td class="org-right">2424</td>
-<td class="org-right">318</td>
-<td class="org-right">236</td>
-<td class="org-right">395</td>
-</tr>
-
-<tr>
-<td class="org-right">389</td>
-<td class="org-right">200</td>
-<td class="org-right">3968</td>
-<td class="org-right">4068</td>
-<td class="org-right">300</td>
-<td class="org-right">200</td>
-<td class="org-right">413</td>
-</tr>
-
-<tr>
-<td class="org-right">390</td>
-<td class="org-right">33551</td>
-<td class="org-right">68226</td>
-<td class="org-right">484542</td>
-<td class="org-right">67629</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">391</td>
-<td class="org-right">52501</td>
-<td class="org-right">25199</td>
-<td class="org-right">260140</td>
-<td class="org-right">94508</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">392</td>
-<td class="org-right">1213</td>
-<td class="org-right">228</td>
-<td class="org-right">38379</td>
-<td class="org-right">1293</td>
-<td class="org-right">1841</td>
-<td class="org-right">2540</td>
-</tr>
-
-<tr>
-<td class="org-right">393</td>
-<td class="org-right">1552</td>
-<td class="org-right">636</td>
-<td class="org-right">130900</td>
-<td class="org-right">1889</td>
-<td class="org-right">2360</td>
-<td class="org-right">10515</td>
-</tr>
-
-<tr>
-<td class="org-right">394</td>
-<td class="org-right">39875</td>
-<td class="org-right">50641</td>
-<td class="org-right">364534</td>
-<td class="org-right">63106</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">395</td>
-<td class="org-right">82576</td>
-<td class="org-right">38279</td>
-<td class="org-right">96970</td>
-<td class="org-right">149352</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">396</td>
-<td class="org-right">1153</td>
-<td class="org-right">31102</td>
-<td class="org-right">44747</td>
-<td class="org-right">1665</td>
-<td class="org-right">1449</td>
-<td class="org-right">3067</td>
-</tr>
-
-<tr>
-<td class="org-right">397</td>
-<td class="org-right">2922</td>
-<td class="org-right">321163</td>
-<td class="org-right">368870</td>
-<td class="org-right">4119</td>
-<td class="org-right">3447</td>
-<td class="org-right">67569</td>
-</tr>
-
-<tr>
-<td class="org-right">398</td>
-<td class="org-right">34778</td>
-<td class="org-right">38484</td>
-<td class="org-right">100399</td>
-<td class="org-right">55565</td>
-<td class="org-right">30587</td>
-<td class="org-right">162384</td>
-</tr>
-
-<tr>
-<td class="org-right">399</td>
-<td class="org-right">991</td>
-<td class="org-right">27695</td>
-<td class="org-right">30319</td>
-<td class="org-right">1484</td>
-<td class="org-right">1126</td>
-<td class="org-right">2276</td>
-</tr>
-
-<tr>
-<td class="org-right">400</td>
-<td class="org-right">37576</td>
-<td class="org-right">27830</td>
-<td class="org-right">77602</td>
-<td class="org-right">58851</td>
-<td class="org-right">33314</td>
-<td class="org-right">134038</td>
-</tr>
-
-<tr>
-<td class="org-right">401</td>
-<td class="org-right">789</td>
-<td class="org-right">14998</td>
-<td class="org-right">21705</td>
-<td class="org-right">1136</td>
-<td class="org-right">907</td>
-<td class="org-right">1406</td>
-</tr>
-
-<tr>
-<td class="org-right">402</td>
-<td class="org-right">3857</td>
-<td class="org-right">24</td>
-<td class="org-right">2740</td>
-<td class="org-right">3342</td>
-<td class="org-right">3332</td>
-<td class="org-right">854</td>
-</tr>
-
-<tr>
-<td class="org-right">403</td>
-<td class="org-right">6373</td>
-<td class="org-right">45</td>
-<td class="org-right">4779</td>
-<td class="org-right">4940</td>
-<td class="org-right">5629</td>
-<td class="org-right">1411</td>
-</tr>
-
-<tr>
-<td class="org-right">404</td>
-<td class="org-right">47</td>
-<td class="org-right">0</td>
-<td class="org-right">37</td>
-<td class="org-right">30</td>
-<td class="org-right">45</td>
-<td class="org-right">222</td>
-</tr>
-
-<tr>
-<td class="org-right">405</td>
-<td class="org-right">53</td>
-<td class="org-right">0</td>
-<td class="org-right">36</td>
-<td class="org-right">28</td>
-<td class="org-right">51</td>
-<td class="org-right">236</td>
-</tr>
-
-<tr>
-<td class="org-right">406</td>
-<td class="org-right">94</td>
-<td class="org-right">1</td>
-<td class="org-right">80</td>
-<td class="org-right">35</td>
-<td class="org-right">91</td>
-<td class="org-right">237</td>
-</tr>
-
-<tr>
-<td class="org-right">407</td>
-<td class="org-right">101</td>
-<td class="org-right">0</td>
-<td class="org-right">72</td>
-<td class="org-right">46</td>
-<td class="org-right">99</td>
-<td class="org-right">248</td>
-</tr>
-
-<tr>
-<td class="org-right">410</td>
-<td class="org-right">1759</td>
-<td class="org-right">16836</td>
-<td class="org-right">12078</td>
-<td class="org-right">31981</td>
-<td class="org-right">1725</td>
-<td class="org-right">1838</td>
-</tr>
-
-<tr>
-<td class="org-right">411</td>
-<td class="org-right">1449</td>
-<td class="org-right">56</td>
-<td class="org-right">1337</td>
-<td class="org-right">1169</td>
-<td class="org-right">1339</td>
-<td class="org-right">444</td>
-</tr>
-
-<tr>
-<td class="org-right">412</td>
-<td class="org-right">4451</td>
-<td class="org-right">136</td>
-<td class="org-right">4067</td>
-<td class="org-right">3311</td>
-<td class="org-right">4252</td>
-<td class="org-right">854</td>
-</tr>
-
-<tr>
-<td class="org-right">413</td>
-<td class="org-right">5710</td>
-<td class="org-right">227</td>
-<td class="org-right">5390</td>
-<td class="org-right">3931</td>
-<td class="org-right">5474</td>
-<td class="org-right">1100</td>
-</tr>
-
-<tr>
-<td class="org-right">414</td>
-<td class="org-right">50</td>
-<td class="org-right">73</td>
-<td class="org-right">580</td>
-<td class="org-right">76</td>
-<td class="org-right">54</td>
-<td class="org-right">274</td>
-</tr>
-
-<tr>
-<td class="org-right">415</td>
-<td class="org-right">47687</td>
-<td class="org-right">31529</td>
-<td class="org-right">80842</td>
-<td class="org-right">56863</td>
-<td class="org-right">43156</td>
-<td class="org-right">152674</td>
-</tr>
-
-<tr>
-<td class="org-right">416</td>
-<td class="org-right">68844</td>
-<td class="org-right">46533</td>
-<td class="org-right">142581</td>
-<td class="org-right">92126</td>
-<td class="org-right">61313</td>
-<td class="org-right">528612</td>
-</tr>
-
-<tr>
-<td class="org-right">417</td>
-<td class="org-right">343</td>
-<td class="org-right">21466</td>
-<td class="org-right">22793</td>
-<td class="org-right">523</td>
-<td class="org-right">343</td>
-<td class="org-right">917</td>
-</tr>
-
-<tr>
-<td class="org-right">418</td>
-<td class="org-right">395</td>
-<td class="org-right">25021</td>
-<td class="org-right">38618</td>
-<td class="org-right">600</td>
-<td class="org-right">399</td>
-<td class="org-right">1295</td>
-</tr>
-
-<tr>
-<td class="org-right">419</td>
-<td class="org-right">5733</td>
-<td class="org-right">1038024</td>
-<td class="org-right">1237394</td>
-<td class="org-right">102407</td>
-<td class="org-right">6236</td>
-<td class="org-right">71784</td>
-</tr>
-
-<tr>
-<td class="org-right">420</td>
-<td class="org-right">6384</td>
-<td class="org-right">93879</td>
-<td class="org-right">134344</td>
-<td class="org-right">37537</td>
-<td class="org-right">6528</td>
-<td class="org-right">14172</td>
-</tr>
-
-<tr>
-<td class="org-right">421</td>
-<td class="org-right">1282</td>
-<td class="org-right">9774</td>
-<td class="org-right">45089</td>
-<td class="org-right">2494</td>
-<td class="org-right">1845</td>
-<td class="org-right">3413</td>
-</tr>
-
-<tr>
-<td class="org-right">422</td>
-<td class="org-right">674</td>
-<td class="org-right">9358</td>
-<td class="org-right">25702</td>
-<td class="org-right">3912</td>
-<td class="org-right">942</td>
-<td class="org-right">1682</td>
-</tr>
-
-<tr>
-<td class="org-right">423</td>
-<td class="org-right">1333</td>
-<td class="org-right">31</td>
-<td class="org-right">1048</td>
-<td class="org-right">1341</td>
-<td class="org-right">1222</td>
-<td class="org-right">460</td>
-</tr>
-
-<tr>
-<td class="org-right">424</td>
-<td class="org-right">2235</td>
-<td class="org-right">3090</td>
-<td class="org-right">32855</td>
-<td class="org-right">2914</td>
-<td class="org-right">2209</td>
-<td class="org-right">2033</td>
-</tr>
-
-<tr>
-<td class="org-right">425</td>
-<td class="org-right">38375</td>
-<td class="org-right">3157</td>
-<td class="org-right">32300</td>
-<td class="org-right">52377</td>
-<td class="org-right">32586</td>
-<td class="org-right">67656</td>
-</tr>
-
-<tr>
-<td class="org-right">426</td>
-<td class="org-right">69312</td>
-<td class="org-right">30065</td>
-<td class="org-right">59825</td>
-<td class="org-right">152185</td>
-<td class="org-right">56626</td>
-<td class="org-right">451350</td>
-</tr>
-
-<tr>
-<td class="org-right">430</td>
-<td class="org-right">345</td>
-<td class="org-right">6</td>
-<td class="org-right">341</td>
-<td class="org-right">755</td>
-<td class="org-right">473</td>
-<td class="org-right">342</td>
-</tr>
-
-<tr>
-<td class="org-right">432</td>
-<td class="org-right">375</td>
-<td class="org-right">0</td>
-<td class="org-right">153</td>
-<td class="org-right">611</td>
-<td class="org-right">294</td>
-<td class="org-right">328</td>
-</tr>
-
-<tr>
-<td class="org-right">433</td>
-<td class="org-right">379</td>
-<td class="org-right">1</td>
-<td class="org-right">139</td>
-<td class="org-right">604</td>
-<td class="org-right">295</td>
-<td class="org-right">320</td>
-</tr>
-
-<tr>
-<td class="org-right">435</td>
-<td class="org-right">9082</td>
-<td class="org-right">27</td>
-<td class="org-right">8765</td>
-<td class="org-right">1613</td>
-<td class="org-right">9075</td>
-<td class="org-right">1308</td>
-</tr>
-
-<tr>
-<td class="org-right">436</td>
-<td class="org-right">25552</td>
-<td class="org-right">132682</td>
-<td class="org-right">424770</td>
-<td class="org-right">51496</td>
-<td class="org-right">27170</td>
-<td class="org-right">246549</td>
-</tr>
-
-<tr>
-<td class="org-right">437</td>
-<td class="org-right">133869</td>
-<td class="org-right">633</td>
-<td class="org-right">93319</td>
-<td class="org-right">69407</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">438</td>
-<td class="org-right">3024</td>
-<td class="org-right">5270</td>
-<td class="org-right">167082</td>
-<td class="org-right">2998</td>
-<td class="org-right">4677</td>
-<td class="org-right">23576</td>
-</tr>
-
-<tr>
-<td class="org-right">445</td>
-<td class="org-right">1342</td>
-<td class="org-right">3</td>
-<td class="org-right">1224</td>
-<td class="org-right">482</td>
-<td class="org-right">1303</td>
-<td class="org-right">436</td>
-</tr>
-
-<tr>
-<td class="org-right">446</td>
-<td class="org-right">1864</td>
-<td class="org-right">153</td>
-<td class="org-right">2994</td>
-<td class="org-right">862</td>
-<td class="org-right">1826</td>
-<td class="org-right">520</td>
-</tr>
-
-<tr>
-<td class="org-right">448</td>
-<td class="org-right">74255</td>
-<td class="org-right">13914</td>
-<td class="org-right">64901</td>
-<td class="org-right">127672</td>
-<td class="org-right">61495</td>
-<td class="org-right">455440</td>
-</tr>
-
-<tr>
-<td class="org-right">449</td>
-<td class="org-right">2201</td>
-<td class="org-right">447</td>
-<td class="org-right">3848</td>
-<td class="org-right">1439</td>
-<td class="org-right">2172</td>
-<td class="org-right">619</td>
-</tr>
-
-<tr>
-<td class="org-right">450</td>
-<td class="org-right">3179</td>
-<td class="org-right">510</td>
-<td class="org-right">3826</td>
-<td class="org-right">1448</td>
-<td class="org-right">3236</td>
-<td class="org-right">653</td>
-</tr>
-
-<tr>
-<td class="org-right">451</td>
-<td class="org-right">5119</td>
-<td class="org-right">185</td>
-<td class="org-right">4279</td>
-<td class="org-right">3845</td>
-<td class="org-right">4979</td>
-<td class="org-right">945</td>
-</tr>
-
-<tr>
-<td class="org-right">452</td>
-<td class="org-right">7279</td>
-<td class="org-right">212</td>
-<td class="org-right">6030</td>
-<td class="org-right">5918</td>
-<td class="org-right">6820</td>
-<td class="org-right">1545</td>
-</tr>
-
-<tr>
-<td class="org-right">454</td>
-<td class="org-right">416</td>
-<td class="org-right">89</td>
-<td class="org-right">498</td>
-<td class="org-right">152</td>
-<td class="org-right">420</td>
-<td class="org-right">329</td>
-</tr>
-
-<tr>
-<td class="org-right">457</td>
-<td class="org-right">1684</td>
-<td class="org-right">100</td>
-<td class="org-right">1652</td>
-<td class="org-right">1091</td>
-<td class="org-right">1653</td>
-<td class="org-right">456</td>
-</tr>
-
-<tr>
-<td class="org-right">459</td>
-<td class="org-right">10918</td>
-<td class="org-right">2367</td>
-<td class="org-right">21163</td>
-<td class="org-right">12805</td>
-<td class="org-right">10098</td>
-<td class="org-right">6745</td>
-</tr>
-
-<tr>
-<td class="org-right">460</td>
-<td class="org-right">19402</td>
-<td class="org-right">4274</td>
-<td class="org-right">17984</td>
-<td class="org-right">30547</td>
-<td class="org-right">18007</td>
-<td class="org-right">12197</td>
-</tr>
-
-<tr>
-<td class="org-right">462</td>
-<td class="org-right">24442</td>
-<td class="org-right">976321</td>
-<td class="org-right">1333046</td>
-<td class="org-right">394309</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">463</td>
-<td class="org-right">17687</td>
-<td class="org-right">383997</td>
-<td class="org-right">1169888</td>
-<td class="org-right">79313</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">464</td>
-<td class="org-right">235</td>
-<td class="org-right">0</td>
-<td class="org-right">69</td>
-<td class="org-right">409</td>
-<td class="org-right">151</td>
-<td class="org-right">300</td>
-</tr>
-
-<tr>
-<td class="org-right">465</td>
-<td class="org-right">414</td>
-<td class="org-right">0</td>
-<td class="org-right">191</td>
-<td class="org-right">814</td>
-<td class="org-right">346</td>
-<td class="org-right">336</td>
-</tr>
-
-<tr>
-<td class="org-right">468</td>
-<td class="org-right">725</td>
-<td class="org-right">2</td>
-<td class="org-right">676</td>
-<td class="org-right">113</td>
-<td class="org-right">724</td>
-<td class="org-right">357</td>
-</tr>
-
-<tr>
-<td class="org-right">469</td>
-<td class="org-right">931</td>
-<td class="org-right">31</td>
-<td class="org-right">906</td>
-<td class="org-right">191</td>
-<td class="org-right">923</td>
-<td class="org-right">371</td>
-</tr>
-
-<tr>
-<td class="org-right">470</td>
-<td class="org-right">119559</td>
-<td class="org-right">422</td>
-<td class="org-right">64486</td>
-<td class="org-right">90917</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">471</td>
-<td class="org-right">121711</td>
-<td class="org-right">412</td>
-<td class="org-right">88380</td>
-<td class="org-right">73950</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">472</td>
-<td class="org-right">119559</td>
-<td class="org-right">446</td>
-<td class="org-right">63953</td>
-<td class="org-right">90180</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">473</td>
-<td class="org-right">121711</td>
-<td class="org-right">397</td>
-<td class="org-right">88249</td>
-<td class="org-right">73188</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">474</td>
-<td class="org-right">88</td>
-<td class="org-right">4</td>
-<td class="org-right">66</td>
-<td class="org-right">91</td>
-<td class="org-right">75</td>
-<td class="org-right">267</td>
-</tr>
-
-<tr>
-<td class="org-right">475</td>
-<td class="org-right">105</td>
-<td class="org-right">16</td>
-<td class="org-right">75</td>
-<td class="org-right">122</td>
-<td class="org-right">93</td>
-<td class="org-right">250</td>
-</tr>
-
-<tr>
-<td class="org-right">476</td>
-<td class="org-right">2811</td>
-<td class="org-right">6620</td>
-<td class="org-right">85181</td>
-<td class="org-right">4116</td>
-<td class="org-right">4082</td>
-<td class="org-right">8755</td>
-</tr>
-
-<tr>
-<td class="org-right">477</td>
-<td class="org-right">167349</td>
-<td class="org-right">1</td>
-<td class="org-right">125352</td>
-<td class="org-right">68416</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">479</td>
-<td class="org-right">811</td>
-<td class="org-right">1036</td>
-<td class="org-right">1765</td>
-<td class="org-right">4701</td>
-<td class="org-right">745</td>
-<td class="org-right">562</td>
-</tr>
-
-<tr>
-<td class="org-right">480</td>
-<td class="org-right">918</td>
-<td class="org-right">1953</td>
-<td class="org-right">3224</td>
-<td class="org-right">5235</td>
-<td class="org-right">830</td>
-<td class="org-right">610</td>
-</tr>
-
-<tr>
-<td class="org-right">483</td>
-<td class="org-right">128780</td>
-<td class="org-right">17540</td>
-<td class="org-right">89272</td>
-<td class="org-right">89205</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">484</td>
-<td class="org-right">137395</td>
-<td class="org-right">6341</td>
-<td class="org-right">78906</td>
-<td class="org-right">97254</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">485</td>
-<td class="org-right">5291</td>
-<td class="org-right">1264061</td>
-<td class="org-right">1384988</td>
-<td class="org-right">7818</td>
-<td class="org-right">5574</td>
-<td class="org-right">547530</td>
-</tr>
-
-<tr>
-<td class="org-right">486</td>
-<td class="org-right">54561</td>
-<td class="org-right">77410</td>
-<td class="org-right">284688</td>
-<td class="org-right">62100</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">487</td>
-<td class="org-right">78529</td>
-<td class="org-right">39695</td>
-<td class="org-right">119924</td>
-<td class="org-right">119295</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">488</td>
-<td class="org-right">54548</td>
-<td class="org-right">31863</td>
-<td class="org-right">246641</td>
-<td class="org-right">70000</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">489</td>
-<td class="org-right">61942</td>
-<td class="org-right">34357</td>
-<td class="org-right">192130</td>
-<td class="org-right">87613</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">496</td>
-<td class="org-right">13458</td>
-<td class="org-right">181</td>
-<td class="org-right">9668</td>
-<td class="org-right">15424</td>
-<td class="org-right">12764</td>
-<td class="org-right">4415</td>
-</tr>
-
-<tr>
-<td class="org-right">497</td>
-<td class="org-right">8339</td>
-<td class="org-right">0</td>
-<td class="org-right">5429</td>
-<td class="org-right">10303</td>
-<td class="org-right">7540</td>
-<td class="org-right">3145</td>
-</tr>
-
-<tr>
-<td class="org-right">498</td>
-<td class="org-right">8339</td>
-<td class="org-right">0</td>
-<td class="org-right">5387</td>
-<td class="org-right">10320</td>
-<td class="org-right">7540</td>
-<td class="org-right">3204</td>
-</tr>
-
-<tr>
-<td class="org-right">500</td>
-<td class="org-right">1988</td>
-<td class="org-right">2081</td>
-<td class="org-right">148776</td>
-<td class="org-right">2846</td>
-<td class="org-right">3375</td>
-<td class="org-right">16479</td>
-</tr>
-
-<tr>
-<td class="org-right">502</td>
-<td class="org-right">3800</td>
-<td class="org-right">40</td>
-<td class="org-right">3563</td>
-<td class="org-right">2812</td>
-<td class="org-right">3646</td>
-<td class="org-right">789</td>
-</tr>
-
-<tr>
-<td class="org-right">504</td>
-<td class="org-right">661</td>
-<td class="org-right">82</td>
-<td class="org-right">892</td>
-<td class="org-right">351</td>
-<td class="org-right">686</td>
-<td class="org-right">362</td>
-</tr>
-
-<tr>
-<td class="org-right">505</td>
-<td class="org-right">160</td>
-<td class="org-right">0</td>
-<td class="org-right">139</td>
-<td class="org-right">35</td>
-<td class="org-right">159</td>
-<td class="org-right">252</td>
-</tr>
-
-<tr>
-<td class="org-right">508</td>
-<td class="org-right">298</td>
-<td class="org-right">83</td>
-<td class="org-right">292</td>
-<td class="org-right">380</td>
-<td class="org-right">306</td>
-<td class="org-right">310</td>
-</tr>
-
-<tr>
-<td class="org-right">511</td>
-<td class="org-right">614</td>
-<td class="org-right">815</td>
-<td class="org-right">1405</td>
-<td class="org-right">1630</td>
-<td class="org-right">632</td>
-<td class="org-right">394</td>
-</tr>
-
-<tr>
-<td class="org-right">512</td>
-<td class="org-right">823</td>
-<td class="org-right">373</td>
-<td class="org-right">1379</td>
-<td class="org-right">1589</td>
-<td class="org-right">1288</td>
-<td class="org-right">485</td>
-</tr>
-
-<tr>
-<td class="org-right">513</td>
-<td class="org-right">347</td>
-<td class="org-right">1</td>
-<td class="org-right">282</td>
-<td class="org-right">219</td>
-<td class="org-right">331</td>
-<td class="org-right">308</td>
-</tr>
-
-<tr>
-<td class="org-right">514</td>
-<td class="org-right">347</td>
-<td class="org-right">1</td>
-<td class="org-right">305</td>
-<td class="org-right">203</td>
-<td class="org-right">331</td>
-<td class="org-right">299</td>
-</tr>
-
-<tr>
-<td class="org-right">515</td>
-<td class="org-right">3232</td>
-<td class="org-right">234</td>
-<td class="org-right">2665</td>
-<td class="org-right">2253</td>
-<td class="org-right">3105</td>
-<td class="org-right">640</td>
-</tr>
-
-<tr>
-<td class="org-right">518</td>
-<td class="org-right">9363</td>
-<td class="org-right">608</td>
-<td class="org-right">1171532</td>
-<td class="org-right">14441</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">519</td>
-<td class="org-right">166</td>
-<td class="org-right">0</td>
-<td class="org-right">118</td>
-<td class="org-right">109</td>
-<td class="org-right">143</td>
-<td class="org-right">270</td>
-</tr>
-
-<tr>
-<td class="org-right">520</td>
-<td class="org-right">167</td>
-<td class="org-right">0</td>
-<td class="org-right">125</td>
-<td class="org-right">114</td>
-<td class="org-right">144</td>
-<td class="org-right">269</td>
-</tr>
-
-<tr>
-<td class="org-right">521</td>
-<td class="org-right">10916</td>
-<td class="org-right">0</td>
-<td class="org-right">5675</td>
-<td class="org-right">16151</td>
-<td class="org-right">10908</td>
-<td class="org-right">6222</td>
-</tr>
-
-<tr>
-<td class="org-right">522</td>
-<td class="org-right">4402</td>
-<td class="org-right">0</td>
-<td class="org-right">3191</td>
-<td class="org-right">4894</td>
-<td class="org-right">4082</td>
-<td class="org-right">1198</td>
-</tr>
-
-<tr>
-<td class="org-right">523</td>
-<td class="org-right">4402</td>
-<td class="org-right">0</td>
-<td class="org-right">3182</td>
-<td class="org-right">4865</td>
-<td class="org-right">4082</td>
-<td class="org-right">1184</td>
-</tr>
-
-<tr>
-<td class="org-right">526</td>
-<td class="org-right">473</td>
-<td class="org-right">16</td>
-<td class="org-right">290</td>
-<td class="org-right">789</td>
-<td class="org-right">350</td>
-<td class="org-right">342</td>
-</tr>
-
-<tr>
-<td class="org-right">527</td>
-<td class="org-right">506</td>
-<td class="org-right">0</td>
-<td class="org-right">427</td>
-<td class="org-right">312</td>
-<td class="org-right">499</td>
-<td class="org-right">349</td>
-</tr>
-
-<tr>
-<td class="org-right">530</td>
-<td class="org-right">10612</td>
-<td class="org-right">152</td>
-<td class="org-right">10740</td>
-<td class="org-right">1785</td>
-<td class="org-right">10611</td>
-<td class="org-right">1491</td>
-</tr>
-
-<tr>
-<td class="org-right">531</td>
-<td class="org-right">11846</td>
-<td class="org-right">215</td>
-<td class="org-right">12064</td>
-<td class="org-right">2077</td>
-<td class="org-right">11840</td>
-<td class="org-right">1737</td>
-</tr>
-
-<tr>
-<td class="org-right">532</td>
-<td class="org-right">49670</td>
-<td class="org-right">50651</td>
-<td class="org-right">108369</td>
-<td class="org-right">71953</td>
-<td class="org-right">43913</td>
-<td class="org-right">229069</td>
-</tr>
-
-<tr>
-<td class="org-right">533</td>
-<td class="org-right">85832</td>
-<td class="org-right">11589</td>
-<td class="org-right">72589</td>
-<td class="org-right">135530</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">534</td>
-<td class="org-right">630</td>
-<td class="org-right">35397</td>
-<td class="org-right">38661</td>
-<td class="org-right">945</td>
-<td class="org-right">630</td>
-<td class="org-right">1788</td>
-</tr>
-
-<tr>
-<td class="org-right">535</td>
-<td class="org-right">4622</td>
-<td class="org-right">92424</td>
-<td class="org-right">1123161</td>
-<td class="org-right">9647</td>
-<td class="org-right">10681</td>
-<td class="org-right">442660</td>
-</tr>
-
-<tr>
-<td class="org-right">536</td>
-<td class="org-right">43099</td>
-<td class="org-right">31528</td>
-<td class="org-right">360971</td>
-<td class="org-right">50328</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">537</td>
-<td class="org-right">62949</td>
-<td class="org-right">39994</td>
-<td class="org-right">169322</td>
-<td class="org-right">102346</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">538</td>
-<td class="org-right">204</td>
-<td class="org-right">3512</td>
-<td class="org-right">3614</td>
-<td class="org-right">306</td>
-<td class="org-right">204</td>
-<td class="org-right">401</td>
-</tr>
-
-<tr>
-<td class="org-right">539</td>
-<td class="org-right">208</td>
-<td class="org-right">3537</td>
-<td class="org-right">3682</td>
-<td class="org-right">312</td>
-<td class="org-right">211</td>
-<td class="org-right">401</td>
-</tr>
-
-<tr>
-<td class="org-right">540</td>
-<td class="org-right">14906</td>
-<td class="org-right">40588</td>
-<td class="org-right">135636</td>
-<td class="org-right">6865</td>
-<td class="org-right">14833</td>
-<td class="org-right">26228</td>
-</tr>
-
-<tr>
-<td class="org-right">541</td>
-<td class="org-right">37703</td>
-<td class="org-right">189736</td>
-<td class="org-right">633551</td>
-<td class="org-right">132433</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">542</td>
-<td class="org-right">18</td>
-<td class="org-right">72</td>
-<td class="org-right">81</td>
-<td class="org-right">27</td>
-<td class="org-right">18</td>
-<td class="org-right">233</td>
-</tr>
-
-<tr>
-<td class="org-right">543</td>
-<td class="org-right">18</td>
-<td class="org-right">72</td>
-<td class="org-right">81</td>
-<td class="org-right">27</td>
-<td class="org-right">18</td>
-<td class="org-right">236</td>
-</tr>
-
-<tr>
-<td class="org-right">544</td>
-<td class="org-right">9243</td>
-<td class="org-right">85</td>
-<td class="org-right">7637</td>
-<td class="org-right">10894</td>
-<td class="org-right">8697</td>
-<td class="org-right">3505</td>
-</tr>
-
-<tr>
-<td class="org-right">545</td>
-<td class="org-right">9627</td>
-<td class="org-right">273</td>
-<td class="org-right">8011</td>
-<td class="org-right">13386</td>
-<td class="org-right">9077</td>
-<td class="org-right">4294</td>
-</tr>
-
-<tr>
-<td class="org-right">546</td>
-<td class="org-right">2727</td>
-<td class="org-right">1</td>
-<td class="org-right">1998</td>
-<td class="org-right">2380</td>
-<td class="org-right">2487</td>
-<td class="org-right">650</td>
-</tr>
-
-<tr>
-<td class="org-right">547</td>
-<td class="org-right">2732</td>
-<td class="org-right">9</td>
-<td class="org-right">2046</td>
-<td class="org-right">2410</td>
-<td class="org-right">2490</td>
-<td class="org-right">662</td>
-</tr>
-
-<tr>
-<td class="org-right">548</td>
-<td class="org-right">4454</td>
-<td class="org-right">0</td>
-<td class="org-right">4314</td>
-<td class="org-right">453</td>
-<td class="org-right">4441</td>
-<td class="org-right">607</td>
-</tr>
-
-<tr>
-<td class="org-right">550</td>
-<td class="org-right">856</td>
-<td class="org-right">8</td>
-<td class="org-right">802</td>
-<td class="org-right">162</td>
-<td class="org-right">851</td>
-<td class="org-right">340</td>
-</tr>
-
-<tr>
-<td class="org-right">553</td>
-<td class="org-right">110363</td>
-<td class="org-right">15158</td>
-<td class="org-right">138333</td>
-<td class="org-right">87101</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">554</td>
-<td class="org-right">132350</td>
-<td class="org-right">9241</td>
-<td class="org-right">138093</td>
-<td class="org-right">76136</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">555</td>
-<td class="org-right">1044</td>
-<td class="org-right">2709</td>
-<td class="org-right">11870</td>
-<td class="org-right">731</td>
-<td class="org-right">1052</td>
-<td class="org-right">733</td>
-</tr>
-
-<tr>
-<td class="org-right">556</td>
-<td class="org-right">1948</td>
-<td class="org-right">3276</td>
-<td class="org-right">3937</td>
-<td class="org-right">5864</td>
-<td class="org-right">2297</td>
-<td class="org-right">668</td>
-</tr>
-
-<tr>
-<td class="org-right">560</td>
-<td class="org-right">138</td>
-<td class="org-right">18</td>
-<td class="org-right">183</td>
-<td class="org-right">139</td>
-<td class="org-right">134</td>
-<td class="org-right">268</td>
-</tr>
-
-<tr>
-<td class="org-right">561</td>
-<td class="org-right">762</td>
-<td class="org-right">147</td>
-<td class="org-right">812</td>
-<td class="org-right">669</td>
-<td class="org-right">779</td>
-<td class="org-right">405</td>
-</tr>
-
-<tr>
-<td class="org-right">562</td>
-<td class="org-right">767</td>
-<td class="org-right">10</td>
-<td class="org-right">733</td>
-<td class="org-right">290</td>
-<td class="org-right">764</td>
-<td class="org-right">380</td>
-</tr>
-
-<tr>
-<td class="org-right">563</td>
-<td class="org-right">1058</td>
-<td class="org-right">35</td>
-<td class="org-right">987</td>
-<td class="org-right">499</td>
-<td class="org-right">1046</td>
-<td class="org-right">392</td>
-</tr>
-
-<tr>
-<td class="org-right">566</td>
-<td class="org-right">52406</td>
-<td class="org-right">2869</td>
-<td class="org-right">51973</td>
-<td class="org-right">27273</td>
-<td class="org-right">50883</td>
-<td class="org-right">59487</td>
-</tr>
-
-<tr>
-<td class="org-right">569</td>
-<td class="org-right">2652</td>
-<td class="org-right">6318</td>
-<td class="org-right">33156</td>
-<td class="org-right">3046</td>
-<td class="org-right">2520</td>
-<td class="org-right">2444</td>
-</tr>
-
-<tr>
-<td class="org-right">570</td>
-<td class="org-right">1140</td>
-<td class="org-right">5</td>
-<td class="org-right">1064</td>
-<td class="org-right">351</td>
-<td class="org-right">1130</td>
-<td class="org-right">394</td>
-</tr>
-
-<tr>
-<td class="org-right">571</td>
-<td class="org-right">1396</td>
-<td class="org-right">23</td>
-<td class="org-right">1373</td>
-<td class="org-right">463</td>
-<td class="org-right">1388</td>
-<td class="org-right">401</td>
-</tr>
-
-<tr>
-<td class="org-right">572</td>
-<td class="org-right">76599</td>
-<td class="org-right">21751</td>
-<td class="org-right">102441</td>
-<td class="org-right">114154</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">573</td>
-<td class="org-right">128026</td>
-<td class="org-right">4582</td>
-<td class="org-right">77016</td>
-<td class="org-right">96822</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">574</td>
-<td class="org-right">736</td>
-<td class="org-right">1944</td>
-<td class="org-right">16033</td>
-<td class="org-right">965</td>
-<td class="org-right">1178</td>
-<td class="org-right">960</td>
-</tr>
-
-<tr>
-<td class="org-right">575</td>
-<td class="org-right">700</td>
-<td class="org-right">2121</td>
-<td class="org-right">16117</td>
-<td class="org-right">1005</td>
-<td class="org-right">1124</td>
-<td class="org-right">1004</td>
-</tr>
-
-<tr>
-<td class="org-right">576</td>
-<td class="org-right">92</td>
-<td class="org-right">35</td>
-<td class="org-right">80</td>
-<td class="org-right">232</td>
-<td class="org-right">90</td>
-<td class="org-right">260</td>
-</tr>
-
-<tr>
-<td class="org-right">577</td>
-<td class="org-right">31</td>
-<td class="org-right">0</td>
-<td class="org-right">15</td>
-<td class="org-right">45</td>
-<td class="org-right">16</td>
-<td class="org-right">224</td>
-</tr>
-
-<tr>
-<td class="org-right">580</td>
-<td class="org-right">280</td>
-<td class="org-right">0</td>
-<td class="org-right">262</td>
-<td class="org-right">49</td>
-<td class="org-right">280</td>
-<td class="org-right">275</td>
-</tr>
-
-<tr>
-<td class="org-right">581</td>
-<td class="org-right">321</td>
-<td class="org-right">0</td>
-<td class="org-right">298</td>
-<td class="org-right">75</td>
-<td class="org-right">321</td>
-<td class="org-right">288</td>
-</tr>
-
-<tr>
-<td class="org-right">582</td>
-<td class="org-right">803</td>
-<td class="org-right">129</td>
-<td class="org-right">1572</td>
-<td class="org-right">589</td>
-<td class="org-right">743</td>
-<td class="org-right">404</td>
-</tr>
-
-<tr>
-<td class="org-right">589</td>
-<td class="org-right">1051</td>
-<td class="org-right">0</td>
-<td class="org-right">926</td>
-<td class="org-right">562</td>
-<td class="org-right">988</td>
-<td class="org-right">391</td>
-</tr>
-
-<tr>
-<td class="org-right">590</td>
-<td class="org-right">614</td>
-<td class="org-right">201</td>
-<td class="org-right">676</td>
-<td class="org-right">621</td>
-<td class="org-right">669</td>
-<td class="org-right">376</td>
-</tr>
-
-<tr>
-<td class="org-right">591</td>
-<td class="org-right">2598</td>
-<td class="org-right">45</td>
-<td class="org-right">2460</td>
-<td class="org-right">802</td>
-<td class="org-right">2565</td>
-<td class="org-right">502</td>
-</tr>
-
-<tr>
-<td class="org-right">592</td>
-<td class="org-right">3520</td>
-<td class="org-right">107</td>
-<td class="org-right">3323</td>
-<td class="org-right">1498</td>
-<td class="org-right">3441</td>
-<td class="org-right">592</td>
-</tr>
-
-<tr>
-<td class="org-right">593</td>
-<td class="org-right">2241</td>
-<td class="org-right">0</td>
-<td class="org-right">2020</td>
-<td class="org-right">716</td>
-<td class="org-right">2172</td>
-<td class="org-right">478</td>
-</tr>
-
-<tr>
-<td class="org-right">594</td>
-<td class="org-right">2161</td>
-<td class="org-right">0</td>
-<td class="org-right">2084</td>
-<td class="org-right">391</td>
-<td class="org-right">2140</td>
-<td class="org-right">477</td>
-</tr>
-
-<tr>
-<td class="org-right">595</td>
-<td class="org-right">2918</td>
-<td class="org-right">612</td>
-<td class="org-right">3504</td>
-<td class="org-right">1068</td>
-<td class="org-right">2897</td>
-<td class="org-right">566</td>
-</tr>
-
-<tr>
-<td class="org-right">596</td>
-<td class="org-right">2203</td>
-<td class="org-right">0</td>
-<td class="org-right">2085</td>
-<td class="org-right">411</td>
-<td class="org-right">2180</td>
-<td class="org-right">484</td>
-</tr>
-
-<tr>
-<td class="org-right">597</td>
-<td class="org-right">2961</td>
-<td class="org-right">601</td>
-<td class="org-right">3599</td>
-<td class="org-right">1066</td>
-<td class="org-right">2934</td>
-<td class="org-right">592</td>
-</tr>
-
-<tr>
-<td class="org-right">598</td>
-<td class="org-right">5</td>
-<td class="org-right">0</td>
-<td class="org-right">2</td>
-<td class="org-right">7</td>
-<td class="org-right">3</td>
-<td class="org-right">230</td>
-</tr>
-
-<tr>
-<td class="org-right">600</td>
-<td class="org-right">2160</td>
-<td class="org-right">0</td>
-<td class="org-right">2084</td>
-<td class="org-right">349</td>
-<td class="org-right">2139</td>
-<td class="org-right">448</td>
-</tr>
-
-<tr>
-<td class="org-right">605</td>
-<td class="org-right">734</td>
-<td class="org-right">52</td>
-<td class="org-right">624</td>
-<td class="org-right">627</td>
-<td class="org-right">658</td>
-<td class="org-right">351</td>
-</tr>
-
-<tr>
-<td class="org-right">624</td>
-<td class="org-right">998</td>
-<td class="org-right">337</td>
-<td class="org-right">931</td>
-<td class="org-right">1469</td>
-<td class="org-right">968</td>
-<td class="org-right">442</td>
-</tr>
-
-<tr>
-<td class="org-right">626</td>
-<td class="org-right">2581</td>
-<td class="org-right">1187</td>
-<td class="org-right">15434</td>
-<td class="org-right">2424</td>
-<td class="org-right">2545</td>
-<td class="org-right">1443</td>
-</tr>
-
-<tr>
-<td class="org-right">627</td>
-<td class="org-right">2793</td>
-<td class="org-right">29</td>
-<td class="org-right">2273</td>
-<td class="org-right">1830</td>
-<td class="org-right">2572</td>
-<td class="org-right">600</td>
-</tr>
-
-<tr>
-<td class="org-right">631</td>
-<td class="org-right">3225</td>
-<td class="org-right">1072</td>
-<td class="org-right">15929</td>
-<td class="org-right">2718</td>
-<td class="org-right">3163</td>
-<td class="org-right">1742</td>
-</tr>
-
-<tr>
-<td class="org-right">632</td>
-<td class="org-right">2185</td>
-<td class="org-right">651</td>
-<td class="org-right">14340</td>
-<td class="org-right">1847</td>
-<td class="org-right">2271</td>
-<td class="org-right">1233</td>
-</tr>
-
-<tr>
-<td class="org-right">636</td>
-<td class="org-right">2585</td>
-<td class="org-right">826</td>
-<td class="org-right">2618</td>
-<td class="org-right">3923</td>
-<td class="org-right">2746</td>
-<td class="org-right">758</td>
-</tr>
-
-<tr>
-<td class="org-right">637</td>
-<td class="org-right">259</td>
-<td class="org-right">317</td>
-<td class="org-right">698</td>
-<td class="org-right">328</td>
-<td class="org-right">237</td>
-<td class="org-right">341</td>
-</tr>
-
-<tr>
-<td class="org-right">638</td>
-<td class="org-right">297</td>
-<td class="org-right">336</td>
-<td class="org-right">759</td>
-<td class="org-right">327</td>
-<td class="org-right">292</td>
-<td class="org-right">343</td>
-</tr>
-
-<tr>
-<td class="org-right">639</td>
-<td class="org-right">607</td>
-<td class="org-right">0</td>
-<td class="org-right">412</td>
-<td class="org-right">592</td>
-<td class="org-right">568</td>
-<td class="org-right">351</td>
-</tr>
-
-<tr>
-<td class="org-right">640</td>
-<td class="org-right">802</td>
-<td class="org-right">13</td>
-<td class="org-right">527</td>
-<td class="org-right">846</td>
-<td class="org-right">736</td>
-<td class="org-right">383</td>
-</tr>
-
-<tr>
-<td class="org-right">645</td>
-<td class="org-right">3685</td>
-<td class="org-right">20</td>
-<td class="org-right">2687</td>
-<td class="org-right">3998</td>
-<td class="org-right">3269</td>
-<td class="org-right">901</td>
-</tr>
-
-<tr>
-<td class="org-right">646</td>
-<td class="org-right">4833</td>
-<td class="org-right">57</td>
-<td class="org-right">3567</td>
-<td class="org-right">5035</td>
-<td class="org-right">4343</td>
-<td class="org-right">1087</td>
-</tr>
-
-<tr>
-<td class="org-right">648</td>
-<td class="org-right">236</td>
-<td class="org-right">0</td>
-<td class="org-right">216</td>
-<td class="org-right">58</td>
-<td class="org-right">234</td>
-<td class="org-right">293</td>
-</tr>
-
-<tr>
-<td class="org-right">649</td>
-<td class="org-right">947</td>
-<td class="org-right">2</td>
-<td class="org-right">742</td>
-<td class="org-right">681</td>
-<td class="org-right">904</td>
-<td class="org-right">403</td>
-</tr>
-
-<tr>
-<td class="org-right">657</td>
-<td class="org-right">4223</td>
-<td class="org-right">4261</td>
-<td class="org-right">67504</td>
-<td class="org-right">4224</td>
-<td class="org-right">4142</td>
-<td class="org-right">6764</td>
-</tr>
-
-<tr>
-<td class="org-right">658</td>
-<td class="org-right">25787</td>
-<td class="org-right">143082</td>
-<td class="org-right">699772</td>
-<td class="org-right">122424</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">660</td>
-<td class="org-right">21656</td>
-<td class="org-right">146805</td>
-<td class="org-right">759022</td>
-<td class="org-right">144411</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">665</td>
-<td class="org-right">3270</td>
-<td class="org-right">628</td>
-<td class="org-right">3913</td>
-<td class="org-right">1408</td>
-<td class="org-right">3186</td>
-<td class="org-right">664</td>
-</tr>
-
-<tr>
-<td class="org-right">666</td>
-<td class="org-right">2418</td>
-<td class="org-right">545</td>
-<td class="org-right">3020</td>
-<td class="org-right">1090</td>
-<td class="org-right">2346</td>
-<td class="org-right">545</td>
-</tr>
-
-<tr>
-<td class="org-right">667</td>
-<td class="org-right">1687</td>
-<td class="org-right">0</td>
-<td class="org-right">1217</td>
-<td class="org-right">1746</td>
-<td class="org-right">1568</td>
-<td class="org-right">509</td>
-</tr>
-
-<tr>
-<td class="org-right">669</td>
-<td class="org-right">8410</td>
-<td class="org-right">164</td>
-<td class="org-right">7074</td>
-<td class="org-right">6057</td>
-<td class="org-right">8261</td>
-<td class="org-right">1987</td>
-</tr>
-
-<tr>
-<td class="org-right">670</td>
-<td class="org-right">12772</td>
-<td class="org-right">254</td>
-<td class="org-right">7546</td>
-<td class="org-right">20779</td>
-<td class="org-right">9688</td>
-<td class="org-right">8182</td>
-</tr>
-
-<tr>
-<td class="org-right">673</td>
-<td class="org-right">2044</td>
-<td class="org-right">24</td>
-<td class="org-right">1897</td>
-<td class="org-right">853</td>
-<td class="org-right">2016</td>
-<td class="org-right">481</td>
-</tr>
-
-<tr>
-<td class="org-right">675</td>
-<td class="org-right">90959</td>
-<td class="org-right">10800</td>
-<td class="org-right">82107</td>
-<td class="org-right">112248</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">676</td>
-<td class="org-right">1662</td>
-<td class="org-right">12420</td>
-<td class="org-right">132054</td>
-<td class="org-right">2658</td>
-<td class="org-right">3277</td>
-<td class="org-right">12814</td>
-</tr>
-
-<tr>
-<td class="org-right">677</td>
-<td class="org-right">1282</td>
-<td class="org-right">6947</td>
-<td class="org-right">87612</td>
-<td class="org-right">1838</td>
-<td class="org-right">2670</td>
-<td class="org-right">6127</td>
-</tr>
-
-<tr>
-<td class="org-right">678</td>
-<td class="org-right">18511</td>
-<td class="org-right">5653</td>
-<td class="org-right">64521</td>
-<td class="org-right">24244</td>
-<td class="org-right">15734</td>
-<td class="org-right">51963</td>
-</tr>
-
-<tr>
-<td class="org-right">679</td>
-<td class="org-right">472</td>
-<td class="org-right">1756</td>
-<td class="org-right">12593</td>
-<td class="org-right">625</td>
-<td class="org-right">751</td>
-<td class="org-right">698</td>
-</tr>
-
-<tr>
-<td class="org-right">680</td>
-<td class="org-right">18167</td>
-<td class="org-right">1519</td>
-<td class="org-right">13865</td>
-<td class="org-right">22720</td>
-<td class="org-right">15144</td>
-<td class="org-right">13137</td>
-</tr>
-
-<tr>
-<td class="org-right">681</td>
-<td class="org-right">57</td>
-<td class="org-right">6</td>
-<td class="org-right">195</td>
-<td class="org-right">100</td>
-<td class="org-right">147</td>
-<td class="org-right">293</td>
-</tr>
-
-<tr>
-<td class="org-right">682</td>
-<td class="org-right">74647</td>
-<td class="org-right">11949</td>
-<td class="org-right">64731</td>
-<td class="org-right">119169</td>
-<td class="org-right">61964</td>
-<td class="org-right">428424</td>
-</tr>
-
-<tr>
-<td class="org-right">683</td>
-<td class="org-right">68</td>
-<td class="org-right">72</td>
-<td class="org-right">435</td>
-<td class="org-right">104</td>
-<td class="org-right">115</td>
-<td class="org-right">293</td>
-</tr>
-
-<tr>
-<td class="org-right">684</td>
-<td class="org-right">74471</td>
-<td class="org-right">31662</td>
-<td class="org-right">173161</td>
-<td class="org-right">94491</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">685</td>
-<td class="org-right">755</td>
-<td class="org-right">9320</td>
-<td class="org-right">55223</td>
-<td class="org-right">1046</td>
-<td class="org-right">1046</td>
-<td class="org-right">2451</td>
-</tr>
-
-<tr>
-<td class="org-right">686</td>
-<td class="org-right">143120</td>
-<td class="org-right">3062</td>
-<td class="org-right">83082</td>
-<td class="org-right">88810</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">687</td>
-<td class="org-right">92</td>
-<td class="org-right">0</td>
-<td class="org-right">209</td>
-<td class="org-right">165</td>
-<td class="org-right">248</td>
-<td class="org-right">298</td>
-</tr>
-
-<tr>
-<td class="org-right">689</td>
-<td class="org-right">1505</td>
-<td class="org-right">63</td>
-<td class="org-right">980</td>
-<td class="org-right">1864</td>
-<td class="org-right">1290</td>
-<td class="org-right">489</td>
-</tr>
-
-<tr>
-<td class="org-right">690</td>
-<td class="org-right">2266</td>
-<td class="org-right">20</td>
-<td class="org-right">1567</td>
-<td class="org-right">2622</td>
-<td class="org-right">2016</td>
-<td class="org-right">603</td>
-</tr>
-
-<tr>
-<td class="org-right">694</td>
-<td class="org-right">7831</td>
-<td class="org-right">1598</td>
-<td class="org-right">7299</td>
-<td class="org-right">7260</td>
-<td class="org-right">7187</td>
-<td class="org-right">1519</td>
-</tr>
-
-<tr>
-<td class="org-right">695</td>
-<td class="org-right">10550</td>
-<td class="org-right">2293</td>
-<td class="org-right">10311</td>
-<td class="org-right">9515</td>
-<td class="org-right">9698</td>
-<td class="org-right">2303</td>
-</tr>
-
-<tr>
-<td class="org-right">700</td>
-<td class="org-right">2076</td>
-<td class="org-right">3799</td>
-<td class="org-right">243147</td>
-<td class="org-right">117942</td>
-<td class="org-right">3304</td>
-<td class="org-right">196634</td>
-</tr>
-
-<tr>
-<td class="org-right">701</td>
-<td class="org-right">1820</td>
-<td class="org-right">4916</td>
-<td class="org-right">143578</td>
-<td class="org-right">76368</td>
-<td class="org-right">3462</td>
-<td class="org-right">62168</td>
-</tr>
-
-<tr>
-<td class="org-right">702</td>
-<td class="org-right">1561</td>
-<td class="org-right">2652</td>
-<td class="org-right">99793</td>
-<td class="org-right">64297</td>
-<td class="org-right">2279</td>
-<td class="org-right">39945</td>
-</tr>
-
-<tr>
-<td class="org-right">703</td>
-<td class="org-right">2347</td>
-<td class="org-right">5879</td>
-<td class="org-right">256706</td>
-<td class="org-right">147533</td>
-<td class="org-right">4297</td>
-<td class="org-right">286437</td>
-</tr>
-
-<tr>
-<td class="org-right">704</td>
-<td class="org-right">772</td>
-<td class="org-right">1164</td>
-<td class="org-right">33108</td>
-<td class="org-right">14618</td>
-<td class="org-right">1113</td>
-<td class="org-right">4177</td>
-</tr>
-
-<tr>
-<td class="org-right">705</td>
-<td class="org-right">715</td>
-<td class="org-right">1620</td>
-<td class="org-right">39591</td>
-<td class="org-right">21828</td>
-<td class="org-right">1302</td>
-<td class="org-right">6190</td>
-</tr>
-
-<tr>
-<td class="org-right">706</td>
-<td class="org-right">676</td>
-<td class="org-right">1182</td>
-<td class="org-right">32551</td>
-<td class="org-right">17345</td>
-<td class="org-right">993</td>
-<td class="org-right">4304</td>
-</tr>
-
-<tr>
-<td class="org-right">707</td>
-<td class="org-right">535</td>
-<td class="org-right">934</td>
-<td class="org-right">20452</td>
-<td class="org-right">9481</td>
-<td class="org-right">799</td>
-<td class="org-right">1969</td>
-</tr>
-
-<tr>
-<td class="org-right">708</td>
-<td class="org-right">282</td>
-<td class="org-right">480</td>
-<td class="org-right">6083</td>
-<td class="org-right">2994</td>
-<td class="org-right">431</td>
-<td class="org-right">644</td>
-</tr>
-
-<tr>
-<td class="org-right">709</td>
-<td class="org-right">273</td>
-<td class="org-right">464</td>
-<td class="org-right">5501</td>
-<td class="org-right">3596</td>
-<td class="org-right">401</td>
-<td class="org-right">630</td>
-</tr>
-
-<tr>
-<td class="org-right">710</td>
-<td class="org-right">473</td>
-<td class="org-right">916</td>
-<td class="org-right">19441</td>
-<td class="org-right">9833</td>
-<td class="org-right">745</td>
-<td class="org-right">1940</td>
-</tr>
-
-<tr>
-<td class="org-right">711</td>
-<td class="org-right">532</td>
-<td class="org-right">867</td>
-<td class="org-right">16070</td>
-<td class="org-right">7885</td>
-<td class="org-right">765</td>
-<td class="org-right">1640</td>
-</tr>
-
-<tr>
-<td class="org-right">712</td>
-<td class="org-right">1160</td>
-<td class="org-right">2402</td>
-<td class="org-right">57988</td>
-<td class="org-right">32128</td>
-<td class="org-right">1971</td>
-<td class="org-right">12518</td>
-</tr>
-
-<tr>
-<td class="org-right">713</td>
-<td class="org-right">878</td>
-<td class="org-right">1966</td>
-<td class="org-right">66827</td>
-<td class="org-right">31267</td>
-<td class="org-right">1504</td>
-<td class="org-right">12841</td>
-</tr>
-
-<tr>
-<td class="org-right">714</td>
-<td class="org-right">386</td>
-<td class="org-right">823</td>
-<td class="org-right">12055</td>
-<td class="org-right">6834</td>
-<td class="org-right">644</td>
-<td class="org-right">1245</td>
-</tr>
-
-<tr>
-<td class="org-right">715</td>
-<td class="org-right">1016</td>
-<td class="org-right">2072</td>
-<td class="org-right">75571</td>
-<td class="org-right">51477</td>
-<td class="org-right">1572</td>
-<td class="org-right">22348</td>
-</tr>
-
-<tr>
-<td class="org-right">716</td>
-<td class="org-right">1243</td>
-<td class="org-right">2429</td>
-<td class="org-right">106895</td>
-<td class="org-right">52236</td>
-<td class="org-right">2028</td>
-<td class="org-right">33399</td>
-</tr>
-
-<tr>
-<td class="org-right">717</td>
-<td class="org-right">46</td>
-<td class="org-right">16</td>
-<td class="org-right">48</td>
-<td class="org-right">63</td>
-<td class="org-right">51</td>
-<td class="org-right">242</td>
-</tr>
-
-<tr>
-<td class="org-right">718</td>
-<td class="org-right">222</td>
-<td class="org-right">322</td>
-<td class="org-right">2699</td>
-<td class="org-right">1835</td>
-<td class="org-right">311</td>
-<td class="org-right">420</td>
-</tr>
-
-<tr>
-<td class="org-right">719</td>
-<td class="org-right">907</td>
-<td class="org-right">1951</td>
-<td class="org-right">66707</td>
-<td class="org-right">34212</td>
-<td class="org-right">1527</td>
-<td class="org-right">14449</td>
-</tr>
-
-<tr>
-<td class="org-right">720</td>
-<td class="org-right">442</td>
-<td class="org-right">549</td>
-<td class="org-right">8241</td>
-<td class="org-right">4411</td>
-<td class="org-right">587</td>
-<td class="org-right">782</td>
-</tr>
-
-<tr>
-<td class="org-right">721</td>
-<td class="org-right">433</td>
-<td class="org-right">783</td>
-<td class="org-right">11676</td>
-<td class="org-right">8255</td>
-<td class="org-right">670</td>
-<td class="org-right">1256</td>
-</tr>
-
-<tr>
-<td class="org-right">722</td>
-<td class="org-right">899</td>
-<td class="org-right">1318</td>
-<td class="org-right">33303</td>
-<td class="org-right">16757</td>
-<td class="org-right">1276</td>
-<td class="org-right">4561</td>
-</tr>
-
-<tr>
-<td class="org-right">723</td>
-<td class="org-right">472</td>
-<td class="org-right">892</td>
-<td class="org-right">15914</td>
-<td class="org-right">7871</td>
-<td class="org-right">757</td>
-<td class="org-right">1515</td>
-</tr>
-
-<tr>
-<td class="org-right">724</td>
-<td class="org-right">1773</td>
-<td class="org-right">2747</td>
-<td class="org-right">115994</td>
-<td class="org-right">55514</td>
-<td class="org-right">2600</td>
-<td class="org-right">39899</td>
-</tr>
-
-<tr>
-<td class="org-right">725</td>
-<td class="org-right">47</td>
-<td class="org-right">21</td>
-<td class="org-right">60</td>
-<td class="org-right">57</td>
-<td class="org-right">56</td>
-<td class="org-right">241</td>
-</tr>
-
-<tr>
-<td class="org-right">726</td>
-<td class="org-right">669</td>
-<td class="org-right">1005</td>
-<td class="org-right">16144</td>
-<td class="org-right">8393</td>
-<td class="org-right">939</td>
-<td class="org-right">1595</td>
-</tr>
-
-<tr>
-<td class="org-right">727</td>
-<td class="org-right">1816</td>
-<td class="org-right">3403</td>
-<td class="org-right">136996</td>
-<td class="org-right">60221</td>
-<td class="org-right">2965</td>
-<td class="org-right">47935</td>
-</tr>
-
-<tr>
-<td class="org-right">728</td>
-<td class="org-right">1586</td>
-<td class="org-right">4029</td>
-<td class="org-right">96953</td>
-<td class="org-right">62268</td>
-<td class="org-right">2593</td>
-<td class="org-right">35063</td>
-</tr>
-
-<tr>
-<td class="org-right">729</td>
-<td class="org-right">146</td>
-<td class="org-right">186</td>
-<td class="org-right">928</td>
-<td class="org-right">740</td>
-<td class="org-right">210</td>
-<td class="org-right">335</td>
-</tr>
-
-<tr>
-<td class="org-right">730</td>
-<td class="org-right">43</td>
-<td class="org-right">10</td>
-<td class="org-right">41</td>
-<td class="org-right">34</td>
-<td class="org-right">48</td>
-<td class="org-right">233</td>
-</tr>
-
-<tr>
-<td class="org-right">731</td>
-<td class="org-right">319</td>
-<td class="org-right">611</td>
-<td class="org-right">7650</td>
-<td class="org-right">4397</td>
-<td class="org-right">511</td>
-<td class="org-right">780</td>
-</tr>
-
-<tr>
-<td class="org-right">732</td>
-<td class="org-right">791</td>
-<td class="org-right">1451</td>
-<td class="org-right">36687</td>
-<td class="org-right">21050</td>
-<td class="org-right">1228</td>
-<td class="org-right">5515</td>
-</tr>
-
-<tr>
-<td class="org-right">733</td>
-<td class="org-right">1376</td>
-<td class="org-right">2721</td>
-<td class="org-right">139213</td>
-<td class="org-right">61147</td>
-<td class="org-right">2255</td>
-<td class="org-right">48402</td>
-</tr>
-
-<tr>
-<td class="org-right">734</td>
-<td class="org-right">190</td>
-<td class="org-right">305</td>
-<td class="org-right">2560</td>
-<td class="org-right">1432</td>
-<td class="org-right">288</td>
-<td class="org-right">390</td>
-</tr>
-
-<tr>
-<td class="org-right">735</td>
-<td class="org-right">575</td>
-<td class="org-right">1047</td>
-<td class="org-right">20863</td>
-<td class="org-right">11599</td>
-<td class="org-right">915</td>
-<td class="org-right">2321</td>
-</tr>
-
-<tr>
-<td class="org-right">736</td>
-<td class="org-right">53</td>
-<td class="org-right">22</td>
-<td class="org-right">60</td>
-<td class="org-right">65</td>
-<td class="org-right">62</td>
-<td class="org-right">248</td>
-</tr>
-
-<tr>
-<td class="org-right">737</td>
-<td class="org-right">453</td>
-<td class="org-right">831</td>
-<td class="org-right">14207</td>
-<td class="org-right">8403</td>
-<td class="org-right">673</td>
-<td class="org-right">1525</td>
-</tr>
-
-<tr>
-<td class="org-right">738</td>
-<td class="org-right">368</td>
-<td class="org-right">512</td>
-<td class="org-right">6277</td>
-<td class="org-right">3492</td>
-<td class="org-right">510</td>
-<td class="org-right">751</td>
-</tr>
-
-<tr>
-<td class="org-right">739</td>
-<td class="org-right">503</td>
-<td class="org-right">823</td>
-<td class="org-right">13261</td>
-<td class="org-right">6985</td>
-<td class="org-right">765</td>
-<td class="org-right">1301</td>
-</tr>
-
-<tr>
-<td class="org-right">740</td>
-<td class="org-right">603</td>
-<td class="org-right">1032</td>
-<td class="org-right">22239</td>
-<td class="org-right">9977</td>
-<td class="org-right">930</td>
-<td class="org-right">2256</td>
-</tr>
-
-<tr>
-<td class="org-right">741</td>
-<td class="org-right">1472</td>
-<td class="org-right">3066</td>
-<td class="org-right">133173</td>
-<td class="org-right">57506</td>
-<td class="org-right">2561</td>
-<td class="org-right">47264</td>
-</tr>
-
-<tr>
-<td class="org-right">742</td>
-<td class="org-right">387</td>
-<td class="org-right">599</td>
-<td class="org-right">8788</td>
-<td class="org-right">6269</td>
-<td class="org-right">571</td>
-<td class="org-right">989</td>
-</tr>
-
-<tr>
-<td class="org-right">743</td>
-<td class="org-right">1667</td>
-<td class="org-right">1937</td>
-<td class="org-right">52596</td>
-<td class="org-right">29246</td>
-<td class="org-right">2152</td>
-<td class="org-right">11060</td>
-</tr>
-
-<tr>
-<td class="org-right">744</td>
-<td class="org-right">529</td>
-<td class="org-right">810</td>
-<td class="org-right">13859</td>
-<td class="org-right">7211</td>
-<td class="org-right">759</td>
-<td class="org-right">1327</td>
-</tr>
-
-<tr>
-<td class="org-right">745</td>
-<td class="org-right">662</td>
-<td class="org-right">1201</td>
-<td class="org-right">30397</td>
-<td class="org-right">15658</td>
-<td class="org-right">1037</td>
-<td class="org-right">3754</td>
-</tr>
-
-<tr>
-<td class="org-right">746</td>
-<td class="org-right">956</td>
-<td class="org-right">1955</td>
-<td class="org-right">67336</td>
-<td class="org-right">32906</td>
-<td class="org-right">1605</td>
-<td class="org-right">13520</td>
-</tr>
-
-<tr>
-<td class="org-right">747</td>
-<td class="org-right">854</td>
-<td class="org-right">1614</td>
-<td class="org-right">47092</td>
-<td class="org-right">23075</td>
-<td class="org-right">1350</td>
-<td class="org-right">8061</td>
-</tr>
-
-<tr>
-<td class="org-right">748</td>
-<td class="org-right">492</td>
-<td class="org-right">721</td>
-<td class="org-right">11606</td>
-<td class="org-right">6470</td>
-<td class="org-right">698</td>
-<td class="org-right">1102</td>
-</tr>
-
-<tr>
-<td class="org-right">749</td>
-<td class="org-right">984</td>
-<td class="org-right">1442</td>
-<td class="org-right">41783</td>
-<td class="org-right">23296</td>
-<td class="org-right">1426</td>
-<td class="org-right">7112</td>
-</tr>
-
-<tr>
-<td class="org-right">750</td>
-<td class="org-right">490</td>
-<td class="org-right">680</td>
-<td class="org-right">8783</td>
-<td class="org-right">5002</td>
-<td class="org-right">671</td>
-<td class="org-right">956</td>
-</tr>
-
-<tr>
-<td class="org-right">751</td>
-<td class="org-right">499</td>
-<td class="org-right">885</td>
-<td class="org-right">16831</td>
-<td class="org-right">9853</td>
-<td class="org-right">743</td>
-<td class="org-right">1781</td>
-</tr>
-
-<tr>
-<td class="org-right">752</td>
-<td class="org-right">1558</td>
-<td class="org-right">2722</td>
-<td class="org-right">111744</td>
-<td class="org-right">62290</td>
-<td class="org-right">2426</td>
-<td class="org-right">42816</td>
-</tr>
-
-<tr>
-<td class="org-right">753</td>
-<td class="org-right">426</td>
-<td class="org-right">714</td>
-<td class="org-right">12197</td>
-<td class="org-right">6866</td>
-<td class="org-right">659</td>
-<td class="org-right">1247</td>
-</tr>
-
-<tr>
-<td class="org-right">754</td>
-<td class="org-right">1882</td>
-<td class="org-right">7742</td>
-<td class="org-right">176961</td>
-<td class="org-right">109200</td>
-<td class="org-right">3396</td>
-<td class="org-right">114856</td>
-</tr>
-
-<tr>
-<td class="org-right">755</td>
-<td class="org-right">928</td>
-<td class="org-right">1611</td>
-<td class="org-right">48945</td>
-<td class="org-right">26710</td>
-<td class="org-right">1454</td>
-<td class="org-right">8433</td>
-</tr>
-
-<tr>
-<td class="org-right">756</td>
-<td class="org-right">1173</td>
-<td class="org-right">2017</td>
-<td class="org-right">80714</td>
-<td class="org-right">40031</td>
-<td class="org-right">1784</td>
-<td class="org-right">21153</td>
-</tr>
-
-<tr>
-<td class="org-right">759</td>
-<td class="org-right">7848</td>
-<td class="org-right">1295</td>
-<td class="org-right">4845</td>
-<td class="org-right">9710</td>
-<td class="org-right">7455</td>
-<td class="org-right">2260</td>
-</tr>
-
-<tr>
-<td class="org-right">760</td>
-<td class="org-right">222048</td>
-<td class="org-right">5048</td>
-<td class="org-right">57506</td>
-<td class="org-right">91949</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">761</td>
-<td class="org-right">18747</td>
-<td class="org-right">14909</td>
-<td class="org-right">735327</td>
-<td class="org-right">58227</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">762</td>
-<td class="org-right">9136</td>
-<td class="org-right">29708</td>
-<td class="org-right">2071723</td>
-<td class="org-right">17190</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">763</td>
-<td class="org-right">402</td>
-<td class="org-right">414</td>
-<td class="org-right">897</td>
-<td class="org-right">398</td>
-<td class="org-right">378</td>
-<td class="org-right">352</td>
-</tr>
-
-<tr>
-<td class="org-right">766</td>
-<td class="org-right">2057</td>
-<td class="org-right">500</td>
-<td class="org-right">2698</td>
-<td class="org-right">826</td>
-<td class="org-right">2034</td>
-<td class="org-right">557</td>
-</tr>
-
-<tr>
-<td class="org-right">768</td>
-<td class="org-right">8283</td>
-<td class="org-right">1442</td>
-<td class="org-right">5345</td>
-<td class="org-right">10468</td>
-<td class="org-right">7825</td>
-<td class="org-right">2569</td>
-</tr>
-
-<tr>
-<td class="org-right">769</td>
-<td class="org-right">5185</td>
-<td class="org-right">59</td>
-<td class="org-right">3919</td>
-<td class="org-right">5224</td>
-<td class="org-right">4695</td>
-<td class="org-right">1226</td>
-</tr>
-
-<tr>
-<td class="org-right">770</td>
-<td class="org-right">5196</td>
-<td class="org-right">1189</td>
-<td class="org-right">4378</td>
-<td class="org-right">6859</td>
-<td class="org-right">4787</td>
-<td class="org-right">1247</td>
-</tr>
-
-<tr>
-<td class="org-right">772</td>
-<td class="org-right">619</td>
-<td class="org-right">70</td>
-<td class="org-right">619</td>
-<td class="org-right">508</td>
-<td class="org-right">669</td>
-<td class="org-right">361</td>
-</tr>
-
-<tr>
-<td class="org-right">773</td>
-<td class="org-right">604</td>
-<td class="org-right">562</td>
-<td class="org-right">746</td>
-<td class="org-right">984</td>
-<td class="org-right">631</td>
-<td class="org-right">354</td>
-</tr>
-
-<tr>
-<td class="org-right">775</td>
-<td class="org-right">298</td>
-<td class="org-right">2476</td>
-<td class="org-right">1153</td>
-<td class="org-right">2613</td>
-<td class="org-right">497</td>
-<td class="org-right">360</td>
-</tr>
-
-<tr>
-<td class="org-right">778</td>
-<td class="org-right">91618</td>
-<td class="org-right">9204</td>
-<td class="org-right">54255</td>
-<td class="org-right">118317</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">781</td>
-<td class="org-right">373</td>
-<td class="org-right">622</td>
-<td class="org-right">695</td>
-<td class="org-right">607</td>
-<td class="org-right">430</td>
-<td class="org-right">347</td>
-</tr>
-
-<tr>
-<td class="org-right">783</td>
-<td class="org-right">371</td>
-<td class="org-right">203</td>
-<td class="org-right">488</td>
-<td class="org-right">309</td>
-<td class="org-right">432</td>
-<td class="org-right">352</td>
-</tr>
-
-<tr>
-<td class="org-right">784</td>
-<td class="org-right">933</td>
-<td class="org-right">608</td>
-<td class="org-right">859</td>
-<td class="org-right">1294</td>
-<td class="org-right">1007</td>
-<td class="org-right">367</td>
-</tr>
-
-<tr>
-<td class="org-right">786</td>
-<td class="org-right">135545</td>
-<td class="org-right">7424</td>
-<td class="org-right">136251</td>
-<td class="org-right">75878</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">787</td>
-<td class="org-right">58730</td>
-<td class="org-right">11724</td>
-<td class="org-right">45638</td>
-<td class="org-right">129773</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">788</td>
-<td class="org-right">2294</td>
-<td class="org-right">65</td>
-<td class="org-right">1922</td>
-<td class="org-right">941</td>
-<td class="org-right">2355</td>
-<td class="org-right">499</td>
-</tr>
-
-<tr>
-<td class="org-right">789</td>
-<td class="org-right">2347</td>
-<td class="org-right">56</td>
-<td class="org-right">2003</td>
-<td class="org-right">944</td>
-<td class="org-right">2416</td>
-<td class="org-right">522</td>
-</tr>
-
-<tr>
-<td class="org-right">790</td>
-<td class="org-right">2554</td>
-<td class="org-right">71</td>
-<td class="org-right">2169</td>
-<td class="org-right">1028</td>
-<td class="org-right">2627</td>
-<td class="org-right">523</td>
-</tr>
-
-<tr>
-<td class="org-right">792</td>
-<td class="org-right">56605</td>
-<td class="org-right">246430</td>
-<td class="org-right">45805</td>
-<td class="org-right">603057</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
-</tr>
-
-<tr>
-<td class="org-right">793</td>
-<td class="org-right">284</td>
-<td class="org-right">619</td>
-<td class="org-right">576</td>
-<td class="org-right">965</td>
-<td class="org-right">337</td>
-<td class="org-right">347</td>
-</tr>
-
-<tr>
-<td class="org-right">795</td>
-<td class="org-right">112804</td>
-<td class="org-right">10536</td>
-<td class="org-right">40513</td>
-<td class="org-right">129072</td>
-<td class="org-right">0</td>
-<td class="org-right">TIMEOUT</td>
 </tr>
 </tbody>
 </table>
 
 <p>
-The maximal number of atoms in the body among all the output rules on every ontology:
+The same including the ontology where some algorithms reach the timeout.
 </p>
 <table>
 
@@ -20224,6 +15966,7 @@ The maximal number of atoms in the body among all the output rules on every onto
 </tr>
 </tbody>
 </table>
+
 
 <p>
 The maximal among the ontologies of the average of atoms in the body  across the output rules :
@@ -20365,6 +16108,43 @@ The maximal number of output rules on every ontology:
 <tbody>
 <tr>
 <td class="org-right">0</td>
+<td class="org-right">68461</td>
+<td class="org-right">68461</td>
+<td class="org-right">68461</td>
+<td class="org-right">61964</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The same including the ontology where some algorithms reach the timeout.
+</p>
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">GSAT</th>
+<th scope="col" class="org-right">SK</th>
+<th scope="col" class="org-right">HYPER2</th>
+<th scope="col" class="org-right">KAON2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
 <td class="org-right">309978</td>
 <td class="org-right">170887</td>
 <td class="org-right">135961</td>
@@ -20402,13 +16182,51 @@ The average of output rules on every ontology:
 <tbody>
 <tr>
 <td class="org-right">0</td>
-<td class="org-right">14615.1</td>
-<td class="org-right">12196.4</td>
-<td class="org-right">12652.5</td>
-<td class="org-right">3991.59</td>
+<td class="org-right">4095.78</td>
+<td class="org-right">4096.2</td>
+<td class="org-right">4096.2</td>
+<td class="org-right">4069.2</td>
 </tr>
 </tbody>
 </table>
+
+<p>
+The median of output rules on every ontology:
+</p>
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">GSAT</th>
+<th scope="col" class="org-right">SK</th>
+<th scope="col" class="org-right">HYPER2</th>
+<th scope="col" class="org-right">KAON2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">438.5</td>
+<td class="org-right">438.5</td>
+<td class="org-right">438.5</td>
+<td class="org-right">877.5</td>
+</tr>
+</tbody>
+</table>
+
 
 <p>
 The maximal number of new derived datalog rules in the output rules on every ontology:
@@ -20436,45 +16254,13 @@ The maximal number of new derived datalog rules in the output rules on every ont
 <tbody>
 <tr>
 <td class="org-right">0</td>
-<td class="org-right">244617</td>
 <td class="org-right">28839</td>
-<td class="org-right">109689</td>
+<td class="org-right">28839</td>
+<td class="org-right">28839</td>
 </tr>
 </tbody>
 </table>
 
-<p>
-The maximal number of new derived datalog rules in the output rules on every ontology where all algorithm does reach timeout:
-</p>
-<table>
-
-
-<colgroup>
-<col  class="org-right">
-
-<col  class="org-right">
-
-<col  class="org-right">
-
-<col  class="org-right">
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-right">&#xa0;</th>
-<th scope="col" class="org-right">GSAT</th>
-<th scope="col" class="org-right">SK</th>
-<th scope="col" class="org-right">HYPER2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-right">0</td>
-<td class="org-right">244617</td>
-<td class="org-right">5692</td>
-<td class="org-right">34203</td>
-</tr>
-</tbody>
-</table>
 
 <p>
 The average of new output rules on every ontology:
@@ -20502,9 +16288,76 @@ The average of new output rules on every ontology:
 <tbody>
 <tr>
 <td class="org-right">0</td>
-<td class="org-right">2087.66</td>
-<td class="org-right">1247.27</td>
-<td class="org-right">2798.46</td>
+<td class="org-right">954.111</td>
+<td class="org-right">954.401</td>
+<td class="org-right">954.401</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The average of new output rules on every ontology with no trivial saturation:
+</p>
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">GSAT</th>
+<th scope="col" class="org-right">SK</th>
+<th scope="col" class="org-right">HYPER2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">2396.04</td>
+<td class="org-right">2396.77</td>
+<td class="org-right">2396.77</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+The median of new output rules on every ontology with no trivial saturation:
+</p>
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">GSAT</th>
+<th scope="col" class="org-right">SK</th>
+<th scope="col" class="org-right">HYPER2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">98</td>
+<td class="org-right">98</td>
+<td class="org-right">98</td>
 </tr>
 </tbody>
 </table>
@@ -20512,15 +16365,15 @@ The average of new output rules on every ontology:
 </div>
 
 
-<div id="outline-container-org5136e20" class="outline-3">
-<h3 id="org5136e20"><span class="section-number-3">10.2.</span> Output size comparison</h3>
+<div id="outline-container-org1d41865" class="outline-3">
+<h3 id="org1d41865"><span class="section-number-3">10.2.</span> Output size comparison</h3>
 <div class="outline-text-3" id="text-10-2">
 <p>
 Below we compare the number of the outputted full TGDs of the different algorithm, we remove from this number of full TGDs in the input without transformation.
 </p>
 </div>
-<div id="outline-container-orgff968d7" class="outline-4">
-<h4 id="orgff968d7"><span class="section-number-4">10.2.1.</span> Between GSat and SkolemSat</h4>
+<div id="outline-container-org1640cd5" class="outline-4">
+<h4 id="org1640cd5"><span class="section-number-4">10.2.1.</span> Between GSat and SkolemSat</h4>
 <div class="outline-text-4" id="text-10-2-1">
 <p>
 Cases where GSat output is larger than the one of SkolemSat
@@ -20623,8 +16476,8 @@ Cases where SkolemSat output is larger than the one of GSat
 </div>
 
 
-<div id="outline-container-org108938f" class="outline-4">
-<h4 id="org108938f"><span class="section-number-4">10.2.2.</span> Between GSat and KAON3</h4>
+<div id="outline-container-org385f5c1" class="outline-4">
+<h4 id="org385f5c1"><span class="section-number-4">10.2.2.</span> Between GSat and KAON3</h4>
 <div class="outline-text-4" id="text-10-2-2">
 <p>
 Cases where GSat output is larger
@@ -20725,8 +16578,8 @@ Cases where KAON3 output is larger
 </div>
 </div>
 
-<div id="outline-container-org26f3c50" class="outline-4">
-<h4 id="org26f3c50"><span class="section-number-4">10.2.3.</span> Between GSat and KAON2</h4>
+<div id="outline-container-org80482fe" class="outline-4">
+<h4 id="org80482fe"><span class="section-number-4">10.2.3.</span> Between GSat and KAON2</h4>
 <div class="outline-text-4" id="text-10-2-3">
 <p>
 Cases where GSat output is larger
@@ -23336,8 +19189,8 @@ Cases where KAON2 output is larger
 </div>
 </div>
 
-<div id="outline-container-org67ca974" class="outline-4">
-<h4 id="org67ca974"><span class="section-number-4">10.2.4.</span> Between GSat and HyperSat</h4>
+<div id="outline-container-org7668b8d" class="outline-4">
+<h4 id="org7668b8d"><span class="section-number-4">10.2.4.</span> Between GSat and HyperSat</h4>
 <div class="outline-text-4" id="text-10-2-4">
 <p>
 Cases where GSat output is larger
@@ -23438,8 +19291,8 @@ Cases where HyperSat output is larger
 </div>
 </div>
 
-<div id="outline-container-orgf897089" class="outline-4">
-<h4 id="orgf897089"><span class="section-number-4">10.2.5.</span> Between SkolemSat and KAON2</h4>
+<div id="outline-container-org7485aad" class="outline-4">
+<h4 id="org7485aad"><span class="section-number-4">10.2.5.</span> Between SkolemSat and KAON2</h4>
 <div class="outline-text-4" id="text-10-2-5">
 <p>
 Cases where SkolemSat output is larger 
@@ -26038,8 +21891,8 @@ Cases where KAON2 output is larger
 </div>
 </div>
 
-<div id="outline-container-org9e143d6" class="outline-4">
-<h4 id="org9e143d6"><span class="section-number-4">10.2.6.</span> Between KAON3 and KAON2</h4>
+<div id="outline-container-orgb8d70eb" class="outline-4">
+<h4 id="orgb8d70eb"><span class="section-number-4">10.2.6.</span> Between KAON3 and KAON2</h4>
 <div class="outline-text-4" id="text-10-2-6">
 <p>
 Cases where KAON3 output is larger
@@ -28629,8 +24482,8 @@ Cases where KAON2 output is larger
 </div>
 </div>
 
-<div id="outline-container-org16ce219" class="outline-2">
-<h2 id="org16ce219"><span class="section-number-2">11.</span> All Statistics</h2>
+<div id="outline-container-orgbf83212" class="outline-2">
+<h2 id="orgbf83212"><span class="section-number-2">11.</span> All Statistics</h2>
 <div class="outline-text-2" id="text-11">
 <p>
 All the statistics:
@@ -38552,8 +34405,8 @@ All the statistics:
 </div>
 </div>
 
-<div id="outline-container-orgd30dc99" class="outline-2">
-<h2 id="orgd30dc99"><span class="section-number-2">12.</span> Experiment without subsumption index</h2>
+<div id="outline-container-orgb7fac3e" class="outline-2">
+<h2 id="orgb7fac3e"><span class="section-number-2">12.</span> Experiment without subsumption index</h2>
 <div class="outline-text-2" id="text-12">
 <p>
 The conclusion of these experiments is that enabling the subsumption helps all the algorithms except SkolemSat and KAON3.
@@ -38564,12 +34417,12 @@ In the following, the prefix <code>NS</code> means "no subsumption index".
 </p>
 </div>
 
-<div id="outline-container-org84f6bd5" class="outline-3">
-<h3 id="org84f6bd5"><span class="section-number-3">12.1.</span> Timeout comparison with and without the subsumption index</h3>
+<div id="outline-container-org8edc997" class="outline-3">
+<h3 id="org8edc997"><span class="section-number-3">12.1.</span> Timeout comparison with and without the subsumption index</h3>
 <div class="outline-text-3" id="text-12-1">
 </div>
-<div id="outline-container-orge5a1867" class="outline-4">
-<h4 id="orge5a1867"><span class="section-number-4">12.1.1.</span> All the algorithm reach the timeout</h4>
+<div id="outline-container-org785ff0a" class="outline-4">
+<h4 id="org785ff0a"><span class="section-number-4">12.1.1.</span> All the algorithm reach the timeout</h4>
 <div class="outline-text-4" id="text-12-1-1">
 <p>
 The following table contains the rows where all the algorithm executions reach the timeout sorted by the input size. Their number:
@@ -39034,8 +34887,8 @@ The following table contains the rows where all the algorithm executions reach t
 </div>
 </div>
 
-<div id="outline-container-org52255b9" class="outline-4">
-<h4 id="org52255b9"><span class="section-number-4">12.1.2.</span> Timeout summary</h4>
+<div id="outline-container-org9ee70eb" class="outline-4">
+<h4 id="org9ee70eb"><span class="section-number-4">12.1.2.</span> Timeout summary</h4>
 <div class="outline-text-4" id="text-12-1-2">
 <p>
 The number of ontologies on which two algorithms reach the timeout simultaneously
@@ -39086,8 +34939,8 @@ The number of ontologies on which two algorithms reach the timeout simultaneousl
 </div>
 </div>
 
-<div id="outline-container-org4d823ac" class="outline-4">
-<h4 id="org4d823ac"><span class="section-number-4">12.1.3.</span> GSat</h4>
+<div id="outline-container-org1f3f280" class="outline-4">
+<h4 id="org1f3f280"><span class="section-number-4">12.1.3.</span> GSat</h4>
 <div class="outline-text-4" id="text-12-1-3">
 <p>
 Cases, where GSat reaches timeout and GSat without subsumption is not.
@@ -39885,8 +35738,8 @@ Cases, where GSat without subsumption reaches timeout and GSat is not.
 </div>
 </div>
 
-<div id="outline-container-org33d04ea" class="outline-4">
-<h4 id="org33d04ea"><span class="section-number-4">12.1.4.</span> SkolemSat</h4>
+<div id="outline-container-orgb6a02f3" class="outline-4">
+<h4 id="orgb6a02f3"><span class="section-number-4">12.1.4.</span> SkolemSat</h4>
 <div class="outline-text-4" id="text-12-1-4">
 <p>
 Cases, where SkolemSat reaches timeout and SkolemSat without subsumption is not.
@@ -40164,8 +36017,8 @@ Cases, where SkolemSat without subsumption reaches timeout and SkolemSat is not.
 </div>
 </div>
 
-<div id="outline-container-org95c9d15" class="outline-4">
-<h4 id="org95c9d15"><span class="section-number-4">12.1.5.</span> Hyper2Sat</h4>
+<div id="outline-container-org7b7898e" class="outline-4">
+<h4 id="org7b7898e"><span class="section-number-4">12.1.5.</span> Hyper2Sat</h4>
 <div class="outline-text-4" id="text-12-1-5">
 <p>
 Cases, where Hyper2Sat reaches timeout and Hyper2Sat without subsumption is not.
@@ -40368,12 +36221,12 @@ Cases, where Hyper2Sat without subsumption reaches timeout and Hyper2Sat is not.
 </div>
 </div>
 
-<div id="outline-container-org4ec0ba2" class="outline-3">
-<h3 id="org4ec0ba2"><span class="section-number-3">12.2.</span> Winning algorithm between with and without subsumption index</h3>
+<div id="outline-container-org1b371b2" class="outline-3">
+<h3 id="org1b371b2"><span class="section-number-3">12.2.</span> Winning algorithm between with and without subsumption index</h3>
 <div class="outline-text-3" id="text-12-2">
 </div>
-<div id="outline-container-org5990b1f" class="outline-4">
-<h4 id="org5990b1f"><span class="section-number-4">12.2.1.</span> GSat</h4>
+<div id="outline-container-orgb9ecebe" class="outline-4">
+<h4 id="orgb9ecebe"><span class="section-number-4">12.2.1.</span> GSat</h4>
 <div class="outline-text-4" id="text-12-2-1">
 <p>
 Ontologies on which GSat with subsumption wins:
@@ -40893,8 +36746,8 @@ Ontologies on which GSat without subsumption wins:
 </div>
 </div>
 
-<div id="outline-container-orgec2f4e9" class="outline-4">
-<h4 id="orgec2f4e9"><span class="section-number-4">12.2.2.</span> SkolemSat</h4>
+<div id="outline-container-org4104d0f" class="outline-4">
+<h4 id="org4104d0f"><span class="section-number-4">12.2.2.</span> SkolemSat</h4>
 <div class="outline-text-4" id="text-12-2-2">
 <p>
 Ontologies on which SkolemSat with subsumption wins:
@@ -42239,8 +38092,8 @@ Ontologies on which SkolemSat without subsumption wins:
 </div>
 </div>
 
-<div id="outline-container-orgb0c2d5c" class="outline-4">
-<h4 id="orgb0c2d5c"><span class="section-number-4">12.2.3.</span> Hyper2Sat</h4>
+<div id="outline-container-orgeae07a1" class="outline-4">
+<h4 id="orgeae07a1"><span class="section-number-4">12.2.3.</span> Hyper2Sat</h4>
 <div class="outline-text-4" id="text-12-2-3">
 <p>
 Ontologies on which Hyper2Sat with subsumption wins:
@@ -42435,13 +38288,13 @@ Ontologies on which Hyper2Sat without subsumption wins:
 </div>
 </div>
 
-<div id="outline-container-orgff831a4" class="outline-3">
-<h3 id="orgff831a4"><span class="section-number-3">12.3.</span> Impact of the subsumption on the intermediate TGDs</h3>
+<div id="outline-container-org99b399e" class="outline-3">
+<h3 id="org99b399e"><span class="section-number-3">12.3.</span> Impact of the subsumption on the intermediate TGDs</h3>
 <div class="outline-text-3" id="text-12-3">
 </div>
 
-<div id="outline-container-orga4e1e90" class="outline-4">
-<h4 id="orga4e1e90"><span class="section-number-4">12.3.1.</span> GSAT</h4>
+<div id="outline-container-orgfbcc020" class="outline-4">
+<h4 id="orgfbcc020"><span class="section-number-4">12.3.1.</span> GSAT</h4>
 <div class="outline-text-4" id="text-12-3-1">
 <p>
 Among the case where it does not reach the timeout with subsumption, disabling the subsumption increases on average the number of intermediate TGDs derived in 10min by the factor:
@@ -42564,8 +38417,8 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 </div>
 </div>
 
-<div id="outline-container-org934dda7" class="outline-4">
-<h4 id="org934dda7"><span class="section-number-4">12.3.2.</span> SkolemSat</h4>
+<div id="outline-container-org1bd269c" class="outline-4">
+<h4 id="org1bd269c"><span class="section-number-4">12.3.2.</span> SkolemSat</h4>
 <div class="outline-text-4" id="text-12-3-2">
 <p>
 Among the case where it does not reach the timeout with subsumption, disabling the subsumption increases on average the number of intermediate TGDs derived in 10min by the factor:
@@ -42610,8 +38463,8 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 </div>
 </div>
 
-<div id="outline-container-orgae9a52b" class="outline-4">
-<h4 id="orgae9a52b"><span class="section-number-4">12.3.3.</span> Hyper2Sat</h4>
+<div id="outline-container-org24a80b1" class="outline-4">
+<h4 id="org24a80b1"><span class="section-number-4">12.3.3.</span> Hyper2Sat</h4>
 <div class="outline-text-4" id="text-12-3-3">
 <p>
 Among the case where it does not reach the timeout, disabling the subsumption increases on average the number of intermediate TGDs by:
@@ -42657,8 +38510,8 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 </div>
 </div>
 
-<div id="outline-container-org95e647f" class="outline-3">
-<h3 id="org95e647f"><span class="section-number-3">12.4.</span> All Statistics</h3>
+<div id="outline-container-orgaa6989b" class="outline-3">
+<h3 id="orgaa6989b"><span class="section-number-3">12.4.</span> All Statistics</h3>
 <div class="outline-text-3" id="text-12-4">
 <p>
 All the statistics:
@@ -48702,20 +44555,20 @@ All the statistics:
 </div>
 </div>
 
-<div id="outline-container-org1f212fd" class="outline-2">
-<h2 id="org1f212fd"><span class="section-number-2">13.</span> Experiences with KAON2 structural transformation</h2>
+<div id="outline-container-orgcd6a571" class="outline-2">
+<h2 id="orgcd6a571"><span class="section-number-2">13.</span> Experiences with KAON2 structural transformation</h2>
 <div class="outline-text-2" id="text-13">
 <p>
 NS stands for no subsumption, ST for structural transformation.
 </p>
 </div>
 
-<div id="outline-container-orgbd4c871" class="outline-3">
-<h3 id="orgbd4c871"><span class="section-number-3">13.1.</span> Timeout analysis</h3>
+<div id="outline-container-orgf881cff" class="outline-3">
+<h3 id="orgf881cff"><span class="section-number-3">13.1.</span> Timeout analysis</h3>
 </div>
 
-<div id="outline-container-orgc103d19" class="outline-3">
-<h3 id="orgc103d19"><span class="section-number-3">13.2.</span> Summary</h3>
+<div id="outline-container-org138697e" class="outline-3">
+<h3 id="org138697e"><span class="section-number-3">13.2.</span> Summary</h3>
 <div class="outline-text-3" id="text-13-2">
 <p>
 The time of the algorithms with/without structural transformation, on the ontologies where all the algorithm without structural transformation reaches the timeout.
@@ -49364,8 +45217,8 @@ The number of ontologies on which two algorithms reach the timeout simultaneousl
 </div>
 
 
-<div id="outline-container-orgb46620f" class="outline-3">
-<h3 id="orgb46620f"><span class="section-number-3">13.3.</span> SkolemSat</h3>
+<div id="outline-container-org5f524b4" class="outline-3">
+<h3 id="org5f524b4"><span class="section-number-3">13.3.</span> SkolemSat</h3>
 <div class="outline-text-3" id="text-13-3">
 <p>
 Cases, where SkolemSat reaches timeout and SkolemSat without subsumption is not.
@@ -49620,8 +45473,8 @@ Cases, where SkolemSat without subsumption reaches timeout and SkolemSat is not.
 </div>
 
 
-<div id="outline-container-orgb8c21d3" class="outline-3">
-<h3 id="orgb8c21d3"><span class="section-number-3">13.4.</span> Winning cases</h3>
+<div id="outline-container-orgb4b60de" class="outline-3">
+<h3 id="orgb4b60de"><span class="section-number-3">13.4.</span> Winning cases</h3>
 <div class="outline-text-3" id="text-13-4">
 <table>
 
@@ -49744,8 +45597,8 @@ Comparaison of the time with one order of magnitude
 </table>
 </div>
 
-<div id="outline-container-orgc7f0662" class="outline-4">
-<h4 id="orgc7f0662"><span class="section-number-4">13.4.1.</span> SkolemSat with structural transformation with/without subsumption</h4>
+<div id="outline-container-org6e5b3c0" class="outline-4">
+<h4 id="org6e5b3c0"><span class="section-number-4">13.4.1.</span> SkolemSat with structural transformation with/without subsumption</h4>
 <div class="outline-text-4" id="text-13-4-1">
 <p>
 Ontologies on which SkolemSat with subsumption wins:
@@ -53160,8 +49013,8 @@ The same where we compare with SkolemSat without structural transformation and w
 </div>
 </div>
 
-<div id="outline-container-orgd51045f" class="outline-4">
-<h4 id="orgd51045f"><span class="section-number-4">13.4.2.</span> SkolemSat</h4>
+<div id="outline-container-org4d4f285" class="outline-4">
+<h4 id="org4d4f285"><span class="section-number-4">13.4.2.</span> SkolemSat</h4>
 <div class="outline-text-4" id="text-13-4-2">
 <p>
 Ontologies on which SkolemSat with structural transformation wins:
@@ -54231,8 +50084,8 @@ Ontologies on which HyperSat2 without structural transformation wins:
 </div>
 
 
-<div id="outline-container-org1263709" class="outline-4">
-<h4 id="org1263709"><span class="section-number-4">13.4.3.</span> HyperSat2</h4>
+<div id="outline-container-org998bcbf" class="outline-4">
+<h4 id="org998bcbf"><span class="section-number-4">13.4.3.</span> HyperSat2</h4>
 <div class="outline-text-4" id="text-13-4-3">
 <p>
 Ontologies on which HyperSat2 with structural transformation wins:
@@ -54347,12 +50200,12 @@ Ontologies on which HyperSat2 without structural transformation wins:
 </div>
 </div>
 
-<div id="outline-container-orgbb7c68a" class="outline-4">
-<h4 id="orgbb7c68a"><span class="section-number-4">13.4.4.</span> Winning cases summary</h4>
+<div id="outline-container-orgdb2a96e" class="outline-4">
+<h4 id="orgdb2a96e"><span class="section-number-4">13.4.4.</span> Winning cases summary</h4>
 </div>
 </div>
-<div id="outline-container-orgdd072fb" class="outline-3">
-<h3 id="orgdd072fb"><span class="section-number-3">13.5.</span> Output summary</h3>
+<div id="outline-container-orgeca6d2b" class="outline-3">
+<h3 id="orgeca6d2b"><span class="section-number-3">13.5.</span> Output summary</h3>
 <div class="outline-text-3" id="text-13-5">
 <p>
 The average of output rules on every ontology:
@@ -54416,8 +50269,8 @@ The average of output rules on every ontology:
 </div>
 
 
-<div id="outline-container-orgc8aed66" class="outline-2">
-<h2 id="orgc8aed66"><span class="section-number-2">14.</span> Experiment without unification index</h2>
+<div id="outline-container-org83bbe15" class="outline-2">
+<h2 id="org83bbe15"><span class="section-number-2">14.</span> Experiment without unification index</h2>
 <div class="outline-text-2" id="text-14">
 <p>
 This section contains the results of the same experiments as above, where the unification is disabled 
@@ -54425,12 +50278,12 @@ In the following, the prefix <code>NU</code> means "no unification index".
 </p>
 </div>
 
-<div id="outline-container-org1f10c35" class="outline-3">
-<h3 id="org1f10c35"><span class="section-number-3">14.1.</span> Timeout comparison with and without the subsumption index</h3>
+<div id="outline-container-org87b334d" class="outline-3">
+<h3 id="org87b334d"><span class="section-number-3">14.1.</span> Timeout comparison with and without the subsumption index</h3>
 <div class="outline-text-3" id="text-14-1">
 </div>
-<div id="outline-container-org88821d4" class="outline-4">
-<h4 id="org88821d4"><span class="section-number-4">14.1.1.</span> All the algorithm reach the timeout</h4>
+<div id="outline-container-orgda46578" class="outline-4">
+<h4 id="orgda46578"><span class="section-number-4">14.1.1.</span> All the algorithm reach the timeout</h4>
 <div class="outline-text-4" id="text-14-1-1">
 <p>
 The following table contains the rows where all the algorithm executions reach the timeout sorted by the input size. Their number:
@@ -55255,8 +51108,8 @@ The following table contains the rows where all the algorithm executions reach t
 </div>
 </div>
 
-<div id="outline-container-org7e0692f" class="outline-4">
-<h4 id="org7e0692f"><span class="section-number-4">14.1.2.</span> Timeout summary</h4>
+<div id="outline-container-orgbfc1367" class="outline-4">
+<h4 id="orgbfc1367"><span class="section-number-4">14.1.2.</span> Timeout summary</h4>
 <div class="outline-text-4" id="text-14-1-2">
 <p>
 The number of ontologies on which two algorithms reach the timeout simultaneously
@@ -55307,8 +51160,8 @@ The number of ontologies on which two algorithms reach the timeout simultaneousl
 </div>
 </div>
 
-<div id="outline-container-orgc835b9f" class="outline-4">
-<h4 id="orgc835b9f"><span class="section-number-4">14.1.3.</span> GSat</h4>
+<div id="outline-container-org03d725e" class="outline-4">
+<h4 id="org03d725e"><span class="section-number-4">14.1.3.</span> GSat</h4>
 <div class="outline-text-4" id="text-14-1-3">
 <p>
 Cases, where GSat reaches timeout and GSat without unification index is not.
@@ -56096,8 +51949,8 @@ Cases, where GSat without unfication index reaches timeout and GSat is not.
 </div>
 </div>
 
-<div id="outline-container-orge6f2e68" class="outline-4">
-<h4 id="orge6f2e68"><span class="section-number-4">14.1.4.</span> SkolemSat</h4>
+<div id="outline-container-orgf029aa4" class="outline-4">
+<h4 id="orgf029aa4"><span class="section-number-4">14.1.4.</span> SkolemSat</h4>
 <div class="outline-text-4" id="text-14-1-4">
 <p>
 Cases, where SkolemSat reaches timeout and SkolemSat without subsumption is not.
@@ -56974,8 +52827,8 @@ Cases, where SkolemSat without subsumption reaches timeout and SkolemSat is not.
 </div>
 </div>
 
-<div id="outline-container-orgf9784d3" class="outline-4">
-<h4 id="orgf9784d3"><span class="section-number-4">14.1.5.</span> HyperSat</h4>
+<div id="outline-container-org1d43d84" class="outline-4">
+<h4 id="org1d43d84"><span class="section-number-4">14.1.5.</span> HyperSat</h4>
 <div class="outline-text-4" id="text-14-1-5">
 <p>
 Cases, where HyperSat reaches timeout and HyperSat without subsumption is not.
@@ -57459,8 +53312,8 @@ Cases, where HyperSat without subsumption reaches timeout and HyperSat is not. T
 </div>
 
 
-<div id="outline-container-orge062601" class="outline-3">
-<h3 id="orge062601"><span class="section-number-3">14.2.</span> All Statistics</h3>
+<div id="outline-container-orgc7ad9bc" class="outline-3">
+<h3 id="orgc7ad9bc"><span class="section-number-3">14.2.</span> All Statistics</h3>
 <div class="outline-text-3" id="text-14-2">
 <p>
 All the statistics:
@@ -63504,12 +59357,12 @@ All the statistics:
 </div>
 </div>
 
-<div id="outline-container-orgfbf6381" class="outline-2">
-<h2 id="orgfbf6381"><span class="section-number-2">15.</span> Experiment without the subsumption index clustering</h2>
+<div id="outline-container-org9edd33b" class="outline-2">
+<h2 id="org9edd33b"><span class="section-number-2">15.</span> Experiment without the subsumption index clustering</h2>
 <div class="outline-text-2" id="text-15">
 </div>
-<div id="outline-container-org20fcb7b" class="outline-3">
-<h3 id="org20fcb7b"><span class="section-number-3">15.1.</span> Winning cases</h3>
+<div id="outline-container-org236f571" class="outline-3">
+<h3 id="org236f571"><span class="section-number-3">15.1.</span> Winning cases</h3>
 <div class="outline-text-3" id="text-15-1">
 <p>
 Number of ontology where SkolemSat without subsumption index clustering and KAON2 beat each other by one order of magnitude:
@@ -63568,26 +59421,26 @@ The ontology where KAON2 still loses by one order of magnitude.
 </div>
 </div>
 
-<div id="outline-container-org1cd00f0" class="outline-2">
-<h2 id="org1cd00f0"><span class="section-number-2">16.</span> Examples</h2>
+<div id="outline-container-org03ce48b" class="outline-2">
+<h2 id="org03ce48b"><span class="section-number-2">16.</span> Examples</h2>
 <div class="outline-text-2" id="text-16">
 </div>
-<div id="outline-container-org743eb70" class="outline-3">
-<h3 id="org743eb70"><span class="section-number-3">16.1.</span> An example where GSat looses exponentially against SkolemSat (case of 729)</h3>
+<div id="outline-container-org77a8e93" class="outline-3">
+<h3 id="org77a8e93"><span class="section-number-3">16.1.</span> An example where GSat looses exponentially against SkolemSat (case of 729)</h3>
 <div class="outline-text-3" id="text-16-1">
 </div>
-<div id="outline-container-org18884bf" class="outline-4">
-<h4 id="org18884bf"><span class="section-number-4">16.1.1.</span> Simple example</h4>
+<div id="outline-container-orga352ff6" class="outline-4">
+<h4 id="orga352ff6"><span class="section-number-4">16.1.1.</span> Simple example</h4>
 <div class="outline-text-4" id="text-16-1-1">
 <p>
 We consider the single following non full TGD and the n full TGD as follows: 
 </p>
 
-<pre class="example" id="orge6566f4">
+<pre class="example" id="org403b01a">
 A(x) -&gt; B(x, y)
 </pre>
 
-<pre class="example" id="org24fd672">
+<pre class="example" id="org11b882b">
 B(x, y), C_i(x) -&gt; D_i(y) for i in 1..n
 </pre>
 
@@ -63597,13 +59450,13 @@ These TGDs are inspired from the ontology 729, more details are available on <a 
 </div>
 </div>
 
-<div id="outline-container-org722c1fe" class="outline-4">
-<h4 id="org722c1fe"><span class="section-number-4">16.1.2.</span> GSat</h4>
+<div id="outline-container-org4c60d9b" class="outline-4">
+<h4 id="org4c60d9b"><span class="section-number-4">16.1.2.</span> GSat</h4>
 <div class="outline-text-4" id="text-16-1-2">
 <p>
 Applying Evolve of these TGDs will produce the following TGDs, for I a subset of {1&#x2026;n}:
 </p>
-<pre class="example" id="orgbe83aaa">
+<pre class="example" id="orgac147d7">
 R_I : A(x), \wedge_{i \in I} C_i(x) -&gt; B(x, y) \wedge_{i \in I} D_i(y)
 </pre>
 <p>
@@ -63612,13 +59465,13 @@ Since R<sub>I</sub> is not subsumed by R<sub>J</sub> if I is not equal to J, it 
 </div>
 </div>
 
-<div id="outline-container-org6d9629f" class="outline-4">
-<h4 id="org6d9629f"><span class="section-number-4">16.1.3.</span> Skolemized version</h4>
+<div id="outline-container-org92b8795" class="outline-4">
+<h4 id="org92b8795"><span class="section-number-4">16.1.3.</span> Skolemized version</h4>
 <div class="outline-text-4" id="text-16-1-3">
 <p>
 If we simulate the behaviour of the skolemized version of the saturation on the simple example above, we obtain the following input TGDs:
 </p>
-<pre class="example" id="orgf653127">
+<pre class="example" id="org36aea77">
 A(x) -&gt; B(x, f(x))
 B(x, y), C_i(x) -&gt; D_i(y) for i in 1..n
 </pre>
@@ -63626,7 +59479,7 @@ B(x, y), C_i(x) -&gt; D_i(y) for i in 1..n
 <p>
 It is possible to evolve the first non-full TGD with each of the full TGD to obtain the following non-full TGDs:
 </p>
-<pre class="example" id="org29d7436">
+<pre class="example" id="org6bcffad">
 A(x) -&gt; C_i(x) -&gt; D_i(f(x)) for i in 1..n
 </pre>
 
@@ -63637,8 +59490,8 @@ This time, the number of derived TGDs is n.
 </div>
 </div>
 
-<div id="outline-container-org7b3673b" class="outline-3">
-<h3 id="org7b3673b"><span class="section-number-3">16.2.</span> An example where SkolemSat looses against GSat (case of 392)</h3>
+<div id="outline-container-org0d547f8" class="outline-3">
+<h3 id="org0d547f8"><span class="section-number-3">16.2.</span> An example where SkolemSat looses against GSat (case of 392)</h3>
 <div class="outline-text-3" id="text-16-2">
 <p>
 The reason why SkolemSat fails on this ontology is finally quite simple.
@@ -63681,12 +59534,12 @@ This large production of witnesses seems impossible to avoid, but a real perform
 </div>
 </div>
 
-<div id="outline-container-org06e84da" class="outline-2">
-<h2 id="org06e84da"><span class="section-number-2">17.</span> Questions</h2>
+<div id="outline-container-org267eeca" class="outline-2">
+<h2 id="org267eeca"><span class="section-number-2">17.</span> Questions</h2>
 <div class="outline-text-2" id="text-17">
 </div>
-<div id="outline-container-orgfe9a299" class="outline-3">
-<h3 id="orgfe9a299"><span class="section-number-3">17.1.</span> What are the GSat errors</h3>
+<div id="outline-container-orge812640" class="outline-3">
+<h3 id="orge812640"><span class="section-number-3">17.1.</span> What are the GSat errors</h3>
 <div class="outline-text-3" id="text-17-1">
 <p>
 There are several errors on GSAT, all of them are caused by out of memory error (10g was available).
@@ -63793,8 +59646,8 @@ There are several errors on GSAT, all of them are caused by out of memory error 
 </div>
 </div>
 
-<div id="outline-container-org829146b" class="outline-3">
-<h3 id="org829146b"><span class="section-number-3">17.2.</span> What are the SkolemSat errors</h3>
+<div id="outline-container-org4ef17eb" class="outline-3">
+<h3 id="org4ef17eb"><span class="section-number-3">17.2.</span> What are the SkolemSat errors</h3>
 <div class="outline-text-3" id="text-17-2">
 <p>
 There is three errors out of memory error (10g was available) using SkolemSat with predicate tree index.
@@ -63828,8 +59681,8 @@ There is three errors out of memory error (10g was available) using SkolemSat wi
 
 
 
-<div id="outline-container-orge6f1321" class="outline-3">
-<h3 id="orge6f1321"><span class="section-number-3">17.3.</span> What are the KAON3 errors</h3>
+<div id="outline-container-org18ae1cf" class="outline-3">
+<h3 id="org18ae1cf"><span class="section-number-3">17.3.</span> What are the KAON3 errors</h3>
 <div class="outline-text-3" id="text-17-3">
 <p>
 There are no error using KAON3
@@ -63859,8 +59712,8 @@ There are no error using KAON3
 </div>
 
 
-<div id="outline-container-orgd290c81" class="outline-3">
-<h3 id="orgd290c81"><span class="section-number-3">17.4.</span> What are the HyperSat errors</h3>
+<div id="outline-container-org381b14d" class="outline-3">
+<h3 id="org381b14d"><span class="section-number-3">17.4.</span> What are the HyperSat errors</h3>
 <div class="outline-text-3" id="text-17-4">
 <p>
 There are no error using hyper sat
@@ -63891,7 +59744,7 @@ There are no error using hyper sat
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-12-20 Mon 09:02</p>
+<p class="date">Created: 2022-01-20 Thu 18:52</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
