@@ -1,21 +1,21 @@
 We compute the redundant files list using this notebook
 
-#+BEGIN_src ipython :session stats :results output raw
-    import pandas as pd
-    from tabulate import tabulate
-    
-    stats='stats.csv'
-    df = pd.read_csv(stats, index_col='NAME')[['FGTGD', 'ExGTGD']]
-    df['N1'] = df.index
-    df = df[(df['FGTGD'] > 0) & (df['ExGTGD'] > 0)]
-    df1 = pd.read_csv(stats, index_col='NAME')[['FGTGD', 'ExGTGD']]
-    df1 = df1.add_prefix('OTHER_')
-    df1['N2'] = df1.index
-    
-    comp = df.merge(df1, left_on=['FGTGD', 'ExGTGD'], right_on=['OTHER_FGTGD', 'OTHER_ExGTGD'], how='left')
-    comp = comp[comp['N1'] > comp['N2']]
-    
-    print(tabulate(comp, headers="keys", tablefmt='orgtbl'))
+  #+BEGIN_src ipython :session stats :results output raw
+      import pandas as pd
+      from tabulate import tabulate
+  
+      stats='stats.csv'
+      df = pd.read_csv(stats, index_col='NAME')[['FGTGD', 'ExGTGD']]
+      df['N1'] = df.index
+      df = df[(df['FGTGD'] > 0) & (df['ExGTGD'] > 0)]
+      df1 = pd.read_csv(stats, index_col='NAME')[['FGTGD', 'ExGTGD']]
+      df1 = df1.add_prefix('OTHER_')
+      df1['N2'] = df1.index
+  
+      comp = df.merge(df1, left_on=['FGTGD', 'ExGTGD'], right_on=['OTHER_FGTGD', 'OTHER_ExGTGD'], how='left')
+      comp = comp[comp['N1'] > comp['N2']]
+  
+      print(tabulate(comp, headers="keys", tablefmt='orgtbl'))
 #+END_src
 
 #+RESULTS:
@@ -1594,3 +1594,23 @@ We compute the redundant files list using this notebook
 00792.dlgp
 00793.dlgp
 00795.dlgp
+
+
+Fill the content of no_timeout directory from the no_timeout.txt file
+#+BEGIN_src ipython :session stats :results output raw
+  import pandas as pd
+  import shutil
+  
+  
+  stats='~/no_timeout.txt'
+  df = pd.read_csv(stats)
+  print(len(df.index))
+  
+  for name in df['NAME']:
+      shutil.copy(get_filename(name), 'no_timeout/' + get_filename(name))
+#+END_src
+
+#+RESULTS:
+334
+
+
