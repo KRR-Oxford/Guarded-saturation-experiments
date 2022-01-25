@@ -1,0 +1,62 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 55; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolem Sat
+Running SkSat...
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: SkSat discarded rules : 0/55 = 0.000%
+SkSat discarded rules : 0/55 = 0.000%
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.2191782
+number of bags: 1
+length of the formulas: 2.2191782
+number of bags: 1
+nonFullTGDs	0		fullTGDs	43			newNonFullTGDs	30		newFullTGDs	0
+nonFullTGDs	50		fullTGDs	88			newNonFullTGDs	0		newFullTGDs	81
+nonFullTGDs	63		fullTGDs	147			newNonFullTGDs	0		newFullTGDs	37
+nonFullTGDs	63		fullTGDs	217			newNonFullTGDs	0		newFullTGDs	9
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: # initial TGDs: 43 , 30
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: SkSat total time : 198 ms = 0.20 s
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Subsumed elements : 143
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Filter discarded elements : 74147
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: subsumption time: 46 ms = 0.05 s
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: forward subsumption time: 34 ms = 0.03 s
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: backward subsumption time: 12 ms = 0.01 s
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: Derived full/non full TGDs: 317 , 66
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.SaturationStatistics log
+INFO: discarded tautology count: 9
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: Stop because subsumed: 89
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved equals to current: 0
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolved time: 42 ms = 0.04 s
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.EvolveStatistics log
+INFO: evolve count: 383
+Dec 09, 2021 5:36:34 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: maximum number of Skolem atoms in body: 3
+Dec 09, 2021 5:36:35 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: left derived TGD with Skolem in the body: 0
+Dec 09, 2021 5:36:35 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: right derived TGD with Skolem in the body: 290
+Dec 09, 2021 5:36:35 PM uk.ac.ox.cs.gsat.SkolemStatistics log
+INFO: derived TGD with more than two Skolem atoms in the body: 136
+Dec 09, 2021 5:36:35 PM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: ouptput full TGDs not contained in the input: 27
+Dec 09, 2021 5:36:35 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Rewriting completed!
+Full TGD saturation: (70 dependecies)
+Dec 09, 2021 5:36:35 PM uk.ac.ox.cs.gsat.App executeAllSteps
+INFO: Writing the saturation in the Datalog file 00114.rul

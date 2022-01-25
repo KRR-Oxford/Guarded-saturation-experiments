@@ -1,0 +1,46 @@
+Starting Saturation...
+Executing from DLGP files
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+# Rules: 397; # Atoms: 0; # AtomSets: 0; # Queries: 0; # Constraints: 0
+Full TGD saturation algorithm: Skolem Sat
+Running SkSat...
+Dec 10, 2021 1:06:58 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: SkSat discarded rules : 0/397 = 0.000%
+SkSat discarded rules : 0/397 = 0.000%
+Dec 10, 2021 1:06:59 AM uk.ac.ox.cs.gsat.AbstractSaturation run
+INFO: Subsumption method : tree_predicate
+length of the formulas: 2.0641026
+number of bags: 5
+length of the formulas: 2.0641026
+number of bags: 5
+nonFullTGDs	0		fullTGDs	341			newNonFullTGDs	205		newFullTGDs	0
+nonFullTGDs	100		fullTGDs	341			newNonFullTGDs	184		newFullTGDs	114
+nonFullTGDs	200		fullTGDs	341			newNonFullTGDs	166		newFullTGDs	244
+nonFullTGDs	300		fullTGDs	341			newNonFullTGDs	150		newFullTGDs	363
+nonFullTGDs	400		fullTGDs	341			newNonFullTGDs	135		newFullTGDs	481
+nonFullTGDs	500		fullTGDs	341			newNonFullTGDs	115		newFullTGDs	605
+nonFullTGDs	600		fullTGDs	341			newNonFullTGDs	103		newFullTGDs	733
+nonFullTGDs	700		fullTGDs	341			newNonFullTGDs	74		newFullTGDs	836
+nonFullTGDs	800		fullTGDs	341			newNonFullTGDs	59		newFullTGDs	959
+nonFullTGDs	900		fullTGDs	341			newNonFullTGDs	43		newFullTGDs	1084
+nonFullTGDs	1000		fullTGDs	341			newNonFullTGDs	21		newFullTGDs	1198
+nonFullTGDs	1088		fullTGDs	353			newNonFullTGDs	0		newFullTGDs	1255
+nonFullTGDs	1108		fullTGDs	433			newNonFullTGDs	0		newFullTGDs	1200
+nonFullTGDs	1137		fullTGDs	502			newNonFullTGDs	81		newFullTGDs	1097
+nonFullTGDs	1234		fullTGDs	503			newNonFullTGDs	79		newFullTGDs	1083
+nonFullTGDs	1325		fullTGDs	512			newNonFullTGDs	1		newFullTGDs	1081
+java.lang.NullPointerException
+	at uk.ac.ox.cs.gsat.unification.AtomPathUnificationIndex.remove(AtomPathUnificationIndex.java:207)
+	at uk.ac.ox.cs.gsat.unification.AtomPathUnificationIndex.remove(AtomPathUnificationIndex.java:187)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.addNewTGD(AbstractSaturation.java:289)
+	at uk.ac.ox.cs.gsat.EvolveBasedSat.process(EvolveBasedSat.java:123)
+	at uk.ac.ox.cs.gsat.AbstractSaturation.run(AbstractSaturation.java:164)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:197)
+	at uk.ac.ox.cs.gsat.App.fromDLGP(App.java:138)
+	at uk.ac.ox.cs.gsat.App.main(App.java:55)
+Full TGD saturation algorithm failed. The system will now terminate.
+Dec 10, 2021 1:06:59 AM uk.ac.ox.cs.gsat.App executeAllSteps
+SEVERE: null
+\n\n!!! ERROR !!!
