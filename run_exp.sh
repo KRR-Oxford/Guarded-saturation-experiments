@@ -4,7 +4,7 @@ set -e
 
 mem=10g
 sleep=5s
-version=0.5.6
+version=1.0.0
 date=`date +%Y-%m-%d-%H-%M`
 
 
@@ -23,7 +23,7 @@ else
 fi
 
 # copy the Jar file in the local directory
-cp $SCRIPT_DIR/../target/guarded-saturation-$version-jar-with-dependencies.jar .
+cp $SCRIPT_DIR/../gsat-core/target/guarded-saturation-$version-jar-with-dependencies.jar .
 
 for filename in $DIR/*.dlgp
 do
