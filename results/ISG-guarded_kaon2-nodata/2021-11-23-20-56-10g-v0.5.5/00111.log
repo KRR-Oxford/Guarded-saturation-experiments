@@ -1,0 +1,22 @@
+Starting Saturation...
+Executing from OWL files with structural transformation
+Initial axioms in the ontology: 43
+Data loading failed. The system will now terminate.
+Nov 24, 2021 12:03:50 AM uk.ac.ox.cs.gsat.App executeAllSteps
+SEVERE: Unknown description type '[not [oneOf http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens]]'.
+org.semanticweb.kaon2.api.KAON2Exception: Unknown description type '[not [oneOf http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens]]'.
+	at org.semanticweb.kaon2.reasoner.StructuralTransformation.clausifyDescription(StructuralTransformation.java:150)
+	at org.semanticweb.kaon2.reasoner.StructuralTransformation.flushNewDefinitions(StructuralTransformation.java:55)
+	at org.semanticweb.kaon2.reasoner.StructuralTransformation.clausifyUniversalDescription(StructuralTransformation.java:48)
+	at org.semanticweb.kaon2.reasoner.AxiomClausifier$StructuralTransformationVisitor.clausify(AxiomClausifier.java:390)
+	at org.semanticweb.kaon2.reasoner.AxiomClausifier$AbstractDescriptionClausifierVisitor.clausifyInclusion(AxiomClausifier.java:368)
+	at org.semanticweb.kaon2.reasoner.AxiomClausifier$AbstractDescriptionClausifierVisitor.visit(AxiomClausifier.java:310)
+	at org.semanticweb.kaon2.reasoner.AxiomClausifier$StructuralTransformationVisitor.visit(AxiomClausifier.java:398)
+	at org.semanticweb.kaon2.apicore.owl.axioms.SubClassOfCore.accept(SubClassOfCore.java:41)
+	at org.semanticweb.kaon2.reasoner.AxiomClausifier.clausify(AxiomClausifier.java:103)
+	at uk.ac.ox.cs.gsat.KAON2StructuralTransformationIO.apply(KAON2StructuralTransformationIO.java:204)
+	at uk.ac.ox.cs.gsat.KAON2StructuralTransformationIO.getRules(KAON2StructuralTransformationIO.java:95)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:180)
+	at uk.ac.ox.cs.gsat.App.fromOWLWithStructuralTransformation(App.java:146)
+	at uk.ac.ox.cs.gsat.App.main(App.java:60)
+\n\n!!! ERROR !!!

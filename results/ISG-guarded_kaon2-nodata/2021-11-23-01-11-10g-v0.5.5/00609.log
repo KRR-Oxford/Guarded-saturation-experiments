@@ -1,0 +1,24 @@
+Starting Saturation...
+Executing from OWL files with structural transformation
+Data loading failed. The system will now terminate.
+Nov 23, 2021 7:23:04 AM uk.ac.ox.cs.gsat.App executeAllSteps
+SEVERE: Error parsing a document 'file:/home/scratch/maxron/dev/oxford/Guarded-saturation/experiments/rules/ISG-guarded_kaon2-nodata//OWL/00609.owl'.
+org.semanticweb.kaon2.api.KAON2Exception: Error parsing a document 'file:/home/scratch/maxron/dev/oxford/Guarded-saturation/experiments/rules/ISG-guarded_kaon2-nodata//OWL/00609.owl'.
+	at org.semanticweb.kaon2.files.FileOntologyHandler.openOntologySourceFromStream(FileOntologyHandler.java:165)
+	at org.semanticweb.kaon2.files.FileOntologyHandler.openOntologySource(FileOntologyHandler.java:52)
+	at org.semanticweb.kaon2.apicore.KAON2ConnectionCore.openOntologySource(KAON2ConnectionCore.java:142)
+	at org.semanticweb.kaon2.apicore.KAON2ConnectionCore.ensureOntologyCanBeOpened(KAON2ConnectionCore.java:108)
+	at org.semanticweb.kaon2.apicore.KAON2ConnectionCore.openOntology(KAON2ConnectionCore.java:79)
+	at uk.ac.ox.cs.gsat.KAON2StructuralTransformationIO.getRules(KAON2StructuralTransformationIO.java:93)
+	at uk.ac.ox.cs.gsat.App.executeAllSteps(App.java:180)
+	at uk.ac.ox.cs.gsat.App.fromOWLWithStructuralTransformation(App.java:146)
+	at uk.ac.ox.cs.gsat.App.main(App.java:60)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 0; columnNumber: 0; [line=0,column=0] Property 'http://www.w3.org/2002/07/owl#annotatedProperty' is reserved and should not be used by the user.
+	at org.semanticweb.kaon2.importx.owlrdf.OWLRDFImporter.reportError(OWLRDFImporter.java:314)
+	at org.semanticweb.kaon2.importx.owlrdf.OWLRDFImporter.processEntityNode(OWLRDFImporter.java:646)
+	at org.semanticweb.kaon2.importx.owlrdf.OWLRDFImporter.processNode(OWLRDFImporter.java:325)
+	at org.semanticweb.kaon2.importx.owlrdf.OWLRDFImporter.processNodes(OWLRDFImporter.java:304)
+	at org.semanticweb.kaon2.importx.owlrdf.OWLRDFImporter.parse(OWLRDFImporter.java:72)
+	at org.semanticweb.kaon2.files.FileOntologyHandler.openOntologySourceFromStream(FileOntologyHandler.java:133)
+	... 8 more
+\n\n!!! ERROR !!!
