@@ -10,7 +10,7 @@
 
 #+OPTIONS: toc:t author:nil
 #+PROPERTY: header-args :eval never-export
-#+PROPERTY: header-args:ipython :exports results
+#+PROPERTY: header-args:jupyter :exports results
 
 #+EXCLUDE_TAGS: noexport
 
@@ -27,18 +27,18 @@
 
   In the following, we remove the row, where executions on the ontologies, which contains at least one non full TGD and one full TGD.
 
-    #+BEGIN_src ipython :session mysession :results none
-    import pandas as pd
-    from tabulate import tabulate
-    df_kept = pd.read_csv('../../rules/ISG-guarded_kaon2/kept.csv', index_col='NAME')
+    #+BEGIN_src jupyter-python :session mysession :results none
+      import pandas as pd
+      from tabulate import tabulate
+      df_kept = pd.read_csv('../../rules/ISG-guarded_kaon2/kept.csv', index_col='NAME')
 
-    def select_interesting(df, nf_col='GSAT_NFTGD', f_col='GSAT_FTGD') :
-        return df[ df.index.isin(df_kept.index) ]
+      def select_interesting(df, nf_col='GSAT_NFTGD', f_col='GSAT_FTGD') :
+          return df[ df.index.isin(df_kept.index) ]
    #+END_src
 
 
   The number of remaining ontologies is:
-  #+BEGIN_src ipython :session mysession :results output example
+  #+BEGIN_src jupyter-python :session mysession :results output example
     
     gsat_file='2021-11-11-22-01-10g-v0.5.5/stats.csv'
     sksat_file='2021-11-11-22-03-10g-v0.5.5/stats.csv'
@@ -99,13 +99,13 @@
 
 ** Statistics on the input ontologies
 
-   #+BEGIN_src ipython :results none  :session mysession
+   #+BEGIN_src jupyter-python :results none  :session mysession
      INPUT_ONTOLOGIES_STATS='../../rules/ISG-guarded_kaon2/stats.csv'
      df_input = pd.read_csv(INPUT_ONTOLOGIES_STATS, index_col='NAME')
    #+END_src
 
    We keep for the experiments only the ontologies which contains both full and non-full TGDs and removing the redundant ontologies, so the number of remaining ontologies is:
-   #+BEGIN_src ipython :results output  :session mysession
+   #+BEGIN_src jupyter-python :results output  :session mysession
      df_remaining_input = select_interesting(df_input)
      print(len(df_remaining_input))
    #+END_src
@@ -114,7 +114,7 @@
    : 428
 
    Among the remaining ontologies the minimal ontology contains the following number of TGDs:  
-   #+BEGIN_src ipython :results output :session mysession
+   #+BEGIN_src jupyter-python :results output :session mysession
      print(df_remaining_input['TGD'].min())
    #+END_src
 
@@ -122,7 +122,7 @@
    : 3
 
    while the maximal one contains the following number of TGDs:  
-   #+BEGIN_src ipython :results output :session mysession
+   #+BEGIN_src jupyter-python :results output :session mysession
      print(df_remaining_input['TGD'].max())
    #+END_src
 
@@ -131,7 +131,7 @@
 
    
    Among the remaining ontologies the average number of full TGDs is:  
-   #+BEGIN_src ipython :results output :session mysession
+   #+BEGIN_src jupyter-python :results output :session mysession
      print(df_remaining_input['FGTGD'].mean())
    #+END_src
 
@@ -139,7 +139,7 @@
    : 11030.072429906542
 
    the median number of full TGDs is:  
-   #+BEGIN_src ipython :results output :session mysession
+   #+BEGIN_src jupyter-python :results output :session mysession
      print(df_remaining_input['FGTGD'].median())
    #+END_src
 
@@ -147,7 +147,7 @@
    : 788.5
 
    The minimum number of full TGDs is:  
-   #+BEGIN_src ipython :results output :session mysession
+   #+BEGIN_src jupyter-python :results output :session mysession
      print(df_remaining_input['FGTGD'].min())
    #+END_src
 
@@ -155,7 +155,7 @@
    : 1
 
    The maximum number of full TGDs is:  
-   #+BEGIN_src ipython :results output :session mysession
+   #+BEGIN_src jupyter-python :results output :session mysession
      print(df_remaining_input['FGTGD'].max())
    #+END_src
 
@@ -163,7 +163,7 @@
    : 171905
 
    While, the average number of non-full TGDs is:  
-   #+BEGIN_src ipython :results output :session mysession
+   #+BEGIN_src jupyter-python :results output :session mysession
      print(df_remaining_input['ExGTGD'].mean())
    #+END_src
 
@@ -171,7 +171,7 @@
    : 5255.429906542056
 
    the average number of non-full TGDs is:  
-   #+BEGIN_src ipython :results output :session mysession
+   #+BEGIN_src jupyter-python :results output :session mysession
      print(df_remaining_input['ExGTGD'].median())
    #+END_src
 
@@ -180,7 +180,7 @@
 
    
    The average proportion of full TGDs in the remaining ontologies is:  
-   #+BEGIN_src ipython :results output :session mysession
+   #+BEGIN_src jupyter-python :results output :session mysession
      print((df_remaining_input['FGTGD'] / (df_remaining_input['FGTGD'] + df_remaining_input['ExGTGD'])).mean())
    #+END_src
 
@@ -190,7 +190,7 @@
    
 * Times Comparison
 
-  #+BEGIN_SRC ipython :results output  :session mysession
+  #+BEGIN_SRC jupyter-python :results output  :session mysession
     %matplotlib inline
     import matplotlib.pyplot as plt
     
@@ -213,17 +213,18 @@
 
   #+RESULTS:
 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/times0.png
+
+
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/times0.png
     plot_values(times, 0)
   #+END_SRC
 
   #+RESULTS:
-  :results:
-  # Out[104]:
-  [[file:plots/times0.png]]
-  :end:
+  :RESULTS:
+  [[file:./.ob-jupyter/8597f457a6b6b13408f43fe9ab7e5c975c9436e6.png]]
+  :END:
 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/times1.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/times1.png
     plot_values(times, 1)
   #+END_SRC
 
@@ -233,7 +234,7 @@
   [[file:plots/times1.png]]
   :end:
 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/times2.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/times2.png
     plot_values(times, 2)
   #+END_SRC
 
@@ -243,7 +244,7 @@
   [[file:plots/times2.png]]
   :end:
 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/times3.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/times3.png
     plot_values(times, 3)
   #+END_SRC
 
@@ -253,7 +254,7 @@
   [[file:plots/times3.png]]
   :end:
   
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/times4.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/times4.png
     plot_values(times, 4)
   #+END_SRC
 
@@ -263,7 +264,7 @@
   [[file:plots/times4.png]]
   :end:
   
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/times5.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/times5.png
     plot_values(times, 5)
   #+END_SRC
 
@@ -273,7 +274,7 @@
   [[file:plots/times5.png]]
   :end:
 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/times6.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/times6.png
     plot_values(times, 6)
   #+END_SRC
 
@@ -283,7 +284,7 @@
   [[file:plots/times6.png]]
   :end:
 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/times7.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/times7.png
     plot_values(times, 7)
   #+END_SRC
 
@@ -293,7 +294,7 @@
   [[file:plots/times7.png]]
   :end:
 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/times8.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/times8.png
     plot_values(times, 8)
   #+END_SRC
 
@@ -303,7 +304,7 @@
   [[file:plots/times8.png]]
   :end:
 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/times9.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/times9.png
     plot_values(times, 9)
   #+END_SRC
 
@@ -313,7 +314,7 @@
   [[file:plots/times9.png]]
   :end:
 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/times10.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/times10.png
     plot_values(times, 10)
   #+END_SRC
 
@@ -324,7 +325,7 @@
   :end:
 
   Cactus plot of the times
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/cactus_times.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/cactus_times.png
     def create_sorted_times(prefixes) :
         sorted_times = []
         for prefix in prefixes:
@@ -344,7 +345,7 @@
   :end:
 
   The same in log scale
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/cactus_times_log.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/cactus_times_log.png
     sorted_times.plot.line(figsize=(15,6)).set_yscale('log')
   #+END_SRC
 
@@ -359,7 +360,7 @@
 ** All the algorithm reach the timeout
    The following table contains the rows where all the algorithm executions reach the timeout sorted by the input size. Their number:
 
-   #+BEGIN_src ipython :session mysession :results none
+   #+BEGIN_src jupyter-python :session mysession :results none
      def get_timeout(prefix, df):
          return df[ ((df[ prefix + '_TIME'] == 'TIMEOUT') | (df[ prefix + '_TIME'] == 'ERROR'))]
 
@@ -375,7 +376,7 @@
      
    #+END_src
 
-   #+BEGIN_src ipython :session mysession :results output example
+   #+BEGIN_src jupyter-python :session mysession :results output example
      all_timeout = get_all_timeout(['GSAT', 'SK', 'HYPER', 'KAON3', 'KAON2'], df_times)
      any_notimeout = df_times[ ~df_times.index.isin(all_timeout.index) ]
      
@@ -385,7 +386,7 @@
    #+RESULTS:
    : 29
 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(all_timeout, headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -424,7 +425,7 @@
 
 ** Timeout summary
 
-      #+BEGIN_src ipython :session mysession :results none
+      #+BEGIN_src jupyter-python :session mysession :results none
         def timeout_intersection(prefixes, any_notimeout):
             data = []
         
@@ -445,7 +446,7 @@
       #+END_src
 
       The number of ontologies on which two algorithms reach the timeout simultaneously
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(timeout_intersection(['GSAT', 'SSAT', 'SK', 'HYPER', 'HYPER2', 'KAON3', 'KAON2'], any_notimeout), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -460,7 +461,7 @@
    | KAON3  |    6 |   44 | 22 |     4 |     14 |    44 |    25 |
    | KAON2  |    8 |   37 | 18 |     7 |     17 |    25 |    37 |
 
-      #+BEGIN_src ipython :session mysession :results none
+      #+BEGIN_src jupyter-python :session mysession :results none
         def timeout_single_diff(p1, p2, any_notimeout):
             df1 = get_timeout_only(p1, any_notimeout)
             df2 = get_timeout_only(p2, any_notimeout)
@@ -477,7 +478,7 @@
             return pd.DataFrame(data, columns=prefixes, index=prefixes)
    #+END_src
 
-    #+BEGIN_src ipython :session mysession :results output raw :exports none
+    #+BEGIN_src jupyter-python :session mysession :results output raw :exports none
      print(tabulate(timeout_diff(['GSAT', 'SK', 'HYPER', 'KAON2'], any_notimeout), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -490,7 +491,7 @@
    | KAON2 |   29 | 19 |    30 |     0 |
 
    The times on the ontologies where at least one algorithm reaches timeout. 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/anynotimeout0.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/anynotimeout0.png
     plot_values(times[ times.index.isin(one_timeout_atleast_indexes(['GSAT', 'SK', 'HYPER', 'KAON2']))].drop(columns=['KAON3_TIME']), 0)
   #+END_SRC
 
@@ -500,7 +501,7 @@
   [[file:plots/anynotimeout0.png]]
   :end:
 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/anynotimeout1.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/anynotimeout1.png
     plot_values(times[ times.index.isin(one_timeout_atleast_indexes(['GSAT', 'SK', 'HYPER', 'KAON2']))].drop(columns=['KAON3_TIME']), 1)
   #+END_SRC
 
@@ -511,7 +512,7 @@
   :end:
 
   A interesting selection of these times
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/interesting_timeout.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/interesting_timeout.png
     interesting_timeout_indexes = [ 4, 21, 174, 354, 381, 382, 410, 470, 477, 479, 518, 553, 684, 703, 783 ]
     plot_values(times[ times.index.isin(interesting_timeout_indexes)].drop(columns=['KAON3_TIME']).sort_values(by="HYPER_TIME"), 1)
   #+END_SRC
@@ -526,7 +527,7 @@
 ** GSat timeout
 
    The following table contains the rows where the Gsat execution reaches the timeout, while another algorithm is not, sorted by the input size.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      gsat_timeout = get_timeout_only('GSAT', any_notimeout)
      gsat_timeout = gsat_timeout.sort_values(by="GSAT_NFTGD").sort_values(by="GSAT_FTGD")
      
@@ -571,7 +572,7 @@
   
 ** SkolemSat timeout
    The following table contains the rows where the SkolemSat executions reach the timeout, while another algorithm is not, sorted by the input size.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      sksat_timeout = get_timeout_only('SK', any_notimeout)
      sksat_timeout = sksat_timeout.sort_values(by="GSAT_NFTGD").sort_values(by="GSAT_FTGD")
      print(tabulate(sksat_timeout, headers="keys", tablefmt='orgtbl'))
@@ -605,7 +606,7 @@
 
 ** HyperSat timeout
    The following table contains the rows where the HyperSat executions reach the timeout, while another algorithm is not, sorted by the input size.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      hyper_timeout = get_timeout_only('HYPER', any_notimeout)
      
      hyper_timeout = hyper_timeout.sort_values(by="GSAT_NFTGD").sort_values(by="GSAT_FTGD")
@@ -625,7 +626,7 @@
 
 ** KAON3 timeout
    The following table contains the rows where the KAON3 executions reach the timeout, while another algorithm is not, sorted by the input size.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      kaon3_timeout = get_timeout_only('KAON3', any_notimeout)
      
      kaon3_timeout = kaon3_timeout.sort_values(by="GSAT_NFTGD").sort_values(by="GSAT_FTGD")
@@ -682,7 +683,7 @@
 
 ** Kaon2 timeouts
    The following table contains the rows where KAON2 executions reach the timeout of 10min, while another algorithm is not, sorted by the input size.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      kaon2_timeout = get_timeout_only('KAON2', any_notimeout)
      
      kaon2_timeout = kaon2_timeout.sort_values(by="GSAT_NFTGD").sort_values(by="GSAT_FTGD")
@@ -731,7 +732,7 @@
    |  553 |        nan |       nan |     ERROR | TIMEOUT   |  584786 |     101512 |      159387 | TIMEOUT    | TIMEOUT    |
 
 * Winning Algorithms
-  #+BEGIN_src ipython :session mysession :results output raw
+  #+BEGIN_src jupyter-python :session mysession :results output raw
     def get_no_timeout(alg_time1, alg_time2, proj):
          no_timeout = df_interesting[ (df_interesting[alg_time1] != 'TIMEOUT') & (df_interesting[alg_time1] != 'ERROR') & (df_interesting[alg_time2] != 'TIMEOUT') & (df_interesting[alg_time2] != 'ERROR') ]
          return no_timeout[proj].apply(pd.to_numeric)
@@ -744,7 +745,7 @@
   1. the slower algorithm requires more than 500ms to compute the saturation,
   2. the faster algorithm requires 50% less time than the lowest.
 
-  #+BEGIN_src ipython :session mysession :results none
+  #+BEGIN_src jupyter-python :session mysession :results none
     pd.set_option('mode.chained_assignment', None)
     def create_win(vs, time1, time2, factor=2):
         vs['TIME_FACTOR'] = (vs[time2] / vs[time1])
@@ -764,7 +765,7 @@
 
 ** SkolemSat vs KAON3
    Comparison of skolemSat and KAON3.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      sk_vs_ord = get_no_timeout('SK_TIME', 'KAON3_TIME', ['SK_NFTGD', 'SK_FTGD', 'SK_OUTPUT', 'KAON3_OUTPUT', 'SK_TIME', 'KAON3_TIME'])
      sk_vs_ord = sk_vs_ord.sort_values(by="SK_TIME", ascending= False).sort_values(by="KAON3_TIME", ascending= False)
      #print(tabulate(sk_vs_kaon2, headers="keys", tablefmt='orgtbl'))
@@ -773,7 +774,7 @@
    #+RESULTS:
 
    Ontologies on which SkolemSat wins over KAON3:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_vs_ord, 'SK_TIME', 'KAON3_TIME')
    #+END_src
 
@@ -788,7 +789,7 @@
    |  420 |     2960 |    5169 |      6074 |         6074 |    9208 |      18485 |           2 |
 
    Ontologies on which KAON3 wins over SkolemSat:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_vs_ord, 'KAON3_TIME', 'SK_TIME')
    #+END_src
 
@@ -798,7 +799,7 @@
 
 ** KAON3 vs KAON2
    Comparison of KAON3 and KAON2.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      ordsk_vs_kaon2 = get_no_timeout('KAON3_TIME', 'KAON2_TIME', ['AXIOM', 'KAON3_NFTGD', 'KAON3_FTGD', 'KAON3_OUTPUT', 'KAON2_OUTPUT', 'KAON3_TIME', 'KAON2_TIME'])
      ordsk_vs_kaon2 = ordsk_vs_kaon2.sort_values(by="KAON3_TIME", ascending= False).sort_values(by="KAON2_TIME", ascending= False)
      #print(tabulate(sk_vs_kaon2, headers="keys", tablefmt='orgtbl'))
@@ -807,7 +808,7 @@
    #+RESULTS:
 
    Ontologies on which KAON3 wins over KAON2:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(ordsk_vs_kaon2, 'KAON3_TIME', 'KAON2_TIME')
    #+END_src
 
@@ -866,7 +867,7 @@
    |  545 |  9627 |       12552 |       3351 |         3351 |         9077 |       2117 |       4294 |           2 |
 
    Ontologies on which KAON2 wins over KAON3:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(ordsk_vs_kaon2, 'KAON2_TIME', 'KAON3_TIME')
    #+END_src
 
@@ -914,7 +915,7 @@
 
 ** SkolemSat vs KAON2
    Comparison of skolemSat and KAON2.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      sk_vs_kaon2 = get_no_timeout('SK_TIME', 'KAON2_TIME', ['AXIOM', 'SK_NFTGD', 'SK_FTGD', 'SK_OUTPUT', 'KAON2_OUTPUT', 'SK_TIME', 'KAON2_TIME'])
      sk_vs_kaon2 = sk_vs_kaon2.sort_values(by="SK_TIME", ascending= False).sort_values(by="KAON2_TIME", ascending= False)
      #print(tabulate(sk_vs_kaon2, headers="keys", tablefmt='orgtbl'))
@@ -923,7 +924,7 @@
    #+RESULTS:
 
    Ontologies on which SkolemSat wins over KAON2:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_vs_kaon2, 'SK_TIME', 'KAON2_TIME')
    #+END_src
 
@@ -983,7 +984,7 @@
    |  669 |  8410 |     7060 |    4880 |      4880 |         8261 |     984 |       1987 |           2 |
 
    Ontologies on which KAON2 wins over SkolemSat:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_vs_kaon2, 'KAON2_TIME', 'SK_TIME')
    #+END_src
 
@@ -1038,7 +1039,7 @@
 
 ** SkolemSat vs Gsat
    Comparison of skolemSat and GSat.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      sk_vs_gsat = get_no_timeout('SK_TIME', 'GSAT_TIME', ['GSAT_NFTGD', 'GSAT_FTGD', 'SK_NFTGD', 'SK_FTGD', 'SK_OUTPUT', 'GSAT_OUTPUT', 'SK_TIME', 'GSAT_TIME'])
      sk_vs_gsat = sk_vs_gsat.sort_values(by="SK_TIME", ascending= False).sort_values(by="GSAT_TIME", ascending= False)
    #+END_src
@@ -1046,7 +1047,7 @@
    #+RESULTS:
 
    Ontologies on which SkolemSat wins over GSat:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_vs_gsat, 'SK_TIME', 'GSAT_TIME')
    #+END_src
 
@@ -1100,7 +1101,7 @@
    |  473 |      42734 |     78977 |    85468 |   78977 |     78977 |       78977 |   20823 |     41970 |           2 |
 
    Ontologies on which GSat wins over SkolemSat:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_vs_gsat, 'GSAT_TIME', 'SK_TIME')
    #+END_src
 
@@ -1149,7 +1150,7 @@
 
 ** GSat vs KAON2
    Comparison of skolemSat and KAON2.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      gsat_vs_kaon2 = get_no_timeout('GSAT_TIME', 'KAON2_TIME', ['AXIOM', 'GSAT_NFTGD', 'GSAT_FTGD', 'GSAT_OUTPUT', 'KAON2_OUTPUT', 'GSAT_TIME', 'KAON2_TIME'])
      gsat_vs_kaon2 = gsat_vs_kaon2.sort_values(by="GSAT_TIME", ascending= False).sort_values(by="KAON2_TIME", ascending= False)
      #print(tabulate(sk_vs_kaon2, headers="keys", tablefmt='orgtbl'))
@@ -1158,7 +1159,7 @@
    #+RESULTS:
 
    Ontologies on which GSat wins over KAON2
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(gsat_vs_kaon2, 'GSAT_TIME', 'KAON2_TIME')
    #+END_src
 
@@ -1221,7 +1222,7 @@
 
 
    Ontologies on which KAON2 wins over GSat:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(gsat_vs_kaon2, 'KAON2_TIME', 'GSAT_TIME')
    #+END_src
 
@@ -1266,7 +1267,7 @@
 
 ** SkolemSat vs HyperSat
    Comparison of skolemSat and HyperSat.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      sk_vs_hyper = get_no_timeout('SK_TIME', 'HYPER_TIME', ['GSAT_NFTGD', 'GSAT_FTGD', 'SK_NFTGD', 'SK_FTGD', 'SK_OUTPUT', 'HYPER_OUTPUT', 'SK_TIME', 'HYPER_TIME'])
      sk_vs_hyper = sk_vs_hyper.sort_values(by="SK_TIME", ascending= False).sort_values(by="HYPER_TIME", ascending= False)
    #+END_src
@@ -1274,7 +1275,7 @@
    #+RESULTS:
 
    Ontologies on which SkolemSat wins over HyperSat:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_vs_hyper, 'SK_TIME', 'HYPER_TIME')
    #+END_src
 
@@ -1283,7 +1284,7 @@
    |------+------------+-----------+----------+---------+-----------+--------------+---------+------------+-------------|
 
    Ontologies on which HyperSat wins over SkolemSat:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_vs_hyper, 'HYPER_TIME', 'SK_TIME')
    #+END_src
 
@@ -1350,7 +1351,7 @@
 
 ** HyperSat vs KAON2
    Comparison of HyperSat and KAON2.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      hyper_vs_kaon2 = get_no_timeout('HYPER_TIME', 'KAON2_TIME', ['AXIOM', 'SK_NFTGD', 'SK_FTGD', 'HYPER_OUTPUT', 'KAON2_OUTPUT', 'HYPER_TIME', 'KAON2_TIME'])
      hyper_vs_kaon2 = hyper_vs_kaon2.sort_values(by="HYPER_TIME", ascending= False).sort_values(by="KAON2_TIME", ascending= False)
      #print(tabulate(hyper_vs_kaon2, headers="keys", tablefmt='orgtbl'))
@@ -1359,7 +1360,7 @@
    #+RESULTS:
 
    Ontologies on which HyperSat wins over KAON2:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(hyper_vs_kaon2, 'HYPER_TIME', 'KAON2_TIME')
    #+END_src
 
@@ -1439,7 +1440,7 @@
    |  522 |  4402 |     8466 |     169 |          169 |         4082 |        597 |       1198 |           2 |
 
    Ontologies on which KAON2 wins over HyperSat:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(hyper_vs_kaon2, 'KAON2_TIME', 'HYPER_TIME')
    #+END_src
 
@@ -1459,7 +1460,7 @@
 
 ** HyperSat vs Gsat
    Comparison of HyperSat and GSat.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      hyper_vs_gsat = get_no_timeout('HYPER_TIME', 'GSAT_TIME', ['GSAT_NFTGD', 'GSAT_FTGD', 'SK_NFTGD', 'SK_FTGD', 'HYPER_OUTPUT', 'GSAT_OUTPUT', 'HYPER_TIME', 'GSAT_TIME'])
      hyper_vs_gsat = hyper_vs_gsat.sort_values(by="HYPER_TIME", ascending= False).sort_values(by="GSAT_TIME", ascending= False)
    #+END_src
@@ -1467,7 +1468,7 @@
    #+RESULTS:
 
    Ontologies on which HyperSat wins over GSat:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(hyper_vs_gsat, 'HYPER_TIME', 'GSAT_TIME')
    #+END_src
 
@@ -1530,7 +1531,7 @@
    |  704 |        355 |       419 |     1404 |     419 |          419 |         419 |       2117 |      4246 |           2 |
 
    Ontologies on which GSat wins over HyperSat:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(hyper_vs_gsat, 'GSAT_TIME', 'HYPER_TIME')
    #+END_src
 
@@ -1544,7 +1545,7 @@
 
 ** HyperSat vs KAON3
    Comparison of HyperSat and KAON3.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      hyper_vs_ord = get_no_timeout('HYPER_TIME', 'KAON3_TIME', ['SK_NFTGD', 'SK_FTGD', 'HYPER_OUTPUT', 'KAON3_OUTPUT', 'HYPER_TIME', 'KAON3_TIME'])
      hyper_vs_ord = hyper_vs_ord.sort_values(by="HYPER_TIME", ascending= False).sort_values(by="KAON3_TIME", ascending= False)
      #print(tabulate(hyper_vs_kaon2, headers="keys", tablefmt='orgtbl'))
@@ -1553,7 +1554,7 @@
    #+RESULTS:
 
    Ontologies on which HyperSat wins over KAON3:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(hyper_vs_ord, 'HYPER_TIME', 'KAON3_TIME')
    #+END_src
 
@@ -1611,7 +1612,7 @@
    |  631 |     1144 |    2452 |         2802 |         2802 |       1435 |       2884 |           2 |
 
    Ontologies on which KAON3 wins over HyperSat:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(hyper_vs_ord, 'KAON3_TIME', 'HYPER_TIME')
    #+END_src
 
@@ -1621,7 +1622,7 @@
 
 ** Winning case summary
 
-   #+BEGIN_src ipython :session mysession :results none
+   #+BEGIN_src jupyter-python :session mysession :results none
      def win_sum(prefixes, factor=2, df_times=df_times):
          data = []
      
@@ -1656,7 +1657,7 @@
    #+END_src
 
    A table showing the number of ontologies on which the algorithm on the row is winning against the column algorithm by a factor 2: 
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(win_sum(['GSAT', 'SSAT', 'SK', 'HYPER', 'HYPER2', 'KAON2']), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -1671,7 +1672,7 @@
    | KAON2  |   59 |  252 |  47 |    10 |     19 |   nan |
    
    The same with a factor 5:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(win_sum(['GSAT', 'SSAT', 'SK', 'HYPER', 'HYPER2', 'KAON2'], 5), headers="keys", tablefmt='orgtbl'))
    #+END_src
    
@@ -1686,7 +1687,7 @@
    | KAON2  |   44 |  190 |  21 |     1 |      7 |   nan |
 
    The same with a factor 10 (one order of magnitude):
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(win_sum(['GSAT', 'SSAT', 'SK', 'HYPER', 'HYPER2', 'KAON2'], 10), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -1701,7 +1702,7 @@
    | KAON2  |   35 |  164 |  15 |     0 |      0 |   nan |
 
    The number of ontologies on which HyperSat wins with an order of magnitude against another algorithm:
-   #+BEGIN_src ipython :session mysession :results output 
+   #+BEGIN_src jupyter-python :session mysession :results output 
       print(len(win_collect(['GSAT', 'SK', 'KAON2'], 10, ['HYPER'])))
    #+END_src
 
@@ -1709,7 +1710,7 @@
    : 84
 
       The number of ontologies on which HyperSat2 wins with an order of magnitude against another algorithm (except HyperSat):
-   #+BEGIN_src ipython :session mysession :results output 
+   #+BEGIN_src jupyter-python :session mysession :results output 
       print(len(win_collect(['GSAT', 'SK', 'KAON2'], 10, ['HYPER2'])))
    #+END_src
 
@@ -1718,7 +1719,7 @@
 
 
    The same with a factor 100 (two orders of magnitude):
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(win_sum(['GSAT', 'SSAT', 'SK', 'HYPER', 'HYPER2', 'KAON2'], 100), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -1733,7 +1734,7 @@
    | KAON2  |   27 |  108 |   1 |     0 |      0 |   nan |
 
       The number of ontologies on which GSat loses with two orders of magnitude against another algorithm:
-   #+BEGIN_src ipython :session mysession :results output 
+   #+BEGIN_src jupyter-python :session mysession :results output 
       print(len(win_collect(['GSAT'], 100, ['HYPER', 'SK', 'KAON2', 'HYPER2'])))
    #+END_src
 
@@ -1741,7 +1742,7 @@
    : 27
 
    Times corresponding to the table with a factor 10
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win10-0.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/win10-0.png
     win_indexes_10 = win_collect(['GSAT', 'SK', 'HYPER', 'KAON2'], 10)
     plot_values(times[ times.index.isin(win_indexes_10)].drop(columns=['KAON3_TIME']), 0)
   #+END_SRC
@@ -1752,7 +1753,7 @@
   [[file:plots/win10-0.png]]
   :end:
 
-    #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win10-1.png
+    #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/win10-1.png
     plot_values(times[ times.index.isin(win_indexes_10)].drop(columns=['KAON3_TIME']), 1)
   #+END_SRC
 
@@ -1763,7 +1764,7 @@
   :end:
 
   Times corresponding to the table with a factor 5 (without those of factor 10)
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win5-0.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/win5-0.png
     win_indexes_5 = win_collect(['GSAT', 'SK', 'HYPER', 'KAON2'], 5)
     plot_values(times[ (~times.index.isin(win_indexes_10)) & (times.index.isin(win_indexes_5)) ].drop(columns=['KAON3_TIME']), 0)
   #+END_SRC
@@ -1775,7 +1776,7 @@
   :end:
 
     Times corresponding to the table with a factor 2 (without those of factor 5 and 10)
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win2-0.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/win2-0.png
     win_indexes_2 = win_collect(['GSAT', 'SK', 'HYPER', 'KAON2'], 2)
     plot_values(times[ (~times.index.isin(win_indexes_10)) & (~times.index.isin(win_indexes_5)) & (times.index.isin(win_indexes_2)) ].drop(columns=['KAON3_TIME']), 0)
   #+END_SRC
@@ -1786,7 +1787,7 @@
   [[file:plots/win2-0.png]]
   :end:
 
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/win2-1.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/win2-1.png
     plot_values(times[ (~times.index.isin(win_indexes_10)) & (~times.index.isin(win_indexes_5)) & (times.index.isin(win_indexes_2)) ].drop(columns=['KAON3_TIME']), 1)
   #+END_SRC
 
@@ -1800,7 +1801,7 @@
   
 
   A manual selection of interesting ontologies
-  #+BEGIN_SRC ipython :results drawer  :session mysession :ipyfile plots/kept-times.png
+  #+BEGIN_SRC jupyter-python :results drawer  :session mysession :ipyfile plots/kept-times.png
     win_indexes_10 = win_collect(['GSAT', 'SK', 'HYPER', 'KAON2'], 10)
     win_indexes_10_similar = [ 13, 16, 17, 18, 19, 151, 283, 368, 369, 370, 386, 389, 396, 398, 415, 417, 421, 426, 532, 574, 575, 595, 597, 666, 677, 676, 700, 772, 788, 789]
     interesting_indexes = [ 353, 632, 394, 454, 498, 553, 719,  ]
@@ -1820,7 +1821,7 @@
 
 * Percent of time spent for evolve applications
 
-  #+BEGIN_SRC ipython :results none :session mysession
+  #+BEGIN_SRC jupyter-python :results none :session mysession
     def get_spec_times(df, prefix, time_type,with_timeout=False):
         df_sksat_evol = df[[prefix + 'NFTGD', prefix + 'FTGD', prefix + 'OUTPUT', time_type, prefix + 'TIME']]
         df_sksat_evol = select_interesting(df_sksat_evol, prefix + 'NFTGD', prefix + 'FTGD')
@@ -1841,14 +1842,14 @@
 
   
 ** GSat
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      gsat_evol_times = get_spec_times(df_gsat_data, 'GSAT_', 'EVOL_TIME')
    #+END_src
 
    #+RESULTS:
 
    Below, you can find the percent of time spent for evolving TGD at different quantiles.
-   #+BEGIN_src ipython :session mysession :results drawer
+   #+BEGIN_src jupyter-python :session mysession :results drawer
      gsat_evol_times['PERCENT'].quantile([.1, .25, .5, .75, .9])
    #+END_src
 
@@ -1869,7 +1870,7 @@
 ** SkolemSat
 
    Below, you can find the percent of time spent for evolving TGD at different quantiles.
-   #+BEGIN_src ipython :session mysession :results drawer
+   #+BEGIN_src jupyter-python :session mysession :results drawer
      sk_evol_times = get_spec_times(df_sksat_data, 'SK_', 'EVOL_TIME')
      #sk_sumb_times = get_spec_times(df_sksat_data, 'SK_', 'SUMB_TIME',)
      sk_evol_times['PERCENT'].quantile([.1, .25, .5, .75, .9])
@@ -1888,7 +1889,7 @@
    #+END_EXAMPLE
    :end:
 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(sk_evol_times.sort_values(by="PERCENT", ascending= False), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -2052,7 +2053,7 @@
 * Intermediate TGDs Analysis
 ** SkolemSat and KAON3 derived TGDs
    We compare the number of TGDs derived by SkolemSat and by KAON3, by showing the ontologies where KAON3 derives twice as much TGD than SkolemSat. 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      kaon3_tgds=df_kaon3_data[['NEW_FTGD_NB', 'NEW_NFTGD_NB', 'NEW_OUTPUT_SIZE', 'KAON3_OUTPUT']]
      sksat_tgds=df_sksat_data[['NEW_FTGD_NB', 'NEW_NFTGD_NB', 'NEW_OUTPUT_SIZE', 'SK_OUTPUT']]
      
@@ -2238,7 +2239,7 @@
    |  500 |     3242 |    1988 |            634497 |         634495 |           1 |     219705 |      16479 |  216717 |
 
    The table shows the ontologies, where the SkolemSat derives twice as much TGD than KAON3 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      derived_tgds = pd.DataFrame([])
      derived_tgds['NFTGD_NB'] = df_sksat_data['SK_NFTGD']
      derived_tgds['FTGD_NB'] = df_sksat_data['SK_FTGD']
@@ -2253,13 +2254,13 @@
    | NAME | NFTGD_NB | FTGD_NB | KAON3_DERIVED_TGD | SKSAT_DERIVED_TGD | SIZE_FACTOR |
    |------+----------+---------+-------------------+-------------------+-------------|
 ** GSat
-         #+BEGIN_src ipython :session mysession  :results none
+         #+BEGIN_src jupyter-python :session mysession  :results none
         def color_timeout(df, color):
             return np.where(df['TIME'] == TIMEOUT, '#0f0f0f00', color)
    #+END_src
 
      Scatter plot of the time in ms in function of the number of intermediate TGDs.
-    #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/gsat_intermediate_time.png
+    #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/gsat_intermediate_time.png
        gsat_intermediate = pd.DataFrame([])
        gsat_intermediate['INPUT'] = (df_gsat_data['GSAT_FTGD'] + df_gsat_data['GSAT_NFTGD']).apply(pd.to_numeric)
        gsat_intermediate['NEW_TGD'] = (df_gsat_data['NEW_FTGD_NB'] + df_gsat_data['NEW_NFTGD_NB']).apply(pd.to_numeric)
@@ -2279,7 +2280,7 @@
 ** SkolemSat
 
    Scatter plot of the time in ms in function of the number of intermediate TGDs.
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/sk_intermediate_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/sk_intermediate_time.png
      sk_intermediate = pd.DataFrame([])
      sk_intermediate['NEW_TGD'] = (df_sksat_data['NEW_FTGD_NB'] + df_sksat_data['NEW_NFTGD_NB']).apply(pd.to_numeric)
      sk_intermediate['TIME'] = times['SK_TIME']
@@ -2298,7 +2299,7 @@
 ** HyperSat
 
    Scatter plot of the time in ms in function of the number of intermediate TGDs.
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/hyper_intermediate_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/hyper_intermediate_time.png
      hyper_intermediate = pd.DataFrame([])
      hyper_intermediate['NEW_TGD'] = (df_hyper_data['NEW_FTGD_NB'] + df_hyper_data['NEW_NFTGD_NB']).apply(pd.to_numeric)
      hyper_intermediate['TIME'] = times['HYPER_TIME']
@@ -2317,7 +2318,7 @@
 ** KAON3
 
    Scatter plot of the time in ms in function of the number of intermediate TGDs.
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/kaon3_intermediate_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/kaon3_intermediate_time.png
      kaon3_intermediate = pd.DataFrame([])
      kaon3_intermediate['NEW_TGD'] = (df_kaon3_data['NEW_FTGD_NB'] + df_kaon3_data['NEW_NFTGD_NB']).apply(pd.to_numeric)
      kaon3_intermediate['TIME'] = times['KAON3_TIME']
@@ -2336,7 +2337,7 @@
 ** KAON2
 
    Scatter plot of the time in ms in function of the number of intermediate TGDs.
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/kaon2_intermediate_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/kaon2_intermediate_time.png
      kaon2_intermediate = pd.DataFrame([])
      kaon2_intermediate['NEW_TGD'] = (df_kaon2_data['NEW_FTGD_NB'] + df_kaon2_data['NEW_NFTGD_NB']).apply(pd.to_numeric)
      kaon2_intermediate['TIME'] = times['KAON2_TIME']
@@ -2356,7 +2357,7 @@
 ** Comparison
 
    Scatter plot of the time in ms in function of the number of intermediate TGDs.
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/all_intermediate_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/all_intermediate_time.png
      ax_inter = gsat_intermediate.plot.scatter(x='NEW_TGD', y='TIME', figsize=(15,6), label='GSAT')
      ax_inter.set_yscale('log')
      ax_inter.set_xscale('log')
@@ -2374,7 +2375,7 @@
    :end:
 
    Scatter plot the number of intermediate TGDs in function of the size of the input (full and non-full TGDs in GSat). The size of the dots varies with the saturation time.
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/all_input_intermediate.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/all_input_intermediate.png
      import numpy as np
      # create time log
      def time_sscale(df):
@@ -2415,7 +2416,7 @@
 ** SkolemSat
 
    Scatter plot of the subsumption time in ms in function of the number of intermediate TGDs. The subsumption is sub-linear.
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/sk_intermediate_sumb_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/sk_intermediate_sumb_time.png
      sk_intermediate = pd.DataFrame([])
      sk_intermediate['NEW_TGD'] = (df_sksat_data['NEW_FTGD_NB'] + df_sksat_data['NEW_NFTGD_NB']).apply(pd.to_numeric)
      sk_intermediate['Y'] = sk_intermediate['NEW_TGD']
@@ -2438,7 +2439,7 @@
 ** GSat
 
    Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/gsat_input_time_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/gsat_input_time_time.png
      gsat_input_time = pd.DataFrame([])
      gsat_input_time['INPUT'] = (df_gsat_data['GSAT_FTGD'] + df_gsat_data['GSAT_NFTGD']).apply(pd.to_numeric)
      gsat_input_time['TIME'] = times['GSAT_TIME']
@@ -2457,7 +2458,7 @@
 ** SkolemSat
 
    Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/sk_input_time_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/sk_input_time_time.png
      sk_input_time = pd.DataFrame([])
      sk_input_time['INPUT'] = (df_sksat_data['SK_FTGD'] + df_sksat_data['SK_NFTGD']).apply(pd.to_numeric)
      sk_input_time['TIME'] = times['SK_TIME']
@@ -2476,7 +2477,7 @@
 ** HyperSat
 
    Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/hyper_input_time_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/hyper_input_time_time.png
      hyper_input_time = pd.DataFrame([])
      hyper_input_time['INPUT'] = (df_sksat_data['SK_FTGD'] + df_sksat_data['SK_NFTGD']).apply(pd.to_numeric)
      hyper_input_time['TIME'] = times['HYPER_TIME']
@@ -2495,7 +2496,7 @@
 ** KAON3
 
    Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/kaon3_input_time_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/kaon3_input_time_time.png
      kaon3_input_time = pd.DataFrame([])
      kaon3_input_time['INPUT'] = (df_sksat_data['SK_FTGD'] + df_sksat_data['SK_NFTGD']).apply(pd.to_numeric)
      kaon3_input_time['TIME'] = times['KAON3_TIME']
@@ -2515,7 +2516,7 @@
 
    Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full after skolemization)
 
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/kaon2_input_time_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/kaon2_input_time_time.png
      kaon2_input_time = pd.DataFrame([])
      kaon2_input_time['INPUT'] = (df_sksat_data['SK_FTGD'] + df_sksat_data['SK_NFTGD']).apply(pd.to_numeric)
      kaon2_input_time['TIME'] = times['KAON2_TIME']
@@ -2535,7 +2536,7 @@
 ** Comparison
 
   Scatter plot of the time in ms in function of the size of the input i.e. number of TGDs (full and non-full for GSat)
-   #+BEGIN_src ipython :session mysession  :results drawer :ipyfile plots/all_input_time.png
+   #+BEGIN_src jupyter-python :session mysession  :results drawer :ipyfile plots/all_input_time.png
      ax = gsat_input_time.plot.scatter(x='INPUT', y='TIME', figsize=(15,6), label='GSAT')
      ax.set_yscale('log')
      ax.set_xscale('log')
@@ -2561,7 +2562,7 @@
 ** Output summary
 
    The following statistics are performed on the ontologies where no algorithm reaches the timeout. Their number is:
-     #+BEGIN_SRC ipython :session mysession :results output
+     #+BEGIN_SRC jupyter-python :session mysession :results output
        import os
        def get_output_stats(stats_file, prefix):
            output_stats_file = os.path.dirname(stats_file) + '/output_stats.csv'
@@ -2613,23 +2614,117 @@
      #+RESULTS:
      : 334
 
-  #+BEGIN_src ipython :session mysession :results none
-    import numpy as np
-    comparing_pref='KAON2'
-    df = get_output_value_of_prefixes('COUNT', all_output_prefixes, all_output_stats_nt)
-    for pref in all_output_prefixes:
-        if pref != comparing_pref:
-            df[pref + '_abs'] = np.abs(df[pref] - df[comparing_pref]) / df[comparing_pref]
-            df[pref] = (df[pref] - df[comparing_pref]) / df[comparing_pref]
-    
-    df = df.sort_values(by="GSAT_abs", ascending=False)
-    df = pd.DataFrame(df.mean().to_frame().T, columns=df.columns)
-    print(tabulate(df, headers="keys", tablefmt='orgtbl'))
+     #+BEGIN_src jupyter-python :session mysession
+       input_stats_file = '../../rules/ISG-guarded_kaon2/output_stats.csv'
+       input_stats = pd.read_csv(input_stats_file, index_col='NAME')
+       boris_stats = pd.DataFrame([])
+       stats_columns = ['NFTGD', 'FTGD', 'TIME', 'OUTPUT']
+       output_columns = ['BODY_MAX']
+       boris_prefixes = ['GSAT', 'SK'] #, 'HYPER2'
+
+       def pref_name(pref):
+           if pref == 'HYPER2':
+               return 'HY'
+           if pref == 'GSAT':
+               return 'EX';
+           return pref
+
+       boris_stats['IBODY_MAX'] = input_stats['BODY_MAX']
+
+
+       for pref in boris_prefixes:
+           for  sc in stats_columns:
+               psc = pref + '_' + sc
+               if psc in df_interesting.columns :
+                   boris_stats[pref_name(pref) + '_' + sc] = df_interesting[psc]
+           for oc in output_columns:
+               boris_stats[pref_name(pref) + '_' + oc] = all_output_stats_nt[pref + '_' + oc]
+
+           boris_stats[pref_name(pref) + '_BMDEV'] = boris_stats[pref_name(pref) + '_BODY_MAX']  / boris_stats['IBODY_MAX']
+        
+           if pref == 'GSAT':
+               boris_stats[pref_name(pref) + '_DDEV'] = boris_stats[pref_name(pref) + '_OUTPUT']  / boris_stats[pref_name(pref) + '_FTGD']
+               boris_stats[pref_name(pref) + '_IDEV'] = boris_stats[pref_name(pref) + '_OUTPUT']  / (boris_stats[pref_name(pref) + '_FTGD'] + boris_stats[pref_name(pref) + '_NFTGD'])
+        
+           else:
+               boris_stats[pref_name(pref) + '_DDEV'] = boris_stats[pref_name(pref) + '_OUTPUT']  / boris_stats['SK_FTGD']
+               boris_stats[pref_name(pref) + '_IDEV'] = boris_stats[pref_name(pref) + '_OUTPUT']  / (boris_stats['SK_FTGD'] + boris_stats['SK_NFTGD'])
+
+
+
+       select_without_timeout(boris_stats.sort_values(by='EX_BMDEV', ascending=False).head(30), boris_prefixes)
+     #+END_src
+
+     #+RESULTS:
+     | NAME | IBODY_MAX | EX_NFTGD | EX_FTGD | EX_TIME | EX_OUTPUT | EX_BODY_MAX | EX_BMDEV | EX_DDEV |  EX_IDEV | SK_NFTGD | SK_FTGD | SK_TIME | SK_OUTPUT | SK_BODY_MAX | SK_BMDEV | SK_DDEV |  SK_IDEV |
+     |------+-----------+----------+---------+---------+-----------+-------------+----------+---------+----------+----------+---------+---------+-----------+-------------+----------+---------+----------|
+     |    1 |         2 |      254 |    2468 |   27380 |      2523 |           2 |        1 | 1.02229 | 0.926892 |      462 |    2468 |     517 |      2523 |           2 |        1 | 1.02229 | 0.861092 |
+     |  598 |         1 |        4 |       1 |      50 |         1 |           1 |        1 |       1 |      0.2 |        8 |       1 |      50 |         1 |           1 |        1 |       1 | 0.111111 |
+     |  596 |         1 |      181 |    2022 |     270 |      2022 |           1 |        1 |       1 | 0.917839 |      362 |    2022 |     266 |      2022 |           1 |        1 |       1 | 0.848154 |
+     |  595 |         3 |      219 |    2703 |    3844 |     21135 |           3 |        1 | 7.81909 |  7.23306 |      438 |    2703 |    5917 |     21135 |           3 |        1 | 7.81909 |  6.72875 |
+     |  594 |         1 |      177 |    1984 |     262 |      1984 |           1 |        1 |       1 | 0.918093 |      354 |    1984 |     256 |      1984 |           1 |        1 |       1 | 0.848589 |
+     |  593 |         1 |      192 |    2049 |     255 |      2049 |           1 |        1 |       1 | 0.914324 |      384 |    2049 |     277 |      2049 |           1 |        1 |       1 |  0.84217 |
+     |  592 |         1 |      106 |    3414 |     472 |      3414 |           1 |        1 |       1 | 0.969886 |      212 |    3414 |     316 |      3414 |           1 |        1 |       1 | 0.941533 |
+     |  591 |         1 |       69 |    2529 |     288 |      2529 |           1 |        1 |       1 | 0.973441 |      138 |    2529 |     263 |      2529 |           1 |        1 |       1 | 0.948256 |
+     |  590 |         2 |       16 |     605 |    1738 |       613 |           2 |        1 | 1.01322 | 0.987118 |       26 |     605 |     227 |       613 |           2 |        1 | 1.01322 | 0.971474 |
+     |  589 |         1 |      112 |     939 |     224 |       939 |           1 |        1 |       1 | 0.893435 |      224 |     939 |     211 |       939 |           1 |        1 |       1 | 0.807395 |
+     |  582 |         3 |      154 |     620 |     385 |       648 |           3 |        1 | 1.04516 | 0.837209 |      310 |     622 |     420 |       711 |           3 |        1 | 1.14309 | 0.762876 |
+     |  581 |         1 |        5 |     316 |     109 |       316 |           1 |        1 |       1 | 0.984424 |       10 |     316 |     120 |       316 |           1 |        1 |       1 | 0.969325 |
+     |  580 |         1 |        8 |     272 |     104 |       272 |           1 |        1 |       1 | 0.971429 |       16 |     272 |     105 |       272 |           1 |        1 |       1 | 0.944444 |
+     |  577 |         1 |       15 |      16 |      71 |        16 |           1 |        1 |       1 | 0.516129 |       30 |      16 |      69 |        16 |           1 |        1 |       1 | 0.347826 |
+     |  576 |         1 |       26 |      65 |     209 |        89 |           1 |        1 | 1.36923 | 0.978022 |       52 |      66 |     136 |        90 |           1 |        1 | 1.36364 | 0.762712 |
+     |  575 |         3 |      479 |     700 |    2001 |      2255 |           3 |        1 | 3.22143 |  1.91264 |      958 |     700 |   25045 |      2255 |           3 |        1 | 3.22143 |  1.36007 |
+     |  574 |         3 |      478 |     736 |    1973 |      2462 |           3 |        1 | 3.34511 |  2.02801 |      956 |     736 |   27004 |      2462 |           3 |        1 | 3.34511 |  1.45508 |
+     |  571 |         1 |       39 |    1357 |     205 |      1357 |           1 |        1 |       1 | 0.972063 |       78 |    1357 |     188 |      1357 |           1 |        1 |       1 | 0.945645 |
+     |  570 |         1 |       38 |    1102 |     191 |      1102 |           1 |        1 |       1 | 0.966667 |       76 |    1102 |     173 |      1102 |           1 |        1 |       1 | 0.935484 |
+     |  597 |         3 |      223 |    2742 |    3809 |     21174 |           3 |        1 |  7.7221 |  7.14132 |      446 |    2742 |    6044 |     21174 |           3 |        1 |  7.7221 |  6.64178 |
+     |  600 |         1 |      177 |    1983 |     248 |      1983 |           1 |        1 |       1 | 0.918056 |      354 |    1983 |     244 |      1983 |           1 |        1 |       1 | 0.848524 |
+     |  566 |         3 |     2505 |   49982 |   12017 |     50009 |           3 |        1 | 1.00054 | 0.952788 |     4990 |   49983 |    5105 |     50011 |           3 |        1 | 1.00056 | 0.909738 |
+     |  605 |         1 |       84 |     650 |     258 |       650 |           1 |        1 |       1 | 0.885559 |      168 |     650 |     182 |       650 |           1 |        1 |       1 | 0.794621 |
+     |  667 |         1 |     1181 |     506 |     523 |       506 |           1 |        1 |       1 | 0.299941 |     2362 |     506 |     432 |       506 |           1 |        1 |       1 |  0.17643 |
+     |  666 |         3 |      269 |    2153 |    3704 |     20971 |           3 |        1 | 9.74036 |  8.65855 |      538 |    2153 |    5699 |     20971 |           3 |        1 | 9.74036 |  7.79301 |
+     |  665 |         3 |      299 |    2975 |    4222 |     21407 |           3 |        1 | 7.19563 |  6.53849 |      598 |    2975 |    6324 |     21407 |           3 |        1 | 7.19563 |  5.99132 |
+     |  657 |         3 |     1642 |    2580 |    6663 |      3405 |           3 |        1 | 1.31977 |  0.80649 |     3284 |    2580 |   31145 |      3405 |           3 |        1 | 1.31977 | 0.580662 |
+     |  649 |         1 |      663 |     284 |     411 |       284 |           1 |        1 |       1 | 0.299894 |     1326 |     284 |     313 |       284 |           1 |        1 |       1 | 0.176398 |
+     |  648 |         1 |        4 |     232 |      99 |       232 |           1 |        1 |       1 | 0.983051 |        8 |     232 |     101 |       232 |           1 |        1 |       1 | 0.966667 |
+     |  646 |         1 |     2532 |    2301 |    1481 |      2301 |           1 |        1 |       1 | 0.476102 |     5064 |    2301 |     985 |      2301 |           1 |        1 |       1 | 0.312424 |
+
+     #+BEGIN_src jupyter-python :session mysession 
+all_output_stats_nt.head(10)
+     #+END_src
+
+     #+RESULTS:
+     | NAME | GSAT_BODY_AVG | GSAT_BODY_MAX | GSAT_HEAD_AVG | GSAT_HEAD_MAX | GSAT_COUNT | GSAT_NEW_OUTPUT_SIZE | SK_BODY_AVG | SK_BODY_MAX | SK_HEAD_AVG | SK_HEAD_MAX | SK_COUNT | SK_NEW_OUTPUT_SIZE | HYPER2_BODY_AVG | HYPER2_BODY_MAX | HYPER2_HEAD_AVG | HYPER2_HEAD_MAX | HYPER2_COUNT | HYPER2_NEW_OUTPUT_SIZE | KAON2_BODY_AVG | KAON2_BODY_MAX | KAON2_HEAD_AVG | KAON2_HEAD_MAX | KAON2_COUNT |
+     |------+---------------+---------------+---------------+---------------+------------+----------------------+-------------+-------------+-------------+-------------+----------+--------------------+-----------------+-----------------+-----------------+-----------------+--------------+------------------------+----------------+----------------+----------------+----------------+-------------|
+     |    1 |       1.01704 |             2 |             1 |             1 |       2523 |                   55 |     1.01704 |           2 |           1 |           1 |     2523 |                 55 |         1.01704 |               2 |               1 |               1 |         2523 |                     55 |        1.01378 |              2 |       0.999617 |              1 |        2612 |
+     |    2 |       1.00272 |             2 |             1 |             1 |       1102 |                  161 |     1.00272 |           2 |           1 |           1 |     1102 |                161 |         1.00272 |               2 |               1 |               1 |         1102 |                    161 |        1.00234 |              2 |              1 |              1 |        1281 |
+     |    6 |             1 |             1 |             1 |             1 |        165 |                    0 |           1 |           1 |           1 |           1 |      165 |                  0 |               1 |               1 |               1 |               1 |          165 |                      0 |              1 |              1 |              1 |              1 |        1213 |
+     |    7 |       1.02976 |             2 |             1 |             1 |        168 |                    0 |     1.02976 |           2 |           1 |           1 |      168 |                  0 |         1.02976 |               2 |               1 |               1 |          168 |                      0 |        1.02907 |              2 |              1 |              1 |         172 |
+     |   12 |       1.12274 |             2 |             1 |             1 |        277 |                    0 |     1.12274 |           2 |           1 |           1 |      277 |                  0 |         1.12274 |               2 |               1 |               1 |          277 |                      0 |        1.11111 |              2 |              1 |              1 |         279 |
+     |   13 |       1.07007 |             4 |             1 |             1 |       1370 |                  105 |     1.06987 |           4 |           1 |           1 |     1374 |                107 |         1.06987 |               4 |               1 |               1 |         1374 |                    107 |        1.05689 |              4 |       0.998541 |              1 |        1371 |
+     |   15 |       1.08708 |             3 |             1 |             1 |        356 |                   11 |     1.08708 |           3 |           1 |           1 |      356 |                 11 |         1.08708 |               3 |               1 |               1 |          356 |                     11 |        1.07082 |              3 |              1 |              1 |         353 |
+     |   16 |       1.07618 |             4 |             1 |             1 |       1142 |                   87 |     1.07605 |           4 |           1 |           1 |     1144 |                 88 |         1.07605 |               4 |               1 |               1 |         1144 |                     88 |        1.06108 |              4 |       0.998255 |              1 |        1146 |
+     |   17 |       1.06883 |             4 |             1 |             1 |       1264 |                   87 |     1.06872 |           4 |           1 |           1 |     1266 |                 88 |         1.06872 |               4 |               1 |               1 |         1266 |                     88 |        1.05342 |              4 |       0.998429 |              1 |        1273 |
+     |   18 |       1.07422 |             4 |             1 |             1 |       1253 |                  126 |      1.0741 |           4 |           1 |           1 |     1255 |                127 |          1.0741 |               4 |               1 |               1 |         1255 |                    127 |        1.05962 |              4 |        0.99841 |              1 |        1258 |
+
+     
+     #+BEGIN_src jupyter-python :session mysession :results none
+           import numpy as np
+           comparing_pref='KAON2'
+           df = get_output_value_of_prefixes('COUNT', all_output_prefixes, all_output_stats_nt)
+           for pref in all_output_prefixes:
+               if pref != comparing_pref:
+                   df[pref + '_abs'] = np.abs(df[pref] - df[comparing_pref]) / df[comparing_pref]
+                   df[pref] = (df[pref] - df[comparing_pref]) / df[comparing_pref]
+
+           df = df.sort_values(by="GSAT_abs", ascending=False)
+           df = pd.DataFrame(df.mean().to_frame().T, columns=df.columns)
+           print(tabulate(df, headers="keys", tablefmt='orgtbl'))
     #+END_src
 
      
      The number of ontologies with a empty saturation:
-    #+BEGIN_src ipython :session mysession :results output
+    #+BEGIN_src jupyter-python :session mysession :results output
       print(len(all_output_stats_nt[all_output_stats_nt['GSAT_NEW_OUTPUT_SIZE'] == 0]))
     #+END_src
 
@@ -2638,7 +2733,7 @@
 
      
      The maximal number of atoms in the body among all the output rules on every ontology:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_max_of_prefixes('BODY_MAX'), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2648,7 +2743,7 @@
     | 0 |    4 |  4 |      4 |     4 |
 
      The same including the ontology where some algorithms reach the timeout.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_max_of_prefixes('BODY_MAX', all_output_prefixes, all_output_stats),  headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2659,7 +2754,7 @@
 
     
     The maximal among the ontologies of the average of atoms in the body  across the output rules :
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_max_of_prefixes('BODY_AVG'), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2669,7 +2764,7 @@
     | 0 |    2 |  2 |      2 |     2 |
 
     The maximal number of atoms in the head among all the output rules on every ontology:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_max_of_prefixes('HEAD_MAX'), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2679,7 +2774,7 @@
     | 0 |    1 |  1 |      1 |     1 |
 
     The maximal among the ontologies of the average of atoms in the head  across the output rules :
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_max_of_prefixes('HEAD_AVG'), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2689,7 +2784,7 @@
     | 0 |    1 |  1 |      1 |     1 |
 
     The maximal number of output rules on every ontology:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_max_of_prefixes('COUNT'), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2699,7 +2794,7 @@
     | 0 | 68461 | 68461 |  68461 | 61964 |
 
      The same including the ontology where some algorithms reach the timeout.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_max_of_prefixes('COUNT', all_output_prefixes, all_output_stats), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2709,7 +2804,7 @@
     | 0 | 309978 | 170887 | 135961 | 61964 |
 
     The average of output rules on every ontology:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_mean_of_prefixes('COUNT'), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2719,7 +2814,7 @@
     | 0 | 4095.78 | 4096.2 | 4096.2 | 4069.2 |
 
     The median of output rules on every ontology:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_median_of_prefixes('COUNT'), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2730,7 +2825,7 @@
 
 
     The maximal number of new derived datalog rules in the output rules on every ontology:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_max_of_prefixes('NEW_OUTPUT_SIZE', ['GSAT', 'SK', 'HYPER2']), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2741,7 +2836,7 @@
 
     
     The average of new output rules on every ontology:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_mean_of_prefixes('NEW_OUTPUT_SIZE', ['GSAT', 'SK', 'HYPER2']), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2751,7 +2846,7 @@
     | 0 | 954.111 | 954.401 | 954.401 |
 
     The average of new output rules on every ontology with no trivial saturation:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_mean_of_prefixes('NEW_OUTPUT_SIZE', ['GSAT', 'SK', 'HYPER2'], all_output_stats_nt[all_output_stats_nt['GSAT_NEW_OUTPUT_SIZE'] != 0]), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2762,7 +2857,7 @@
 
 
     The median of new output rules on every ontology with no trivial saturation:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_median_of_prefixes('NEW_OUTPUT_SIZE', ['GSAT', 'SK', 'HYPER2'], all_output_stats_nt[all_output_stats_nt['GSAT_NEW_OUTPUT_SIZE'] != 0]), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -2775,7 +2870,7 @@
 ** Output size comparison
 
    Below we compare the number of the outputted full TGDs of the different algorithm, we remove from this number of full TGDs in the input without transformation.
-   #+BEGIN_src ipython :session mysession :results none
+   #+BEGIN_src jupyter-python :session mysession :results none
      def create_output_factor(name1, data1, name2, data2):
          derived_tgds = pd.DataFrame([])
 
@@ -2799,7 +2894,7 @@
   
 *** Between GSat and SkolemSat
     Cases where GSat output is larger than the one of SkolemSat
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('GSAT', df_gsat_data, 'SK', df_sksat_data)
     #+END_src
 
@@ -2809,7 +2904,7 @@
 
   
     Cases where SkolemSat output is larger than the one of GSat
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('SK', df_sksat_data, 'GSAT', df_gsat_data) 
     #+END_src
 
@@ -2822,7 +2917,7 @@
    
 *** Between GSat and KAON3
     Cases where GSat output is larger
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('GSAT', df_gsat_data, 'KAON3', df_kaon3_data) 
     #+END_src
 
@@ -2831,7 +2926,7 @@
     |------+------------+-----------+-----------------+------------------+-------------+-----------+------------|
 
     Cases where KAON3 output is larger
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('KAON3', df_kaon3_data, 'GSAT', df_gsat_data)
     #+END_src
 
@@ -2844,7 +2939,7 @@
 *** Between GSat and KAON2
 
     Cases where GSat output is larger
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('GSAT', df_gsat_data, 'KAON2', df_kaon2_data) 
     #+END_src
 
@@ -2879,7 +2974,7 @@
     |  396 |        597 |      1153 |             619 |              296 |         2.1 |      1744 |       3067 |
 
     Cases where KAON2 output is larger
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('KAON2', df_kaon2_data, 'GSAT', df_gsat_data)
     #+END_src
 
@@ -3094,7 +3189,7 @@
 *** Between GSat and HyperSat
 
     Cases where GSat output is larger
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('GSAT', df_gsat_data, 'HYPER', df_hyper_data) 
     #+END_src
 
@@ -3103,7 +3198,7 @@
     |------+------------+-----------+-----------------+------------------+-------------+-----------+------------|
 
     Cases where HyperSat output is larger
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('HYPER', df_hyper_data, 'GSAT', df_gsat_data)
     #+END_src
 
@@ -3116,7 +3211,7 @@
 *** Between SkolemSat and KAON2
 
     Cases where SkolemSat output is larger 
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('SK', df_sksat_data, 'KAON2', df_kaon2_data) 
     #+END_src
 
@@ -3150,7 +3245,7 @@
     |  396 |        597 |      1153 |           619 |              296 |         2.1 |   14571 |       3067 |
 
     Cases where KAON2 output is larger
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('KAON2', df_kaon2_data, 'SK', df_sksat_data)
     #+END_src
 
@@ -3364,7 +3459,7 @@
 
 *** Between KAON3 and KAON2
     Cases where KAON3 output is larger
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('KAON3', df_kaon3_data, 'KAON2', df_kaon2_data) 
     #+END_src
 
@@ -3397,7 +3492,7 @@
     |  396 |        597 |      1153 |              619 |              296 |         2.1 |      15637 |       3067 |
 
     Cases where KAON2 output is larger
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_output_factor('KAON2', df_kaon2_data, 'KAON3', df_kaon3_data)
     #+END_src
 
@@ -3612,7 +3707,7 @@
 * All Statistics
 
   All the statistics:
-  #+BEGIN_src ipython :session mysession :results output raw
+  #+BEGIN_src jupyter-python :session mysession :results output raw
     print(tabulate(df_interesting.drop(columns=['KAON3_NFTGD', 'KAON3_FTGD']), headers="keys", tablefmt='orgtbl'))
   #+END_src
 
@@ -4052,7 +4147,7 @@
 
   The conclusion of these experiments is that enabling the subsumption helps all the algorithms except SkolemSat and KAON3.
 
-  #+BEGIN_src ipython :session mysession :results none 
+  #+BEGIN_src jupyter-python :session mysession :results none 
     import pandas as pd
     from tabulate import tabulate
     
@@ -4096,7 +4191,7 @@
 *** All the algorithm reach the timeout
    The following table contains the rows where all the algorithm executions reach the timeout sorted by the input size. Their number:
 
-   #+BEGIN_src ipython :session mysession :results output example
+   #+BEGIN_src jupyter-python :session mysession :results output example
      all_timeout_ns = get_all_timeout(['GSAT', 'SK', 'HYPER2'], df_times_ns)
      any_notimeout_ns = df_times_ns[ ~df_times_ns.index.isin(all_timeout_ns.index) ]
      
@@ -4106,7 +4201,7 @@
    #+RESULTS:
    : 47
 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(all_timeout_ns, headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -4164,7 +4259,7 @@
 *** Timeout summary
 
       The number of ontologies on which two algorithms reach the timeout simultaneously
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(timeout_intersection(['GSAT', 'SK', 'HYPER2'], any_notimeout_ns), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -4175,7 +4270,7 @@
    | SK    |    0 |  0 |     0 |
    | HYPER2 |    8 |  0 |     8 |
 
-    #+BEGIN_src ipython :session mysession :results output raw :exports none
+    #+BEGIN_src jupyter-python :session mysession :results output raw :exports none
      print(tabulate(timeout_diff(['GSAT', 'SK', 'HYPER2'], any_notimeout_ns), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -4189,7 +4284,7 @@
 
 *** GSat
     Cases, where GSat reaches timeout and GSat without subsumption is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_gsat, df_gsat_ns.drop(columns=['GSAT_FTGD', 'GSAT_NFTGD']).add_prefix('NS_')], axis=1)
       d = d[ (d['GSAT_TIME'] == 'TIMEOUT') & (d['NS_GSAT_TIME'] != 'TIMEOUT')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -4200,7 +4295,7 @@
     |------+------------+-----------+-------------+-----------+----------------+--------------|
 
     Cases, where GSat without subsumption reaches timeout and GSat is not.
-        #+BEGIN_src ipython :session mysession :results output 
+        #+BEGIN_src jupyter-python :session mysession :results output 
       d = pd.concat([df_gsat, df_gsat_ns.drop(columns=['GSAT_FTGD', 'GSAT_NFTGD']).add_prefix('NS_')], axis=1)
       d = d[ (d['GSAT_TIME'] != 'TIMEOUT') & (d['NS_GSAT_TIME'] == 'TIMEOUT')]
       print(len(d))       
@@ -4209,7 +4304,7 @@
     #+RESULTS:
     : 72
 
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
     #+END_src
 
@@ -4291,7 +4386,7 @@
 
 *** SkolemSat
     Cases, where SkolemSat reaches timeout and SkolemSat without subsumption is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_sksat, df_sksat_ns.drop(columns=['SK_FTGD', 'SK_NFTGD']).add_prefix('NS_'), df_kaon2.drop(columns=['AXIOM'])], axis=1)
       d = d[ (d['SK_TIME'] == 'TIMEOUT') & (d['NS_SK_TIME'] != 'TIMEOUT')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -4312,7 +4407,7 @@
     |  535 |    16958 |    4621 |      4621 | TIMEOUT |         7057 |     131614 |        10681 | 442660     |
 
     Cases, where SkolemSat without subsumption reaches timeout and SkolemSat is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_sksat, df_sksat_ns.drop(columns=['SK_FTGD', 'SK_NFTGD']).add_prefix('NS_'), df_kaon2.drop(columns=['AXIOM'])], axis=1)
       d = d[ (d['SK_TIME'] != 'TIMEOUT') & (d['NS_SK_TIME'] == 'TIMEOUT')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -4330,7 +4425,7 @@
 
 *** KAON3                                                          :noexport:
     Cases, where KAON3 reaches timeout and KAON3 without subsumption is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_kaon3, df_kaon3_ns.drop(columns=['NS_KAON3_NFTGD','NS_KAON3_FTGD']), df_kaon2.drop(columns=['AXIOM'])], axis=1)
       d = d[ (d['KAON3_TIME'] == 'TIMEOUT') & (d['NS_KAON3_TIME'] != 'TIMEOUT')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -4374,7 +4469,7 @@
     |  766 |         436 |       1845 |        15063 | TIMEOUT    |           20373 |          2348 |         2044 |        526 |
 
     Cases, where KAON3 without subsumption reaches timeout and KAON3 is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_kaon3, df_kaon3_ns.drop(columns=['NS_KAON3_NFTGD','NS_KAON3_FTGD']), df_kaon2.drop(columns=['AXIOM'])], axis=1)
       d = d[ (d['KAON3_TIME'] != 'TIMEOUT') & (d['NS_KAON3_TIME'] == 'TIMEOUT')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -4395,7 +4490,7 @@
 
 *** Hyper2Sat
     Cases, where Hyper2Sat reaches timeout and Hyper2Sat without subsumption is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_hyper2, df_hyper2_ns.add_prefix('NS_')], axis=1)
       d = d[ (d['HYPER2_TIME'] == 'TIMEOUT') & (d['NS_HYPER2_TIME'] != 'TIMEOUT') & (d['NS_HYPER2_TIME'] != 'ERROR')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -4406,7 +4501,7 @@
     |------+--------------+------------+-----------------+---------------|
 
     Cases, where Hyper2Sat without subsumption reaches timeout and Hyper2Sat is not. The number of cases is:
-    #+BEGIN_src ipython :session mysession :results output 
+    #+BEGIN_src jupyter-python :session mysession :results output 
       d = pd.concat([df_hyper2, df_hyper2_ns.add_prefix('NS_')], axis=1)
       d = d[ (d['HYPER2_TIME'] != 'TIMEOUT')  & (d['NS_HYPER2_TIME'] == 'TIMEOUT')]
       print(len(d))       
@@ -4415,7 +4510,7 @@
     #+RESULTS:
     : 17
 
-        #+BEGIN_src ipython :session mysession :results output raw
+        #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
     #+END_src
 
@@ -4441,7 +4536,7 @@
     |  783 |          526 |        340 |            1232 | TIMEOUT       |
 
 ** Winning algorithm between with and without subsumption index
-   #+BEGIN_src ipython :session mysession :results none
+   #+BEGIN_src jupyter-python :session mysession :results none
      def display_win_with_notimeout(d, time1, time2):
          df = d[ (d[time1] != 'TIMEOUT') & (d[time1] != 'ERROR') & (d[time2] != 'TIMEOUT') & (d[time2] != 'ERROR')]
          df[time1] = df[time1].apply(pd.to_numeric)
@@ -4453,7 +4548,7 @@
 *** GSat
 
     Ontologies on which GSat with subsumption wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_gsat, df_gsat_ns.drop(columns=['GSAT_FTGD', 'GSAT_NFTGD']).add_prefix('NS_')], axis=1)
       no_timeout_gsat_ns = d[ (d['GSAT_TIME'] != 'TIMEOUT') & (d['GSAT_TIME'] != 'ERROR') & (d['NS_GSAT_TIME'] != 'TIMEOUT') & (d['NS_GSAT_TIME'] != 'ERROR')].apply(pd.to_numeric)
       display_win(no_timeout_gsat_ns, 'GSAT_TIME', 'NS_GSAT_TIME')
@@ -4505,7 +4600,7 @@
 
 
     Ontologies on which GSat without subsumption wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_win(no_timeout_gsat_ns, 'NS_GSAT_TIME', 'GSAT_TIME')
     #+END_src
 
@@ -4516,7 +4611,7 @@
 *** SkolemSat
 
     Ontologies on which SkolemSat with subsumption wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_sksat_data[['SK_NFTGD','SK_FTGD','SK_SUBSUMED','SK_NEW_FTGD','SK_NEW_NFTGD','SK_OUTPUT','SK_SUMB_TIME','SK_TIME']], df_sksat_nsdata[['NEW_FTGD_NB','NEW_NFTGD_NB','SK_OUTPUT','SK_TIME']].add_prefix('NS_'), df_kaon2.drop(columns=['AXIOM'])], axis=1) # df_kaon3_data[['KAON3_OUTPUT','KAON3_TIME']], df_kaon3_nsdata[['NS_KAON3_OUTPUT','NS_KAON3_TIME']],
       
       display_win_with_notimeout(d, 'SK_TIME', 'NS_SK_TIME')
@@ -4531,7 +4626,7 @@
 
 
     Ontologies on which SkolemSat without subsumption wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_win_with_notimeout(d, 'NS_SK_TIME', 'SK_TIME')
     #+END_src
 
@@ -4603,7 +4698,7 @@
 *** KAON3                                                          :noexport:
 
     Ontologies on which KAON3 with subsumption wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = select_interesting(pd.concat([df_kaon3_data[['KAON3_NFTGD','KAON3_FTGD','NEW_FTGD_NB','NEW_NFTGD_NB','KAON3_OUTPUT','SUMB_TIME','KAON3_TIME']], df_kaon3_nsdata[['NS_KAON3_OUTPUT','NS_KAON3_TIME']], df_kaon2.drop(columns=['AXIOM'])], axis=1), 'KAON3_NFTGD','KAON3_FTGD')
       display_win_with_notimeout(d, 'KAON3_TIME', 'NS_KAON3_TIME')
     #+END_src
@@ -4617,7 +4712,7 @@
 
 
     Ontologies on which KAON3 without subsumption wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_win_with_notimeout(d, 'NS_KAON3_TIME', 'KAON3_TIME')
     #+END_src
 
@@ -4677,7 +4772,7 @@
 
 
     Cases where KAON3 without subsumption wins over KAON2
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_win_with_notimeout(d, 'NS_KAON3_TIME', 'KAON2_TIME')
     #+END_src
 
@@ -4762,7 +4857,7 @@
     |  695 |       15416 |       2842 |           0 |         7744 |         2842 |       217 |       1604 |            2842 |          1130 |        10020 |       2325 |         2.1 |
 
     Cases where KAON2 wins again KAON3 without subsumption
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_win_with_notimeout(d, 'KAON2_TIME', 'NS_KAON3_TIME')
     #+END_src
 
@@ -4791,7 +4886,7 @@
 *** Hyper2Sat
 
     Ontologies on which Hyper2Sat with subsumption wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_hyper2, df_hyper2_ns.add_prefix('NS_')], axis=1)
       no_timeout_hyper2_ns = d[ (d['HYPER2_TIME'] != 'TIMEOUT') & (d['HYPER2_TIME'] != 'ERROR') & (d['NS_HYPER2_TIME'] != 'TIMEOUT') & (d['NS_HYPER2_TIME'] != 'ERROR')].apply(pd.to_numeric)
       display_win(no_timeout_hyper2_ns, 'HYPER2_TIME', 'NS_HYPER2_TIME')
@@ -4817,7 +4912,7 @@
 
 
     Ontologies on which Hyper2Sat without subsumption wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_win_with_notimeout(d, 'NS_HYPER2_TIME', 'HYPER2_TIME')
     #+END_src
 
@@ -4826,7 +4921,7 @@
     |------+--------------+------------+-----------------+---------------+-------------|
 
 ** Impact of the subsumption on the intermediate TGDs 
-#+BEGIN_src ipython :session mysession  :results output
+#+BEGIN_src jupyter-python :session mysession  :results output
   import numpy as np
   def clean_timeout(df, prefix):
       return df[ ((df[prefix + 'TIME'] != 'TIMEOUT') & (df[prefix + 'TIME'] != 'ERROR'))]
@@ -4855,7 +4950,7 @@
 
 *** GSAT
     Among the case where it does not reach the timeout with subsumption, disabling the subsumption increases on average the number of intermediate TGDs derived in 10min by the factor:
-#+BEGIN_src ipython :session mysession  :results output
+#+BEGIN_src jupyter-python :session mysession  :results output
   gsat_inter_comp_ns = get_intermediate_comp(df_gsat_data, df_gsat_nsdata, 'GSAT')
   print(gsat_inter_comp_ns['FACTOR'].mean())
 #+END_src     
@@ -4864,7 +4959,7 @@
 : 103.53849248324555
 
 with a maximal factor of
-#+BEGIN_src ipython :session mysession  :results output
+#+BEGIN_src jupyter-python :session mysession  :results output
   print(gsat_inter_comp_ns['FACTOR'].max())
 #+END_src     
 
@@ -4872,7 +4967,7 @@ with a maximal factor of
 : 9579.123111782477
 
 There are surprising cases where the number of intermediate TGDs is higher without the subsumption:
-#+BEGIN_src ipython :session mysession :results output raw
+#+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(gsat_inter_comp_ns[(gsat_inter_comp_ns['FACTOR'] < 1)], headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -4893,7 +4988,7 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 
 *** SkolemSat
     Among the case where it does not reach the timeout with subsumption, disabling the subsumption increases on average the number of intermediate TGDs derived in 10min by the factor:
-#+BEGIN_src ipython :session mysession  :results output
+#+BEGIN_src jupyter-python :session mysession  :results output
   sk_inter_comp_ns = get_intermediate_comp(df_sksat_data, df_sksat_nsdata, 'SK')
   print(sk_inter_comp_ns['FACTOR'].mean())
 #+END_src     
@@ -4902,7 +4997,7 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 : 184.51283093097865
 
 ... with a maximal factor of:
-#+BEGIN_src ipython :session mysession  :results output
+#+BEGIN_src jupyter-python :session mysession  :results output
   print(sk_inter_comp_ns['FACTOR'].max())
 #+END_src     
 
@@ -4910,7 +5005,7 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 : 24982.224121557454
 
 There are surprising cases where the number of intermediate TGDs is higher without the subsumption:
-#+BEGIN_src ipython :session mysession :results output raw
+#+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(sk_inter_comp_ns[(sk_inter_comp_ns['FACTOR'] < 1)], headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -4920,7 +5015,7 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 
 *** Hyper2Sat
     Among the case where it does not reach the timeout, disabling the subsumption increases on average the number of intermediate TGDs by:
-#+BEGIN_src ipython :session mysession  :results output
+#+BEGIN_src jupyter-python :session mysession  :results output
   hyper2_inter_comp_ns = get_intermediate_comp(df_hyper2_data, df_hyper2_nsdata, 'HYPER2')
   print(hyper2_inter_comp_ns['FACTOR'].mean())
 #+END_src     
@@ -4929,7 +5024,7 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 : 102.83651517692131
 
 ... with a maximal factor of:
-#+BEGIN_src ipython :session mysession  :results output
+#+BEGIN_src jupyter-python :session mysession  :results output
   print(hyper2_inter_comp_ns['FACTOR'].max())
 #+END_src     
 
@@ -4937,7 +5032,7 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 : 11701.494505494506
 
 There are surprising cases where the number of intermediate TGDs is higher without the subsumption:
-#+BEGIN_src ipython :session mysession :results output raw
+#+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(hyper2_inter_comp_ns[(hyper2_inter_comp_ns['FACTOR'] < 1)], headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -4945,7 +5040,7 @@ There are surprising cases where the number of intermediate TGDs is higher witho
    | NAME | NEW_TGD | NS_NEW_TGD | FACTOR |
    |------+---------+------------+--------|
 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(df_hyper2_data, headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -4953,7 +5048,7 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 ** All Statistics
 
    All the statistics:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(df_interesting_ns, headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -5393,7 +5488,7 @@ There are surprising cases where the number of intermediate TGDs is higher witho
 
 NS stands for no subsumption, ST for structural transformation.
   
-  #+BEGIN_src ipython :session mysession :results none 
+  #+BEGIN_src jupyter-python :session mysession :results none 
     #gsat_nsfile='2021-10-19-12-21-10g-v0.5.4/stats.csv'
     sksat_stfile='../ISG-guarded_kaon2-nodata/2021-11-23-20-56-10g-v0.5.5/stats.csv'
     sksat_stnsfile='../ISG-guarded_kaon2-nodata/2021-11-23-01-11-10g-v0.5.5/stats.csv'
@@ -5428,14 +5523,14 @@ NS stands for no subsumption, ST for structural transformation.
 ** Summary
 
    
-   #+BEGIN_src ipython :session mysession :results none
+   #+BEGIN_src jupyter-python :session mysession :results none
      any_notimeout_st = df_times_st[ ~df_times_st.index.isin(all_timeout.index) ]
      
      #print(len(all_timeout.index))
    #+END_src
 
    The time of the algorithms with/without structural transformation, on the ontologies where all the algorithm without structural transformation reaches the timeout.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(df_times_st[df_times_st.index.isin(all_timeout.index) ], headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -5475,7 +5570,7 @@ NS stands for no subsumption, ST for structural transformation.
 
    
    The number of ontologies on which two algorithms reach the timeout simultaneously
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(timeout_intersection(['SK', 'SK-ST', 'HYPER2', 'HYPER2-ST'], any_notimeout_st), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -5490,7 +5585,7 @@ NS stands for no subsumption, ST for structural transformation.
    
 ** SkolemSat    
     Cases, where SkolemSat reaches timeout and SkolemSat without subsumption is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_sksat_st, df_sksat_stns.drop(columns=['SK-ST-NS_FTGD', 'SK-ST-NS_NFTGD']), df_kaon2.drop(columns=['AXIOM'])], axis=1)
       d = d[ (d['SK-ST_TIME'] == 'TIMEOUT') & (d['SK-ST-NS_TIME'] != 'TIMEOUT')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -5509,7 +5604,7 @@ NS stands for no subsumption, ST for structural transformation.
     |  786 |       33758 |     175690 |       187764 | TIMEOUT    |          193244 |         34580 |            0 | TIMEOUT    |
 
     Cases, where SkolemSat without subsumption reaches timeout and SkolemSat is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_sksat_st, df_sksat_stns.drop(columns=['SK-ST-NS_FTGD', 'SK-ST-NS_NFTGD']), df_kaon2.drop(columns=['AXIOM'])], axis=1)
       d = d[ (d['SK-ST_TIME'] != 'TIMEOUT') & (d['SK-ST-NS_TIME'] == 'TIMEOUT')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -5528,7 +5623,7 @@ NS stands for no subsumption, ST for structural transformation.
     
 ** Winning cases
 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(win_sum(['SK', 'SK-ST', 'HYPER2', 'HYPER2-ST'], 2, df_times_st), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -5542,7 +5637,7 @@ NS stands for no subsumption, ST for structural transformation.
 
    
    Comparaison of the time with one order of magnitude
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(win_sum(['SK', 'SK-ST', 'HYPER2', 'HYPER2-ST'], 10, df_times_st), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -5556,7 +5651,7 @@ NS stands for no subsumption, ST for structural transformation.
    
 *** SkolemSat with structural transformation with/without subsumption
     Ontologies on which SkolemSat with subsumption wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_sksat_stdata[['SK-ST_NFTGD','SK-ST_FTGD','SK-ST_SUBSUMED','SK-ST_NEW_FTGD','SK-ST_NEW_NFTGD','SK-ST_OUTPUT','SK-ST_SUMB_TIME','SK-ST_TIME']], df_sksat_stnsdata[['SK-ST-NS_NEW_FTGD','SK-ST-NS_NEW_NFTGD','SK-ST-NS_OUTPUT','SK-ST-NS_TIME']], df_kaon2.drop(columns=['AXIOM'])], axis=1)
       
       display_win_with_notimeout(d, 'SK-ST_TIME', 'SK-ST-NS_TIME')
@@ -5570,7 +5665,7 @@ NS stands for no subsumption, ST for structural transformation.
 
 
     Ontologies on which SkolemSat without subsumption wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_win_with_notimeout(d, 'SK-ST-NS_TIME', 'SK-ST_TIME')
     #+END_src
 
@@ -5651,7 +5746,7 @@ NS stands for no subsumption, ST for structural transformation.
     |  752 |        2286 |        1618 |           2510 |          88506 |           19246 |         2531 |            4155 |       8434 |             88506 |              19246 |            2531 |          4190 |         2426 |      42816 |           2 |
 
     The same where we compare with SkolemSat without structural transformation and with subsumption
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_sksat_stdata[['SK-ST_NFTGD','SK-ST_FTGD','SK-ST_SUBSUMED','SK-ST_NEW_FTGD','SK-ST_NEW_NFTGD','SK-ST_OUTPUT','SK-ST_SUMB_TIME','SK-ST_TIME']], df_sksat_stnsdata[['SK-ST-NS_NEW_FTGD','SK-ST-NS_NEW_NFTGD','SK-ST-NS_OUTPUT','SK-ST-NS_TIME']], df_sksat_data[['SK_NFTGD','SK_FTGD','SUBSUMED','NEW_FTGD_NB','NEW_NFTGD_NB','SK_OUTPUT','SUMB_TIME','SK_TIME']]], axis=1)
       
       display_win_with_notimeout(d, 'SK-ST-NS_TIME', 'SK-ST_TIME')
@@ -5735,7 +5830,7 @@ NS stands for no subsumption, ST for structural transformation.
 
 *** SkolemSat
     Ontologies on which SkolemSat with structural transformation wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_sksat_stdata[['SK-ST_NFTGD','SK-ST_FTGD','SK-ST_SUBSUMED','SK-ST_NEW_FTGD','SK-ST_NEW_NFTGD','SK-ST_OUTPUT','SK-ST_SUMB_TIME','SK-ST_TIME']], df_sksat_data[['SK_NEW_FTGD','SK_NEW_NFTGD','SK_OUTPUT','SK_TIME']]], axis=1)
       
       display_win_with_notimeout(d, 'SK-ST_TIME', 'SK_TIME')
@@ -5802,7 +5897,7 @@ NS stands for no subsumption, ST for structural transformation.
 
 
     Ontologies on which HyperSat2 without structural transformation wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_win_with_notimeout(d, 'SK_TIME', 'SK-ST_TIME')
     #+END_src
 
@@ -5814,7 +5909,7 @@ NS stands for no subsumption, ST for structural transformation.
 
 *** HyperSat2
     Ontologies on which HyperSat2 with structural transformation wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_hyper2_stdata[['HYPER2-ST_NFTGD','HYPER2-ST_FTGD','HYPER2-ST_SUBSUMED','HYPER2-ST_NEW_FTGD','HYPER2-ST_NEW_NFTGD','HYPER2-ST_OUTPUT','HYPER2-ST_SUMB_TIME','HYPER2-ST_TIME']], df_hyper2_data[['HYPER2_NEW_FTGD','HYPER2_NEW_NFTGD','HYPER2_OUTPUT','HYPER2_TIME']]], axis=1)
       
       display_win_with_notimeout(d, 'HYPER2-ST_TIME', 'HYPER2_TIME')
@@ -5826,7 +5921,7 @@ NS stands for no subsumption, ST for structural transformation.
 
 
     Ontologies on which HyperSat2 without structural transformation wins:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       display_win_with_notimeout(d, 'HYPER2_TIME', 'HYPER2-ST_TIME')
     #+END_src
 
@@ -5835,12 +5930,12 @@ NS stands for no subsumption, ST for structural transformation.
     |------+-----------------+----------------+--------------------+--------------------+---------------------+------------------+---------------------+----------------+-----------------+------------------+---------------+-------------+-------------|
 
 *** Winning cases summary
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(win_sum(['GSAT', 'SSAT', 'SK', 'HYPER', 'HYPER2', 'KAON2'], 5), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
 ** Output summary
-     #+BEGIN_SRC ipython :results none  :session mysession
+     #+BEGIN_SRC jupyter-python :results none  :session mysession
        sksat_output_st_stats = get_output_stats(sksat_stfile, 'SK-ST')
        hyper2_output_st_stats = get_output_stats(hyper2_stfile, 'HYPER2-ST')
        
@@ -5849,7 +5944,7 @@ NS stands for no subsumption, ST for structural transformation.
 
 
     The average of output rules on every ontology:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_mean_of_prefixes('COUNT',['SK-ST', 'HYPER2-ST'], all_output_st_stats), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -5859,7 +5954,7 @@ NS stands for no subsumption, ST for structural transformation.
     | 0 | 14819.3 |   11428.3 |
 
     The average of output rules on every ontology:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(get_output_max_of_prefixes('NEW_OUTPUT_SIZE', ['SK-ST', 'HYPER2-ST'], all_output_st_stats), headers="keys", tablefmt='orgtbl'))
     #+END_src
 
@@ -5872,7 +5967,7 @@ NS stands for no subsumption, ST for structural transformation.
 * Experiment without unification index
 
   This section contains the results of the same experiments as above, where the unification is disabled 
-  #+BEGIN_src ipython :session mysession :results none 
+  #+BEGIN_src jupyter-python :session mysession :results none 
     import pandas as pd
     from tabulate import tabulate
 
@@ -5924,7 +6019,7 @@ NS stands for no subsumption, ST for structural transformation.
 *** All the algorithm reach the timeout
    The following table contains the rows where all the algorithm executions reach the timeout sorted by the input size. Their number:
 
-   #+BEGIN_src ipython :session mysession :results output example
+   #+BEGIN_src jupyter-python :session mysession :results output example
      all_timeout_nu = get_all_timeout(['GSAT', 'SK', 'HYPER'], df_times_nu)
      any_notimeout_nu = df_times_nu[ ~df_times_nu.index.isin(all_timeout_nu.index) ]
      
@@ -5934,7 +6029,7 @@ NS stands for no subsumption, ST for structural transformation.
    #+RESULTS:
    : 87
 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(all_timeout_nu, headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -6032,7 +6127,7 @@ NS stands for no subsumption, ST for structural transformation.
 *** Timeout summary
 
       The number of ontologies on which two algorithms reach the timeout simultaneously
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(timeout_intersection(['GSAT', 'SK', 'HYPER'], any_notimeout_nu), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -6043,7 +6138,7 @@ NS stands for no subsumption, ST for structural transformation.
    | SK    |   12 | 30 |     1 |
    | HYPER |    0 |  1 |     1 |
 
-   #+BEGIN_src ipython :session mysession :results output raw :exports none
+   #+BEGIN_src jupyter-python :session mysession :results output raw :exports none
      print(tabulate(timeout_diff(['GSAT', 'SK', 'HYPER'], any_notimeout_nu), headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -6057,7 +6152,7 @@ NS stands for no subsumption, ST for structural transformation.
 
 *** GSat
     Cases, where GSat reaches timeout and GSat without unification index is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_gsat, df_gsat_nu.drop(columns=['GSAT_FTGD', 'GSAT_NFTGD']).add_prefix('NU_')], axis=1)
       d = d[ (d['GSAT_TIME'] == 'TIMEOUT') & (d['NU_GSAT_TIME'] != 'TIMEOUT')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -6068,7 +6163,7 @@ NS stands for no subsumption, ST for structural transformation.
     |------+------------+-----------+-------------+-----------+----------------+--------------|
 
     Cases, where GSat without unfication index reaches timeout and GSat is not.
-        #+BEGIN_src ipython :session mysession :results output 
+        #+BEGIN_src jupyter-python :session mysession :results output 
       d = pd.concat([df_gsat, df_gsat_nu.drop(columns=['GSAT_FTGD', 'GSAT_NFTGD']).add_prefix('NU_')], axis=1)
       d = d[ (d['GSAT_TIME'] != 'TIMEOUT') & (d['NU_GSAT_TIME'] == 'TIMEOUT')]
       print(len(d))       
@@ -6077,7 +6172,7 @@ NS stands for no subsumption, ST for structural transformation.
     #+RESULTS:
     : 71
 
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
     #+END_src
 
@@ -6158,7 +6253,7 @@ NS stands for no subsumption, ST for structural transformation.
 
 *** SkolemSat
     Cases, where SkolemSat reaches timeout and SkolemSat without subsumption is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_sksat, df_sksat_nu.drop(columns=['SK_FTGD', 'SK_NFTGD']).add_prefix('NU_'), df_kaon2.drop(columns=['AXIOM'])], axis=1)
       d = d[ (d['SK_TIME'] == 'TIMEOUT') & (d['NU_SK_TIME'] != 'TIMEOUT')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -6169,7 +6264,7 @@ NS stands for no subsumption, ST for structural transformation.
     |------+----------+---------+-----------+---------+--------------+------------+--------------+------------|
 
     Cases, where SkolemSat without subsumption reaches timeout and SkolemSat is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_sksat, df_sksat_nu.drop(columns=['SK_FTGD', 'SK_NFTGD']).add_prefix('NU_'), df_kaon2.drop(columns=['AXIOM'])], axis=1)
       d = d[ (d['SK_TIME'] != 'TIMEOUT') & (d['NU_SK_TIME'] == 'TIMEOUT')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -6247,7 +6342,7 @@ NS stands for no subsumption, ST for structural transformation.
 
 *** HyperSat
     Cases, where HyperSat reaches timeout and HyperSat without subsumption is not.
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       d = pd.concat([df_hyper, df_hyper_nu.add_prefix('NU_')], axis=1)
       d = d[ (d['HYPER_TIME'] == 'TIMEOUT') & (d['NU_HYPER_TIME'] != 'TIMEOUT')]
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
@@ -6258,7 +6353,7 @@ NS stands for no subsumption, ST for structural transformation.
     |------+--------------+------------+-----------------+---------------|
 
     Cases, where HyperSat without subsumption reaches timeout and HyperSat is not. The number of cases is:
-    #+BEGIN_src ipython :session mysession :results output 
+    #+BEGIN_src jupyter-python :session mysession :results output 
       d = pd.concat([df_hyper, df_hyper_nu.add_prefix('NU_')], axis=1)
       d = d[ (d['HYPER_TIME'] != 'TIMEOUT') & (d['NU_HYPER_TIME'] == 'TIMEOUT')]
       print(len(d))       
@@ -6267,7 +6362,7 @@ NS stands for no subsumption, ST for structural transformation.
     #+RESULTS:
     : 52
 
-        #+BEGIN_src ipython :session mysession :results output raw
+        #+BEGIN_src jupyter-python :session mysession :results output raw
       print(tabulate(d, headers="keys", tablefmt='orgtbl'))       
     #+END_src
 
@@ -6331,7 +6426,7 @@ NS stands for no subsumption, ST for structural transformation.
 ** All Statistics
 
    All the statistics:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(df_interesting_nu, headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -6769,7 +6864,7 @@ NS stands for no subsumption, ST for structural transformation.
 
 * Experiment without the subsumption index clustering
 
-  #+BEGIN_src ipython :session mysession :results none
+  #+BEGIN_src jupyter-python :session mysession :results none
     sksat_file_nc='2021-12-07-09-38-10g-v0.5.5_nsfix/stats.csv'
     
     df_sksat_data_nc = get_data(sksat_file_nc, 'SK-NC')
@@ -6782,7 +6877,7 @@ NS stands for no subsumption, ST for structural transformation.
 ** Winning cases
 
     Number of ontology where SkolemSat without subsumption index clustering and KAON2 beat each other by one order of magnitude:
-    #+BEGIN_src ipython :session mysession :results output raw
+    #+BEGIN_src jupyter-python :session mysession :results output raw
       df_times_nc = pd.concat([df_sksat_data_nc, df_gsat, df_kaon2], axis=1)
       
       print(tabulate(win_sum(['GSAT', 'SK-NC', 'KAON2'], 10, df_times_nc), headers="keys", tablefmt='orgtbl'))
@@ -6796,7 +6891,7 @@ NS stands for no subsumption, ST for structural transformation.
    | KAON2 |   35 |    31 |   nan |
 
    The ontology where KAON2 still loses by one order of magnitude.
-   #+BEGIN_src ipython :session mysession :results output 
+   #+BEGIN_src jupyter-python :session mysession :results output 
       print((win_collect(['KAON2'], 10, ['SK-NC'], df_times_nc)))
    #+END_src
 
@@ -6864,7 +6959,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
 * Questions
 ** What are the GSat errors
    There are several errors on GSAT, all of them are caused by out of memory error (10g was available).
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(df_interesting[['GSAT_NFTGD','GSAT_FTGD','GSAT_TIME']][df_interesting['GSAT_TIME'] == 'ERROR'], headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -6886,7 +6981,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
 ** What are the SkolemSat errors
 
    There is three errors out of memory error (10g was available) using SkolemSat with predicate tree index.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(df_interesting[['SK_NFTGD','SK_FTGD','SK_TIME', 'GSAT_TIME']][df_interesting['SK_TIME'] == 'ERROR'], headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -6898,7 +6993,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
 
 ** What are the KAON3 errors
    There are no error using KAON3
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(df_interesting[['SK_NFTGD','SK_FTGD','KAON3_TIME']][df_interesting['KAON3_TIME'] == 'ERROR'], headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -6909,7 +7004,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
 
 ** What are the HyperSat errors
    There are no error using hyper sat
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      print(tabulate(df_interesting[['SK_NFTGD','SK_FTGD','HYPER_TIME']][df_interesting['HYPER_TIME'] == 'ERROR'], headers="keys", tablefmt='orgtbl'))
    #+END_src
 
@@ -6923,7 +7018,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
 
    The subsumption index is based on predicate tree.
   
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      gsat_before_file='2021-05-24-15-36-10g-v0.5.2/stats.csv'
      
      
@@ -6940,7 +7035,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    #+RESULTS:
 
    There is no ontology on which the unoptimized GSat version wins over optimized one.
-   #+BEGIN_src ipython :session mysession :results drawer :exports none
+   #+BEGIN_src jupyter-python :session mysession :results drawer :exports none
      unoptimized_gsat_win = create_win(gsat_comp_times,  'GSAT_BEFORE_TIME', 'GSAT_TIME')
      len(unoptimized_gsat_win.index)
    #+END_src
@@ -6952,7 +7047,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    :end:
 
    The number of ontologies on which the optimized GSat version wins over the unoptimized one, meaning :
-   #+BEGIN_src ipython :session mysession :results drawer
+   #+BEGIN_src jupyter-python :session mysession :results drawer
      optimized_gsat_win = create_win(gsat_comp_times,  'GSAT_TIME', 'GSAT_BEFORE_TIME')
      len(optimized_gsat_win.index)
    #+END_src
@@ -6964,7 +7059,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    :end:
 
    By displaying these values, we can observe that the optimizations of GSat seem to help especially on the ontology after 700. After checking, it comes from the optimization, which disables the useless derived non full TGDs, like it was the case in 729, where GSat looses exponentially again SkolemSat:  
-   #+BEGIN_src ipython :session mysession :results drawer :ipyfile plots/gsat_comp_wins0.png
+   #+BEGIN_src jupyter-python :session mysession :results drawer :ipyfile plots/gsat_comp_wins0.png
      optimized_gsat_win_times = optimized_gsat_win[['GSAT_TIME', 'GSAT_BEFORE_TIME']]
      optimized_gsat_win_times = optimized_gsat_win_times.sort_values(by="NAME")
      plot_values(optimized_gsat_win_times, 0)
@@ -6976,7 +7071,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    [[file:plots/gsat_comp_wins0.png]]
    :end:
 
-   #+BEGIN_src ipython :session mysession :results drawer :ipyfile plots/gsat_comp_wins1.png
+   #+BEGIN_src jupyter-python :session mysession :results drawer :ipyfile plots/gsat_comp_wins1.png
      plot_values(optimized_gsat_win_times, 1)
    #+END_src
 
@@ -6990,7 +7085,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
 
    In this section, GSat is not optimized.
   
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      gsat_pred_file='2021-05-24-15-36-10g-v0.5.2/stats.csv'
      
      df_gsat_pred = pd.read_csv(gsat_pred_file, index_col='NAME').rename(columns={'TIME':'GSAT_PRED_TIME'})
@@ -7011,7 +7106,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    #+RESULTS:
 
    There is 1 case where GSat with atom-based index wins over predicate-tree index approach and 11 cases, where it looses again the latter.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(gsat_comp_index_times, 'GSAT_ATOM_TIME', 'GSAT_PRED_TIME')
      
    #+END_src
@@ -7021,7 +7116,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    |------+----------------+----------------+-----------|
    |  636 |           2146 |           8653 |  0.751994 |
 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(gsat_comp_index_times, 'GSAT_PRED_TIME', 'GSAT_ATOM_TIME')
    #+END_src
 
@@ -7042,7 +7137,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
 
 ** Comparison of SkolemSat times before and after subsumption check optimizations
 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      sk_bef_file='2021-05-25-09-55-10g-v0.5.3/stats.csv'
      
      df_sk_bef = pd.read_csv(sk_bef_file, index_col='NAME').rename(columns={'TIME':'SK_BEF_TIME'})
@@ -7063,7 +7158,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    #+RESULTS:
 
    There is 1 case where Sk with aft-based index wins over beficate-tree index approach and 11 cases, where it looses again the latter.
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_comp_index_times, 'SK_AFT_TIME', 'SK_BEF_TIME')
    #+END_src
 
@@ -7196,7 +7291,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    |  726 |        1800 |        3783 |    0.524187 |
    |  394 |      299648 |      600000 |    0.500587 |
 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_comp_index_times, 'SK_BEF_TIME', 'SK_AFT_TIME')
    #+END_src
 
@@ -7209,7 +7304,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
 
 ** Comparison of KAON3 times using or not the initialization from KAON2 
 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      
      sk_bef_file='2021-07-19-12-04-10g-v0.5.4/stats.csv'
      
@@ -7231,7 +7326,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    #+RESULTS:
 
    Cases where the KAON3 with the new initialization wins again the older one:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_comp_index_times, 'KAON3_AFT_TIME', 'KAON3_BEF_TIME')
    #+END_src
 
@@ -7242,7 +7337,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    |   30 |         157624 |         377166 |         2.4 |
 
    Cases where the KAON3 with the new initialization looses again the older one:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_comp_index_times, 'KAON3_BEF_TIME', 'KAON3_AFT_TIME')
    #+END_src
 
@@ -7253,7 +7348,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
 
 ** Comparison of KAON3 times using or not the tautology discarding
 
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      sk_bef_file='2021-08-11-17-55-10g-v0.5.4/stats.csv'
      
      df_sk_bef = pd.read_csv(sk_bef_file, index_col='NAME').rename(columns={'TIME':'KAON3_BEF_TIME'})
@@ -7274,7 +7369,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    #+RESULTS:
 
    Cases where the KAON3 with the new initialization wins again the older one:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_comp_index_times, 'KAON3_AFT_TIME', 'KAON3_BEF_TIME')
    #+END_src
 
@@ -7309,7 +7404,7 @@ A(x) -> C_i(x) -> D_i(f(x)) for i in 1..n
    |  572 |          33675 |          68226 |           2 |
 
    Cases where the KAON3 with the new initialization looses again the older one:
-   #+BEGIN_src ipython :session mysession :results output raw
+   #+BEGIN_src jupyter-python :session mysession :results output raw
      display_win(sk_comp_index_times, 'KAON3_BEF_TIME', 'KAON3_AFT_TIME')
    #+END_src
 

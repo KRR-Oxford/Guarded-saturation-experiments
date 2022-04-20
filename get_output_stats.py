@@ -17,7 +17,7 @@ def main():
         writer.writerow(header)
 
         for rule_file in sorted(os.listdir(dirname)):
-            if rule_file.endswith('.rul'):
+            if rule_file.endswith('.dlgp'):
                 print(rule_file)
                 rule_name = os.path.splitext(rule_file)[0]
                 rule_lines = open(os.path.join(dirname, rule_file), 'r').readlines()
@@ -32,8 +32,8 @@ def main():
                         continue
                     body_size = line.count('),', impl_index) + line.count(').', impl_index)
                     head_size = line.count('),', 0, impl_index) + line.count('):', 0, impl_index + 1)
-                    if head_size >= 2 :
-                        print(line)
+                    # if head_size >= 2 :
+                    #     print("2 atoms in the heaad ! : " + line)
                     count+=1
                     body_sum_size += body_size
                     head_sum_size += head_size
